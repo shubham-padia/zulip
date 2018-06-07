@@ -23,6 +23,16 @@ exports.create_pills = function (pill_container) {
     return pills;
 };
 
+exports.append_term = function (term, pill_widget) {
+    pill_widget.appendValidatedData({
+        display_value: term.description,
+        search_string: term.search_string,
+    });
+    if (pill_widget.clear_text !== undefined) {
+        pill_widget.clear_text();
+    }
+};
+
 return exports;
 }());
 
