@@ -33,6 +33,12 @@ exports.append_term = function (term, pill_widget) {
     }
 };
 
+exports.get_search_string_for_current_filter = function (pill_widget) {
+    var items = pill_widget.items();
+    var search_strings = _.pluck(items, 'search_string');
+    return search_strings.join(' ');
+};
+
 return exports;
 }());
 
