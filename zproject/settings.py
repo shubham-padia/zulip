@@ -1075,7 +1075,8 @@ JS_SPECS = {
             'js/compose_ui.js',
             'js/panels.js',
             'js/settings_ui.js',
-            'js/search_pill.js'
+            'js/search_pill.js',
+            'js/search_pill_widget.js'
         ],
         'output_filename': 'min/app.js'
     },
