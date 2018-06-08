@@ -80,7 +80,8 @@ exports.initialize = function () {
             // have the newly selected suggestion, and appending it again
             // would cause duplication.
             narrow_or_search_for_term(search_string);
-            search_pill_widget.my_pill.appendValue(search_string);
+            search_pill.append_search_string(search_string,
+                                             search_pill_widget.my_pill);
         },
         sorter: function (items) {
             return items;
