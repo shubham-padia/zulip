@@ -5,7 +5,14 @@ var exports = {};
 function narrow_or_search_for_term(search_string) {
     var search_query_box = $("#search_query");
     ui_util.change_tab_to('#home');
-    var operators = Filter.parse(search_string);
+
+    // search_string only contains the suggestion selected
+    // from the typeahead. base_query stores the query
+    // corresponding to the existing pills.
+    var base_query = search_pill.get_search_string_for_current_filter(search_pill_widget.my_pill);
+    var base_operators = Filter.parse(base_query);
+    var suggestion_operator = Filter.parse(search_string);
+    var operators = base_operators.concat(suggestion_operator);
     narrow.activate(operators, {trigger: 'search'});
 
     // It's sort of annoying that this is not in a position to
@@ -63,7 +70,18 @@ exports.initialize = function () {
         matcher: function () {
             return true;
         },
-        updater: narrow_or_search_for_term,
+        updater: function (search_string) {
+            // Order is important here. narrow_or_search_for_term
+            // gets a search string from existing pills and obtains
+            // existing operators. Newly selected suggestion is added
+            // to those operators. If narrow_or_search_for_term was
+            // called after append_search_string, the existing search
+            // pills at the time for calling that function would also
+            // have the newly selected suggestion, and appending it again
+            // would cause duplication.
+            narrow_or_search_for_term(search_string);
+            search_pill_widget.my_pill.appendValue(search_string);
+        },
         sorter: function (items) {
             return items;
         },
