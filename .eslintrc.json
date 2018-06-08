@@ -191,7 +191,8 @@
         "common": false,
         "panels": false,
         "PerfectScrollbar": false,
-        "search_pill": false
+        "search_pill": false,
+        "search_pill_widget": false
     },
     "plugins": [
         "eslint-plugin-empty-returns"
