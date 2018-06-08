@@ -293,6 +293,7 @@ $(function () {
     server_events.initialize();
     people.initialize();
     compose_pm_pill.initialize();
+    search_pill_widget.initialize();
     reload.initialize();
     user_groups.initialize();
     unread.initialize();
