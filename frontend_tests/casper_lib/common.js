@@ -153,7 +153,7 @@ exports.select_item_via_typeahead = function (field_selector, str, item) {
             // the typeahead.
             $(field_selector)
                 .focus()
-                .val(str)
+                .html(str)
                 .trigger($.Event('keyup', { which: 0 }));
 
             // You might think these steps should be split by casper.then,
