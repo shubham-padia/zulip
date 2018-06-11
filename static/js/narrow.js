@@ -245,6 +245,14 @@ exports.activate = function (raw_operators, opts) {
         hashchange.save_narrow(operators);
     }
 
+    if (opts.trigger !== 'search') {
+        search_pill_widget.my_pill.clear(true);
+        _.each(operators, function (operator) {
+            var search_string = Filter.unparse([operator]);
+            search_pill.append_search_string(search_string, search_pill_widget.my_pill);
+        });
+    }
+
     // Put the narrow operators in the search bar.
     $('#search_query').val(Filter.unparse(operators));
     search.update_button_visibility();
