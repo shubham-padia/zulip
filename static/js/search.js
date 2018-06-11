@@ -77,10 +77,12 @@ exports.initialize = function () {
             narrow_or_search_for_term(search_string);
             search_pill.append_search_string(search_string,
                                              search_pill_widget.my_pill);
+            $("#search_query").focus();
         },
         sorter: function (items) {
             return items;
         },
+        stopAdvance: true,
     });
 
     $("#searchbox_form").keydown(function (e) {

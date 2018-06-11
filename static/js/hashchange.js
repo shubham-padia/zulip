@@ -135,10 +135,6 @@ function do_hashchange(from_reload) {
             activate_home_tab();
             return false;
         }
-        _.each(operators, function (operator) {
-            var search_string = Filter.unparse([operator]);
-            search_pill.append_search_string(search_string, search_pill_widget.my_pill);
-        });
         var narrow_opts = {
             change_hash:    false,  // already set
             trigger: 'hash change',

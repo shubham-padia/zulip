@@ -149,20 +149,20 @@ exports.create = function (opts) {
 
         // this will remove the last pill in the container -- by defaulat tied
         // to the "backspace" key when the value of the input is empty.
-        removeLastPill: function () {
+        removeLastPill: function (quiet) {
             var pill = store.pills.pop();
 
             if (pill) {
                 pill.$element.remove();
-                if (typeof store.removePillFunction === "function") {
+                if (!quiet && typeof store.removePillFunction === "function") {
                     store.removePillFunction(pill);
                 }
             }
         },
 
-        removeAllPills: function () {
+        removeAllPills: function (quiet) {
             while (store.pills.length > 0) {
-                this.removeLastPill();
+                this.removeLastPill(quiet);
             }
 
             this.clear(store.$input[0]);
