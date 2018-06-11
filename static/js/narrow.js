@@ -663,6 +663,9 @@ exports.deactivate = function () {
 
     compose_fade.update_message_list();
 
+    // clear existing search pills
+    search_pill_widget.my_pill.clear(true);
+
     top_left_corner.handle_narrow_deactivated();
     stream_list.handle_narrow_deactivated();
 
