@@ -142,6 +142,7 @@ run_test('basic_chars', () => {
         try {
             return hotkey.process_keypress(e);
         } catch (err) {
+            console.log(err);
             // An exception will be thrown here if a different
             // function is called than the one declared.  Try to
             // provide a useful error message.
@@ -174,6 +175,7 @@ run_test('basic_chars', () => {
 
     set_global('popovers', {
         actions_popped: return_false,
+        message_info_popped: return_false,
     });
     set_global('emoji_picker', {
         reactions_popped: return_false,

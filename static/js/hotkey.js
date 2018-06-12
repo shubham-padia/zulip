@@ -524,6 +524,11 @@ exports.process_hotkey = function (e, hotkey) {
         return true;
     }
 
+    if (actions_dropdown_hotkeys.indexOf(event_name) !== -1 && popovers.message_info_popped()) {
+        popovers.user_info_popover_handle_keyboard(event_name);
+        return true;
+    }
+
     // The next two sections date back to 00445c84 and are Mac/Chrome-specific,
     // and they should possibly be eliminated in favor of keeping standard
     // browser behavior.

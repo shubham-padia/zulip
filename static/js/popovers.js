@@ -210,6 +210,21 @@ function show_user_profile(element, user) {
     $("#user-profile-modal").modal("show");
 }
 
+function get_user_info_popover_items() {
+    if (!current_message_info_popover_elem) {
+        blueslip.error('Trying to get menu items when action popover is closed.');
+        return;
+    }
+
+    var popover_data = current_message_info_popover_elem.data('popover');
+    if (!popover_data) {
+        blueslip.error('Cannot find popover data for actions menu.');
+        return;
+    }
+
+    return $('li:not(.divider):visible a', popover_data.$tip);
+}
+
 function fetch_group_members(member_ids) {
     return member_ids
         .map(function (m) {
@@ -464,12 +479,12 @@ exports.hide_actions_popover = function () {
     }
 };
 
-function message_info_popped() {
+exports.message_info_popped = function () {
     return current_message_info_popover_elem !== undefined;
-}
+};
 
 exports.hide_message_info_popover = function () {
-    if (message_info_popped()) {
+    if (exports.message_info_popped()) {
         current_message_info_popover_elem.popover("destroy");
         current_message_info_popover_elem = undefined;
     }
@@ -514,6 +529,38 @@ exports.hide_user_sidebar_popover = function () {
     }
 };
 
+function focus_user_info_popover_item() {
+    // For now I recommend only calling this when the user opens the menu with a hotkey.
+    // Our popup menus act kind of funny when you mix keyboard and mouse.
+    var items = get_user_info_popover_items();
+    if (!items) {
+        return;
+    }
+
+    items.eq(0).expectOne().focus();
+}
+
+exports.user_info_popover_handle_keyboard = function (key) {
+    var items = get_user_info_popover_items();
+    if (!items) {
+        return;
+    }
+
+    var index = items.index(items.filter(':focus'));
+
+    if (key === "enter" && index >= 0 && index < items.length) {
+        return items[index].click();
+    }
+    if (index === -1) {
+        index = 0;
+    } else if ((key === 'down_arrow' || key === 'vim_down') && index < items.length - 1) {
+        index += 1;
+    } else if ((key === 'up_arrow' || key === 'vim_up') && index > 0) {
+        index -= 1;
+    }
+    items.eq(index).focus();
+};
+
 exports.show_sender_info = function () {
     var $message = $(".selected_message");
     var $sender = $message.find(".sender_info_hover");
@@ -528,6 +575,9 @@ exports.show_sender_info = function () {
     var message = current_msg_list.get(rows.id($message));
     var user = people.get_person_from_user_id(message.sender_id);
     show_user_info_popover($sender[0], user, message);
+    if (current_message_info_popover_elem) {
+        focus_user_info_popover_item();
+    }
 };
 
 exports.register_click_handlers = function () {
@@ -882,7 +932,7 @@ exports.any_active = function () {
     // Expanded sidebars on mobile view count as popovers as well.
     return popovers.actions_popped() || user_sidebar_popped() ||
         stream_popover.stream_popped() || stream_popover.topic_popped() ||
-        message_info_popped() || emoji_picker.reactions_popped() ||
+        exports.message_info_popped() || emoji_picker.reactions_popped() ||
         $("[class^='column-'].expanded").length;
 };
 
