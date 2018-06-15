@@ -1801,16 +1801,8 @@ blockquote p {
 
 #searchbox .input-append {
     position: relative;
-    width: 100%;
-
-    .icon-vector-search {
-        padding: 0px;
-        font-size: 20px;
-        position: absolute;
-        left: 10px;
-        top: 10px;
-        z-index: 5;
-    }
+    width: calc(100% - 45px);
+    float: right;
 }
 
 nav .column-left {
@@ -1866,17 +1858,13 @@ nav a .no-style {
     font-size: 16px;
     height: 40px;
     padding: 0px;
-    padding-left: 35px;
+    padding-left: 5px;
     padding-right: 20px;
     border: none;
     border-radius: 0px;
     font-family: 'Source Sans Pro';
     font-weight: 300;
     line-height: 40px;
-}
-
-#search_query:focus {
-    box-shadow: inset 0px 0px 0px 2px hsl(204, 20%, 74%);
 }
 
 #searchbox .search_button,
@@ -1910,9 +1898,10 @@ nav a .no-style {
 #searchbox a.search_icon {
     color: hsl(0, 0%, 80%);
     text-decoration: none;
-    display: block;
-    width: 1px;
-    height: 1px;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 5;
 }
 
 #searchbox a.search_icon:hover {
@@ -1937,7 +1926,8 @@ nav a .no-style {
 
 #search_arrows {
     font-size: 90%;
-    letter-spacing: normal
+    letter-spacing: normal;
+    border: none;
 }
 
 div.floating_recipient {
