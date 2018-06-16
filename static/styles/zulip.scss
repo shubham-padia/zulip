@@ -1930,6 +1930,16 @@ nav a .no-style {
     font-size: 90%;
     letter-spacing: normal;
     border: none;
+
+    .pill {
+        padding: 2px 18px 2px 3px;
+        font-size: 14px;
+        bottom: 2px;
+
+        .exit {
+            top: 3px; // pill's top padding + border
+        }
+    }
 }
 
 div.floating_recipient {
