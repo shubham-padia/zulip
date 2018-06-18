@@ -1531,6 +1531,7 @@ blockquote p {
 #searchbox {
     width: 100%;
     height: 40px;
+    border-right: 1px solid #e0e0e0;
 }
 
 #tab_bar {
@@ -1845,7 +1846,6 @@ nav a .no-style {
     width: calc(100% - 66px);
     float: none;
     overflow: hidden;
-    border-right: 1px solid hsl(0, 0%, 87.8%);
     height: 40px;
 }
 
@@ -1871,7 +1871,7 @@ nav a .no-style {
 #searchbox .search_button[disabled]:hover {
     position: relative;
     background: none;
-    border-right: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
     height: 40px;
     padding: 4px;
     color: hsl(0, 0%, 80%);
