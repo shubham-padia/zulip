@@ -1801,8 +1801,7 @@ blockquote p {
 
 #searchbox .input-append {
     position: relative;
-    width: calc(100% - 5px);
-    float: right;
+    width: calc(100% - 28px);
 }
 
 nav .column-left {
@@ -1841,8 +1840,9 @@ nav a .no-style {
 }
 
 .navbar-search {
+    display: inline-block;
     margin-top: 0px;
-    width: auto;
+    width: calc(100% - 66px);
     float: none;
     overflow: hidden;
     border-right: 1px solid hsl(0, 0%, 87.8%);
@@ -1869,14 +1869,10 @@ nav a .no-style {
 
 #searchbox .search_button,
 #searchbox .search_button[disabled]:hover {
-    position: absolute;
-    right: 2px;
-    top: 6px;
+    position: relative;
     background: none;
-    border-radius: 0px;
-    border: none;
-    height: 30px;
-    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    height: 40px;
     padding: 4px;
     color: hsl(0, 0%, 80%);
     font-size: 18px;
@@ -1885,6 +1881,7 @@ nav a .no-style {
     -moz-box-shadow: none;
     text-shadow: none;
     z-index: 5;
+    float: right;
 }
 
 #searchbox .search_button:hover {
