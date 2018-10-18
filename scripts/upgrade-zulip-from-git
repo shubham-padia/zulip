@@ -1,29 +1,21 @@
 #!/usr/bin/env python3
 import os
-import configparser
 import sys
 import subprocess
 import logging
 import time
 
-config_file = configparser.RawConfigParser()
-config_file.read("/etc/zulip/zulip.conf")
 LOCAL_GIT_CACHE_DIR = '/srv/zulip.git'
-
-try:
-    git_url = config_file.get('deployment', 'git_repo_url')
-except (configparser.NoSectionError, configparser.NoOptionError):
-    git_url = "https://github.com/zulip/zulip.git"
-try:
-    deploy_options = config_file.get('deployment', 'deploy_options').strip().split()
-except (configparser.NoSectionError, configparser.NoOptionError):
-    deploy_options = []
 
 os.environ["PYTHONUNBUFFERED"] = "y"
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from scripts.lib.zulip_tools import DEPLOYMENTS_DIR, FAIL, WARNING, ENDC, make_deploy_path, \
-    get_deployment_lock, release_deployment_lock, su_to_zulip
+    get_deployment_lock, release_deployment_lock, su_to_zulip, get_upgrade_options_from_config
+
+upgrade_options = get_upgrade_options_from_config()
+git_url = upgrade_options['git_url']
+deploy_options = upgrade_options['deploy_options']
 
 logging.Formatter.converter = time.gmtime
 logging.basicConfig(format="%(asctime)s upgrade-zulip-from-git: %(message)s",

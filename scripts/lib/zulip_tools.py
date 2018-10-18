@@ -14,6 +14,7 @@ import sys
 import time
 import json
 import uuid
+import configparser
 
 if False:
     from typing import Sequence, Set, Any, Dict, List
@@ -359,3 +360,13 @@ def file_or_package_hash_updated(paths, hash_name, is_force, package_versions=[]
             hash_file.write(new_hash)
             return True
     return False
+
+def get_upgrade_options_from_config():
+    # type: () -> Dict[str, Any]
+    config_file = configparser.RawConfigParser()
+    config_file.read("/etc/zulip/zulip.conf")
+
+    git_url = config_file.get('deployment', 'git_repo_url', fallback="https://github.com/zulip/zulip.git")
+    deploy_options = config_file.get('deployment', 'deploy_options', fallback="").strip().split()
+
+    return {'git_url': git_url, 'deploy_options': deploy_options}
