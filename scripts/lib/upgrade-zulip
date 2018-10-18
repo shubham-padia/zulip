@@ -11,7 +11,7 @@ os.environ["PYTHONUNBUFFERED"] = "y"
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..'))
 from scripts.lib.zulip_tools import DEPLOYMENTS_DIR, FAIL, WARNING, ENDC, \
-    su_to_zulip, get_deployment_lock, release_deployment_lock
+    su_to_zulip, get_deployment_lock, release_deployment_lock, get_upgrade_options_from_config
 
 logging.Formatter.converter = time.gmtime
 logging.basicConfig(format="%(asctime)s upgrade-zulip: %(message)s",
@@ -29,6 +29,9 @@ tarball_path = sys.argv[1]
 
 error_rerun_script = "%s/current/scripts/upgrade-zulip %s" % (DEPLOYMENTS_DIR, tarball_path)
 get_deployment_lock(error_rerun_script)
+
+upgrade_options = get_upgrade_options_from_config()
+deploy_options = upgrade_options["deploy_options"]
 
 try:
     # Copy the release tarball to an archival path that's readable by
@@ -51,6 +54,7 @@ try:
     # version is much better for fixing bugs in the upgrade process).
     deploy_path = deploy_path.strip()
     os.chdir(deploy_path)
-    subprocess.check_call([os.path.abspath("./scripts/lib/upgrade-zulip-stage-2"), deploy_path])
+    subprocess.check_call([os.path.join(deploy_path, "scripts", "lib", "upgrade-zulip-stage-2"),
+                           deploy_path] + deploy_options)
 finally:
     release_deployment_lock()
