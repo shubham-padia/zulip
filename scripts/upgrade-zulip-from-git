@@ -16,6 +16,7 @@ from scripts.lib.zulip_tools import DEPLOYMENTS_DIR, FAIL, WARNING, ENDC, make_d
 upgrade_options = get_upgrade_options_from_config()
 git_url = upgrade_options['git_url']
 deploy_options = upgrade_options['deploy_options']
+print(git_url, deploy_options)
 
 logging.Formatter.converter = time.gmtime
 logging.basicConfig(format="%(asctime)s upgrade-zulip-from-git: %(message)s",
