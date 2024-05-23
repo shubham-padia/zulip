@@ -14,6 +14,8 @@ END_TABBED_SECTION_REGEX = re.compile(r"^\{end_tabs\}$")
 TAB_CONTENT_REGEX = re.compile(r"^\{tab\|([^}]+)\}$")
 
 TABBED_SECTION_TEMPLATE = """
+import {{ Tabs, TabItem }} from '@astrojs/starlight/components';
+
 <Tabs>
 {blocks}
 </Tabs>

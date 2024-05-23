@@ -20,6 +20,7 @@ import zerver.lib.markdown.help_emoticon_translations_table
 import zerver.lib.markdown.help_relative_links
 import zerver.lib.markdown.help_settings_links
 import zerver.lib.markdown.include
+import zerver.lib.markdown.include_preprocessor
 import zerver.lib.markdown.nested_code_blocks
 import zerver.lib.markdown.static
 import zerver.lib.markdown.tabbed_sections
@@ -116,21 +117,21 @@ def convert_to_mdx(self, source: str) -> str:
         for prep in self.preprocessors:
             self.lines = prep.run(self.lines)
         
-        # return "\n".join(self.lines)
+        return "\n".join(self.lines)
 
-        # Parse the high-level elements.
-        root = self.parser.parseDocument(self.lines).getroot()
-        #MAYBE WE NEED TO CONVERT IN BACK TO MARKDOWN USING MARKDOWNIFY
-        print(self.parser.parseDocument(self.lines).write('test.xml'))
-       # return root
+    #     # Parse the high-level elements.
+    #     root = self.parser.parseDocument(self.lines).getroot()
+    #     #MAYBE WE NEED TO CONVERT IN BACK TO MARKDOWN USING MARKDOWNIFY
+    #     print(self.parser.parseDocument(self.lines).write('test.xml'))
+    #    # return root
 
         # Run the tree-processors
-        for treeprocessor in self.treeprocessors:
-            newRoot = treeprocessor.run(root)
-            if newRoot is not None:
-                root = newRoot
+        # for treeprocessor in self.treeprocessors:
+        #     newRoot = treeprocessor.run(root)
+        #     if newRoot is not None:
+        #         root = newRoot
     
-        return root
+        # return root
 
         # # Serialize _properly_.  Strip top-level tags.
         output = self.serializer(root)
@@ -229,6 +230,8 @@ def render_markdown_path(
             base_path="templates/zerver/integrations/include/"
         )
     elif help_center:
+        pre_macro_extension = zerver.lib.markdown.include_preprocessor.makeExtension(base_path="help/include/")
+        extensions = [pre_macro_extension, *extensions]
         md_macro_extension = zerver.lib.markdown.include.makeExtension(base_path="help/include/")
     else:
         md_macro_extension = zerver.lib.markdown.include.makeExtension(
@@ -251,7 +254,7 @@ def render_markdown_path(
     API_ENDPOINT_NAME = context.get("API_ENDPOINT_NAME", "") if context is not None else ""
     markdown_string = markdown_string.replace("API_ENDPOINT_NAME", API_ENDPOINT_NAME)
     print('yay')
-    print(md_engine.convert_to_mdx(markdown_string).items())
+    print(md_engine.convert_to_mdx(markdown_string))
     print('nay')
     html = md_engine.convert(markdown_string)
     if context is None:

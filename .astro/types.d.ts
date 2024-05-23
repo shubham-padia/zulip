@@ -136,6 +136,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
+"include/select-channel-view-subscribers.md": {
+	id: "include/select-channel-view-subscribers.md";
+  slug: "include/select-channel-view-subscribers";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "index.md": {
 	id: "index.md";
   slug: "index";

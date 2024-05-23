@@ -1,7 +1,7 @@
 ---
 title: View channel subscribers
 description: Learn more about the project I’m working on.
----
+---;
 
 Who is subscribed to a channel determines who receives the messages sent there.
 All non-[guest](/help/guest-users) users can view public channels and subscribe
@@ -9,51 +9,53 @@ themselves. Organization administrators can
 [configure](/help/configure-who-can-invite-to-channels) who can subscribe and
 unsubscribe other users to channels.
 
-#### View channel subscribers
-
-import { Tabs, TabItem } from '@astrojs/starlight/components';
-import { Aside } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
-import ViewChannelSubscribers from 'include/select-channel-view-subscribers.md';
-
-
+## View channel subscribers
 
 <Tabs>
-	<TabItem label="Via stream settings">
-	1. Click on the **gear** (<Icon name="setting" />) icon in
-   	the upper right corner of the web or desktop app.
+<TabItem label="via-channel-settings">
 
-	1. Select <i class="zulip-icon zulip-icon-hash"></i> **Channel settings**.
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
 
-	1. Click All streams in the upper left.
+1. Select <i class="zulip-icon zulip-icon-hash"></i> **Channel settings**.
 
-	1. Select a channel.
+1. Click [All channels](/#channels/all) in the upper left.
 
-	<ViewChannelSubscribers />
 
-	</TabItem>
 
-	<TabItem label="Via right sidebar">
-		1. Click on a channel in the left sidebar.
+1. Select a channel.
 
-	1. View subscribers in the **In this channel** section in the right sidebar. If
-	the section is collapsed, click **In this channel** to reveal it.
 
-	<Aside type="tip">
+1. Select the **Subscribers** tab on the right.
 
-		To see the full list of subscribers for a channel that has more than 600
-		people subscribed, scroll to the bottom of the **In this channel** section,
-		and click **View all subscribers**.
-	
-	</Aside>
 
-	</TabItem>
+
+
+
+!!! tip ""
+
+    You can also hover over a channel in the left sidebar, click on the
+    **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>), and
+    select **Channel settings** to access the **Subscribers** tab.
+
+</TabItem>
+<TabItem label="via-right-sidebar">
+
+1. Click on a channel in the left sidebar.
+
+1. View subscribers in the **In this channel** section in the right sidebar. If
+   the section is collapsed, click **In this channel** to reveal it.
+
+!!! tip ""
+
+    To see the full list of subscribers for a channel that has more than 600
+    people subscribed, scroll to the bottom of the **In this channel** section,
+    and click **View all subscribers**.
+
+</TabItem>
 </Tabs>
 
-
-
-
-#### Related articles
+## Related articles
 
 * [Introduction to channels](/help/introduction-to-channels)
 * [Unsubscribe from a channel](/help/unsubscribe-from-a-channel)
