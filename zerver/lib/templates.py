@@ -75,6 +75,87 @@ docs_without_macros = [
     "incoming-webhooks-walkthrough.md",
 ]
 
+def convert_to_mdx(self, source: str) -> str:
+        """
+        Convert a Markdown string to a string in the specified output format.
+
+        Arguments:
+            source: Markdown formatted text as Unicode or ASCII string.
+
+        Returns:
+            A string in the specified output format.
+
+        Markdown parsing takes place in five steps:
+
+        1. A bunch of [`preprocessors`][markdown.preprocessors] munge the input text.
+        2. A [`BlockParser`][markdown.blockparser.BlockParser] parses the high-level structural elements of the
+           pre-processed text into an [`ElementTree`][xml.etree.ElementTree.ElementTree] object.
+        3. A bunch of [`treeprocessors`][markdown.treeprocessors] are run against the
+           [`ElementTree`][xml.etree.ElementTree.ElementTree] object. One such `treeprocessor`
+           ([`markdown.treeprocessors.InlineProcessor`][]) runs [`inlinepatterns`][markdown.inlinepatterns]
+           against the [`ElementTree`][xml.etree.ElementTree.ElementTree] object, parsing inline markup.
+        4. Some [`postprocessors`][markdown.postprocessors] are run against the text after the
+           [`ElementTree`][xml.etree.ElementTree.ElementTree] object has been serialized into text.
+        5. The output is returned as a string.
+
+        """
+
+        # Fix up the source text
+        if not source.strip():
+            return ''  # a blank Unicode string
+
+        try:
+            source = str(source)
+        except UnicodeDecodeError as e:  # pragma: no cover
+            # Customize error message while maintaining original traceback
+            e.reason += '. -- Note: Markdown only accepts Unicode input!'
+            raise
+
+        # Split into lines and run the line preprocessors.
+        self.lines = source.split("\n")
+        for prep in self.preprocessors:
+            self.lines = prep.run(self.lines)
+        
+        # return "\n".join(self.lines)
+
+        # Parse the high-level elements.
+        root = self.parser.parseDocument(self.lines).getroot()
+        #MAYBE WE NEED TO CONVERT IN BACK TO MARKDOWN USING MARKDOWNIFY
+        print(self.parser.parseDocument(self.lines).write('test.xml'))
+       # return root
+
+        # Run the tree-processors
+        for treeprocessor in self.treeprocessors:
+            newRoot = treeprocessor.run(root)
+            if newRoot is not None:
+                root = newRoot
+    
+        return root
+
+        # # Serialize _properly_.  Strip top-level tags.
+        output = self.serializer(root)
+        # if self.stripTopLevelTags:
+        #     try:
+        #         start = output.index(
+        #             '<%s>' % self.doc_tag) + len(self.doc_tag) + 2
+        #         end = output.rindex('</%s>' % self.doc_tag)
+        #         output = output[start:end].strip()
+        #     except ValueError as e:  # pragma: no cover
+        #         if output.strip().endswith('<%s />' % self.doc_tag):
+        #             # We have an empty document
+        #             output = ''
+        #         else:
+        #             # We have a serious problem
+        #             raise ValueError('Markdown failed to strip top-level '
+        #                              'tags. Document=%r' % output.strip()) from e
+
+        # # Run the text post-processors
+        # for pp in self.postprocessors:
+        #     output = pp.run(output)
+
+        # return output.strip()
+
+markdown.Markdown.convert_to_mdx = convert_to_mdx
 
 # render_markdown_path is passed a context dictionary (unhashable), which
 # results in the calls not being cached. To work around this, we convert the
@@ -169,7 +250,9 @@ def render_markdown_path(
 
     API_ENDPOINT_NAME = context.get("API_ENDPOINT_NAME", "") if context is not None else ""
     markdown_string = markdown_string.replace("API_ENDPOINT_NAME", API_ENDPOINT_NAME)
-
+    print('yay')
+    print(md_engine.convert_to_mdx(markdown_string).items())
+    print('nay')
     html = md_engine.convert(markdown_string)
     if context is None:
         return mark_safe(html)  # noqa: S308

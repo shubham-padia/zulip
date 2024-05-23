@@ -1,0 +1,14 @@
+<div><h1>View channel subscribers</h1><p>Who is subscribed to a channel determines who receives the messages sent there.
+All non-[guest](/help/guest-users) users can view public channels and subscribe
+themselves. Organization administrators can
+[configure](/help/configure-who-can-invite-to-channels) who can subscribe and
+unsubscribe other users to channels.</p><h2>View channel subscribers</h2><p>&lt;Tabs&gt;
+&lt;TabItem label="via-channel-settings"&gt;</p><ol><li><p>Click on the **gear** (&lt;i class="zulip-icon zulip-icon-gear"&gt;&lt;/i&gt;) icon in
+   the upper right corner of the web or desktop app.</p></li><li><p>Select &lt;i class="zulip-icon zulip-icon-hash"&gt;&lt;/i&gt; **Channel settings**.</p></li><li><p>Click [All channels](/#channels/all) in the upper left.</p></li><li><p>Select a channel.</p></li><li><p>Select the **Subscribers** tab on the right.</p></li></ol><div class="admonition tip"><p>You can also hover over a channel in the left sidebar, click on the
+**ellipsis** (&lt;i class="zulip-icon zulip-icon-more-vertical"&gt;&lt;/i&gt;), and
+select **Channel settings** to access the **Subscribers** tab.</p></div><p>&lt;/TabItem&gt;
+&lt;TabItem label="via-right-sidebar"&gt;</p><ol><li><p>Click on a channel in the left sidebar.</p></li><li><p>View subscribers in the **In this channel** section in the right sidebar. If
+   the section is collapsed, click **In this channel** to reveal it.</p></li></ol><div class="admonition tip"><p>To see the full list of subscribers for a channel that has more than 600
+people subscribed, scroll to the bottom of the **In this channel** section,
+and click **View all subscribers**.</p></div><p>&lt;/TabItem&gt;
+&lt;/Tabs&gt;</p><h2>Related articles</h2><ul><li>[Introduction to channels](/help/introduction-to-channels)</li><li>[Unsubscribe from a channel](/help/unsubscribe-from-a-channel)</li><li>[Manage a user's channel subscriptions](/help/manage-user-channel-subscriptions)</li><li>[Add or remove users from a channel](/help/add-or-remove-users-from-a-channel)</li><li>[Set default channels for new users](/help/set-default-channels-for-new-users)</li></ul></div>

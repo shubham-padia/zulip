@@ -6,8 +6,7 @@ from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 from typing_extensions import override
 
-from zerver.lib.markdown.priorities import PREPROCESSOR_PRIORITIES
-from zerver.lib.markdown.help_relative_links import RelativeLinks
+from zerver.lib.markdown.priorities import PREPROCESSOR_PRIORITES
 
 START_TABBED_SECTION_REGEX = re.compile(r"^\{start_tabs\}$")
 END_TABBED_SECTION_REGEX = re.compile(r"^\{end_tabs\}$")
@@ -125,7 +124,7 @@ class TabbedSectionsGenerator(Extension):
         md.preprocessors.register(
             TabbedSectionsPreprocessor(md, self.getConfigs()),
             "tabbed_sections",
-            PREPROCESSOR_PRIORITIES["tabbed_sections"],
+            PREPROCESSOR_PRIORITES["tabbed_sections"],
         )
 
 
@@ -136,6 +135,10 @@ class TabbedSectionsPreprocessor(Preprocessor):
     @override
     def run(self, lines: List[str]) -> List[str]:
         tab_section = self.parse_tabs(lines)
+
+        print('start')
+        print(lines)
+        print('end')
         while tab_section:
             if "tabs" in tab_section:
                 tab_class = "has-tabs"
@@ -276,9 +279,6 @@ def run():
     md_engine = markdown.Markdown
     t = TabbedSectionsPreprocessor(md_engine, {})
     lines = TabbedSectionsPreprocessor.run(t, lines)
-    relativeLinks = RelativeLinks(md_engine)
-    lines = relativeLinks.run(lines)
-    # md_macro_extension = zerver.lib.markdown.include.makeExtension(base_path="help/include/")
     print('YOOOOOOOOOOOOOOOOOOO')
     print("\n".join(lines))
     print('ENDDDDDDDDDDDDdDDDDDDDDD')

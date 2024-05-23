@@ -6,17 +6,19 @@ from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor
 from typing_extensions import override
 
-from zerver.lib.markdown.priorities import PREPROCESSOR_PRIORITIES
-from zerver.lib.markdown.help_relative_links import RelativeLinks
+from zerver.lib.markdown.priorities import PREPROCESSOR_PRIORITES
 
 START_TABBED_SECTION_REGEX = re.compile(r"^\{start_tabs\}$")
 END_TABBED_SECTION_REGEX = re.compile(r"^\{end_tabs\}$")
 TAB_CONTENT_REGEX = re.compile(r"^\{tab\|([^}]+)\}$")
 
 TABBED_SECTION_TEMPLATE = """
-<Tabs>
+<div class="tabbed-section {tab_class}" markdown="1">
+{nav_bar}
+<div class="blocks">
 {blocks}
-</Tabs>
+</div>
+</div>
 """.strip()
 
 NAV_BAR_TEMPLATE = """
@@ -30,9 +32,9 @@ NAV_LIST_ITEM_TEMPLATE = """
 """.strip()
 
 DIV_TAB_CONTENT_TEMPLATE = """
-<TabItem label="{data_tab_key}">
+<div data-tab-key="{data_tab_key}" markdown="1">
 {content}
-</TabItem>
+</div>
 """.strip()
 
 # If adding new entries here, also check if you need to update
@@ -118,19 +120,8 @@ TAB_SECTION_LABELS = {
     "for-yourself": "For yourself",
 }
 
-
-class TabbedSectionsGenerator(Extension):
-    @override
-    def extendMarkdown(self, md: markdown.Markdown) -> None:
-        md.preprocessors.register(
-            TabbedSectionsPreprocessor(md, self.getConfigs()),
-            "tabbed_sections",
-            PREPROCESSOR_PRIORITIES["tabbed_sections"],
-        )
-
-
 class TabbedSectionsPreprocessor(Preprocessor):
-    def __init__(self, md: markdown.Markdown, config: Mapping[str, Any]) -> None:
+    def __init__(self, md: markdown.Markdown) -> None:
         super().__init__(md)
 
     @override
@@ -147,9 +138,10 @@ class TabbedSectionsPreprocessor(Preprocessor):
                         "start": tab_section["start_tabs_index"],
                     }
                 ]
+            nav_bar = self.generate_nav_bar(tab_section)
             content_blocks = self.generate_content_blocks(tab_section, lines)
             rendered_tabs = TABBED_SECTION_TEMPLATE.format(
-                blocks=content_blocks
+                tab_class=tab_class, nav_bar=nav_bar, blocks=content_blocks
             )
 
             start = tab_section["start_tabs_index"]
@@ -215,72 +207,3 @@ class TabbedSectionsPreprocessor(Preprocessor):
                 block["end_tabs_index"] = index
                 break
         return block
-
-
-def makeExtension(*args: Any, **kwargs: str) -> TabbedSectionsGenerator:
-    return TabbedSectionsGenerator(**kwargs)
-
-from zerver.lib.markdown.tabbed_sections import TabbedSectionsPreprocessor
-
-
-test_markdown = '''
-# View channel subscribers
-
-Who is subscribed to a channel determines who receives the messages sent there.
-All non-[guest](/help/guest-users) users can view public channels and subscribe
-themselves. Organization administrators can
-[configure](/help/configure-who-can-invite-to-channels) who can subscribe and
-unsubscribe other users to channels.
-
-## View channel subscribers
-
-{start_tabs}
-
-{tab|via-channel-settings}
-
-{relative|channel|all}
-
-1. Select a channel.
-
-{!select-channel-view-subscribers.md!}
-
-{!channel-menu-subscribers-tab-tip.md!}
-
-{tab|via-right-sidebar}
-
-1. Click on a channel in the left sidebar.
-
-1. View subscribers in the **In this channel** section in the right sidebar. If
-   the section is collapsed, click **In this channel** to reveal it.
-
-!!! tip ""
-
-    To see the full list of subscribers for a channel that has more than 600
-    people subscribed, scroll to the bottom of the **In this channel** section,
-    and click **View all subscribers**.
-
-{end_tabs}
-
-## Related articles
-
-* [Introduction to channels](/help/introduction-to-channels)
-* [Unsubscribe from a channel](/help/unsubscribe-from-a-channel)
-* [Manage a user's channel subscriptions](/help/manage-user-channel-subscriptions)
-* [Add or remove users from a channel](/help/add-or-remove-users-from-a-channel)
-* [Set default channels for new users](/help/set-default-channels-for-new-users)
-
-'''
-
-def run():
-    lines = test_markdown.split("\n")
-    md_engine = markdown.Markdown
-    t = TabbedSectionsPreprocessor(md_engine, {})
-    lines = TabbedSectionsPreprocessor.run(t, lines)
-    relativeLinks = RelativeLinks(md_engine)
-    lines = relativeLinks.run(lines)
-    # md_macro_extension = zerver.lib.markdown.include.makeExtension(base_path="help/include/")
-    print('YOOOOOOOOOOOOOOOOOOO')
-    print("\n".join(lines))
-    print('ENDDDDDDDDDDDDdDDDDDDDDD')
-
-run()

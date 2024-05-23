@@ -19,6 +19,17 @@ class IncludeExtension(Extension):
 
     @override
     def extendMarkdown(self, md: Markdown) -> None:
+        # md.parser.blockprocessors.deregister('empty')
+        # md.parser.blockprocessors.deregister('indent')
+        # md.parser.blockprocessors.deregister('code')
+        # md.parser.blockprocessors.deregister( 'hashheader')
+        # md.parser.blockprocessors.deregister('setextheader')
+        # md.parser.blockprocessors.deregister('hr')
+        # md.parser.blockprocessors.deregister( 'olist')
+        # md.parser.blockprocessors.deregister('ulist')
+        # md.parser.blockprocessors.deregister( 'quote')
+        # md.parser.blockprocessors.deregister( 'reference')
+        # md.parser.blockprocessors.deregister('paragraph')
         md.parser.blockprocessors.register(
             IncludeBlockProcessor(md.parser, self.base_path),
             "include",
