@@ -1,0 +1,523 @@
+---
+title: getting-your-organization-started-with-zulip.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Setting up your organization
+
+Welcome to Zulip! This page will guide you through trying out Zulip,
+migrating your organization from other team chat tools (if needed),
+getting everything set up, and inviting others to join.
+
+If you are joining an existing organization, we recommend checking out
+our guide to [Getting started with Zulip][getting-started].
+
+[getting-started]: /help/getting-started-with-zulip
+
+If you encounter any problems as you're getting started, please drop
+by our [friendly development community](/development-community/) and let
+us know!
+
+## Trying out Zulip
+
+
+You can start by reading about how [Zulip’s](/hello/) unique
+topic-based threading [combines the best of email and
+chat](/why-zulip/) to make [remote work](https://zulip.com/for/business/) productive
+and delightful.
+
+It's also easy to try out Zulip for yourself.
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. **Check out the Zulip app**. You can:
+
+    - [View the Zulip development community](https://zulip.com/try-zulip/),
+      where hundreds of participants collaborate to improve Zulip. Many parts of
+      the community are open for [public access](/help/public-access-option), so
+      you can start exploring without creating an account.
+
+    - [See how Zulip is being used](https://zulip.com/communities/) in open
+      organizations that have opted in to be listed in the [Zulip communities
+      directory](/help/communities-directory).
+
+1. [Create a Zulip Cloud organization](https://zulip.com/new/) for free in just
+   a few minutes. This is a great way to explore Zulip even if you plan to
+   [self-host](https://zulip.com/self-hosting/).
+
+1. [Invite your teammates](/help/invite-users-to-join) to explore Zulip with you.
+   They will have a variety of perspectives on what's important in a chat app.
+
+1. **Run a week-long Zulip trial** with your team, without using any other chat tools. This
+   is the only way to truly experience how a new chat app will help your team
+   communicate. You can:
+
+    - Customize [organization settings](/help/customize-organization-settings)
+      and [settings for new users](/help/customize-settings-for-new-users), but
+      plan to adjust the details as you go.
+
+    - [Create](/help/create-channels) your initial
+      [channels](/help/introduction-to-channels), including a dedicated channel for
+      questions and feedback about using Zulip.
+
+    - Educate others about how to use Zulip's [topics](/help/introduction-to-topics),
+      and how to [move](/help/move-content-to-another-topic) any messages that
+      belong elsewhere.
+
+    - [Set up integrations](/help/set-up-integrations) so that your team can
+      experience all their regular workflows inside the Zulip app.
+
+</TabItem>
+</Tabs>
+
+
+
+
+## Choosing between Zulip Cloud and self-hosting
+
+
+Whether [signing up for Zulip Cloud](https://zulip.com/new/) or [self-hosting
+Zulip](https://zulip.com/self-hosting/) is the right choice for you depends on
+the needs of your organization.
+
+If you aren’t sure what you need, our high quality export and import tools
+([cloud][export-cloud], [self-hosted][export-self-hosted]) ensure you can always
+move from our hosting to yours (and back). No matter which option you go with,
+free or heavily discounted pricing is available for most non-business uses.
+
+[export-cloud]: /help/export-your-organization
+[export-self-hosted]: https://zulip.readthedocs.io/en/stable/production/export-and-import.html
+
+
+
+
+### Advantages of Zulip Cloud
+
+
+* Simple managed solution, with no setup or maintenance
+  overhead. [Sign up](https://zulip.com/new/) with just a few clicks.
+* Always updated to the latest version of Zulip.
+* Anyone can [start with Zulip Cloud Free](https://zulip.com/new/).
+
+
+
+
+### Advantages of self-hosting Zulip
+
+
+* All [self-hosted plans](https://zulip.com/plans/#self-hosted) offer the same
+  [100% open-source software] [zulip-github]. Organizations that do not require
+  support with their installation can always use Zulip for free with no
+  limitations.
+
+* Retain full control over your data and simplify compliance by self-hosting
+  Zulip behind your firewall.
+
+* We work hard to make it easy to [install][install-zulip], [back
+  up][back-up-zulip], and [maintain][maintain-zulip] a self-hosted
+  Zulip server. Self-host Zulip directly on Ubuntu or Debian Linux, in
+  <a href="https://github.com/zulip/docker-zulip">Docker</a>, or with
+  prebuilt images for <a
+  href="https://marketplace.digitalocean.com/apps/zulip">Digital
+  Ocean</a> and <a
+  href="https://render.com/docs/deploy-zulip">Render</a>.
+
+* Customize Zulip for all your needs. It's easy to develop and maintain [custom
+  integrations](/api/incoming-webhooks-overview) and [features][modify-zulip].
+
+Learn more about [self-hosting Zulip](https://zulip.com/self-hosting/).
+
+[zulip-github]: https://github.com/zulip/zulip#readme
+[install-zulip]: https://zulip.readthedocs.io/en/stable/production/install.html
+[back-up-zulip]: https://zulip.readthedocs.io/en/stable/production/export-and-import.html#backups
+[maintain-zulip]: https://zulip.readthedocs.io/en/stable/production/upgrade.html
+[modify-zulip]: https://zulip.readthedocs.io/en/stable/production/modify.html
+
+
+
+
+## Migrating from other chat tools
+
+
+If your organization is moving to Zulip from another chat tool, you can use
+Zulip's tools to import your data, including users, channels, messages, and
+more. Follow the detailed import guides:
+
+* [Import from Slack](/help/import-from-slack). Zulip's [Slack-compatible
+  incoming webhook](https://zulip.com/integrations/doc/slack_incoming) also
+  makes it easy to migrate any integrations.
+* [Import from Mattermost](/help/import-from-mattermost)
+* [Import from Rocket.Chat](/help/import-from-rocketchat)
+
+!!! warn ""
+
+    **You can only import a workspace as a new Zulip organization.** Your imported
+    message history cannot be added into an existing Zulip organization.
+
+
+
+
+## Create your organization profile
+
+
+The information in your organization profile is displayed on your organization's
+registration and login pages, and (optionally) in the [communities
+directory](/help/communities-directory). Your **organization profile picture**
+is also used for [switching between
+organizations](/help/switching-between-organizations) in the Desktop app.
+
+
+
+
+### Edit organization profile
+
+
+!!! tip ""
+
+    The **organization description** supports [full Markdown formatting][markdown-formatting],
+    including **bold**/*italic*, links, lists, and more.
+
+!!! tip ""
+    Your **organization profile picture** should be a square image. It will be displayed at
+    100×100 pixels, or more on high-resolution displays.
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization profile**.
+
+
+
+1. Edit your organization **name**, **type**, **description**, and
+**profile picture**.
+
+1. *(optional)* Click **Preview organization profile** to see a preview of your
+   organization's login page in a new browser tab.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+[markdown-formatting]: /help/format-your-message-using-markdown
+
+
+
+
+### Add a wide logo
+
+
+
+!!! warn ""
+
+    Zulip Cloud customers who wish to use this feature must upgrade to
+    [Zulip Cloud Standard](https://zulip.com/plans/) or [Zulip Cloud
+    Plus](https://zulip.com/plans/).
+
+
+
+
+You can customize the logo users see in the top left corner
+of the Zulip app. For best results:
+
+- The logo should be a wide rectangle image with an 8:1 width to height ratio.
+  It will be displayed at 200×25 pixels, or more on high-resolution displays.
+
+- Make sure your logo has a transparent background, and trim any bordering
+  whitespace.
+
+To upload a logo:
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization profile**.
+
+
+
+1. Under **Organization logo**, upload a new logo.
+
+</TabItem>
+</Tabs>
+
+Make sure to test the logo in both light theme and [dark theme](/help/dark-theme).
+
+
+
+
+## Customize organization settings
+
+
+
+Review the settings for your organization to set everything up how you
+want it to be.
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select **<i class="zulip-icon zulip-icon-building"></i> Organization settings**.
+
+
+
+1. Click on the **Organization settings** and **Organization
+   permissions** tabs, as well as any others that are of interest.
+
+</TabItem>
+</Tabs>
+
+
+
+
+A few settings to highlight:
+
+* Decide [who can invite new users][who-can-invite], or whether
+  [anyone can join without an invitation][who-can-join].
+
+* [Set visibility for users' email addresses][email-address-visibility].
+
+* If your organization uses a programming language, set the [default
+  language for code blocks][default-code-block-language]. Also
+  consider setting up [code playgrounds][code-playgrounds].
+
+* If your organization uses code repositories, [set up
+  linkifiers](/help/add-a-custom-linkifier) to make it easy to link to
+  issues (e.g. just by typing #1234 for issue 1234).
+
+* [Add custom emoji](/help/custom-emoji), including your organization's logo.
+
+For many other settings, e.g., [message][message-editing-permissions] and
+[topic][topic-editing-permissions] editing permissions, you can experience how
+Zulip works for your organization before deciding what settings are best for
+you.
+
+[message-editing-permissions]: /help/restrict-message-editing-and-deletion
+[topic-editing-permissions]: /help/restrict-moving-messages
+[default-code-block-language]: /help/code-blocks#default-code-block-language
+[code-playgrounds]: /help/code-blocks#code-playgrounds
+[email-address-visibility]: /help/configure-email-visibility
+[who-can-invite]: /help/restrict-account-creation#change-who-can-send-invitations
+[who-can-join]: /help/restrict-account-creation#set-whether-invitations-are-required-to-join
+
+
+
+
+## Create channels
+
+
+
+Channels organize conversations based on who needs to see them. For example, it
+is common to have a channel for each team in an organization. Because Zulip
+further organizes messages into conversations labeled with
+[topics](/help/introduction-to-topics), there is generally no need to create
+dedicated channels for specific projects.
+
+
+
+
+We recommend setting up some channels before inviting other users to
+join Zulip, so that you can [automatically subscribe
+everyone](/help/set-default-channels-for-new-users) to the right set of
+channels.
+
+If you later create additional channels, no worries! You can always add
+a group of users or all the members of another channel to a new channel.
+
+!!! tip ""
+    Add clear descriptions to your channels, especially public channels.
+
+
+
+
+### How to create a channel
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-hash"></i> **Channel settings**.
+
+1. Click **All channels** in the upper left.
+
+
+
+1. Click **Create channel** on the right.
+
+1. Fill out the requested info, and click **Create**.
+
+</TabItem>
+</Tabs>
+
+For more details about channel settings, see [Create a
+channel](/help/create-a-channel#channel-options).
+
+### Tips for creating channels
+
+
+* It's often best to start with just a few channels, and add more as
+  needed. For small teams, you can start with the default channels
+  and go from there.
+
+* For large organizations, we recommend using a consistent naming
+  scheme, like `#marketing/<name>` or `#mk/<name>` for all channels
+  pertaining to the marketing team, `#help/<team name>` for
+  `<team name>`'s internal support channel, etc.
+
+* For open source projects or other volunteer organizations, consider
+  adding default channels like `#announce` for announcements, `#new
+  members` for new members to introduce themselves and be welcomed,
+  and `#help` so that there's a clear place users stopping by with
+  just a single question can post.
+
+
+
+
+## Customize settings for new users
+
+
+Customize settings for new users to get them off to a great start.
+
+* [Add custom profile fields](/help/custom-profile-fields#add-a-custom-profile-field), such as pronouns
+  or job title.
+* [Configure default new user settings][default-user-settings].
+* [Set default channels for new users](/help/set-default-channels-for-new-users).
+* [Set organization language for automated messages and invitation emails][org-lang],
+  if it should be something other than American English.
+
+[org-lang]: /help/configure-organization-language
+[default-user-settings]: /help/configure-default-new-user-settings
+
+
+
+
+## Invite users to join
+
+!!! tip ""
+     Before inviting users, you may want to [delete any test messages][delete-message]
+     or [topics](/help/delete-a-topic).
+
+[delete-message]: /help/delete-a-message#delete-a-message-completely
+
+### How to invite users to join
+
+
+<Tabs>
+<TabItem label="require-invitations">
+
+1. Configure [allowed authentication
+   methods](/help/configure-authentication-methods). By default, Zulip allows
+   logging in via email/password as well as various social authentication
+   providers like Google, GitHub, GitLab, and Apple. Users can [log in with any
+   allowed authentication method][logging-in], regardless of how they signed up.
+
+1. Invite users by [sending email invitations][email-invitations] or
+   sharing a [reusable invite link][invitation-links].
+
+</TabItem>
+<TabItem label="allow-anyone-to-join">
+
+1. Allow users to [join without an invitation][set-if-invitations-required].
+
+1. Configure the appropriate [email domain restrictions][restrict-email-domain]
+   for your organization.
+
+1. Share a link to your registration page, which is
+   https://your-domain.zulipchat.com for Zulip Cloud organizations.
+
+</TabItem>
+</Tabs>
+
+[email-invitations]:/help/invite-new-users#send-email-invitations
+[invitation-links]: /help/invite-new-users#create-a-reusable-invitation-link
+[set-if-invitations-required]: /help/restrict-account-creation#set-whether-invitations-are-required-to-join
+[restrict-email-domain]: /help/restrict-account-creation#configuring-email-domain-restrictions
+[logging-in]: /help/logging-in
+
+
+
+
+To get everyone off to a good start, you may wish to share the guide
+to [Getting started with Zulip](/help/getting-started-with-zulip).
+
+!!! tip ""
+    You can link to your Zulip organization with a [nice badge](/help/linking-to-zulip).
+
+## Create user groups
+
+User groups allow you to [mention](/help/mention-a-user-or-group) multiple
+users at once, [notifying](/help/dm-mention-alert-notifications) them about a message. For example, you may choose to create user groups for teams in your organization.
+
+### How to create a user group
+
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select **<i class="zulip-icon zulip-icon-user-cog"></i> Group settings**.
+
+
+
+1. Click **Create user group** on the right, or click the **plus**
+   (<i class="fa fa-plus"></i>) icon in the upper right.
+
+1. Fill out the requested info, and click **Create** in the bottom right corner
+   of the create user group panel.
+
+!!! warn ""
+
+    **Note**: You will only see the **Create user group** button if you have
+    permission to create user groups.
+
+</TabItem>
+</Tabs>
+
+
+
+
+## Set up integrations
+
+
+Zulip integrates directly with dozens of products, and with hundreds
+more through [Zapier](/integrations/doc/zapier) and
+[IFTTT](/integrations/doc/ifttt).  Popular Zulip integrations include
+[GitHub](/integrations/doc/github), [Jira](/integrations/doc/jira),
+[PagerDuty](/integrations/doc/pagerduty),
+[Sentry](/integrations/doc/sentry) and
+[Twitter](/integrations/doc/twitter).
+
+* The [integrations page](/integrations/) has instructions for
+  integrating with each product.
+* If you don't see an integration you need, you can [request it](/help/request-an-integration).
+* You can also create [custom incoming webhook integrations](/api/incoming-webhooks-overview) using our API.
+* Want to learn more? Read about [Zulip integrations](/help/integrations-overview).
+
+
+
+
+## Further reading
+
+* [Getting started with Zulip](/help/getting-started-with-zulip)
+* [Introduction to topics](/help/introduction-to-topics)
+* [Moderating open organizations](/help/moderating-open-organizations)
+* [Setting up Zulip for a class](/help/setting-up-zulip-for-a-class)
+
+

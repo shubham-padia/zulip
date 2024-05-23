@@ -1,0 +1,67 @@
+---
+title: invite-users-to-join.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Invite users to join
+
+!!! tip ""
+     Before inviting users, you may want to [delete any test messages][delete-message]
+     or [topics](/help/delete-a-topic).
+
+[delete-message]: /help/delete-a-message#delete-a-message-completely
+
+## How to invite users to join
+
+
+<Tabs>
+<TabItem label="require-invitations">
+
+1. Configure [allowed authentication
+   methods](/help/configure-authentication-methods). By default, Zulip allows
+   logging in via email/password as well as various social authentication
+   providers like Google, GitHub, GitLab, and Apple. Users can [log in with any
+   allowed authentication method][logging-in], regardless of how they signed up.
+
+1. Invite users by [sending email invitations][email-invitations] or
+   sharing a [reusable invite link][invitation-links].
+
+</TabItem>
+<TabItem label="allow-anyone-to-join">
+
+1. Allow users to [join without an invitation][set-if-invitations-required].
+
+1. Configure the appropriate [email domain restrictions][restrict-email-domain]
+   for your organization.
+
+1. Share a link to your registration page, which is
+   https://your-domain.zulipchat.com for Zulip Cloud organizations.
+
+</TabItem>
+</Tabs>
+
+[email-invitations]:/help/invite-new-users#send-email-invitations
+[invitation-links]: /help/invite-new-users#create-a-reusable-invitation-link
+[set-if-invitations-required]: /help/restrict-account-creation#set-whether-invitations-are-required-to-join
+[restrict-email-domain]: /help/restrict-account-creation#configuring-email-domain-restrictions
+[logging-in]: /help/logging-in
+
+
+
+
+To get everyone off to a good start, you may wish to share the guide
+to [Getting started with Zulip](/help/getting-started-with-zulip).
+
+!!! tip ""
+    You can link to your Zulip organization with a [nice badge](/help/linking-to-zulip).
+
+## Related articles
+
+* [Setting up your organization](/help/getting-your-organization-started-with-zulip)
+* [Invite new users](/help/invite-new-users)
+* [Restrict account creation](/help/restrict-account-creation)
+* [Set default channels for new users](/help/set-default-channels-for-new-users)
+* [Customize settings for new users](/help/customize-settings-for-new-users)
+* [Getting started with Zulip](/help/getting-started-with-zulip)
+
+

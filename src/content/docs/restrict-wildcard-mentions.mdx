@@ -1,0 +1,48 @@
+---
+title: restrict-wildcard-mentions.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Restrict wildcard mentions
+
+
+!!! warn ""
+
+    This feature is only available to organization owners and administrators.
+
+
+
+
+Organization administrators can configure who is allowed to use [wildcard
+mentions](/help/dm-mention-alert-notifications#wildcard-mentions) that affect a
+large number of users. In particular, an organization can restrict who is
+allowed to use `@all` (and, equivalently, `@everyone` and `@channel`) in channels
+with more than 15 subscribers, and `@topic` in topics with more than 15
+participants.
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization permissions**.
+
+
+
+1. Under **Channel permissions**, configure **Who can notify a large number of
+   users with a wildcard mention**.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [DMs, mentions, and alerts](/help/dm-mention-alert-notifications)
+
+

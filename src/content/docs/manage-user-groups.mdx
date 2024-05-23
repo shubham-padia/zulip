@@ -1,0 +1,243 @@
+---
+title: manage-user-groups.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Manage user groups
+
+
+User groups allow you to [mention](/help/mention-a-user-or-group) multiple users
+at once. When you mention a user group, everyone in the group is
+[notified](/help/dm-mention-alert-notifications) as if they were personally
+mentioned. For example, you may choose to create user groups for teams in your
+organization.
+
+
+
+
+## Create a user group
+
+!!! tip ""
+
+    You can modify the group's name, description, and other settings after it
+    has been created.
+
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select **<i class="zulip-icon zulip-icon-user-cog"></i> Group settings**.
+
+
+
+1. Click **Create user group** on the right, or click the **plus**
+   (<i class="fa fa-plus"></i>) icon in the upper right.
+
+1. Fill out the requested info, and click **Create** in the bottom right corner
+   of the create user group panel.
+
+!!! warn ""
+
+    **Note**: You will only see the **Create user group** button if you have
+    permission to create user groups.
+
+</TabItem>
+</Tabs>
+
+
+
+
+## Change a user group's name or description
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-user-cog"></i> **Group settings**.
+
+1. Click **All groups** in the upper left.
+
+
+
+1. Select a user group.
+
+1. Select the **General** tab on the right.
+
+1. Click the **pencil** (<i class="fa fa-pencil"></i>) icon
+   to the right of the user group, and enter a new name or description.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+## Configure who can mention a user group
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-user-cog"></i> **Group settings**.
+
+1. Click **All groups** in the upper left.
+
+
+
+1. Select a user group.
+
+1. Select the **General** tab on the right.
+
+1. Under **Group permissions**, configure **Who can mention this group**.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+## Add users to a user group
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-user-cog"></i> **Group settings**.
+
+1. Click **All groups** in the upper left.
+
+
+
+1. Select a user group.
+
+1. Select the **Members** tab on the right.
+
+1. Under **Add members**, enter a name or email address. The typeahead
+   will only include users who aren't already members of the group.
+
+1. Click **Add**. Zulip will notify everyone who is added to the group.
+
+!!! tip ""
+
+    To add users in bulk, you can copy members from an
+    existing channel or user group.
+
+</TabItem>
+</Tabs>
+
+## Remove users from a user group
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-user-cog"></i> **Group settings**.
+
+1. Click **All groups** in the upper left.
+
+
+
+1. Select a user group.
+
+1. Select the **Members** tab on the right.
+
+1. Under **Members**, find the user you would like to remove.
+
+1. Click the **Remove** button in that row. Zulip will notify everyone who is
+   removed from the group.
+
+!!! warn ""
+
+    **Note**: If you remove yourself from a user group, you
+    may no longer have permission to modify the user group.
+
+</TabItem>
+</Tabs>
+
+## Delete a user group
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-user-cog"></i> **Group settings**.
+
+1. Click **All groups** in the upper left.
+
+
+
+1. Select a user group.
+
+1. Click the **trash** <i class="fa fa-trash-o"></i> icon near the top right
+   corner of the user group settings panel.
+
+1. Approve by clicking **Confirm**.
+
+!!! warn ""
+
+    **Note**: Deleting a user group cannot be undone by anyone.
+
+</TabItem>
+</Tabs>
+
+## Configure who can create and manage user groups
+
+
+!!! warn ""
+
+    This feature is only available to organization owners and administrators.
+
+
+
+
+By default, [all members](/help/roles-and-permissions) in a Zulip
+organization can create user groups and manage user groups that they
+are a member of. However, you can restrict that ability to specific
+[roles](/help/roles-and-permissions).
+
+Note that administrators and moderators can modify any user group,
+while other organization members can only modify user groups to which
+they belong. Guests cannot modify or create user groups.
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization permissions**.
+
+
+
+1. Under **Other permissions**, configure **Who can create and manage user groups**.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [User groups](/help/user-groups)
+* [Mention a user or group](/help/mention-a-user-or-group)
+* [Create user groups](/help/create-user-groups)
+* [Setting up your organization](/help/getting-your-organization-started-with-zulip)
+* [Roles and permissions](/help/roles-and-permissions)
+
+

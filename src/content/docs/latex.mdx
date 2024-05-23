@@ -1,0 +1,89 @@
+---
+title: latex.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# LaTeX
+
+
+Zulip supports math typesetting powered by [KaTeX](https://katex.org).
+Their [support table](https://katex.org/docs/support_table.html) is a
+helpful resource for checking what's supported or how to express
+something.
+
+
+
+
+## Insert LaTeX formatting
+
+Zulip's compose box has a smart **Math (LaTeX)** (<i class="zulip-icon
+zulip-icon-math"></i>) button, which inserts contextually appropriate LaTeX
+formatting:
+
+- If no text is selected, the button inserts displayed LaTeX (````math`) formatting.
+- If selected text is on one line, the button inserts inline LaTeX (`$$`)
+  formatting.
+- If selected text is on multiple lines, the button inserts displayed LaTeX
+  (````math`) formatting.
+
+<Tabs>
+<TabItem label="via-compose-box-buttons">
+
+1. [Open the compose box](/help/open-the-compose-box).
+
+
+
+
+1. _(optional)_ Select the text you want to format.
+
+1. Click the **Math (LaTeX)** (<i class="zulip-icon zulip-icon-math"></i>) icon at the
+   bottom of the compose box to insert LaTeX formatting.
+
+!!! tip ""
+
+    You can also use the **Math (LaTeX)** (<i class="zulip-icon zulip-icon-math"></i>)
+    icon to remove existing LaTeX formatting from the selected text.
+
+</TabItem>
+<TabItem label="via-markdown">
+
+1. [Open the compose box](/help/open-the-compose-box).
+
+
+
+
+1. To use inline LaTeX, use double dollar signs (`$$`) around the text:
+
+wzxhzdk:1
+
+   To use displayed LaTeX, use triple backticks and the word math
+   (````math`) followed by some text and triple backticks at the end:
+
+wzxhzdk:2
+
+</TabItem>
+</Tabs>
+
+## Examples
+
+
+### What you type
+
+
+wzxhzdk:0
+
+
+### What it looks like
+
+![Markdown LaTeX](/static/images/help/markdown-latex.png)
+
+
+
+
+## Related articles
+
+* [Message formatting](/help/format-your-message-using-markdown)
+* [Preview messages before sending](/help/preview-your-message-before-sending)
+* [Resize the compose box](/help/resize-the-compose-box)
+
+

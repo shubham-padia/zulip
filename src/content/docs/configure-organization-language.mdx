@@ -1,0 +1,80 @@
+---
+title: configure-organization-language.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Organization language for automated messages and invitation emails
+
+
+!!! warn ""
+
+    This feature is only available to organization owners and administrators.
+
+
+
+
+
+Zulip has been translated or partially translated into dozens of
+languages by Zulip's amazing community of volunteer translators.
+You can see which languages Zulip supports [on Transifex][transifex-zulip].
+
+If you'd like to help by contributing as a translator, see the
+[Zulip translation guidelines][translating-zulip] to get started.
+
+[transifex-zulip]: https://explore.transifex.com/zulip/zulip/
+[translating-zulip]: https://zulip.readthedocs.io/en/stable/translating/translating.html
+
+
+
+
+Each user can use Zulip with [their preferred language][user-lang].
+Additionally, if your organization has a primary language other than
+American English, you can set the language used for the organization's
+automated messages and invitation emails. This setting:
+
+* Determines the language used for [automated
+  notices](/help/configure-automated-notices) that are sent to channels, including
+  both the topic name and message content. (Automated messages sent to a single
+  user will use that user's preferred language).
+
+* Determines the language used for outgoing
+  [invitation emails](/help/invite-new-users).
+
+* Is used as the default language for new user accounts when Zulip
+  cannot detect their language preferences from their browser,
+  including all users [created via the Zulip API][api-create-user].
+
+## Configure the organization language
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization settings**.
+
+
+
+1. Under **Automated messages and emails**, change the **Language for
+   automated messages and invitation emails**.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [Change your language][user-lang]
+* [Configure multi-language search](/help/configure-multi-language-search)
+* [Configure default settings for new users](/help/configure-default-new-user-settings)
+* [Configure automated notices](/help/configure-automated-notices)
+
+[api-create-user]: https://zulip.com/api/create-user
+[user-lang]: /help/change-your-language
+
+

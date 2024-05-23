@@ -1,0 +1,61 @@
+---
+title: channel-posting-policy.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Channel posting policy
+
+
+!!! warn ""
+
+    This feature is only available to organization owners and administrators.
+
+
+
+
+By default, anyone who belongs to a channel can also send messages to
+the channel. However, sometimes it's useful to have a channel (often a
+[default channel](/help/set-default-channels-for-new-users)) where only
+certain users can send messages.
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-hash"></i> **Channel settings**.
+
+1. Click **All channels** in the upper left.
+
+
+
+1. Select a channel.
+
+
+1. Select the **General** tab on the right.
+
+
+
+
+1. Under **Channel permissions**, configure **Who can post to the channel**.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+
+!!! warn ""
+
+    **Note**: This sends an automated notice from [notification
+    bot][notification-bot] to the "channel events" topic in the
+    modified channel.
+
+[notification-bot]: /help/configure-automated-notices
+
+
+
+
+

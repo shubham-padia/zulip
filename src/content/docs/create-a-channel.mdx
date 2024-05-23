@@ -1,0 +1,104 @@
+---
+title: create-a-channel.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Create a channel
+
+By default, all users other than guests can create channels. Administrators can
+[restrict the ability to create a channel](/help/configure-who-can-create-channels) to specific
+[roles](/help/roles-and-permissions).
+
+If you are an administrator setting up channels for the first time, check out our
+[guide to setting up channels for a new organization](/help/create-channels).
+
+## Create a channel
+
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select **<i class="zulip-icon zulip-icon-hash"></i> Channel settings**.
+
+
+
+1. Click **Create channel** on the right, or click the **plus**
+   (<i class="fa fa-plus"></i>) icon in the upper right.
+
+1. Fill out the requested info, and click **Create** in the bottom right corner
+   of the create channel panel.
+
+!!! warn ""
+
+    **Note**: You will only see the **Create channel** button if you have
+    permission to create channels.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Tap the **Channels**
+   (<img src="/static/images/help/mobile-hash-icon.svg" alt="hash" class="help-center-icon"/>)
+   tab at the bottom of the app.
+
+1. Scroll down to the bottom, and tap **ALL CHANNELS**.
+
+
+
+
+1. Tap the **Create new channel** button at the top of the app.
+
+1. Fill out the requested info, and tap **Create**.
+
+!!! warn ""
+
+    **Note**: You will only see the **Create new channel** button if you have
+    permission to create channels.
+
+</TabItem>
+</Tabs>
+
+
+
+
+## Channel options
+
+There are several parameters you can set while creating a channel. All but
+**Announce channel** you can change later.
+
+* **Channel name**: Appears in the left sidebar for subscribed users. The
+  channel name can be in any language, and can include spaces and other
+  punctuation.
+
+* **Channel description**: Helps users decide whether to subscribe when they
+  are browsing channels.
+
+* **Announce new channel in the [channel configured by your organization](/help/configure-automated-notices#new-channel-announcements)**:
+  Posts a message in the "new channels" topic advertising the new channel.
+
+* **Who can access the channel?**: See [Channel permissions](/help/channel-permissions).
+
+* **Default channel for new users**: Whether new users will be [automatically
+  subscribed](/help/set-default-channels-for-new-users) to the new channel.
+
+* **Who can post to the channel?**: See [Channel permissions](/help/channel-permissions).
+
+* **Who can unsubscribe others from this channel?**: See
+  [Restrict channel membership management](/help/configure-who-can-invite-to-channels#configure-who-can-remove-users).
+
+* **Message retention period**: See
+  [Message retention policy](/help/message-retention-policy#configure-message-retention-policy-for-individual-channels).
+
+* **Choose subscribers**: You can copy the membership from an existing channel or
+  [user group](/help/user-groups), add all users, or enter users one by one.
+
+## Related articles
+
+* [Create channels for a new organization](/help/create-channels)
+* [Channel permissions](/help/channel-permissions)
+* [Set default channels for new users](/help/set-default-channels-for-new-users)
+* [Introduction to channels](/help/introduction-to-channels)
+
+

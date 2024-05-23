@@ -1,0 +1,79 @@
+---
+title: delete-a-topic.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Delete a topic
+
+
+!!! warn ""
+
+    This feature is only available to organization owners and administrators.
+
+
+
+
+We generally recommend against deleting topics, but there are a few
+situations in which it can be useful:
+
+* Clearing out test messages after setting up an organization.
+
+* Clearing out messages from an overly enthusiastic bot.
+
+* Managing abuse.
+
+In most other cases, [renaming a topic](/help/rename-a-topic) is often a
+better idea, or just leaving the topic as is. Deleting a topic can confuse
+users who come to the topic later via an email notification.
+
+Note that deleting a topic also deletes every message with that topic,
+whereas [archiving a channel](/help/archive-a-channel) does not.
+
+### Delete a topic
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Hover over a topic in the left sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>).
+
+
+
+
+1. Click **Delete topic**.
+
+1. Approve by clicking **Confirm**.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Press and hold a topic until the long-press menu appears.
+
+
+
+
+1. Tap **Delete topic**.
+1. Approve by tapping **DELETE TOPIC**.
+
+
+!!! tip ""
+
+    If you are viewing a single topic, you can access the long-press
+    menu from the bar at the top of the app.
+
+</TabItem>
+</Tabs>
+
+Note that deleting all of the individual messages within a particular
+topic also deletes that topic. Structurally, topics are simply an
+attribute of messages in Zulip.
+
+## Related articles
+
+* [Edit a message](/help/edit-a-message)
+* [Delete a message](/help/delete-a-message)
+* [Archive a channel](/help/archive-a-channel)
+* [Message retention policy](/help/message-retention-policy)
+
+

@@ -1,3 +1,4 @@
+import os
 import time
 from typing import Any, Dict, List, Optional
 
@@ -262,6 +263,109 @@ def render_markdown_path(
 
     return mark_safe(jinja.from_string(html).render(context))  # noqa: S308
 
+# render_markdown_path is passed a context dictionary (unhashable), which
+# results in the calls not being cached. To work around this, we convert the
+# dict to a tuple of dict items to cache the results.
+@dict_to_items_tuple
+@ignore_unhashable_lru_cache(512)
+@items_tuple_to_dict
+@register.filter(name="convert_to_starlight", is_safe=True)
+def convert_to_starlight(
+    markdown_file_path: str,
+    context: Optional[Dict[str, Any]] = None,
+    integration_doc: bool = False,
+    help_center: bool = False,
+) -> str:
+    """Given a path to a Markdown file, return the rendered HTML.
+
+    Note that this assumes that any HTML in the Markdown file is
+    trusted; it is intended to be used for documentation, not user
+    data."""
+
+    # We set this global hackishly
+    from zerver.lib.markdown.help_settings_links import set_relative_settings_links
+
+    set_relative_settings_links(bool(context is not None and context.get("html_settings_links")))
+    from zerver.lib.markdown.help_relative_links import set_relative_help_links
+
+    set_relative_help_links(bool(context is not None and context.get("html_settings_links")))
+
+    global md_extensions
+    global md_macro_extension
+    if md_extensions is None:
+        md_extensions = [
+            markdown.extensions.extra.makeExtension(),
+            markdown.extensions.toc.makeExtension(),
+            markdown.extensions.admonition.makeExtension(),
+            markdown.extensions.codehilite.makeExtension(
+                linenums=False,
+                guess_lang=False,
+            ),
+            zerver.lib.markdown.fenced_code.makeExtension(
+                run_content_validators=bool(
+                    context is not None and context.get("run_content_validators", False)
+                ),
+            ),
+            zerver.lib.markdown.api_arguments_table_generator.makeExtension(),
+            zerver.lib.markdown.api_return_values_table_generator.makeExtension(),
+            zerver.lib.markdown.nested_code_blocks.makeExtension(),
+            zerver.lib.markdown.tabbed_sections.makeExtension(),
+            zerver.lib.markdown.help_settings_links.makeExtension(),
+            zerver.lib.markdown.help_relative_links.makeExtension(),
+            zerver.lib.markdown.help_emoticon_translations_table.makeExtension(),
+            zerver.lib.markdown.static.makeExtension(),
+        ]
+    if context is not None and "api_url" in context:
+        # We need to generate the API code examples extension each
+        # time so the `api_url` config parameter can be set dynamically.
+        #
+        # TODO: Convert this to something more efficient involving
+        # passing the API URL as a direct parameter.
+        extensions = [
+            zerver.openapi.markdown_extension.makeExtension(
+                api_url=context["api_url"],
+            ),
+            *md_extensions,
+        ]
+    else:
+        extensions = md_extensions
+
+    if integration_doc:
+        md_macro_extension = zerver.lib.markdown.include.makeExtension(
+            base_path="templates/zerver/integrations/include/"
+        )
+    elif help_center:
+        pre_macro_extension = zerver.lib.markdown.include_preprocessor.makeExtension(base_path="help/include/")
+        extensions = [pre_macro_extension, *extensions]
+        md_macro_extension = zerver.lib.markdown.include.makeExtension(base_path="help/include/")
+    else:
+        md_macro_extension = zerver.lib.markdown.include.makeExtension(
+            base_path="api_docs/include/"
+        )
+    if not any(doc in markdown_file_path for doc in docs_without_macros):
+        extensions = [md_macro_extension, *extensions]
+
+    md_engine = markdown.Markdown(extensions=extensions)
+    md_engine.reset()
+
+    jinja = engines["Jinja2"]
+    assert isinstance(jinja, Jinja2)
+    if markdown_file_path.startswith("/"):
+        with open(markdown_file_path) as fp:
+            markdown_string = fp.read()
+    else:
+        markdown_string = jinja.env.loader.get_source(jinja.env, markdown_file_path)[0]
+
+    API_ENDPOINT_NAME = context.get("API_ENDPOINT_NAME", "") if context is not None else ""
+    markdown_string = markdown_string.replace("API_ENDPOINT_NAME", API_ENDPOINT_NAME)
+    file_name = os.path.basename(markdown_file_path)
+    title = f'---\ntitle: {file_name}\n---\n'
+    tab_import = f"import {{ Tabs, TabItem }} from '@astrojs/starlight/components';\n\n"
+    converted_string = md_engine.convert_to_mdx(markdown_string)
+    converted_string = converted_string.replace('{', '\{')
+    converted_string = converted_string.replace('}', '\}')
+    return title + tab_import + converted_string
+
 
 def webpack_entry(entrypoint: str) -> List[str]:
     while True:
@@ -287,3 +391,15 @@ def webpack_entry(entrypoint: str) -> List[str]:
         )
 
     return files_from_entrypoints
+
+def run() -> None:
+    directory = os.path.join(settings.BASE_DIR, 'help') 
+
+    # Iterate over files in directory
+    for name in os.listdir(directory):
+        if os.path.isfile(os.path.join(directory, name)):
+            mdx = convert_to_starlight(os.path.join(directory, name) , None, False, True)
+            with open(os.path.join(settings.BASE_DIR, 'src/content/docs/' + os.path.basename(name).split('.')[0] + '.mdx'), "w") as mdx_file:
+                mdx_file.write(mdx)
+
+run()

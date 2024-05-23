@@ -1,0 +1,163 @@
+---
+title: roles-and-permissions.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Roles and permissions
+
+## User roles
+
+User roles make it convenient to configure different permissions for different
+users in your organization. You can decide what role a user will have when you
+[send them an invitation](/help/invite-new-users), and later [change a user's
+role](/help/roles-and-permissions#change-a-users-role) if needed.
+
+!!! tip ""
+
+    Learn about [channel permissions](/help/channel-permissions), including
+    **public** and **private** channels.
+
+* **Organization owner**: Can manage users, public channels, organization
+  settings, and billing. Organization owners can do anything that an
+  organization administrator can do.
+
+* **Organization administrator**: Can manage users, public channels, and
+  organization settings. Cannot make someone an owner, or change an existing
+  owner's role.
+
+* **Moderator**: Can do anything that members can do, plus additional
+  permissions [configured](/help/roles-and-permissions#manage-permissions) by
+  your organization.
+
+* **Member**: This is the default role for most users. Members have access to
+  all public channels. You can [configure different
+  permissions](/help/restrict-permissions-of-new-members) for **new members**
+  and **full members**, which is especially useful for [moderating open
+  organizations](/help/moderating-open-organizations). New members automatically
+  become full members after a configurable waiting period.
+
+* **Guest**: Can view and send messages in channels they have been added to.
+  Guests cannot see other channels, unless they have been specifically added to
+  the channel. See [guest users documentation](/help/guest-users) for additional
+  details and configuration options.
+
+* **Billing administrator**: The user who upgrades the organization to
+  a paid plan is, in addition to their normal role, a billing
+  administrator.  Billing administrators can manage billing for the organization.
+  For example, someone from your billing department can be a **billing
+  administrator**, but not an **administrator** for the organization.
+
+## View users by role
+
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Users**.
+
+
+
+1. Select the desired role from the dropdown above the **Users** table.
+
+</TabItem>
+</Tabs>
+
+
+
+
+## Change a user's role
+
+
+<Tabs>
+<TabItem label="via-user-profile">
+
+1. Hover over a user's name in the right sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>)
+   to the right of their name to open their **user card**.
+
+
+
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>) in the user card.
+
+
+
+
+1. Click **Manage this user**.
+
+
+
+
+1. Under **User role**, select a [role](/help/roles-and-permissions).
+
+1. Click **Save changes**. The new permissions will take effect immediately.
+
+
+!!! tip ""
+
+    You can also access the **Manage user** tab by clicking the **pencil and
+    paper** (<i class="fa fa-edit"></i>) icon at the top of the [user
+    profile](/help/view-someones-profile).
+
+</TabItem>
+<TabItem label="via-organization-settings">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Users**.
+
+
+
+1. Find the user you would like to manage. Click the **pencil**
+   (<i class="fa fa-pencil"></i>) to the right of their name.
+
+1. Under **User role**, select a [role](/help/roles-and-permissions).
+
+1. Click **Save changes**. The new permissions will take effect immediately.
+
+</TabItem>
+</Tabs>
+
+
+
+
+## Manage permissions
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization permissions**.
+
+
+
+1. Review organization permissions, and modify as needed.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [Change a user's role](/help/change-a-users-role)
+* [Channel permissions](/help/channel-permissions)
+* [Inviting new users](/help/invite-new-users)
+* [Zulip Cloud billing](/help/zulip-cloud-billing)
+* [Guest users](/help/guest-users)
+
+

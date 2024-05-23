@@ -1,0 +1,61 @@
+---
+title: restrict-direct-messages.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Restrict direct messages
+
+
+!!! warn ""
+
+    This feature is only available to organization owners and administrators.
+
+
+
+
+In Zulip, users can exchange direct messages with other users,
+[bots](/help/bots-overview) and themselves. Organization
+administrators can configure who is allowed to use direct messages.
+
+## Configure who can use direct messages
+
+!!! warn ""
+
+    This feature is beta; see the notes below for details.
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization permissions**.
+
+
+
+1. Under **Other permissions**, configure **Who can use direct messages**.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+### Notes on restricting direct messages
+
+* Disabling direct messages will cause sending a direct message to
+throw an error; the Zulip UI will appear to still allow direct
+messages. We expect to make some UI adjustments when direct messages
+are disabled during the beta period.
+
+* Even if direct messages are disabled, users can still exchange
+direct messages with bot users (this detail is important for
+Zulip's new user onboarding experience). Consider also [restricting
+bot creation](/help/restrict-bot-creation) when using this feature.
+
+* Restricting direct messages does not automatically [restrict creating
+private channels](/help/configure-who-can-create-channels).
+
+

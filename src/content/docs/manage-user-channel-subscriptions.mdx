@@ -1,0 +1,177 @@
+---
+title: manage-user-channel-subscriptions.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Manage a user's channel subscriptions
+
+## View a user's channel subscriptions
+
+!!! warn ""
+
+      **Note**: The list of a user's **Subscribed channels** will be limited to
+      channels for which [you can see all subscribers](/help/channel-permissions).
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Hover over a user's name in the right sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>)
+   to the right of their name to open their **user card**.
+
+
+
+
+1. Click **View profile**.
+
+
+
+
+1. Select the **Channels** tab.
+
+</TabItem>
+</Tabs>
+
+## Subscribe a user to a channel
+
+Organization administrators can configure which
+[roles](/help/roles-and-permissions) have access to [subscribe
+other users to a channel][configure-invites].
+
+<Tabs>
+<TabItem label="via-channel-settings">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-hash"></i> **Channel settings**.
+
+1. Click **All channels** in the upper left.
+
+
+
+1. Select a channel.
+
+
+1. Select the **Subscribers** tab on the right.
+
+
+
+
+1. Under **Add subscribers**, enter the user's name or email address.
+
+1. Click **Add**.
+
+</TabItem>
+<TabItem label="via-user-profile">
+
+1. Hover over a user's name in the right sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>)
+   to the right of their name to open their **user card**.
+
+
+
+
+1. Click **View profile**.
+
+
+
+
+1. Select the **Channels** tab.
+
+1. Under **Subscribe user to channels**, select a channel from the
+   dropdown list. You can start typing to filter channels.
+
+1. Click the **Subscribe** button.
+
+</TabItem>
+</Tabs>
+
+
+!!! warn ""
+
+      **Note**: Subscribing someone else to a channel sends them an
+      automated direct message from [notification bot][notification-bot].
+
+[notification-bot]: /help/configure-automated-notices
+
+
+
+
+## Unsubscribe a user from channel(s)
+
+
+!!! warn ""
+
+    This feature is only available to organization owners and administrators.
+
+
+
+
+Anyone can always [unsubscribe themselves from a
+channel](/help/unsubscribe-from-a-channel).
+
+<Tabs>
+<TabItem label="via-channel-settings">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select <i class="zulip-icon zulip-icon-hash"></i> **Channel settings**.
+
+1. Click **All channels** in the upper left.
+
+
+
+1. Select a channel.
+
+
+1. Select the **Subscribers** tab on the right.
+
+
+
+
+1. Under **Subscribers**, find the user you would like
+   to remove from the channel.
+
+1. In the **Actions** column, click the **Unsubscribe** button in that row.
+
+</TabItem>
+<TabItem label="via-user-profile">
+
+1. Hover over a user's name in the right sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>)
+   to the right of their name to open their **user card**.
+
+
+
+
+1. Click **View profile**.
+
+
+
+
+1. Select the **Channels** tab.
+
+1. Under **Subscribed channels**, find the channel you would like
+   to remove the user from.
+
+1. Click the **Unsubscribe** button in that row.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [Channel permissions](/help/channel-permissions)
+* [Roles and permissions](/help/roles-and-permissions)
+* [Add or remove users from a channel](/help/add-or-remove-users-from-a-channel)
+* [Unsubscribe from a channel](/help/unsubscribe-from-a-channel)
+* [View channel subscribers](/help/view-channel-subscribers)
+
+[configure-invites]: /help/configure-who-can-invite-to-channels
+
+

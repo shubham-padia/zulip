@@ -1,0 +1,564 @@
+---
+title: format-your-message-using-markdown.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Message formatting
+
+[//]: # (All screenshots here require line-height: 22px and font-size: 16px in .message-content.)
+[//]: # (Requires some additional fiddling for the LaTeX picture, inline code span, and maybe a few others.)
+
+Zulip uses Markdown to allow you to easily format your messages. Even if you've
+never heard of Markdown, you are probably familiar with basic Markdown
+formatting, such as using `*` at the start of a line in a bulleted list, or
+around text to indicate emphasis.
+
+Formatting buttons in the compose box make it easy to format your message. For
+those who prefer to type the formatting they need, this page provides an
+overview of all the formatting available in Zulip. There is a convenient
+[message formatting reference](#message-formatting-reference) in the Zulip
+app that you can use whenever you need a reminder of the formatting syntax
+below.
+
+* [Text emphasis](#text-emphasis)
+* [Bulleted lists](#bulleted-lists)
+* [Numbered lists](#numbered-lists)
+* [Links](#links)
+* [Code blocks](#code-blocks)
+* [LaTeX](#latex)
+* [Quotes](#quotes)
+* [Spoilers](#spoilers)
+* [Emoji and emoticons](#emoji-and-emoticons)
+* [Mention a user or group](#mention-a-user-or-group)
+* [/me action messages](#me-action-messages)
+* [Global times](#global-times)
+* [Tables](#tables)
+* [Collaborative to-do lists](#collaborative-to-do-lists)
+* [Paragraph and section formatting](#paragraph-and-section-formatting)
+
+## Text emphasis
+
+
+In Zulip, you can make text bold or italic, or cross it out with strikethrough.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:0
+
+
+### What it looks like
+
+![Markdown emphasis](/static/images/help/markdown-emphasis.png)
+
+
+
+
+!!! tip ""
+
+    You can also use buttons or keyboard shortcuts (<kbd>Ctrl</kbd> +
+    <kbd>B</kbd> or <kbd>Ctrl</kbd> + <kbd>I</kbd>) to make text bold or italic.
+    [Learn more](/help/text-emphasis).
+
+## Bulleted lists
+
+
+Zulip supports Markdown formatting for bulleted lists.
+You can create bulleted lists using `*`, `-`, or `+` at the start of each line.
+Add two spaces before the bullet to create a nested list.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:1
+
+
+### What it looks like
+
+![Markdown bullets](/static/images/help/markdown-bullets.png)
+
+
+
+
+!!! tip ""
+
+    You can also use the **Bulleted list**
+    (<i class="zulip-icon zulip-icon-unordered-list"></i>)
+    button in the compose box to insert bulleted list formatting.
+    [Learn more](/help/bulleted-lists).
+
+## Numbered lists
+
+
+Zulip supports Markdown formatting for numbered lists.
+You can create numbered lists by putting a number followed by a `.` at the start
+of each line. Lists are numbered automatically, so you can reorder list items
+while editing your message without having to update the numbers. Add two spaces
+before the number to create a nested list.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:2
+
+
+### What it looks like
+
+![Markdown numbered lists](/static/images/help/markdown-numbered-lists.png)
+
+
+
+
+!!! tip ""
+
+    You can also use the **Numbered list**
+    (<i class="zulip-icon zulip-icon-ordered-list"></i>)
+    button in the compose box to insert numbered list formatting.
+    [Learn more](/help/numbered-lists).
+
+## Links
+
+
+In Zulip, you can insert a named link using Markdown formatting. In addition, Zulip
+automatically creates links for you when you enter:
+
+- A URL
+- An appropriately formatted channel name, or a channel name followed by a topic
+  (see also [Link to a message or
+  conversation](/help/link-to-a-message-or-conversation))
+- Text that matches a [custom linkifier](/help/add-a-custom-linkifier) set up by your organization
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:3
+
+
+### What it looks like
+
+![Markdown links](/static/images/help/markdown-links.png)
+
+
+
+
+!!! tip ""
+
+    You can also use the **Link**
+    (<i class="zulip-icon zulip-icon-link"></i>)
+    button or a keyboard shortcut (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
+    <kbd>L</kbd>) to insert a link. [Learn more](/help/insert-a-link).
+
+## Code blocks
+
+
+You can write snippets of code, code blocks, and other text in a fixed-width
+font using standard Markdown formatting. Zulip also has [syntax
+highlighting](/help/code-blocks#language-tagging) and supports configuring
+custom [code playgrounds](/help/code-blocks#code-playgrounds).
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:4
+
+
+!!! tip ""
+
+    You can also use `~~~` to start code blocks, or just indent the code 4 or more
+    spaces.
+
+
+### What it looks like
+
+![Markdown code](/static/images/help/markdown-code.png)
+
+!!! tip ""
+
+    A widget in the top right corner of code blocks allows you to easily
+    copy code to your clipboard.
+
+
+
+
+!!! tip ""
+
+    You can also use the **Code** (<i class="zulip-icon zulip-icon-code"></i>)
+    button in the compose box to insert code formatting.
+    [Learn more](/help/code-blocks).
+
+## LaTeX
+
+
+Zulip supports math typesetting powered by [KaTeX](https://katex.org).
+Their [support table](https://katex.org/docs/support_table.html) is a
+helpful resource for checking what's supported or how to express
+something.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:5
+
+
+### What it looks like
+
+![Markdown LaTeX](/static/images/help/markdown-latex.png)
+
+
+
+
+!!! tip ""
+
+    You can also use the **LaTeX** (<i class="zulip-icon zulip-icon-math"></i>)
+    button in the compose box to insert LaTeX formatting.
+    [Learn more](/help/latex).
+
+## Quotes
+
+
+You can format quotes one line at a time, or create a block of text that will be
+formatted as a quote.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:6
+
+
+### What it looks like
+
+![Markdown quotes](/static/images/help/markdown-quotes.png)
+
+
+
+
+!!! tip ""
+
+    There is a handy option to [quote and reply](/help/quote-and-reply) to a
+    message in Zulip.
+    You can also use the **Quote** (<i class="zulip-icon zulip-icon-quote"></i>)
+    button in the compose box to insert quote formatting.
+    [Learn more](/help/format-a-quote).
+
+## Spoilers
+
+
+Zulip lets you temporarily hide content in a collapsible **spoiler** section,
+with only the header initially shown. Clicking on the header reveals the hidden
+content.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:7
+
+
+### What it looks like
+
+Collapsed spoilers:
+
+![Spoiler collapsed](/static/images/help/spoiler-collapsed.png)
+
+Expanded spoilers:
+
+![Spoiler expanded](/static/images/help/spoiler-expanded.png)
+
+
+
+
+!!! tip ""
+
+    You can also use the **Spoiler**
+    (<i class="zulip-icon zulip-icon-spoiler"></i>) button in the compose
+    box to insert spoiler formatting. [Learn more](/help/spoilers).
+
+## Emoji and emoticons
+
+
+You can use emoji in Zulip messages and [topics](/help/introduction-to-topics).
+There are several ways to use an emoji in your message:
+
+- [Enter an emoji name](/help/emoji-and-emoticons#use-an-emoji-in-your-message)
+  surrounded by `:`, with help from autocomplete suggestions.
+
+- [Select an emoji from the emoji
+  picker](/help/emoji-and-emoticons#use-an-emoji-in-your-message)
+
+- [Use an emoticon](/help/emoji-and-emoticons#use-an-emoticon)
+
+- [Paste an emoji](/help/emoji-and-emoticons#use-an-emoji-in-your-message)
+
+You can [add custom emoji](/help/custom-emoji) for your organization. Like
+default emoji, custom emoji can be entered into the compose box by name, or
+selected from the emoji picker.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:8
+
+
+### What it looks like
+
+![Markdown emoji](/static/images/help/markdown-emoji.png)
+
+
+
+
+## Mention a user or group
+
+
+You can mention a team member or [user group](/help/user-groups) to call their
+attention to a message. Mentions follow the same [notification
+settings](/help/dm-mention-alert-notifications) as direct messages and alert
+words. A [silent mention](/help/mention-a-user-or-group#silently-mention-a-user)
+allows you to refer to a user without triggering a notification. A wildcard
+mention allows you to
+[mention everyone on a channel](/help/mention-a-user-or-group#mention-everyone-on-a-channel),
+or [mention all topic participants](/help/mention-a-user-or-group#mention-all-topic-participants).
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:9
+
+
+!!! tip ""
+
+    A `|` followed by a user ID is inserted automatically when you select a
+    user from the typeahead suggestions, if there are two users with the same
+    name in the organization.
+
+### What it looks like
+
+![Markdown mentions](/static/images/help/markdown-mentions.png)
+
+
+
+
+## /me action messages
+
+
+You can send messages that display your profile picture and name as the
+beginning of the message content by beginning a message with `/me`. You can
+use this feature in conversations when you want to describe actions you've
+taken or things that are happening around you using a third-person voice.
+
+
+
+
+
+For example, if you are **Ada Starr**:
+
+### What you type
+
+
+wzxhzdk:10
+
+
+### What it looks like
+
+![Markdown status](/static/images/help/markdown-status.png)
+
+
+
+
+## Global times
+
+
+When collaborating with people in different time zones, you often need to
+express a specific time clearly. In Zulip, rather than typing out your time
+zone and having everyone translate the time in their heads, you can insert
+a time, and it will be displayed to each user in their own time zone (just
+like timestamps on Zulip messages).
+
+
+
+
+
+### What you type
+
+A date picker will appear once you type `<time`.
+
+
+wzxhzdk:11
+
+
+!!! tip ""
+
+    You can also use other formats such as UNIX timestamps or human readable
+    dates, for example, `<time:May 28 2020, 1:30 PM IST>`.
+
+### What it looks like
+
+A person in San Francisco will see:
+
+> Our next meeting is scheduled for *Thu, May 28 2020, 1:00 AM*.
+
+While someone in India will see:
+
+> Our next meeting is scheduled for *Thu, May 28 2020, 1:30 PM*.
+
+
+
+
+!!! tip ""
+
+    You can also use the **Add global time**
+    (<i class="zulip-icon zulip-icon-time"></i>) button in the compose
+    box to select a time from the date picker. [Learn more](/help/global-times).
+
+## Tables
+
+
+Zulip supports Markdown formatting for tables.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:12
+
+
+!!! tip ""
+
+    The initial pipes (`|`) are optional if every entry in the first column is
+    non-empty.
+    The header separators (`---`) must be at least three dashes long.
+
+### What it looks like
+
+![Markdown table](/static/images/help/markdown-table.png)
+
+
+
+
+## Collaborative to-do lists
+
+
+Zulip supports creating shared to-do lists where any user who can access the
+message can add tasks by entering the task's title and description, and clicking
+**Add task**. Once created, task titles and descriptions cannot be edited. The task
+list title can be edited any time by the to-do list's creator.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:13
+
+
+### What it looks like
+
+![Markdown todo-lists](/static/images/help/markdown-todo.png)
+
+!!! tip ""
+
+    Tasks can be marked (and unmarked) as completed by clicking the
+    checkboxes on the left.
+
+
+
+
+## Paragraph and section formatting
+
+
+Zulip supports Markdown formatting for paragraphs and visual section breaks,
+which you can use to control the layout of your text and to visually separate
+different sections of content.
+
+
+
+
+
+### What you type
+
+
+wzxhzdk:14
+
+
+### What it looks like
+
+![Markdown paragraph](/static/images/help/markdown-paragraph.png)
+
+
+
+
+## Message formatting reference
+
+A summary of the formatting syntax above is available in the Zulip app.
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **Help menu** (<i class="zulip-icon zulip-icon-help"></i>) icon
+   in the upper right corner of the app.
+
+1. Select **<i class="zulip-icon zulip-icon-edit"></i> Message formatting**.
+
+
+
+!!! tip ""
+
+    You can also [open the compose box](/help/open-the-compose-box), and click
+    the **question mark** (<i class="zulip-icon zulip-icon-question"></i>) icon
+    at the bottom of the compose box.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [Create a poll](/help/create-a-poll)
+* [Mention a user or group](/help/mention-a-user-or-group)
+* [Preview messages before sending](/help/preview-your-message-before-sending)
+* [Resize the compose box](/help/resize-the-compose-box)
+* [Messaging tips & tricks](/help/messaging-tips)
+
+

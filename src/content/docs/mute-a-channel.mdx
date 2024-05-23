@@ -1,0 +1,156 @@
+---
+title: mute-a-channel.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Mute or unmute a channel
+
+
+Zulip lets you mute topics and channels to avoid receiving notifications for messages
+you are not interested in. Muting a channel effectively mutes all topics in
+that channel. You can also manually **mute** a topic in an unmuted channel, or
+**unmute** a topic in a muted channel.
+
+Muting has the following effects:
+
+- Messages in muted topics do not generate notifications (including [alert
+  word](/help/dm-mention-alert-notifications#alert-words) notifications), unless
+  you are [mentioned](/help/mention-a-user-or-group).
+- Messages in muted topics do not appear in the [**Combined feed**
+  view](/help/combined-feed) or the mobile **Inbox** view.
+- Muted topics appear in the [**Recent conversations**
+  view](/help/recent-conversations) only if the **Include muted** filter is
+  enabled.
+- Unread messages in muted topics do not contribute to channel unread counts.
+- Muted topics and channels are grayed out in the left sidebar of the desktop/web
+  app, and in the mobile app.
+- In the desktop/web app, muted topics are sorted to the bottom of their channel,
+  and muted channels are sorted to the bottom of their channel section.
+
+!!! warn ""
+
+    **Note**: Some parts of the Zulip experience may start to degrade
+    if you receive more than a few hundred muted messages a day.
+
+
+
+
+## Mute a channel
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Hover over a channel in the left sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>).
+
+
+
+
+1. Click **Mute channel**.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Press and hold a channel until the long-press menu appears.
+
+
+
+
+1. Tap **Mute channel**.
+
+
+!!! tip ""
+
+    If you are in a channel view, you can access the long-press
+    menu from the bar at the top of the app.
+
+</TabItem>
+</Tabs>
+
+
+## Unmute a channel
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Hover over a channel in the left sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>).
+
+
+
+
+1. Click **Unmute channel**.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Press and hold a channel until the long-press menu appears.
+
+
+
+
+1. Tap **Unmute channel**.
+
+
+!!! tip ""
+
+    If you are in a channel view, you can access the long-press
+    menu from the bar at the top of the app.
+
+</TabItem>
+</Tabs>
+
+## Alternate method to mute or unmute a channel
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in
+   the upper right corner of the web or desktop app.
+
+1. Select **<i class="zulip-icon zulip-icon-hash"></i> Channel settings**.
+
+
+
+1. Select a channel.
+
+
+1. Select the **Personal** tab on the right.
+
+
+
+
+1. Under **Notification settings**, toggle **Mute channel**.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Press and hold a channel until the long-press menu appears.
+
+
+
+
+1. Tap **Channel settings**.
+
+1. Toggle **Muted**.
+
+
+!!! tip ""
+
+    If you are in a channel view, you can access the
+    channel settings menu from the **information**
+    (<img src="/static/images/help/mobile-info-circle-icon.svg" alt="information" class="help-center-icon"/>)
+    button in the top right corner of the app.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [Mute or unmute a topic](/help/mute-a-topic)
+
+* [Mute a user](/help/mute-a-user)
+
+

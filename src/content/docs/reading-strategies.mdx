@@ -1,0 +1,373 @@
+---
+title: reading-strategies.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Reading strategies
+
+In Zulip, channels determine who gets a message. Topics tell you what
+the message is about. If you are not yet familiar with Zulip's topics,
+we recommend first reading about [channels](introduction-to-channels) and
+[topics](/help/introduction-to-topics).
+
+This article describes a few ways to efficiently read through messages
+in Zulip.
+
+## Conversation by conversation
+
+
+In Zulip, a **conversation** is a [direct message](/help/direct-messages) thread
+(one-on-one or with a group), or a [topic in a
+channel](/help/introduction-to-topics).
+
+
+
+
+
+It generally works best to read your messages organized by conversation.
+
+
+
+
+### Finding a conversation to read
+
+#### From the Inbox view
+
+
+**Inbox** provides an overview of your conversations with unread messages.
+Conversations are shown in the same order as in the left sidebar in the web app,
+and you can collapse any channels you are not currently interested in.
+
+
+
+
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on <i class="zulip-icon zulip-icon-inbox"></i> **Inbox**
+   (or <i class="zulip-icon zulip-icon-inbox"></i> if the **views**
+   section is collapsed) in the left sidebar,
+   or use the <kbd>Shift</kbd> + <kbd>I</kbd> keyboard shortcut.
+
+
+
+
+1. Click on a conversation you're interested in to view it. You can return to
+   **Inbox** when done to select the next conversation.
+
+!!! tip ""
+
+    You can collapse or expand the list of topics in a channel by clicking the
+    **collapse**
+    (<i class="zulip-icon zulip-icon-arrow-down"></i>)
+    or **expand**
+    (<i class="zulip-icon zulip-icon-arrow-down icon-collapsed-state"></i>)
+    icon to the left of a channel name.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Tap the **Inbox**
+   (<img src="/static/images/help/mobile-inbox-icon.svg" alt="inbox" class="help-center-icon"/>)
+   tab in the bottom left corner of the app.
+
+2. Tap on a conversation you're interested in to view it. You can return to
+   **Inbox** when done to select the next conversation.
+
+!!! tip ""
+
+    You can collapse or expand the list of topics in a channel by tapping the
+    **collapse**
+    (<img src="/static/images/help/mobile-expand-less-icon.svg" alt="inbox" class="help-center-icon"/>)
+    or **expand**
+    (<img src="/static/images/help/mobile-expand-more-icon.svg" alt="inbox" class="help-center-icon"/>)
+    icon to the left of a channel name.
+
+</TabItem>
+</Tabs>
+
+
+
+
+#### From Recent conversations
+
+
+Use the **Recent conversations** view to get
+an overview of all the ongoing conversations. This view is particularly useful
+for catching up on messages sent while you were away.
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on <i class="zulip-icon zulip-icon-recent"></i> **Recent conversations**
+   (or <i class="zulip-icon zulip-icon-recent"></i> if the **views**
+   section is collapsed) in the left sidebar,
+   or use the <kbd>T</kbd> keyboard shortcut.
+
+
+
+
+1. The filters at the top help you quickly find relevant conversations.
+   For example, select **Participated** to filter to the conversations you
+   have sent messages to.
+
+</TabItem>
+</Tabs>
+
+!!! tip ""
+
+    The **Participants** column shows which users recently sent a message (newest on the left).
+
+
+
+
+#### From the left sidebar
+
+
+In the web app, the left sidebar provides quick access to your direct messages,
+and the channels you are subscribed to.
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on **DIRECT MESSAGES** or the name of a channel in the left sidebar. You
+   will see a list of the most recent unread conversations that you have not [muted](/help/mute-a-topic).
+
+1. Click on the conversation you are interested in.
+
+!!! tip ""
+
+    To see all conversations, click on **more conversations** (in direct messages) or **more topics**
+    (in a channel).
+
+</TabItem>
+</Tabs>
+
+
+
+
+### Reading conversations
+
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. [Find](/help/finding-a-conversation-to-read) a conversation to read.
+
+1. Read the conversation, scrolling down with the mouse or by pressing
+   <kbd>PgDn</kbd>.
+
+1. If the conversation is not of interest, you can
+   [mark all messages as read](/help/marking-messages-as-read) by
+   jumping to the bottom with the **Scroll to bottom**
+   (<i class="fa fa-chevron-down"></i>) button or the <kbd>End</kbd> shortcut.
+
+!!! keyboard_tip ""
+
+    Use the <kbd>N</kbd> key to go to the next unread topic, or <kbd>Shift</kbd> + <kbd>N</kbd>
+    for the next unread [followed](/help/follow-a-topic) topic, or <kbd>P</kbd> for the next
+    unread direct message conversation.
+
+</TabItem>
+</Tabs>
+
+
+
+
+### Following, muting and unmuting conversations
+
+You can improve your workflow for catching up on messages by taking advantage of
+[following topics](/help/follow-a-topic), as well as muting and unmuting
+[channels](/help/mute-a-channel) and [topics](/help/mute-a-topic). Some example
+workflows:
+
+
+- [Catch up](/help/follow-a-topic#catch-up-on-followed-topics) on
+  followed topics at the start of the day, and whenever you want to
+  spend a few minutes checking on on the conversations that need
+  your attention.
+
+- No more stressing about missing a reply to your message in channels
+  you don't regularly read. You can [automatically
+  follow](/help/follow-a-topic#automatically-follow-topics) topics you
+  start or participate in.
+
+- You can also [mute](/help/mute-a-channel) the channels you don't
+  regularly read, and [automatically follow or
+  unmute](/help/follow-a-topic#automatically-follow-topics) topics you
+  start or participate in. In muted channels, topics you follow are
+  automatically treated as [unmuted](/help/mute-a-topic), so it will
+  be easy to see when someone responds to your message.
+
+- If you like, follow just the topics where your prompt attention is
+  needed, and [enable desktop and mobile
+  notifications](/help/follow-a-topic#configure-notifications-for-followed-topics)
+  for followed topics.
+
+
+
+
+## Combined views
+
+### Combined feed
+
+
+The **Combined feed** view is a feed of all the unmuted messages you have
+received, which combines channel messages and direct messages. It's a great way
+to see new messages as they come in.
+
+You can configure **Combined feed** to be the [home
+view](/help/configure-home-view#configure-home-view) for the Zulip web app.
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on <i class="zulip-icon zulip-icon-all-messages"></i> **Combined feed**
+   (or <i class="zulip-icon zulip-icon-all-messages"></i> if the **views**
+   section is collapsed) in the left sidebar,
+   or use the <kbd>A</kbd> keyboard shortcut.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Tap the **Combined feed**
+   (<img src="/static/images/help/mobile-globe-icon.svg" alt="globe" class="help-center-icon"/>)
+   tab in the upper left corner of the app.
+
+</TabItem>
+</Tabs>
+
+
+
+
+### Direct message feed
+
+You can see all your direct messages in one place.
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **Direct message feed** (<i class="fa fa-align-right"></i>)
+   icon next to **DIRECT MESSAGES** in the left sidebar.
+
+1. Read your direct messages, starting from your first unread message. You can
+   scroll using your mouse, the arrow keys, <kbd>End</kbd>, or page up/down.
+
+1. You can click on a conversation in the left sidebar or a message recipient
+   bar to view that conversation.
+
+!!! keyboard_tip ""
+
+    Use the <kbd>Shift</kbd> + <kbd>P</kbd> keyboard shortcut to go to
+    **Direct message feed**.
+
+</TabItem>
+</Tabs>
+
+### Channel view
+
+Sometimes it's useful to scroll through all the messages in a channel,
+especially in situations where you just want a general idea of what's going
+on.
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Find the channel you want to read in the left sidebar. If you don't see it
+   right away, you can search for a channel by clicking on **CHANNELS** in the
+   left sidebar, or using the <kbd>Q</kbd> [keyboard
+   shortcut](/help/keyboard-shortcuts).
+
+1. Click on the channel name in the left sidebar.
+
+1. Read messages in the channel, starting from your first unread message. You can
+  scroll using your mouse, the arrow keys, <kbd>End</kbd>, or page up/down.
+
+1. You can click on a topic in the left sidebar or a message recipient bar to
+   view that topic.
+
+</TabItem>
+</Tabs>
+
+## Special views
+
+### Mentions
+
+The mentions view lets you quickly find all the places where you were
+[mentioned](/help/mention-a-user-or-group). Reviewing your mentions can be a
+good way to start your day.
+
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on <i class="zulip-icon zulip-icon-at-sign"></i> **Mentions**
+   (or <i class="zulip-icon zulip-icon-at-sign"></i> if the **views**
+   section is collapsed) in the left sidebar.
+
+1. Browse your mentions. You can click on a message recipient bar to go
+   to the [conversation](/help/reading-conversations) where you were mentioned.
+
+!!! tip ""
+
+    You can also [search your mentions](/help/search-for-messages) using the
+    `is:mentioned` filter.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Tap the **Mentions**
+   (<img src="/static/images/help/mobile-at-sign-icon.svg" alt="at-sign" class="help-center-icon"/>)
+   tab at the top of the app.
+
+1. Browse your mentions. You can tap on a message recipient bar to go
+   to the conversation where you were mentioned.
+
+</TabItem>
+</Tabs>
+
+
+
+
+### Starred messages
+
+You can [star messages](/help/star-a-message) that you plan to follow up on later.
+
+#### View starred messages
+
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on <i class="zulip-icon zulip-icon-star-filled"></i> **Starred messages**
+   (or <i class="zulip-icon zulip-icon-star-filled"></i> if the **views**
+   section is collapsed) in the left sidebar.
+
+!!! tip ""
+
+    You can also [search your starred messages](/help/search-for-messages)
+    using the `is:starred` filter.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Tap the **Starred messages**
+   (<img src="/static/images/help/mobile-star-icon.svg" alt="star" class="help-center-icon"/>)
+   tab at the top of the app.
+
+</TabItem>
+</Tabs>
+
+
+
+
+## Related articles
+
+* [Getting started with Zulip](/help/getting-started-with-zulip)
+* [Recent conversations](/help/recent-conversations)
+* [Searching for messages](/help/search-for-messages)
+* [Marking messages as read](/help/marking-messages-as-read)
+* [Marking messages as unread](/help/marking-messages-as-unread)
+
+

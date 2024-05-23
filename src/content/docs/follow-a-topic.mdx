@@ -1,0 +1,234 @@
+---
+title: follow-a-topic.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Follow a topic
+
+Zulip lets you follow topics you are interested in. You can follow or unfollow
+any topic. You can also configure Zulip to automatically follow topics you start
+or participate in. Participating in a topic means sending a message,
+[reacting](/help/emoji-reactions) with an emoji, or participating in a
+[poll](/help/create-a-poll). You can also automatically follow topics where you
+are [mentioned](/help/mention-a-user-or-group).
+
+It's easy to prioritize catching up on followed topics. You can:
+
+- [Configure](/help/follow-a-topic#configure-notifications-for-followed-topics)
+  how you get notified about new messages for topics you follow.
+
+- Use the <kbd>Shift</kbd> + <kbd>N</kbd> [keyboard
+  shortcut](/help/keyboard-shortcuts) to go to the next unread followed topic.
+
+- Filter the [**inbox**](/help/inbox) and [**recent
+  conversations**](/help/recent-conversations) views to only show followed
+  topics.
+
+- See which topics you are following in the **left sidebar**.
+
+You can use followed topics for a variety of workflows:
+
+
+- [Catch up](/help/follow-a-topic#catch-up-on-followed-topics) on
+  followed topics at the start of the day, and whenever you want to
+  spend a few minutes checking on on the conversations that need
+  your attention.
+
+- No more stressing about missing a reply to your message in channels
+  you don't regularly read. You can [automatically
+  follow](/help/follow-a-topic#automatically-follow-topics) topics you
+  start or participate in.
+
+- You can also [mute](/help/mute-a-channel) the channels you don't
+  regularly read, and [automatically follow or
+  unmute](/help/follow-a-topic#automatically-follow-topics) topics you
+  start or participate in. In muted channels, topics you follow are
+  automatically treated as [unmuted](/help/mute-a-topic), so it will
+  be easy to see when someone responds to your message.
+
+- If you like, follow just the topics where your prompt attention is
+  needed, and [enable desktop and mobile
+  notifications](/help/follow-a-topic#configure-notifications-for-followed-topics)
+  for followed topics.
+
+
+
+
+## Follow or unfollow a topic
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Hover over a topic in the left sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>).
+
+
+
+
+1. Configure topic notifications using the row of icons at the top of the menu.
+
+!!! tip ""
+
+    You can also configure notifications by clicking the topic notifications
+    status icon (<i class="zulip-icon zulip-icon-mute-new"></i>,
+    <i class="zulip-icon zulip-icon-unmute-new"></i>, or
+    <i class="zulip-icon zulip-icon-follow"></i>) in the message recipient bar,
+    in the **Inbox view**, or in **Recent conversations**.
+
+</TabItem>
+</Tabs>
+
+## Catch up on followed topics
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on <i class="zulip-icon zulip-icon-inbox"></i> **Inbox**
+   (or <i class="zulip-icon zulip-icon-inbox"></i> if the **views**
+   section is collapsed) in the left sidebar,
+   or use the <kbd>Shift</kbd> + <kbd>I</kbd> keyboard shortcut.
+
+
+
+
+1. Filter the view to the topics you follow by selecting **Followed topics**
+   from the dropdown in the upper left of the **inbox** view.
+
+1. Click on a conversation you're interested in to view it. You can also use
+   the arrow keys to select a conversation, and press <kbd>Enter</kbd>.
+
+1. Return to **Inbox** when done to select the next conversation. You can use
+   the **back** button in your browser or the desktop app, <kbd>Shift</kbd> +
+   <kbd>I</kbd>, or <kbd>Esc</kbd> if **Inbox** is configured as you [home
+   view](/help/configure-home-view).
+
+!!! keyboard_tip ""
+
+    You can also use <kbd>Shift</kbd> + <kbd>N</kbd> from any location to go
+    to the next unread followed topic.
+
+</TabItem>
+</Tabs>
+
+## Configure notifications for followed topics
+
+You can configure custom notifications for followed topics. You can also
+[configure the unread count
+badge](/help/desktop-notifications#unread-count-badge) to include unread
+messages just in followed topics, without counting other channel messages.
+
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Personal settings**.
+
+1. On the left, click **Notifications**.
+
+
+
+1. In the **Notification triggers** table,
+   toggle the settings for **Followed topics**.
+
+</TabItem>
+</Tabs>
+
+!!! tip ""
+
+    You will receive both followed topics notifications and
+    [channel notifications](/help/channel-notifications) in
+    topics you follow.
+
+
+
+
+## Automatically follow topics
+
+
+### Follow topics you start or participate in
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Personal settings**.
+
+1. On the left, click **Notifications**.
+
+
+
+1. Under **Topic notifications**, select the desired option from the
+   **Automatically follow topics** dropdown.
+
+</TabItem>
+</Tabs>
+
+### Follow topics where you are mentioned
+
+You can automatically follow topics where you are personally
+[mentioned](/help/mention-a-user-or-group). If this setting is enabled:
+
+- You will automatically follow topics where you are personally mentioned, but
+  group mentions and wildcard mentions (**@all**, **@topic**, etc.) will not
+  affect topic status.
+- You will automatically follow topics in [muted channels](/help/mute-a-channel)
+  when you are mentioned.
+- Mentions will *not* cause you to automatically follow topics you have
+  explicitly [muted](/help/mute-a-topic).
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Personal settings**.
+
+1. On the left, click **Notifications**.
+
+
+
+1. Under **Topic notifications**, toggle **Automatically follow topics where I'm
+   mentioned**.
+
+</TabItem>
+</Tabs>
+
+
+
+
+## Manage configured topics
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Personal settings**.
+
+1. On the left, click **Topics**.
+
+
+
+1. Configure notifications for each topic by selecting the desired option from
+   the dropdown in the **Status** column.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [Reading strategies](/help/reading-strategies)
+* [Topic notifications](/help/topic-notifications)
+* [Channel notifications](/help/channel-notifications)
+* [Mute or unmute a topic](/help/mute-a-topic)
+* [Mute or unmute a channel](/help/mute-a-channel)
+
+

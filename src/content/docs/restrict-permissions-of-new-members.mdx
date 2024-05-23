@@ -1,0 +1,59 @@
+---
+title: restrict-permissions-of-new-members.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Restrict permissions of new members
+
+
+!!! warn ""
+
+    This feature is only available to organization owners.
+
+
+
+
+In large Zulip organizations where
+[anyone can join](/help/restrict-account-creation#set-whether-invitations-are-required-to-join), it can
+be useful to restrict what new members can do, to make it easier to cope
+with spammers and confused users.
+
+Members are **new members** from when they join till when their account ages
+past a certain **waiting period** threshold. After that they are **full members**.
+You can configure how long the waiting period is, as well as which actions require
+being a full member.
+
+For some features, Zulip supports restricting access to only full members. These
+features include [creating channels](/help/configure-who-can-create-channels),
+[inviting users to the organization](/help/invite-new-users),
+[adding custom emoji](/help/custom-emoji#change-who-can-add-custom-emoji),
+and many more.
+
+## Set waiting period for new members
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization permissions**.
+
+
+
+1. Under **Joining the organization**, configure
+   **Waiting period before new members turn into full members**.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+- [Roles and permissions](/help/roles-and-permissions)
+
+

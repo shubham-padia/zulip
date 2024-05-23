@@ -1,0 +1,154 @@
+---
+title: marking-messages-as-read.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Marking messages as read
+
+Zulip automatically keeps track of which messages you have and haven't read.
+Unread messages have a line along the left side, which fades when the message
+gets marked as read.
+
+Zulip offers tools to manually mark one or more messages as read, and you can
+configure whether messages are marked as read automatically when you scroll.
+
+## Configure whether messages are automatically marked as read
+
+You can choose how messages are automatically marked as read in the Zulip web
+and mobile apps. You can configure the mobile app differently from the
+web/desktop app.
+
+- **Always**: Messages are marked as read whenever you scroll through them in
+  the app. You may be used to this from other chat applications.
+- **Never**: Messages are marked as read only
+  [manually](#mark-all-messages-as-read). For example, if you often need to
+  follow up on messages at your computer after reading them in the mobile app,
+  you can choose this option for the mobile app.
+- **Only in conversation views**: In Zulip, a **conversation** is a [direct
+  message](/help/direct-messages) thread (one-on-one or with a group), or a
+  [topic in a channel](/help/introduction-to-topics). This option makes it
+  convenient to preview new messages in a channel, or skim [Combined
+  feed](/help/combined-feed), and later read each topic in detail.
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Personal settings**.
+
+1. On the left, click **Preferences**.
+
+
+
+1. Under **Advanced**, click on the **Automatically mark messages as
+   read** dropdown, and select **Always**, **Never** or **Only in
+   [conversation](/help/reading-conversations) views**.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Tap your **profile picture** in the bottom right corner of the app.
+
+
+
+
+1. Tap **Settings**.
+
+1. Tap **Mark messages as read on scroll**.
+
+1. Select **Always**, **Never** or **Only in
+   [conversation](/help/reading-conversations) views**.
+
+</TabItem>
+</Tabs>
+
+## Mark a message as read
+
+<Tabs>
+<TabItem label="desktop-web">
+
+1. Select the message using the **blue box** to mark it as read. You can scroll
+   the **blue box** using the mouse, or with [keyboard navigation
+   shortcuts](/help/keyboard-shortcuts#navigation).
+
+</TabItem>
+</Tabs>
+
+## Mark all messages as read
+
+You can manually **mark all messages as read**, or **mark all messages in a
+channel or topic as read**.
+
+<Tabs>
+<TabItem label="via-left-sidebar">
+
+1. Hover over a channel, topic, or **Combined feed** in the left sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>).
+
+1. Click **Mark all messages as read**.
+
+!!! tip ""
+
+    You can also mark all messages in your current view as read by
+    jumping to the bottom with the **Scroll to bottom**
+    (<i class="fa fa-chevron-down"></i>) button or the <kbd>End</kbd> shortcut.
+
+</TabItem>
+<TabItem label="via-inbox-view">
+
+1. Click on <i class="zulip-icon zulip-icon-inbox"></i> **Inbox**
+   (or <i class="zulip-icon zulip-icon-inbox"></i> if the **views**
+   section is collapsed) in the left sidebar,
+   or use the <kbd>Shift</kbd> + <kbd>I</kbd> keyboard shortcut.
+
+
+
+
+1. Hover over a channel or topic in the left sidebar.
+
+1. Click on the **ellipsis** (<i class="zulip-icon zulip-icon-more-vertical"></i>).
+
+1. Click **Mark all messages as read**.
+
+</TabItem>
+<TabItem label="via-recent-conversations">
+
+1. Click on <i class="zulip-icon zulip-icon-recent"></i> **Recent conversations**
+   (or <i class="zulip-icon zulip-icon-recent"></i> if the **views**
+   section is collapsed) in the left sidebar,
+   or use the <kbd>T</kbd> keyboard shortcut.
+
+
+
+
+1. Click on an unread messages counter in the **Topic** column to mark all
+   messages in that topic as read.
+
+</TabItem>
+<TabItem label="mobile">
+
+1. Tap a channel, topic, or the **Combined feed**
+   (<img src="/static/images/help/mobile-globe-icon.svg" alt="globe" class="help-center-icon"/>)
+   tab.
+
+2. Tap **Mark channel as read**, **Mark topic as read**, or **Mark all as read**
+   near the top right corner of the app.
+
+!!! tip ""
+
+    You can also press and hold a topic until the long-press menu appears, and
+    select **Mark topic as read**.
+
+</TabItem>
+</Tabs>
+
+## Related articles
+
+* [Marking messages as unread](/help/marking-messages-as-unread)
+* [Reading strategies](/help/reading-strategies)
+* [Read receipts](/help/read-receipts)
+
+

@@ -1,0 +1,50 @@
+---
+title: restrict-profile-picture-changes.md
+---
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+# Restrict profile picture change
+
+
+!!! warn ""
+
+    This feature is only available to organization owners and administrators.
+
+
+
+
+By default, any user can [change their profile picture][change-avatar].
+You can instead prevent users from changing their profile picture. This
+setting is primarily useful in organizations that are [synchronizing
+profile pictures from LDAP][ldap-sync-avatars] or a similar directory.
+
+!!! tip ""
+
+    Organization administrators can always change their own profile
+    picture.
+
+<Tabs>
+<TabItem label="instructions-for-all-platforms">
+
+1. Click on the **gear** (<i class="zulip-icon zulip-icon-gear"></i>) icon in the upper
+   right corner of the web or desktop app.
+
+1. Select **Organization settings**.
+
+1. On the left, click **Organization permissions**.
+
+
+
+1. Under **User identity**, select **Prevent users from changing their
+   avatar**.
+
+
+1. Click **Save changes**.
+
+</TabItem>
+</Tabs>
+
+[change-avatar]: /help/change-your-profile-picture
+[ldap-sync-avatars]: https://zulip.readthedocs.io/en/stable/production/authentication-methods.html#synchronizing-avatars
+
+
