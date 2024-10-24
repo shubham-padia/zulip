@@ -548,7 +548,7 @@ class TestCreateStreams(ZulipTestCase):
         result = self.common_subscribe_to_streams(
             user,
             subscriptions,
-            {"can_remove_subscribers_group": orjson.dumps(moderators_system_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": moderators_system_group.id}).decode()},
             subdomain="zulip",
         )
         self.assert_json_success(result)
@@ -566,7 +566,7 @@ class TestCreateStreams(ZulipTestCase):
         result = self.common_subscribe_to_streams(
             user,
             subscriptions,
-            {"can_remove_subscribers_group": orjson.dumps(hamletcharacters_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": hamletcharacters_group.id}).decode()},
             allow_fail=True,
             subdomain="zulip",
         )
@@ -580,7 +580,7 @@ class TestCreateStreams(ZulipTestCase):
         result = self.common_subscribe_to_streams(
             user,
             subscriptions,
-            {"can_remove_subscribers_group": orjson.dumps(internet_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": internet_group.id}).decode()},
             allow_fail=True,
             subdomain="zulip",
         )
@@ -595,7 +595,7 @@ class TestCreateStreams(ZulipTestCase):
         result = self.common_subscribe_to_streams(
             user,
             subscriptions,
-            {"can_remove_subscribers_group": orjson.dumps(owners_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": owners_group.id}).decode()},
             allow_fail=True,
             subdomain="zulip",
         )
@@ -610,7 +610,7 @@ class TestCreateStreams(ZulipTestCase):
         result = self.common_subscribe_to_streams(
             user,
             subscriptions,
-            {"can_remove_subscribers_group": orjson.dumps(nobody_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": nobody_group.id}).decode()},
             allow_fail=True,
             subdomain="zulip",
         )
@@ -2300,14 +2300,14 @@ class StreamAdminTest(ZulipTestCase):
         self.login("shiva")
         result = self.client_patch(
             f"/json/streams/{stream.id}",
-            {"can_remove_subscribers_group": orjson.dumps(moderators_system_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": moderators_system_group.id}).decode()},
         )
         self.assert_json_error(result, "Must be an organization administrator")
 
         self.login("iago")
         result = self.client_patch(
             f"/json/streams/{stream.id}",
-            {"can_remove_subscribers_group": orjson.dumps(moderators_system_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": moderators_system_group.id}).decode()},
         )
         self.assert_json_success(result)
         stream = get_stream("stream_name1", realm)
@@ -2317,7 +2317,7 @@ class StreamAdminTest(ZulipTestCase):
         hamletcharacters_group = NamedUserGroup.objects.get(name="hamletcharacters", realm=realm)
         result = self.client_patch(
             f"/json/streams/{stream.id}",
-            {"can_remove_subscribers_group": orjson.dumps(hamletcharacters_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": hamletcharacters_group.id}).decode()},
         )
         self.assert_json_error(
             result, "'can_remove_subscribers_group' must be a system user group."
@@ -2328,7 +2328,7 @@ class StreamAdminTest(ZulipTestCase):
         )
         result = self.client_patch(
             f"/json/streams/{stream.id}",
-            {"can_remove_subscribers_group": orjson.dumps(internet_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": internet_group.id}).decode()},
         )
         self.assert_json_error(
             result,
@@ -2340,7 +2340,7 @@ class StreamAdminTest(ZulipTestCase):
         )
         result = self.client_patch(
             f"/json/streams/{stream.id}",
-            {"can_remove_subscribers_group": orjson.dumps(owners_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": owners_group.id}).decode()},
         )
         self.assert_json_error(
             result,
@@ -2352,7 +2352,7 @@ class StreamAdminTest(ZulipTestCase):
         )
         result = self.client_patch(
             f"/json/streams/{stream.id}",
-            {"can_remove_subscribers_group": orjson.dumps(nobody_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": nobody_group.id}).decode()},
         )
         self.assert_json_error(
             result,
@@ -2364,14 +2364,14 @@ class StreamAdminTest(ZulipTestCase):
         stream = self.make_stream("stream_name2", invite_only=True)
         result = self.client_patch(
             f"/json/streams/{stream.id}",
-            {"can_remove_subscribers_group": orjson.dumps(moderators_system_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": moderators_system_group.id}).decode()},
         )
         self.assert_json_error(result, "Invalid channel ID")
 
         self.subscribe(user_profile, "stream_name2")
         result = self.client_patch(
             f"/json/streams/{stream.id}",
-            {"can_remove_subscribers_group": orjson.dumps(moderators_system_group.id).decode()},
+            {"can_remove_subscribers_group": orjson.dumps({"new": moderators_system_group.id}).decode()},
         )
         self.assert_json_success(result)
         stream = get_stream("stream_name2", realm)

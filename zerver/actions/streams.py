@@ -48,6 +48,7 @@ from zerver.lib.streams import (
 )
 from zerver.lib.subscription_info import get_subscribers_query
 from zerver.lib.types import APISubscriptionDict
+from zerver.lib.user_groups import AnonymousSettingGroupDict, get_group_setting_value_for_api, get_group_setting_value_for_audit_log_data
 from zerver.lib.users import (
     get_subscribers_of_target_user_subscriptions,
     get_users_involved_in_dms_with_target_users,
@@ -1633,15 +1634,31 @@ def do_change_stream_group_based_setting(
     setting_name: str,
     user_group: UserGroup,
     *,
+    old_setting_api_value: int | AnonymousSettingGroupDict | None = None,
     acting_user: UserProfile | None = None,
 ) -> None:
     old_user_group = getattr(stream, setting_name)
-    old_user_group_id = None
-    if old_user_group is not None:
-        old_user_group_id = old_user_group.id
 
     setattr(stream, setting_name, user_group)
     stream.save()
+
+    if old_setting_api_value is None:
+        # Most production callers will have computed this as part of
+        # verifying whether there's an actual change to make, but it
+        # feels quite clumsy to have to pass it from unit tests, so we
+        # compute it here if not provided by the caller.
+        old_setting_api_value = get_group_setting_value_for_api(old_user_group)
+    new_setting_api_value = get_group_setting_value_for_api(user_group)
+
+    if not hasattr(old_user_group, "named_user_group") and hasattr(
+        user_group, "named_user_group"
+    ):
+        # We delete the UserGroup which the setting was set to
+        # previously if it does not have any linked NamedUserGroup
+        # object, as it is not used anywhere else. A new UserGroup
+        # object would be created if the setting is later set to
+        # a combination of users and groups.
+        old_user_group.delete()
 
     RealmAuditLog.objects.create(
         realm=stream.realm,
@@ -1650,8 +1667,12 @@ def do_change_stream_group_based_setting(
         event_type=AuditLogEventType.CHANNEL_GROUP_BASED_SETTING_CHANGED,
         event_time=timezone_now(),
         extra_data={
-            RealmAuditLog.OLD_VALUE: old_user_group_id,
-            RealmAuditLog.NEW_VALUE: user_group.id,
+            RealmAuditLog.OLD_VALUE: get_group_setting_value_for_audit_log_data(
+                old_setting_api_value
+            ),
+            RealmAuditLog.NEW_VALUE: get_group_setting_value_for_audit_log_data(
+                new_setting_api_value
+            ),
             "property": setting_name,
         },
     )

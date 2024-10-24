@@ -10350,7 +10350,7 @@ paths:
                 message_retention_days:
                   $ref: "#/components/schemas/MessageRetentionDays"
                 can_remove_subscribers_group:
-                  $ref: "#/components/schemas/CanRemoveSubscribersGroupId"
+                  $ref: "#/components/schemas/CanRemoveSubscribersGroup"
               required:
                 - subscriptions
             encoding:
@@ -19922,7 +19922,7 @@ paths:
                 message_retention_days:
                   $ref: "#/components/schemas/MessageRetentionDays"
                 can_remove_subscribers_group:
-                  $ref: "#/components/schemas/CanRemoveSubscribersGroupId"
+                  $ref: "#/components/schemas/CanRemoveSubscribersGroup"
             encoding:
               is_private:
                 contentType: application/json
@@ -21748,17 +21748,18 @@ components:
 
             **Changes**: Deprecated in Zulip 3.0 (feature level 1). Clients
             should use `stream_post_policy` instead.
-        can_remove_subscribers_group:
-          type: integer
-          description: |
-            ID of the user group whose members are allowed to unsubscribe others
-            from the channel.
+        can_remove_subscribers_group:                    
+          allOf:
+          - $ref: "#/components/schemas/GroupSettingValue"
+          - description: |
+              ID of the user group whose members are allowed to unsubscribe others
+              from the channel.
 
-            **Changes**: Before Zulip 8.0 (feature level 197),
-            the `can_remove_subscribers_group` setting
-            was named `can_remove_subscribers_group_id`.
+              **Changes**: Before Zulip 8.0 (feature level 197),
+              the `can_remove_subscribers_group` setting
+              was named `can_remove_subscribers_group_id`.
 
-            New in Zulip 6.0 (feature level 142).
+              New in Zulip 6.0 (feature level 142).
     BasicBot:
       allOf:
         - $ref: "#/components/schemas/BasicBotBase"
@@ -22735,16 +22736,17 @@ components:
             If `null`, the channel was recently created and there is
             insufficient data to estimate the average traffic.
         can_remove_subscribers_group:
-          type: integer
-          description: |
-            ID of the user group whose members are allowed to unsubscribe others
-            from the channel.
+          allOf:
+            - $ref: "#/components/schemas/GroupSettingValue"
+            - description: |
+                ID of the user group whose members are allowed to unsubscribe others
+                from the channel.
 
-            **Changes**: Before Zulip 8.0 (feature level 197),
-            the `can_remove_subscribers_group` setting
-            was named `can_remove_subscribers_group_id`.
+                **Changes**: Before Zulip 8.0 (feature level 197),
+                the `can_remove_subscribers_group` setting
+                was named `can_remove_subscribers_group_id`.
 
-            New in Zulip 6.0 (feature level 142).
+                New in Zulip 6.0 (feature level 142).
     DefaultChannelGroup:
       type: object
       description: |
@@ -24405,7 +24407,7 @@ components:
         - type: string
         - type: integer
       example: "20"
-    CanRemoveSubscribersGroupId:
+    CanRemoveSubscribersGroup:
       description: |
         ID of the [user group](/api/get-user-groups) whose members are
         allowed to unsubscribe others from the channel. Note that a user
@@ -24422,8 +24424,28 @@ components:
         was named `can_remove_subscribers_group_id`.
 
         New in Zulip 7.0 (feature level 161).
-      type: integer
-      example: 20
+      type: object
+      additionalProperties: false
+      properties:
+        new:
+          allOf:
+            - description: |
+                The new [group-setting value](/api/group-setting-values) for who would
+                have the permission to leave the group.
+            - $ref: "#/components/schemas/GroupSettingValue"
+        old:
+          allOf:
+            - description: |
+                The expected current [group-setting value](/api/group-setting-values)
+                for who has the permission to leave the group.
+            - $ref: "#/components/schemas/GroupSettingValue"
+      required:
+        - new
+      example:
+        {
+          "new": {"direct_members": [10], "direct_subgroups": [11]},
+          "old": 15,
+        }
     LinkifierPattern:
       description: |
         The [Python regular
