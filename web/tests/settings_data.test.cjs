@@ -183,7 +183,7 @@ test_realm_group_settings(
 
 test_realm_group_settings(
     "realm_can_add_subscribers_group",
-    settings_data.user_can_subscribe_other_users,
+    settings_data.has_realm_wide_permission_to_subscribe_other_users,
 );
 
 test_realm_group_settings(

@@ -422,7 +422,7 @@ export function update_add_subscriptions_elements(sub: SettingsSubscription): vo
 
     if (!allow_user_to_add_subs) {
         let tooltip_message;
-        if (!settings_data.user_can_subscribe_other_users()) {
+        if (!settings_data.has_realm_wide_permission_to_subscribe_other_users()) {
             tooltip_message = $t({
                 defaultMessage:
                     "You do not have permission to add other users to channels in this organization.",

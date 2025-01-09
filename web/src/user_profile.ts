@@ -543,7 +543,8 @@ export function show_user_profile(user: User, default_tab_key = "profile-tab"): 
     // want to show the subscribe widget for generic bots since they are system bots and for deactivated users.
     // Therefore, we also check for that condition.
     const show_user_subscribe_widget =
-        (people.can_admin_user(user) || settings_data.user_can_subscribe_other_users()) &&
+        (people.can_admin_user(user) ||
+            settings_data.has_realm_wide_permission_to_subscribe_other_users()) &&
         !user.is_system_bot &&
         people.is_person_active(user.user_id);
     const groups_of_user = user_groups.get_user_groups_of_user(user.user_id);

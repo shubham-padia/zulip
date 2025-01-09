@@ -281,7 +281,8 @@ export function warn_if_mentioning_unsubscribed_user(
             Number($(user_row).attr("data-user-id")),
         );
 
-        const can_subscribe_other_users = settings_data.user_can_subscribe_other_users();
+        const can_subscribe_other_users =
+            settings_data.has_realm_wide_permission_to_subscribe_other_users();
 
         if (!existing_invites.includes(user_id)) {
             const context = {

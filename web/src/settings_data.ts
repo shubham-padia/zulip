@@ -90,7 +90,7 @@ export function user_can_create_multiuse_invite(): boolean {
     );
 }
 
-export function user_can_subscribe_other_users(): boolean {
+export function has_realm_wide_permission_to_subscribe_other_users(): boolean {
     return (
         current_user.is_admin ||
         user_has_permission_for_group_setting(
