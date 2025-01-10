@@ -7,7 +7,10 @@ from django.db.models import Exists, OuterRef, Q, QuerySet, Value
 from django.utils.timezone import now as timezone_now
 from django.utils.translation import gettext as _
 
-from zerver.lib.default_streams import get_default_stream_ids_for_realm
+from zerver.lib.default_streams import (
+    get_default_stream_ids_for_realm,
+    get_slim_realm_default_streams,
+)
 from zerver.lib.exceptions import (
     CannotAdministerChannelError,
     IncompatibleParametersError,
@@ -777,7 +780,9 @@ class StreamSub(TypedDict):
 
 
 def can_add_subscribers_to_streams(
-    stream_sub_dict: dict[int, StreamSub], user_profile: UserProfile
+    stream_sub_dict: dict[int, StreamSub],
+    user_profile: UserProfile,
+    allow_default_streams: bool = False,
 ) -> dict[int, bool]:
     result = {}
 
@@ -791,9 +796,19 @@ def can_add_subscribers_to_streams(
     user_recursive_group_ids = set(
         get_recursive_membership_groups(user_profile).values_list("id", flat=True)
     )
+    if allow_default_streams:
+        default_stream_ids = [
+            stream.id for stream in get_slim_realm_default_streams(user_profile.realm_id)
+        ]
+
     for value in stream_sub_dict.values():
         stream = value["stream"]
         sub = value["sub"]
+
+        # TODO: Add a note saying how this is only true for invite code path.
+        if allow_default_streams and stream.id in default_stream_ids:
+            result[stream.id] = True
+            continue
 
         if not check_basic_stream_access(user_profile, stream, sub, allow_realm_admin=True):
             result[stream.id] = False
