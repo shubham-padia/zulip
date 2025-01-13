@@ -14,7 +14,6 @@ page_params.development_environment = true;
 const color_data = zrequire("color_data");
 const peer_data = zrequire("peer_data");
 const people = zrequire("people");
-const settings_config = zrequire("settings_config");
 const sub_store = zrequire("sub_store");
 const stream_data = zrequire("stream_data");
 const hash_util = zrequire("hash_util");
@@ -359,17 +358,14 @@ test("get_streams_for_user", ({override}) => {
     for (const sub of subs) {
         stream_data.add_sub(sub);
     }
+    override(current_user, "user_id", me.user_id);
 
     peer_data.set_subscribers(denmark.stream_id, [me.user_id, test_user.user_id]);
     peer_data.set_subscribers(social.stream_id, [test_user.user_id]);
     peer_data.set_subscribers(test.stream_id, [test_user.user_id]);
     peer_data.set_subscribers(world.stream_id, [me.user_id]);
 
-    override(
-        realm,
-        "realm_invite_to_stream_policy",
-        settings_config.common_policy_values.by_admins_only.code,
-    );
+    override(realm, "realm_can_add_subscribers_group", admins_group.id);
     assert.deepEqual(stream_data.get_streams_for_user(me.user_id).can_subscribe, [social, errors]);
 
     // test_user is subscribed to all three streams, but current user (me)
@@ -392,11 +388,7 @@ test("get_streams_for_user", ({override}) => {
     ]);
     override(current_user, "is_admin", false);
 
-    override(
-        realm,
-        "realm_invite_to_stream_policy",
-        settings_config.common_policy_values.by_members.code,
-    );
+    override(realm, "realm_can_add_subscribers_group", everyone_group.id);
     assert.deepEqual(stream_data.get_streams_for_user(test_user.user_id).can_subscribe, [
         world,
         errors,
@@ -433,6 +425,8 @@ test("renames", () => {
 });
 
 test("admin_options", ({override}) => {
+    override(realm, "realm_can_add_subscribers_group", admins_group.id);
+
     function make_sub(can_administer_channel_group) {
         const sub = {
             subscribed: false,
@@ -518,6 +512,7 @@ test("admin_options", ({override}) => {
 });
 
 test("stream_settings", ({override}) => {
+    override(realm, "realm_can_add_subscribers_group", admins_group.id);
     const cinnamon = {
         stream_id: 1,
         name: "c",
