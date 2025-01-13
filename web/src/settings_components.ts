@@ -803,6 +803,7 @@ export function check_realm_settings_property_changed(elem: HTMLElement): boolea
             proposed_val = get_dropdown_list_widget_setting_value($elem);
             break;
         case "realm_can_add_custom_emoji_group":
+        case "realm_can_add_subscribers_group":
         case "realm_can_create_groups":
         case "realm_can_create_public_channel_group":
         case "realm_can_create_private_channel_group":
@@ -1048,6 +1049,7 @@ export function populate_data_for_realm_settings_request(
                 const realm_group_settings = new Set([
                     "can_access_all_users_group",
                     "can_add_custom_emoji_group",
+                    "can_add_subscribers_group",
                     "can_create_groups",
                     "can_create_private_channel_group",
                     "can_create_public_channel_group",
@@ -1509,6 +1511,7 @@ export const group_setting_widget_map = new Map<string, GroupSettingPillContaine
     ["can_remove_subscribers_group", null],
     ["can_send_message_group", null],
     ["realm_can_add_custom_emoji_group", null],
+    ["realm_can_add_subscribers_group", null],
     ["realm_can_create_groups", null],
     ["realm_can_create_public_channel_group", null],
     ["realm_can_create_private_channel_group", null],
@@ -1619,6 +1622,7 @@ export function create_group_setting_widget({
 
 export const realm_group_setting_name_schema = z.enum([
     "can_add_custom_emoji_group",
+    "can_add_subscribers_group",
     "can_create_groups",
     "can_create_public_channel_group",
     "can_create_private_channel_group",
