@@ -21,7 +21,7 @@ def set_default_value_for_can_add_subscribers_group(
 
 class Migration(migrations.Migration):
     atomic = False
-    
+
     dependencies = [
         ("zerver", "0653_stream_can_add_subscribers_group"),
     ]

@@ -20321,7 +20321,7 @@ paths:
                     Realm admins are allowed to subscribe others to a channel they have
                     access to regardless of whether they are present in this group.
 
-                    **Changes**: New in Zulip 10.0 (feature level placeholder_level). Prior to this
+                    **Changes**: New in Zulip 10.0 (feature level 341). Prior to this
                     change, the permission to subscribe other users to a channel was limited to realm
                     administrators.
                   type: object
@@ -25042,7 +25042,7 @@ components:
             Realm admins are allowed to subscribe others to a channel they have
             access to regardless of whether they are present in this group.
 
-            **Changes**: New in Zulip 10.0 (feature level placeholder_level). Prior to this
+            **Changes**: New in Zulip 10.0 (feature level 341). Prior to this
             change, the permission to subscribe other users to a channel was limited to realm
             administrators.
 
