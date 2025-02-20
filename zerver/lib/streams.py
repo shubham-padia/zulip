@@ -1111,24 +1111,19 @@ class StreamsCategorizedByPermissionsForAddingSubscribers(BaseStreamsCategorized
     streams_to_which_user_cannot_add_subscribers: list[Stream]
 
 
+@dataclass
+class StreamsCategorizedByPermissionsByContentAccess:
+    metadata_access_streams: list[Stream]
+    content_access_streams: list[Stream]
+    unauthorized_streams: list[Stream]
+
+
 def filter_stream_authorization(
     user_profile: UserProfile,
     streams: Collection[Stream],
     user_group_membership_details: UserGroupMembershipDetails,
+    subscribed_recipient_ids: set[int],
 ) -> BaseStreamsCategorizedByPermissions:
-    if len(streams) == 0:
-        return BaseStreamsCategorizedByPermissions(
-            authorized_streams=[],
-            unauthorized_streams=[],
-        )
-
-    recipient_ids = [stream.recipient_id for stream in streams]
-    subscribed_recipient_ids = set(
-        Subscription.objects.filter(
-            user_profile=user_profile, recipient_id__in=recipient_ids, active=True
-        ).values_list("recipient_id", flat=True)
-    )
-
     unauthorized_streams: list[Stream] = []
 
     for stream in streams:
@@ -1185,8 +1180,15 @@ def filter_stream_authorization_for_adding_subscribers(
         )
 
     user_group_membership_details = UserGroupMembershipDetails(user_recursive_group_ids=None)
+    recipient_ids = [stream.recipient_id for stream in streams]
+    subscribed_recipient_ids = set(
+        Subscription.objects.filter(
+            user_profile=user_profile, recipient_id__in=recipient_ids, active=True
+        ).values_list("recipient_id", flat=True)
+    )
+
     filter_stream_authorization_result = filter_stream_authorization(
-        user_profile, streams, user_group_membership_details
+        user_profile, streams, user_group_membership_details, subscribed_recipient_ids
     )
 
     streams_to_which_user_cannot_add_subscribers: list[Stream] = []
@@ -1211,6 +1213,42 @@ def filter_stream_authorization_for_adding_subscribers(
         authorized_streams=authorized_streams,
         unauthorized_streams=filter_stream_authorization_result.unauthorized_streams,
         streams_to_which_user_cannot_add_subscribers=streams_to_which_user_cannot_add_subscribers,
+    )
+
+
+def filter_stream_authorization_for_content_access(
+    user_profile: UserProfile, streams: Collection[Stream]
+) -> StreamsCategorizedByPermissionsByContentAccess:
+    if len(streams) == 0:
+        return StreamsCategorizedByPermissionsByContentAccess(
+            metadata_access_streams=[],
+            content_access_streams=[],
+            unauthorized_streams=[],
+        )
+
+    user_group_membership_details = UserGroupMembershipDetails(user_recursive_group_ids=None)
+    recipient_ids = [stream.recipient_id for stream in streams]
+    subscribed_recipient_ids = set(
+        Subscription.objects.filter(
+            user_profile=user_profile, recipient_id__in=recipient_ids, active=True
+        ).values_list("recipient_id", flat=True)
+    )
+    filter_stream_authorization_result = filter_stream_authorization(
+        user_profile, streams, user_group_membership_details, subscribed_recipient_ids
+    )
+
+    streams_with_content_access: list[Stream] = []
+    for stream in filter_stream_authorization_result.authorized_streams:
+        is_subscribed = stream.recipient_id in subscribed_recipient_ids
+        if user_has_content_access(
+            user_profile, stream, user_group_membership_details, is_subscribed=is_subscribed
+        ):
+            streams_with_content_access.append(stream)
+
+    return StreamsCategorizedByPermissionsByContentAccess(
+        metadata_access_streams=filter_stream_authorization_result.authorized_streams,
+        content_access_streams=streams_with_content_access,
+        unauthorized_streams=filter_stream_authorization_result.unauthorized_streams,
     )
 
 
