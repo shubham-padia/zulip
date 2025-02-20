@@ -1038,6 +1038,7 @@ def get_streams_to_which_user_cannot_add_subscribers(
     user_profile: UserProfile,
     *,
     allow_default_streams: bool = False,
+    user_group_membership_details: UserGroupMembershipDetails,
 ) -> list[Stream]:
     # IMPORTANT: This function expects its callers to have already
     # checked that the user can access the provided channels, and thus
@@ -1054,9 +1055,10 @@ def get_streams_to_which_user_cannot_add_subscribers(
     if user_profile.is_realm_admin:
         return []
 
-    user_recursive_group_ids = set(
-        get_recursive_membership_groups(user_profile).values_list("id", flat=True)
-    )
+    if user_group_membership_details.user_recursive_group_ids is None:
+        user_group_membership_details.user_recursive_group_ids = set(
+            get_recursive_membership_groups(user_profile).values_list("id", flat=True)
+        )
     if allow_default_streams:
         default_stream_ids = get_default_stream_ids_for_realm(user_profile.realm_id)
 
@@ -1073,10 +1075,14 @@ def get_streams_to_which_user_cannot_add_subscribers(
         if allow_default_streams and stream.id in default_stream_ids:
             continue
 
-        if is_user_in_can_administer_channel_group(stream, user_recursive_group_ids):
+        if is_user_in_can_administer_channel_group(
+            stream, user_group_membership_details.user_recursive_group_ids
+        ):
             continue
 
-        if not is_user_in_can_add_subscribers_group(stream, user_recursive_group_ids):
+        if not is_user_in_can_add_subscribers_group(
+            stream, user_group_membership_details.user_recursive_group_ids
+        ):
             result.append(stream)
 
     return result
@@ -1095,20 +1101,25 @@ def can_administer_accessible_channel(channel: Stream, user_profile: UserProfile
 
 
 @dataclass
-class StreamsCategorizedByPermissions:
+class BaseStreamsCategorizedByPermissions:
     authorized_streams: list[Stream]
     unauthorized_streams: list[Stream]
+
+
+@dataclass
+class StreamsCategorizedByPermissionsForAddingSubscribers(BaseStreamsCategorizedByPermissions):
     streams_to_which_user_cannot_add_subscribers: list[Stream]
 
 
 def filter_stream_authorization(
-    user_profile: UserProfile, streams: Collection[Stream], is_subscribing_other_users: bool = False
-) -> StreamsCategorizedByPermissions:
+    user_profile: UserProfile,
+    streams: Collection[Stream],
+    user_group_membership_details: UserGroupMembershipDetails,
+) -> BaseStreamsCategorizedByPermissions:
     if len(streams) == 0:
-        return StreamsCategorizedByPermissions(
+        return BaseStreamsCategorizedByPermissions(
             authorized_streams=[],
             unauthorized_streams=[],
-            streams_to_which_user_cannot_add_subscribers=[],
         )
 
     recipient_ids = [stream.recipient_id for stream in streams]
@@ -1119,11 +1130,6 @@ def filter_stream_authorization(
     )
 
     unauthorized_streams: list[Stream] = []
-    streams_to_which_user_cannot_add_subscribers: list[Stream] = []
-    if is_subscribing_other_users:
-        streams_to_which_user_cannot_add_subscribers = (
-            get_streams_to_which_user_cannot_add_subscribers(list(streams), user_profile)
-        )
 
     for stream in streams:
         # Deactivated streams are not accessible
@@ -1148,24 +1154,62 @@ def filter_stream_authorization(
             continue
 
         if stream.invite_only:
-            user_recursive_group_ids = set(
-                get_recursive_membership_groups(user_profile).values_list("id", flat=True)
-            )
+            if user_group_membership_details.user_recursive_group_ids is None:
+                user_group_membership_details.user_recursive_group_ids = set(
+                    get_recursive_membership_groups(user_profile).values_list("id", flat=True)
+                )
             # The above has checked that the user is not a guest for the below settings.
-            if is_user_in_groups_granting_content_access(stream, user_recursive_group_ids):
+            if is_user_in_groups_granting_content_access(
+                stream, user_group_membership_details.user_recursive_group_ids
+            ):
                 continue
 
         unauthorized_streams.append(stream)
 
-    authorized_streams = [
-        stream
-        for stream in streams
-        if stream.id not in {stream.id for stream in unauthorized_streams}
-        and stream.id not in {stream.id for stream in streams_to_which_user_cannot_add_subscribers}
-    ]
-    return StreamsCategorizedByPermissions(
+    unauthorized_stream_ids = {stream.id for stream in unauthorized_streams}
+    authorized_streams = [stream for stream in streams if stream.id not in unauthorized_stream_ids]
+    return BaseStreamsCategorizedByPermissions(
         authorized_streams=authorized_streams,
         unauthorized_streams=unauthorized_streams,
+    )
+
+
+def filter_stream_authorization_for_adding_subscribers(
+    user_profile: UserProfile, streams: Collection[Stream], is_subscribing_other_users: bool = False
+) -> StreamsCategorizedByPermissionsForAddingSubscribers:
+    if len(streams) == 0:
+        return StreamsCategorizedByPermissionsForAddingSubscribers(
+            authorized_streams=[],
+            unauthorized_streams=[],
+            streams_to_which_user_cannot_add_subscribers=[],
+        )
+
+    user_group_membership_details = UserGroupMembershipDetails(user_recursive_group_ids=None)
+    filter_stream_authorization_result = filter_stream_authorization(
+        user_profile, streams, user_group_membership_details
+    )
+
+    streams_to_which_user_cannot_add_subscribers: list[Stream] = []
+    if is_subscribing_other_users:
+        streams_to_which_user_cannot_add_subscribers = (
+            get_streams_to_which_user_cannot_add_subscribers(
+                list(filter_stream_authorization_result.authorized_streams),
+                user_profile,
+                user_group_membership_details=user_group_membership_details,
+            )
+        )
+
+    stream_ids_to_which_user_cannot_add_subscribers = {
+        stream.id for stream in streams_to_which_user_cannot_add_subscribers
+    }
+    authorized_streams = [
+        stream
+        for stream in filter_stream_authorization_result.authorized_streams
+        if stream.id not in stream_ids_to_which_user_cannot_add_subscribers
+    ]
+    return StreamsCategorizedByPermissionsForAddingSubscribers(
+        authorized_streams=authorized_streams,
+        unauthorized_streams=filter_stream_authorization_result.unauthorized_streams,
         streams_to_which_user_cannot_add_subscribers=streams_to_which_user_cannot_add_subscribers,
     )
 
