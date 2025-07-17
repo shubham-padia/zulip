@@ -7,7 +7,7 @@ tools.
 
 ## Link to a channel within Zulip
 
-Channel links are automatically formatted as [#channel name]().
+Channel links are automatically formatted as `[#channel name]()`.
 
 {start_tabs}
 
@@ -35,7 +35,7 @@ You can create a channel link manually by typing `#**channel name**`
 
 ## Link to a topic within Zulip
 
-Topic links are automatically formatted as [#channel > topic]().
+Topic links are automatically formatted as `[#channel > topic]()`.
 
 {start_tabs}
 
