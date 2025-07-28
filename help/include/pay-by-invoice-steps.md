@@ -13,10 +13,3 @@
    invoice will be sent to the email address you used to sign in.
 
 1. Your plan will be upgraded when the initial invoice is paid.
-
-!!! tip ""
-
-    Until the initial invoice is paid, logging in to manage your billing
-    will show a page with a link to the outstanding invoice. You'll be able
-    to manage your plan once your first invoice is paid.
-

@@ -28,6 +28,8 @@ don't hesitate to reach out at [sales@zulip.com](mailto:sales@zulip.com).
 
 {!pay-by-invoice-steps.md!}
 
+{!pay-by-invoice-tip.md!}
+
 {end_tabs}
 
 ## Manage billing

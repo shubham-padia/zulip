@@ -223,6 +223,8 @@ An organization is considered to be a new customer if:
 
 {!pay-by-invoice-steps.md!}
 
+{!pay-by-invoice-tip.md!}
+
 {end_tabs}
 
 ## Manage billing
