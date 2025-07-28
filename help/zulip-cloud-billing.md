@@ -213,6 +213,8 @@ licenses, which limits the number of users in your organization.
 
 {!manual-add-license-instructions.md!}
 
+{!manual-add-license-tip.md!}
+
 {end_tabs}
 
 ## Temporary users and guests

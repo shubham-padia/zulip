@@ -431,6 +431,8 @@ deactivated enough users.
 
 {!manual-add-license-instructions.md!}
 
+{!manual-add-license-tip.md!}
+
 {end_tabs}
 
 ## How paid plans support the Zulip project
