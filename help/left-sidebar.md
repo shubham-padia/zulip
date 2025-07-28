@@ -55,6 +55,8 @@ information you need in the moment.
 
 {!view-dms-left-sidebar.md!}
 
+{!view-dms-left-sidebar-tip.md!}
+
 {end_tabs}
 
 ### Show all topics in a channel

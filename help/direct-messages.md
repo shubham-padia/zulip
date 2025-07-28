@@ -23,6 +23,8 @@ There are a few different ways to view your DM conversations.
 
 {!view-dms-left-sidebar.md!}
 
+{!view-dms-left-sidebar-tip.md!}
+
 {tab|via-right-sidebar}
 
 1. If the [user list](/help/user-list) in the right sidebar is hidden, click the
