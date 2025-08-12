@@ -321,6 +321,9 @@ async def help_center_middleware(
         except KeyError:
             pass
 
+        if request.path.endswith("/"):
+            return web.HTTPFound(request.url.with_path(request.path.rstrip("/")))
+
     return await handler(request)
 
 
