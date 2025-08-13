@@ -45,7 +45,6 @@ API_FEATURE_LEVEL = 425
 # * adding a dependency only requires a minor version bump;
 # * removing a dependency requires a major version bump;
 # * upgrading a dependency requires a major version bump, unless the
-#   upgraded dependency is backwards compatible with all of our
 #   historical commits sharing the same major version, in which case a
 #   minor version bump suffices.
 
