@@ -96,3 +96,5 @@ ROBOTSTXT_OBEY = False
 
 # Set settings whose default value is deprecated to a future-proof value
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+
+REDIRECT_ENABLED = True
