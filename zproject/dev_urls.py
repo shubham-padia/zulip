@@ -19,6 +19,7 @@ from zerver.views.development.dev_login import (
     dev_direct_login,
 )
 from zerver.views.development.email_log import clear_emails, email_page, generate_all_emails
+from zerver.views.development.help import help_dev_mode_view
 from zerver.views.development.integrations import (
     check_send_webhook_fixture_message,
     dev_panel,
@@ -106,6 +107,9 @@ urls = [
     path("devtools/buttons/", showroom_component_buttons),
     path("devtools/banners/", showroom_component_banners),
     path("devtools/inputs/", showroom_component_inputs),
+    # TODO comment
+    path("help/", help_dev_mode_view),
+    path("help/<path:subpath>", help_dev_mode_view),
 ]
 
 v1_api_mobile_patterns = [
