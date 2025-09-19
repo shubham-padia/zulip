@@ -29,6 +29,11 @@
         "composite": true,
 
         "types": ["unplugin-icons/types/astro"],
+
+        "paths": {
+            "~/*": ["./src/*"],
+            "~/include/*": ["./src/content/docs/include/*"],
+        },
     },
     "include": [".astro/types.d.ts", "**/*", "src/.remarkrc.js"],
     "exclude": ["dist"],

@@ -343,7 +343,7 @@ All our include files live at `starlight_help/src/content/docs/include`,
 and can be imported and used as a regular component:
 
 ```
-import AdminOnly from "./include/_AdminOnly.mdx";
+import AdminOnly from "~/include/_AdminOnly.mdx";
 
 <AdminOnly />
 ```
@@ -369,7 +369,7 @@ file. In example below, we add the two h3 headers from the include file so
 that they are rendered in the right sidebar:
 
 ```
-import AutomaticallyFollowTopics from "./include/_AutomaticallyFollowTopics.mdx";
+import AutomaticallyFollowTopics from "~/include/_AutomaticallyFollowTopics.mdx";
 
 <AutomaticallyFollowTopics>
   ### Follow topics you start or participate in
@@ -389,7 +389,7 @@ encounter while following the instructions, or point to an option for power
 users.
 
 ```
-import ZulipTip from "../../components/ZulipTip.astro";
+import ZulipTip from "~/components/ZulipTip.astro";
 
 <ZulipTip>
   The app will update automatically to future versions.
@@ -400,7 +400,7 @@ A **keyboard tip** is a note for users to let them know that the same action
 can also be accomplished via a [keyboard shortcut](#keyboard-shortcuts).
 
 ```
-import KeyboardTip from "../../components/KeyboardTip.astro";
+import KeyboardTip from "~/components/KeyboardTip.astro";
 
 <KeyboardTip>
   You can also use <kbd>?</kbd> to open the keyboard shortcuts reference.
@@ -411,7 +411,7 @@ A **warning** is a note on what happens when there is some kind of problem.
 Tips are more common than warnings.
 
 ```
-import ZulipNote from "../../../components/ZulipNote.astro";
+import ZulipNote from "~/components/ZulipNote.astro";
 
 <ZulipNote>
   This feature is only available to organization owners and administrators.
@@ -434,9 +434,9 @@ tabbed instructions:
 ```
 import {Steps, TabItem, Tabs} from "@astrojs/starlight/components";
 
-import FlattenedSteps from "../../components/FlattenedSteps.astro";
+import FlattenedSteps from "~/components/FlattenedSteps.astro";
 
-import MobileSwitchAccount from "./include/_MobileSwitchAccount.mdx";
+import MobileSwitchAccount from "~/include/_MobileSwitchAccount.mdx";
 
 <Tabs>
   <TabItem label="Mobile">
@@ -482,9 +482,9 @@ in a `FlattenedSteps` component, so that the instructions are numbered
 correctly when rendered (e.g., `1.`, `2.`, `3.`, `4.`, etc.):
 
 ```
-import FlattenedSteps from "../../components/FlattenedSteps.astro";
+import FlattenedSteps from "~/components/FlattenedSteps.astro";
 
-import MobileSwitchAccount from "./include/_MobileSwitchAccount.mdx";
+import MobileSwitchAccount from "~/include/_MobileSwitchAccount.mdx";
 
 <FlattenedSteps>
   <MobileSwitchAccount />
@@ -504,7 +504,7 @@ instruction lists, we use a custom `NavigationSteps` component, which needs
 to be wrapped in a `FlattenedSteps` component ([see above](#steps-and-flattenedsteps)).
 
 ```
-import NavigationSteps from "../../components/NavigationSteps.astro";
+import NavigationSteps from "~/components/NavigationSteps.astro";
 
 <FlattenedSteps>
   <NavigationSteps target="settings/organization-permissions" />
