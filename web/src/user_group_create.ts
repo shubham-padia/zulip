@@ -3,6 +3,7 @@ import assert from "minimalistic-assert";
 
 import render_change_user_group_info_modal from "../templates/user_group_settings/change_user_group_info_modal.hbs";
 
+import * as add_subscribers_pill from "./add_subscribers_pill.ts";
 import * as channel from "./channel.ts";
 import * as dialog_widget from "./dialog_widget.ts";
 import * as group_permission_settings from "./group_permission_settings.ts";
@@ -53,6 +54,13 @@ class UserGroupMembershipError {
     report_no_members_to_user_group(): void {
         $("#user_group_membership_error").text(
             $t({defaultMessage: "You cannot create a user group with no members or subgroups."}),
+        );
+        $("#user_group_membership_error").show();
+    }
+
+    report_pending_members_fetch(): void {
+        $("#user_group_membership_error").text(
+            $t({defaultMessage: "Please wait for member data to finish loading."}),
         );
         $("#user_group_membership_error").show();
     }
@@ -286,6 +294,15 @@ export function set_up_handlers(): void {
             user_group_create_members.pill_widget.appendValue(
                 user_group_create_members.pill_widget.getCurrentText()!,
             );
+            return;
+        }
+
+        // A channel pill's subscribers may still be getting fetched
+        // from the server, so the members list does not yet reflect
+        // the pills the user has added; creating the group now would
+        // silently omit those members.
+        if (add_subscribers_pill.has_pending_user_id_fetch(user_group_create_members.pill_widget)) {
+            user_group_membership_error.report_pending_members_fetch();
             return;
         }
 
