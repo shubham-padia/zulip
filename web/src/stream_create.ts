@@ -5,6 +5,7 @@ import * as z from "zod/mini";
 import render_subscription_invites_warning_modal from "../templates/confirm_dialog/confirm_subscription_invites_warning.hbs";
 import render_channel_name_conflict_error from "../templates/stream_settings/channel_name_conflict_error.hbs";
 
+import * as add_subscribers_pill from "./add_subscribers_pill.ts";
 import * as channel from "./channel.ts";
 import * as channel_folders_ui from "./channel_folders_ui.ts";
 import * as confirm_dialog from "./confirm_dialog.ts";
@@ -77,6 +78,13 @@ class StreamSubscriptionError {
     report_no_subs_to_stream(): void {
         $("#stream_subscription_error").text(
             $t({defaultMessage: "You cannot create a channel with no subscribers."}),
+        );
+        $("#stream_subscription_error").show();
+    }
+
+    report_pending_subscribers_fetch(): void {
+        $("#stream_subscription_error").text(
+            $t({defaultMessage: "Please wait for subscriber data to finish loading."}),
         );
         $("#stream_subscription_error").show();
     }
@@ -615,6 +623,15 @@ export function set_up_handlers(): void {
             stream_create_subscribers.pill_widget.appendValue(
                 stream_create_subscribers.pill_widget.getCurrentText()!,
             );
+            return;
+        }
+
+        // A channel pill's subscribers may still be getting fetched
+        // from the server, so the subscribers list does not yet
+        // reflect the pills the user has added; creating the channel
+        // now would silently omit those subscribers.
+        if (add_subscribers_pill.has_pending_user_id_fetch(stream_create_subscribers.pill_widget)) {
+            stream_subscription_error.report_pending_subscribers_fetch();
             return;
         }
 
