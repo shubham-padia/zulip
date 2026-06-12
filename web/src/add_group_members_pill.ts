@@ -1,10 +1,8 @@
-import $ from "jquery";
 import assert from "minimalistic-assert";
 
 import * as add_subscribers_pill from "./add_subscribers_pill.ts";
 import * as input_pill from "./input_pill.ts";
 import * as keydown_util from "./keydown_util.ts";
-import * as loading from "./loading.ts";
 import * as people from "./people.ts";
 import type {User} from "./people.ts";
 import * as stream_pill from "./stream_pill.ts";
@@ -110,23 +108,29 @@ export function create({
 
     if (onPillCreateAction) {
         pill_widget.onPillCreate(() => {
-            void (async () => {
-                loading.make_indicator($(".add-group-member-loading-spinner"), {
-                    height: 56, // 4em at 14px / 1em
-                });
-                const user_ids = await get_pill_user_ids(pill_widget);
-                onPillCreateAction(user_ids, get_pill_group_ids(pill_widget));
-                loading.destroy_indicator($(".add-group-member-loading-spinner"));
-            })();
+            void add_subscribers_pill.run_pill_user_id_fetch({
+                pill_widget,
+                spinner_selector: ".add-group-member-loading-spinner",
+                spinner_height: 56, // 4em at 14px / 1em
+                fetch_user_ids: async () => get_pill_user_ids(pill_widget),
+                use_user_ids(user_ids) {
+                    onPillCreateAction(user_ids, get_pill_group_ids(pill_widget));
+                },
+            });
         });
     }
 
     if (onPillRemoveAction) {
         pill_widget.onPillRemove(() => {
-            void (async () => {
-                const user_ids = await get_pill_user_ids(pill_widget);
-                onPillRemoveAction(user_ids, get_pill_group_ids(pill_widget));
-            })();
+            void add_subscribers_pill.run_pill_user_id_fetch({
+                pill_widget,
+                spinner_selector: ".add-group-member-loading-spinner",
+                spinner_height: 56, // 4em at 14px / 1em
+                fetch_user_ids: async () => get_pill_user_ids(pill_widget),
+                use_user_ids(user_ids) {
+                    onPillRemoveAction(user_ids, get_pill_group_ids(pill_widget));
+                },
+            });
         });
     }
 
@@ -187,23 +191,20 @@ export function set_up_handlers({
     */
     function callback(): void {
         const pill_widget = get_pill_widget();
-        void (async () => {
-            loading.make_indicator($(".add-group-member-loading-spinner"), {
-                height: 56, // 4em at 14px / 1em
-            });
-            const pill_user_ids = await get_pill_user_ids(pill_widget);
+        void add_subscribers_pill.run_pill_user_id_fetch({
+            pill_widget,
+            spinner_selector: ".add-group-member-loading-spinner",
+            spinner_height: 56, // 4em at 14px / 1em
+            fetch_user_ids: async () => get_pill_user_ids(pill_widget),
+            use_user_ids(pill_user_ids) {
+                action({pill_user_ids, pill_group_ids: get_pill_group_ids(pill_widget)});
+            },
             // If we're no longer in the same view after fetching
-            // subscriber data, don't update the UI. We don't need
-            // to destroy the loading spinner because the tab re-renders
-            // every time it opens, and also there might be a new tab
-            // with a current loading spinner.
-            if (get_pill_widget() !== pill_widget) {
-                return;
-            }
-            loading.destroy_indicator($(".add-group-member-loading-spinner"));
-            const pill_group_ids = get_pill_group_ids(pill_widget);
-            action({pill_user_ids, pill_group_ids});
-        })();
+            // subscriber data, don't update the UI or destroy the
+            // loading spinner: the tab re-renders every time it opens,
+            // and the current spinner may belong to a newly opened tab.
+            is_current: () => get_pill_widget() === pill_widget,
+        });
     }
 
     $parent_container.on("keyup", pill_selector, (e) => {

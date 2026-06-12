@@ -14,6 +14,70 @@ import * as user_groups from "./user_groups.ts";
 import type {UserGroup} from "./user_groups.ts";
 import * as user_pill from "./user_pill.ts";
 
+// When a pill is added or removed, computing the new set of user ids
+// may require fetching a channel pill's subscribers from the server;
+// see `get_pill_user_ids`. We track in-flight calls for each pill
+// widget so that callers consuming the resulting user ids via
+// `onPillCreateAction` / `onPillRemoveAction` can avoid acting on
+// stale data while a fetch is still pending, and so the shared loading
+// spinner is destroyed only once the last in-flight fetch finishes.
+const pending_user_id_fetches = new WeakMap<CombinedPillContainer, number>();
+
+function start_user_id_fetch(pill_widget: CombinedPillContainer): void {
+    pending_user_id_fetches.set(pill_widget, (pending_user_id_fetches.get(pill_widget) ?? 0) + 1);
+}
+
+function finish_user_id_fetch(pill_widget: CombinedPillContainer): void {
+    const count = pending_user_id_fetches.get(pill_widget) ?? 0;
+    assert(count > 0);
+    pending_user_id_fetches.set(pill_widget, count - 1);
+}
+
+export function has_pending_user_id_fetch(pill_widget: CombinedPillContainer): boolean {
+    return (pending_user_id_fetches.get(pill_widget) ?? 0) > 0;
+}
+
+// Brackets an async pill-user-id fetch with the in-flight tracking above
+// and the shared loading spinner. The spinner is shown while any fetch
+// for this widget is running and destroyed only once the last one
+// finishes, so overlapping add/remove fetches don't tear it down
+// prematurely. The `finally` guarantees the count and spinner are always
+// reconciled even when the fetch rejects, so a failed fetch can't wedge
+// the widget (leaving `has_pending_user_id_fetch` stuck true forever).
+//
+// `is_current` lets a caller whose view can change mid-fetch (the add
+// button below) skip applying the result and leave the spinner alone
+// once its widget is no longer the active one.
+export async function run_pill_user_id_fetch({
+    pill_widget,
+    spinner_selector,
+    spinner_height,
+    fetch_user_ids,
+    use_user_ids,
+    is_current,
+}: {
+    pill_widget: CombinedPillContainer;
+    spinner_selector: string;
+    spinner_height: number;
+    fetch_user_ids: () => Promise<number[]>;
+    use_user_ids: (user_ids: number[]) => void;
+    is_current?: () => boolean;
+}): Promise<void> {
+    start_user_id_fetch(pill_widget);
+    loading.make_indicator($(spinner_selector), {height: spinner_height});
+    try {
+        const user_ids = await fetch_user_ids();
+        if (is_current === undefined || is_current()) {
+            use_user_ids(user_ids);
+        }
+    } finally {
+        finish_user_id_fetch(pill_widget);
+        if ((is_current === undefined || is_current()) && !has_pending_user_id_fetch(pill_widget)) {
+            loading.destroy_indicator($(spinner_selector));
+        }
+    }
+}
+
 export function create_item_from_text(
     text: string,
     current_items: CombinedPill[],
@@ -166,23 +230,25 @@ export function create({
 
     if (onPillCreateAction) {
         pill_widget.onPillCreate(() => {
-            void (async () => {
-                loading.make_indicator($(".add-subscriber-loading-spinner"), {
-                    height: 28, // 2em at 14px / 1em
-                });
-                const user_ids = await get_pill_user_ids(pill_widget);
-                onPillCreateAction(user_ids);
-                loading.destroy_indicator($(".add-subscriber-loading-spinner"));
-            })();
+            void run_pill_user_id_fetch({
+                pill_widget,
+                spinner_selector: ".add-subscriber-loading-spinner",
+                spinner_height: 28, // 2em at 14px / 1em
+                fetch_user_ids: async () => get_pill_user_ids(pill_widget),
+                use_user_ids: onPillCreateAction,
+            });
         });
     }
 
     if (onPillRemoveAction) {
         pill_widget.onPillRemove(() => {
-            void (async () => {
-                const user_ids = await get_pill_user_ids(pill_widget);
-                onPillRemoveAction(user_ids);
-            })();
+            void run_pill_user_id_fetch({
+                pill_widget,
+                spinner_selector: ".add-subscriber-loading-spinner",
+                spinner_height: 28, // 2em at 14px / 1em
+                fetch_user_ids: async () => get_pill_user_ids(pill_widget),
+                use_user_ids: onPillRemoveAction,
+            });
         });
     }
 
@@ -286,22 +352,20 @@ export function set_up_handlers({
     */
     function callback(): void {
         const pill_widget = get_pill_widget();
-        void (async () => {
-            loading.make_indicator($(".add-subscriber-loading-spinner"), {
-                height: 28, // 2em at 14px / 1em
-            });
-            const pill_user_ids = await get_pill_user_ids(pill_widget);
+        void run_pill_user_id_fetch({
+            pill_widget,
+            spinner_selector: ".add-subscriber-loading-spinner",
+            spinner_height: 28, // 2em at 14px / 1em
+            fetch_user_ids: async () => get_pill_user_ids(pill_widget),
+            use_user_ids(pill_user_ids) {
+                action({pill_user_ids});
+            },
             // If we're no longer in the same view after fetching
-            // subscriber data, don't update the UI. We don't need
-            // to destroy the loading spinner because the tab re-renders
-            // every time it opens, and also there might be a new tab
-            // with a current loading spinner.
-            if (get_pill_widget() !== pill_widget) {
-                return;
-            }
-            loading.destroy_indicator($(".add-subscriber-loading-spinner"));
-            action({pill_user_ids});
-        })();
+            // subscriber data, don't update the UI or destroy the
+            // loading spinner: the tab re-renders every time it opens,
+            // and the current spinner may belong to a newly opened tab.
+            is_current: () => get_pill_widget() === pill_widget,
+        });
     }
 
     $parent_container.on("keyup", pill_selector, (e) => {
