@@ -308,17 +308,9 @@ function get_group_suggestions(
             return [];
         }
         const last_complete_term = terms.at(-1)!;
-        if (
-            !check_validity(
-                last_complete_term.operator,
-                terms.slice(-1),
-                [group_operator],
-                [{operator: "channel"}],
-            )
-        ) {
+        if (last_complete_term.operator !== group_operator) {
             return [];
         }
-        assert(last_complete_term.operator === group_operator);
 
         let new_query: string;
         let existing_user_ids: number[];
@@ -368,19 +360,27 @@ function get_group_suggestions(
         // Take top 15 persons, since they're ordered by direct message recency.
         persons = persons.slice(0, 15);
 
-        return persons.map((person) => {
+        return persons.flatMap((person) => {
             const term: NarrowCanonicalTerm = {
                 operator: group_operator,
                 operand: [...existing_user_ids, person.user_id],
                 negated: last_complete_term.negated,
             };
 
-            let terms: NarrowCanonicalTerm[] = [term];
-            if (group_operator === "dm" && last_complete_term.negated) {
-                terms = [{operator: "is", operand: "dm"}, term];
+            // The suggestion extends the group in the bar's last
+            // term, so that term is left out of the check: compared
+            // against itself, every extended group would be a
+            // different conversation and be dropped.
+            if (!search_term_relations.should_offer(term, terms.slice(0, -1))) {
+                return [];
             }
 
-            return Filter.unparse(terms);
+            let suggestion_terms: NarrowCanonicalTerm[] = [term];
+            if (group_operator === "dm" && last_complete_term.negated) {
+                suggestion_terms = [{operator: "is", operand: "dm"}, term];
+            }
+
+            return [Filter.unparse(suggestion_terms)];
         });
     };
 }

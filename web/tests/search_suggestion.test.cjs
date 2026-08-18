@@ -1482,3 +1482,55 @@ test("excluded people are not suggested again", () => {
     suggestions = get_suggestions(query);
     assert.deepEqual(suggestions, []);
 });
+
+
+test("group suggestions respect the whole search bar", () => {
+    stream_data.add_sub_for_tests(
+        make_stream({stream_id: new_stream_id(), name: "misc", subscribed: true}),
+    );
+    const misc_id = stream_data.get_sub("misc").stream_id;
+
+    // A group extension isn't offered next to a channel term or
+    // "is:resolved": those searches can't match direct messages.
+    // Only the last pill was checked before.
+    let pill_query = `channel:${misc_id} dm:${bob.user_id}`;
+    let query = "alice";
+    let suggestions = get_suggestions(query, pill_query);
+    let expected = [
+        `channel:${misc_id} dm:${bob.user_id} alice`,
+        `channel:${misc_id} dm:${bob.user_id} sender:${alice.user_id}`,
+        `channel:${misc_id} dm:${bob.user_id} mentions:${alice.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    pill_query = `is:resolved dm:${bob.user_id}`;
+    suggestions = get_suggestions(query, pill_query);
+    expected = [
+        `is:resolved dm:${bob.user_id} alice`,
+        `is:resolved dm:${bob.user_id} sender:${alice.user_id}`,
+        `is:resolved dm:${bob.user_id} mentions:${alice.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    // An excluded group conversation isn't suggested again.
+    pill_query = `-dm:${bob.user_id},${alice.user_id} dm:${bob.user_id}`;
+    suggestions = get_suggestions(query, pill_query);
+    expected = [
+        `-dm:${bob.user_id},${alice.user_id} dm:${bob.user_id} alice`,
+        `-dm:${bob.user_id},${alice.user_id} dm:${bob.user_id} sender:${alice.user_id}`,
+        `-dm:${bob.user_id},${alice.user_id} dm:${bob.user_id} mentions:${alice.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    // A term that can hold for direct messages doesn't block the
+    // extension.
+    pill_query = `has:link dm:${bob.user_id}`;
+    suggestions = get_suggestions(query, pill_query);
+    expected = [
+        `has:link dm:${bob.user_id} alice`,
+        `has:link dm:${bob.user_id},${alice.user_id}`,
+        `has:link dm:${bob.user_id} sender:${alice.user_id}`,
+        `has:link dm:${bob.user_id} mentions:${alice.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+});
