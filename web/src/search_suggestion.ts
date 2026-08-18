@@ -31,27 +31,6 @@ type ChannelTopicEntry = {
     topic: string;
 };
 
-type TermPattern = Omit<NarrowTerm, "operand"> & Partial<Pick<NarrowTerm, "operand">>;
-
-const common_incompatible_patterns: TermPattern[] = [
-    {operator: "is", operand: "dm"},
-    {operator: "channel"},
-    {operator: "dm-including"},
-    {operator: "dm"},
-    {operator: "in"},
-];
-
-const channel_incompatible_patterns: TermPattern[] = [
-    ...common_incompatible_patterns,
-    {operator: "channels"},
-];
-
-const channels_public_incompatible_patterns: TermPattern[] = [
-    ...common_incompatible_patterns,
-    {operator: "channels", operand: "public"},
-    {operator: "channels", operand: "web-public"},
-];
-
 // TODO: Expand this to support all available filters and its description.
 // Also, we generate some descriptions in filter.ts too, we should look to
 // refactor them together.
@@ -73,104 +52,6 @@ const descriptions: Record<string, string> = {
     "has:reaction": "messages with reactions",
 };
 
-type SearchFilter =
-    | NarrowCanonicalOperator
-    | "channels:public"
-    | "channels:web-public"
-    | "channels:archived"
-    | "is:resolved"
-    | "-is:resolved"
-    | "is:dm"
-    | "is:starred"
-    | "is:mentioned"
-    | "is:followed"
-    | "is:alerted"
-    | "is:unread"
-    | "is:muted"
-    | "has:link"
-    | "has:image"
-    | "has:attachment"
-    | "has:reaction";
-
-const incompatible_patterns: Record<SearchFilter, TermPattern[]> = {
-    channel: channel_incompatible_patterns,
-    channels: channel_incompatible_patterns,
-    "channels:public": channels_public_incompatible_patterns,
-    "channels:web-public": channels_public_incompatible_patterns,
-    "channels:archived": [
-        ...common_incompatible_patterns,
-        {operator: "channels", operand: "archived"},
-    ],
-    topic: [
-        {operator: "dm"},
-        {operator: "is", operand: "dm"},
-        {operator: "dm-including"},
-        {operator: "topic"},
-    ],
-    dm: [
-        {operator: "dm"},
-        {operator: "pm-with"},
-        {operator: "channel"},
-        {operator: "channels"},
-        {operator: "is", operand: "resolved"},
-    ],
-    "dm-including": [{operator: "channel"}, {operator: "stream"}, {operator: "channels"}],
-    "is:resolved": [
-        {operator: "is", operand: "resolved"},
-        {operator: "is", operand: "dm"},
-        {operator: "dm"},
-        {operator: "dm-including"},
-    ],
-    "-is:resolved": [
-        {operator: "is", operand: "resolved"},
-        {operator: "is", operand: "dm"},
-        {operator: "dm"},
-        {operator: "dm-including"},
-    ],
-    "is:dm": [
-        {operator: "is", operand: "dm"},
-        {operator: "is", operand: "resolved"},
-        {operator: "channel"},
-        {operator: "dm"},
-        {operator: "in"},
-        {operator: "topic"},
-        {operator: "channels"},
-    ],
-    mentions: [{operator: "mentions"}],
-    sender: [{operator: "sender"}, {operator: "from"}],
-    "is:starred": [{operator: "is", operand: "starred"}],
-    "is:mentioned": [{operator: "is", operand: "mentioned"}],
-    "is:followed": [
-        {operator: "is", operand: "followed"},
-        {operator: "is", operand: "dm"},
-        {operator: "dm"},
-        {operator: "dm-including"},
-    ],
-    "is:alerted": [{operator: "is", operand: "alerted"}],
-    "is:unread": [{operator: "is", operand: "unread"}],
-    "is:muted": [
-        {operator: "is", operand: "muted"},
-        {operator: "in", operand: "home"},
-    ],
-    "has:link": [{operator: "has", operand: "link"}],
-    "has:image": [{operator: "has", operand: "image"}],
-    "has:attachment": [{operator: "has", operand: "attachment"}],
-    "has:reaction": [{operator: "has", operand: "reaction"}],
-    // `date` and `near` combination is made incompatible to avoid confusing the user.
-    // Having both operators only takes `date` into account while narrowing.
-    // Details: https://github.com/zulip/zulip/pull/38486#issuecomment-4310019929
-    date: [{operator: "date"}, {operator: "near"}],
-    near: [{operator: "date"}],
-    // These below are not currently looked up.
-    has: [],
-    in: [],
-    "": [],
-    id: [],
-    is: [],
-    search: [],
-    with: [],
-};
-
 export type Suggestion = string;
 
 export let max_num_of_search_results = MAX_ITEMS;
@@ -180,42 +61,6 @@ export function rewire_max_num_of_search_results(value: typeof max_num_of_search
 
 function channel_matches_query(channel_name: string, q: string): boolean {
     return common.phrase_match(q, channel_name);
-}
-
-function match_criteria(terms: NarrowCanonicalTerm[], criteria: TermPattern[]): boolean {
-    const filter = new Filter(terms);
-    return criteria.some((cr) => {
-        if (cr.operand !== undefined) {
-            return filter.has_operand(cr.operator, cr.operand);
-        }
-        return filter.has_operator(cr.operator);
-    });
-}
-
-function filter_suggestions_by_criteria(
-    terms: NarrowCanonicalTerm[],
-    search_filters: SearchFilter[],
-): Suggestion[] {
-    return search_filters.filter(
-        (search_filter) => !match_criteria(terms, incompatible_patterns[search_filter]),
-    );
-}
-
-function check_validity(
-    last_operator: NarrowCanonicalOperator,
-    terms: NarrowCanonicalTerm[],
-    valid: string[],
-    incompatible_patterns: TermPattern[],
-): boolean {
-    // valid: list of strings valid for the last operator
-    // incompatible_patterns: list of terms incompatible for any previous terms except last.
-    if (!valid.includes(last_operator)) {
-        return false;
-    }
-    if (match_criteria(terms, incompatible_patterns)) {
-        return false;
-    }
-    return true;
 }
 
 function format_as_suggestion(terms: NarrowTerm[], is_operator_suggestion = false): Suggestion {
