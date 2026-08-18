@@ -272,7 +272,7 @@ function get_channel_suggestions(
     // For users with "stream" in their muscle memory, still
     // have suggestions with "channel:" operator.
     const valid = ["stream", "channel", "search", ""];
-    if (!check_validity(last.operator, terms, valid, incompatible_patterns.channel)) {
+    if (!valid.includes(last.operator)) {
         return [];
     }
 
@@ -284,16 +284,18 @@ function get_channel_suggestions(
         channel_matches_query(channel_name, query),
     );
     matching_channel_names = typeahead_helper.sorter(query, matching_channel_names, (x) => x);
-    return matching_channel_names.map((channel_name) => {
+    return matching_channel_names.flatMap((channel_name) => {
         const channel = stream_data.get_sub_by_name(channel_name);
         assert(channel !== undefined);
-        const term: NarrowTerm = {
+        const term: NarrowCanonicalTerm = {
             operator: "channel",
             operand: channel.stream_id.toString(),
             negated: last.negated,
         };
-        const search_string = Filter.unparse([term]);
-        return search_string;
+        if (!search_term_relations.should_offer(term, terms)) {
+            return [];
+        }
+        return [Filter.unparse([term])];
     });
 }
 

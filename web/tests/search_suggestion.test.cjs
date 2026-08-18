@@ -1344,3 +1344,81 @@ test("filters that contradict the search bar are not suggested", () => {
     suggestions = get_suggestions(query);
     assert.deepEqual(suggestions, []);
 });
+
+test("excluded channels are not suggested again", () => {
+    const public_id = new_stream_id();
+    const web_public_id = new_stream_id();
+    const private_id = new_stream_id();
+    stream_data.add_sub_for_tests(
+        make_stream({name: "devel", stream_id: public_id, subscribed: true}),
+    );
+    stream_data.add_sub_for_tests(
+        make_stream({name: "lounge", stream_id: web_public_id, is_web_public: true, subscribed: true}),
+    );
+    stream_data.add_sub_for_tests(
+        make_stream({name: "secret", stream_id: private_id, invite_only: true, subscribed: true}),
+    );
+
+    // The excluded channel isn't offered again, in either form; the
+    // other channels are.
+    let query = `-channel:${public_id} channel:`;
+    let suggestions = get_suggestions(query);
+    let expected = [
+        `-channel:${public_id} channel:${web_public_id}`,
+        `-channel:${public_id} channel:${private_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    query = `-channel:${public_id} -channel:`;
+    suggestions = get_suggestions(query);
+    expected = [
+        `-channel:${public_id} -channel:${web_public_id}`,
+        `-channel:${public_id} -channel:${private_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+});
+
+test("channel suggestions follow the channels: scope", () => {
+    const public_id = new_stream_id();
+    const web_public_id = new_stream_id();
+    const private_id = new_stream_id();
+    stream_data.add_sub_for_tests(
+        make_stream({name: "devel", stream_id: public_id, subscribed: true}),
+    );
+    stream_data.add_sub_for_tests(
+        make_stream({name: "lounge", stream_id: web_public_id, is_web_public: true, subscribed: true}),
+    );
+    stream_data.add_sub_for_tests(
+        make_stream({name: "secret", stream_id: private_id, invite_only: true, subscribed: true}),
+    );
+
+    // Excluding a channel of the scope narrows the search, while
+    // excluding the private channel would change nothing.
+    let query = "channels:public -channel:";
+    let suggestions = get_suggestions(query);
+    let expected = [
+        `channels:public -channel:${public_id}`,
+        `channels:public -channel:${web_public_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    // With all public channels excluded, only the private channel is
+    // left to search, and excluding the others changes nothing.
+    query = "-channels:public channel:";
+    suggestions = get_suggestions(query);
+    expected = [`-channels:public channel:${private_id}`];
+    assert.deepEqual(suggestions, expected);
+
+    query = "-channels:public -channel:";
+    suggestions = get_suggestions(query);
+    expected = [`-channels:public -channel:${private_id}`];
+    assert.deepEqual(suggestions, expected);
+
+    query = "-channels:web-public channel:";
+    suggestions = get_suggestions(query);
+    expected = [
+        `-channels:web-public channel:${public_id}`,
+        `-channels:web-public channel:${private_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+});
