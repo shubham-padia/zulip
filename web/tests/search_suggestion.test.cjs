@@ -368,11 +368,12 @@ test("group_suggestions", () => {
     let pill_query = `dm:${bob.user_id}`;
     let query = "alice";
     let suggestions = get_suggestions(query, pill_query);
+    // "dm-including:alice" isn't offered: the conversation with
+    // exactly Bob never includes Alice.
     let expected = [
         `dm:${bob.user_id} alice`,
         `dm:${bob.user_id},${alice.user_id}`,
         `dm:${bob.user_id} sender:${alice.user_id}`,
-        `dm:${bob.user_id} dm-including:${alice.user_id}`,
         `dm:${bob.user_id} mentions:${alice.user_id}`,
     ];
     assert.deepEqual(suggestions, expected);
@@ -381,10 +382,11 @@ test("group_suggestions", () => {
     pill_query = `dm:${ted.user_id}`;
     query = "my";
     suggestions = get_suggestions(query, pill_query);
+    // "dm-including:me" isn't offered: every direct message includes
+    // yourself, so it adds nothing to "dm:ted".
     expected = [
         `dm:${ted.user_id} my`,
         `dm:${ted.user_id} sender:${me.user_id}`,
-        `dm:${ted.user_id} dm-including:${me.user_id}`,
         `dm:${ted.user_id} mentions:${me.user_id}`,
     ];
     assert.deepEqual(suggestions, expected);
@@ -406,7 +408,6 @@ test("group_suggestions", () => {
         `dm:${bob.user_id} alice`,
         `dm:${bob.user_id},${alice.user_id}`,
         `dm:${bob.user_id} sender:${alice.user_id}`,
-        `dm:${bob.user_id} dm-including:${alice.user_id}`,
         `dm:${bob.user_id} mentions:${alice.user_id}`,
     ];
     assert.deepEqual(suggestions, expected);
@@ -419,7 +420,6 @@ test("group_suggestions", () => {
         `is:starred has:link dm:${bob.user_id} Smit`,
         `is:starred has:link dm:${bob.user_id},${ted.user_id}`,
         `is:starred has:link dm:${bob.user_id} sender:${ted.user_id}`,
-        `is:starred has:link dm:${bob.user_id} dm-including:${ted.user_id}`,
         `is:starred has:link dm:${bob.user_id} mentions:${ted.user_id}`,
     ];
     assert.deepEqual(suggestions, expected);
@@ -1421,4 +1421,64 @@ test("channel suggestions follow the channels: scope", () => {
         `-channels:web-public channel:${private_id}`,
     ];
     assert.deepEqual(suggestions, expected);
+});
+
+test("excluded people are not suggested again", () => {
+    // The excluded sender isn't offered again, in either form.
+    let query = `-sender:${bob.user_id} sender:`;
+    let suggestions = get_suggestions(query);
+    let expected = [
+        `-sender:${bob.user_id} sender:${me.user_id}`,
+        `-sender:${bob.user_id} sender:${alice.user_id}`,
+        `-sender:${bob.user_id} sender:${jeff.user_id}`,
+        `-sender:${bob.user_id} sender:${ted.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    query = `-sender:${bob.user_id} -sender:`;
+    suggestions = get_suggestions(query);
+    expected = [
+        `-sender:${bob.user_id} -sender:${me.user_id}`,
+        `-sender:${bob.user_id} -sender:${alice.user_id}`,
+        `-sender:${bob.user_id} -sender:${jeff.user_id}`,
+        `-sender:${bob.user_id} -sender:${ted.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    query = `-dm:${bob.user_id} dm:`;
+    suggestions = get_suggestions(query);
+    expected = [
+        `-dm:${bob.user_id} dm:${alice.user_id}`,
+        `-dm:${bob.user_id} dm:${jeff.user_id}`,
+        `-dm:${bob.user_id} dm:${me.user_id}`,
+        `-dm:${bob.user_id} dm:${ted.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    query = `-mentions:${alice.user_id} mentions:`;
+    suggestions = get_suggestions(query);
+    expected = [
+        `-mentions:${alice.user_id} mentions:${bob.user_id}`,
+        `-mentions:${alice.user_id} mentions:${jeff.user_id}`,
+        `-mentions:${alice.user_id} mentions:${me.user_id}`,
+        `-mentions:${alice.user_id} mentions:${ted.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    // "mentions:me" canonicalizes to "-is:mentioned" in the bar, so
+    // suggesting yourself would contradict it.
+    query = "-mentions:me mentions:";
+    suggestions = get_suggestions(query);
+    expected = [
+        `-is:mentioned mentions:${alice.user_id}`,
+        `-is:mentioned mentions:${bob.user_id}`,
+        `-is:mentioned mentions:${jeff.user_id}`,
+        `-is:mentioned mentions:${ted.user_id}`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    // The sent-by-me shortcut isn't offered next to "-sender:me".
+    query = "-sender:me sent";
+    suggestions = get_suggestions(query);
+    assert.deepEqual(suggestions, []);
 });

@@ -429,43 +429,46 @@ function get_person_suggestions(
 
     const valid = ["search", autocomplete_operator];
 
-    if (
-        !check_validity(last.operator, terms, valid, incompatible_patterns[autocomplete_operator])
-    ) {
+    if (!valid.includes(last.operator)) {
         return [];
     }
 
     const persons = people_getter();
 
-    return persons.map((person) => {
-        const terms: NarrowCanonicalTerm[] = [];
+    return persons.flatMap((person) => {
+        let candidate: NarrowCanonicalTerm;
         switch (autocomplete_operator) {
             case "dm":
             case "dm-including":
-                terms.push({
+                candidate = {
                     operator: autocomplete_operator,
                     operand: [person.user_id],
                     negated: last.negated,
-                });
+                };
                 break;
             case "sender":
             case "mentions":
-                terms.push({
+                candidate = {
                     operator: autocomplete_operator,
                     operand: person.user_id,
                     negated: last.negated,
-                });
+                };
                 break;
         }
 
+        if (!search_term_relations.should_offer(candidate, terms)) {
+            return [];
+        }
+
+        const suggestion_terms: NarrowCanonicalTerm[] = [candidate];
         if (last.negated && autocomplete_operator === "dm") {
             // In the special case of "-dm" or "-pm-with", add "is:dm" before
             // it because we assume the user still wants to narrow to direct
             // messages.
-            terms.unshift({operator: "is", operand: "dm"});
+            suggestion_terms.unshift({operator: "is", operand: "dm"});
         }
 
-        return Filter.unparse(terms);
+        return [Filter.unparse(suggestion_terms)];
     });
 }
 
@@ -855,7 +858,12 @@ function get_sent_by_me_suggestions(
     const from_string = negated_symbol + "from";
     const sent_string = negated_symbol + "sent";
 
-    if (match_criteria(terms, incompatible_patterns.sender)) {
+    const candidate: NarrowCanonicalTerm = {
+        operator: "sender",
+        operand: people.my_current_user_id(),
+        negated,
+    };
+    if (!search_term_relations.should_offer(candidate, terms)) {
         return [];
     }
 
