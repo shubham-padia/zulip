@@ -544,12 +544,16 @@ function get_date_suggestions(
     last: NarrowCanonicalTermSuggestion,
     terms: NarrowCanonicalTerm[],
 ): Suggestion[] {
-    if (!check_validity(last.operator, terms, ["date", "search"], incompatible_patterns.date)) {
+    if (!["date", "search"].includes(last.operator)) {
         return [];
     }
 
     const negated = last.negated === true;
     if (negated) {
+        return [];
+    }
+
+    if (!search_term_relations.should_offer_operator("date", false, terms)) {
         return [];
     }
     return date_util.get_matching_default_date_suggestions(last.operand);
@@ -931,10 +935,10 @@ function get_operator_suggestions(
         canonicalized_operator_choices.push("date");
     }
 
-    // We remove suggestion choice if its incompatible_pattern matches
-    // that of current search terms.
+    // We remove a suggestion choice when no completion of it could
+    // be offered next to the current search terms.
     canonicalized_operator_choices = canonicalized_operator_choices.filter((choice) => {
-        if (match_criteria(terms, incompatible_patterns[choice])) {
+        if (!search_term_relations.should_offer_operator(choice, negated, terms)) {
             incompatible_operators.add(choice);
             return false;
         }

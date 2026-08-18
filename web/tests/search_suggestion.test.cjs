@@ -1568,3 +1568,33 @@ test("excluded topics are not suggested again", ({override}) => {
     expected = [`channel:${office_id} -topic:lunch topic:lu`];
     assert.deepEqual(suggestions, expected);
 });
+
+test("excluding is offered next to a channels: scope", ({override}) => {
+    override(narrow_state, "stream_id", noop);
+    // With a scope in the bar, a second scope or one of its channels
+    // isn't offered, but excluding one still narrows the search.
+    let query = "channels:public -chan";
+    let suggestions = get_suggestions(query);
+    let expected = [
+        "channels:public -chan",
+        "channels:public -channels:",
+        "channels:public -channel:",
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    query = "channels:public chan";
+    suggestions = get_suggestions(query);
+    expected = ["channels:public chan"];
+    assert.deepEqual(suggestions, expected);
+
+    // An excluded topic doesn't rule out searching other topics.
+    query = "-topic:lunch top";
+    suggestions = get_suggestions(query);
+    expected = ["-topic:lunch top", "-topic:lunch topic:"];
+    assert.deepEqual(suggestions, expected);
+
+    query = "topic:lunch top";
+    suggestions = get_suggestions(query);
+    expected = ["topic:lunch top"];
+    assert.deepEqual(suggestions, expected);
+});
