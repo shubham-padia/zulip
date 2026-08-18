@@ -1243,3 +1243,104 @@ test("empty query suggestions in an inaccessible narrow", ({override}) => {
     suggestions = search.get_suggestions([], [], true);
     assert.deepEqual(suggestions, search.get_suggestions([], [], false));
 });
+
+test("negated filters are not suggested again", () => {
+    stream_data.add_sub_for_tests(
+        make_stream({name: "lounge", stream_id: new_stream_id(), is_web_public: true}),
+    );
+
+    let query = "-has:link -has:";
+    let suggestions = get_suggestions(query);
+    let expected = ["-has:link -has:image", "-has:link -has:attachment", "-has:link -has:reaction"];
+    assert.deepEqual(suggestions, expected);
+
+    query = "-is:starred -is:";
+    suggestions = get_suggestions(query);
+    expected = [
+        "-is:starred -is:dm",
+        "-is:starred -is:mentioned",
+        "-is:starred -is:followed",
+        "-is:starred -is:alerted",
+        "-is:starred -is:unread",
+        "-is:starred -is:muted",
+        "-is:starred -is:resolved",
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    // "in:home" means "-is:muted", so "-in:home" already excludes
+    // the exclusion.
+    query = "-in:home -is:";
+    suggestions = get_suggestions(query);
+    expected = [
+        "-in:home -is:dm",
+        "-in:home -is:starred",
+        "-in:home -is:mentioned",
+        "-in:home -is:followed",
+        "-in:home -is:alerted",
+        "-in:home -is:unread",
+        "-in:home -is:resolved",
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    // Excluding part of the current scope still changes the search,
+    // while excluding the scope itself would contradict it.
+    query = "channels:public -channels:";
+    suggestions = get_suggestions(query);
+    expected = ["channels:public -channels:web-public", "channels:public -channels:archived"];
+    assert.deepEqual(suggestions, expected);
+});
+
+test("filters that contradict the search bar are not suggested", () => {
+    stream_data.add_sub_for_tests(
+        make_stream({name: "lounge", stream_id: new_stream_id(), is_web_public: true}),
+    );
+
+    let query = "-has:link has:";
+    let suggestions = get_suggestions(query);
+    let expected = ["-has:link has:image", "-has:link has:attachment", "-has:link has:reaction"];
+    assert.deepEqual(suggestions, expected);
+
+    query = "-is:starred is:";
+    suggestions = get_suggestions(query);
+    expected = [
+        "-is:starred is:dm",
+        "-is:starred is:mentioned",
+        "-is:starred is:followed",
+        "-is:starred is:alerted",
+        "-is:starred is:unread",
+        "-is:starred is:muted",
+        "-is:starred is:resolved",
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    query = "-in:home is:";
+    suggestions = get_suggestions(query);
+    expected = [
+        "-in:home is:dm",
+        "-in:home is:starred",
+        "-in:home is:mentioned",
+        "-in:home is:followed",
+        "-in:home is:alerted",
+        "-in:home is:unread",
+        "-in:home is:resolved",
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    // With all public channels excluded, a web-public search can't
+    // match anything; the archived channels are still open.
+    query = "-channels:public channels:";
+    suggestions = get_suggestions(query);
+    expected = ["-channels:public channels:archived"];
+    assert.deepEqual(suggestions, expected);
+
+    query = "-channels:web-public channels:";
+    suggestions = get_suggestions(query);
+    expected = ["-channels:web-public channels:public", "-channels:web-public channels:archived"];
+    assert.deepEqual(suggestions, expected);
+
+    // "is:private" canonicalizes to "is:dm", so with "-is:private"
+    // in the bar there is nothing left to suggest for "is:pr".
+    query = "-is:private is:pr";
+    suggestions = get_suggestions(query);
+    assert.deepEqual(suggestions, []);
+});

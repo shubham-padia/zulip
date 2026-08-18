@@ -12,6 +12,7 @@ import {page_params} from "./page_params.ts";
 import * as people from "./people.ts";
 import type {User} from "./people.ts";
 import {RESOLVED_TOPIC_PREFIX} from "./resolved_topic.ts";
+import * as search_term_relations from "./search_term_relations.ts";
 import type {
     NarrowCanonicalOperator,
     NarrowCanonicalTerm,
@@ -219,6 +220,12 @@ function check_validity(
 
 function format_as_suggestion(terms: NarrowTerm[], is_operator_suggestion = false): Suggestion {
     return Filter.unparse(terms, is_operator_suggestion);
+}
+
+// Whether the typed text asks for a negated filter, either as a
+// parsed negated term or as loose text starting with "-".
+function is_input_negated(last: NarrowCanonicalTermSuggestion): boolean {
+    return last.negated === true || (last.operator === "search" && last.operand.startsWith("-"));
 }
 
 function compare_by_direct_message_group(
@@ -729,15 +736,6 @@ function get_special_filter_suggestions(
     last: NarrowCanonicalTermSuggestion,
     suggestions: Suggestion[],
 ): Suggestion[] {
-    const is_search_operand_negated = last.operator === "search" && last.operand.startsWith("-");
-    // Negating suggestions on is_search_operand_negated is required for
-    // suggesting negated terms.
-    if (last.negated === true || is_search_operand_negated) {
-        suggestions = suggestions
-            .filter((suggestion) => suggestion !== "-is:resolved")
-            .map((suggestion) => "-" + suggestion);
-    }
-
     const last_string = Filter.unparse([last]).toLowerCase();
     suggestions = suggestions.filter((s) => {
         if (last_string === "") {
@@ -766,22 +764,21 @@ function get_channels_filter_suggestions(
     if (last.operator !== "channels") {
         return [];
     }
-    const public_channels_search_string = "channels:public";
-    const web_public_channels_search_string = "channels:web-public";
-    const archived_channels_search_string = "channels:archived";
-    const suggestions: Suggestion[] = [];
+    const negated = is_input_negated(last);
+    const candidates: NarrowCanonicalTerm[] = [];
 
     if (!page_params.is_spectator) {
-        suggestions.push(...filter_suggestions_by_criteria(terms, [public_channels_search_string]));
+        candidates.push({operator: "channels", operand: "public", negated});
     }
 
     if (stream_data.realm_has_web_public_streams()) {
-        suggestions.push(
-            ...filter_suggestions_by_criteria(terms, [web_public_channels_search_string]),
-        );
+        candidates.push({operator: "channels", operand: "web-public", negated});
     }
 
-    suggestions.push(...filter_suggestions_by_criteria(terms, [archived_channels_search_string]));
+    candidates.push({operator: "channels", operand: "archived", negated});
+    const suggestions = candidates
+        .filter((candidate) => search_term_relations.should_offer(candidate, terms))
+        .map((candidate) => format_as_suggestion([candidate]));
     return get_special_filter_suggestions(last, suggestions);
 }
 
@@ -789,28 +786,33 @@ function get_is_filter_suggestions(
     last: NarrowCanonicalTermSuggestion,
     terms: NarrowCanonicalTerm[],
 ): Suggestion[] {
-    let suggestions: Suggestion[];
+    const negated = is_input_negated(last);
+    let operands: string[];
     if (page_params.is_spectator) {
-        suggestions = filter_suggestions_by_criteria(terms, ["is:resolved", "-is:resolved"]);
+        operands = ["resolved"];
     } else {
-        suggestions = filter_suggestions_by_criteria(terms, [
-            "is:dm",
-            "is:starred",
-            "is:mentioned",
-            "is:followed",
-            "is:alerted",
-            "is:unread",
-            "is:muted",
-            "is:resolved",
-            "-is:resolved",
-        ]);
+        operands = ["dm", "starred", "mentioned", "followed", "alerted", "unread", "muted", "resolved"];
     }
+    const candidates: NarrowCanonicalTerm[] = operands.map((operand) => ({
+        operator: "is",
+        operand,
+        negated,
+    }));
+    if (!negated) {
+        // "-is:resolved" is a suggestion of its own, with its own
+        // description ("unresolved topics").
+        candidates.push({operator: "is", operand: "resolved", negated: true});
+    }
+    const offered = candidates.filter((candidate) =>
+        search_term_relations.should_offer(candidate, terms),
+    );
+    const suggestions = offered.map((candidate) => format_as_suggestion([candidate]));
     const special_filtered_suggestions = get_special_filter_suggestions(last, suggestions);
     // Suggest "is:dm" to anyone with "is:private" in their muscle memory
     // if it is compatible with the other terms.
     const other_suggestions = [];
     if (
-        suggestions.includes("is:dm") &&
+        offered.some((candidate) => candidate.operand === "dm") &&
         last.operator === "is" &&
         common.phrase_match(last.operand, "private") &&
         !page_params.is_spectator
@@ -828,12 +830,11 @@ function get_has_filter_suggestions(
     last: NarrowCanonicalTermSuggestion,
     terms: NarrowCanonicalTerm[],
 ): Suggestion[] {
-    const suggestions: Suggestion[] = filter_suggestions_by_criteria(terms, [
-        "has:link",
-        "has:image",
-        "has:attachment",
-        "has:reaction",
-    ]);
+    const negated = is_input_negated(last);
+    const suggestions = ["link", "image", "attachment", "reaction"]
+        .map((operand): NarrowCanonicalTerm => ({operator: "has", operand, negated}))
+        .filter((candidate) => search_term_relations.should_offer(candidate, terms))
+        .map((candidate) => format_as_suggestion([candidate]));
     return get_special_filter_suggestions(last, suggestions);
 }
 
