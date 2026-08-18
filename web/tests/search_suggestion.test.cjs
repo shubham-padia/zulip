@@ -1534,3 +1534,37 @@ test("group suggestions respect the whole search bar", () => {
     ];
     assert.deepEqual(suggestions, expected);
 });
+
+test("excluded topics are not suggested again", ({override}) => {
+    override(stream_topic_history_util, "get_server_history", noop);
+    const office_id = new_stream_id();
+    stream_data.add_sub_for_tests(
+        make_stream({stream_id: office_id, name: "office", subscribed: true}),
+    );
+    for (const topic_name of ["lunch", "dinner"]) {
+        stream_topic_history.add_message({stream_id: office_id, topic_name});
+    }
+
+    // The excluded topic isn't offered again, in either form; the
+    // other topics are.
+    let query = `channel:${office_id} -topic:lunch topic:`;
+    let suggestions = get_suggestions(query);
+    let expected = [
+        `channel:${office_id} -topic:lunch topic:`,
+        `channel:${office_id} -topic:lunch topic:dinner`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    query = `channel:${office_id} -topic:lunch -topic:`;
+    suggestions = get_suggestions(query);
+    expected = [
+        `channel:${office_id} -topic:lunch -topic:`,
+        `channel:${office_id} -topic:lunch -topic:dinner`,
+    ];
+    assert.deepEqual(suggestions, expected);
+
+    query = `channel:${office_id} -topic:lunch topic:lu`;
+    suggestions = get_suggestions(query);
+    expected = [`channel:${office_id} -topic:lunch topic:lu`];
+    assert.deepEqual(suggestions, expected);
+});

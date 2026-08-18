@@ -559,19 +559,18 @@ function get_topic_suggestions(
     last: NarrowCanonicalTermSuggestion,
     terms: NarrowCanonicalTerm[],
 ): Suggestion[] {
-    if (
-        !check_validity(
-            last.operator,
-            terms,
-            ["channel", "topic", "search"],
-            incompatible_patterns.topic,
-        )
-    ) {
+    if (!["channel", "topic", "search"].includes(last.operator)) {
         return [];
     }
 
     const operand = last.operand;
     const negated = last.operator === "topic" && last.negated;
+
+    // Skip the topic-gathering work entirely when no topic
+    // suggestion could be offered at all, like next to "is:dm".
+    if (!search_term_relations.should_offer_operator("topic", negated === true, terms)) {
+        return [];
+    }
     // For the case where the channel operator is the last
     // term, the operand may just be a string and is not
     // guaranteed to always be a channel id in a string format.
@@ -725,15 +724,25 @@ function get_topic_suggestions(
         ...current_channel_topic_suggestion_entries,
         ...other_channel_topic_suggestion_entries,
     ];
-    return topics.map((topic) => {
-        const topic_term: NarrowTerm = {operator: "topic", operand: topic.topic, negated};
-        const terms: NarrowTerm[] = [{operator: "channel", operand: topic.channel_id}, topic_term];
+    return topics.flatMap((topic) => {
+        const topic_term: NarrowCanonicalTerm = {
+            operator: "topic",
+            operand: topic.topic,
+            negated,
+        };
+        if (!search_term_relations.should_offer(topic_term, terms)) {
+            return [];
+        }
+        const suggestion_terms: NarrowTerm[] = [
+            {operator: "channel", operand: topic.channel_id},
+            topic_term,
+        ];
         // We don't want to have two channel pills in the search suggestion.
         if (filter.has_operator("channel")) {
-            terms.shift();
+            suggestion_terms.shift();
         }
 
-        return format_as_suggestion(terms);
+        return [format_as_suggestion(suggestion_terms)];
     });
 }
 
