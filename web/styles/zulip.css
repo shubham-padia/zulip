@@ -1253,7 +1253,9 @@ nav {
         bottom: -1.5px;
         left: 0;
         height: 3px;
-        /* Fade in and out rather than popping. */
+        /* Fade in and out rather than popping. The duration is
+           repeated in message_feed_loading.ts as
+           TOP_OF_FEED_INDICATOR_FADE_OUT_MS. */
         opacity: 0;
         transition: opacity 200ms ease-in-out;
     }
@@ -1279,9 +1281,12 @@ nav {
         opacity: 1;
     }
 
-    /* The pulse only moves while the line is up, so that each time
-       the line shows up the sweep starts over from the left edge. */
-    &.loading::after {
+    /* The pulse only moves while the line is up or fading out, so
+       that each time the line shows up the sweep starts over from the
+       left edge. One sweep takes the minimum time the indicator stays
+       up (MIN_TOP_OF_FEED_INDICATOR_DISPLAY_MS), so it always goes end
+       to end at least once. */
+    &:is(.loading, .fade-out)::after {
         animation: top-of-feed-loading-pulse 750ms ease-in-out infinite;
 
         @media (prefers-reduced-motion) {
