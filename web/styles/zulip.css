@@ -238,10 +238,6 @@ p.n-margin {
 
 .bottom-messages-logo {
     display: none;
-}
-
-.top-messages-logo,
-.bottom-messages-logo {
     width: 1.7143em; /* 24px at 14px/em */
     height: 1.7143em;
     margin: 0 auto 0.8571em; /* 12px at 14px/em */
@@ -262,12 +258,6 @@ p.n-margin {
         fill: var(--color-zulip-logo-loading);
         stroke: var(--color-zulip-logo-loading);
     }
-}
-
-.top-messages-logo {
-    /* Since padding under message header is not transparent
-       we need to position it below the padding. */
-    padding-top: var(--header-padding-bottom);
 }
 
 /* See https://web.dev/animations-guide/#triggers before adding any funny animation properties here. */
@@ -1242,17 +1232,127 @@ nav {
     height: var(--header-padding-bottom);
     /* The recipient bars are sticky too, come after this element in the
        HTML, and set z-index: 4. So by default a bar is drawn on top of
-       the gutter wherever the two overlap. This puts the gutter on top. */
-    z-index: 5;
+       the gutter wherever the two overlap. This puts the gutter on top,
+       and above the older messages line (z-index 5) that scrolls up
+       under it. */
+    z-index: 6;
     background-color: var(--color-background);
 }
 
-#loading_older_messages_indicator,
+.top-of-feed-loading-line {
+    /* A 3px line that pulses in the empty top margin of the first
+       recipient bar while messages are loading, the way loading bars
+       in mobile apps do. The element has no height of its own and the
+       line is drawn below it, so nothing moves when it comes and goes.
+
+       #page_loading_indicator hangs from the bottom of the sticky
+       gutter, so it is seen wherever the feed is scrolled to.
+       #loading_older_messages_indicator is in the flow at the top of
+       the feed, so it scrolls away under the gutter and is only seen
+       while the top of the feed is in view. */
+
+    /* How much of the line the pulse covers; the sweep keyframes
+       use this to travel the full width of the line. */
+    --loading-pulse-fraction: 0.3;
+
+    height: 0;
+    /* Clip the pulse as it sweeps past the ends of the line. */
+    overflow: clip visible;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        /* Centered in the recipient bar's 10px top margin. */
+        top: 3.5px;
+        left: 0;
+        height: 3px;
+        /* Fade in and out rather than popping. */
+        opacity: 0;
+        transition: opacity 200ms ease-in-out;
+    }
+
+    /* The line's track. */
+    &::before {
+        right: 0;
+        background-color: var(--color-top-of-feed-loading-line-track);
+    }
+
+    /* The pulse that sweeps along the line, left to right. */
+    &::after {
+        width: calc(100% * var(--loading-pulse-fraction));
+        background-color: var(--color-top-of-feed-loading-line);
+
+        @media (prefers-reduced-motion) {
+            width: 100%;
+        }
+    }
+
+    &.loading::before,
+    &.loading::after {
+        opacity: 1;
+    }
+
+    /* The pulse only moves while the line is up, so that each time
+       the line shows up the sweep starts over from the left edge. */
+    &.loading::after {
+        animation: top-of-feed-loading-pulse 750ms ease-in-out infinite;
+
+        @media (prefers-reduced-motion) {
+            animation: top-of-feed-loading-fade 750ms ease-in-out infinite;
+        }
+    }
+}
+
+#page_loading_indicator {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+#loading_older_messages_indicator {
+    position: relative;
+    /* Above the recipient bars (z-index 4), which come after this
+       element in the HTML and would otherwise be drawn over the line,
+       and below the gutter (z-index 6), which hides the line as it
+       scrolls up under it. */
+    z-index: 5;
+}
+
+/* On page load, the initial fetch is also a fetch for older messages
+   in the first narrow. One line is enough. */
+#main_div:has(#page_loading_indicator.loading)
+    #loading_older_messages_indicator {
+    visibility: hidden;
+}
+
+@keyframes top-of-feed-loading-pulse {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        /* The line's full width, measured in pulse widths. */
+        transform: translateX(calc(100% / var(--loading-pulse-fraction)));
+    }
+}
+
+@keyframes top-of-feed-loading-fade {
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
 #loading_more_indicator {
     margin: 10px;
 }
 
-#loading_older_messages_indicator_box_container,
 #loading_more_indicator_box_container {
     position: absolute;
     left: 50%;
@@ -1265,30 +1365,10 @@ nav {
     }
 }
 
-#loading_older_messages_indicator_box,
 #loading_more_indicator_box {
     position: relative;
     left: -1.3571em; /* 50% of 38px = 19px at 14px/em */
     top: -3.0714em; /* -43px at 14px/em */
-    z-index: 1;
-    border-radius: 6px;
-}
-
-#page_loading_indicator {
-    margin: 10px auto;
-}
-
-#page_loading_indicator_box_container {
-    position: absolute;
-    left: 50%;
-}
-
-#page_loading_indicator_box {
-    position: relative;
-    /* 50% of 38px = 19px at 14px/1em */
-    left: -1.3571em;
-    /* -43px at 14px/1em */
-    top: -3.0714em;
     z-index: 1;
     border-radius: 6px;
 }
