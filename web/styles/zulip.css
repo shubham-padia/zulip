@@ -585,12 +585,9 @@ body.has-overlay-scrollbar {
     z-index: 15;
 }
 
-#message_feed_container,
-.app-main .column-left .left-sidebar,
-.app-main .column-right .right-sidebar {
-    padding-top: calc(
-        var(--navbar-fixed-height) + var(--header-padding-bottom)
-    );
+#message_feed_container {
+    /* The 10px below the navbar is #top_of_feed_gutter. */
+    padding-top: var(--navbar-fixed-height);
 }
 
 .app-main {
@@ -610,6 +607,9 @@ body.has-overlay-scrollbar {
     .column-right .right-sidebar {
         position: fixed;
         z-index: 100;
+        padding-top: calc(
+            var(--navbar-fixed-height) + var(--header-padding-bottom)
+        );
     }
 
     .column-left .left-sidebar {
@@ -1228,6 +1228,23 @@ nav {
 
 .operator {
     font-family: "Source Code Pro", monospace;
+}
+
+#top_of_feed_gutter {
+    /* The 10px gap between the navbar and the message feed. It sticks
+       to the bottom of the navbar, and recipient bars stick just below
+       it (see .message-feed .message_header in message_header.css), so
+       a bar has the same space above it whether or not the feed is
+       scrolled. It is opaque so that messages scrolling under it are
+       hidden, as they are under the navbar. */
+    position: sticky;
+    top: var(--navbar-fixed-height);
+    height: var(--header-padding-bottom);
+    /* The recipient bars are sticky too, come after this element in the
+       HTML, and set z-index: 4. So by default a bar is drawn on top of
+       the gutter wherever the two overlap. This puts the gutter on top. */
+    z-index: 5;
+    background-color: var(--color-background);
 }
 
 #top_of_feed_loading_indicator,
