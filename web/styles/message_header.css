@@ -220,7 +220,10 @@
 
     .message_header {
         position: sticky;
-        top: var(--navbar-fixed-height);
+        /* Just below #top_of_feed_gutter, which sticks to the bottom
+           of the navbar. The same offset is measured in
+           message_viewport.ts as sticky_header_top. */
+        top: calc(var(--navbar-fixed-height) + var(--header-padding-bottom));
         /* Needs to be higher than the z-index of date_row. */
         z-index: 4;
         box-shadow: 0 -1px 0 0 var(--color-background);
