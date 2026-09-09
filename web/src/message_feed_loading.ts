@@ -2,7 +2,7 @@ import {$} from "jquery";
 
 import * as loading from "./loading.ts";
 
-let loading_older_messages_indicator_showing = false;
+let top_of_feed_indicator_showing = false;
 let loading_newer_messages_indicator_showing = false;
 
 // The indicator at the top of the feed is shown for two reasons: the
@@ -11,16 +11,36 @@ let loading_newer_messages_indicator_showing = false;
 let initial_page_load_pending = false;
 let fetching_older_messages = false;
 
+function top_of_feed_in_view(): boolean {
+    // The indicator rests at the bottom of the navbar, which is also
+    // where it sticks, so it is only away from the top of the feed once
+    // the page has scrolled. This is what message_viewport.at_rendered_top
+    // checks too, but importing that module here makes an import cycle.
+    return window.scrollY <= 0;
+}
+
 function update_top_of_feed_indicator(): void {
-    const should_show = initial_page_load_pending || fetching_older_messages;
-    if (should_show && !loading_older_messages_indicator_showing) {
-        $(".top-messages-logo").toggleClass("loading", true);
-        loading.make_indicator($("#top_of_feed_loading_indicator"), {abs_positioned: true});
-        loading_older_messages_indicator_showing = true;
-    } else if (!should_show && loading_older_messages_indicator_showing) {
-        $(".top-messages-logo").toggleClass("loading", false);
-        loading.destroy_indicator($("#top_of_feed_loading_indicator"));
-        loading_older_messages_indicator_showing = false;
+    // The initial page load is shown wherever the feed is scrolled to.
+    // A fetch for older messages is only shown while the top of the
+    // feed, where those messages will go, is in view; one that starts
+    // while the user is reading further down should not draw attention
+    // to itself.
+    const should_show =
+        initial_page_load_pending || (fetching_older_messages && top_of_feed_in_view());
+    if (should_show && !top_of_feed_indicator_showing) {
+        $("#top_of_feed_gutter").addClass("loading");
+        top_of_feed_indicator_showing = true;
+    } else if (!should_show && top_of_feed_indicator_showing) {
+        $("#top_of_feed_gutter").removeClass("loading");
+        top_of_feed_indicator_showing = false;
+    }
+}
+
+export function update_for_scroll_position(): void {
+    // Scrolling can bring the top of the feed into or out of view while
+    // older messages are being fetched.
+    if (fetching_older_messages) {
+        update_top_of_feed_indicator();
     }
 }
 
