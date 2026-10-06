@@ -25,8 +25,13 @@ Both are implemented, each in its own commit.
 
 **No blocking issues.** I found no correctness bugs in either commit. Both
 commits do what they claim, and I confirmed the claims in the commit messages
-against the code (details below). The remaining points are optional: one
-help-center wording fix, plus some test and structure nits.
+against the code (details below). Dev-server screenshots confirm both
+fixes. The remaining points are minor:
+
+- the "Others" header count stays stale after a deactivation (not a
+  regression);
+- one help-center wording fix;
+- some test and structure nits.
 
 As instructed, I did not re-run lint or tests, since CI covers them.
 
@@ -78,6 +83,29 @@ instead of `buddy_list.insert_or_move([user_id])`. `redraw_user` now calls
   useful fixes as separate PRs"). The request explicitly asked for a separate
   commit on this branch, so this is only something to consider when opening
   the PR.
+
+### Minor finding: the "Others" count stays stale after deactivation
+
+Found in the dev-server screenshots (see "Visual check" below), and confirmed
+in the code.
+
+- **What you see:** after Othello is deactivated, the "Others" header reads
+  **(4)** and stays there, though Othello is no longer listed. The right
+  number is 3.
+- **Why:** the header uses `render_data.other_users_count`, which
+  `get_render_data()` computes as
+  `people.get_active_human_count() - total_human_subscribers_count`.
+  `get_render_data()` only runs in `populate()`. Here the last `populate()`
+  was the rebuild triggered by `peer_remove`, while Othello was still active.
+  `maybe_remove_user_id` removes the row but doesn't recompute
+  `render_data`, and neither does `insert_or_move`.
+- **Not a regression:** on `main` the count is also 4. There it matches the
+  wrongly listed Othello, so the number looked consistent.
+- **Severity:** low. The count corrects itself at the next full rebuild
+  (narrow change, presence refresh). It's left over from the bug this commit
+  fixes, so it's worth either fixing in this commit or mentioning in the PR.
+  One option is to recompute `render_data` (or just the counts) and call
+  `render_section_headers` after a removal.
 
 ### Optional nits
 
@@ -134,26 +162,35 @@ I checked each scenario a reader might worry about:
 All `info_for` callers were updated. `get_items_for_users` is only used by
 the buddy list.
 
-### Visual check (cheap approximation)
+### Visual check
 
-There's no provisioned dev server, and the author also didn't check the
-change in a browser. To check their concern that the slant of the last letter
-might get clipped by `.user-name`'s `overflow: hidden`, I rendered one
-screenshot in headless Chromium:
+Another session provisioned the dev environment and took Puppeteer
+screenshots of `main` (`-old`) and this branch (`-new`), in light and dark
+themes. They're in `screenshots/`, with the setup described in
+`screenshots/README.md`. I looked at the section, tooltip and deactivation
+screenshots myself.
 
-- **Setup:** the real Source Sans 3 VF fonts (Zulip's `source-sans-3VF.css`
-  includes a true italic face, so the browser doesn't fake the slant), and
-  the same `.user-name` box rules: `display: inline-block`,
-  `max-width: calc(100% - …)`, `overflow-x: hidden`,
-  `text-overflow: ellipsis`.
-- **Result:** italic names, including ones ending in descender or overhang
-  letters ("Wonderly", "Driftwood"), weren't visibly clipped, and truncated
-  names show the ellipsis normally.
+- **Italics:** Zoe and Polonius (a guest) are unsubscribed participants. On
+  this branch both are italic under "This conversation"; on `main` neither is
+  (`unsub-participants-section-*`).
+- **Tooltip:** shows "Not subscribed to this channel." in italics, between
+  the name and the last-active line (`unsub-participants-tooltip-*`).
+- **Delay:** the italics appear 0.6–1.0s after opening the topic, because
+  they wait for the background subscriber fetch. This is expected for
+  channels without full subscriber data, but users will see a brief flash of
+  upright names.
+- **Guests:** the whole "Polonius (guest)" row is italic, so "(guest)" no
+  longer stands out. This confirms design point 4 below.
+- **Deactivation (commit 1):** a DOM observer recorded Othello's row being
+  added, removed and added again under "Others" on `main`, but only added and
+  removed on this branch. Othello is gone afterwards
+  (`deactivate-after-light-new.png`).
+- **"Others" count:** stays stale after the deactivation. See the minor
+  finding under commit 1.
 
-This is not a full UI check. It doesn't cover the dark theme, the three
-user-list styles in the real app, or the tooltip layout. Someone should still
-look at those in the dev server before opening a PR (see
-`.claude/rules/ui-testing.md`).
+My earlier headless-Chromium check of the font is also still valid: italic
+names aren't clipped by `.user-name`'s `overflow: hidden`, and that matches
+the real-app screenshots.
 
 ### Findings
 
@@ -190,6 +227,8 @@ look at those in the dev server before opening a PR (see
      `<i class="guest-indicator">(guest)</i>`.
    - For an unsubscribed guest participant, the whole row is now italic, so
      the "(guest)" suffix no longer stands out against the name.
+   - The dev-server screenshots confirm this
+     (`unsub-participants-section-light-new.png`).
    - This is rare and probably fine. It fits with the author's open
      questions about tooltip wording and placement (the new line goes directly
      under the name, above the status and last-seen lines) and about
@@ -230,13 +269,13 @@ look at those in the dev server before opening a PR (see
 
 ## Is anything left unfixed?
 
-No. Both items from the request are implemented:
+No. Both items from the request are implemented and check out in the dev
+server:
 
 - The italic name plus tooltip, including live updates and correct handling
   of large channels.
 - The deactivation glitch, as a separate commit.
 
-The only remaining gap is process, not code: the author never checked the
-change visually in the real app. Before a PR, check it in all three
-user-list styles and both themes, and check the tooltip, per
-`.claude/rules/ui-testing.md`.
+One small leftover: the "Others" header count stays stale after a
+deactivation (minor finding under commit 1). Fix it in commit 1 or mention
+it in the PR.
