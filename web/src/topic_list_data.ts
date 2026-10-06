@@ -12,6 +12,10 @@ import * as util from "./util.ts";
 const MAX_TOPICS = 6;
 const MAX_TOPICS_WITH_UNREAD = 10;
 
+// The topic the user is viewing, if all of its messages were deleted
+// since they navigated to it.
+let deleted_narrowed_topic: {stream_id: number; topic_name: string} | undefined;
+
 export type TopicInfo = {
     stream_id: number;
     topic_name: string;
@@ -185,6 +189,29 @@ function contains_topic(topic_names: string[], narrowed_topic: string): boolean 
     return lower_cased_topics.includes(narrowed_topic.toLowerCase());
 }
 
+export function handle_deleted_topic(stream_id: number, topic_name: string): void {
+    const narrowed_topic = narrow_state.topic();
+    if (
+        stream_id === narrow_state.stream_id() &&
+        narrowed_topic !== undefined &&
+        util.lower_same(narrowed_topic, topic_name)
+    ) {
+        deleted_narrowed_topic = {stream_id, topic_name};
+    }
+}
+
+export function clear_deleted_narrowed_topic(): void {
+    deleted_narrowed_topic = undefined;
+}
+
+function is_deleted_narrowed_topic(stream_id: number, narrowed_topic: string): boolean {
+    return (
+        deleted_narrowed_topic !== undefined &&
+        deleted_narrowed_topic.stream_id === stream_id &&
+        util.lower_same(deleted_narrowed_topic.topic_name, narrowed_topic)
+    );
+}
+
 type TopicListInfo = {
     items: TopicInfo[];
     num_possible_topics: number;
@@ -244,11 +271,13 @@ export function get_filtered_topic_names(
     const narrowed_topic = narrow_state.topic();
 
     // If the user is viewing a topic with no messages, include
-    // the topic name to the beginning of the list of topics.
+    // the topic name to the beginning of the list of topics, unless
+    // the topic's messages were deleted while the user was viewing it.
     if (
         stream_id === narrow_state.stream_id() &&
         narrowed_topic !== undefined &&
-        !contains_topic(topic_names, narrowed_topic)
+        !contains_topic(topic_names, narrowed_topic) &&
+        !is_deleted_narrowed_topic(stream_id, narrowed_topic)
     ) {
         topic_names.unshift(narrowed_topic);
     }

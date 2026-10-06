@@ -108,6 +108,7 @@ mock_esm("../src/left_sidebar_navigation_area", {
     update_reminders_row() {},
     handle_home_view_changed() {},
 });
+const topic_list_data = mock_esm("../src/topic_list_data");
 const typing_events = mock_esm("../src/typing_events");
 const unread_ops = mock_esm("../src/unread_ops");
 const unread_ui = mock_esm("../src/unread_ui");
@@ -1643,6 +1644,10 @@ run_test("delete_message", ({override}) => {
 
     override(emoji_frequency, "update_emoji_frequency_on_messages_deletion", noop);
 
+    // The topic still has other messages.
+    override(stream_topic_history, "channel_has_locally_available_topic", () => true);
+    override(topic_list_data, "handle_deleted_topic", noop, {unused: false});
+
     dispatch(event);
 
     let args;
@@ -1658,6 +1663,18 @@ run_test("delete_message", ({override}) => {
     assert_same(args.opts.topic_name, "topic1");
     assert_same(args.opts.num_messages, 1);
     assert_same(args.opts.max_removed_msg_id, 1337);
+
+    // We deleted the last message in the topic.
+    override(stream_topic_history, "channel_has_locally_available_topic", () => false);
+    const handle_deleted_topic_stub = make_stub();
+    override(topic_list_data, "handle_deleted_topic", handle_deleted_topic_stub.f);
+
+    dispatch(event);
+
+    assert.equal(handle_deleted_topic_stub.num_calls, 1);
+    args = handle_deleted_topic_stub.get_args("stream_id", "topic_name");
+    assert_same(args.stream_id, 99);
+    assert_same(args.topic_name, "topic1");
 });
 
 run_test("delete_message_private", ({override}) => {

@@ -610,3 +610,76 @@ test("get_list_info with specific topics and searches", () => {
     list_info = get_list_info(true, "nonexistent");
     assert.equal(list_info.items.length, 0);
 });
+
+test("get_list_info after deleting narrowed topic", ({override}) => {
+    unread.declare_bankruptcy();
+    general.is_muted = false;
+    stream_topic_history.set_update_topic_last_message_id(() => {});
+    stream_topic_history.add_message({
+        stream_id: general.stream_id,
+        topic_name: "deleted topic",
+        message_id: 1001,
+    });
+    stream_topic_history.add_message({
+        stream_id: general.stream_id,
+        topic_name: "other topic",
+        message_id: 1002,
+    });
+
+    override(narrow_state, "stream_id", () => general.stream_id);
+    override(narrow_state, "topic", () => "Deleted topic");
+
+    function get_topic_names() {
+        return get_list_info().items.map((item) => item.topic_name);
+    }
+
+    function delete_topic_messages(topic_name) {
+        stream_topic_history.remove_messages({
+            stream_id: general.stream_id,
+            topic_name,
+            num_messages: 1,
+            max_removed_msg_id: 1001,
+        });
+        topic_list_data.handle_deleted_topic(general.stream_id, topic_name);
+    }
+
+    assert.deepEqual(get_topic_names(), ["other topic", "deleted topic"]);
+
+    // Deleting a topic the user isn't viewing doesn't affect
+    // whether the narrowed topic is shown.
+    topic_list_data.handle_deleted_topic(general.stream_id, "other topic");
+    topic_list_data.handle_deleted_topic(general.stream_id + 1, "deleted topic");
+    stream_topic_history.remove_messages({
+        stream_id: general.stream_id,
+        topic_name: "deleted topic",
+        num_messages: 1,
+        max_removed_msg_id: 1001,
+    });
+    assert.deepEqual(get_topic_names(), ["Deleted topic", "other topic"]);
+
+    // Once the narrowed topic is deleted, it's no longer shown,
+    // even though the user is still viewing it.
+    delete_topic_messages("deleted topic");
+    assert.deepEqual(get_topic_names(), ["other topic"]);
+
+    // If the user sends a message to the topic, it's shown again.
+    stream_topic_history.add_message({
+        stream_id: general.stream_id,
+        topic_name: "deleted topic",
+        message_id: 1003,
+    });
+    assert.deepEqual(get_topic_names(), ["deleted topic", "other topic"]);
+    delete_topic_messages("deleted topic");
+    assert.deepEqual(get_topic_names(), ["other topic"]);
+
+    // Navigating to the empty topic again shows it, like any
+    // other topic without messages.
+    topic_list_data.clear_deleted_narrowed_topic();
+    assert.deepEqual(get_topic_names(), ["Deleted topic", "other topic"]);
+
+    // Deleting a topic while not viewing a topic does nothing.
+    override(narrow_state, "topic", () => undefined);
+    topic_list_data.handle_deleted_topic(general.stream_id, "deleted topic");
+    override(narrow_state, "topic", () => "Deleted topic");
+    assert.deepEqual(get_topic_names(), ["Deleted topic", "other topic"]);
+});

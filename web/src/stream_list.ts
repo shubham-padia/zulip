@@ -1283,6 +1283,8 @@ export function handle_narrow_activated(
     change_hash: boolean,
     show_more_topics: boolean,
 ): void {
+    topic_list_data.clear_deleted_narrowed_topic();
+
     const previously_expanded_stream_id = topic_list.active_stream_id();
 
     // Zoom out, if needed, so that get_stream_li returns the correct
