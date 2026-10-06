@@ -4,9 +4,14 @@ Reviewed commit (1):
 
 - `cdda1f3` channel_settings: Clarify what organization administrators can do.
 
+Since this review, the commit message has been reworded, and the branch
+now points to `a5f605f` ("channel_settings: Fix misleading text about
+organization admins."). Its files are identical to `cdda1f3`, so
+everything below still applies.
+
 **Verdict: Looks good to merge. No blocking findings.** The commit does
-everything the request asked for. The only gap is that nobody has looked
-at the result in a browser (see "Not verified" below).
+everything the request asked for, and the visual check in a browser
+found no problems (see "Visual check" below).
 
 ## What the fix set out to do
 
@@ -86,14 +91,23 @@ article explains "exactly what is and isn't included". That is accurate, but
 "explains what is and isn't included" would be slightly less emphatic. This
 is purely stylistic.
 
-## Not verified
+## Visual check
 
-- **Visual check in a browser.** Neither the author session nor this review
-  rendered the page. The dev environment can't be provisioned in these
-  containers, because `./tools/provision` refuses to run as root. The risk
-  is low, because the markup is the standard partial used inline in the same
-  way elsewhere and the global `a.help_link_widget` styles apply. Still,
-  before merging, a human should spend a few seconds looking at the
-  "Administrative permissions" section in **both** channel settings and the
-  create-channel form, in light and dark themes, to confirm the icon sits
-  right after the sentence and wraps sensibly at narrow widths.
+Another session provisioned the dev environment and took screenshots
+with Puppeteer, comparing `main` with this branch. They are in
+[`screenshots/`](screenshots/), with notes in
+[`screenshots/README.md`](screenshots/README.md). The screenshots cover
+channel settings and the create-channel form, in light and dark themes,
+plus channel settings at 480px wide.
+
+I looked at the close-up screenshots of the tip and the 480px one:
+
+- The new sentence and the (?) help icon show up in both channel settings
+  and the create-channel form, in both themes.
+- The icon sits right after the sentence. It's spaced and dimmed like the
+  other (?) icons on the page, such as the one next to "Message retention
+  period".
+- At 480px, the sentence wraps onto two lines, and the icon stays on the
+  last line.
+
+No problems found.
