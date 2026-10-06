@@ -93,11 +93,32 @@ None.
      this fix.
    - This is noted only for completeness, not as a requested change.
 
+## Visual check
+
+Screenshots of the help center dev server (1280px wide) are in
+`screenshots/`, with notes in `screenshots/README.md`. They were taken in
+another session; I looked at all four "after" (`-new`) screenshots myself.
+
+- **Both pages render correctly in light and dark themes.** Text, code
+  formatting, links and step numbers look right, with no layout problems.
+- **The new section appears in "On this page".** On `/help/manage-a-bot`,
+  "Download botserverrc configuration file" is listed between "Download
+  zuliprc configuration file" and "Get a bot's API key".
+- **The section reads as intended.** Its three steps render as "Navigate to
+  the **Bots** tab of the **Personal settings** menu", "Select the **Your
+  bots** tab", and "Click the **download** icon above the bots table". The
+  download icon renders inline in both themes.
+- **The deploying-bots step links to the new section.** On
+  `/help/deploying-bots`, step 2 of "Running multiple bots using the Zulip
+  Botserver" renders "Download the `botserverrc` file" as a link, followed by
+  the two visibility conditions.
+
 ## What was and wasn't checked
 
 - I didn't rerun lint or the help build, because CI covers them, as
   instructed.
 - I checked the doc claims against the template and TypeScript source above.
-  Because I read the code directly, a browser check wasn't needed.
+  The rendering was checked using the screenshots in the "Visual check"
+  section.
 - Context came from the original session's transcript (user and assistant
   messages) and from the linked chat.zulip.org thread.
