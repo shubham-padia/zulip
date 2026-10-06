@@ -89,6 +89,9 @@ export function redraw_user(user_id: number): void {
     const filter_text = get_filter_text();
 
     if (!buddy_data.matches_filter(filter_text, user_id)) {
+        // The user may have just become ineligible to appear in the
+        // buddy list, e.g. because they were deactivated.
+        buddy_list.maybe_remove_user_id({user_id});
         return;
     }
 

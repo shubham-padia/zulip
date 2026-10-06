@@ -570,6 +570,17 @@ test("redraw_muted_user", () => {
     activity_ui.redraw_user(mark.user_id);
 });
 
+test("redraw_deactivated_user", ({override}) => {
+    let removed_user_id;
+    override(buddy_list, "maybe_remove_user_id", (opts) => {
+        removed_user_id = opts.user_id;
+    });
+    people.deactivate(mark);
+    activity_ui.redraw_user(mark.user_id);
+    assert.equal(removed_user_id, mark.user_id);
+    people.add_active_user(mark);
+});
+
 test("update_presence_info", ({override}) => {
     override(pm_list, "update_private_messages", noop);
     override(buddy_list_presence, "update_indicators", noop);

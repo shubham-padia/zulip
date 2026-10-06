@@ -279,7 +279,7 @@ export const update_person = function update(event: UserUpdate): void {
             user_group_edit.remove_deactivated_user_from_all_groups(event.user_id);
             settings_users.update_view_on_deactivate(event.user_id, is_bot_user);
         }
-        buddy_list.insert_or_move([event.user_id]);
+        activity_ui.redraw_user(event.user_id);
         // Update UI elements to reflect the user's deactivated/reactivated status
         pm_list.update_private_messages();
         compose_pm_pill.update_user_pill_active_status(user, event.is_active);
