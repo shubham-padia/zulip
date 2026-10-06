@@ -555,6 +555,25 @@ export function on_show_navigation_view(): void {
     cancel();
 }
 
+export function on_topic_deleted(stream_id: number, topic_name: string): void {
+    if (
+        compose_state.get_message_type() !== "stream" ||
+        compose_state.stream_id() !== stream_id ||
+        !util.lower_same(compose_state.topic(), topic_name)
+    ) {
+        return;
+    }
+
+    // Leave the compose box open if the user has drafted a message.
+    if (compose_state.has_message_content()) {
+        return;
+    }
+
+    // Otherwise, close the compose box, so that the user doesn't
+    // accidentally recreate the deleted topic.
+    cancel();
+}
+
 export let on_topic_narrow = (): void => {
     if (!compose_state.composing()) {
         // If our compose box is closed, then just

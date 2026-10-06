@@ -10,6 +10,7 @@ import * as bot_data from "./bot_data.ts";
 import * as browser_history from "./browser_history.ts";
 import {buddy_list} from "./buddy_list.ts";
 import * as channel_folders from "./channel_folders.ts";
+import * as compose_actions from "./compose_actions.ts";
 import {compose_call_session_manager} from "./compose_call_session.ts";
 import * as compose_call_ui from "./compose_call_ui.ts";
 import * as compose_closed_ui from "./compose_closed_ui.ts";
@@ -221,6 +222,7 @@ export function dispatch_normal_event(event) {
                     // We've deleted all the messages we know of in
                     // this topic.
                     topic_list_data.handle_deleted_topic(event.stream_id, event.topic);
+                    compose_actions.on_topic_deleted(event.stream_id, event.topic);
                 }
                 stream_list.update_streams_sidebar();
             } else if (deleted_dm_user_ids !== undefined) {
