@@ -591,8 +591,8 @@ class BigBlueButtonVideoCallTest(ZulipTestCase):
     def test_join_bigbluebutton_redirect(self) -> None:
         responses.add(
             responses.GET,
-            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True"
-            "&checksum=33349e6374ca9b2d15a0c6e51a42bc3e8f770de13f88660815c6449859856e20",
+            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&muteOnStart=false"
+            "&checksum=d833e860423ee13b5d1a46188949b59d6b329bceb37850121658aeb9e8781bfd",
             "<response><returncode>SUCCESS</returncode><messageKey/><createTime>0</createTime></response>",
         )
         response = self.client_get(
@@ -622,8 +622,8 @@ class BigBlueButtonVideoCallTest(ZulipTestCase):
     def test_join_bigbluebutton_invalid_signature(self) -> None:
         responses.add(
             responses.GET,
-            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True"
-            "&checksum=33349e6374ca9b2d15a0c6e51a42bc3e8f770de13f88660815c6449859856e20",
+            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&muteOnStart=false"
+            "&checksum=d833e860423ee13b5d1a46188949b59d6b329bceb37850121658aeb9e8781bfd",
             "<response><returncode>SUCCESS</returncode><messageKey/><createTime>0</createTime></response>",
         )
         response = self.client_get(
@@ -635,7 +635,7 @@ class BigBlueButtonVideoCallTest(ZulipTestCase):
     def test_join_bigbluebutton_redirect_wrong_big_blue_button_checksum(self) -> None:
         responses.add(
             responses.GET,
-            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&checksum=33349e6374ca9b2d15a0c6e51a42bc3e8f770de13f88660815c6449859856e20",
+            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&muteOnStart=false&checksum=d833e860423ee13b5d1a46188949b59d6b329bceb37850121658aeb9e8781bfd",
             "<response><returncode>FAILED</returncode><messageKey>checksumError</messageKey>"
             "<message>You did not pass the checksum security check</message></response>",
         )
@@ -650,7 +650,7 @@ class BigBlueButtonVideoCallTest(ZulipTestCase):
         # Simulate bbb server error
         responses.add(
             responses.GET,
-            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&checksum=33349e6374ca9b2d15a0c6e51a42bc3e8f770de13f88660815c6449859856e20",
+            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&muteOnStart=false&checksum=d833e860423ee13b5d1a46188949b59d6b329bceb37850121658aeb9e8781bfd",
             status=500,
             body="Something went wrong",
         )
@@ -666,7 +666,7 @@ class BigBlueButtonVideoCallTest(ZulipTestCase):
     def test_join_bigbluebutton_connection_refused(self) -> None:
         responses.add(
             responses.GET,
-            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&checksum=33349e6374ca9b2d15a0c6e51a42bc3e8f770de13f88660815c6449859856e20",
+            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&muteOnStart=false&checksum=d833e860423ee13b5d1a46188949b59d6b329bceb37850121658aeb9e8781bfd",
             body=requests.exceptions.ConnectionError("Connection refused"),
         )
         response = self.client_get(
@@ -679,7 +679,7 @@ class BigBlueButtonVideoCallTest(ZulipTestCase):
 
     @responses.activate
     def test_join_bigbluebutton_too_many_redirects(self) -> None:
-        url = "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&checksum=33349e6374ca9b2d15a0c6e51a42bc3e8f770de13f88660815c6449859856e20"
+        url = "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&muteOnStart=false&checksum=d833e860423ee13b5d1a46188949b59d6b329bceb37850121658aeb9e8781bfd"
         responses.add(
             responses.GET,
             url,
@@ -700,7 +700,7 @@ class BigBlueButtonVideoCallTest(ZulipTestCase):
         # Simulate bbb server error
         responses.add(
             responses.GET,
-            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&checksum=33349e6374ca9b2d15a0c6e51a42bc3e8f770de13f88660815c6449859856e20",
+            "https://bbb.example.com/bigbluebutton/api/create?meetingID=a&name=a&lockSettingsDisableCam=True&muteOnStart=false&checksum=d833e860423ee13b5d1a46188949b59d6b329bceb37850121658aeb9e8781bfd",
             "<response><returncode>FAILURE</returncode><messageKey>otherFailure</messageKey></response>",
         )
         response = self.client_get(

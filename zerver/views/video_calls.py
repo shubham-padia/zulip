@@ -627,6 +627,9 @@ def join_bigbluebutton(request: HttpRequest, *, bigbluebutton: str) -> HttpRespo
             "meetingID": bigbluebutton_data["meeting_id"],
             "name": bigbluebutton_data["name"],
             "lockSettingsDisableCam": bigbluebutton_data["lock_settings_disable_cam"],
+            # Override any server default that mutes participants on
+            # joining, to match how Zulip's other call providers work.
+            "muteOnStart": "false",
         },
         quote_via=quote,
     )
