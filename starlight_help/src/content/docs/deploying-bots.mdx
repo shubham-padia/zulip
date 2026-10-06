@@ -7,8 +7,6 @@ import {Steps} from "@astrojs/starlight/components";
 import FlattenedSteps from "../../components/FlattenedSteps.astro";
 import ZulipNote from "../../components/ZulipNote.astro";
 
-import DownloadIcon from "~icons/zulip-icon/download";
-
 Usually, work on a bot starts on a laptop.  At some point, you'll want
 to deploy your bot in a production environment, so that it'll stay up
 regardless of what's happening with your laptop.  There are several
@@ -123,9 +121,9 @@ Botserver process.
   1. [Create your bots](#create-a-bot-in-your-zulip-organization)
      in your Zulip organization.
 
-  1. Download the `botserverrc` file from the **Bots** tab of the
-     **Personal settings** menu, by clicking the **download**
-     (<DownloadIcon />) icon above the **Bots** table.
+  1. [Download the `botserverrc` file](/help/manage-a-bot#download-botserverrc-configuration-file).
+     The download option is shown on the **Your bots** tab, and only if
+     you own at least one active **outgoing webhook** bot.
 
   1. Open the `botserverrc`. It should contain one or more sections that look
      like this:
