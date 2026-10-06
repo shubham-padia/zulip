@@ -1152,3 +1152,47 @@ test("on_narrow", ({override, override_rewire}) => {
     });
     assert.ok(cancel_called);
 });
+
+test("on_topic_deleted", ({override_rewire}) => {
+    const stream_id = 1;
+
+    let cancel_called = false;
+    override_rewire(compose_actions, "cancel", () => {
+        cancel_called = true;
+    });
+
+    function compose_to(stream_id, topic_name, content) {
+        compose_state.set_message_type("stream");
+        compose_state.set_stream_id(stream_id);
+        compose_state.topic(topic_name);
+        compose_state.message_content(content);
+        cancel_called = false;
+    }
+
+    // An empty compose box for the deleted topic is closed.
+    compose_to(stream_id, "Deleted topic", "");
+    compose_actions.on_topic_deleted(stream_id, "deleted topic");
+    assert.ok(cancel_called);
+
+    // A drafted message for the deleted topic is left alone.
+    compose_to(stream_id, "deleted topic", "draft");
+    compose_actions.on_topic_deleted(stream_id, "deleted topic");
+    assert.ok(!cancel_called);
+
+    // Compose boxes for other conversations are left alone.
+    compose_to(stream_id, "other topic", "");
+    compose_actions.on_topic_deleted(stream_id, "deleted topic");
+    assert.ok(!cancel_called);
+
+    compose_to("", "deleted topic", "");
+    compose_actions.on_topic_deleted(stream_id, "deleted topic");
+    assert.ok(!cancel_called);
+
+    compose_state.set_message_type("private");
+    compose_actions.on_topic_deleted(stream_id, "deleted topic");
+    assert.ok(!cancel_called);
+
+    compose_state.set_message_type(undefined);
+    compose_actions.on_topic_deleted(stream_id, "deleted topic");
+    assert.ok(!cancel_called);
+});
