@@ -122,3 +122,65 @@ another session; I looked at all four "after" (`-new`) screenshots myself.
   section.
 - Context came from the original session's transcript (user and assistant
   messages) and from the linked chat.zulip.org thread.
+
+## Commit message reword
+
+The fix commit's message was reworded using the newer commit-message
+guide on the `commit-message-skill` branch. Only the message changed:
+`git diff e28c04813e 2cceb26a7c` prints nothing. Author and committer
+are both `Shubham Padia <shubham@zulip.com>`, and Claude appears only
+as the `Co-Authored-By` trailer.
+
+What changed, per the guide:
+
+- **The summary names the problem, not the fix.**
+- **The body is shorter.** It drops the sentence that described the diff
+  (replacing the tip and adding the link) and keeps why the approach is
+  right (it mirrors the `zuliprc` docs).
+- **The body is wrapped at 70 characters or fewer.**
+
+**Status:** `2cceb26a7c` exists locally as branch
+`reworded-botserverrc-docs`, but it has **not** been pushed.
+`claude/botserverrc-docs` still points at `e28c04813e`, because the
+force-push was blocked by this session's permission settings.
+
+### Old message (`e28c04813e`)
+
+```
+help: Document where to download the botserverrc file.
+
+The "Deploying bots in production" article told users to download
+the botserverrc file using a download icon above the bots table, but
+that icon only appears on the "Your bots" tab, and only when the user
+owns at least one active outgoing webhook bot, since the file only
+contains configuration for those bots. Users who didn't meet both
+conditions couldn't find the button.
+
+Replace the tip in "Manage a bot" with a dedicated section that
+explains these conditions and gives navigation steps, and link to it
+from the Botserver instructions, mirroring how the zuliprc download
+is documented.
+
+Discussion: https://chat.zulip.org/#narrow/channel/9-issues/topic/option.20to.20download.20.60botserverrc.60.20file.20missing/with/2529990
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+```
+
+### New message (`2cceb26a7c`)
+
+```
+help: Fix botserverrc download steps omitting when the icon shows.
+
+The "Deploying bots in production" article said to download the
+botserverrc file from a download icon above the bots table. That
+icon only appears on the "Your bots" tab, and only if the user owns
+an active outgoing webhook bot. Users missing either condition
+couldn't find it.
+
+The new "Manage a bot" section states both conditions, mirroring
+how the zuliprc download is documented.
+
+Discussion: https://chat.zulip.org/#narrow/channel/9-issues/topic/option.20to.20download.20.60botserverrc.60.20file.20missing/with/2529990
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+```
