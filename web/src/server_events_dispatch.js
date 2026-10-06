@@ -95,6 +95,7 @@ import * as stream_ui_updates from "./stream_ui_updates.ts";
 import * as sub_store from "./sub_store.ts";
 import * as submessage from "./submessage.ts";
 import * as theme from "./theme.ts";
+import * as topic_list_data from "./topic_list_data.ts";
 import {group_setting_value_schema} from "./types.ts";
 import * as typing_events from "./typing_events.ts";
 import * as unread_ops from "./unread_ops.ts";
@@ -211,6 +212,16 @@ export function dispatch_normal_event(event) {
                     num_messages: msg_ids.length,
                     max_removed_msg_id: Math.max(...msg_ids),
                 });
+                if (
+                    !stream_topic_history.channel_has_locally_available_topic(
+                        event.stream_id,
+                        event.topic,
+                    )
+                ) {
+                    // We've deleted all the messages we know of in
+                    // this topic.
+                    topic_list_data.handle_deleted_topic(event.stream_id, event.topic);
+                }
                 stream_list.update_streams_sidebar();
             } else if (deleted_dm_user_ids !== undefined) {
                 // We may have emptied a DM conversation; remove it from the
