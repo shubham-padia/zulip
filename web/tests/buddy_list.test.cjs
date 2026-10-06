@@ -12,7 +12,10 @@ const {
     stub_buddy_list_elements,
 } = require("./lib/buddy_list.cjs");
 const {make_realm} = require("./lib/example_realm.cjs");
+const {make_stream} = require("./lib/example_stream.cjs");
 const {make_user} = require("./lib/example_user.cjs");
+const {make_message_list} = require("./lib/message_list.cjs");
+const {mock_channel_get} = require("./lib/mock_channel.cjs");
 const {mock_esm, zrequire} = require("./lib/namespace.cjs");
 const {run_test, noop} = require("./lib/test.cjs");
 const blueslip = require("./lib/zblueslip.cjs");
@@ -21,15 +24,20 @@ const {$} = require("./lib/zjquery.cjs");
 const padded_widget = mock_esm("../src/padded_widget");
 const message_viewport = mock_esm("../src/message_viewport");
 const background_task = mock_esm("../src/background_task");
+const channel = mock_esm("../src/channel");
 mock_esm("../src/sidebar_header_sticky_shadow", {initialize() {}});
 
 const buddy_data = zrequire("buddy_data");
 const {BuddyList} = zrequire("buddy_list");
+const message_lists = zrequire("message_lists");
+const peer_data = zrequire("peer_data");
 const people = zrequire("people");
-const {set_realm} = zrequire("state_data");
+const stream_data = zrequire("stream_data");
+const {set_current_user, set_realm} = zrequire("state_data");
 const {initialize_user_settings} = zrequire("user_settings");
 
 set_realm(make_realm());
+set_current_user({});
 initialize_user_settings({user_settings: {}});
 
 function init_simulated_scrolling() {
@@ -373,4 +381,69 @@ run_test("scrolling", ({override}) => {
     $(buddy_list.scroll_container_selector).trigger("scroll");
 
     assert.ok(tried_to_fill);
+});
+
+run_test("rerender_unsubscribed_participants_after_fetching_subscribers", async ({override}) => {
+    const buddy_list = new BuddyList();
+    const rome_sub = make_stream({name: "Rome", stream_id: 1001});
+    stream_data.add_sub_for_tests(rome_sub);
+    message_lists.set_current(
+        make_message_list([
+            {operator: "channel", operand: String(rome_sub.stream_id)},
+            {operator: "topic", operand: "Foo"},
+        ]),
+    );
+    buddy_list.render_data = {
+        current_sub: rome_sub,
+        get_all_participant_ids: () => new Set([alice.user_id, bob.user_id, chris.user_id]),
+    };
+    buddy_list.participants_section.user_ids = [alice.user_id, bob.user_id];
+
+    let subscribers_from_server;
+    let on_fetch = noop;
+    mock_channel_get(channel, (opts) => {
+        assert.equal(opts.url, `/json/streams/${rome_sub.stream_id}/members`);
+        on_fetch();
+        opts.success({subscribers: subscribers_from_server});
+    });
+    let rerendered_user_ids;
+    override(buddy_list, "insert_or_move", (user_ids) => {
+        rerendered_user_ids = user_ids;
+    });
+
+    // Alice is rerendered as unsubscribed once we fetch the full
+    // subscriber list. Chris is unsubscribed too, but hasn't been
+    // rendered yet, so he'll be rendered correctly later.
+    subscribers_from_server = [bob.user_id];
+    peer_data.set_subscribers(rome_sub.stream_id, [bob.user_id], false);
+    await buddy_list.rerender_unsubscribed_participants_after_fetching_subscribers();
+    assert.deepEqual(rerendered_user_ids, [alice.user_id]);
+
+    // We don't fetch or rerender again once we have full subscriber data.
+    rerendered_user_ids = undefined;
+    await buddy_list.rerender_unsubscribed_participants_after_fetching_subscribers();
+    assert.equal(rerendered_user_ids, undefined);
+
+    // Nothing to rerender if all rendered participants are subscribed.
+    peer_data.clear_for_testing();
+    subscribers_from_server = [alice.user_id, bob.user_id];
+    peer_data.set_subscribers(rome_sub.stream_id, [], false);
+    await buddy_list.rerender_unsubscribed_participants_after_fetching_subscribers();
+    assert.equal(rerendered_user_ids, undefined);
+
+    // We don't touch the DOM if we've changed views during the fetch.
+    peer_data.clear_for_testing();
+    subscribers_from_server = [];
+    peer_data.set_subscribers(rome_sub.stream_id, [], false);
+    on_fetch = () => {
+        buddy_list.render_data = {...buddy_list.render_data, current_sub: undefined};
+    };
+    await buddy_list.rerender_unsubscribed_participants_after_fetching_subscribers();
+    assert.equal(rerendered_user_ids, undefined);
+
+    // Without a channel view, there are no unsubscribed participants.
+    await buddy_list.rerender_unsubscribed_participants_after_fetching_subscribers();
+    assert.equal(rerendered_user_ids, undefined);
+
+    message_lists.set_current(undefined);
 });

@@ -218,10 +218,31 @@ export type BuddyUserInfo = {
         WITH_AVATAR: boolean;
     };
     should_add_guest_user_indicator: boolean;
+    is_unsubscribed_participant: boolean;
     faded?: boolean;
 };
 
-export function info_for(user_id: number, direct_message_recipients: Set<number>): BuddyUserInfo {
+export function is_unsubscribed_participant(
+    user_id: number,
+    conversation_participants: Set<number>,
+): boolean {
+    if (!conversation_participants.has(user_id)) {
+        return false;
+    }
+    const stream_id = narrow_state.stream_id(narrow_state.filter(), true);
+    // For large channels, we may only have partial subscriber data, in
+    // which case we can't tell whether a participant is unsubscribed.
+    if (stream_id === undefined || !peer_data.has_full_subscriber_data(stream_id)) {
+        return false;
+    }
+    return !stream_data.is_user_loaded_and_subscribed(stream_id, user_id);
+}
+
+export function info_for(
+    user_id: number,
+    direct_message_recipients: Set<number>,
+    conversation_participants: Set<number>,
+): BuddyUserInfo {
     const is_deactivated = !people.is_person_active(user_id);
     const is_dm = direct_message_recipients.has(user_id);
 
@@ -249,6 +270,10 @@ export function info_for(user_id: number, direct_message_recipients: Set<number>
         has_status_text: Boolean(status_text),
         user_list_style,
         should_add_guest_user_indicator: people.should_add_guest_user_indicator(user_id),
+        is_unsubscribed_participant: is_unsubscribed_participant(
+            user_id,
+            conversation_participants,
+        ),
     };
 }
 
@@ -258,6 +283,7 @@ export type TitleData = {
     third_line: string;
     show_you?: boolean;
     is_deactivated?: boolean;
+    is_unsubscribed_participant?: boolean;
 };
 
 export function get_title_data(
@@ -342,7 +368,10 @@ export function get_title_data(
 
 export function get_items_for_users(user_ids: number[]): BuddyUserInfo[] {
     const direct_message_recipients = narrow_state.pm_ids_set();
-    const user_info = user_ids.map((user_id) => info_for(user_id, direct_message_recipients));
+    const conversation_participants = get_conversation_participants_callback()();
+    const user_info = user_ids.map((user_id) =>
+        info_for(user_id, direct_message_recipients, conversation_participants),
+    );
     return user_info;
 }
 

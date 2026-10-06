@@ -440,6 +440,37 @@ export class BuddyList extends BuddyListConf {
         background_task.run_async_function_without_await(
             this.update_empty_list_placeholders.bind(this),
         );
+        background_task.run_async_function_without_await(
+            this.rerender_unsubscribed_participants_after_fetching_subscribers.bind(this),
+        );
+    }
+
+    // For large channels, we only know which participants are
+    // unsubscribed once we've fetched the full subscriber list, so we
+    // rerender them to mark them as unsubscribed once we have it.
+    async rerender_unsubscribed_participants_after_fetching_subscribers(): Promise<void> {
+        const {current_sub, get_all_participant_ids} = this.render_data;
+        if (
+            current_sub === undefined ||
+            this.participants_section.user_ids.length === 0 ||
+            peer_data.has_full_subscriber_data(current_sub.stream_id)
+        ) {
+            return;
+        }
+        await peer_data.fetch_stream_subscribers(current_sub.stream_id);
+        // After the `await`, we might have changed to a different channel view.
+        // If so, we shouldn't update the DOM anymore, and should let the newer `populate`
+        // call set things up with fresh data.
+        if (current_sub !== this.render_data.current_sub) {
+            return;
+        }
+        const all_participant_ids = get_all_participant_ids();
+        const unsubscribed_participant_ids = this.participants_section.user_ids.filter((user_id) =>
+            buddy_data.is_unsubscribed_participant(user_id, all_participant_ids),
+        );
+        if (unsubscribed_participant_ids.length > 0) {
+            this.insert_or_move(unsubscribed_participant_ids);
+        }
     }
 
     // We show "No matching users" if a section is empty during search.
