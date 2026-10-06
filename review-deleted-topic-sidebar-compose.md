@@ -139,7 +139,24 @@ The message is clear. It states the draft-preservation rule and that the behavio
 
 - I traced the code paths above by reading the code. I read the `stream_topic_history`, `stream_topic_history_util`, `message_util`, `message_delete`, `stream_list` and `compose_state` code involved.
 - Per instructions, I did not re-run lint or tests, because CI covers them.
-- I did not do a browser check. The authoring session couldn't run `./tools/provision` in its container. The sidebar re-render relies on the existing `update_streams_sidebar` → `update_stream_sidebar_for_narrow` path, which already runs on this event. A quick manual check in the dev server is still worth doing before opening a PR: delete the viewed topic with an empty compose box, then with a draft.
+- I did not run a browser myself. Another session ran the dev server and took screenshots; see "Visual check" below.
+
+## Visual check
+
+The screenshots are in `screenshots/`, with notes in `screenshots/README.md`. Each case was captured on `main` (`-old`) and on this branch (`-new`), in light and dark themes. In each case the user views a topic in #Verona, opens compose, and the topic is then deleted through the API. I looked at the light-theme empty-compose pair myself; the rest is from the README.
+
+| Case | `main` | This branch |
+| --- | --- | --- |
+| Empty compose box | Topic stays in the left sidebar. Compose box stays open. | Topic leaves the sidebar. Compose box closes. |
+| Compose box with a draft | Topic stays. Compose stays open. | Topic leaves the sidebar. Compose stays open with the draft. |
+
+Both commits behave as their messages describe.
+
+**Observation (minor, a product question).** After the compose box closes, the closed compose bar still reads "Message #Verona > delete me light". The user is still viewing the deleted topic, so one click reopens compose to it and sending would recreate the topic. See `screenshots/deleted-topic-empty-compose-after-light-new.png`.
+
+- This is how Zulip treats any empty topic you're viewing, so it isn't a regression.
+- It does weaken commit 2's stated goal of not accidentally recreating the topic.
+- Redirecting to the channel feed would remove it. That was the reporter's suggestion, which maintainers haven't discussed, so it belongs with that open question rather than in this branch.
 
 ## Summary of findings
 
@@ -147,3 +164,4 @@ The message is clear. It states the draft-preservation rule and that the behavio
 2. **Test gap (nit):** the "topic still has other messages" case in `dispatch.test.cjs` doesn't assert that the hooks are not called.
 3. **Naming nit:** `handle_deleted_topic` and `on_topic_deleted` are named inconsistently, and the first name is broader than what the function does.
 4. **Test readability nits:** the topic_list_data test calls `remove_messages` twice for the same topic, and `compose_to` shadows `stream_id` in the compose test.
+5. **Product question (minor):** after the compose box closes, the closed compose bar still offers to message the deleted topic, because the user is still viewing it. Raise it together with the channel-feed redirect question.
