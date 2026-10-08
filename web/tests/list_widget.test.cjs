@@ -35,6 +35,8 @@ mock_jquery((arg) => {
 
 const ListWidget = zrequire("list_widget");
 
+const {INITIAL_RENDER_COUNT, LOAD_COUNT} = ListWidget.DEFAULTS;
+
 // We build objects here that simulate jQuery containers.
 // The main thing to do at first is simulate that our
 // scroll container is the nearest ancestor to our main
@@ -180,6 +182,59 @@ function div(item) {
     return "<div>" + item + "</div>";
 }
 
+function make_items(count) {
+    return Array.from({length: count}, (_, i) => ({value: i + 1, key: i + 1}));
+}
+
+// A widget over `list` with a stand-in for its DOM: `rows` holds the items
+// that have a row, in order, and refuses to render an item twice; `stats`
+// counts the redraws that threw rendered rows away.
+function make_tracked_widget(list, opts = {}) {
+    const rows = [];
+    const stats = {redraws: 0};
+    function items_in(html) {
+        return html
+            .matchAll(/data-item=(\d+)/g)
+            .map((match) => list[Number(match[1]) - 1])
+            .toArray();
+    }
+    function row(item) {
+        return {
+            get length() {
+                return rows.includes(item) ? 1 : 0;
+            },
+            remove() {
+                assert.ok(rows.includes(item), "row is not in the DOM");
+                rows.splice(rows.indexOf(item), 1);
+            },
+        };
+    }
+    const $container = make_container();
+    $container.append = ($data) => {
+        for (const item of items_in($data.html())) {
+            assert.ok(!rows.includes(item), `item ${item.value} was rendered twice`);
+            rows.push(item);
+        }
+    };
+    $container.empty = () => {
+        if (rows.length > 0) {
+            stats.redraws += 1;
+        }
+        rows.length = 0;
+    };
+    const $scroll_container = make_scroll_container();
+    $scroll_container.find = ($row) => $row;
+    const widget = ListWidget.create($container, list, {
+        name: "tracked",
+        modifier_html: (item) => `<tr data-item=${item.value}></tr>\n`,
+        get_item: (item) => item,
+        html_selector: row,
+        $simplebar_container: $scroll_container,
+        ...opts,
+    });
+    return {widget, rows, row, stats};
+}
+
 run_test("scrolling", () => {
     const $container = make_container();
     const $scroll_container = make_scroll_container();
@@ -204,7 +259,10 @@ run_test("scrolling", () => {
 
     ListWidget.create($container, items, opts);
 
-    assert.deepEqual($container.$appended_data.html(), items.slice(0, 80).join(""));
+    assert.deepEqual(
+        $container.$appended_data.html(),
+        items.slice(0, INITIAL_RENDER_COUNT).join(""),
+    );
     assert.equal(get_scroll_element_called, true);
 
     // Set up our fake geometry so it forces a scroll action.
@@ -215,7 +273,10 @@ run_test("scrolling", () => {
     // Scrolling gets the next two elements from the list into
     // our widget.
     $scroll_container.call_scroll();
-    assert.deepEqual($container.$appended_data.html(), items.slice(80, 100).join(""));
+    assert.deepEqual(
+        $container.$appended_data.html(),
+        items.slice(INITIAL_RENDER_COUNT, INITIAL_RENDER_COUNT + LOAD_COUNT).join(""),
+    );
 });
 
 run_test("not_scrolling", () => {
@@ -256,7 +317,10 @@ run_test("not_scrolling", () => {
 
     ListWidget.create($container, items, opts);
 
-    assert.deepEqual($container.$appended_data.html(), items.slice(0, 80).join(""));
+    assert.deepEqual(
+        $container.$appended_data.html(),
+        items.slice(0, INITIAL_RENDER_COUNT).join(""),
+    );
     assert.equal(get_scroll_element_called, true);
 
     // Set up our fake geometry.
@@ -268,7 +332,10 @@ run_test("not_scrolling", () => {
     // added regardless of scrolling.
     $scroll_container.call_scroll();
     // $appended_data remains the same.
-    assert.deepEqual($container.$appended_data.html(), items.slice(0, 80).join(""));
+    assert.deepEqual(
+        $container.$appended_data.html(),
+        items.slice(0, INITIAL_RENDER_COUNT).join(""),
+    );
     assert.equal(post_scroll__pre_render_callback_called, true);
     assert.equal(get_min_load_count_called, true);
 });
@@ -835,7 +902,6 @@ run_test("opts.get_item", () => {
 run_test("render item", () => {
     const $container = make_container();
     const $scroll_container = make_scroll_container();
-    const INITIAL_RENDER_COUNT = 80; // Keep this in sync with the actual code.
     let called;
     $scroll_container.find = (element) => {
         const query = element.selector;
@@ -937,6 +1003,128 @@ run_test("render item", () => {
     blueslip.expect("error", "List item is not a string");
     widget_3.render_item(item);
     blueslip.reset();
+});
+
+run_test("render advances the offset by the rows appended", () => {
+    const $container = make_container();
+    const $scroll_container = make_scroll_container();
+    const widget = ListWidget.create($container, [1, 2, 3], {
+        name: "render-offset",
+        modifier_html: div,
+        get_item: (item) => item,
+        $simplebar_container: $scroll_container,
+    });
+    assert.equal($container.$appended_data.html(), "<div>1</div><div>2</div><div>3</div>");
+    assert.ok(widget.all_rendered());
+
+    // The initial render asked for more rows than the list had; the offset
+    // must not end up past its end, or items added later would count as
+    // rendered and never be appended.
+    widget.replace_list_data([1, 2, 3, 4], false);
+    widget.filter_and_sort();
+    assert.ok(!widget.all_rendered());
+    widget.render();
+    assert.equal($container.$appended_data.html(), "<div>4</div>");
+    assert.ok(widget.all_rendered());
+});
+
+run_test("filter_and_sort removes rows of items no longer listed", () => {
+    const list = make_items(100);
+    let hidden_items = new Set();
+    let render_count = 0;
+    const {widget, rows} = make_tracked_widget(list, {
+        filter: {predicate: (item) => !hidden_items.has(item)},
+        callback_after_render() {
+            render_count += 1;
+        },
+    });
+    assert.equal(render_count, 1);
+    assert.deepEqual(rows, list.slice(0, INITIAL_RENDER_COUNT));
+    assert.ok(!widget.all_rendered());
+
+    // Two rendered items and one not rendered yet get hidden without their
+    // rows being updated.
+    const hidden_rows = [rows[4], rows.at(-1)];
+    hidden_items = new Set([...hidden_rows, list.at(-1)]);
+    assert.deepEqual(widget.filter_and_sort(), hidden_rows);
+    assert.equal(rows.length, INITIAL_RENDER_COUNT - hidden_rows.length);
+    // The rendered list still matches the rows in the DOM, so rendering
+    // more continues right after them, duplicating nothing.
+    assert.deepEqual(widget.get_rendered_list(), rows);
+    widget.render();
+    assert.equal(render_count, 2);
+    assert.equal(rows.length, list.length - hidden_items.size);
+    assert.deepEqual(widget.get_rendered_list(), rows);
+    assert.ok(widget.all_rendered());
+
+    // With everything rendered, removing rows calls render() once, so that
+    // an emptied list shows its empty-list message.
+    hidden_items.add(list[0]);
+    assert.deepEqual(widget.filter_and_sort(), [list[0]]);
+    assert.equal(render_count, 3);
+});
+
+run_test("render_item drops the row of an item moved past the rendered range", () => {
+    const list = make_items(100);
+    const {widget, rows, stats} = make_tracked_widget(list, {init_sort: (a, b) => a.key - b.key});
+    const moved = rows[4];
+
+    // The item now sorts last, past the rendered range: its row goes, with
+    // no redraw, and the rendered list still matches the rows in the DOM.
+    moved.key = 200;
+    widget.filter_and_sort();
+    widget.render_item(moved);
+    assert.ok(!rows.includes(moved));
+    assert.equal(rows.length, INITIAL_RENDER_COUNT - 1);
+    assert.equal(stats.redraws, 0);
+    assert.deepEqual(widget.get_rendered_list(), rows);
+
+    // Rendering the rest reaches it last, and once.
+    widget.render(list.length);
+    assert.ok(widget.all_rendered());
+    assert.equal(rows.length, list.length);
+    assert.equal(rows.at(-1), moved);
+});
+
+run_test("insert_rendered_row falls back to a redraw without counting a row", () => {
+    const list = make_items(100);
+    const {widget, rows, row, stats} = make_tracked_widget(list, {
+        filter: {predicate: () => true},
+        init_sort: (a, b) => a.key - b.key,
+    });
+    function add_to_list(...items) {
+        list.push(...items);
+        widget.replace_list_data(list, false);
+        widget.filter_and_sort();
+    }
+    function insert(item) {
+        widget.insert_rendered_row(item, (items) => items.indexOf(item));
+    }
+
+    // Two new items sort first, and are inserted in list order. The first
+    // one has no rendered neighbor: nothing comes before it, and the item
+    // after it is the second one, not inserted yet. The widget redraws,
+    // rendering both, and must not count the row it did not insert.
+    const first_new_item = {value: 101, key: 0.1};
+    const second_new_item = {value: 102, key: 0.2};
+    add_to_list(first_new_item, second_new_item);
+    insert(first_new_item);
+    assert.equal(stats.redraws, 1);
+    assert.deepEqual(rows.slice(0, 2), [first_new_item, second_new_item]);
+    assert.equal(rows.length, INITIAL_RENDER_COUNT);
+    assert.equal(widget.get_rendered_list().length, INITIAL_RENDER_COUNT);
+
+    // The same for a new last item whose predecessor's row went missing.
+    widget.render(list.length);
+    const neighbor = rows.at(-1);
+    row(neighbor).remove();
+    const new_last_item = {value: 103, key: neighbor.key + 0.5};
+    add_to_list(new_last_item);
+    insert(new_last_item);
+    assert.equal(stats.redraws, 2);
+    assert.ok(!rows.includes(new_last_item));
+    assert.equal(rows.length, INITIAL_RENDER_COUNT);
+    assert.equal(widget.get_rendered_list().length, INITIAL_RENDER_COUNT);
 });
 
 run_test("Multiselect dropdown retain_selected_items", () => {
