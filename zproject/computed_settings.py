@@ -286,7 +286,10 @@ INSTALLED_APPS = [
     "two_factor",
     "two_factor.plugins.phonenumber",
 ]
-if USING_PGROONGA:
+# The development environment always maintains the PGroonga schema,
+# so that switching USING_PGROONGA does not change the set of
+# migrations, which would cause provision to rebuild the database.
+if USING_PGROONGA or DEVELOPMENT:
     INSTALLED_APPS += ["pgroonga"]
 INSTALLED_APPS += EXTRA_INSTALLED_APPS
 

@@ -35,6 +35,34 @@ simultaneously, including Japanese and Chinese. Once we have tested
 this new backend sufficiently, we expect to switch Zulip deployments
 to always use PGroonga.
 
+### Switching backends in the development environment
+
+The development environment uses PGroonga by default, whereas
+production deployments use PostgreSQL's built-in full-text search
+unless PGroonga is enabled. Both backends are installed in the
+development environment, so you can switch between them to test
+either one:
+
+1. Stop the development server.
+
+1. Set `USING_PGROONGA` to `True` or `False` in
+   `zproject/custom_dev_settings.py` (see the [settings
+   documentation](settings.md#server-settings) for details on this
+   file).
+
+1. Since only the search data for the backend in use is kept up to
+   date, queue every message to have it recomputed:
+
+   ```bash
+   ./tools/reindex-full-text-search
+   ```
+
+1. Start the development server again; it will process the queued
+   messages as it starts up.
+
+The automated tests ignore `zproject/custom_dev_settings.py`, and
+test both backends regardless of this setting.
+
 ### Enabling PGroonga
 
 All steps in this section should be run as the `root` user; on most installs, this can be done by running `sudo -i`.

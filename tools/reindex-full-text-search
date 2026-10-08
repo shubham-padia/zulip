@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -e
+
+# Queues every message in the development database to have its
+# full-text search data recomputed by process_fts_updates, which
+# only maintains the search column for the backend selected by
+# USING_PGROONGA.  Run this with the development server stopped,
+# after changing USING_PGROONGA; the queued messages are processed
+# when the server is next started.
+
+psql -v ON_ERROR_STOP=1 -h localhost zulip zulip <<EOF
+INSERT INTO fts_update_log (message_id) SELECT id FROM zerver_message;
+EOF
