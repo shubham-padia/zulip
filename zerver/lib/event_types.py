@@ -567,10 +567,6 @@ class RealmPlaygroundsEvent(BaseEvent):
     realm_playgrounds: list[RealmPlayground]
 
 
-class AllowMessageEditingData(BaseEventModel):
-    allow_message_editing: bool
-
-
 class AuthenticationMethodDictCore(BaseEventModel):
     enabled: bool
     available: bool
@@ -581,45 +577,26 @@ class AuthenticationMethodDict(AuthenticationMethodDictCore):
     unavailable_reason: str | None = None
 
 
-class AuthenticationData(BaseEventModel):
-    authentication_methods: dict[str, AuthenticationMethodDict]
-
-
-class IconData(BaseEventModel):
-    icon_url: str
-    icon_source: str
-
-
-class LogoData(BaseEventModel):
-    logo_url: str
-    logo_source: str
-
-
-class MessageContentEditLimitSecondsData(BaseEventModel):
-    message_content_edit_limit_seconds: int | None
-
-
-class RealmTopicsPolicyData(BaseEventModel):
-    topics_policy: str
-    mandatory_topics: bool
-
-
-class RealmDescriptionData(BaseEventModel):
-    description: str
-    rendered_description: str
-
-
-class NightLogoData(BaseEventModel):
-    night_logo_url: str
-    night_logo_source: str
-
-
-class GroupSettingUpdateDataCore(BaseEventModel):
-    pass
-
-
-class GroupSettingUpdateData(GroupSettingUpdateDataCore):
-    # TODO: fix types to avoid optional fields
+class RealmUpdateDictData(BaseEventModel):
+    # Every field is optional: each event sets only the subset of
+    # fields that changed, and unset fields are omitted when the event
+    # is sent.
+    allow_message_editing: bool | None = None
+    message_content_edit_limit_seconds: int | None = None
+    topics_policy: str | None = None
+    mandatory_topics: bool | None = None
+    description: str | None = None
+    rendered_description: str | None = None
+    authentication_methods: dict[str, AuthenticationMethodDict] | None = None
+    plan_type: int | None = None
+    upload_quota_mib: int | None = None
+    max_file_upload_size_mib: int | None = None
+    icon_url: str | None = None
+    icon_source: str | None = None
+    logo_url: str | None = None
+    logo_source: str | None = None
+    night_logo_url: str | None = None
+    night_logo_source: str | None = None
     create_multiuse_invite_group: int | UserGroupMembersDict | None = None
     can_access_all_users_group: int | UserGroupMembersDict | None = None
     can_add_custom_emoji_group: int | UserGroupMembersDict | None = None
@@ -647,28 +624,11 @@ class GroupSettingUpdateData(GroupSettingUpdateDataCore):
     workplace_users_group: int | UserGroupMembersDict | None = None
 
 
-class PlanTypeData(BaseEventModel):
-    plan_type: int
-    upload_quota_mib: int | None
-    max_file_upload_size_mib: int
-
-
 class RealmUpdateDictEvent(BaseEvent):
     type: Literal["realm"] = "realm"
     op: Literal["update_dict"] = "update_dict"
     property: Literal["default", "icon", "logo", "night_logo"]
-    data: (
-        AllowMessageEditingData
-        | AuthenticationData
-        | IconData
-        | LogoData
-        | MessageContentEditLimitSecondsData
-        | NightLogoData
-        | GroupSettingUpdateData
-        | PlanTypeData
-        | RealmTopicsPolicyData
-        | RealmDescriptionData
-    )
+    data: RealmUpdateDictData
 
 
 class RealmUpdateEvent(BaseEvent):
@@ -723,8 +683,8 @@ class RemovedUser(BaseEventModel):
 
 
 class RealmUserRemoveEvent(BaseEvent):
-    type: Literal["realm_user"]
-    op: Literal["remove"]
+    type: Literal["realm_user"] = "realm_user"
+    op: Literal["remove"] = "remove"
     person: RemovedUser
 
 
@@ -961,8 +921,8 @@ class StreamDeleteEvent(BaseEvent):
 
 
 class StreamUpdateCoreEvent(BaseEvent):
-    type: Literal["stream"]
-    op: Literal["update"]
+    type: Literal["stream"] = "stream"
+    op: Literal["update"] = "update"
     property: str
     value: bool | int | str | UserGroupMembersDict | None
     name: str
@@ -1030,21 +990,21 @@ class SingleSubscription(BaseEventModel):
 
 
 class SubscriptionAddEvent(BaseEvent):
-    type: Literal["subscription"]
-    op: Literal["add"]
+    type: Literal["subscription"] = "subscription"
+    op: Literal["add"] = "add"
     subscriptions: list[SingleSubscription]
 
 
 class SubscriptionPeerAddEvent(BaseEvent):
-    type: Literal["subscription"]
-    op: Literal["peer_add"]
+    type: Literal["subscription"] = "subscription"
+    op: Literal["peer_add"] = "peer_add"
     user_ids: list[int]
     stream_ids: list[int]
 
 
 class SubscriptionPeerRemoveEvent(BaseEvent):
-    type: Literal["subscription"]
-    op: Literal["peer_remove"]
+    type: Literal["subscription"] = "subscription"
+    op: Literal["peer_remove"] = "peer_remove"
     user_ids: list[int]
     stream_ids: list[int]
 
@@ -1055,14 +1015,14 @@ class RemoveSub(BaseEventModel):
 
 
 class SubscriptionRemoveEvent(BaseEvent):
-    type: Literal["subscription"]
-    op: Literal["remove"]
+    type: Literal["subscription"] = "subscription"
+    op: Literal["remove"] = "remove"
     subscriptions: list[RemoveSub]
 
 
 class SubscriptionUpdateEvent(BaseEvent):
-    type: Literal["subscription"]
-    op: Literal["update"]
+    type: Literal["subscription"] = "subscription"
+    op: Literal["update"] = "update"
     property: str
     stream_id: int
     value: bool | int | str
@@ -1208,42 +1168,48 @@ class Group(BaseEventModel):
     deactivated: bool
 
 
+class UrlEmbedDataEvent(BaseEvent):
+    type: Literal["url_embed_data"]
+    content: str
+    rendered_content: str
+
+
 class UserGroupAddEvent(BaseEvent):
-    type: Literal["user_group"]
-    op: Literal["add"]
+    type: Literal["user_group"] = "user_group"
+    op: Literal["add"] = "add"
     group: Group
 
 
 class UserGroupAddMembersEvent(BaseEvent):
-    type: Literal["user_group"]
-    op: Literal["add_members"]
+    type: Literal["user_group"] = "user_group"
+    op: Literal["add_members"] = "add_members"
     group_id: int
     user_ids: list[int]
 
 
 class UserGroupAddSubgroupsEvent(BaseEvent):
-    type: Literal["user_group"]
-    op: Literal["add_subgroups"]
+    type: Literal["user_group"] = "user_group"
+    op: Literal["add_subgroups"] = "add_subgroups"
     group_id: int
     direct_subgroup_ids: list[int]
 
 
 class UserGroupRemoveEvent(BaseEvent):
-    type: Literal["user_group"]
-    op: Literal["remove"]
+    type: Literal["user_group"] = "user_group"
+    op: Literal["remove"] = "remove"
     group_id: int
 
 
 class UserGroupRemoveMembersEvent(BaseEvent):
-    type: Literal["user_group"]
-    op: Literal["remove_members"]
+    type: Literal["user_group"] = "user_group"
+    op: Literal["remove_members"] = "remove_members"
     group_id: int
     user_ids: list[int]
 
 
 class UserGroupRemoveSubgroupsEvent(BaseEvent):
-    type: Literal["user_group"]
-    op: Literal["remove_subgroups"]
+    type: Literal["user_group"] = "user_group"
+    op: Literal["remove_subgroups"] = "remove_subgroups"
     group_id: int
     direct_subgroup_ids: list[int]
 
@@ -1266,8 +1232,8 @@ class UserGroupData(UserGroupDataCore):
 
 
 class UserGroupUpdateEvent(BaseEvent):
-    type: Literal["user_group"]
-    op: Literal["update"]
+    type: Literal["user_group"] = "user_group"
+    op: Literal["update"] = "update"
     group_id: int
     data: UserGroupData
 
