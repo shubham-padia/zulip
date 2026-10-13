@@ -499,7 +499,13 @@ export function get_conversation_participants_callback(): () => Set<number> {
         ) {
             return new Set<number>();
         }
-        return message_lists.current.data.participants.visible();
+        // Muted users are hidden from the buddy list, so we don't
+        // count them as participants either.
+        return new Set(
+            [...message_lists.current.data.participants.visible()].filter(
+                (user_id) => !muted_users.is_user_muted(user_id),
+            ),
+        );
     };
 }
 
