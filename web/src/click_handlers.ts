@@ -708,7 +708,12 @@ export function initialize(): void {
             const should_show_status = is_compact_mode || is_truncated;
 
             const user_id_string = $elem.attr("data-user-id")!;
-            const title_data = buddy_data.get_title_data(user_id_string, false, should_show_status);
+            const title_data = buddy_data.get_title_data(
+                user_id_string,
+                false,
+                should_show_status,
+                buddy_data.get_conversation_participants_callback()(),
+            );
 
             // `target_node` is the `ul` element since it stays in DOM even after updates.
             function get_target_node(): HTMLElement {
@@ -769,20 +774,18 @@ export function initialize(): void {
 
         const title_data = buddy_data.get_title_data(user_ids_string, is_group, true);
 
-        // Since anything inside `#left_sidebar_scroll_container` can be replaced, it is our target node here.
+        // The zoomed-in list is outside `#left_sidebar_scroll_container`,
+        // so we observe the whole left sidebar.
         function get_target_node(): HTMLElement {
-            return document.querySelector("#left_sidebar_scroll_container")!;
+            return document.querySelector("#left-sidebar")!;
         }
 
-        // Whole list is just replaced, so we need to check for that.
+        // Re-rendering replaces either this row or the whole list.
         function check_reference_removed(
             mutation: MutationRecord,
             instance: tippy.Instance,
         ): boolean {
-            return Array.prototype.includes.call(
-                mutation.removedNodes,
-                $(instance.reference).parents(".dm-list")[0],
-            );
+            return [...mutation.removedNodes].some((node) => node.contains(instance.reference));
         }
 
         const check_subtree = true;
@@ -813,6 +816,7 @@ export function initialize(): void {
                 title_data,
                 get_target_node,
                 check_reference_removed,
+                check_subtree,
             );
         });
     });

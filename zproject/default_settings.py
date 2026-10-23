@@ -269,6 +269,7 @@ ZULIP_SERVICE_PUSH_NOTIFICATIONS = False
 # is enabled.
 ZULIP_SERVICE_SUBMIT_USAGE_STATISTICS: bool | None = None
 ZULIP_SERVICE_SECURITY_ALERTS = False
+ZULIP_SERVICE_ADVERTISE_REALMS = False
 
 # Old setting kept around for backwards compatibility. Some old servers
 # may have it in their settings.py.
@@ -789,3 +790,13 @@ SCIM_CONFIG: dict[str, SCIMConfigDict] = {}
 # Minimum number of subscribers in a channel for us to no longer
 # send full subscriber data to the client.
 MIN_PARTIAL_SUBSCRIBERS_CHANNEL_SIZE = 1000
+
+# Whether we should use CREATE/DROP INDEX CONCURRENTLY
+# during database migrations. Otherwise, regular
+# CREATE/DROP INDEX will be used, allowing relevant migrations
+# to run in atomic transactions. The latter gives simpler
+# behavior of migrations, at the cost of locking db tables,
+# and is the recommended mode for self-hosted deployments
+# which tend to have less data and run migrations with the server
+# down anyway.
+MIGRATIONS_ADD_REMOVE_INDEXES_CONCURRENTLY = False

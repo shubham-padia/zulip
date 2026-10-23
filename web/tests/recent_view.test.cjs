@@ -82,7 +82,10 @@ const ListWidget = mock_esm("../src/list_widget", {
     },
 
     hard_redraw: noop,
-    filter_and_sort: noop,
+    filter_and_sort: () => [],
+    get_current_list: () => [],
+    get_rendered_count: () => ListWidget.get_current_list().length,
+    all_rendered: () => true,
     replace_list_data(data) {
         assert.notEqual(
             expected_data_to_replace_in_list_widget,
@@ -150,8 +153,9 @@ mock_esm("../src/pm_list", {
     update_private_messages: noop,
     handle_message_view_deactivated: noop,
 });
-mock_esm("../src/recent_senders", {
+const recent_senders = mock_esm("../src/recent_senders", {
     get_topic_recent_senders: () => [2, 1],
+    get_topic_message_ids_for_sender: () => new Set(),
     get_pm_recent_senders(user_ids_string) {
         return {
             participants: user_ids_string.split(",").map((user_id) => Number.parseInt(user_id, 10)),
@@ -174,13 +178,14 @@ mock_esm("../src/timerender", {
 mock_esm("../src/left_sidebar_navigation_area", {
     highlight_recent_view: noop,
 });
-mock_esm("../src/unread", {
+const unread = mock_esm("../src/unread", {
     num_unread_for_topic(stream_id, topic) {
         if (stream_id === 1 && topic === "topic-1") {
             return 0;
         }
         return 1;
     },
+    get_unread_message_count: () => 0,
     num_unread_for_user_ids_string() {
         return 0;
     },
@@ -225,6 +230,7 @@ const {buddy_list} = zrequire("buddy_list");
 const activity_ui = zrequire("activity_ui");
 const people = zrequire("people");
 const rt = zrequire("recent_view_ui");
+const views_util = zrequire("views_util");
 rt.set_hide_other_views(noop);
 const recent_view_util = zrequire("recent_view_util");
 const rt_data = zrequire("recent_view_data");
@@ -477,6 +483,44 @@ function stub_out_filter_buttons() {
         const selector = `[data-filter="${filter}"]`;
         $("#recent_view_filter_buttons").set_find_results(selector, $stub);
     }
+}
+
+function show_recent_view_with_messages() {
+    $.clear_all_elements();
+    recent_view_util.set_visible(true);
+    rt.clear_for_tests();
+    rt.set_filters_for_tests();
+    stub_out_filter_buttons();
+    rt.process_messages(messages);
+}
+
+function conversation_for(topic) {
+    return rt_data.conversations.get(get_topic_key(stream1, topic));
+}
+
+function row_selector(conversation_key) {
+    return `#${CSS.escape(`recent_conversation:${conversation_key}`)}`;
+}
+
+// zjquery reports a row for any selector by default.
+function stub_no_row_for(conversation_key) {
+    $.set_results(row_selector(conversation_key), []);
+}
+
+function bulk_rerender(keys) {
+    expected_data_to_replace_in_list_widget = rt_data.get_conversations().values().toArray();
+    rt.bulk_inplace_rerender(new Set(keys));
+}
+
+function record_row_updates(override) {
+    const updates = [];
+    override(ListWidget, "render_item", (conversation) => {
+        updates.push(["rerender", conversation]);
+    });
+    override(ListWidget, "insert_rendered_row", (conversation, get_insert_index) => {
+        updates.push(["insert", conversation, get_insert_index()]);
+    });
+    return updates;
 }
 
 function test(label, f) {
@@ -876,15 +920,175 @@ test("test_filter_participated", ({mock_template}) => {
     rt.process_messages([messages[4]]);
 });
 
-test("test_update_unread_count", () => {
-    recent_view_util.set_visible(false);
-    rt.clear_for_tests();
-    stub_out_filter_buttons();
-    rt.process_messages(messages);
+test("bulk_inplace_rerender updates the requested rows in list order", ({override}) => {
+    show_recent_view_with_messages();
+    const [with_row, not_requested, without_row] = [topic1, topic2, topic3].map((topic) =>
+        conversation_for(topic),
+    );
+    stub_no_row_for(get_topic_key(stream1, topic3));
+    const updates = record_row_updates(override);
+    override(ListWidget, "get_current_list", () => [without_row, with_row, not_requested]);
 
-    // update a message
-    generate_topic_data([[1, "topic-7", 1, all_visibility_policies.INHERIT]]);
-    rt.update_topic_unread_count(messages[9]);
+    bulk_rerender([get_topic_key(stream1, topic1), get_topic_key(stream1, topic3)]);
+    assert.deepEqual(updates, [
+        ["insert", without_row, 0],
+        ["rerender", with_row],
+    ]);
+});
+
+test("bulk_inplace_rerender falls back from the unread sort before updating rows", ({override}) => {
+    // The last unread conversation is read while the unread sort is active.
+    show_recent_view_with_messages();
+    const conversation = conversation_for(topic2);
+    override(ListWidget, "get_current_list", () => [conversation]);
+    let unread_message_count = 1;
+    override(unread, "get_unread_message_count", () => unread_message_count);
+    // Recent view first has to see the conversation as unread.
+    bulk_rerender([]);
+    $("#recent-view-table-headers .recent-view-unread-sort-header").addClass("active");
+
+    const calls = [];
+    override(ListWidget, "set_reverse_mode", noop);
+    override(ListWidget, "sort", () => {
+        calls.push("sort");
+    });
+    override(ListWidget, "render_item", () => {
+        calls.push("rerender");
+    });
+    unread_message_count = 0;
+    bulk_rerender([get_topic_key(stream1, topic2)]);
+    assert.deepEqual(calls, ["sort", "rerender"]);
+});
+
+test("inplace_rerender updates one row the way a bulk rerender does", ({override}) => {
+    show_recent_view_with_messages();
+    const [with_row, without_row] = [topic1, topic2].map((topic) => conversation_for(topic));
+    stub_no_row_for(get_topic_key(stream1, topic2));
+    const updates = record_row_updates(override);
+    override(ListWidget, "get_current_list", () => [with_row, without_row]);
+
+    assert.ok(rt.inplace_rerender(get_topic_key(stream1, topic1)));
+    assert.ok(rt.inplace_rerender(get_topic_key(stream1, topic2)));
+    assert.deepEqual(updates, [
+        ["rerender", with_row],
+        ["insert", without_row, 1],
+    ]);
+
+    // A conversation the filters hide is not in the list; the widget's
+    // resort has removed its row, so no row is updated for it.
+    assert.ok(rt.inplace_rerender(get_topic_key(stream1, topic7)));
+    assert.equal(updates.length, 2);
+});
+
+test("rerender_conversations_with_user rerenders the rows that show the user", ({override}) => {
+    // A row shows the senders of its topic, or the participants of its
+    // direct message conversation. sender2 sent to topics 2 to 6 and is
+    // in the direct message conversations "2,3" and "2,4".
+    show_recent_view_with_messages();
+    for (const message of private_messages) {
+        rt_data.process_message(message);
+    }
+    override(recent_senders, "get_topic_message_ids_for_sender", (stream_id, topic, sender_id) => {
+        const messages_sent = messages.filter(
+            (message) =>
+                message.stream_id === stream_id &&
+                message.topic === topic &&
+                message.sender_id === sender_id,
+        );
+        return new Set(messages_sent.map((message) => message.id));
+    });
+    const rerendered_conversations = new Set();
+    override(ListWidget, "render_item", (conversation) => {
+        rerendered_conversations.add(conversation);
+    });
+    const inserted_conversations = new Set();
+    override(ListWidget, "insert_rendered_row", (conversation) => {
+        inserted_conversations.add(conversation);
+    });
+    override(ListWidget, "get_current_list", () => rt_data.get_conversations().values().toArray());
+    function rerender_conversations_with(user_id) {
+        rerendered_conversations.clear();
+        inserted_conversations.clear();
+        expected_data_to_replace_in_list_widget = rt_data.get_conversations().values().toArray();
+        rt.rerender_conversations_with_user(user_id);
+    }
+
+    stub_no_row_for(get_topic_key(stream1, topic6));
+    stub_no_row_for("2,4");
+    const rows_showing_sender2 = new Set([
+        ...[topic2, topic3, topic4, topic5].map((topic) => conversation_for(topic)),
+        rt_data.conversations.get("2,3"),
+    ]);
+    rerender_conversations_with(sender2);
+    assert.deepEqual(rerendered_conversations, rows_showing_sender2);
+    assert.equal(inserted_conversations.size, 0);
+
+    // A search matches direct message conversations by their
+    // participants, so it may now list one that has no row.
+    $("#recent_view_search").val("fred");
+    rerender_conversations_with(sender2);
+    assert.deepEqual(rerendered_conversations, rows_showing_sender2);
+    assert.deepEqual(inserted_conversations, new Set([rt_data.conversations.get("2,4")]));
+    $("#recent_view_search").val("");
+
+    // The mocked widget rejects the list update that a rerender would
+    // start with, as none is expected for a user in no conversation.
+    const user_id_in_no_conversation = 5;
+    rt.rerender_conversations_with_user(user_id_in_no_conversation);
+});
+
+test("rerender renders more rows until they reach the bottom of the viewport", ({
+    override,
+    override_rewire,
+}) => {
+    show_recent_view_with_messages();
+    let batches_rendered = 0;
+    override(ListWidget, "render", () => {
+        batches_rendered += 1;
+    });
+
+    const batches_until_viewport_is_filled = 2;
+    override(ListWidget, "all_rendered", () => false);
+    override_rewire(
+        views_util,
+        "is_bottom_padding_in_view",
+        () => batches_rendered < batches_until_viewport_is_filled,
+    );
+    bulk_rerender([]);
+    assert.equal(batches_rendered, batches_until_viewport_is_filled);
+
+    batches_rendered = 0;
+    const batches_until_all_rendered = 3;
+    override_rewire(views_util, "is_bottom_padding_in_view", () => true);
+    override(ListWidget, "all_rendered", () => batches_rendered === batches_until_all_rendered);
+    bulk_rerender([]);
+    assert.equal(batches_rendered, batches_until_all_rendered);
+});
+
+test("rerender inserts rows only within the rendered range", ({override}) => {
+    // Two new conversations sort before the only rendered row. Each insert
+    // extends the rendered range, which lets the second one in; a third,
+    // past the range, is left for the widget to render.
+    show_recent_view_with_messages();
+    const topics = [topic1, topic2, topic3, topic4];
+    const list = topics.map((topic) => conversation_for(topic));
+    const [new_first, new_second, with_row] = list;
+    for (const topic of [topic1, topic2, topic4]) {
+        stub_no_row_for(get_topic_key(stream1, topic));
+    }
+    override(ListWidget, "get_current_list", () => list);
+    const updates = record_row_updates(override);
+    override(ListWidget, "get_rendered_count", () => {
+        const rows_inserted = updates.filter(([kind]) => kind === "insert").length;
+        return 1 + rows_inserted;
+    });
+
+    bulk_rerender(topics.map((topic) => get_topic_key(stream1, topic)));
+    assert.deepEqual(updates, [
+        ["insert", new_first, 0],
+        ["insert", new_second, 1],
+        ["rerender", with_row],
+    ]);
 });
 
 test("basic assertions", ({mock_template, override_rewire}) => {
