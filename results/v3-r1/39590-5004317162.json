@@ -1,0 +1,6 @@
+{
+ "case": "39590-5004317162",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked the author to first discuss the change via a bug report or feature suggestion, and the author responds that the PR is rebased, CI passes, and asks for a look and for the \"not ready\" label to be dropped, which signals handing it back for review.",
+ "cost_usd": 0.005804
+}

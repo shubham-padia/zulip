@@ -1,0 +1,6 @@
+{
+ "case": "39621-5639888449",
+ "answer": "yes",
+ "text": "yes\n\nThe author is issuing the zulipbot command to remove the \"not ready\" label, which is the standard way to signal the PR is ready for maintainer review again.",
+ "cost_usd": 0.0037920000000000002
+}

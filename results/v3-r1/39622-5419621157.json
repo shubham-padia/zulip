@@ -1,0 +1,6 @@
+{
+ "case": "39622-5419621157",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly states the PR is ready for review, which hands it back, though the maintainer asked to wait for Yogesh's initial pass and the comment doesn't say that was completed.",
+ "cost_usd": 0.004346
+}
