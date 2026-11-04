@@ -1,0 +1,11 @@
+{
+ "case": "39784-5042031450",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author says they added an explanation of how this relates to the other open PRs and updated the screenshots. The description now has a before/after screenshot section, but no new commits were found (the PR still has one commit).\n\n|     |         |\n| --- | ------- |\n| ❌  | No explanation of the relation to #33086 appears in the description or comments. The description only says \"Related issue: #31985\", though #33086 touches the same two files. |\n| ❌  | The continuing-unfinished-work guidelines aren't visibly followed. Nothing says what differs from #33086 or what was reused. |\n| ⚠️  | Before/after screenshots and a video were added, but it's unclear whether they are precise before/after pairs of the same case. |\n| ❌  | The self-review checklist is mostly unchecked, including the AI-policy and commit-discipline items. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to put the #33086 comparison in the PR description and finish the checklist.\n\n###### Reply\n\n```quote\nThanks for the update! I don't see the explanation of how this relates to #33086 in the PR description yet, since it only mentions #31985. Could you add it, following the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html), and also complete the self-review checklist?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0096708
+}

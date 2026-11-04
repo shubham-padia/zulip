@@ -1,0 +1,11 @@
+{
+ "case": "39820-5103626520",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the commit cleanup is done, but the PR doesn't say how it relates to the other open PRs for this issue**\n\nNew: The author squashed everything into one commit on current `main`, fixed multi-line text handling, added a test for it, and CI now passes. Missing: no explanation of how this differs from the open PRs #38098, #39481 and #39606 for the same issue, and the \"Automated tests verify logic\" box in the checklist is still unchecked even though the comment says the checklist is complete.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm (or whoever is triaging) send the reply below, since #38902 was closed for the same missing explanation.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit. Before we can review, please add a note to the PR description saying how this differs from the other open PRs for #19589 (#38098, #39481, #39606), as described in [continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html), and check off the remaining self-review item about automated tests.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010051000000000001
+}

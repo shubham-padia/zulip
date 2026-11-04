@@ -1,0 +1,11 @@
+{
+ "case": "40201-6155498168",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed 3 more times: formatting, an extra fixture, and an updated description and checklist. CI now passes, which was the feedback's ask. Nothing links this PR to an issue.\n\n|     |         |\n| --- | ------- |\n| ✅  | CI is passing, which answers the feedback about the test suite errors. |\n| ❌  | No linked issue and no \"Fixes: #N\" in the description, so we can't confirm the work is on a \"help wanted\" issue. |\n| ℹ️  | The author has no merged PRs, and an earlier PR of theirs (#40356) was closed for not following the PR guidelines and the AI policy. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link the issue they are fixing. If there is none, or it isn't labeled \"help wanted\", this becomes a close candidate.\n\n###### Reply\n\n```quote\nThanks for the updates, CI looks good now. Could you link the issue this fixes with \"Fixes: #N\" in the description? Per our [contributing guide](https://zulip.readthedocs.io/en/latest/contributing/contributing.html), we only accept PRs for issues labeled \"help wanted\".\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0091731
+}

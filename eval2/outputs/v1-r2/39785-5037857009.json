@@ -1,0 +1,11 @@
+{
+ "case": "39785-5037857009",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author posted a before/after dark-mode screenshot in a comment. There was no new push, and the PR description is unchanged.\n\n|     |         |\n| --- | ------- |\n| ✅  | Screenshot ask: a before/after image is now posted (in a comment, not in the description). |\n| ❌  | No \"Fixes: #N\" and no linked issue. Open issue #38931 (\"Emoji and global time popover arrows should match background\") looks like the match, but its \"help wanted\" status isn't in the input. |\n| ❌  | The Testing section never says the change was checked in a browser in dark mode. It only describes the CSS. |\n| ⚠️  | The extra `data-placement=\"right\"` arrow rule isn't covered by the screenshot or explained as part of this fix. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link the issue (confirming it has \"help wanted\"), describe their manual testing, and move the screenshot into the description.\n\n###### Reply\n\n```quote\nThanks for adding the screenshot! To move this forward, please add \"Fixes: #N\" for the issue this addresses (is it #38931?), and say how you tested it in dark mode, including the new `right` placement rule. It would also help to move the screenshot into the PR description, per the [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010879900000000001
+}

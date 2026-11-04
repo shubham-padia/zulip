@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author updated the description with a prior-work section and a Co-authored-by credit, and left a cross-reference on #37289. There was no new push, and the author is asking for the label to be removed.\n\n|     |         |\n| --- | ------- |\n| ✅  | Description now explains the relationship to #37289 and credits its author. |\n| ❌  | #37289 is still open with \"maintainer review\", and @prakhar1144, its assignee, said on 2026-09-04 he plans to complete it this cycle. There is no sign the original author or @prakhar1144 agreed to this takeover. |\n| ❌  | The plan promised before/after screenshots in light and dark mode, but there is one screenshot, no \"before\", and no dark mode. |\n| ℹ️  | CI passes, but that doesn't settle the above. |\n\n###### Next step\n\nKeep \"not ready\", and have the author sort out with @prakhar1144 and @CerealNotFound whether this PR or #37289 should go forward. If @prakhar1144 is finishing #37289, closing this one is the alternative.\n\n###### Reply\n\n```quote\nThanks for the update! Since #37289 is still open and @prakhar1144 said he plans to complete it, please coordinate with him and @CerealNotFound on that PR so we know which one should move forward, following the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please also add before/after screenshots, including dark mode, as in your plan.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014436200000000001
+}

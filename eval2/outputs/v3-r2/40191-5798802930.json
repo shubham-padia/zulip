@@ -1,0 +1,11 @@
+{
+ "case": "40191-5798802930",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both of laurynmm's requests were addressed**\n\nNew: The author pushed once, rewrote both commit messages, and dropped the Home Assistant docs change into its own PR (#40197, with screenshots). The PR now holds only the two settings renames. The code is unchanged, as the author said.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for the updates! @laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.008398899999999999
+}

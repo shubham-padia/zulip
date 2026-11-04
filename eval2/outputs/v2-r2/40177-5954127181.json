@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Link the prior PR in the description: the \"Prior work\" section names #37289 and lists what changed. |\n| ✅  | Credit the original author: the description says `Co-authored-by` is in the commit, and there is a cross-reference comment on #37289. |\n| ⚠️  | Address the earlier review on #37289: no dark-theme screenshot (only one light-theme screenshot), and no new push since the feedback. |\n| ⚠️  | Original work is not clearly abandoned: #37289 is still open and assigned to prakhar1144, who said on 2026-09-04 that he plans to finish it. It also has no \"completion candidate\" label. |\n| ℹ️  | CI passed. The issue has \"help wanted\" and is assigned to the author, so this is not a close candidate. |\n\n###### Next step\n\nKeep \"not ready\", and check with prakhar1144 whether this PR should replace #37289 before anyone is assigned to review it.\n\n###### Reply\n\n```quote\nThanks @Soul-Ninja, the prior-work section and credit look good. Before this can move on, please add a dark-theme screenshot, as requested in the #37289 review. Also check with @prakhar1144 about taking over #37289, since he's still planning to finish it; see the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0260186
+}

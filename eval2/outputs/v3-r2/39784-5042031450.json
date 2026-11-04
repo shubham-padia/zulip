@@ -1,0 +1,11 @@
+{
+ "case": "39784-5042031450",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — description still doesn't explain how this relates to the open PR #33086**\n\nNew: The author says they updated the description, and it now has before/after screenshots and a video. Missing: there's still no mention of the earlier open PR #33086, which touches the same two files, so the \"continuing unfinished work\" step isn't done. The self-review checklist also has unchecked items, including the AI use policy and the commit message reasoning.\n\n###### Next step\n\nKeep \"not ready\" and leave it with laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for the update! I don't see anything in the PR description about #33086, which changes the same files. Please explain how this PR relates to it, following the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html), and complete the unchecked self-review items.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0086782
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39731-5006493904",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "CARD",
+ "text": "CARD\n**Ready for review**\n\nThis removes two CSS rules in the dark theme that never apply anywhere in the web app. It also merges the two remaining rules, which set the same colors. The error banners look the same as before.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the feedback, the single \"consolidate all four rules\" commit was replaced by two commits. One removes the two unreachable selectors, and one merges the two that remain. The change is now -8 lines, with no additions. |\n| ✅  | Laurynmm asked where these selectors can appear in the web app. The author checked each one and removed `.alert-box .stacktrace` and `.alert.alert-danger` as unreachable. |\n| ✅  | `.alert-box .alert` is kept on purpose, because the `generic_embed_error` banner still uses it. |\n| ✅  | Computed styles on `#home-error` and the `generic_embed_error` banner are identical on `main` and on this branch, in both themes. CI passed. |\n| ℹ️  | The issue asks for before/after screenshots in both themes. The PR gives measured style values and no screenshots, and the author offered to add screenshots. The triager may want to decide whether that is enough. |\n\n**Reviewer:** laurynmm — gave the feedback on this PR and has been reviewing it.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0161911
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39820-5103626520",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author squashed the history into one commit on current `main`, also changed the parser to keep multi-line text, and says the checklist is complete. CI is passing now.\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit history is clean: one commit, \"outgoing_webhooks: Parse command and text for Slack webhooks.\" |\n| ❌  | Self-review checklist is not complete: \"Automated tests verify logic where appropriate\" is still unchecked, even though the comment says it is done. |\n| ❌  | The PR doesn't explain how it relates to the other open PRs for #19589 (#38098, #39481, #39606). A similar PR (#38902) was closed for this reason. |\n| ⚠️  | The author never ran the new test locally and relies on CI. Nothing addresses the earlier `python-zulip-api` compatibility question on this issue. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to finish the checklist and explain how this PR differs from the other open PRs for #19589.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commits! Two things are still missing: the \"Automated tests verify logic where appropriate\" box in the self-review checklist is unchecked, and the description doesn't say how this PR relates to the other open PRs for #19589 (#38098, #39481, #39606); see our [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please update the description and post again to request a review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011883600000000001
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39820-5103626520",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Clean up commit history: now one commit on current `main`, pushed after the feedback |\n| ⚠️  | Complete the self-review checklist: the \"Automated tests verify logic where appropriate\" box is still unchecked |\n| ℹ️  | CI is passing, but the author could not run the new test locally |\n| ℹ️  | Three other open PRs target #19589 (#38098, #39481, #39606), and this PR does not explain how it relates to them |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to finish the checklist. Decide separately how to handle the other open PRs for #19589.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit history, it looks good now. One checklist item is still unchecked: \"Automated tests verify logic where appropriate\". Please check it once you're confident the new test covers the change, or explain why you can't, then post again to request review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012026000000000002
+}

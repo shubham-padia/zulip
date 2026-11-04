@@ -1,0 +1,81 @@
+{
+ "case": "40148-5711082634",
+ "cutoff": "2026-09-17T08:05:10Z",
+ "pushes": [
+  [
+   "2026-09-16T06:49:37Z",
+   "50321fe4e1",
+   "ci run"
+  ],
+  [
+   "2026-09-16T20:45:03Z",
+   "0fd1f023e6",
+   "force push"
+  ],
+  [
+   "2026-09-16T20:45:08Z",
+   "0fd1f023e6",
+   "ci run"
+  ],
+  [
+   "2026-09-16T22:11:49Z",
+   "ec3b35ac91",
+   "force push"
+  ],
+  [
+   "2026-09-16T22:11:56Z",
+   "ec3b35ac91",
+   "ci run"
+  ],
+  [
+   "2026-09-17T05:40:38Z",
+   "ab592d1cc0",
+   "force push"
+  ],
+  [
+   "2026-09-17T05:40:43Z",
+   "ab592d1cc0",
+   "ci run"
+  ],
+  [
+   "2026-09-18T06:21:44Z",
+   "843a0b21ed",
+   "force push"
+  ],
+  [
+   "2026-09-18T06:21:47Z",
+   "843a0b21ed",
+   "ci run"
+  ],
+  [
+   "2026-09-18T08:39:51Z",
+   "d5c70ead68",
+   "force push"
+  ],
+  [
+   "2026-09-18T08:39:55Z",
+   "d5c70ead68",
+   "ci run"
+  ]
+ ],
+ "head_now": "d5c70ead68fdb02f26833aab52a12d004079371f",
+ "body_edits": 6,
+ "body_edits_after_cutoff": 4,
+ "title_now": "settings_emoji: Add convenience features to custom emoji upload.",
+ "title_at_cutoff": "settings_emoji: Add convenience features to custom emoji upload.",
+ "labels_now": [
+  "size: XL",
+  "maintainer review",
+  "priority: low"
+ ],
+ "assignees_now": [
+  "sahil839"
+ ],
+ "head_at_cutoff": "ab592d1cc0649da398bfe08a0e15c74d4cedde32",
+ "pr_shape": "from compare main...ab592d1cc0",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-09-16T11:32:48Z",
+ "head_at_feedback": "50321fe4e149dd3f6521078b742c7e255b1756b1",
+ "comments_total": 5,
+ "comments_at_cutoff": 2
+}

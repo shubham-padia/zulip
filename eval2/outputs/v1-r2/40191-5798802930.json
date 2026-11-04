@@ -1,0 +1,11 @@
+{
+ "case": "40191-5798802930",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed once: the Home Assistant docs commit is gone, and both settings commits were reworded. The code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ✅  | Docs change is out of this PR (`doc.md` no longer in the files) and moved to #40197, which has the screenshots. |\n| ⚠️  | Commit titles are unchanged and the input doesn't show commit bodies, so the rewording rests on the author's word. Worth a quick look at the commit messages. |\n| ✅  | The linked issue #23380 has \"help wanted\". |\n| ℹ️  | The PR renames server settings with compat fallbacks. The issue thread says to discuss this in #backend first, and an earlier attempt (#36416) touching the same files was closed as \"not on track\". There's no sign of such a discussion here. |\n\n**Reviewer:** laurynmm — gave the feedback, and closed #36416, so is best placed to judge whether this approach to the settings renames is right.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013181500000000002
+}

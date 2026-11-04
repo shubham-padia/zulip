@@ -1,0 +1,11 @@
+{
+ "case": "39785-5037857009",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshot added, but the PR still doesn't link an issue or say how it was tested**\n\nNew: The author posted a before/after dark mode screenshot, which answers the screenshot feedback. There is no new push. Missing: a \"Fixes: #N\" line (open issue #38931 looks like the match, so check it has \"help wanted\"), and a description of how the change was actually tested in the browser, including the new right-side arrow rule, which the screenshot doesn't show.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link the issue and describe their manual testing; no reviewer yet.\n\n###### Reply\n\n```quote\nThanks for the screenshot! Please add a \"Fixes: #N\" line for the issue this addresses (it looks like #38931), and update the \"How changes were tested\" section to say how you checked the result in the browser, including the right-side arrow placement. The [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) covers both.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.008277300000000001
+}

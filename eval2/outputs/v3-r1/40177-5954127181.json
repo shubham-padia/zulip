@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the prior-work requirements are now met**\n\nNew: The author filled in the prior-work section, credited the original author with Co-authored-by, and cross-linked #37289; there is no new code since the feedback. Missing: only a dark-theme screenshot, which the issue asks for and the author's plan promised. This can be requested in review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign prakhar1144, who is assigned to #37289 and has said he plans to finish it.\n\n###### Reply\n\n```quote\nThanks for adding the prior-work details. @prakhar1144, could you review this, since you're on #37289? @Soul-Ninja, please also add a dark-theme screenshot.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0617877
+}

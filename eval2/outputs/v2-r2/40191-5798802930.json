@@ -1,0 +1,11 @@
+{
+ "case": "40191-5798802930",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit messages rewritten to follow the commit style guide (new push after the feedback; both commit titles are still in the right format) |\n| ✅  | Home Assistant docs change removed from this PR (`doc.md` is no longer in the files) and moved to #40197 |\n| ✅  | Screenshot of the fixed documentation: author says it is in #40197 |\n| ℹ️  | CI status is not available in the input. The author earlier said all 26 checks pass, so check before merging |\n| ℹ️  | The code is unchanged since the first review. The linked issue #23380 has \"help wanted\", and the fallback for the old setting names is in place |\n\n**Reviewer:** @laurynmm — gave the feedback and already knows the PR\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, the commit messages are updated and the docs change is now in #40197. Could you take another look at this one?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.009633899999999999
+}
