@@ -1,0 +1,6 @@
+{
+ "case": "39694-4915633811",
+ "answer": "yes",
+ "text": "yes\nThe maintainer asked for a cleaned-up commit history, and the author says they have squashed everything into a single commit, which reports the requested work as done and hands the PR back.",
+ "cost_usd": 0.0006747
+}

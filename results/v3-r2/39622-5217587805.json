@@ -1,0 +1,6 @@
+{
+ "case": "39622-5217587805",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked the author to ping for review once the PR is ready, and the author's comment states \"PR is ready for review!\", which is a direct handback (even though the maintainer addressed a different username).",
+ "cost_usd": 0.0007531
+}
