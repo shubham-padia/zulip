@@ -1,0 +1,11 @@
+{
+ "case": "40013-5589724033",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ℹ️  | The \"not ready\" label came with no written feedback, so there were no specific requests to check. |\n| ✅  | 4 new pushes since the label. They add test updates in `test_home.py`, `test_users.py` and `test_custom_profile_data.py`. The approach and commit messages are unchanged. |\n| ✅  | The PR template is filled in: description, `Fixes: #29766`, testing notes, before/after screenshots and a screen recording. |\n| ℹ️  | Some self-review boxes are unchecked (responsiveness, strings and tooltips, corner cases). The description also says the tooltip question is still waiting on design feedback. |\n| ℹ️  | CI status isn't available. The label may have been about failing tests, so check CI before the review starts. |\n\n**Reviewer:** @laurynmm. She added the label, the author pinged her, and she has 23 commits on these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0248706
+}

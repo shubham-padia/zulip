@@ -1,0 +1,11 @@
+{
+ "case": "40021-5448685369",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after screenshots now show a very long name breaking the pill and then truncated |\n| ✅  | PR description explains how this differs from #39049, #39829 and #39768 |\n| ✅  | Truncation no longer hits normal names (`max-width` raised to `15em`, pushed after the feedback) |\n| ✅  | Author commented asking for another look (but pinged @alya, not the triager) |\n| ❌  | Commits are not clean: \"fix: increase max-width…\" and \"css(reactions): avoid animating font-weight…\" are fixups that should be squashed into the main commit |\n| ℹ️  | CI passes. Per the #design thread, Alya wants part of every reactor's name visible. This pure CSS fix truncates the whole comma-joined string, and #39768 (per-name truncation) is already in maintainer review |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to squash the commits. A maintainer may also want to decide whether this approach is worth pursuing next to #39768.\n\n###### Reply\n\n```quote\nThanks for the updated screenshots and the comparison with the other PRs! Please squash the two follow-up commits into the main one (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)), and also explain how this behaves when several people react, since names are shown together in that case.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0164296
+}

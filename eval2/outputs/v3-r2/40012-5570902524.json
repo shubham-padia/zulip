@@ -1,0 +1,11 @@
+{
+ "case": "40012-5570902524",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots and self-review checklist now in the description**\n\nNew: The author replaced the reconstructed renderings with real screenshots from the `/emails` page (HTML and text, password-enabled and SSO-only) and added the self-review checklist, which is what the feedback asked for. No new push was needed for this.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots and checklist, this looks good. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.006478399999999999
+}

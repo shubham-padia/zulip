@@ -1,0 +1,11 @@
+{
+ "case": "40012-5570902524",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Screenshots from the dev `/emails` page, HTML and text versions, are now in the description (password-enabled and SSO-only) |\n| ✅  | Self-review checklist is now in the main PR description |\n| ✅  | Earlier ask to follow the PR guide and drop the title tag: the title now reads \"emails: Don't suggest a password reset for SSO-only realms.\" |\n| ℹ️  | The fix hides the reset sentence for SSO-only realms. The issue thread suggested instead linking to a /help/ guide on compromised accounts, and the description doesn't explain this difference |\n| ℹ️  | CI status is unknown (check runs aren't available) |\n| ℹ️  | The \"Responsiveness and internationalization\" box in the checklist is unchecked |\n\n**Reviewer:** @laurynmm — gave the feedback on this PR and is already familiar with it. Alternatively, Anders Kaseorg or Apoorva Pendse, who have changed these files recently.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm. Check CI first, since its status isn't available here.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots and the checklist! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011693400000000001
+}

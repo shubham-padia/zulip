@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — design question settled, but the PR itself hasn't changed**\n\nNew: Daniel K said on CZO that this extends the filters from #24200, so the design hold is lifted. There has been no new push since the feedback. Missing: the description still has a malformed \"Fixes #<36878>\", so the issue isn't linked. The two \"ci: retry\" commits are noise, and the large change isn't split into coherent commits.\n\n###### Next step\n\nKeep \"not ready\" and don't add \"maintainer review\" yet; karlstolley, who gave the feedback, can re-check once the author pushes the cleanup.\n\n###### Reply\n\n```quote\nThanks for checking with Daniel, so the design question is settled. Before review, please fix the description to use `Fixes: #36878` and follow the [PR guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html), and squash the \"ci: retry\" commits into proper, coherent commits per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0091599
+}

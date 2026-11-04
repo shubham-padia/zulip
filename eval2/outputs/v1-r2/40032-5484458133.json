@@ -1,0 +1,11 @@
+{
+ "case": "40032-5484458133",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author force-pushed twice, but only reworded the commit subject to be shorter. The code is the same size and touches the same files. They then asked whether it's okay now.\n\n|     |         |\n| --- | ------- |\n| ❌  | The commit subject is still not in Zulip style. It has no space after `web:`, the text after the colon isn't capitalized, there is no trailing period, and it uses abbreviations (\"nav\", \"dm\"). |\n| ❌  | The commit has no message body explaining what changed and why, even though the checklist item for this is ticked. |\n| ✅  | The question about the other open PR for this issue (#40027) was answered, and the PR is otherwise complete with a description, testing notes and videos. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the commit message, since no code changes are needed.\n\n###### Reply\n\n```quote\nNot quite yet. Please compare your commit message against the [commit message guidelines](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages): the subject needs a space after the prefix, a capitalized summary, and a trailing period, and the commit needs a body that explains what changed and why. Looking at recent merged commits in the same area is a good way to see the expected style.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0090661
+}

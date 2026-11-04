@@ -1,0 +1,11 @@
+{
+ "case": "40032-5484458133",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — commit message still breaks the style guide**\n\nNew: The author pushed twice, but only shortened the commit title, and the new one is further from the style guide (no space after \"web:\", lowercase, no period). Missing: a title in the form \"area: Capitalized summary.\" with a more specific area than \"web\", and a message body explaining why the change is made.\n\n###### Next step\n\n\"not ready\" stays; no reassignment is needed, since laurynmm is already following the PR.\n\n###### Reply\n\n```quote\nNot quite yet. Shortening the title isn't enough: it needs the form \"area: Capitalized imperative summary.\" (with a space after the colon, a period at the end, and a more specific area than \"web\"), plus a body explaining why. Please reread the [commit message guidelines](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages) and compare with recent commits in `git log` for these files.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0078835
+}

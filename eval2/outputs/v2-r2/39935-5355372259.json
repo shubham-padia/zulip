@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️ | Reorganize the PR description to follow the PR guide. It still has an empty \"Fixes:\" line, a malformed `Fixes #<36878>`, a long unstructured change list, and two unchecked self-review items. |\n| ✅ | Engage with the CZO discussion. The author posted there, and Daniel K said the PR isn't blocked on it because it extends the filter UX settled in #24200. |\n| ℹ️ | No new push since the feedback, so only the description could have changed. |\n| ℹ️ | The history has two \"ci: retry\" commits, and one large commit mixes several changes (contenteditable conversion, operator parsing, topic filtering). This doesn't meet commit discipline. |\n| ℹ️ | CI is passing. The author has no merged PRs, but the linked issue #36878 is labeled \"help wanted\" per the CZO thread. |\n\n###### Next step\n\nKeep \"not ready\", and don't add \"maintainer review\" yet. The author should clean up the description and commits first.\n\n###### Reply\n\n```quote\nThanks for checking in on the design thread! Before this can go to review, please fix the description per the [PR guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) (use `Fixes: #36878` without the angle brackets, and complete the unchecked self-review items). Please also squash the \"ci: retry\" commits away and split the work into coherent commits, following the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0132149
+}

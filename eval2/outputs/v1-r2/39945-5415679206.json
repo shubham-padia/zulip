@@ -1,0 +1,11 @@
+{
+ "case": "39945-5415679206",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author made no new push. They edited the PR description to add a \"Relationship to other work\" section and restored the self-review checklist, and they acknowledged the label comment.\n\n|     |         |\n| --- | ------- |\n| ✅  | Self-review checklist now matches the PR template, including the AI-policy line. |\n| ✅  | The description now explains how this PR relates to the other open PRs for #19589 and says it was written independently. |\n| ⚠️  | The section names 4 of the 6 other open PRs (it omits #39606 and #40004). It also doesn't say why this one rather than #38098, which Niloth-p has had in review since February. |\n| ✅  | The author said they won't remove maintainer labels again. |\n\n**Reviewer:** laurynmm — gave the feedback and has made 2 commits to these files in the last year. Niloth-p is assigned to the sibling PRs #38098 and #39481, so they may want to be looped in.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.018780300000000003
+}

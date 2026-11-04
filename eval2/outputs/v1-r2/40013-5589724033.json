@@ -1,0 +1,11 @@
+{
+ "case": "40013-5589724033",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed 4 times since the label (+255/-74 in 11 files, now +308/-74 in 14 files). The pushes added tests in three more test files, and the author is asking for review. The label came with no written feedback, so there were no specific asks to check.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description follows the template: it has \"Fixes: #29766\", testing notes, before/after screenshots, a screen recording, and a mostly checked self-review list. |\n| ✅  | New backend tests for avatar deletion (`test_patch_bot_delete_avatar` and `test_patch_bot_delete_avatar_with_upload`) cover the delete path. The upload, crop and immediate-save flow was tested manually. |\n| ⚠️  | The self-review checklist still has unchecked items (responsiveness and i18n, strings and tooltips, corner cases). The hover-text/tooltip question is still open on chat.zulip.org, so a reviewer can settle it. CI status isn't available. |\n| ℹ️  | The PR continues the closed WIP #38032 and keeps its approach of reusing `patch_bot_backend` instead of adding a new endpoint. The issue's \"help wanted\" label is gone, but the author had claimed and been assigned the issue, so this isn't a close case. |\n\n**Reviewer:** @laurynmm — added the \"not ready\" label and is the one the author pinged. She is also among the top contributors to these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0164482
+}

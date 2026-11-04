@@ -1,0 +1,11 @@
+{
+ "case": "40012-5570902524",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author updated the PR description with `/emails` screenshots (HTML and text, for both password-enabled and SSO-only realms) and added the self-review checklist. There was no new push, and none was needed, since both asks were about the description.\n\n|     |         |\n| --- | ------- |\n| ✅  | Screenshots from the dev `/emails` page are in the description, covering HTML and text in both cases. |\n| ✅  | The self-review checklist is now in the main PR description. |\n\n**Reviewer:** laurynmm — gave the feedback and knows what was asked. The author has merged PRs before, so the missing \"help wanted\" label on #30248 is not a close reason.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\nThanks, the screenshots and checklist look good. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.008841
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nNo new push since the feedback. The author says the description was fixed up, and Daniel K confirmed on CZO that this extends the #24200 filters, so the design question is settled. The author also asked for \"maintainer review\" to be added.\n\n|     |         |\n| --- | ------- |\n| ✅  | The design question is settled: Daniel K said on CZO that the PR isn't blocked and fits the #24200 filter UX. |\n| ❌  | The description is still messy: \"Fixes:\" is empty, the later line reads \"Fixes #<36878>\" with stray brackets, and the summary is a long list of mixed changes. |\n| ❌  | The commits don't follow commit discipline: two \"ci: Retry/Trigger CI\" commits are noise, and the real commit bundles a contenteditable conversion, parsing changes and test fixes into one. |\n| ⚠️  | The self-review boxes \"Calls out remaining decisions\" and \"Corner cases\" are unchecked. |\n\n###### Next step\n\nKeep \"not ready\" and don't add \"maintainer review\" yet.\n\n###### Reply\n\n```quote\nThanks for checking in with the design discussion, and good to hear Daniel K confirmed this fits the #24200 filters. Before this can go to review, please fix the description (a proper `Fixes: #36878` line, plus a short summary) and clean up the commits, dropping the CI-retry ones and splitting the work into coherent commits, as described in the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). The [reviewable PRs guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) covers the rest.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0128625
+}

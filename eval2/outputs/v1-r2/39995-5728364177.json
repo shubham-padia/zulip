@@ -1,0 +1,11 @@
+{
+ "case": "39995-5728364177",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed once, dropping the six per-severity fixture files, so the PR is now only `view.py` and `tests.py`. The new comment just tags the reviewer and doesn't answer his questions or explain what changed.\n\n|     |         |\n| --- | ------- |\n| ✅  | Separate per-severity fixtures are gone, which matches the ask to avoid one fixture per status. |\n| ❌  | The description still says the feature depends on the `include_emoji_indicators` parameter, but the author said on CZO that he removed it. |\n| ❌  | His questions about what the model PRs did for `doc.md` and the fixtures are unanswered, and no `doc.md` change is in the PR. |\n| ⚠️  | The \"Explains differences from previous plans\" checklist item is still unchecked, and the description doesn't mention the emoji mapping changes. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to bring the description in line with the code and to address the `doc.md` question before Niloth-p reviews again.\n\n###### Reply\n\n```quote\nThanks for the update! Before @Niloth-p takes another look, please update the PR description so it matches the code (it still mentions `include_emoji_indicators`). Also reply to the questions in the earlier review about what the model emoji integration PRs did for `doc.md`, and make that change if it applies here. The [incoming webhooks guide](https://zulip.readthedocs.io/en/latest/webhooks/index.html) covers this.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.016965900000000003
+}

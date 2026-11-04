@@ -1,0 +1,11 @@
+{
+ "case": "39995-5728364177",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — only part of the last review was addressed**\n\nNew: Pushed once, dropping the six per-severity fixtures, which fits Niloth's advice to use one fixture. Missing: no `doc.md` change is in the PR's files, and the description still says the feature relies on the `include_emoji_indicators` parameter, which the author said they removed. The author also never answered Niloth's questions about which existing emoji integrations they studied.\n\n###### Next step\n\n\"not ready\" stays; the author should fix these before Niloth (who gave the feedback) or PieterCK (assigned) takes another look.\n\n###### Reply\n\n```quote\nThanks for the update, @tmvalijib24! Before we review again, please update `doc.md` and the PR description to match what the code now does, as in the existing emoji integrations (see the [incoming webhooks guide](https://zulip.readthedocs.io/en/latest/webhooks/index.html)), and answer Niloth's questions about which of those PRs you followed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0588757
+}

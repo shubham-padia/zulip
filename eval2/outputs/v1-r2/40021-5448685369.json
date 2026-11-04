@@ -1,0 +1,11 @@
+{
+ "case": "40021-5448685369",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed two more commits: one raising the max-width to 15em and one touching font-weight and adding an end-of-file newline. They also updated the screenshots and added a comparison with the other open PRs in the description.\n\n|     |         |\n| --- | ------- |\n| ✅  | Description now compares the approach with #39049, #39829 and #39768. |\n| ✅  | Before/after screenshots now use a genuinely long name, and the limit is 15em instead of 150px. |\n| ❌  | The two new commits (\"fix: …\", \"css(reactions): …\") are fixes that were not squashed into the original commit, so the history breaks commit discipline. |\n| ⚠️  | The last commit includes font-weight and formatting changes that aren't part of this fix (+59/-29 for a small CSS change). |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to clean up the commits.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots and the description! Before this can be reviewed, please squash the \"fix:\" and \"css(reactions):\" commits into the main commit, and drop the unrelated font-weight and formatting changes. See our [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014117200000000002
+}

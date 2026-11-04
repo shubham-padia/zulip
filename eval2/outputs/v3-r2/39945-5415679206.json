@@ -1,0 +1,11 @@
+{
+ "case": "39945-5415679206",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both requested description fixes are done**\n\nNew: The author added a \"Relationship to other work\" section (says it was built independently, lists the other open PRs, explains how the approach differs) and restored the self-review checklist to match the template. No new code was pushed, and none was asked for. Missing: nothing the feedback asked for, though two other PRs on this issue (#38098, #39481) are already in maintainer review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Niloth-p, who is already reviewing the competing PRs on #19589 and can compare them.\n\n###### Reply\n\n```quote\nThanks for updating the description. @Niloth-p, could you review this one alongside the other open PRs for #19589?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012437700000000001
+}

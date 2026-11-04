@@ -1,0 +1,11 @@
+{
+ "case": "39995-5728364177",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — fixtures cleaned up, but docs and description still don't match**\n\nNew: One push removed the six separate fixture files, which matches the single-fixture advice from the chat thread, and the author tagged Niloth-p as asked. Missing: `doc.md` is still not in the PR, even though the review asked what earlier emoji integrations did there. The description still describes the `include_emoji_indicators` opt-in parameter that the author said they removed, and the review questions about which integrations they studied are still unanswered.\n\n###### Next step\n\n\"not ready\" stays; Niloth-p has been tagged and can confirm the test approach, or you can send the reply below first.\n\n###### Reply\n\n```quote\nThanks for the update, @tmvalijib24. Please update the integration's `doc.md` the way the earlier emoji integrations did, and make the PR description match the current code (the `include_emoji_indicators` parameter). Then tell us which integrations you used as a model, and ping @Niloth-p again.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014883299999999999
+}

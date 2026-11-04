@@ -1,0 +1,11 @@
+{
+ "case": "39945-5415679206",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Don't remove maintainer-assigned labels: acknowledged and apologized |\n| ✅  | Explain how this PR relates to the other open PRs for #19589: a \"Relationship to other work\" section is now in the description |\n| ✅  | Restore the self-review checklist from the PR template: description updated, and it matches the template (including the AI use policy line) |\n| ℹ️  | No new push, but all three requests were about the description or comments, so none needed code |\n| ℹ️  | #38098 and #39481 are already in \"maintainer review\" with Niloth-p assigned. This is a competing PR for the same issue, so the triager may want to coordinate with them |\n| ℹ️  | CI passes, and there are no merge conflicts |\n\n**Reviewer:** laurynmm. She gave the feedback and has been coordinating the PRs for this issue. Niloth-p, who is assigned to the competing PRs, is another option.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm (or Niloth-p, so one person compares all the PRs for #19589).\n\n###### Reply\n\n```quote\nThanks for updating the description, @HeetRanpura. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0193927
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39995-5728364177",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ❌  | Say which existing emoji integrations and PRs you looked at: no answer in the comment or description |\n| ❌  | Answer what those PRs did about `doc.md`: no answer, and `doc.md` is not in the changed files |\n| ⚠️  | Fixtures and tests approach: the six extra fixture files are gone and `tests.py` changed, but the author hasn't said whether it now uses one fixture with a loop over statuses, as suggested on Zulip |\n| ❌  | Answer what the docs say about LLM-generated fixtures, and confirm the docs were read: no answer |\n| ℹ️  | The comment only tags the reviewer, with no summary of what changed. The description still says the feature relies on `include_emoji_indicators`, but the author said on Zulip they removed that. CI status is unknown. |\n\n###### Next step\n\nKeep \"not ready\" and leave the PR with Niloth-p. No labels or assignee change.\n\n###### Reply\n\n```quote\nThanks for the update, @tmvalijib24! Before another review, please reply to @Niloth-p's questions: which existing emoji integrations and PRs you followed, and what they did about `doc.md`. Please also tell us what the [Incoming Webhooks Guide](https://zulip.readthedocs.io/en/latest/webhooks/index.html) says about LLM-generated fixtures, and update the description so it matches the current code.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0195783
+}
