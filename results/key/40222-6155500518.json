@@ -1,0 +1,6 @@
+{
+ "case": "40222-6155500518",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly says the PR is ready for review, reports the requested changes (screenshots, checklist, passing CI), and asks to remove the \"not ready\" label.",
+ "cost_usd": 0.009676
+}
