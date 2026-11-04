@@ -1,0 +1,6 @@
+{
+ "case": "39767-5275856339",
+ "answer": "no",
+ "text": "no\n\nThe author only asks for CI to be re-triggered because of an unrelated failure; they don't say the squash/commit-message changes are done or that the PR is ready for another look.",
+ "cost_usd": 0.0006977
+}

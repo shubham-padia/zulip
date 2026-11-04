@@ -1,0 +1,6 @@
+{
+ "case": "39776-5213945367",
+ "answer": "no",
+ "text": "no\n\nThe author is closing the PR as superseded by an upstream fix, which is giving up on it rather than saying it is ready for review or that the requested changes are done.",
+ "cost_usd": 0.0006245
+}
