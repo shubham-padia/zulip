@@ -1,0 +1,6 @@
+{
+ "case": "40030-5442399937",
+ "answer": "yes",
+ "text": "yes\nThe author's \"@zulipbot ready for review\" comment is the Zulip workflow command that signals the PR should be re-labeled as ready for maintainer review.",
+ "cost_usd": 0.0006272000000000001
+}
