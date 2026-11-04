@@ -1,0 +1,6 @@
+{
+ "case": "40177-5954127181",
+ "answer": "yes",
+ "text": "yes\n\nThe author says they've updated the PR description with prior work details and credits, that CI is green, and asks for the `not ready` label to be removed so it can be reviewed, which is a handback for review.",
+ "cost_usd": 0.0007355
+}

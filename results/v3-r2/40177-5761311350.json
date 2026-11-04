@@ -1,0 +1,6 @@
+{
+ "case": "40177-5761311350",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked the author to follow the continuing-unfinished-work guidelines, and the author reports completing them (confirmed the relationship, updated the PR description, credited the original author, cross-referenced #37289) and asks for the \"not ready\" label to be removed, which hands the PR back for review.",
+ "cost_usd": 0.0011109000000000002
+}

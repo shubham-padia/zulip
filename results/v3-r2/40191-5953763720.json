@@ -1,0 +1,6 @@
+{
+ "case": "40191-5953763720",
+ "answer": "no",
+ "text": "no\n\nThe author describes unrelated code changes (rebase, removing fallbacks, PR template) and never says the commit message was fixed or the docs change was split out, nor do they state the PR is ready for review.",
+ "cost_usd": 0.0007653
+}
