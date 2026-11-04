@@ -1,0 +1,11 @@
+{
+ "case": "40096-6055469654",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — CI is fixed and the change is tested**\n\nNew: Three pushes fixed the wrong test data and reverted the manipulated Gitea fixture, and CI now passes. The feedback was only the \"not ready\" label, so nothing specific was left undone. Missing: the description has no real \"Fixes: #N\" issue link, and the change was only tested on Forgejo, not Gogs or Gitea.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign @laurynmm, who added the label and was pinged.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? CI is passing now and the test fixes are in.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0109981
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40012-5570902524",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review: both items from the feedback are done**\n\nNew: The author edited the PR description to add screenshots of the HTML and text emails from `/emails` (password-enabled and SSO-only) and added the self-review checklist. There was no new push. Missing: the issue's maintainer suggested linking to a help guide on compromised accounts, but this PR just says to contact support, so a reviewer may want to weigh in on that.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots and checklist! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.009891
+}

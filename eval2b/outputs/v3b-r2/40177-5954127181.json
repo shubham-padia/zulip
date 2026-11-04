@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the guide's commit steps for continuing work aren't done**\n\nNew: The author updated the description with a \"prior work\" section, credited the original author in a `Co-authored-by` line, and cross-referenced #37289, but made no new push. Missing: the original commits aren't kept (it's one new commit, not the original work with authorship preserved), and there's no sign the author has coordinated with @prakhar1144, who is assigned to #37289 and said he plans to finish it.\n\n###### Next step\n\nKeep \"not ready\", and consider asking @prakhar1144 whether this PR or #37289 should go forward.\n\n###### Reply\n\n```quote\nThanks for adding the prior-work notes! To finish the [continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html) steps, please restructure the commits so the original work keeps its authorship, with your changes on top. Please also check with @prakhar1144, who is assigned to #37289, on how he'd like to proceed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.017690200000000003
+}

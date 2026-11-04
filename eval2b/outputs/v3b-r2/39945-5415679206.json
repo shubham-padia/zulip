@@ -1,0 +1,11 @@
+{
+ "case": "39945-5415679206",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — all three items from the feedback are done**\n\nNew: The description now has a \"Relationship to other work\" section naming the four other open PRs and the author's approach, and the self-review checklist matches the template. The author also acknowledged the label removal. Missing: the new section says the code was written independently but never says why this PR should be preferred over #38098 or #39481, which are already in review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback. Niloth-p is already reviewing the two older PRs for this issue.\n\n###### Reply\n\n```quote\nThanks for updating the description. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.016868300000000003
+}

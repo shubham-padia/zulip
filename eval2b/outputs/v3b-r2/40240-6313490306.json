@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — no new push, and an earlier PR for this issue is already in review**\n\nNew: The author added two screenshots in a comment showing the test notification, and apologised. Missing: the PR description still has the \"[Upload your screenshot or video here]\" placeholder, and nothing explains how this PR differs from #39758, which takes the same approach in the same two files and is already with a maintainer.\n\n###### Next step\n\n\"not ready\" stays; laurynmm gave the feedback and can follow up.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots! Please put them in the PR description in place of the placeholder, and let us know how this PR differs from #39758, which already takes the same approach for this issue. Please also re-read the [AI use policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines) and make sure you understand every change in the PR.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0191316
+}

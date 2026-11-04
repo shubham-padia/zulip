@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the longer-topic and font-size screenshots were requested and are now in the PR body**\n\nNew: The PR description now has before/after screenshots for longer topic names, with and without emoji, plus a pair at a 20px app font size. There was no new code push, but the feedback asked only for screenshots and a font-size check, and both are covered.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look? The PR description now has the longer-topic and 20px font-size before/after screenshots you asked for.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010536
+}

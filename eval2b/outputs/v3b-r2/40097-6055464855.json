@@ -1,0 +1,11 @@
+{
+ "case": "40097-6055464855",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review: the label came with no specific feedback, and the author has since fixed their own bugs**\n\nNew: The author pushed 12 times, fixed the issue-comments-wrongly-flagged-as-PR-comments regression, and added a Gitea test fix. CI passes. Missing: nothing blocking, but the author's other open PR #40096 (Gogs topic title for pull requests) touches the same area, so a reviewer may want to check how the two relate.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign @laurynmm, who added the label and was pinged.\n\n###### Reply\n\n```quote\nThanks for the updates! @laurynmm, could you review this? @Alexis211, please also mention how this relates to your other PR #40096, since both touch the Gogs webhook.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0109705
+}

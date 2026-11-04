@@ -1,0 +1,11 @@
+{
+ "case": "39862-5398202815",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both requested fixes are done and the design is approved**\n\nNew: Before/after screenshots now follow the guidelines, and the self-review checklist is back to the template. There was also one small push, and Daniel K approved the visuals in the #design thread. Missing: the title-only and narrow-window screenshots Daniel asked for are only in the chat thread, not in the PR description.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for the updates, @paul-raja-dev! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011841
+}

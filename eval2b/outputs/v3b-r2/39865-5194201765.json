@@ -1,0 +1,11 @@
+{
+ "case": "39865-5194201765",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the screenshots are done, but Sahil's API-design question is still open**\n\nNew: The author added before/after screenshots to the PR description, which is what the feedback asked for. There was no new push. Missing: Sahil Batra (CZO, 2026-08-04/05) said rejecting uppercase isn't a complete fix and suggested the API accept any casing and normalize it. The author has not changed the approach and asked him to choose between the two options.\n\n###### Next step\n\nKeep \"not ready\" and ask Sahil Batra to settle the approach on the CZO thread (reject uppercase vs. normalize in the API) before any handoff.\n\n###### Reply\n\n```quote\nThanks for adding the before/after screenshots, they look good. The remaining blocker is the API approach: please wait for Sahil's decision on the CZO thread (reject uppercase vs. normalize it in the API), then update the PR to match.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.015113900000000001
+}

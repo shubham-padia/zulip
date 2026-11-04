@@ -1,0 +1,11 @@
+{
+ "case": "39894-5278594007",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested before/after screenshots are now in the description**\n\nNew: The description now has a light and dark before/after table, plus a pixel-diff note saying light is unchanged and dark differs only in the box-shadow blur (5px to 6px). Missing: that dark-theme blur change is a small visible difference, and the issue says minor adjustments like it should be discussed in #design.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, the precise before/after screenshots are now in the PR description. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0117511
+}

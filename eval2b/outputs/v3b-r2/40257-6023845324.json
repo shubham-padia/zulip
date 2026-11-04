@@ -1,0 +1,11 @@
+{
+ "case": "40257-6023845324",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both of laurynmm's requests are done**\n\nNew: The author pushed once, adding an error banner in `popup_banners.ts` that shows alongside the existing `blueslip.error`. The \"After\" screenshot was replaced with a newer one that appears to show the banner.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look? The error banner is now added alongside the blueslip error.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0097666
+}

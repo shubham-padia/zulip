@@ -1,0 +1,11 @@
+{
+ "case": "40201-6155498168",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — CI passes after 3 new pushes**\n\nNew: The author pushed 3 times, and CI now passes, which is the only thing the feedback asked for. They also added a second fixture for the event-subscription form of the message. Missing: the PR doesn't link an issue with \"Fixes: #N\".\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0095271
+}
