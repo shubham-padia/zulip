@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — description fixed, but open competing PR and docs not addressed**\n\nNew: The author squashed to one commit and rewrote the description with the checklist, testing notes and \"Fixes #19589\". Missing: no mention of the open PR #38098 for the same issue (the reason #38902 was closed) and no update to the outgoing webhook payload docs, which the #38098 review asked for. The description also still has stray backslashes around `command` and `text`.\n\n###### Next step\n\nKeep \"not ready\" and leave it with laurynmm, the maintainer who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for updating the description! There's already an open PR for this issue (#38098), so please explain how yours relates to it, following our [guide on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please also update the outgoing webhook payload docs to match the code change.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.06859799999999999
+}

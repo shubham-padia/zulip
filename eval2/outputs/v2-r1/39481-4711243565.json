@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Description, \"Fixes #19589\" and testing notes are now in the PR |\n| ⚠️  | Self-review checklist is a custom one, not the one from the PR template. The description also has stray backslashes around `command` and `text`. |\n| ℹ️  | Open PR #38098 already targets the same issue, and this PR doesn't explain how it relates to it. #38902 was closed for the same reason. |\n| ℹ️  | The issue was claimed by @pranjal499 on 2026-06-10, after this PR was opened. CI passed. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to use the real template checklist and explain how this PR relates to #38098 (or close it in favor of that PR).\n\n###### Reply\n\n```quote\nThanks for updating the description! Please replace the self-review checklist with the one from the PR template, as described in our [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html). Also, #38098 is already open for the same issue, so please explain how this PR relates to it (see our [guide on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html)).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.075948
+}

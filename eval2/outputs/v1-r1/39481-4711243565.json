@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author reworked the PR description and squashed the work into one commit, but didn't change the code. The new comment just says \"Ready for review!\".\n\n|     |         |\n| --- | ------- |\n| ✅  | The description now has \"Fixes #19589\", a testing section and the self-review checklist. |\n| ❌  | Nothing explains how this relates to open PR #38098 on the same issue. The issue is also assigned to pranjal499, who claimed it after this PR was opened. |\n| ❌  | Testing is vague (\"manually tested\") with no concrete steps or results. The description also shows stray backslashes around `command` and `text`. |\n| ⚠️  | Only the code and its test changed. The webhook payload docs weren't updated, and the `python-zulip-api` compatibility question from earlier attempts isn't addressed. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to explain how this relates to #38098 and the assigned issue. Consider closing if they can't, as was done for #38902.\n\n###### Reply\n\n```quote\nThanks for updating the description! Before this can be reviewed, please explain how it relates to the open PR #38098 and the issue's current assignee, following our [guide on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please also describe concretely how you manually tested it, and update the outgoing webhook payload docs to match the code.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.073902
+}

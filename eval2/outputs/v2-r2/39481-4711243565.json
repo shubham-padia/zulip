@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | PR description follows the guide: it now has a summary, \"Fixes: #19589\" and testing notes, but the self-review checklist is not from the PR template and the inline code formatting is broken (stray backslashes) |\n| ⚠️  | Testing: the notes say \"manually tested\" without saying what was sent or what was seen |\n| ✅  | Single clean commit (squashed since the feedback), CI passing |\n| ℹ️  | Another PR for the same issue (#38098) is still open, and the issue is now assigned to pranjal499. This PR doesn't explain how it relates to either. A similar PR (#38902) was closed for the same reason. |\n| ℹ️  | Earlier reviewers asked for the outgoing webhook payload docs to be updated and raised a `python-zulip-api` compatibility question; neither is addressed here |\n\n###### Next step\n\nKeep \"not ready\", and don't assign a reviewer yet. Ask the author to fix the description and explain how this PR relates to #38098 and the assignment on the issue.\n\n###### Reply\n\n```quote\nThanks for updating the description! Please replace the self-review checklist with the one from the [PR template](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html), and fix the broken code formatting. Also describe what you manually tested and what you saw, and say how this PR relates to the open #38098 and to the issue now being assigned to someone else.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.077768
+}

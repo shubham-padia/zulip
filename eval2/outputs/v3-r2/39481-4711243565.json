@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — template fixed, but nothing explains the overlap with the open PR or the docs**\n\nNew: The author squashed the work into one commit and rewrote the description with testing notes and the checklist. Missing: an explanation of how this relates to the open PR #38098 and to the issue now claimed by @pranjal499, and the API docs (`outgoing-webhook-payload.md`) update that was requested on #38098.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm (who gave the feedback) follow up; don't assign a reviewer yet.\n\n###### Reply\n\n```quote\nThanks for updating the description! Before review, please explain how this relates to the existing open PR #38098 and the issue's current assignee (see our [guide on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html)), and update the outgoing webhook payload docs to match your code change.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.068658
+}
