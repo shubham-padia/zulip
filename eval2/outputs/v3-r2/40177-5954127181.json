@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: #37289 is still open and a maintainer plans to finish it**\n\nNew: The author added a prior-work section to the description and credited the original author with `Co-authored-by`; there is no new push. Missing: Any sign that #37289 is abandoned or handed over (it still has \"maintainer review\" and its assignee, @prakhar1144, said on 2026-09-04 they plan to finish it), and its original author hasn't replied.\n\n###### Next step\n\nKeep \"not ready\" and ask @prakhar1144 whether the work should move to this PR; if not, close this one as duplicate work.\n\n###### Reply\n\n```quote\nThanks for the update! #37289 is still open and @prakhar1144 has said they plan to finish it, so please check with them and the original author about taking this over, as described in the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html), before this can move to review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0175336
+}

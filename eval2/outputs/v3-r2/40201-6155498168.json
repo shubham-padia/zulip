@@ -1,0 +1,11 @@
+{
+ "case": "40201-6155498168",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — no linked issue, so \"help wanted\" can't be checked**\n\nNew: CI now passes, and the author added a second fixture for the event-subscription form of the payload. Missing: The PR has no \"Fixes: #N\" and links no issue, so we can't confirm it is an approved \"help wanted\" issue. The author has no merged PRs.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm follow up. If no issue with \"help wanted\" turns up, this becomes a close candidate.\n\n###### Reply\n\n```quote\nThanks for fixing the CI failures! Could you link the issue this addresses by adding \"Fixes: #N\" to the PR description? We only accept PRs for issues labeled \"help wanted\" (see the [contributing guide](https://zulip.readthedocs.io/en/latest/contributing/contributing.html)), so if there isn't one, please open an issue to discuss first.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.008680499999999999
+}
