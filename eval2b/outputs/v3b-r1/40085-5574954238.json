@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the screenshot feedback is addressed**\n\nNew: The author replaced the broken image links with public ones and added two precise before/after pairs, one for rows with avatars or icons and one for text-only rows. There is no new code, and none was asked for. Missing: #37030 lost its \"help wanted\" label after the author claimed it, so check that a maintainer is fine with this going ahead.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, the author has added accessible before/after screenshots for both layout shapes. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0519134
+}

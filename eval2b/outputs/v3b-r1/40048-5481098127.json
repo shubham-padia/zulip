@@ -1,0 +1,11 @@
+{
+ "case": "40048-5481098127",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshot added and API design discussion started**\n\nNew: The author added the rendered API docs screenshot to the description and says they opened a topic in #api design. Missing: no API changelog entry or feature level bump among the changed files, which issue #20229 asks for.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for adding the screenshot and starting the #api design discussion. @laurynmm, could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0300574
+}

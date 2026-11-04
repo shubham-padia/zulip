@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the description is still messy and there are leftover CI commits**\n\nNew: The author took part in the CZO thread, and Daniel K said the PR extends the filters from #24200 and isn't blocked on the design discussion. There was no new push. Missing: the description still has an empty \"Fixes:\" line and a malformed \"Fixes #<36878>\" that won't link the issue, and the two \"ci:\" retry commits are still there.\n\n###### Next step\n\nKeep \"not ready\" and don't add \"maintainer review\" yet; @karlstolley, who gave the feedback, can re-check once the description and commits are cleaned up.\n\n###### Reply\n\n```quote\nThanks for joining the CZO discussion, and good to hear Daniel K sees this as an extension of #24200. Before review, please fix the \"Fixes: #36878\" line in the description and squash away the two \"ci:\" retry commits, following the [guide on making PRs reviewable](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html). Please leave the labels to us.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.040545399999999995
+}

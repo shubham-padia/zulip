@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the before/after screenshots now use the same data set**\n\nNew: The PR description now has a Before/After table of four screenshots, with the same user, the same six emoji from three authors, and the same viewport size. This is the only thing the feedback asked for, and no code change was needed. Missing: nothing blocking; the open PR #40134 for the same issue is not mentioned in the description.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the screenshot feedback.\n\n###### Reply\n\n```quote\nThanks for retaking the screenshots, the before/after comparison now looks like what we asked for. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0351594
+}

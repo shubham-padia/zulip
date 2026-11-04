@@ -1,0 +1,11 @@
+{
+ "case": "40191-5798802930",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both items from the feedback are done**\n\nNew: The author rewrote the commit messages and removed the Home Assistant docs change, so the PR now has only the two settings-rename commits. The docs fix is now in #40197, and the author says it has before/after screenshots.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for the updates, @Aditya-XR! @laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0557674
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40234-5937541838",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the fixture was built by hand, not captured from Jira**\n\nNew: The author changed the description to \"Part of #16189\" and added a screenshot. The fixture explanation says it was \"constructed\" from Atlassian's API spec and existing fixtures, not captured from a real Jira payload. Missing: a payload captured from a real Jira instance (e.g. via webhook.site), which the fixture guidelines require.\n\n###### Next step\n\n\"not ready\" stays; laurynmm, who gave the feedback, can confirm the fixture needs replacing.\n\n###### Reply\n\n```quote\nThanks for the updates, @huriazahra! The fixture still needs to be a payload captured from a real Jira instance (for example via webhook.site), not one built by hand from the API spec; see the [fixture guidelines](https://zulip.readthedocs.io/en/latest/webhooks/incoming-webhooks-walkthrough.html#fixture-guidelines). Please replace it with a captured payload, update the test and screenshot to match, and describe how you captured it.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.037973400000000004
+}

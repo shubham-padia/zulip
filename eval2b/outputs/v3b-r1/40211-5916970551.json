@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the squash pulled in about 120 unrelated files**\n\nNew: The author squashed the commits into one and updated the description. Missing: the PR now changes 123 files (+4994/-5409) instead of the original 2 (+46/-11), so the squash or rebase dragged in unrelated upstream changes. The single commit also needs to contain only the scheduled-messages fix and its test.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet; laurynmm can paste the reply below.\n\n###### Reply\n\n```quote\nThanks for squashing! The PR now shows 123 changed files, which looks like unrelated upstream changes got pulled in during the squash or rebase. Could you rebase onto current `main` so the PR contains only the scheduled-messages fix and its test? The [guide on reviewable PRs](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) has more detail.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0288334
+}

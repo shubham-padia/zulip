@@ -1,0 +1,11 @@
+{
+ "case": "40065-5536187002",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review: both items from the feedback are done**\n\nNew: The author squashed the PR into a single commit and retook the before/after screenshots from one tab with the same scroll state and viewport. Missing: the screenshots are at DPR 1, where the clipping doesn't reproduce, so they show only the added spacing, not a fixed cut-off emoji.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0505994
+}
