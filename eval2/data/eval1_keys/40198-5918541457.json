@@ -1,0 +1,6 @@
+{
+ "case": "40198-5918541457",
+ "answer": "no",
+ "text": "no\nThe author says they are closing the PR because they can't reproduce or verify the fix, which is giving up rather than signaling it's ready for another look.",
+ "cost_usd": 0.011824
+}

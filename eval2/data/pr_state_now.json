@@ -1,0 +1,1091 @@
+{
+ "39459": {
+  "assignees": [
+   "sahil839"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "area: modals and overlays"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39467": {
+  "assignees": [],
+  "closed_at": "2026-07-29T08:18:37Z",
+  "closed_by": "joeltco",
+  "labels": [
+   "area: tooling",
+   "size: M",
+   "difficult",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39473": {
+  "assignees": [
+   "karlstolley"
+  ],
+  "closed_at": "2026-08-14T21:31:51Z",
+  "closed_by": "emilysutherlin",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39481": {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "closed_at": "2026-09-07T22:44:17Z",
+  "closed_by": "Niloth-p",
+  "labels": [
+   "area: integrations",
+   "good first issue",
+   "size: S",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39522": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": "2026-07-03T01:27:56Z",
+  "closed_by": "evykassirer",
+  "labels": [
+   "area: right sidebar",
+   "size: S",
+   "integration review"
+  ],
+  "merged_at": "2026-07-03T01:27:56Z",
+  "state": "closed"
+ },
+ "39540": {
+  "assignees": [
+   "karlstolley"
+  ],
+  "closed_at": "2026-08-25T20:37:12Z",
+  "closed_by": "karlstolley",
+  "labels": [
+   "bug",
+   "area: right sidebar",
+   "size: S",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39590": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "feedback wanted",
+   "size: M",
+   "has conflicts",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39621": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "blocked"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39622": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "area: popovers and tooltips",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39634": {
+  "assignees": [],
+  "closed_at": "2026-07-25T12:15:31Z",
+  "closed_by": "TeChYViDYa",
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39688": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": "2026-08-18T19:23:45Z",
+  "closed_by": "evykassirer",
+  "labels": [
+   "size: M",
+   "integration review"
+  ],
+  "merged_at": "2026-08-18T19:23:45Z",
+  "state": "closed"
+ },
+ "39691": {
+  "assignees": [
+   "karlstolley"
+  ],
+  "closed_at": "2026-09-29T20:03:49Z",
+  "closed_by": "karlstolley",
+  "labels": [
+   "size: XL",
+   "integration review"
+  ],
+  "merged_at": "2026-09-29T20:03:49Z",
+  "state": "closed"
+ },
+ "39694": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39722": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: L",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39728": {
+  "assignees": [],
+  "closed_at": "2026-07-24T10:34:56Z",
+  "closed_by": "laurynmm",
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39731": {
+  "assignees": [
+   "karlstolley"
+  ],
+  "closed_at": "2026-08-25T20:46:27Z",
+  "closed_by": "karlstolley",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39758": {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39768": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39784": {
+  "assignees": [],
+  "closed_at": "2026-08-04T07:03:06Z",
+  "closed_by": "PrinceXDev",
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39785": {
+  "assignees": [],
+  "closed_at": "2026-08-16T10:41:02Z",
+  "closed_by": "cms19859230182-lang",
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39819": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "has conflicts",
+   "area: message feed (display)",
+   "maintainer review",
+   "changes requested"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39820": {
+  "assignees": [],
+  "closed_at": "2026-09-07T22:44:24Z",
+  "closed_by": "Niloth-p",
+  "labels": [
+   "size: M",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39822": {
+  "assignees": [
+   "sahil839"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "area: documentation (api)",
+   "size: M",
+   "integration review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39823": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "changes requested"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39826": {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "closed_at": "2026-08-15T14:11:26Z",
+  "closed_by": "ujjwalv01",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39827": {
+  "assignees": [
+   "karlstolley"
+  ],
+  "closed_at": "2026-07-31T19:04:47Z",
+  "closed_by": "karlstolley",
+  "labels": [
+   "size: M",
+   "integration review"
+  ],
+  "merged_at": "2026-07-31T19:04:46Z",
+  "state": "closed"
+ },
+ "39829": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39830": {
+  "assignees": [
+   "mateuszmandera"
+  ],
+  "closed_at": "2026-09-27T12:03:08Z",
+  "closed_by": "ahmadjafari86",
+  "labels": [
+   "area: production",
+   "size: XL",
+   "needs discussion",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39836": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": "2026-08-10T01:11:56Z",
+  "closed_by": "evykassirer",
+  "labels": [
+   "size: XS",
+   "integration review"
+  ],
+  "merged_at": "2026-08-10T01:11:56Z",
+  "state": "closed"
+ },
+ "39840": {
+  "assignees": [
+   "amanagr"
+  ],
+  "closed_at": "2026-08-25T03:53:30Z",
+  "closed_by": "amanagr",
+  "labels": [
+   "size: S",
+   "integration review"
+  ],
+  "merged_at": "2026-08-25T03:53:30Z",
+  "state": "closed"
+ },
+ "39856": {
+  "assignees": [
+   "sahil839"
+  ],
+  "closed_at": "2026-10-28T04:57:41Z",
+  "closed_by": "sahil839",
+  "labels": [
+   "size: S",
+   "integration review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39862": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "integration review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39863": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: M",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39865": {
+  "assignees": [
+   "sahil839"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39868": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "design review",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39883": {
+  "assignees": [
+   "PieterCK"
+  ],
+  "closed_at": "2026-09-16T09:19:03Z",
+  "closed_by": "PieterCK",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39894": {
+  "assignees": [
+   "karlstolley"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39901": {
+  "assignees": [
+   "amanagr"
+  ],
+  "closed_at": "2026-08-17T12:24:40Z",
+  "closed_by": "amanagr",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "merged_at": "2026-08-17T12:24:40Z",
+  "state": "closed"
+ },
+ "39922": {
+  "assignees": [],
+  "closed_at": "2026-08-12T12:36:48Z",
+  "closed_by": "aulasbiertauio-star",
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39927": {
+  "assignees": [
+   "karlstolley"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39929": {
+  "assignees": [
+   "sahil839"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39935": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "changes requested",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39937": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XS",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39943": {
+  "assignees": [
+   "amanagr"
+  ],
+  "closed_at": "2026-09-05T19:00:11Z",
+  "closed_by": "amanagr",
+  "labels": [
+   "size: XL",
+   "integration review"
+  ],
+  "merged_at": "2026-09-05T19:00:11Z",
+  "state": "closed"
+ },
+ "39945": {
+  "assignees": [],
+  "closed_at": "2026-09-07T22:44:43Z",
+  "closed_by": "Niloth-p",
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "39987": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: M",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39995": {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "area: integrations",
+   "size: M",
+   "integration review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "39998": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40000": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: M",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40006": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40010": {
+  "assignees": [],
+  "closed_at": "2026-09-10T14:37:45Z",
+  "closed_by": "PieterCK",
+  "labels": [
+   "size: XL"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40012": {
+  "assignees": [
+   "laurynmm"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: L",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40013": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40021": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: L",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40030": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: M",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40031": {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "area: channel settings",
+   "needs more work",
+   "size: S",
+   "needs discussion",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40032": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40040": {
+  "assignees": [],
+  "closed_at": "2026-10-19T08:11:02Z",
+  "closed_by": "sahil839",
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40041": {
+  "assignees": [],
+  "closed_at": "2026-10-15T03:23:54Z",
+  "closed_by": "sahil839",
+  "labels": [
+   "size: S"
+  ],
+  "merged_at": "2026-10-15T03:23:54Z",
+  "state": "closed"
+ },
+ "40042": {
+  "assignees": [],
+  "closed_at": "2026-10-15T12:06:12Z",
+  "closed_by": "sahil839",
+  "labels": [
+   "size: S"
+  ],
+  "merged_at": "2026-10-15T12:06:12Z",
+  "state": "closed"
+ },
+ "40048": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40052": {
+  "assignees": [],
+  "closed_at": "2026-10-06T10:13:35Z",
+  "closed_by": "laurynmm",
+  "labels": [
+   "size: XS",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40065": {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "closed_at": "2026-09-14T10:02:58Z",
+  "closed_by": "laurynmm",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40085": {
+  "assignees": [
+   "evykassirer"
+  ],
+  "closed_at": "2026-10-21T05:28:51Z",
+  "closed_by": "evykassirer",
+  "labels": [
+   "size: S",
+   "integration review"
+  ],
+  "merged_at": "2026-10-21T05:28:51Z",
+  "state": "closed"
+ },
+ "40095": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "has conflicts",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40096": {
+  "assignees": [
+   "0xthedance"
+  ],
+  "closed_at": "2026-10-30T12:33:47Z",
+  "closed_by": "laurynmm",
+  "labels": [
+   "size: M",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40097": {
+  "assignees": [
+   "0xthedance"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40105": {
+  "assignees": [
+   "apoorvapendse"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40124": {
+  "assignees": [
+   "apoorvapendse"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40148": {
+  "assignees": [
+   "sahil839"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40168": {
+  "assignees": [],
+  "closed_at": "2026-10-06T10:14:53Z",
+  "closed_by": "laurynmm",
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40171": {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40174": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40176": {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: M",
+   "maintainer review",
+   "area: documentation (integrations)"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40177": {
+  "assignees": [
+   "prakhar1144"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40186": {
+  "assignees": [],
+  "closed_at": "2026-10-24T14:10:26Z",
+  "closed_by": "Ar1es-XD",
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40191": {
+  "assignees": [
+   "laurynmm"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40201": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: L"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40205": {
+  "assignees": [
+   "andersk"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "maintainer review",
+   "priority: low"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40210": {
+  "assignees": [],
+  "closed_at": "2026-11-02T13:21:13Z",
+  "closed_by": "nishant-devv",
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40211": {
+  "assignees": [],
+  "closed_at": "2026-10-05T13:44:41Z",
+  "closed_by": "laurynmm",
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "closed"
+ },
+ "40221": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: M",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40222": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40232": {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: L",
+   "maintainer review",
+   "priority: low"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40234": {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: L",
+   "maintainer review",
+   "area: integrations (incoming webhooks)",
+   "priority: low"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40237": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: XL",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40240": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: S",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ },
+ "40257": {
+  "assignees": [],
+  "closed_at": null,
+  "closed_by": null,
+  "labels": [
+   "size: L",
+   "not ready"
+  ],
+  "merged_at": null,
+  "state": "open"
+ }
+}

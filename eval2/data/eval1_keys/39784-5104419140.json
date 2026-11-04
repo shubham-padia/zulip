@@ -1,0 +1,6 @@
+{
+ "case": "39784-5104419140",
+ "answer": "no",
+ "text": "no\nThe comment is a technical writeup of the bug and planned fix that opens with \"Working on this,\" and it never says the requested documentation changes are done or asks for another review.",
+ "cost_usd": 0.026539999999999998
+}

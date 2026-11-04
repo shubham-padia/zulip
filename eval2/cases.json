@@ -1,0 +1,942 @@
+[
+ {
+  "id": "39459-4663361149",
+  "pr": 39459,
+  "author": "xchel-rico",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-06-04T12:05:51Z",
+   "body": "Thanks! How does this PR relate to the other open PRs for this issue?\r\nTo prepare this PR for review, please work through the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html).\r\n"
+  },
+  "author_comment": {
+   "created_at": "2026-06-09T19:36:43Z",
+   "body": "Hey @laurynmm, I think it's ready for review now. I've updated the PR description to address your question about the relationship with #38251."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39481-4711243565",
+  "pr": 39481,
+  "author": "TasfinMahmud",
+  "previous_maintainer_comment": {
+   "author": "ManishCodes0618",
+   "created_at": "2026-06-09T17:32:24Z",
+   "body": "Hey, is the issue still open? I am interested to fix this. Please let me know whether it's done or not.\r\n"
+  },
+  "author_comment": {
+   "created_at": "2026-06-15T18:47:14Z",
+   "body": "Ready for review!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39522-4714378606",
+  "pr": 39522,
+  "author": "Ayush-0217",
+  "previous_maintainer_comment": {
+   "author": "Yogesh-Shivaji365",
+   "created_at": "2026-06-15T11:13:42Z",
+   "body": "That's why Zulip said focus on one PR at once."
+  },
+  "author_comment": {
+   "created_at": "2026-06-16T02:48:49Z",
+   "body": "@Yogesh-Shivaji365  All set. I made all the necessary changes. Made commit history clear and minimal. Addressing the solution with a short description as mentioned in the Zulip commit discipline. If you need any further changes, let me know."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39540-4708052713",
+  "pr": 39540,
+  "author": "Ayush-0217",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-06-15T10:15:14Z",
+   "body": "Please clean up your commit history and post again to request a review. See [here](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) for guidelines."
+  },
+  "author_comment": {
+   "created_at": "2026-06-15T12:45:13Z",
+   "body": "@Asteriskkkk PR is ready. Can you review it and suggest changes if needed"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39590-5004317162",
+  "pr": 39590,
+  "author": "Shinu-Cherian",
+  "previous_maintainer_comment": {
+   "author": "apoorvapendse",
+   "created_at": "2026-06-22T17:51:13Z",
+   "body": "Hello @Shinu-Cherian!\r\nWe welcome suggestions for ways to make Zulip better based on your experience using the product. Please follow the guides on how to [report bugs](https://zulip.readthedocs.io/en/latest/contributing/reporting-bugs.html) or [suggest features](https://zulip.readthedocs.io/en/latest/contributing/suggesting-features.html), before submitting a PR to discuss things through.\r\n\r\nthanks"
+  },
+  "author_comment": {
+   "created_at": "2026-07-17T14:30:25Z",
+   "body": "Hi @apoorvapendse!\r\n\r\nI have rebased the branch on the latest main to resolve the random Read the Docs CI timeout issue that occurred earlier. All CI checks are now passing successfully!\r\n\r\nJust as a quick recap, this PR strictly addresses the UI layout bugs mentioned in #37647 by:\r\n\r\nBalancing the left padding for the folder rows.\r\nStandardizing the row height for the \"None\" option to match the others (34px).\r\nUtilizing a safe fit-content approach (with a max-width fallback) so the channel-folder and saved-snippets dropdowns cinch tightly to their content without overflowing on smaller screens.\r\nCould you please take a look when you have a moment? Let me know if I should drop the not ready label. I'm happy to make any further adjustments if needed. Thank you!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39622-5419621157",
+  "pr": 39622,
+  "author": "GeniusNirmit",
+  "previous_maintainer_comment": {
+   "author": "evykassirer",
+   "created_at": "2026-08-22T21:03:29Z",
+   "body": "My guess from a quick look is that this is not yet ready for maintainer review. I'd like to wait until Yogesh has finished the initial pas, as Lauryn recommended [earlier](https://github.com/zulip/zulip/pull/39622#issuecomment-5204248687)."
+  },
+  "author_comment": {
+   "created_at": "2026-08-26T02:09:52Z",
+   "body": "PR is ready for review!"
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "39691-5277811900",
+  "pr": 39691,
+  "author": "0xthedance",
+  "previous_maintainer_comment": {
+   "author": "karlstolley",
+   "created_at": "2026-08-12T21:04:50Z",
+   "body": "Removing the maintainer review label, as it does not seem clear that @prakhar1144's requested changes have been addressed."
+  },
+  "author_comment": {
+   "created_at": "2026-08-13T08:16:32Z",
+   "body": "Thanks .I did address the requested changes and reached out to @prakhar1144  directly about it, but forgot to leave a comment confirming it here. Sorry for the confusion! @prakhar1144 Did you have a chance to review the changes?\r\n\r\nThis was the message:\r\n\r\n> Thank you! I've addressed your comment. However I keep the reply-button label helpers so a future caller can also read stream, topic_display_name, and user_ids from the returned RecipientLabel. I am also working on Galene video provider integration ([#39792](https://github.com/zulip/zulip/pull/39792)) and the original author of the PR wanted to use them to label the group and the subgroup of the calls. If you have a chance, could you please do another review?\r\n"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39694-4914523135",
+  "pr": 39694,
+  "author": "yashhh911",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-08T11:05:57Z",
+   "body": "@yashhh911 - Does the alignment of the icon and text in the after screenshots you've posted look correct to you?"
+  },
+  "author_comment": {
+   "created_at": "2026-07-08T11:56:51Z",
+   "body": "Nudged the icon 1px lower with top: 1px for pixel-perfect alignment, updated screenshots above show the final result."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39722-4961693879",
+  "pr": 39722,
+  "author": "Amormio25",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-13T14:29:39Z",
+   "body": "In addition to the feedback from @whilstsomebody, you need to update your screenshots to follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed. The current screenshots include a lot of visual information that's not changed in the before/after screenshots."
+  },
+  "author_comment": {
+   "created_at": "2026-07-13T19:17:34Z",
+   "body": "Thank you @whilstsomebody and @laurynmm for the additional feedback! I've made the requested changes. "
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39728-5012922258",
+  "pr": 39728,
+  "author": "adityas27",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-14T17:47:17Z",
+   "body": "Thanks! Please go through our [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) to learn how to present your proposed changes to Zulip, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-07-18T21:05:27Z",
+   "body": "@laurynmm I hope now PR has everything as you expected i went through docs page and compared my PR against it using LLM it seemed fine there. If i am still missing out on something please do tell."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "39728-5051202036",
+  "pr": 39728,
+  "author": "adityas27",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-22T09:31:30Z",
+   "body": "Yes, that is the checklist on the template.\r\n\r\nNow that the images can be opened in new tabs and compared, I can see that they do not follow our guidelines for precise before/after screenshots."
+  },
+  "author_comment": {
+   "created_at": "2026-07-22T20:35:06Z",
+   "body": "@laurynmm  I've updated the commit history to follow the commit discipline guidelines by squashing the follow-up/fixup commits into coherent logical commits and rewriting the commit messages to better explain the reasoning behind the changes. I also completed a thorough self-review for clarity and maintainability and added a regression test to verify the fix.\r\n\r\nRegarding the screenshots, this change doesn't introduce a visible UI difference in the conventional sense (no CSS/JS or layout changes). The bug fixes how whitespace is preserved internally\u2014specifically, tab characters are now preserved instead of being converted to spaces.\r\n\r\nBecause of that, it's difficult to capture a meaningful before/after screenshot. If it would be more helpful, I'm happy to provide a short screen recording or another form of demonstration. If there's a preferred way you'd like this type of change documented in the PR, please let me know and I'll update it accordingly.\r\n"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "39731-5006493904",
+  "pr": 39731,
+  "author": "tushardev-365",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-13T15:15:26Z",
+   "body": "It would be good to know where these could exist in the web app since the first point in the issue may apply here:\r\n> Identifying any dead or unreachable selectors in dark_theme.css and removing them.\r\n\r\n"
+  },
+  "author_comment": {
+   "created_at": "2026-07-17T18:48:38Z",
+   "body": "@laurynmm gentle bump on this one. Pushed the two-commit version back on the 13th (remove the two dead selectors, `.alert-box .stacktrace` and `.alert.alert-danger`, then merge the remaining rules), with the verification redone on the real `#home-error` and `generic_embed_error` elements instead of the fixture. Whenever you have a moment for another look, happy to adjust anything else you spot.\n"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39784-5042031450",
+  "pr": 39784,
+  "author": "PrinceXDev",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-21T17:03:37Z",
+   "body": "Thanks! How does this PR relate to the other open PRs for this issue?\r\nTo prepare this PR for review, please work through the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html).\r\n\r\nAlso, please follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-07-22T05:00:23Z",
+   "body": "> Thanks! How does this PR relate to the other open PRs for this issue? To prepare this PR for review, please work through the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html).\r\n> \r\n> Also, please follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed.\r\n\r\nThanks for the review @laurynmm. I've updated the PR based on your feedback.\r\n\r\nAdded a clear explanation of how this PR relates to the other open PRs for this issue.\r\nUpdated the PR description with precise before/after screenshots (and the fix demonstration video) following the review guidelines.\r\n\r\nPlease let me know if there's anything else I should improve before the review. Thank you!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "39784-5100999626",
+  "pr": 39784,
+  "author": "PrinceXDev",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-22T09:28:38Z",
+   "body": "Please review the documentation more closely. I don't see any discussion of the completion candidate PR for the issue. And the screenshots/screencasts are not presented in a way that allows for clear review/comparison."
+  },
+  "author_comment": {
+   "created_at": "2026-07-28T07:01:43Z",
+   "body": "> Please review the documentation more closely. I don't see any discussion of the completion candidate PR for the issue. And the screenshots/screencasts are not presented in a way that allows for clear review/comparison.\r\n\r\nThanks for the pointers, @laurynmm \u2014 you were right that I hadn't actually done\r\nthis. I've reworked the PR:\r\n\r\nReviewing #33086 also caught a real gap in my version: it handled\r\n`[label]( #**channel>topic**)` (whitespace after `](`) and mine didn't. Fixed,\r\nwith a test.\r\n\r\nI've also flagged in the description an open question from #33086 that I've\r\ntreated as out of scope ([regex alignment with\r\n`composebox_typeahead.ts`](https://github.com/zulip/zulip/pull/33086#discussion_r1924666567)),\r\nand a pre-existing limitation with image syntax that neither PR addresses."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "39785-5037857009",
+  "pr": 39785,
+  "author": "cms19859230182-lang",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-21T18:31:22Z",
+   "body": "I'd review the section on providing screenshots for changes as your pull request title and main comment indicate that there has been some visual change."
+  },
+  "author_comment": {
+   "created_at": "2026-07-21T18:52:59Z",
+   "body": "@laurynmm Here is the visual comparison showing the CSS variable change in dark mode:\n\n![Arrow color fix - before and after in dark mode](https://raw.githubusercontent.com/cms19859230182-lang/zulip/pr-assets/popover-arrow-fix-demo.png)\n\n**Before (left):** Arrow uses `hsl(211.58deg 33.33% 11.18%)` \u2014 a bluish dark gray that visibly mismatches the popover header/footer background.\n\n**After (right):** Arrow uses `hsl(0deg 0% 0% / 20%)` \u2014 identical to `--color-background-emoji-picker-popover`, making the arrow seamlessly blend with the emoji picker popover background.\n\nThe change is purely a CSS variable color value correction. The existing CSS rules already reference `--color-border-emoji-picker-tippy-arrow` for the arrow color \u2014 this PR just fixes the variable's dark mode value to match the background it sits against."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39819-5108435113",
+  "pr": 39819,
+  "author": "FAzabmpc",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-27T11:34:46Z",
+   "body": "@FAzabmpc and @apham1142 thanks for working on this issue!\r\n\r\nIt's hard for me to currently understand what's being shown in the screenshots above. Please follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-07-28T18:54:57Z",
+   "body": "@laurynmm We updated the PR and it's ready for review now."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39820-5103626520",
+  "pr": 39820,
+  "author": "Rajkaran-122",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-28T11:08:35Z",
+   "body": "Please clean up your commit history and post again to request a review. See [here](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) for guidelines.\r\nYou will also need to complete the self-review checklist."
+  },
+  "author_comment": {
+   "created_at": "2026-07-28T11:37:15Z",
+   "body": "@laurynmm The commit history has been cleaned up and rebased: this PR is now one coherent commit on current `main`, and the self-review checklist is complete.\n\nI also corrected the parser to preserve multi-line text after a leading bot mention, with coverage for that case. The targeted backend test needs a Unix Zulip dev environment and could not run in this Windows checkout; CI has been restarted by the force-push. Please review once the checks are green. Thank you."
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "39822-5091673928",
+  "pr": 39822,
+  "author": "LuShadowX",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-27T11:27:52Z",
+   "body": "@LuShadowX - Thanks for working on this API documentation update! Since the API documentation is user-facing, you'll need to include screenshots of the updates to the documentation, with a link to the current documentation for comparison.\r\n\r\nAlso, I don't see a self-review checklist on this PR -- did it somehow get deleted? If would be great if you could get that filled out. Thanks!"
+  },
+  "author_comment": {
+   "created_at": "2026-07-27T13:06:45Z",
+   "body": "Thanks for looking at this! The checklist wasn't deleted \u2014 I wrote my own headings instead of filling in the template, which was a mistake. It's back in the description now, along with before/after images and a link to the current page (<https://zulip.com/api/create-message-reminder>), where both `message_id` and `scheduled_delivery_timestamp` still read OPTIONAL.\n\nOne caveat on the images: I don't have the full development environment running, so instead of screenshotting the docs server I rendered the `POST /reminders` parameter block straight from `zulip.yaml` with `zerver/lib/markdown/api_arguments_table_generator.py` and styled it with `web/styles/portico/legacy_portico.css`. The badges are the real generator output, but the surrounding page chrome isn't there. Happy to redo them on a real dev server if you'd rather see that.\n"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39829-5113437343",
+  "pr": 39829,
+  "author": "ShreyasN707",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-27T16:49:07Z",
+   "body": "Take another look at [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-07-29T05:00:18Z",
+   "body": "@laurynmm I have updated the screenshots to be precise. Any other changes to be done?"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39836-5142302711",
+  "pr": 39836,
+  "author": "JoeJoeflyn",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-07-28T11:16:37Z",
+   "body": "Please follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-07-31T11:20:24Z",
+   "body": "@laurynmm Updated the screenshots, ready for another look when you get a chance"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39862-5398202815",
+  "pr": 39862,
+  "author": "paul-raja-dev",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-07T10:18:33Z",
+   "body": "[#design > Text-only website previews (no image) #39831](https://chat.zulip.org/#narrow/channel/101-design/topic/Text-only.20website.20previews.20.28no.20image.29.20.2339831/with/2505836)"
+  },
+  "author_comment": {
+   "created_at": "2026-08-24T16:28:00Z",
+   "body": "The visual direction and screenshots have been reviewed and approved in the CZO thread: [#design > Text-only website previews (no image) #39831](https://chat.zulip.org/#narrow/channel/101-design/topic/Text-only.20website.20previews.20.28no.20image.29.20.2339831/with/2505836)"
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "39863-5344084962",
+  "pr": 39863,
+  "author": "spacesyntaxwho",
+  "previous_maintainer_comment": {
+   "author": "karlstolley",
+   "created_at": "2026-08-11T19:48:59Z",
+   "body": "Your commit message still does not match Zulip style."
+  },
+  "author_comment": {
+   "created_at": "2026-08-19T15:10:48Z",
+   "body": "I have updated the commit message according to the Zulip's commit message guide lines please review it."
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "39865-5194201765",
+  "pr": 39865,
+  "author": "abhay5-6",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-05T14:29:48Z",
+   "body": "Please follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-08-05T16:04:11Z",
+   "body": "Hi ! before/after images of UI changes are done . i want to apologize it was my mistake for skimming  through this part of guidelines."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39868-5175066393",
+  "pr": 39868,
+  "author": "somaia02",
+  "previous_maintainer_comment": null,
+  "author_comment": {
+   "created_at": "2026-08-04T05:39:19Z",
+   "body": "@laurynmm I fixed the failing tests"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39883-5198039741",
+  "pr": 39883,
+  "author": "Ar1es-XD",
+  "previous_maintainer_comment": {
+   "author": "karlstolley",
+   "created_at": "2026-08-05T21:10:46Z",
+   "body": "Thanks! Please go through our [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) to learn how to present your proposed changes to Zulip, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-08-05T22:18:26Z",
+   "body": "Thanks @karlstolley! Tests and linting are all passing on the branch now. Added test cases in `zerver/tests/fixtures/markdown_test_cases.json` to cover nested lists and fenced code blocks with tabs."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39894-5278594007",
+  "pr": 39894,
+  "author": "hk2166",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-07T12:51:12Z",
+   "body": "Please follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots to demonstrate that there are no visual changes due to these changes in the web app, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-08-13T09:36:01Z",
+   "body": "@laurynmm Can you review the PR now i have added the before and after screenshots"
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "39927-5276328596",
+  "pr": 39927,
+  "author": "sonua11y",
+  "previous_maintainer_comment": {
+   "author": "karlstolley",
+   "created_at": "2026-08-12T20:53:15Z",
+   "body": "This needs to be updated to reflect Zulip commit style; also the \"After\" screenshot already shows a regression in the space between the banner and the recipient row, so this is not acceptable self-review."
+  },
+  "author_comment": {
+   "created_at": "2026-08-13T05:25:59Z",
+   "body": "Thanks for the feedback! I\u2019ve updated the commit message to follow Zulip\u2019s commit style and fixed the spacing regression between the banner and recipient row. I\u2019ve also updated the After screenshot to reflect the fix."
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "39929-5275974270",
+  "pr": 39929,
+  "author": "Baluduvamsi2006",
+  "previous_maintainer_comment": {
+   "author": "karlstolley",
+   "created_at": "2026-08-12T20:56:17Z",
+   "body": "You need to clean up your commit history and match Zulip style before this can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-08-13T04:29:21Z",
+   "body": "cleaned up the history into one commit with a proper summary line, let me know if anything else needs adjusting\r\n"
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "39929-5293011728",
+  "pr": 39929,
+  "author": "Baluduvamsi2006",
+  "previous_maintainer_comment": {
+   "author": "karlstolley",
+   "created_at": "2026-08-12T20:56:17Z",
+   "body": "You need to clean up your commit history and match Zulip style before this can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-08-14T11:56:56Z",
+   "body": "@karlstolley  Just wanted to flag \u2014 history's cleaned up into one commit now and all 26 checks are passing. Let me know if anything else needs adjusting before this can move to review!"
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "39935-5355372259",
+  "pr": 39935,
+  "author": "OakPoem",
+  "previous_maintainer_comment": {
+   "author": "karlstolley",
+   "created_at": "2026-08-14T21:29:44Z",
+   "body": "Thanks! Please go through our [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) to learn how to present your proposed changes to Zulip, so that your work can be reviewed. Your PR description is disorganized, and is missing critical pieces of information.\r\n\r\nThere has also been active discussion about this feature on CZO, but I'm uncertain whether you've participated in any of that."
+  },
+  "author_comment": {
+   "created_at": "2026-08-20T11:41:47Z",
+   "body": "daniel k verified that this PR was an extension of #24200 and it doesn't conflict with the design team's decisions, so I'll unblock this(is that okay?)\r\n\r\n@zulipbot add label \"maintainer review\""
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39945-5415679206",
+  "pr": 39945,
+  "author": "HeetRanpura",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-24T14:57:36Z",
+   "body": "Please don't remove labels that maintainers have assigned to your pull requests. It won't help your work get reviewed faster.\r\n\r\nThere are a number of pull requests already open for this issue, so you need to work through the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html) in order for this to be considered ready for review.\r\n\r\nAlso, the self-review checklist seems to be modified from our template. Please make sure to fix that to use what we've provided in the PR template."
+  },
+  "author_comment": {
+   "created_at": "2026-08-25T19:33:59Z",
+   "body": "Hi @laurynmm, thanks for the feedback, and sorry for removing the \"not\r\nready\" label earlier. It is definitely a call to be made by maintainers and won't happen again.\r\n\r\nI've also updated the PR description: added a \"Relationship to other work\"\r\nsection explaining how this implementation relates to the other open PRs\r\non #19589, and fixed the self-review checklist to match the current\r\ntemplate exactly.\r\n\r\nLet me know if anything else is needed!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "39987-5365589747",
+  "pr": 39987,
+  "author": "asyntai",
+  "previous_maintainer_comment": {
+   "author": "apoorvapendse",
+   "created_at": "2026-08-20T18:29:15Z",
+   "body": "Thanks for the PR, @asyntai!\r\nPlease fix the failing tests and post a comment requesting a review.\r\n\r\nAlso read https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html"
+  },
+  "author_comment": {
+   "created_at": "2026-08-21T05:29:09Z",
+   "body": "Thanks! Fixed, the failure was the missing generated bot avatar, now committed. Also squashed everything into one commit. CI is green, so this is ready for review."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "39995-5728364177",
+  "pr": 39995,
+  "author": "tmvalijib24",
+  "previous_maintainer_comment": {
+   "author": "Niloth-p",
+   "created_at": "2026-09-07T22:13:10Z",
+   "body": "Thanks for the updates! But the previous review has not been adequately addressed.\r\n\r\n> Please refer to the existing integrations that use emojis and the PRs that added them to see how this PR should be updated.\r\n\r\nWhich ones did you refer to?\r\n\r\n> ok I'll remove the emoji mapping part, then what things should I include in the doc.md file?\r\n\r\nWhat did the above PRs do about the doc.md?\r\n\r\n> My approach is adding .json file in zerver/webhooks/zabbix/fixtures/ for every emoji and then adding individual test function for each emoji in the zerver/webhooks/zabbix/tests.py file.\r\nIs this approach correct?\r\n\r\nWhat did the above PRs do?\r\n\r\nPlease make sure you have read the [Contributing Guide](https://zulip.readthedocs.io/en/latest/contributing/index.html), [AI Use Guidelines](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines) and the [Incoming Webhooks Guide](https://zulip.readthedocs.io/en/latest/webhooks/index.html).\r\nWhat does the documentation say about adding LLM-generated fixtures?\r\n\r\nWe are not looking for quick turnaround times after reviews, but PRs that require less review rounds due to the contributor having read through the documentation.\r\n\r\n\r\n"
+  },
+  "author_comment": {
+   "created_at": "2026-09-18T09:55:51Z",
+   "body": "@Niloth-p Tagging you for review"
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "40012-5570902524",
+  "pr": 40012,
+  "author": "bhuvan-somisetty",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-25T11:21:06Z",
+   "body": "There's an `/emails` page in dev where you should be able to get screenshots of the generated emails, both HTML and text versions.\r\n\r\nAlso, please make sure to include our self-review checklist in your main pull request comment, which seems to be missing from yours."
+  },
+  "author_comment": {
+   "created_at": "2026-09-07T12:51:09Z",
+   "body": "Thanks for pointing me to the /emails page updated the PR description with real screenshots from there (both HTML and text versions, password-enabled and SSO-only) instead of the markdown reconstruction, and added the self-review checklist."
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "40013-5589724033",
+  "pr": 40013,
+  "author": "Amormio25",
+  "previous_maintainer_comment": null,
+  "author_comment": {
+   "created_at": "2026-09-08T18:12:26Z",
+   "body": "Hi @laurynmm, PR ready for review!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40021-5448685369",
+  "pr": 40021,
+  "author": "Srijansarkar17",
+  "previous_maintainer_comment": {
+   "author": "emilysutherlin",
+   "created_at": "2026-08-25T20:07:09Z",
+   "body": "This does not appear to be a viable solution to issue #38594. The 'before' screenshot doesn't represent the failure state, and the 'after' image shows a name being truncated for no apparent reason. If you would like a review after addressing this feedback, please comment letting us know!\r\n\r\nAlso note, when submitting a PR for an issue that already has other open PRs, it will be necessary to explain how your work relates to the existing work, and why your approach is worth considering instead: ([reference](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html#present-your-pull-request) in our contributor guide)."
+  },
+  "author_comment": {
+   "created_at": "2026-08-28T05:07:48Z",
+   "body": "@alya i have made the required changes for the issue #38594, please check and let me know!"
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "40030-5442478190",
+  "pr": 40030,
+  "author": "Prajvalkumar24",
+  "previous_maintainer_comment": null,
+  "author_comment": {
+   "created_at": "2026-08-27T17:00:10Z",
+   "body": "@zulipbot remove \"not ready\""
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40032-5484458133",
+  "pr": 40032,
+  "author": "adityas27",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-28T15:25:05Z",
+   "body": "Please read the documentation I linked to carefully and take your time. Your commit message still does not follow our guidelines. Reading and following our written guidelines to the very best of your ability is the only way to become a successful Zulip contributor."
+  },
+  "author_comment": {
+   "created_at": "2026-08-31T20:57:14Z",
+   "body": "@laurynmm is it okay now?"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40040-6192384462",
+  "pr": 40040,
+  "author": "Jaimin2687",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-31T14:10:34Z",
+   "body": "Please indicate the GitHub issue or the discussion in our [development community](https://zulip.com/development-community/) that this pull request is addressing.\r\n\r\nIf there isn't one of the above, please start a discussion in [appropriate channel](https://chat.zulip.org) of our development community, and link to it in the main pull request comment. Before doing so, please review the [guidelines around using AI for communication](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#using-ai-for-communication).\r\n\r\nAlso, please clean up your commit history and post again to request a review. See [here](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) for guidelines."
+  },
+  "author_comment": {
+   "created_at": "2026-10-15T12:45:47Z",
+   "body": "@sahil839 Cleaned up the commit message to focus on the why. Would appreciate a review when you get a chance!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "40041-5479840283",
+  "pr": 40041,
+  "author": "Jaimin2687",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-31T14:10:47Z",
+   "body": "Please indicate the GitHub issue or the discussion in our [development community](https://zulip.com/development-community/) that this pull request is addressing.\r\n\r\nIf there isn't one of the above, please start a discussion in [appropriate channel](https://chat.zulip.org) of our development community, and link to it in the main pull request comment. Before doing so, please review the [guidelines around using AI for communication](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#using-ai-for-communication)."
+  },
+  "author_comment": {
+   "created_at": "2026-08-31T14:31:09Z",
+   "body": "Created a discussion thread on CZO here: https://chat.zulip.org/#narrow/channel/3-backend/topic/optimizing.20.2Esave.28.29.20update_fields.20in.20actions/with/2517379"
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "40042-6183102956",
+  "pr": 40042,
+  "author": "Jaimin2687",
+  "previous_maintainer_comment": {
+   "author": "sahil839",
+   "created_at": "2026-10-14T11:35:56Z",
+   "body": "The commit message still does not follow the [guidelines](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html#commit-messages)."
+  },
+  "author_comment": {
+   "created_at": "2026-10-15T02:35:21Z",
+   "body": "Thanks for the review @sahil839! I've rewritten all the commit messages to follow the guidelines \u2014 each one now explains what was happening previously and why the change improves it, without repeating what's visible in the diff."
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "40042-6183881101",
+  "pr": 40042,
+  "author": "Jaimin2687",
+  "previous_maintainer_comment": {
+   "author": "sahil839",
+   "created_at": "2026-10-14T11:35:56Z",
+   "body": "The commit message still does not follow the [guidelines](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html#commit-messages)."
+  },
+  "author_comment": {
+   "created_at": "2026-10-15T03:42:10Z",
+   "body": "Good point, removed the guard. Django no-ops on an empty list so it's not needed. Force-pushed with the fix."
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "40048-5481098127",
+  "pr": 40048,
+  "author": "Prajvalkumar24",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-08-31T14:11:52Z",
+   "body": "[API changes](https://zulip.readthedocs.io/en/latest/processes/api-design.html) have user-facing documentation changes, which require screenshots, and often require a discussion in the [api design](https://chat.zulip.org/#topics/channel/378-api-design) channel of our [development community](https://zulip.com/development-community/).\r\n\r\nPlease review the [guidelines around using AI for communication](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#using-ai-for-communication) before posting in the community."
+  },
+  "author_comment": {
+   "created_at": "2026-08-31T16:12:27Z",
+   "body": "@laurynmm i've updated the PR description with the rendered API documentation screenshot and started a discussion topic in '#api design' on CZO.  Please let me know if anything looks off or needs changes or modification."
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "40065-5536187002",
+  "pr": 40065,
+  "author": "Adarsh-Me",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-03T12:04:15Z",
+   "body": "Please clean up your commit history and post again to request a review. See [here](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) for guidelines.\r\n\r\nAlso, you'll need to follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed. Currently, comparing the provided screenshots for the stated changes is impossible."
+  },
+  "author_comment": {
+   "created_at": "2026-09-04T05:34:44Z",
+   "body": "Review feedback addressed, ready for review again:\n\n- **Commit history cleaned up:** the PR is now a single commit (`b2d66df`) on top of current upstream/main; the stray second commit was squashed in with no content change.\n- **Precise before/after screenshots retaken:** both shots captured back-to-back in the same browser tab via hot-reload style swapping (no reload between shots), same 1400x900 viewport, same narrow, identical scroll state. I verified programmatically that the pixel diff of the full-viewport pair is confined to the sandbox topic rows \u2014 everything above them is bit-identical \u2014 and the tight 340x230 crops are cut from the same region of each full shot.\n\n@laurynmm requesting review again \u2014 thanks!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "40065-5545794788",
+  "pr": 40065,
+  "author": "Adarsh-Me",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-04T09:51:55Z",
+   "body": "It would likely be good to include some screenshot before/after examples of longer topic names with and without emoji. Also, did you test with different font sizes set in the app?\r\n\r\n"
+  },
+  "author_comment": {
+   "created_at": "2026-09-04T19:59:05Z",
+   "body": "Thanks for the follow-up! Both are now covered in the PR body:\n\n**Longer topic names with and without emoji:** added a long plain-text topic (wraps to two lines, exercising the line-clamp), a long mixed-emoji topic, and an emoji-heavy topic to the same `sandbox` channel. Captured with the same method \u2014 back-to-back in one tab via hot-reload, identical scroll state \u2014 and verified the pixel diff of the full-viewport pair is confined to the topic rows (23,942 changed pixels; zero above or outside the sidebar column). No clipping or layout breakage in the two-line clamped rows, with or without emoji.\n\n**Different font sizes:** repeated the long-topic pair with the app font size set to 20px (`web_font_size_px`, default 16). The fix scales with the setting as designed \u2014 computed spacing is 5.14px before / 7.14px after at 20px, i.e. token + 2px at both sizes \u2014 and the pair is verified the same way.\n\n@laurynmm requesting review again \u2014 thanks!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "40085-5574954238",
+  "pr": 40085,
+  "author": "pinankshah8-Aa",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-07T19:05:38Z",
+   "body": "I cannot access your screenshots in order to compare them in the browser. Also, you mention manually testing many cases, but didn't provide screenshots to document that testing?\r\n\r\nHere's a quick link to [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots."
+  },
+  "author_comment": {
+   "created_at": "2026-09-07T19:36:11Z",
+   "body": "Thanks for flagging this, @laurynmm. I replaced the inaccessible attachments with publicly accessible screenshot URLs and updated the PR description to document the two distinct layout states affected by this CSS change:\n\n- mention/typeahead rows with a leading avatar or icon (including the highlighted row and mixed result types shown in the capture);\n- slash-command rows without a leading image/emoji.\n\nBoth Before/After pairs use identical 1462\u00d7664 capture dimensions and matching UI state. I kept the additional font-size checks as manual spot checks rather than duplicating the same screenshots at multiple font sizes. No code changes were needed."
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "40096-6055469654",
+  "pr": 40096,
+  "author": "Alexis211",
+  "previous_maintainer_comment": null,
+  "author_comment": {
+   "created_at": "2026-10-08T07:59:57Z",
+   "body": "Ping @laurynmm, could you or someone review this?"
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "40097-6055464855",
+  "pr": 40097,
+  "author": "Alexis211",
+  "previous_maintainer_comment": null,
+  "author_comment": {
+   "created_at": "2026-10-08T07:59:39Z",
+   "body": "Ping @laurynmm, could you or someone review this?"
+  },
+  "what_happened_next": "triager removed not ready",
+  "group": "removed"
+ },
+ {
+  "id": "40148-5711082634",
+  "pr": 40148,
+  "author": "YEFF190",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-16T11:32:48Z",
+   "body": "Thanks! Please go through our [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) to learn how to present your proposed changes to Zulip, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-09-17T08:05:09Z",
+   "body": "@laurynmm This is ready for another look, thanks for your patience!\r\n\r\nSince the last review, I've:\r\n- Restructured the single commit into three focused ones: the\r\n  drag-and-drop bug fix, auto-fill, and multi-file upload\r\n- Added screenshots/videos for all the UI changes\r\n- Added test coverage for the auto-fill behavior (previously untested)\r\n- Confirmed all CI checks pass\r\n\r\nLet me know if there's anything else I should adjust."
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "40168-5775859018",
+  "pr": 40168,
+  "author": "abhijeetnardele24-hash",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-21T13:03:43Z",
+   "body": "Thanks! Please go through our [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) to learn how to present your proposed changes to Zulip, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-09-22T11:45:20Z",
+   "body": " @laurynmm I have updated the PR description and added screenshots above showing the fix. \r\n\r\nThe mobile view (375px) now correctly constrains the email input and the Change button within the viewport without any overflow. Tested locally on the Zulip dev server.\r\n"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "40171-5795222359",
+  "pr": 40171,
+  "author": "tmvalijib24",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-21T13:03:19Z",
+   "body": "It would be good to have screenshots that confirm the behavior doesn't change for channels configured to require topics.\r\n\r\nAlso, make sure to follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-09-23T12:55:08Z",
+   "body": "I have updated the before/after screenshots, I hv tried to make them according to the provided guidelines."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40177-5954127181",
+  "pr": 40177,
+  "author": "Soul-Ninja",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-21T13:07:05Z",
+   "body": "It looks like this is a continuation of an open pull request for this issue, correct? To prepare this PR for review, please work through the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html)."
+  },
+  "author_comment": {
+   "created_at": "2026-10-02T14:01:49Z",
+   "body": "Hi @laurynmm, just following up gently on this since it's been a little over a week. \r\n\r\nThe PR description has been updated with the prior work details and credits, and all CI checks are green. Whenever you have a moment, could you please take a look and remove the `not ready` label so this can enter the review queue? Thank you!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40191-5798802930",
+  "pr": 40191,
+  "author": "Aditya-XR",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-23T14:51:00Z",
+   "body": "Could you please update your commit message to match the [commit style guidelines](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages)?\r\n\r\nThe integration documentation change should probably be done in a separate pull request. And make sure you include a screenshot of the fixed documentation."
+  },
+  "author_comment": {
+   "created_at": "2026-09-23T16:41:41Z",
+   "body": "@laurynmm Thanks for the review! I've made the following changes:\n\n- Rewrote both commit messages to follow the commit message\n  guidelines: wrapped the body text, explained the reason for the\n  rename and the backward-compatibility fallback, and dropped the\n  repeated boilerplate.\n- Removed the Home Assistant documentation change from this PR and\n  opened it separately as #40197, with before/after screenshots of\n  the rendered page.\n\nThis PR now only contains the `DEFAULT_AVATAR_URI` and\n`DEFAULT_LOGO_URI` renames. The code is unchanged from the previous\nversion; only the commit messages were updated.\n"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40201-6155498168",
+  "pr": 40201,
+  "author": "piyushrajpandit",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-30T11:36:45Z",
+   "body": "I suggest taking a closer look at the CI test suite errors."
+  },
+  "author_comment": {
+   "created_at": "2026-10-13T21:23:52Z",
+   "body": "Ready for review. All CI checks are passing, code formatting adheres to ruff-format, and the self-review checklist is completed.\n\n@zulipbot remove \"not ready\""
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "40211-5916970551",
+  "pr": 40211,
+  "author": "shafeeq27edu-ai",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-09-30T13:19:21Z",
+   "body": "Thanks! Please go through our [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) to learn how to present your proposed changes to Zulip, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-09-30T18:09:28Z",
+   "body": "@laurynmm Thanks for the pointer \u2014 I've squashed this into a single, clearly-explained commit per the commit discipline guide, and updated the PR description. Ready for another look whenever you have time!"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "closed"
+ },
+ {
+  "id": "40232-5935435606",
+  "pr": 40232,
+  "author": "prabhakarrai17",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-10-01T14:32:14Z",
+   "body": "Please follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed. This means that the datasets for the before and after screenshots should be the same."
+  },
+  "author_comment": {
+   "created_at": "2026-10-01T16:08:57Z",
+   "body": "Thanks for the point. Retaken: all four screenshots now use the same data set, same user, and identical viewport dimensions, presented as a Before/After table.\r\n\r\n@zulipbot remove \"not ready\""
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40234-5937541838",
+  "pr": 40234,
+  "author": "huriazahra",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-10-01T15:01:14Z",
+   "body": "@huriazahra - Thanks for your interest in working on this issue!\r\n\r\nIt looks like you've only added one type of event to this incoming webhook, so it probably should not be marked as closing the issue you've linked to.\r\n\r\nAlso, can you please update your PR comment to describe how you captured the payload for the fixture you've added here. See our documented [guidelines](https://zulip.readthedocs.io/en/latest/webhooks/incoming-webhooks-walkthrough.html#fixture-guidelines) for how fixtures should be generated.\r\n\r\nFinally, you should be able to generate a screenshot in the dev environment with the new fixture, so you should also include that in your main PR comment."
+  },
+  "author_comment": {
+   "created_at": "2026-10-01T18:09:44Z",
+   "body": "Hi @laurynmm, thank you for the review!\r\n\r\nUpdated the commit message and PR description to reference Part of #16189. instead of closing the issue.\r\n\r\nAdded details in the description explaining how the fixture payload was structured using Atlassian's API specification and Zulip's schema guidelines.\r\n\r\nGenerated the notification via send_webhook_fixture_message in the local development environment and added the visual screenshot to the description."
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40237-5935346309",
+  "pr": 40237,
+  "author": "byteayan",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-10-01T14:52:15Z",
+   "body": "This change does impact the web app UI. Please follow [the guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) to present precise before/after screenshots, so that your work can be reviewed."
+  },
+  "author_comment": {
+   "created_at": "2026-10-01T16:03:45Z",
+   "body": "Thanks! Before/after screenshots, taken with the plain-text emoji theme after picking `:grinning:` in the emoji picker and clicking Save:\n\n| Before | After |\n| --- | --- |\n| ![Before: Set status modal stuck after clicking Save](https://raw.githubusercontent.com/byteayan/zulip/a7a094bd974af5a0c10b074e83a7365c97e379af/before-save.png) | ![After: status saved and modal closed](https://raw.githubusercontent.com/byteayan/zulip/a7a094bd974af5a0c10b074e83a7365c97e379af/after-save.png) |\n| ![Before: no status in own buddy list entry](https://raw.githubusercontent.com/byteayan/zulip/a7a094bd974af5a0c10b074e83a7365c97e379af/before-sidebar.png) | ![After: :grinning: status in own buddy list entry](https://raw.githubusercontent.com/byteayan/zulip/a7a094bd974af5a0c10b074e83a7365c97e379af/after-sidebar.png) |\n\nBefore, the server rejects the request with \"Invalid emoji type.\" and the modal stays open with a spinner on the Save button. After, the modal closes and the status appears in the buddy list. The emoji shows as `:grinning:` text because of the plain-text theme; this PR doesn't change how status emoji are displayed.\n"
+  },
+  "what_happened_next": "maintainer replied with a comment",
+  "group": "replied"
+ },
+ {
+  "id": "40240-6313490306",
+  "pr": 40240,
+  "author": "Rama542",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-10-15T13:44:25Z",
+   "body": "I think you might want to review your AI coding assistant's PR comments before posting, and read our [AI policy for contributors](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines)."
+  },
+  "author_comment": {
+   "created_at": "2026-10-21T10:13:19Z",
+   "body": "<img width=\"582\" height=\"300\" alt=\"Screenshot 2026-10-21 153056\" src=\"https://github.com/user-attachments/assets/c5867c7c-6c59-4bfe-81ca-ca98ffbb218a\" />\r\n<img width=\"1417\" height=\"787\" alt=\"Screenshot 2026-10-21 152056\" src=\"https://github.com/user-attachments/assets/6660659d-c817-4a77-ada0-2b2de270fe7c\" />\r\nsorry for that i had solve this one now check this one and see this and review it"
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ },
+ {
+  "id": "40257-6023845324",
+  "pr": 40257,
+  "author": "Sarvesh-ml",
+  "previous_maintainer_comment": {
+   "author": "laurynmm",
+   "created_at": "2026-10-06T12:47:09Z",
+   "body": "I think you labeled the before and after screenshots incorrectly?\r\n\r\nBut I think the goal, even for just the frontend web app handling of this, is that the blueslip error would be logged in the console and the web app would show some sort of error banner to the user - like the one shown when there's a network error."
+  },
+  "author_comment": {
+   "created_at": "2026-10-06T19:26:12Z",
+   "body": "Thanks, @laurynmm! I've added an error banner (like the one shown for network errors) alongside the blueslip error and updated the screenshot in the description."
+  },
+  "what_happened_next": "no maintainer action within 14 days",
+  "group": "no_action"
+ }
+]

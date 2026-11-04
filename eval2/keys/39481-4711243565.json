@@ -1,0 +1,58 @@
+{
+ "case": "39481-4711243565",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author asked for review after only reformatting the description and squashing commits, with no reviewer assigned, so triagers need a short note on what is still missing; nothing changed enough to need a new card.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "The next day laurynmm kept \"not ready\" and asked how the PR relates to the other open PRs for #19589 (per the continuing-unfinished-work guidelines), and asked the author to restore the template's self-review checklist.",
+  "changed": [
+   "Squashed the two commits (code and test) into one commit, \"webhooks: Separate command and text fields in Slack payload\", with the same +19/-2 in the same 2 files.",
+   "Reformatted the PR description and added a self-review checklist, and commented \"Ready for review!\" without answering anything specific."
+  ],
+  "still_missing": [
+   "No explanation of how this PR relates to the open PR #38098, which covers the same issue and is already in maintainer review with Niloth-p, or to the many earlier attempts.",
+   "The self-review checklist is a custom one, not the checklist from Zulip's PR template.",
+   "The PR does not update the docs (outgoing-webhook-payload.md) or the Slack format link in the code, which a maintainer asked for on #38098.",
+   "There is no detail on manual end-to-end testing, and nothing on the open backwards-compatibility question about python-zulip-api."
+  ],
+  "reply_ask": "Ask the author to explain how this PR relates to the open PR #38098 (and earlier attempts), following the guidelines on continuing unfinished work, and to replace the custom self-review checklist with the one from the PR template.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR does not explain its relationship to the open PR #38098, which covers the same issue and is already in maintainer review, as the continuing-unfinished-work guidelines require.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the self-review checklist in the description is not the one from Zulip's PR template.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says that since the feedback the author only squashed the two commits into one and reformatted the description; the code size and files are unchanged.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Recommends keeping \"not ready\" and asking for more information instead of handing the PR to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that laurynmm closed the similar PR #38902 for these same two reasons: no explanation of its relationship to the PR in review, and a non-template checklist.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author asked for review after only reformatting the description and squashing commits, with no reviewer assigned, so triagers need a short note on what is still missing; nothing changed enough to need a new card.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"The next day laurynmm kept \\\"not ready\\\" and asked how the PR relates to the other open PRs for #19589 (per the continuing-unfinished-work guidelines), and asked the author to restore the template's self-review checklist.\",\n \"changed\": [\n  \"Squashed the two commits (code and test) into one commit, \\\"webhooks: Separate command and text fields in Slack payload\\\", with the same +19/-2 in the same 2 files.\",\n  \"Reformatted the PR description and added a self-review checklist, and commented \\\"Ready for review!\\\" without answering anything specific.\"\n ],\n \"still_missing\": [\n  \"No explanation of how this PR relates to the open PR #38098, which covers the same issue and is already in maintainer review with Niloth-p, or to the many earlier attempts.\",\n  \"The self-review checklist is a custom one, not the checklist from Zulip's PR template.\",\n  \"The PR does not update the docs (outgoing-webhook-payload.md) or the Slack format link in the code, which a maintainer asked for on #38098.\",\n  \"There is no detail on manual end-to-end testing, and nothing on the open backwards-compatibility question about python-zulip-api.\"\n ],\n \"reply_ask\": \"Ask the author to explain how this PR relates to the open PR #38098 (and earlier attempts), following the guidelines on continuing unfinished work, and to replace the custom self-review checklist with the one from the PR template.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR does not explain its relationship to the open PR #38098, which covers the same issue and is already in maintainer review, as the continuing-unfinished-work guidelines require.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the self-review checklist in the description is not the one from Zulip's PR template.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says that since the feedback the author only squashed the two commits into one and reformatted the description; the code size and files are unchanged.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Recommends keeping \\\"not ready\\\" and asking for more information instead of handing the PR to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes that laurynmm closed the similar PR #38902 for these same two reasons: no explanation of its relationship to the PR in review, and a non-template checklist.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.31023599999999996
+}

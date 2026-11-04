@@ -1,0 +1,40 @@
+{
+ "case": "39590-5004317162",
+ "cutoff": "2026-07-17T14:30:26Z",
+ "pushes": [
+  [
+   "2026-06-21T16:13:38Z",
+   "5e96020a3d",
+   "ci run"
+  ],
+  [
+   "2026-07-17T13:47:10Z",
+   "e32634f74d",
+   "force push"
+  ],
+  [
+   "2026-07-17T13:47:17Z",
+   "e32634f74d",
+   "ci run"
+  ]
+ ],
+ "head_now": "e32634f74d168d5fbe875d46731ef85f7c1fde36",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 1,
+ "title_now": "=css: Fix channel-folder selector spacing and row alignment",
+ "title_at_cutoff": "=css: Fix channel-folder selector spacing and row alignment",
+ "labels_now": [
+  "feedback wanted",
+  "size: M",
+  "has conflicts",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "e32634f74d168d5fbe875d46731ef85f7c1fde36",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "apoorvapendse 2026-06-22T17:51:13Z",
+ "head_at_feedback": "5e96020a3dfa6134fe7086334e46f2f13b2d5ce4",
+ "comments_total": 7,
+ "comments_at_cutoff": 3
+}

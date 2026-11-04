@@ -1,0 +1,6 @@
+{
+ "case": "40257-6023845324",
+ "answer": "yes",
+ "text": "yes\nThe author reports having made the requested change (adding an error banner alongside the blueslip error) and updated the screenshot, which signals the PR is ready for another look.",
+ "cost_usd": 0.009568
+}

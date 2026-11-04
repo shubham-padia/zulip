@@ -1,0 +1,116 @@
+{
+ "case": "39459-4663361149",
+ "cutoff": "2026-06-09T19:36:44Z",
+ "pushes": [
+  [
+   "2026-06-03T23:07:17Z",
+   "eb5f1ccec3",
+   "ci run"
+  ],
+  [
+   "2026-06-30T20:20:00Z",
+   "b315bbfcbb",
+   "force push"
+  ],
+  [
+   "2026-06-30T20:20:05Z",
+   "b315bbfcbb",
+   "ci run"
+  ],
+  [
+   "2026-07-01T19:08:11Z",
+   "01ff9ac834",
+   "force push"
+  ],
+  [
+   "2026-07-01T19:08:15Z",
+   "01ff9ac834",
+   "ci run"
+  ],
+  [
+   "2026-07-01T19:34:00Z",
+   "cb0130ee33",
+   "force push"
+  ],
+  [
+   "2026-07-01T19:34:04Z",
+   "cb0130ee33",
+   "ci run"
+  ],
+  [
+   "2026-07-02T21:03:29Z",
+   "459d621b73",
+   "force push"
+  ],
+  [
+   "2026-07-02T21:03:33Z",
+   "459d621b73",
+   "ci run"
+  ],
+  [
+   "2026-07-02T21:29:03Z",
+   "a36353f93c",
+   "ci run"
+  ],
+  [
+   "2026-07-02T22:01:28Z",
+   "459d621b73",
+   "force push"
+  ],
+  [
+   "2026-07-02T22:01:31Z",
+   "459d621b73",
+   "ci run"
+  ],
+  [
+   "2026-07-08T18:39:12Z",
+   "e38735b39c",
+   "force push"
+  ],
+  [
+   "2026-07-08T18:39:17Z",
+   "e38735b39c",
+   "ci run"
+  ],
+  [
+   "2026-08-25T02:53:29Z",
+   "e5d381ff24",
+   "force push"
+  ],
+  [
+   "2026-08-25T02:53:36Z",
+   "e5d381ff24",
+   "ci run"
+  ],
+  [
+   "2026-08-25T03:11:42Z",
+   "694b8eceb3",
+   "force push"
+  ],
+  [
+   "2026-08-25T03:11:46Z",
+   "694b8eceb3",
+   "ci run"
+  ]
+ ],
+ "head_now": "694b8eceb3703d294cf16302a101b529bcb3066a",
+ "body_edits": 6,
+ "body_edits_after_cutoff": 1,
+ "title_now": "user profile: Support back-button navigation between tabs.",
+ "title_at_cutoff": "user profile: Support back-button navigation between tabs.",
+ "labels_now": [
+  "size: XL",
+  "maintainer review",
+  "area: modals and overlays"
+ ],
+ "assignees_now": [
+  "sahil839"
+ ],
+ "head_at_cutoff": "eb5f1ccec32d03fb992082f045a23bc95c633a05",
+ "pr_shape": "from compare main...eb5f1ccec3",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-06-04T12:05:51Z",
+ "head_at_feedback": "eb5f1ccec32d03fb992082f045a23bc95c633a05",
+ "comments_total": 17,
+ "comments_at_cutoff": 2
+}
