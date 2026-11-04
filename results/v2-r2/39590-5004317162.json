@@ -1,0 +1,6 @@
+{
+ "case": "39590-5004317162",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly asks the maintainer to take a look and suggests dropping the \"not ready\" label, after saying CI is passing and the changes are complete.",
+ "cost_usd": 0.0006594999999999999
+}
