@@ -1,0 +1,11 @@
+{
+ "case": "40041-5479840283",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — discussion started, but nobody has agreed to the approach yet**\n\nNew: The author started a chat.zulip.org thread and linked it in the PR description, but there is no new push and the thread has no maintainer reply. Missing: a maintainer's go-ahead in that thread, and a real \"how tested\" section (currently just \"Verified no test failures\", with an empty \"Fixes:\" line).\n\n###### Next step\n\nKeep \"not ready\" and don't assign anyone yet. Wait for a maintainer, such as Aman Agrawal or laurynmm, to answer in the thread.\n\n###### Reply\n\n```quote\nThanks for starting the discussion! Please wait for a maintainer to weigh in there before going further, and meanwhile update the PR description with how you actually tested these changes.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0112531
+}

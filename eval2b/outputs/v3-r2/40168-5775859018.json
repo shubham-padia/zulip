@@ -1,0 +1,11 @@
+{
+ "case": "40168-5775859018",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: screenshots are only in a comment, with no before/after comparison**\n\nNew: The author posted two screenshots (one desktop-width, one mobile-width) in a comment and said the description was updated. There is no new push. Missing: the description still says \"Screenshots to be added by author in comments\", and there are no before/after screenshots at different sizes, which issue #40051 explicitly asks for.\n\n###### Next step\n\n\"Not ready\" stays and no one needs to be assigned. If the author does fix this, check first how it compares with the open #40052, which touches the same file for the same issue.\n\n###### Reply\n\n```quote\nThanks for adding screenshots! Please put them in the PR description itself (replacing the placeholder), and show clear before/after shots at a few different widths, as described in [our guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html). Please also finish the unchecked items in the self-review checklist.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013418900000000001
+}

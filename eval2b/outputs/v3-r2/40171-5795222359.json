@@ -1,0 +1,11 @@
+{
+ "case": "40171-5795222359",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots now cover the DM and required-topic cases**\n\nNew: The author updated the PR description with a before/after table for \"Direct messages to me\" and for `#development help`, plus a screenshot showing the button enabled once a topic is entered. This is what the feedback asked for, and no code push was needed.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Niloth-p, who suggested this fix, has touched these files most, and was tagged by the author.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots, they cover both cases now. @Niloth-p, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0092325
+}

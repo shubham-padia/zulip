@@ -1,0 +1,11 @@
+{
+ "case": "40097-6055464855",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the test fix is a separate commit that belongs in the first one**\n\nNew: The author pushed 12 times since the label, fixed the issue-comment/PR-comment mix-up they reported, and added a Gitea test change. CI passes. Missing: the \"fix test for PR comment\" commit needs to be squashed into the first commit, because that commit changes behavior and breaks the test on its own.\n\n###### Next step\n\nKeep \"not ready\" and leave it unassigned for now. Once the commits are squashed, remove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\nThanks for the updates! Please squash the \"fix test for PR comment\" commit into the first commit, so each commit passes tests on its own (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)), and then we can get this reviewed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014096800000000001
+}

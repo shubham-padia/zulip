@@ -1,0 +1,11 @@
+{
+ "case": "40237-5935346309",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested before/after screenshots are now posted**\n\nNew: The author added before/after screenshots of the save dialog and the buddy list, showing the \"Invalid emoji type.\" failure before and a successful save after. No new push was needed, since the feedback was only about screenshots.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback. The reviewer should also decide between this PR and the older #37967, which fixes the same issue.\n\n###### Reply\n\n```quote\nThanks for the screenshots, they make the change clear. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012023099999999998
+}

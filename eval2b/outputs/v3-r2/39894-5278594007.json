@@ -1,0 +1,11 @@
+{
+ "case": "39894-5278594007",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested before/after screenshots are now in the PR description**\n\nNew: The author added light and dark before/after screenshots of the emoji picker filter input, plus a pixel diff showing light is unchanged and dark differs only in the box-shadow blur (5px to 6px, which they disclosed). There is no new push, but none was needed, since the feedback asked only for screenshots.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback, to check the screenshots and decide whether the 6px blur change is acceptable.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012493400000000002
+}

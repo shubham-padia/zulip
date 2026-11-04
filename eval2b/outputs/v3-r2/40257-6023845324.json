@@ -1,0 +1,11 @@
+{
+ "case": "40257-6023845324",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested error banner was added and CI passes**\n\nNew: One new push adds an error banner for non-JSON 5xx responses, like the network-error banner, alongside the existing logged error, and the author says the screenshot is updated. The PR description still only talks about logging, not the banner.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for adding the banner! @laurynmm, could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0094649
+}

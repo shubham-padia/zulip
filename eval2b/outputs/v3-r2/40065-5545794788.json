@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested long-topic and font-size screenshots are in the PR body**\n\nNew: No new push, but the PR description now has before/after screenshots for long plain and emoji topics (including two-line wrapping) and for the 20px app font size, all as the maintainer asked. The author notes the clipping doesn't reproduce at DPR 1, so the screenshots show the added spacing rather than a fixed clip.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for adding the longer-topic and font-size screenshots. @laurynmm, could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012258300000000001
+}

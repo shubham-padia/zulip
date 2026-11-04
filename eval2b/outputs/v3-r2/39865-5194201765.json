@@ -1,0 +1,11 @@
+{
+ "case": "39865-5194201765",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots now added, design call is with Sahil**\n\nNew: The author added before/after screenshots to the PR description, which was the only thing asked for (no new code push). Missing: Sahil Batra's CZO question is still open, namely whether the API should reject capitals as this PR does or accept any casing and normalize it, and the author says they'll follow his preference.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Sahil Batra, who is leading the design discussion on CZO and has changed these files most.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots, @sahil839, could you review this and settle the open question about rejecting vs. normalizing capitals?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014908200000000002
+}

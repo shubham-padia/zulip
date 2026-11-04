@@ -1,0 +1,11 @@
+{
+ "case": "40201-6155498168",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — CI is fixed, but there is no linked issue**\n\nNew: The author pushed three times, got CI passing, added a second fixture for event-style payloads, and filled in the testing notes and checklist. Missing: The PR has no \"Fixes: #N\" and links no issue, so we can't tell whether this work is open to contributors (\"help wanted\"). The commit message also shows no change since the feedback, even though the author says it was expanded.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet; ask the author to link the issue this fixes, or close it if no \"help wanted\" issue exists.\n\n###### Reply\n\n```quote\nThanks for getting CI green! Could you add a \"Fixes: #N\" line linking the issue this addresses? Contributors can only work on issues labeled \"help wanted\", per our [contributing guide](https://zulip.readthedocs.io/en/latest/contributing/contributing.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012323400000000002
+}

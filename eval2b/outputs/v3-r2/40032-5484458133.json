@@ -1,0 +1,11 @@
+{
+ "case": "40032-5484458133",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — commit message still breaks the style guide**\n\nNew: The author reworded and re-pushed the commit message, and the code is unchanged. Missing: The message is still not in Zulip style: there's no space after \"web:\", the summary isn't capitalized and has no ending period, and \"web\" is too broad an area prefix.\n\n###### Next step\n\n\"Not ready\" stays; laurynmm gave the feedback, so they can confirm the next round of commit-message fixes.\n\n###### Reply\n\n```quote\nNot quite yet. The commit message still doesn't follow our [commit message guidelines](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages): it needs a more specific area prefix followed by a space, a capitalized imperative summary, and a closing period, e.g. `tooltips: Suppress redundant ...`. Please compare it line by line with the examples in the guide.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0104344
+}

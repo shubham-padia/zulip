@@ -1,0 +1,11 @@
+{
+ "case": "40013-5589724033",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — author fixed test failures and the work looks complete**\n\nNew: Four pushes since the label, with commits squashed and the earlier test fixes folded in. Three test files were updated, probably for the new avatar-source data. The author is also the assignee on the linked issue.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who added the label and has recently changed these files.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013950500000000001
+}

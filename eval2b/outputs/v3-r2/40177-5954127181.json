@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the earlier PR #37289 is still claimed by a maintainer**\n\nNew: The author updated the description with the prior-work details and credit, and cross-referenced #37289, but there is no new push, and it is a repeat ping. Missing: agreement from @prakhar1144 (assigned to #37289, who said on 2026-09-04 he would finish it) or @CerealNotFound that this PR replaces it, and the light and dark theme screenshots promised in the issue plan (only one screenshot is posted).\n\n###### Next step\n\nKeep \"not ready\" and ask prakhar1144 whether this PR should replace #37289. If so, hand it to him for \"maintainer review\" once the screenshots are added.\n\n###### Reply\n\n```quote\nThanks for updating the description. #37289 is still assigned to @prakhar1144, who planned to finish it, so please confirm with him and @CerealNotFound that this PR should replace it, as described in the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please also add before/after screenshots in both light and dark themes.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0237085
+}

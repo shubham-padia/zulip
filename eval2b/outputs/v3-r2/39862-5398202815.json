@@ -1,0 +1,11 @@
+{
+ "case": "39862-5398202815",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — design approved in #design, feedback addressed**\n\nNew: The author pushed one small update and got design approval in the #design thread, after posting extra screenshots for the title-only and narrow-window cases that Daniel K asked for. Missing: nothing blocking; CI status isn't visible here, though the author says checks pass.\n\n###### Next step\n\nRemove \"not ready\" (and \"design review\", since design is signed off), add \"maintainer review\", and assign laurynmm, who gave the earlier feedback.\n\n###### Reply\n\n```quote\nThanks for working through the design feedback! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0126713
+}

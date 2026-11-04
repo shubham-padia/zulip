@@ -1,0 +1,11 @@
+{
+ "case": "39868-5175066393",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the label was for failing tests, and the author pushed fixes**\n\nNew: The author pushed two updates since the label (the PR grew from +12 to +15 lines) and says the failing tests are fixed. Missing: CI status isn't visible here, so confirm checks are green first. Several self-review boxes (end-to-end testing, corner cases) are still unchecked.\n\n###### Next step\n\nOnce CI is green, remove \"not ready\", add \"maintainer review\", and assign laurynmm, who added the \"not ready\" label.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at this? The test failures should be fixed now.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014599400000000002
+}

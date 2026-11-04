@@ -1,0 +1,11 @@
+{
+ "case": "40012-5570902524",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the screenshots and self-review checklist the maintainer asked for are now in the PR description**\n\nNew: The author replaced the reconstructed renderings with real `/emails` screenshots (HTML and text, password-enabled and SSO-only) and added the self-review checklist. There was no new push, but the feedback only concerned the description. Missing: nothing blocking.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0107773
+}

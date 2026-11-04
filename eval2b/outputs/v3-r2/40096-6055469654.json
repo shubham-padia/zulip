@@ -1,0 +1,11 @@
+{
+ "case": "40096-6055469654",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — fixes sit in separate commits instead of the commits they belong to**\n\nNew: The author pushed 3 commits, fixed the wrong test data, reverted a fixture to its original state, and CI now passes. Missing: the test fixes are in a separate last commit, so the first commit (which changes the code) breaks the tests on its own. They should be squashed into the commits they belong to.\n\n###### Next step\n\n\"not ready\" stays; no reviewer is assigned yet, and once the commits are cleaned up, hand it to laurynmm for \"maintainer review\".\n\n###### Reply\n\n```quote\nThanks for the fixes, the code change and tests look good now. Could you squash the test fixes into the commits they belong to, so each commit passes tests on its own? See the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). Once that's done, we'll get it reviewed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.015484400000000002
+}
