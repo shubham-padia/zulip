@@ -1,0 +1,11 @@
+{
+ "case": "39728-5051202036",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Commit history: squashed to 2 commits, but the titles are still \"fix for issue 17419\" and \"added test case for issue 17418\" (wrong issue number). The test is also in a separate commit from the fix. |\n| ❌  | Precise before/after screenshots: no new screenshots, and the author argues none are possible. |\n| ✅  | Self-review checklist: now matches the PR template. |\n| ℹ️  | CI status is unknown. |\n| ℹ️  | #17419 is also claimed by jlnsmith2001, who is assigned. The author claimed it first, on 2026-07-08. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the commits and add precise before/after screenshots.\n\n###### Reply\n\n```quote\nThanks for the update! Two things are still open: your commit messages need to follow our [commit discipline](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) (e.g. \"markdown: Preserve tab characters in code blocks.\"), with the test in the same commit as the fix. The change is visible in the rendered code block and in what \"Copy code\" returns, so please add precise before/after screenshots following [this guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.016091
+}

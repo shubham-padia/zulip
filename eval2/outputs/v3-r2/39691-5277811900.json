@@ -1,0 +1,11 @@
+{
+ "case": "39691-5277811900",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — author confirmed the earlier requested changes were made**\n\nNew: The author says prakhar1144's requested changes were already addressed, and explains that the reply-button label helpers stay so the Galène video call PR can reuse them. There is no new code since the feedback. Missing: prakhar1144 hasn't yet confirmed that the explanation and the current code settle their dismissed review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign prakhar1144, who gave the earlier feedback.\n\n###### Reply\n\n```quote\nThanks for confirming. @prakhar1144, could you take another look and confirm your earlier comments are addressed?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012194700000000001
+}
