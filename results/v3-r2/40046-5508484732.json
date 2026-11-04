@@ -1,0 +1,6 @@
+{
+ "case": "40046-5508484732",
+ "answer": "no",
+ "text": "no\n\nThe author only says they started an API design discussion and will follow up later, so the requested work (approval, API changelog, documentation screenshots) is not yet done and the PR is not being handed back.",
+ "cost_usd": 0.0007333999999999999
+}

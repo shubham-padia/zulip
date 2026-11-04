@@ -1,0 +1,6 @@
+{
+ "case": "40095-5575623864",
+ "answer": "no",
+ "text": "no\n\nThe author fixed the overlay unread-count logic but has only captured the \"Before\" screenshot and says the \"After\" pair will come later, so the requested screenshots are not yet provided and the PR is not handed back.",
+ "cost_usd": 0.0008217999999999999
+}

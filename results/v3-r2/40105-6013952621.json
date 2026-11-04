@@ -1,0 +1,6 @@
+{
+ "case": "40105-6013952621",
+ "answer": "yes",
+ "text": "yes\nThe author asks to remove the \"not ready\" label and have the PR reviewed, which signals they consider it ready for another look, even though the comment doesn't explicitly confirm the commit cleanup and videos were done.",
+ "cost_usd": 0.0008113
+}

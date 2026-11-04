@@ -1,0 +1,6 @@
+{
+ "case": "40096-5590921342",
+ "answer": "yes",
+ "text": "yes\n\nThe author tells the maintainer \"Ready now,\" which signals the PR is ready for another review even though no prior maintainer request is shown.",
+ "cost_usd": 0.000545
+}
