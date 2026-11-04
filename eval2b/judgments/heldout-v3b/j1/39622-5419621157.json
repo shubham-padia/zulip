@@ -1,0 +1,112 @@
+{
+ "case": "39622-5419621157",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v3-r2"
+  ],
+  "Y": [
+   "v3-r1"
+  ],
+  "U": [
+   "v3b-r1"
+  ],
+  "P": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and leaves the PR with Yogesh, which matches the key's more_feedback.",
+    "accuracy_why": "It correctly names the 0807-to-0810 migration renumbering, the small trim and the missing Yogesh sign-off, and omits only the unknown CI status.",
+    "reply_why": "The reply tells the author to wait and pings Yogesh, but it never asks the author to address his outstanding comments, so the key's ask is only half covered."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" until Yogesh finishes his initial pass, as the key recommends.",
+    "accuracy_why": "It correctly covers the migration rename, the trim, Yogesh's missing sign-off and the unanswered 'major issue', though it omits the migration numbers and CI status.",
+    "reply_why": "The reply asks the author to answer each of Yogesh's comments and wait for his confirmation, so a maintainer could paste it as is."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says there was no comment from Yogesh after his Jul 25 review, but he commented on 2026-08-04 asking for an update.",
+     "Says the description is unchanged, which the inputs do not show."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and plans the hand-off only after Yogesh confirms, which matches the key.",
+    "accuracy_why": "The core facts are right, but it states two unsupported or false details: that Yogesh never commented after Jul 25, and that the description is unchanged.",
+    "reply_why": "The reply cites Evy and Lauryn, asks the author to answer Yogesh's comments and points them to him, which fits the key's ask."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and hands off to evykassirer only after Yogesh confirms, which matches the key.",
+    "accuracy_why": "It covers the migration renumbering, the trim, the major issue and the missing sign-off concisely, omitting only the CI status.",
+    "reply_why": "The reply is short, cites Evy's note, and asks the author to address Yogesh's comments and get his re-review, so it can be pasted as is."
+   }
+  },
+  "ranking": [
+   "P",
+   "Y",
+   "K",
+   "U"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and leaves the PR with Yogesh, which matches the key's more_feedback.\",\n   \"accuracy_why\": \"It correctly names the 0807-to-0810 migration renumbering, the small trim and the missing Yogesh sign-off, and omits only the unknown CI status.\",\n   \"reply_why\": \"The reply tells the author to wait and pings Yogesh, but it never asks the author to address his outstanding comments, so the key's ask is only half covered.\"},\n  \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" until Yogesh finishes his initial pass, as the key recommends.\",\n   \"accuracy_why\": \"It correctly covers the migration rename, the trim, Yogesh's missing sign-off and the unanswered 'major issue', though it omits the migration numbers and CI status.\",\n   \"reply_why\": \"The reply asks the author to answer each of Yogesh's comments and wait for his confirmation, so a maintainer could paste it as is.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says there was no comment from Yogesh after his Jul 25 review, but he commented on 2026-08-04 asking for an update.\", \"Says the description is unchanged, which the inputs do not show.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and plans the hand-off only after Yogesh confirms, which matches the key.\",\n   \"accuracy_why\": \"The core facts are right, but it states two unsupported or false details: that Yogesh never commented after Jul 25, and that the description is unchanged.\",\n   \"reply_why\": \"The reply cites Evy and Lauryn, asks the author to answer Yogesh's comments and points them to him, which fits the key's ask.\"},\n  \"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and hands off to evykassirer only after Yogesh confirms, which matches the key.\",\n   \"accuracy_why\": \"It covers the migration renumbering, the trim, the major issue and the missing sign-off concisely, omitting only the CI status.\",\n   \"reply_why\": \"The reply is short, cites Evy's note, and asks the author to address Yogesh's comments and get his re-review, so it can be pasted as is.\"}},\n \"ranking\": [\"P\", \"Y\", \"K\", \"U\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.306236
+}

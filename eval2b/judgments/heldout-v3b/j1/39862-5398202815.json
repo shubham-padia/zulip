@@ -1,0 +1,115 @@
+{
+ "case": "39862-5398202815",
+ "repeat": 1,
+ "map": {
+  "Q": [
+   "v3b-r2"
+  ],
+  "F": [
+   "v3-r1"
+  ],
+  "Y": [
+   "v3b-r1"
+  ],
+  "P": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE that hands off the PR, which matches the key.",
+    "accuracy_why": "It covers Daniel K's approval, the posted title-only and narrow-window screenshots, and removing both labels; it only leaves out that Daniel chose the text-only card over the placeholder image.",
+    "reply_why": "The reply is a short thanks plus a reviewer ping that could be pasted almost as is."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE that hands off the PR, which matches the key.",
+    "accuracy_why": "It says Daniel K approved the design, that the requested screenshots were posted, that nothing is blocking, and that both labels should be removed.",
+    "reply_why": "The reply is a short thanks plus a reviewer ping that is nearly paste-ready."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE that hands off the PR, which matches the key.",
+    "accuracy_why": "It never says that Daniel's extra screenshots were posted, and it leaves out removing the \"design review\" label.",
+    "reply_why": "The reply is a bare reviewer ping, which suits a hand-off."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Lists the title-only and narrow-window screenshots as missing because they are only in the chat thread, although they were posted where Daniel K asked for them and no requested work is outstanding."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "The hand-off NOTE is correct, though its 'Missing' item undercuts its own verdict.",
+    "accuracy_why": "It wrongly flags the requested screenshots as outstanding and leaves out removing the \"design review\" label.",
+    "reply_why": "The reply is a thanks plus a reviewer ping that is close to paste-ready."
+   }
+  },
+  "ranking": [
+   "F",
+   "P",
+   "Y",
+   "Q"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"It writes a NOTE that hands off the PR, which matches the key.\",\n \"accuracy_why\": \"It covers Daniel K's approval, the posted title-only and narrow-window screenshots, and removing both labels; it only leaves out that Daniel chose the text-only card over the placeholder image.\",\n \"reply_why\": \"The reply is a short thanks plus a reviewer ping that could be pasted almost as is.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"It writes a NOTE that hands off the PR, which matches the key.\",\n \"accuracy_why\": \"It says Daniel K approved the design, that the requested screenshots were posted, that nothing is blocking, and that both labels should be removed.\",\n \"reply_why\": \"The reply is a short thanks plus a reviewer ping that is nearly paste-ready.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It writes a NOTE that hands off the PR, which matches the key.\",\n \"accuracy_why\": \"It never says that Daniel's extra screenshots were posted, and it leaves out removing the \\\"design review\\\" label.\",\n \"reply_why\": \"The reply is a bare reviewer ping, which suits a hand-off.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Lists the title-only and narrow-window screenshots as missing because they are only in the chat thread, although they were posted where Daniel K asked for them and no requested work is outstanding.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"The hand-off NOTE is correct, though its 'Missing' item undercuts its own verdict.\",\n \"accuracy_why\": \"It wrongly flags the requested screenshots as outstanding and leaves out removing the \\\"design review\\\" label.\",\n \"reply_why\": \"The reply is a thanks plus a reviewer ping that is close to paste-ready.\"}\n},\n\"ranking\": [\"F\", \"P\", \"Y\", \"Q\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.212596
+}

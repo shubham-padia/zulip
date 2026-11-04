@@ -1,0 +1,121 @@
+{
+ "case": "39784-5100999626",
+ "repeat": 1,
+ "map": {
+  "I": [
+   "v3-r1"
+  ],
+  "Q": [
+   "v3-r2"
+  ],
+  "F": [
+   "v3b-r2"
+  ],
+  "C": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE plus keeping \"not ready\" and having laurynmm repeat the screenshot request matches the key.",
+    "accuracy_why": "It correctly says #33086 is now covered and the screenshots are still unpaired, but it only attributes the whitespace fix to the author without saying it is unverified, and it omits marked.cjs.",
+    "reply_why": "A focused, paste-ready request for paired before/after screenshots with the correct guide link."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE with \"keep not ready\" and laurynmm following up matches the key.",
+    "accuracy_why": "It has the decisive screenshot gap and the #33086 coverage, attributes the test to the author without flagging it as unverified, omits marked.cjs, and asserts a little more than can be seen about the screenshot content.",
+    "reply_why": "A paste-ready screenshot request with the guide link and a useful suggestion to add captions."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the PR doesn't address continuing #33086, but the description explains its reason for a fresh implementation instead of rebasing #33086."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "NOTE and keeping \"not ready\" for more feedback match the key.",
+    "accuracy_why": "It covers the screenshots, #33086 and the unverified code change, but wrongly claims the continuation reasoning is missing and omits marked.cjs.",
+    "reply_why": "The screenshot ask is right, but the second ask requests reasoning that is already in the description."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims nothing explains why the PR reimplements #33086, but the description explicitly gives the complexity concern as the reason for not rebasing."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "NOTE with \"not ready\" staying and laurynmm guiding the author matches the key.",
+    "accuracy_why": "It flags the screenshot gap and the unverified diff correctly, but flatly misstates that the reimplementation is unexplained and omits marked.cjs.",
+    "reply_why": "The reply's second ask rests on the wrong fact and asks for an explanation the author already gave."
+   }
+  },
+  "ranking": [
+   "F",
+   "C",
+   "Q",
+   "I"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"NOTE plus keeping \\\"not ready\\\" and having laurynmm repeat the screenshot request matches the key.\",\n \"accuracy_why\": \"It correctly says #33086 is now covered and the screenshots are still unpaired, but it only attributes the whitespace fix to the author without saying it is unverified, and it omits marked.cjs.\",\n \"reply_why\": \"A focused, paste-ready request for paired before/after screenshots with the correct guide link.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with \\\"keep not ready\\\" and laurynmm following up matches the key.\",\n \"accuracy_why\": \"It has the decisive screenshot gap and the #33086 coverage, attributes the test to the author without flagging it as unverified, omits marked.cjs, and asserts a little more than can be seen about the screenshot content.\",\n \"reply_why\": \"A paste-ready screenshot request with the guide link and a useful suggestion to add captions.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the PR doesn't address continuing #33086, but the description explains its reason for a fresh implementation instead of rebasing #33086.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"NOTE and keeping \\\"not ready\\\" for more feedback match the key.\",\n \"accuracy_why\": \"It covers the screenshots, #33086 and the unverified code change, but wrongly claims the continuation reasoning is missing and omits marked.cjs.\",\n \"reply_why\": \"The screenshot ask is right, but the second ask requests reasoning that is already in the description.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims nothing explains why the PR reimplements #33086, but the description explicitly gives the complexity concern as the reason for not rebasing.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with \\\"not ready\\\" staying and laurynmm guiding the author matches the key.\",\n \"accuracy_why\": \"It flags the screenshot gap and the unverified diff correctly, but flatly misstates that the reimplementation is unexplained and omits marked.cjs.\",\n \"reply_why\": \"The reply's second ask rests on the wrong fact and asks for an explanation the author already gave.\"}},\n \"ranking\": [\"F\", \"C\", \"Q\", \"I\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.31176
+}

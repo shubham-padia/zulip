@@ -1,0 +1,120 @@
+{
+ "case": "40013-5589724033",
+ "repeat": 1,
+ "map": {
+  "C": [
+   "v3b-r2"
+  ],
+  "S": [
+   "v3-r2"
+  ],
+  "B": [
+   "v3-r1"
+  ],
+  "O": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to laurynmm, but the key says to keep 'not ready' and give feedback about the undiscussed API changes.",
+    "accuracy_why": "The push count, the 11-to-14 file growth, the new test files and the open tooltip question are right, but it misses the API changes and the missing #api design approval and docs, and it says nothing blocks review.",
+    "reply_why": "A plain reviewer ping misses the needed ask to take the API changes to #api design and add API docs with screenshots."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the new pushes added backend tests including bot avatar deletion, but the deletion tests were in the PR from the start and the pushes added test_custom_profile_data, test_home and test_users.",
+     "Says the author pushed 'fixes', which nothing in the inputs supports."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off, while the key calls for more feedback on the API changes.",
+    "accuracy_why": "It correctly notes the label came with no written feedback, but it misattributes the deletion tests to the new pushes and misses the API-change issue entirely.",
+    "reply_why": "A plain reviewer ping misses the API design and documentation ask."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Claims the PR is complete with tests and screenshots, but it lacks API change approval, an API changelog entry and API documentation screenshots."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off, while the key calls for keeping 'not ready' and sending feedback.",
+    "accuracy_why": "Its headline claim that the PR is complete is false and is the basis for the hand-off, and it misses the API changes.",
+    "reply_why": "A plain reviewer ping misses the API design ask."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Says the author fixed test failures, which nothing in the inputs supports.",
+     "Says the commits were squashed with earlier test fixes folded in, which is unsupported speculation.",
+     "Says the work looks complete, though the API approval and docs are missing."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off, while the key calls for more feedback.",
+    "accuracy_why": "It invents test failures and squashed commits, rests the hand-off on them, and misses the API changes.",
+    "reply_why": "A plain reviewer ping misses the API design and documentation ask."
+   }
+  },
+  "ranking": [
+   "B",
+   "O",
+   "C",
+   "S"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"hedged\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off to laurynmm, but the key says to keep 'not ready' and give feedback about the undiscussed API changes.\",\n \"accuracy_why\": \"The push count, the 11-to-14 file growth, the new test files and the open tooltip question are right, but it misses the API changes and the missing #api design approval and docs, and it says nothing blocks review.\",\n \"reply_why\": \"A plain reviewer ping misses the needed ask to take the API changes to #api design and add API docs with screenshots.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the new pushes added backend tests including bot avatar deletion, but the deletion tests were in the PR from the start and the pushes added test_custom_profile_data, test_home and test_users.\", \"Says the author pushed 'fixes', which nothing in the inputs supports.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off, while the key calls for more feedback on the API changes.\",\n \"accuracy_why\": \"It correctly notes the label came with no written feedback, but it misattributes the deletion tests to the new pushes and misses the API-change issue entirely.\",\n \"reply_why\": \"A plain reviewer ping misses the API design and documentation ask.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Claims the PR is complete with tests and screenshots, but it lacks API change approval, an API changelog entry and API documentation screenshots.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off, while the key calls for keeping 'not ready' and sending feedback.\",\n \"accuracy_why\": \"Its headline claim that the PR is complete is false and is the basis for the hand-off, and it misses the API changes.\",\n \"reply_why\": \"A plain reviewer ping misses the API design ask.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"hedged\"},\n \"wrong_facts\": [\"Says the author fixed test failures, which nothing in the inputs supports.\", \"Says the commits were squashed with earlier test fixes folded in, which is unsupported speculation.\", \"Says the work looks complete, though the API approval and docs are missing.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It recommends handing off, while the key calls for more feedback.\",\n \"accuracy_why\": \"It invents test failures and squashed commits, rests the hand-off on them, and misses the API changes.\",\n \"reply_why\": \"A plain reviewer ping misses the API design and documentation ask.\"}\n},\n\"ranking\": [\"B\", \"O\", \"C\", \"S\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.38590399999999997
+}

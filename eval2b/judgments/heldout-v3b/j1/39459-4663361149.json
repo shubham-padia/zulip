@@ -1,0 +1,115 @@
+{
+ "case": "39459-4663361149",
+ "repeat": 1,
+ "map": {
+  "P": [
+   "v3b-r1"
+  ],
+  "W": [
+   "v3-r2"
+  ],
+  "D": [
+   "v3b-r2"
+  ],
+  "R": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the feedback only asked for the #38251 explanation, but it also asked the author to work through the continuing-unfinished-work guidelines, which include taking sahil839's earlier feedback into account."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off to sahil839 matches the key.",
+    "accuracy_why": "It covers the description update, the lack of a new push and the missing tests, but it misses the open question on sahil839's minimal-changes feedback and wrongly says the explanation was the only thing asked for.",
+    "reply_why": "A short thanks and reviewer ping a maintainer could paste, though it doesn't mention sahil839's earlier feedback."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to sahil839 matches the key.",
+    "accuracy_why": "It covers the focused approach, the settings-overlay concern, no new push and the missing tests, but it doesn't flag whether sahil839's request to keep the hash_util changes minimal was addressed.",
+    "reply_why": "A clean thanks and reviewer ping that is pasteable, though it lacks the nudge about sahil839's earlier feedback."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off to sahil839 matches the key.",
+    "accuracy_why": "It has the most complete changed list (the hash_util map, the browser_history.update call and the settings-overlay handling) plus no push and no tests, but it misses the open question on minimal changes and loosely calls #38251 'the same approach'.",
+    "reply_why": "A pasteable thanks and reviewer ping, without the reminder about sahil839's prior feedback."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off to sahil839 matches the key.",
+    "accuracy_why": "Its summary of the changes is correct but thin, and it misses whether sahil839's request for minimal changes was applied.",
+    "reply_why": "A pasteable thanks and reviewer ping, missing the reminder about sahil839's earlier feedback."
+   }
+  },
+  "ranking": [
+   "W",
+   "D",
+   "R",
+   "P"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says the feedback only asked for the #38251 explanation, but it also asked the author to work through the continuing-unfinished-work guidelines, which include taking sahil839's earlier feedback into account.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off to sahil839 matches the key.\",\n \"accuracy_why\": \"It covers the description update, the lack of a new push and the missing tests, but it misses the open question on sahil839's minimal-changes feedback and wrongly says the explanation was the only thing asked for.\",\n \"reply_why\": \"A short thanks and reviewer ping a maintainer could paste, though it doesn't mention sahil839's earlier feedback.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to sahil839 matches the key.\",\n \"accuracy_why\": \"It covers the focused approach, the settings-overlay concern, no new push and the missing tests, but it doesn't flag whether sahil839's request to keep the hash_util changes minimal was addressed.\",\n \"reply_why\": \"A clean thanks and reviewer ping that is pasteable, though it lacks the nudge about sahil839's earlier feedback.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with a hand-off to sahil839 matches the key.\",\n \"accuracy_why\": \"It has the most complete changed list (the hash_util map, the browser_history.update call and the settings-overlay handling) plus no push and no tests, but it misses the open question on minimal changes and loosely calls #38251 'the same approach'.\",\n \"reply_why\": \"A pasteable thanks and reviewer ping, without the reminder about sahil839's prior feedback.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with a hand-off to sahil839 matches the key.\",\n \"accuracy_why\": \"Its summary of the changes is correct but thin, and it misses whether sahil839's request for minimal changes was applied.\",\n \"reply_why\": \"A pasteable thanks and reviewer ping, missing the reminder about sahil839's earlier feedback.\"}\n},\n\"ranking\": [\"W\", \"D\", \"R\", \"P\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.216392
+}

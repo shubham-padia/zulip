@@ -1,0 +1,121 @@
+{
+ "case": "39694-4914523135",
+ "repeat": 1,
+ "map": {
+  "X": [
+   "v3b-r2"
+  ],
+  "C": [
+   "v3b-r1"
+  ],
+  "G": [
+   "v3-r1"
+  ],
+  "K": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for squashed commits, which matches the key's more_feedback.",
+    "accuracy_why": "It covers the CSS alignment changes, the updated screenshots and the fixup commits, but it only implies that a maintainer must still confirm the alignment and it omits the open #38860.",
+    "reply_why": "It names the exact fixup commits to squash, links the commit-discipline guide and says laurynmm will re-check; the extra checklist ask is the only part to trim."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and plans a hand-off only after the squash, which matches the key's decision.",
+    "accuracy_why": "It describes the alignment fix only vaguely as \"fixes\", treats the alignment as settled without flagging the hand-tuned offsets, and omits #38860.",
+    "reply_why": "The squash request and guide link are right, but thanking the author for fixing an alignment no maintainer has confirmed and the open-ended checklist ask need a small edit."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It recommends removing \"not ready\" and handing off for review, while the key says to keep it and ask for more work.",
+    "accuracy_why": "It notes the CSS fix and the fixup commits but recommends a hand-off despite them, and it misses the pixel-offset concern and #38860.",
+    "reply_why": "It asks laurynmm to review now while also asking the author to squash, which mixes a hand-off with more feedback."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It hands the PR off for maintainer review, while the key says to keep \"not ready\" and ask for a cleaned-up history.",
+    "accuracy_why": "It names the message_row.css change and the fixups but treats the alignment as fixed, and it misses the pixel-offset concern and #38860.",
+    "reply_why": "It tells laurynmm the alignment is fixed and asks her to review now, while also asking for a squash first, so the ask contradicts itself."
+   }
+  },
+  "ranking": [
+   "K",
+   "G",
+   "C",
+   "X"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for squashed commits, which matches the key's more_feedback.\",\n \"accuracy_why\": \"It covers the CSS alignment changes, the updated screenshots and the fixup commits, but it only implies that a maintainer must still confirm the alignment and it omits the open #38860.\",\n \"reply_why\": \"It names the exact fixup commits to squash, links the commit-discipline guide and says laurynmm will re-check; the extra checklist ask is the only part to trim.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" and plans a hand-off only after the squash, which matches the key's decision.\",\n \"accuracy_why\": \"It describes the alignment fix only vaguely as \\\"fixes\\\", treats the alignment as settled without flagging the hand-tuned offsets, and omits #38860.\",\n \"reply_why\": \"The squash request and guide link are right, but thanking the author for fixing an alignment no maintainer has confirmed and the open-ended checklist ask need a small edit.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"It recommends removing \\\"not ready\\\" and handing off for review, while the key says to keep it and ask for more work.\",\n \"accuracy_why\": \"It notes the CSS fix and the fixup commits but recommends a hand-off despite them, and it misses the pixel-offset concern and #38860.\",\n \"reply_why\": \"It asks laurynmm to review now while also asking the author to squash, which mixes a hand-off with more feedback.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"It hands the PR off for maintainer review, while the key says to keep \\\"not ready\\\" and ask for a cleaned-up history.\",\n \"accuracy_why\": \"It names the message_row.css change and the fixups but treats the alignment as fixed, and it misses the pixel-offset concern and #38860.\",\n \"reply_why\": \"It tells laurynmm the alignment is fixed and asks her to review now, while also asking for a squash first, so the ask contradicts itself.\"}},\n\"ranking\": [\"K\", \"G\", \"C\", \"X\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.251004
+}

@@ -1,0 +1,113 @@
+{
+ "case": "39540-4708052713",
+ "repeat": 1,
+ "map": {
+  "M": [
+   "v3b-r2"
+  ],
+  "Z": [
+   "v3-r1"
+  ],
+  "D": [
+   "v3b-r1"
+  ],
+  "Y": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "The kind matches, but it keeps \"not ready\" and assigns no one, while the observed action was to hand off to karlstolley.",
+    "accuracy_why": "It correctly flags the leftover merge commit and the unchanged messages, but it never names karlstolley, omits the commit-message rewrite and misses the dark-theme screenshot problem.",
+    "reply_why": "It asks only for removing the merge commit, not for rewriting the commit message, and it runs to several sentences where a hand-off would need at most a reviewer ping."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "It recommends more feedback with no reviewer, but the observed action was a hand-off to karlstolley.",
+    "accuracy_why": "It covers the merge commit and the unchanged commits, but it lacks a reviewer name, the commit-message rewrite and the screenshot issue.",
+    "reply_why": "The ask is only partial and it addresses the author at length, so it doesn't fit a hand-off."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "It holds the PR at \"not ready\" without a reviewer, while the triager actually handed it off to karlstolley.",
+    "accuracy_why": "It is the most precise about the merge commit, naming it in full, but it misses the reviewer, the commit-message rewrite and the screenshots.",
+    "reply_why": "It asks to drop the merge commit but not to fix the commit message, and it is a multi-sentence author reply under a hand-off."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "It keeps \"not ready\" with no reviewer, contrary to the observed hand-off to karlstolley.",
+    "accuracy_why": "It hedges the decisive merge-commit fact (\"seems to still be there\") and misses the reviewer, the commit-message rewrite and the screenshots.",
+    "reply_why": "The hedged \"still seems to include\" weakens a partial ask, so a maintainer would rewrite it."
+   }
+  },
+  "ranking": [
+   "D",
+   "M",
+   "Z",
+   "Y"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 9,\n \"decision_why\": \"The kind matches, but it keeps \\\"not ready\\\" and assigns no one, while the observed action was to hand off to karlstolley.\",\n \"accuracy_why\": \"It correctly flags the leftover merge commit and the unchanged messages, but it never names karlstolley, omits the commit-message rewrite and misses the dark-theme screenshot problem.\",\n \"reply_why\": \"It asks only for removing the merge commit, not for rewriting the commit message, and it runs to several sentences where a hand-off would need at most a reviewer ping.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 9,\n \"decision_why\": \"It recommends more feedback with no reviewer, but the observed action was a hand-off to karlstolley.\",\n \"accuracy_why\": \"It covers the merge commit and the unchanged commits, but it lacks a reviewer name, the commit-message rewrite and the screenshot issue.\",\n \"reply_why\": \"The ask is only partial and it addresses the author at length, so it doesn't fit a hand-off.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 9,\n \"decision_why\": \"It holds the PR at \\\"not ready\\\" without a reviewer, while the triager actually handed it off to karlstolley.\",\n \"accuracy_why\": \"It is the most precise about the merge commit, naming it in full, but it misses the reviewer, the commit-message rewrite and the screenshots.\",\n \"reply_why\": \"It asks to drop the merge commit but not to fix the commit message, and it is a multi-sentence author reply under a hand-off.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 9,\n \"decision_why\": \"It keeps \\\"not ready\\\" with no reviewer, contrary to the observed hand-off to karlstolley.\",\n \"accuracy_why\": \"It hedges the decisive merge-commit fact (\\\"seems to still be there\\\") and misses the reviewer, the commit-message rewrite and the screenshots.\",\n \"reply_why\": \"The hedged \\\"still seems to include\\\" weakens a partial ask, so a maintainer would rewrite it.\"}\n},\n\"ranking\": [\"D\", \"M\", \"Z\", \"Y\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.152748
+}

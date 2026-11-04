@@ -1,0 +1,120 @@
+{
+ "case": "39481-4711243565",
+ "repeat": 1,
+ "map": {
+  "A": [
+   "v3-r2"
+  ],
+  "P": [
+   "v3-r1"
+  ],
+  "O": [
+   "v3b-r2"
+  ],
+  "I": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Headline says the template was filled in and the checklist added, implying the PR-template checklist is now in place, but the checklist is still a custom, non-template one."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "NOTE and keeping \"not ready\" for more feedback match the key.",
+    "accuracy_why": "It catches the missing link to #38098 and the docs gap, but it misses the non-template checklist (decisive) and wrongly suggests the template was followed.",
+    "reply_why": "It asks about #38098 with the right guide link, but it omits the checklist fix, which is half of the reply_ask."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "NOTE and keeping \"not ready\" match the key.",
+    "accuracy_why": "It correctly says only a squash and reformat happened, with size and files unchanged, and flags #38098, docs and testing, but it misses the decisive non-template checklist.",
+    "reply_why": "It asks about #38098 with the continuing-unfinished-work link, plus docs and testing, but leaves out the checklist ask."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the PR description now follows the template, but the checklist is still a custom one.",
+     "Recommends an \"integration review\" label rather than the project's \"maintainer review\" flow."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It hands the PR off for review when the key says more feedback is needed.",
+    "accuracy_why": "Its action rests on the false claim that the template is now followed, and it notes the #38098 gap yet hands off anyway.",
+    "reply_why": "It pings laurynmm for review instead of asking the author for the missing #38098 explanation and the template checklist."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE and keeping \"not ready\" match the key.",
+    "accuracy_why": "It covers both decisive gaps (the non-template checklist and #38098), plus the squash and the broken formatting, and misses only the non-decisive #38902 precedent.",
+    "reply_why": "It asks for both of the reply_ask items, though it doesn't link the continuing-unfinished-work guide, so a maintainer might add that one reference."
+   }
+  },
+  "ranking": [
+   "I",
+   "P",
+   "A",
+   "O"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Headline says the template was filled in and the checklist added, implying the PR-template checklist is now in place, but the checklist is still a custom, non-template one.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"NOTE and keeping \\\"not ready\\\" for more feedback match the key.\",\n \"accuracy_why\": \"It catches the missing link to #38098 and the docs gap, but it misses the non-template checklist (decisive) and wrongly suggests the template was followed.\",\n \"reply_why\": \"It asks about #38098 with the right guide link, but it omits the checklist fix, which is half of the reply_ask.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 8,\n \"decision_why\": \"NOTE and keeping \\\"not ready\\\" match the key.\",\n \"accuracy_why\": \"It correctly says only a squash and reformat happened, with size and files unchanged, and flags #38098, docs and testing, but it misses the decisive non-template checklist.\",\n \"reply_why\": \"It asks about #38098 with the continuing-unfinished-work link, plus docs and testing, but leaves out the checklist ask.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the PR description now follows the template, but the checklist is still a custom one.\", \"Recommends an \\\"integration review\\\" label rather than the project's \\\"maintainer review\\\" flow.\"],\n \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"It hands the PR off for review when the key says more feedback is needed.\",\n \"accuracy_why\": \"Its action rests on the false claim that the template is now followed, and it notes the #38098 gap yet hands off anyway.\",\n \"reply_why\": \"It pings laurynmm for review instead of asking the author for the missing #38098 explanation and the template checklist.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE and keeping \\\"not ready\\\" match the key.\",\n \"accuracy_why\": \"It covers both decisive gaps (the non-template checklist and #38098), plus the squash and the broken formatting, and misses only the non-decisive #38902 precedent.\",\n \"reply_why\": \"It asks for both of the reply_ask items, though it doesn't link the continuing-unfinished-work guide, so a maintainer might add that one reference.\"}\n},\n\"ranking\": [\"I\", \"P\", \"A\", \"O\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.356968
+}

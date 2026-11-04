@@ -1,0 +1,113 @@
+{
+ "case": "40012-5570902524",
+ "repeat": 1,
+ "map": {
+  "N": [
+   "v3b-r1"
+  ],
+  "W": [
+   "v3-r2"
+  ],
+  "K": [
+   "v3b-r2"
+  ],
+  "Q": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key exactly.",
+    "accuracy_why": "It confirms both asks are done and flags the divergence from timabbott's /help/ suggestion, but never says there was no new push.",
+    "reply_why": "A brief thanks plus a reviewer ping fits the reply_ask, though it is slightly more than the single ping line that scores highest."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key exactly.",
+    "accuracy_why": "It covers the real screenshots, the checklist and the absence of a new push, but says nothing is missing and omits the /help/ guide point for the reviewer.",
+    "reply_why": "A single reviewer ping line can be pasted as is."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key exactly.",
+    "accuracy_why": "Every must-have is present: both asks met, no new push, laurynmm as reviewer, and the divergence from the issue maintainer's /help/ suggestion.",
+    "reply_why": "A short thanks plus a reviewer ping matches the reply_ask and is nearly paste-ready."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key exactly.",
+    "accuracy_why": "It covers both completed asks and the absence of a new push, but omits the /help/ guide approach question for the reviewer.",
+    "reply_why": "A single reviewer ping line can be pasted as is."
+   }
+  },
+  "ranking": [
+   "K",
+   "N",
+   "Q",
+   "W"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"It confirms both asks are done and flags the divergence from timabbott's /help/ suggestion, but never says there was no new push.\",\n \"reply_why\": \"A brief thanks plus a reviewer ping fits the reply_ask, though it is slightly more than the single ping line that scores highest.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"It covers the real screenshots, the checklist and the absence of a new push, but says nothing is missing and omits the /help/ guide point for the reviewer.\",\n \"reply_why\": \"A single reviewer ping line can be pasted as is.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"Every must-have is present: both asks met, no new push, laurynmm as reviewer, and the divergence from the issue maintainer's /help/ suggestion.\",\n \"reply_why\": \"A short thanks plus a reviewer ping matches the reply_ask and is nearly paste-ready.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"It covers both completed asks and the absence of a new push, but omits the /help/ guide approach question for the reviewer.\",\n \"reply_why\": \"A single reviewer ping line can be pasted as is.\"}\n},\n\"ranking\": [\"K\", \"N\", \"Q\", \"W\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.140132
+}

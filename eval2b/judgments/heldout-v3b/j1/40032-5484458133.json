@@ -1,0 +1,122 @@
+{
+ "case": "40032-5484458133",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "v3b-r2"
+  ],
+  "N": [
+   "v3-r1"
+  ],
+  "J": [
+   "v3-r2"
+  ],
+  "W": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps 'not ready' for more feedback, which matches the key.",
+    "accuracy_why": "It names the concrete commit-message problems correctly, but it never says the code is unchanged and it omits the missing screenshots.",
+    "reply_why": "The commit-format ask is clear and pasteable, but it leaves out the request for precise before/after screenshots with the cursor visible."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the commit has no body explaining why, which the facts don't show."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps 'not ready' for more feedback, which matches the key.",
+    "accuracy_why": "It covers the commit problems and the unchanged +17/-6 code, but it adds an unsupported claim about a missing body and omits the screenshots.",
+    "reply_why": "The format ask is right, but it requests a commit body that may already exist and skips the screenshots."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps 'not ready' for more feedback, which matches the key.",
+    "accuracy_why": "It names the commit problems and notes the code is unchanged; only the missing screenshots are left out.",
+    "reply_why": "It gives a clear, correct commit-format ask with a good 'tooltips:' example, but it lacks the screenshot request."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Presents the author's earlier 'unrelated' answer as new since the feedback.",
+     "Claims the commit has no explanatory body, which the facts don't show."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps 'not ready' for more feedback, which matches the key.",
+    "accuracy_why": "It misframes stale content as new, guesses about the body, and omits both the unchanged-code point and the screenshots.",
+    "reply_why": "It reopens the #40027 question and asks for a body instead of the screenshots, so it drifts from the reply_ask."
+   }
+  },
+  "ranking": [
+   "J",
+   "E",
+   "N",
+   "W"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' for more feedback, which matches the key.\",\n \"accuracy_why\": \"It names the concrete commit-message problems correctly, but it never says the code is unchanged and it omits the missing screenshots.\",\n \"reply_why\": \"The commit-format ask is clear and pasteable, but it leaves out the request for precise before/after screenshots with the cursor visible.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the commit has no body explaining why, which the facts don't show.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' for more feedback, which matches the key.\",\n \"accuracy_why\": \"It covers the commit problems and the unchanged +17/-6 code, but it adds an unsupported claim about a missing body and omits the screenshots.\",\n \"reply_why\": \"The format ask is right, but it requests a commit body that may already exist and skips the screenshots.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' for more feedback, which matches the key.\",\n \"accuracy_why\": \"It names the commit problems and notes the code is unchanged; only the missing screenshots are left out.\",\n \"reply_why\": \"It gives a clear, correct commit-format ask with a good 'tooltips:' example, but it lacks the screenshot request.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Presents the author's earlier 'unrelated' answer as new since the feedback.\", \"Claims the commit has no explanatory body, which the facts don't show.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' for more feedback, which matches the key.\",\n \"accuracy_why\": \"It misframes stale content as new, guesses about the body, and omits both the unchanged-code point and the screenshots.\",\n \"reply_why\": \"It reopens the #40027 question and asks for a body instead of the screenshots, so it drifts from the reply_ask.\"}\n},\n\"ranking\": [\"J\", \"E\", \"N\", \"W\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.21696000000000001
+}

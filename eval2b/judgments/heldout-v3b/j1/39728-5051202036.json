@@ -1,0 +1,119 @@
+{
+ "case": "39728-5051202036",
+ "repeat": 1,
+ "map": {
+  "O": [
+   "v3b-r1"
+  ],
+  "P": [
+   "v3-r1"
+  ],
+  "C": [
+   "v3b-r2"
+  ],
+  "I": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 5,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key, but it recommends keeping \"not ready\" for more feedback where the key says close, though the key's f4 accepts keeping \"not ready\".",
+    "accuracy_why": "It covers all three still-missing items (unchanged commit titles with the wrong issue number, the checklist, imprecise screenshots), does not say the diff is unchanged, and omits #38363 and the competing CodeDay group.",
+    "reply_why": "It makes every ask in the key, with correct guide links, and is close to pasteable."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 5,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key, but it recommends keeping \"not ready\" for more feedback rather than closing.",
+    "accuracy_why": "It correctly flags the unchanged commit titles and wrong issue number and the author's pushback on screenshots, but omits the checklist, the unchanged diff and the related-work context.",
+    "reply_why": "It asks for proper commit messages and precise screenshots with good links, though \"the commit\" (singular) assumes the commits get merged into one."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the author newly added a regression test, but the test commit already existed before the feedback; only a squash happened."
+    ],
+    "rule_failures": [],
+    "decision_score": 5,
+    "accuracy_score": 5,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "NOTE matches the key, but it recommends keeping \"not ready\" for more feedback rather than closing.",
+    "accuracy_why": "It gets both decisive gaps right but wrongly credits a newly added test, and omits the checklist, the unchanged diff and the related work.",
+    "reply_why": "It covers screenshots and commit messages concisely, but offering a screen recording as an alternative softens the precise-screenshot requirement."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit cleanup the feedback asked for is done, but the commit messages still don't follow Zulip's style and cite the wrong issue number."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 5,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE matches the key, but it recommends keeping \"not ready\" for more feedback rather than closing.",
+    "accuracy_why": "It wrongly says the commit feedback was addressed, misses the checklist, and adds a filler point about the author's test-location question.",
+    "reply_why": "Because of that wrong fact, it thanks the author for the commit cleanup, never asks for fixed commit messages, and weakens the screenshot ask by accepting a recording."
+   }
+  },
+  "ranking": [
+   "P",
+   "I",
+   "C",
+   "O"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 5, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE matches the key, but it recommends keeping \\\"not ready\\\" for more feedback where the key says close, though the key's f4 accepts keeping \\\"not ready\\\".\",\n \"accuracy_why\": \"It covers all three still-missing items (unchanged commit titles with the wrong issue number, the checklist, imprecise screenshots), does not say the diff is unchanged, and omits #38363 and the competing CodeDay group.\",\n \"reply_why\": \"It makes every ask in the key, with correct guide links, and is close to pasteable.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 5, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE matches the key, but it recommends keeping \\\"not ready\\\" for more feedback rather than closing.\",\n \"accuracy_why\": \"It correctly flags the unchanged commit titles and wrong issue number and the author's pushback on screenshots, but omits the checklist, the unchanged diff and the related-work context.\",\n \"reply_why\": \"It asks for proper commit messages and precise screenshots with good links, though \\\"the commit\\\" (singular) assumes the commits get merged into one.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the author newly added a regression test, but the test commit already existed before the feedback; only a squash happened.\"], \"rule_failures\": [],\n \"decision_score\": 5, \"accuracy_score\": 5, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"NOTE matches the key, but it recommends keeping \\\"not ready\\\" for more feedback rather than closing.\",\n \"accuracy_why\": \"It gets both decisive gaps right but wrongly credits a newly added test, and omits the checklist, the unchanged diff and the related work.\",\n \"reply_why\": \"It covers screenshots and commit messages concisely, but offering a screen recording as an alternative softens the precise-screenshot requirement.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the commit cleanup the feedback asked for is done, but the commit messages still don't follow Zulip's style and cite the wrong issue number.\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 5, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"NOTE matches the key, but it recommends keeping \\\"not ready\\\" for more feedback rather than closing.\",\n \"accuracy_why\": \"It wrongly says the commit feedback was addressed, misses the checklist, and adds a filler point about the author's test-location question.\",\n \"reply_why\": \"Because of that wrong fact, it thanks the author for the commit cleanup, never asks for fixed commit messages, and weakens the screenshot ask by accepting a recording.\"}\n},\n\"ranking\": [\"P\", \"I\", \"C\", \"O\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.349052
+}

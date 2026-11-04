@@ -1,0 +1,115 @@
+{
+ "case": "39822-5091673928",
+ "repeat": 1,
+ "map": {
+  "R": [
+   "v3-r2"
+  ],
+  "M": [
+   "v3b-r2"
+  ],
+  "Y": [
+   "v3b-r1"
+  ],
+  "W": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key's decision and the triager's action.",
+    "accuracy_why": "It covers both answered asks and treats the generator-rendered images as acceptable, but never says there was no new push.",
+    "reply_why": "A one-line thanks plus a reviewer ping that a maintainer could paste as is."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "Both asks are marked done and the rendered images are rightly 'nothing blocking', though it omits the no-push point and adds an irrelevant no-linked-issue remark.",
+    "reply_why": "A short thanks to the author plus a reviewer ping is pasteable."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "It lists the generator-rendered images as 'Missing', a leftover, where the key says nothing is missing, and it omits the no-push point.",
+    "reply_why": "A reviewer ping with a short summary works, though it doesn't thank the author."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "It frames the rendered images as 'Missing' even though the key says nothing is missing, and it omits the no-push point.",
+    "reply_why": "A reviewer ping with a slightly wordy summary and no thanks to the author."
+   }
+  },
+  "ranking": [
+   "R",
+   "W",
+   "M",
+   "Y"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key's decision and the triager's action.\",\n \"accuracy_why\": \"It covers both answered asks and treats the generator-rendered images as acceptable, but never says there was no new push.\",\n \"reply_why\": \"A one-line thanks plus a reviewer ping that a maintainer could paste as is.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"Both asks are marked done and the rendered images are rightly 'nothing blocking', though it omits the no-push point and adds an irrelevant no-linked-issue remark.\",\n \"reply_why\": \"A short thanks to the author plus a reviewer ping is pasteable.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It lists the generator-rendered images as 'Missing', a leftover, where the key says nothing is missing, and it omits the no-push point.\",\n \"reply_why\": \"A reviewer ping with a short summary works, though it doesn't thank the author.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It frames the rendered images as 'Missing' even though the key says nothing is missing, and it omits the no-push point.\",\n \"reply_why\": \"A reviewer ping with a slightly wordy summary and no thanks to the author.\"}\n},\n\"ranking\": [\"R\", \"W\", \"M\", \"Y\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.129016
+}

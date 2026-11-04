@@ -1,0 +1,121 @@
+{
+ "case": "40042-6183881101",
+ "repeat": 1,
+ "map": {
+  "B": [
+   "v3-r2"
+  ],
+  "E": [
+   "v3-r1"
+  ],
+  "Q": [
+   "v3b-r1"
+  ],
+  "T": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE and recommends handing off to sahil839, which matches the key.",
+    "accuracy_why": "It covers the rewritten commits, the guard removal with the size change, CI and the CZO approval, but leaves out the merge-conflict status.",
+    "reply_why": "It is a short reviewer ping to sahil839 that could be pasted as is."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE and recommends handing off to sahil839, which matches the key.",
+    "accuracy_why": "Every decisive fact is right, and CI is mentioned, but merge conflicts are not, and it adds a non-blocking point about the blank Fixes line.",
+    "reply_why": "It is a clean reviewer ping that could be pasted as is."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE and recommends handing off to sahil839, which matches the key.",
+    "accuracy_why": "It omits CI and merge-conflict status, and lists the empty Fixes line as missing when the key lists nothing missing.",
+    "reply_why": "It is a one-line reviewer ping that could be pasted as is."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Claims sahil839 made the most recent changes to these files, but the data only shows he has the most commits to them."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE and recommends handing off to sahil839, which matches the key.",
+    "accuracy_why": "The core facts are right, but it makes an unsupported claim about the most recent file changes and treats the Fixes line as missing.",
+    "reply_why": "The reviewer ping is right, just slightly wordy."
+   }
+  },
+  "ranking": [
+   "B",
+   "E",
+   "Q",
+   "T"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It writes a NOTE and recommends handing off to sahil839, which matches the key.\",\n \"accuracy_why\": \"It covers the rewritten commits, the guard removal with the size change, CI and the CZO approval, but leaves out the merge-conflict status.\",\n \"reply_why\": \"It is a short reviewer ping to sahil839 that could be pasted as is.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It writes a NOTE and recommends handing off to sahil839, which matches the key.\",\n \"accuracy_why\": \"Every decisive fact is right, and CI is mentioned, but merge conflicts are not, and it adds a non-blocking point about the blank Fixes line.\",\n \"reply_why\": \"It is a clean reviewer ping that could be pasted as is.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It writes a NOTE and recommends handing off to sahil839, which matches the key.\",\n \"accuracy_why\": \"It omits CI and merge-conflict status, and lists the empty Fixes line as missing when the key lists nothing missing.\",\n \"reply_why\": \"It is a one-line reviewer ping that could be pasted as is.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [\"Claims sahil839 made the most recent changes to these files, but the data only shows he has the most commits to them.\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It writes a NOTE and recommends handing off to sahil839, which matches the key.\",\n \"accuracy_why\": \"The core facts are right, but it makes an unsupported claim about the most recent file changes and treats the Fixes line as missing.\",\n \"reply_why\": \"The reviewer ping is right, just slightly wordy.\"}\n},\n\"ranking\": [\"B\", \"E\", \"Q\", \"T\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.13578
+}

@@ -1,0 +1,117 @@
+{
+ "case": "39865-5194201765",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "v3b-r2"
+  ],
+  "O": [
+   "v3b-r1"
+  ],
+  "S": [
+   "v3-r1"
+  ],
+  "J": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the before/after screenshots look good and satisfy the feedback, when they are still not precise (pairs differ in size and capture date)."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\", which matches the key's more_feedback action, though for the wrong reason.",
+    "accuracy_why": "It covers the no-push and open-design points but wrongly calls the screenshots fixed, and that is the decisive blocker.",
+    "reply_why": "It praises the screenshots and never asks for precise retakes, so it misses the reply_ask entirely."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshots cover the requested feedback and look good, when they still aren't precise."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\", matching more_feedback, but it blames only the design question.",
+    "accuracy_why": "It gets the no-push and CZO design facts right but misjudges the screenshots, which are the decisive missing item.",
+    "reply_why": "It tells the author the screenshots look good and asks only about the API approach, so it misses the screenshot ask."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshots are fixed and look good, when each before/after pair still differs in size and date."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\", matching more_feedback, and it lays out a sensible path to handoff.",
+    "accuracy_why": "It adds a valid single-large-commit concern alongside the correct design point, but it still wrongly clears the screenshots.",
+    "reply_why": "The commit-split ask is useful, but the reply wrongly praises the screenshots and omits the precise-screenshot request."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshots resolve everything that was asked and the PR is ready for review, when the screenshots are still not precise."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to Sahil when the key says to give more feedback on the screenshots.",
+    "accuracy_why": "Its handoff rests on the false claim that the screenshot feedback was met.",
+    "reply_why": "It pings a reviewer instead of asking the author for precise screenshots, which is the wrong decision."
+   }
+  },
+  "ranking": [
+   "S",
+   "O",
+   "E",
+   "J"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the before/after screenshots look good and satisfy the feedback, when they are still not precise (pairs differ in size and capture date).\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\", which matches the key's more_feedback action, though for the wrong reason.\",\n \"accuracy_why\": \"It covers the no-push and open-design points but wrongly calls the screenshots fixed, and that is the decisive blocker.\",\n \"reply_why\": \"It praises the screenshots and never asks for precise retakes, so it misses the reply_ask entirely.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the screenshots cover the requested feedback and look good, when they still aren't precise.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\", matching more_feedback, but it blames only the design question.\",\n \"accuracy_why\": \"It gets the no-push and CZO design facts right but misjudges the screenshots, which are the decisive missing item.\",\n \"reply_why\": \"It tells the author the screenshots look good and asks only about the API approach, so it misses the screenshot ask.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the screenshots are fixed and look good, when each before/after pair still differs in size and date.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\", matching more_feedback, and it lays out a sensible path to handoff.\",\n \"accuracy_why\": \"It adds a valid single-large-commit concern alongside the correct design point, but it still wrongly clears the screenshots.\",\n \"reply_why\": \"The commit-split ask is useful, but the reply wrongly praises the screenshots and omits the precise-screenshot request.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the screenshots resolve everything that was asked and the PR is ready for review, when the screenshots are still not precise.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off to Sahil when the key says to give more feedback on the screenshots.\",\n \"accuracy_why\": \"Its handoff rests on the false claim that the screenshot feedback was met.\",\n \"reply_why\": \"It pings a reviewer instead of asking the author for precise screenshots, which is the wrong decision.\"}},\n \"ranking\": [\"S\", \"O\", \"E\", \"J\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.338876
+}

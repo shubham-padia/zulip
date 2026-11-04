@@ -1,0 +1,122 @@
+{
+ "case": "39945-5415679206",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "v3-r2"
+  ],
+  "F": [
+   "v3b-r1"
+  ],
+  "N": [
+   "v3b-r2"
+  ],
+  "I": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the new section compares this approach to the other open PRs, but it only claims independent work.",
+     "Claims both requested fixes are done, so the PR is ready for review."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 2,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off for review when the key action is close, with the choice among competing PRs left to the core team.",
+    "accuracy_why": "It wrongly says the description compares this PR with the others, and the hand-off rests on that claim; it also misses the backward-compatibility question.",
+    "reply_why": "It asks for a review the key does not want, and it confusingly thanks laurynmm for updating the description."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Headline says both feedback items are done, even though the comparison with existing PRs is still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It hands off to a maintainer review when the key action is close.",
+    "accuracy_why": "It notes the competing PRs and part of the missing comparison, but its headline calls the feedback done and it misses the python-zulip-api question.",
+    "reply_why": "It pings Niloth-p for a review, which is the wrong ask when the key wants the author told to wait while the core team picks a PR."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims all three feedback items are done, while its own 'Missing' line shows the comparison is not."
+    ],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends removing 'not ready' and assigning laurynmm when the key action is close.",
+    "accuracy_why": "It flags the missing comparison but contradicts that with an 'all done' headline, and it omits both the no-new-push fact and the backward-compatibility question.",
+    "reply_why": "A review ping to laurynmm is the wrong ask for a PR the key says should be closed."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It correctly avoids a hand-off, but it recommends more feedback where the key action is close.",
+    "accuracy_why": "It accurately covers the description-only edit, the competing PRs in review and the thin relationship section, but it misses the python-zulip-api question.",
+    "reply_why": "It asks the author for more comparison work instead of saying the core team will choose among the PRs and nothing more is needed now."
+   }
+  },
+  "ranking": [
+   "I",
+   "F",
+   "N",
+   "D"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the new section compares this approach to the other open PRs, but it only claims independent work.\", \"Claims both requested fixes are done, so the PR is ready for review.\"],\n \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 1, \"accuracy_score\": 2, \"reply_score\": 1, \"brevity_score\": 7,\n \"decision_why\": \"It recommends handing off for review when the key action is close, with the choice among competing PRs left to the core team.\",\n \"accuracy_why\": \"It wrongly says the description compares this PR with the others, and the hand-off rests on that claim; it also misses the backward-compatibility question.\",\n \"reply_why\": \"It asks for a review the key does not want, and it confusingly thanks laurynmm for updating the description.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Headline says both feedback items are done, even though the comparison with existing PRs is still missing.\"],\n \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It hands off to a maintainer review when the key action is close.\",\n \"accuracy_why\": \"It notes the competing PRs and part of the missing comparison, but its headline calls the feedback done and it misses the python-zulip-api question.\",\n \"reply_why\": \"It pings Niloth-p for a review, which is the wrong ask when the key wants the author told to wait while the core team picks a PR.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims all three feedback items are done, while its own 'Missing' line shows the comparison is not.\"],\n \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"It recommends removing 'not ready' and assigning laurynmm when the key action is close.\",\n \"accuracy_why\": \"It flags the missing comparison but contradicts that with an 'all done' headline, and it omits both the no-new-push fact and the backward-compatibility question.\",\n \"reply_why\": \"A review ping to laurynmm is the wrong ask for a PR the key says should be closed.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It correctly avoids a hand-off, but it recommends more feedback where the key action is close.\",\n \"accuracy_why\": \"It accurately covers the description-only edit, the competing PRs in review and the thin relationship section, but it misses the python-zulip-api question.\",\n \"reply_why\": \"It asks the author for more comparison work instead of saying the core team will choose among the PRs and nothing more is needed now.\"}},\n\"ranking\": [\"I\", \"F\", \"N\", \"D\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.465456
+}

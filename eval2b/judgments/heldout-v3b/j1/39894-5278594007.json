@@ -1,0 +1,113 @@
+{
+ "case": "39894-5278594007",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v3-r2"
+  ],
+  "S": [
+   "v3b-r1"
+  ],
+  "F": [
+   "v3b-r2"
+  ],
+  "C": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "It covers the screenshots, the pixel diff, the 5px to 6px blur change and the fact that there was no push, but it suggests laurynmm rather than karlstolley as the reviewer.",
+    "reply_why": "A short thanks plus a reviewer ping can be pasted as is."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "It flags the blur change well, but it misses the no-new-push and CI point and suggests laurynmm rather than karlstolley.",
+    "reply_why": "A single reviewer ping can be pasted as is."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "It ties the blur change to the issue's #design guidance, but it omits the no-push point and suggests laurynmm rather than karlstolley.",
+    "reply_why": "A single reviewer ping can be pasted as is."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "It covers the screenshots, the pixel diff, the blur change and the absence of a push, and it routes the blur judgment to the reviewer, but it misses suggesting karlstolley.",
+    "reply_why": "A brief thanks plus a reviewer ping matches the reply ask and can be pasted as is."
+   }
+  },
+  "ranking": [
+   "C",
+   "K",
+   "S",
+   "F"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"It covers the screenshots, the pixel diff, the 5px to 6px blur change and the fact that there was no push, but it suggests laurynmm rather than karlstolley as the reviewer.\",\n \"reply_why\": \"A short thanks plus a reviewer ping can be pasted as is.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"It flags the blur change well, but it misses the no-new-push and CI point and suggests laurynmm rather than karlstolley.\",\n \"reply_why\": \"A single reviewer ping can be pasted as is.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"It ties the blur change to the issue's #design guidance, but it omits the no-push point and suggests laurynmm rather than karlstolley.\",\n \"reply_why\": \"A single reviewer ping can be pasted as is.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"It covers the screenshots, the pixel diff, the blur change and the absence of a push, and it routes the blur judgment to the reviewer, but it misses suggesting karlstolley.\",\n \"reply_why\": \"A brief thanks plus a reviewer ping matches the reply ask and can be pasted as is.\"}\n},\n\"ranking\": [\"C\", \"K\", \"S\", \"F\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.248816
+}

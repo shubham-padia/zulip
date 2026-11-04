@@ -1,0 +1,113 @@
+{
+ "case": "39829-5113437343",
+ "repeat": 1,
+ "map": {
+  "A": [
+   "v3-r1"
+  ],
+  "N": [
+   "v3b-r1"
+  ],
+  "I": [
+   "v3b-r2"
+  ],
+  "S": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" for more feedback matches the key.",
+    "accuracy_why": "It covers the copied, mismatched \"Before\", the lack of a code push and the multi-reactor gap, but leaves out the other open PRs for #38594.",
+    "reply_why": "The screenshot ask is clear and links the guide, but it skips the multi-reactor case and the merged-PR examples."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" for more feedback matches the key.",
+    "accuracy_why": "It gets the mismatched screenshots and the missing push right, but misses both the multi-reactor case and the other open PRs.",
+    "reply_why": "The ask to take matching captures from their own build is good, but it leaves out the multi-reactor case."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" for more feedback matches the key.",
+    "accuracy_why": "It notes the size mismatch and the lack of a push, but misses the multi-reactor case and the other open PRs.",
+    "reply_why": "It never tells the author the \"Before\" was copied from the issue, so they may not see what to fix, and it skips the multi-reactor case."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" for more feedback matches the key.",
+    "accuracy_why": "It covers the copied \"Before\", the size mismatch, the lack of a push and the multi-reactor case, missing only the other open PRs.",
+    "reply_why": "It flags the copied \"Before\" and asks for the multi-reactor case, missing only the merged-PR examples."
+   }
+  },
+  "ranking": [
+   "S",
+   "A",
+   "N",
+   "I"
+  ]
+ },
+ "text": "{\"outputs\": {\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" for more feedback matches the key.\",\n   \"accuracy_why\": \"It covers the copied, mismatched \\\"Before\\\", the lack of a code push and the multi-reactor gap, but leaves out the other open PRs for #38594.\",\n   \"reply_why\": \"The screenshot ask is clear and links the guide, but it skips the multi-reactor case and the merged-PR examples.\"},\n  \"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" for more feedback matches the key.\",\n   \"accuracy_why\": \"It gets the mismatched screenshots and the missing push right, but misses both the multi-reactor case and the other open PRs.\",\n   \"reply_why\": \"The ask to take matching captures from their own build is good, but it leaves out the multi-reactor case.\"},\n  \"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" for more feedback matches the key.\",\n   \"accuracy_why\": \"It notes the size mismatch and the lack of a push, but misses the multi-reactor case and the other open PRs.\",\n   \"reply_why\": \"It never tells the author the \\\"Before\\\" was copied from the issue, so they may not see what to fix, and it skips the multi-reactor case.\"},\n  \"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" for more feedback matches the key.\",\n   \"accuracy_why\": \"It covers the copied \\\"Before\\\", the size mismatch, the lack of a push and the multi-reactor case, missing only the other open PRs.\",\n   \"reply_why\": \"It flags the copied \\\"Before\\\" and asks for the multi-reactor case, missing only the merged-PR examples.\"}},\n \"ranking\": [\"S\", \"A\", \"N\", \"I\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.176536
+}

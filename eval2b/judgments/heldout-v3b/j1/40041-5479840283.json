@@ -1,0 +1,115 @@
+{
+ "case": "40041-5479840283",
+ "repeat": 1,
+ "map": {
+  "A": [
+   "v3b-r2"
+  ],
+  "C": [
+   "v3-r1"
+  ],
+  "N": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that hands the PR off matches the key's kind and action.",
+    "accuracy_why": "It covers the addressed feedback and the companion PR #40042, but it never says there was no new push, that the thread has no maintainer reply, or that the commit structure is a concern.",
+    "reply_why": "Besides the reviewer ping, it asks the author to explain the link to #40042 in the description, so it is a multi-sentence ask to the author on a hand_off."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "It implies the CZO link was already in the description before this round, which suggests nothing changed, when adding that link was exactly what the feedback asked for."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" and waits for more input, although the only blocker was resolved and the key calls for a hand-off.",
+    "accuracy_why": "It notes no push, no maintainer reply and the overlap with #40042, but it frames the resolved feedback as unaddressed and raises description nits as blockers.",
+    "reply_why": "It tells the author to wait and do more work instead of moving the PR to review, which is the wrong ask."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and waits for a maintainer, although the key says to hand off now that the requested discussion exists.",
+    "accuracy_why": "It is right that there was no push and no maintainer reply, but it treats the addressed feedback as still blocking and leaves out #40042 and the commit structure.",
+    "reply_why": "It asks the author to wait and rework the testing section instead of saying the PR is moving to review."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that hands the PR off matches the key's kind and action.",
+    "accuracy_why": "It notes the addressed feedback and the missing maintainer reply, but it leaves out the companion PR #40042, the lack of a new push and the commit structure.",
+    "reply_why": "A short thank-you plus a reviewer ping is nearly pastable, though it doesn't mention #40042."
+   }
+  },
+  "ranking": [
+   "Q",
+   "A",
+   "N",
+   "C"
+  ]
+ },
+ "text": "{\"outputs\": {\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that hands the PR off matches the key's kind and action.\",\n   \"accuracy_why\": \"It covers the addressed feedback and the companion PR #40042, but it never says there was no new push, that the thread has no maintainer reply, or that the commit structure is a concern.\",\n   \"reply_why\": \"Besides the reviewer ping, it asks the author to explain the link to #40042 in the description, so it is a multi-sentence ask to the author on a hand_off.\"},\n  \"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"It implies the CZO link was already in the description before this round, which suggests nothing changed, when adding that link was exactly what the feedback asked for.\"], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 6,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and waits for more input, although the only blocker was resolved and the key calls for a hand-off.\",\n   \"accuracy_why\": \"It notes no push, no maintainer reply and the overlap with #40042, but it frames the resolved feedback as unaddressed and raises description nits as blockers.\",\n   \"reply_why\": \"It tells the author to wait and do more work instead of moving the PR to review, which is the wrong ask.\"},\n  \"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and waits for a maintainer, although the key says to hand off now that the requested discussion exists.\",\n   \"accuracy_why\": \"It is right that there was no push and no maintainer reply, but it treats the addressed feedback as still blocking and leaves out #40042 and the commit structure.\",\n   \"reply_why\": \"It asks the author to wait and rework the testing section instead of saying the PR is moving to review.\"},\n  \"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that hands the PR off matches the key's kind and action.\",\n   \"accuracy_why\": \"It notes the addressed feedback and the missing maintainer reply, but it leaves out the companion PR #40042, the lack of a new push and the commit structure.\",\n   \"reply_why\": \"A short thank-you plus a reviewer ping is nearly pastable, though it doesn't mention #40042.\"}},\n \"ranking\": [\"Q\", \"A\", \"N\", \"C\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.129604
+}

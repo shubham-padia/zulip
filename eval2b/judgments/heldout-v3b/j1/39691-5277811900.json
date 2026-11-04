@@ -1,0 +1,123 @@
+{
+ "case": "39691-5277811900",
+ "repeat": 1,
+ "map": {
+  "T": [
+   "v3-r2"
+  ],
+  "L": [
+   "v3b-r2"
+  ],
+  "V": [
+   "v3-r1"
+  ],
+  "R": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands the PR off by swapping the labels and pinging prakhar1144, which matches the key.",
+    "accuracy_why": "It covers the lack of a new push, prakhar's missing confirmation and the kept helpers as a point for him to judge, but it omits PIG208's open nits and a familiar reviewer such as apoorvapendse, and the checklist point is filler.",
+    "reply_why": "Its ping asks only whether keeping the helpers is OK rather than asking prakhar to confirm the review as a whole, and it skips the nits, so a sentence needs rewriting."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands off to maintainer review with prakhar1144 assigned, which matches the key.",
+    "accuracy_why": "Its Missing line lists only the unchecked checklist, leaving prakhar's confirmation implied by the title, and it omits PIG208's nits, karlstolley's duplicate-function worry and a reviewer such as apoorvapendse.",
+    "reply_why": "It is a short, pasteable ping asking prakhar1144 to confirm his review is addressed."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands off and assigns prakhar1144 to confirm, which matches the key.",
+    "accuracy_why": "It states that nothing new was pushed and that prakhar hasn't confirmed, and it notes the kept helpers, but it omits PIG208's nits, the duplicate-function concern and a reviewer such as apoorvapendse.",
+    "reply_why": "It is a clean single ping asking prakhar1144 to confirm his requested changes are addressed."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "code_details",
+     "filler_point",
+     "reply_extra_ask"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 5,
+    "decision_why": "It is a NOTE that hands off to maintainer review with prakhar1144 assigned, which matches the key.",
+    "accuracy_why": "It spends words reading commit titles as evidence instead of flagging prakhar's missing confirmation and PIG208's open nits, and it never suggests a familiar reviewer.",
+    "reply_why": "It adds a second ask telling the author to tick the self-review checklist, which goes beyond a reviewer ping and caps the score at 6 for a hand-off."
+   }
+  },
+  "ranking": [
+   "V",
+   "L",
+   "T",
+   "R"
+  ]
+ },
+ "text": "{\"outputs\": {\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that hands the PR off by swapping the labels and pinging prakhar1144, which matches the key.\",\n   \"accuracy_why\": \"It covers the lack of a new push, prakhar's missing confirmation and the kept helpers as a point for him to judge, but it omits PIG208's open nits and a familiar reviewer such as apoorvapendse, and the checklist point is filler.\",\n   \"reply_why\": \"Its ping asks only whether keeping the helpers is OK rather than asking prakhar to confirm the review as a whole, and it skips the nits, so a sentence needs rewriting.\"},\n  \"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that hands off to maintainer review with prakhar1144 assigned, which matches the key.\",\n   \"accuracy_why\": \"Its Missing line lists only the unchecked checklist, leaving prakhar's confirmation implied by the title, and it omits PIG208's nits, karlstolley's duplicate-function worry and a reviewer such as apoorvapendse.\",\n   \"reply_why\": \"It is a short, pasteable ping asking prakhar1144 to confirm his review is addressed.\"},\n  \"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that hands off and assigns prakhar1144 to confirm, which matches the key.\",\n   \"accuracy_why\": \"It states that nothing new was pushed and that prakhar hasn't confirmed, and it notes the kept helpers, but it omits PIG208's nits, the duplicate-function concern and a reviewer such as apoorvapendse.\",\n   \"reply_why\": \"It is a clean single ping asking prakhar1144 to confirm his requested changes are addressed.\"},\n  \"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"code_details\", \"filler_point\", \"reply_extra_ask\"],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6,\n   \"brevity_score\": 5,\n   \"decision_why\": \"It is a NOTE that hands off to maintainer review with prakhar1144 assigned, which matches the key.\",\n   \"accuracy_why\": \"It spends words reading commit titles as evidence instead of flagging prakhar's missing confirmation and PIG208's open nits, and it never suggests a familiar reviewer.\",\n   \"reply_why\": \"It adds a second ask telling the author to tick the self-review checklist, which goes beyond a reviewer ping and caps the score at 6 for a hand-off.\"}},\n \"ranking\": [\"V\", \"L\", \"T\", \"R\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.259596
+}
