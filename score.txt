@@ -1,0 +1,16 @@
+Key: Counter({'yes': 165, 'no': 75})
+Key vs what happened next:
+  maintainer replied with a comment             key=no       43
+  maintainer replied with a comment             key=yes      117
+  no maintainer action within 14 days           key=no       28
+  no maintainer action within 14 days           key=yes      35
+  triager removed not ready                     key=no       4
+  triager removed not ready                     key=yes      13
+
+Run      agree  yes->no  no->yes  unparsed  cost
+v1-r1    227/240      11        2         0  $1.07
+v1-r2    225/240      13        2         0  $0.16
+v2-r1    230/240       4        6         0  $1.12
+v2-r2    230/240       4        6         0  $0.14
+v3-r1    227/240      12        1         0  $1.15
+v3-r2    227/240      13        0         0  $0.17
