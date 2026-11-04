@@ -1,0 +1,169 @@
+{
+ "case": "40168-5775859018",
+ "repeat": 1,
+ "map": {
+  "H": [
+   "v2-r2"
+  ],
+  "U": [
+   "v1-r2"
+  ],
+  "F": [
+   "v3-r2"
+  ],
+  "Y": [
+   "v3-r1"
+  ],
+  "P": [
+   "v2-r1"
+  ],
+  "T": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "NOTE is the right kind and it avoids handing off, but it keeps the PR open for more feedback where the key says close.",
+    "accuracy_why": "It covers no push, the placeholder, the missing before/after shots, the checklist and #40052, but never asks the triager to check the screenshots for the edit button overlapping the input.",
+    "reply_why": "The ask for before/after shots in the description is right and it links both guides, but it doesn't ask for the edit button to be shown fully visible and not overlapping."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind and it avoids handing off, but it keeps the PR open for more feedback where the key says close.",
+    "accuracy_why": "It names the placeholder, the result-only screenshots, the unchecked items and #40052, but doesn't flag that the screenshots must be checked for the edit button overlapping the input.",
+    "reply_why": "The ask for before/after pairs in the description is pasteable, but it doesn't ask to show the edit button clear of the input."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says nothing is blocking and calls the PR ready for review, although the required before/after screenshots and the description update are still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off for review where the key says close.",
+    "accuracy_why": "It notices the placeholder and the unclear before/after, but dismisses both as non-blocking, which is the wrong fact its hand-off rests on.",
+    "reply_why": "A reviewer ping follows from the wrong decision and asks nothing of the author."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE is the right kind and it avoids handing off, but it keeps the PR open for more feedback where the key says close.",
+    "accuracy_why": "It is concise and right on no push, the placeholder, the missing labeled before/after shots and #40052, but it omits the checklist gaps and the check for overlap.",
+    "reply_why": "The precise before/after ask at several sizes, in the description, with the guide link, is nearly pasteable but doesn't mention the edit button's visibility."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review, although the required before/after screenshots and the description update are missing."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 1,
+    "brevity_score": 6,
+    "decision_why": "It recommends handing off to laurynmm where the key says close.",
+    "accuracy_why": "It treats the screenshots as done, only hedges on before/after, and never notes the unchanged code or the placeholder.",
+    "reply_why": "A reviewer ping follows from the wrong hand-off decision."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind and it avoids handing off, but it keeps the PR open for more feedback where the key says close.",
+    "accuracy_why": "It covers no push, the placeholder, the missing before/after, the checklist and #40052, but never asks for a check of the edit button overlap, and it repeats the placeholder point.",
+    "reply_why": "The ask for before/after at narrow widths in the description is right, but it doesn't mention the edit button being fully visible."
+   }
+  },
+  "ranking": [
+   "Y",
+   "U",
+   "T",
+   "H",
+   "F",
+   "P"
+  ]
+ },
+ "text": "{\"outputs\": {\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 6,\n   \"decision_why\": \"NOTE is the right kind and it avoids handing off, but it keeps the PR open for more feedback where the key says close.\",\n   \"accuracy_why\": \"It covers no push, the placeholder, the missing before/after shots, the checklist and #40052, but never asks the triager to check the screenshots for the edit button overlapping the input.\",\n   \"reply_why\": \"The ask for before/after shots in the description is right and it links both guides, but it doesn't ask for the edit button to be shown fully visible and not overlapping.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE is the right kind and it avoids handing off, but it keeps the PR open for more feedback where the key says close.\",\n   \"accuracy_why\": \"It names the placeholder, the result-only screenshots, the unchecked items and #40052, but doesn't flag that the screenshots must be checked for the edit button overlapping the input.\",\n   \"reply_why\": \"The ask for before/after pairs in the description is pasteable, but it doesn't ask to show the edit button clear of the input.\"},\n  \"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Says nothing is blocking and calls the PR ready for review, although the required before/after screenshots and the description update are still missing.\"], \"rule_failures\": [],\n   \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 1,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off for review where the key says close.\",\n   \"accuracy_why\": \"It notices the placeholder and the unclear before/after, but dismisses both as non-blocking, which is the wrong fact its hand-off rests on.\",\n   \"reply_why\": \"A reviewer ping follows from the wrong decision and asks nothing of the author.\"},\n  \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE is the right kind and it avoids handing off, but it keeps the PR open for more feedback where the key says close.\",\n   \"accuracy_why\": \"It is concise and right on no push, the placeholder, the missing labeled before/after shots and #40052, but it omits the checklist gaps and the check for overlap.\",\n   \"reply_why\": \"The precise before/after ask at several sizes, in the description, with the guide link, is nearly pasteable but doesn't mention the edit button's visibility.\"},\n  \"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Calls the PR ready for review, although the required before/after screenshots and the description update are missing.\"], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 1,\n   \"brevity_score\": 6,\n   \"decision_why\": \"It recommends handing off to laurynmm where the key says close.\",\n   \"accuracy_why\": \"It treats the screenshots as done, only hedges on before/after, and never notes the unchanged code or the placeholder.\",\n   \"reply_why\": \"A reviewer ping follows from the wrong hand-off decision.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE is the right kind and it avoids handing off, but it keeps the PR open for more feedback where the key says close.\",\n   \"accuracy_why\": \"It covers no push, the placeholder, the missing before/after, the checklist and #40052, but never asks for a check of the edit button overlap, and it repeats the placeholder point.\",\n   \"reply_why\": \"The ask for before/after at narrow widths in the description is right, but it doesn't mention the edit button being fully visible.\"}},\n \"ranking\": [\"Y\", \"U\", \"T\", \"H\", \"F\", \"P\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.21476399999999998
+}

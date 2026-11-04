@@ -1,0 +1,165 @@
+{
+ "case": "40042-6183881101",
+ "repeat": 1,
+ "map": {
+  "L": [
+   "v2-r1"
+  ],
+  "J": [
+   "v1-r2"
+  ],
+  "C": [
+   "v3-r1"
+  ],
+  "P": [
+   "v3-r2"
+  ],
+  "S": [
+   "v2-r2"
+  ],
+  "U": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that recommends handing off to sahil839 matches the key exactly.",
+    "accuracy_why": "It covers the reworded commits, the removed check, CI passing and Sahil's CZO approval, but it never mentions merge conflicts.",
+    "reply_why": "A single ping to sahil839 that a maintainer could paste as is."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that recommends handing off to sahil839 matches the key.",
+    "accuracy_why": "The changes and Sahil's CZO approval are right, but it says nothing about CI or merge conflicts.",
+    "reply_why": "A clean single reviewer ping."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that recommends handing off to sahil839 matches the key.",
+    "accuracy_why": "It is accurate on the commits, the guard, CI and the CZO approval, but it omits merge conflicts.",
+    "reply_why": "A short thanks plus a ping is fine, though slightly wordier than one ping line."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that recommends handing off to sahil839 matches the key.",
+    "accuracy_why": "The changes and the CZO approval are correct, but CI and merge conflicts are not mentioned.",
+    "reply_why": "A single reviewer ping that is ready to paste."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Claims sahil839 has the most recent commits on these files; the input gives only commit counts, not recency."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that recommends handing off to sahil839 matches the key.",
+    "accuracy_why": "Most facts are right, including CI and the CZO approval, but merge conflicts are omitted and it adds an unsupported claim about recency.",
+    "reply_why": "A single reviewer ping that is ready to paste."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 5,
+    "decision_why": "A NOTE that recommends handing off to sahil839 matches the key.",
+    "accuracy_why": "It is accurate on the changes, CI and the CZO approval, but it omits merge conflicts.",
+    "reply_why": "A single reviewer ping that is ready to paste."
+   }
+  },
+  "ranking": [
+   "C",
+   "P",
+   "L",
+   "J",
+   "S",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that recommends handing off to sahil839 matches the key exactly.\",\n   \"accuracy_why\": \"It covers the reworded commits, the removed check, CI passing and Sahil's CZO approval, but it never mentions merge conflicts.\",\n   \"reply_why\": \"A single ping to sahil839 that a maintainer could paste as is.\"},\n \"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that recommends handing off to sahil839 matches the key.\",\n   \"accuracy_why\": \"The changes and Sahil's CZO approval are right, but it says nothing about CI or merge conflicts.\",\n   \"reply_why\": \"A clean single reviewer ping.\"},\n \"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that recommends handing off to sahil839 matches the key.\",\n   \"accuracy_why\": \"It is accurate on the commits, the guard, CI and the CZO approval, but it omits merge conflicts.\",\n   \"reply_why\": \"A short thanks plus a ping is fine, though slightly wordier than one ping line.\"},\n \"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE that recommends handing off to sahil839 matches the key.\",\n   \"accuracy_why\": \"The changes and the CZO approval are correct, but CI and merge conflicts are not mentioned.\",\n   \"reply_why\": \"A single reviewer ping that is ready to paste.\"},\n \"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [\"Claims sahil839 has the most recent commits on these files; the input gives only commit counts, not recency.\"], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE that recommends handing off to sahil839 matches the key.\",\n   \"accuracy_why\": \"Most facts are right, including CI and the CZO approval, but merge conflicts are omitted and it adds an unsupported claim about recency.\",\n   \"reply_why\": \"A single reviewer ping that is ready to paste.\"},\n \"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 5,\n   \"decision_why\": \"A NOTE that recommends handing off to sahil839 matches the key.\",\n   \"accuracy_why\": \"It is accurate on the changes, CI and the CZO approval, but it omits merge conflicts.\",\n   \"reply_why\": \"A single reviewer ping that is ready to paste.\"}\n},\n \"ranking\": [\"C\", \"P\", \"L\", \"J\", \"S\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.150368
+}

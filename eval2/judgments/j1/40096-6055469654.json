@@ -1,0 +1,167 @@
+{
+ "case": "40096-6055469654",
+ "repeat": 1,
+ "map": {
+  "L": [
+   "v1-r1"
+  ],
+  "S": [
+   "v2-r2"
+  ],
+  "H": [
+   "v1-r2"
+  ],
+  "N": [
+   "v3-r2"
+  ],
+  "D": [
+   "v3-r1"
+  ],
+  "Q": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It covers the commits and the passing CI correctly, but proposes \"integration review\" instead of \"maintainer review\" and misses the no-feedback, docs-screenshot and Niloth P points.",
+    "reply_why": "A single reviewer ping line is right for a hand-off."
+   },
+   "Q": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 7,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "The hand-off action matches, but a full CARD is unnecessary because the fix itself didn't change.",
+    "accuracy_why": "It has the right labels and notes there was no written feedback, but it misses the docs-screenshot impact and the integrations reviewer.",
+    "reply_why": "A short reviewer ping that notes CI is green, pasteable as is."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "CI and the changes are right, but it uses the \"integration review\" label, raises a speculative squash warning, and misses f3 to f5.",
+    "reply_why": "A single reviewer ping line suits the hand-off."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims commit reorganization is still required before review, when the key lists nothing missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "Keeping \"not ready\" for commit squashing is the wrong action when the key says hand off.",
+    "accuracy_why": "It describes the changes correctly, but its action rests on an invented outstanding requirement.",
+    "reply_why": "The reply asks for a commit reorganization instead of telling the author the PR is moving to review."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States the first commit fails tests and must be folded in as still missing, which the key does not support."
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends more feedback where the key says hand off.",
+    "accuracy_why": "The changes are right, but the action rests on an unsupported missing item.",
+    "reply_why": "The reply asks for the wrong thing, a commit reorganization, instead of the hand-off."
+   },
+   "S": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Treats folding the test fixes into the first commit as required outstanding work, contrary to the key."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 5,
+    "decision_why": "It uses the wrong kind (CARD) and the wrong action (more feedback).",
+    "accuracy_why": "It names Niloth P and notes CI passes, but its action rests on an invented missing item.",
+    "reply_why": "The reply asks for commit cleanup instead of moving the PR to review."
+   }
+  },
+  "ranking": [
+   "H",
+   "Q",
+   "L",
+   "D",
+   "N",
+   "S"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\",\n \"accuracy_why\": \"It covers the commits and the passing CI correctly, but proposes \\\"integration review\\\" instead of \\\"maintainer review\\\" and misses the no-feedback, docs-screenshot and Niloth P points.\",\n \"reply_why\": \"A single reviewer ping line is right for a hand-off.\"},\n\"Q\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 7, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"The hand-off action matches, but a full CARD is unnecessary because the fix itself didn't change.\",\n \"accuracy_why\": \"It has the right labels and notes there was no written feedback, but it misses the docs-screenshot impact and the integrations reviewer.\",\n \"reply_why\": \"A short reviewer ping that notes CI is green, pasteable as is.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"CI and the changes are right, but it uses the \\\"integration review\\\" label, raises a speculative squash warning, and misses f3 to f5.\",\n \"reply_why\": \"A single reviewer ping line suits the hand-off.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims commit reorganization is still required before review, when the key lists nothing missing.\"], \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 4, \"reply_score\": 3,\n \"brevity_score\": 8,\n \"decision_why\": \"Keeping \\\"not ready\\\" for commit squashing is the wrong action when the key says hand off.\",\n \"accuracy_why\": \"It describes the changes correctly, but its action rests on an invented outstanding requirement.\",\n \"reply_why\": \"The reply asks for a commit reorganization instead of telling the author the PR is moving to review.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"States the first commit fails tests and must be folded in as still missing, which the key does not support.\"], \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 4, \"reply_score\": 3,\n \"brevity_score\": 7,\n \"decision_why\": \"It recommends more feedback where the key says hand off.\",\n \"accuracy_why\": \"The changes are right, but the action rests on an unsupported missing item.\",\n \"reply_why\": \"The reply asks for the wrong thing, a commit reorganization, instead of the hand-off.\"},\n\"S\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Treats folding the test fixes into the first commit as required outstanding work, contrary to the key.\"], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n \"brevity_score\": 5,\n \"decision_why\": \"It uses the wrong kind (CARD) and the wrong action (more feedback).\",\n \"accuracy_why\": \"It names Niloth P and notes CI passes, but its action rests on an invented missing item.\",\n \"reply_why\": \"The reply asks for commit cleanup instead of moving the PR to review.\"}\n},\n\"ranking\": [\"H\", \"Q\", \"L\", \"D\", \"N\", \"S\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.155588
+}

@@ -1,0 +1,176 @@
+{
+ "case": "40257-6023845324",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "v3-r1"
+  ],
+  "S": [
+   "v1-r2"
+  ],
+  "X": [
+   "v1-r1"
+  ],
+  "F": [
+   "v2-r1"
+  ],
+  "U": [
+   "v2-r2"
+  ],
+  "N": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the new banner has no test of its own, which the inputs don't establish."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to laurynmm matches the key exactly.",
+    "accuracy_why": "It covers the banner and CI but misses the stale commit message and the partial-fix scope, and it asserts an unverified gap in testing.",
+    "reply_why": "A short ping asking laurynmm for another look is pasteable as is."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the author pushed one new commit, but it was a force-push and the PR still has a single commit."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off with laurynmm assigned matches the key.",
+    "accuracy_why": "It flags the stale commit message and rightly hedges on the screenshot labels, but it omits the partial-fix scope and misdescribes the push as a new commit.",
+    "reply_why": "It pings laurynmm and asks the author to update the commit message, which nearly matches the reply ask and needs at most a word changed."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the author pushed one new commit, but it was a force-push and the PR still has a single commit."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off to laurynmm matches the key.",
+    "accuracy_why": "It covers the banner, CI and partial scope, but misses the stale commit message, marks the screenshots fine without raising the label question, and misdescribes the push.",
+    "reply_why": "A single reviewer ping to laurynmm can be pasted as is."
+   },
+   "F": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Claims the before/after screenshots are now in the right order, which the author never confirmed.",
+     "Attributes +30 lines to popup_banners.ts, though the 30-line growth may span several files."
+    ],
+    "rule_failures": [
+     "reply_asserts_unverified_fix"
+    ],
+    "decision_score": 7,
+    "accuracy_score": 3,
+    "reply_score": 5,
+    "brevity_score": 5,
+    "decision_why": "The hand-off action is right, but a full CARD is unneeded because the approach is unchanged.",
+    "accuracy_why": "It misses the stale commit message and asserts two unverified facts, including that the label issue was fixed.",
+    "reply_why": "The reply thanks the author for fixing the screenshots, which isn't established, and it misses the commit-message ask."
+   },
+   "U": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 7,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 5,
+    "decision_why": "The hand-off action is right, but it posts a CARD where a NOTE was enough.",
+    "accuracy_why": "All must-haves are present with no wrong facts, though it doesn't raise the unconfirmed screenshot labels.",
+    "reply_why": "A single reviewer ping to laurynmm can be pasted as is."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the push covers both things laurynmm asked for, though the swapped screenshot labels were never confirmed fixed."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to laurynmm matches the key.",
+    "accuracy_why": "It covers the banner and CI but misses the commit message and scope points, and it overstates that all feedback was addressed.",
+    "reply_why": "A single reviewer ping to laurynmm can be pasted as is."
+   }
+  },
+  "ranking": [
+   "S",
+   "X",
+   "U",
+   "D",
+   "N",
+   "F"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the new banner has no test of its own, which the inputs don't establish.\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off to laurynmm matches the key exactly.\",\n \"accuracy_why\": \"It covers the banner and CI but misses the stale commit message and the partial-fix scope, and it asserts an unverified gap in testing.\",\n \"reply_why\": \"A short ping asking laurynmm for another look is pasteable as is.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the author pushed one new commit, but it was a force-push and the PR still has a single commit.\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off with laurynmm assigned matches the key.\",\n \"accuracy_why\": \"It flags the stale commit message and rightly hedges on the screenshot labels, but it omits the partial-fix scope and misdescribes the push as a new commit.\",\n \"reply_why\": \"It pings laurynmm and asks the author to update the commit message, which nearly matches the reply ask and needs at most a word changed.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the author pushed one new commit, but it was a force-push and the PR still has a single commit.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It covers the banner, CI and partial scope, but misses the stale commit message, marks the screenshots fine without raising the label question, and misdescribes the push.\",\n \"reply_why\": \"A single reviewer ping to laurynmm can be pasted as is.\"},\n\"F\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Claims the before/after screenshots are now in the right order, which the author never confirmed.\", \"Attributes +30 lines to popup_banners.ts, though the 30-line growth may span several files.\"],\n \"rule_failures\": [\"reply_asserts_unverified_fix\"],\n \"decision_score\": 7, \"accuracy_score\": 3, \"reply_score\": 5, \"brevity_score\": 5,\n \"decision_why\": \"The hand-off action is right, but a full CARD is unneeded because the approach is unchanged.\",\n \"accuracy_why\": \"It misses the stale commit message and asserts two unverified facts, including that the label issue was fixed.\",\n \"reply_why\": \"The reply thanks the author for fixing the screenshots, which isn't established, and it misses the commit-message ask.\"},\n\"U\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 7, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 5,\n \"decision_why\": \"The hand-off action is right, but it posts a CARD where a NOTE was enough.\",\n \"accuracy_why\": \"All must-haves are present with no wrong facts, though it doesn't raise the unconfirmed screenshot labels.\",\n \"reply_why\": \"A single reviewer ping to laurynmm can be pasted as is.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the push covers both things laurynmm asked for, though the swapped screenshot labels were never confirmed fixed.\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It covers the banner and CI but misses the commit message and scope points, and it overstates that all feedback was addressed.\",\n \"reply_why\": \"A single reviewer ping to laurynmm can be pasted as is.\"}\n},\n\"ranking\": [\"S\", \"X\", \"U\", \"D\", \"N\", \"F\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.2169
+}

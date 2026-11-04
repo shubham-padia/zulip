@@ -1,0 +1,163 @@
+{
+ "case": "40097-6055464855",
+ "repeat": 1,
+ "map": {
+  "F": [
+   "v3-r1"
+  ],
+  "J": [
+   "v1-r2"
+  ],
+  "M": [
+   "v3-r2"
+  ],
+  "V": [
+   "v2-r1"
+  ],
+  "P": [
+   "v2-r2"
+  ],
+  "K": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It recommends the right kind (NOTE) and the right action (hand off).",
+    "accuracy_why": "It says only that the issue-vs-PR detection was 'fixed', without naming the reverse bug, and it omits that the label came with no written feedback and the overlap with #40096.",
+    "reply_why": "A single reviewer ping line is ideal for a hand-off."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "It recommends the right kind and the right hand-off action.",
+    "accuracy_why": "It covers every must-have, but it adds a filler 'help wanted' point and doesn't note the missing Gogs tests.",
+    "reply_why": "The reviewer ping is right, but the reply also asks the author for extra work, which goes beyond a single ping line for a hand-off."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "It recommends the right kind and the right hand-off action.",
+    "accuracy_why": "It names the reverse-bug fix, the Gitea test, CI and #40096, but misses that the label came with no written feedback.",
+    "reply_why": "The ping is fine, but it adds an ask to the author, making it two sentences for a hand-off."
+   },
+   "V": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 5,
+    "decision_why": "It keeps 'not ready' and writes a new card, where the key calls for a hand-off with a note.",
+    "accuracy_why": "It only says the logic was 'reworked', not that the reverse bug was fixed, and it rests the verdict on a squash request that the key doesn't list as missing.",
+    "reply_why": "It asks for a commit squash instead of handing the PR off for review."
+   },
+   "P": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 7,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "The hand-off is right, but it writes a full CARD where a NOTE is enough.",
+    "accuracy_why": "Every cutoff must-have is present and stated accurately.",
+    "reply_why": "A single reviewer ping is the right reply for a hand-off."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind is right, but it keeps 'not ready' where the key calls for a hand-off.",
+    "accuracy_why": "It never says the reverse misidentification was fixed, and it builds its verdict on a squash request that isn't an outstanding item.",
+    "reply_why": "It asks for a squash and an explanation instead of moving the PR to review."
+   }
+  },
+  "ranking": [
+   "P",
+   "J",
+   "M",
+   "F",
+   "K",
+   "V"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It recommends the right kind (NOTE) and the right action (hand off).\",\n \"accuracy_why\": \"It says only that the issue-vs-PR detection was 'fixed', without naming the reverse bug, and it omits that the label came with no written feedback and the overlap with #40096.\",\n \"reply_why\": \"A single reviewer ping line is ideal for a hand-off.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 6, \"brevity_score\": 6,\n \"decision_why\": \"It recommends the right kind and the right hand-off action.\",\n \"accuracy_why\": \"It covers every must-have, but it adds a filler 'help wanted' point and doesn't note the missing Gogs tests.\",\n \"reply_why\": \"The reviewer ping is right, but the reply also asks the author for extra work, which goes beyond a single ping line for a hand-off.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 8,\n \"decision_why\": \"It recommends the right kind and the right hand-off action.\",\n \"accuracy_why\": \"It names the reverse-bug fix, the Gitea test, CI and #40096, but misses that the label came with no written feedback.\",\n \"reply_why\": \"The ping is fine, but it adds an ask to the author, making it two sentences for a hand-off.\"},\n\"V\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 5,\n \"decision_why\": \"It keeps 'not ready' and writes a new card, where the key calls for a hand-off with a note.\",\n \"accuracy_why\": \"It only says the logic was 'reworked', not that the reverse bug was fixed, and it rests the verdict on a squash request that the key doesn't list as missing.\",\n \"reply_why\": \"It asks for a commit squash instead of handing the PR off for review.\"},\n\"P\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 7, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"The hand-off is right, but it writes a full CARD where a NOTE is enough.\",\n \"accuracy_why\": \"Every cutoff must-have is present and stated accurately.\",\n \"reply_why\": \"A single reviewer ping is the right reply for a hand-off.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"The kind is right, but it keeps 'not ready' where the key calls for a hand-off.\",\n \"accuracy_why\": \"It never says the reverse misidentification was fixed, and it builds its verdict on a squash request that isn't an outstanding item.\",\n \"reply_why\": \"It asks for a squash and an explanation instead of moving the PR to review.\"}},\n\"ranking\": [\"P\", \"J\", \"M\", \"F\", \"K\", \"V\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.161408
+}

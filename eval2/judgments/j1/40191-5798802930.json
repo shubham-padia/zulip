@@ -1,0 +1,167 @@
+{
+ "case": "40191-5798802930",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "v1-r1"
+  ],
+  "T": [
+   "v1-r2"
+  ],
+  "N": [
+   "v3-r2"
+  ],
+  "Z": [
+   "v2-r2"
+  ],
+  "O": [
+   "v3-r1"
+  ],
+  "V": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "NOTE with a hand-off matches the key, though it routes the review to laurynmm rather than suggesting Vector73.",
+    "accuracy_why": "It covers both completed asks and notes the code is unchanged, but it misses the Vector73 suggestion and the admin-facing backward-compatibility point.",
+    "reply_why": "A single reviewer ping line is right for a hand-off and can be pasted as is."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 5,
+    "decision_why": "It hands off correctly, but the extra row about a missing #backend discussion and the closed #36416 casts doubt that could push the triager toward more feedback.",
+    "accuracy_why": "It covers both completed asks and the unchanged code, and it partly raises that settings renames need careful judgment, but it misses Vector73.",
+    "reply_why": "A single reviewer ping line can be pasted as is."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It concisely confirms both asks are done and the code is unchanged, but it misses Vector73 and the backward-compatibility point.",
+    "reply_why": "A brief thanks plus a reviewer ping can be pasted as is."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 5,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It covers both asks and the unchanged code, but it misses Vector73 and the admin-facing compatibility point.",
+    "reply_why": "The ping restates the changes to laurynmm in an extra clause, which is usable but a bit longer than needed."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 10,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It confirms both asks are done but omits that the code is unchanged, Vector73, and the compatibility point.",
+    "reply_why": "A short thanks plus a reviewer ping can be pasted as is."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It maps each ask to its resolution and notes the code is unchanged, but it misses Vector73 and the compatibility point.",
+    "reply_why": "A thanks to the author plus a reviewer ping can be pasted as is."
+   }
+  },
+  "ranking": [
+   "N",
+   "V",
+   "O",
+   "E",
+   "Z",
+   "T"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"NOTE with a hand-off matches the key, though it routes the review to laurynmm rather than suggesting Vector73.\",\n \"accuracy_why\": \"It covers both completed asks and notes the code is unchanged, but it misses the Vector73 suggestion and the admin-facing backward-compatibility point.\",\n \"reply_why\": \"A single reviewer ping line is right for a hand-off and can be pasted as is.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 8, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 5,\n \"decision_why\": \"It hands off correctly, but the extra row about a missing #backend discussion and the closed #36416 casts doubt that could push the triager toward more feedback.\",\n \"accuracy_why\": \"It covers both completed asks and the unchanged code, and it partly raises that settings renames need careful judgment, but it misses Vector73.\",\n \"reply_why\": \"A single reviewer ping line can be pasted as is.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off matches the key.\",\n \"accuracy_why\": \"It concisely confirms both asks are done and the code is unchanged, but it misses Vector73 and the backward-compatibility point.\",\n \"reply_why\": \"A brief thanks plus a reviewer ping can be pasted as is.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 5,\n \"decision_why\": \"NOTE with a hand-off matches the key.\",\n \"accuracy_why\": \"It covers both asks and the unchanged code, but it misses Vector73 and the admin-facing compatibility point.\",\n \"reply_why\": \"The ping restates the changes to laurynmm in an extra clause, which is usable but a bit longer than needed.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 10,\n \"decision_why\": \"NOTE with a hand-off matches the key.\",\n \"accuracy_why\": \"It confirms both asks are done but omits that the code is unchanged, Vector73, and the compatibility point.\",\n \"reply_why\": \"A short thanks plus a reviewer ping can be pasted as is.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off matches the key.\",\n \"accuracy_why\": \"It maps each ask to its resolution and notes the code is unchanged, but it misses Vector73 and the compatibility point.\",\n \"reply_why\": \"A thanks to the author plus a reviewer ping can be pasted as is.\"}\n},\n\"ranking\": [\"N\", \"V\", \"O\", \"E\", \"Z\", \"T\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.304444
+}

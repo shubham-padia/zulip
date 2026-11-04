@@ -1,0 +1,175 @@
+{
+ "case": "40065-5536187002",
+ "repeat": 1,
+ "map": {
+  "O": [
+   "v1-r1"
+  ],
+  "S": [
+   "v3-r1"
+  ],
+  "D": [
+   "v3-r2"
+  ],
+  "N": [
+   "v2-r1"
+  ],
+  "Z": [
+   "v1-r2"
+  ],
+  "C": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the precise before/after screenshots ask as met (✅) when the 'before' shot does not show the clipping"
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it recommends hand-off where the key says keep 'not ready' and ask for more feedback; its ⚠️ flag at least raises the doubt.",
+    "accuracy_why": "It clearly says the screenshots don't show a clipped emoji and confirms the code is unchanged, but it ticks the screenshot ask as done and misses the long-topic, font-size and reproducibility gaps.",
+    "reply_why": "A bare reviewer ping that doesn't ask for a reproducing 'before' shot, long-topic examples or font-size tests."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says 'Missing: nothing blocking' when the key lists a 'before' shot showing the bug, long-topic shots and font-size testing as still missing"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but hand-off is the wrong action where the key says more feedback.",
+    "accuracy_why": "It states plainly that the screenshots only show added spacing, not a clipped emoji becoming whole, but calls this non-blocking and misses f3 and f5.",
+    "reply_why": "Thanks the author and pings laurynmm, but makes none of the key's asks."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says 'Missing: nothing blocking' when key items are still missing"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it hands off instead of asking for more screenshots.",
+    "accuracy_why": "It turns the missing bug reproduction into a question of whether the screenshots are 'precise enough' and misses f3 and f5.",
+    "reply_why": "Pings laurynmm to check whether the screenshots meet the guidelines, which is closer to the issue, but it doesn't ask the author for the needed shots."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the precise before/after screenshots ask as met (✅)"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it recommends hand-off where the key says more feedback.",
+    "accuracy_why": "It notes the shots show spacing rather than the original clipping, but it ticks the screenshot ask as satisfied and misses f3 and f5.",
+    "reply_why": "A reviewer ping that misses the reply_ask."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the precise before/after screenshots ask as met (✅)"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but hand-off is the wrong action.",
+    "accuracy_why": "It mentions the DPR 1 limitation only as an ℹ️ aside while ticking the screenshot ask as done, and misses f3 and f5.",
+    "reply_why": "A reviewer ping that misses the reply_ask."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States the shots 'match the precise screenshots ask' when the 'before' shot does not show the bug"
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "NOTE is the right kind, but hand-off is the wrong action.",
+    "accuracy_why": "It explicitly calls the screenshot ask met, adds a filler row about the issue label, CI and assignment, and misses f3 and f5.",
+    "reply_why": "A reviewer ping that misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "O",
+   "D",
+   "S",
+   "C",
+   "N",
+   "Z"
+  ]
+ },
+ "text": "{\"outputs\": {\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Marks the precise before/after screenshots ask as met (✅) when the 'before' shot does not show the clipping\"], \"rule_failures\": [], \"decision_score\": 4, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"NOTE is the right kind, but it recommends hand-off where the key says keep 'not ready' and ask for more feedback; its ⚠️ flag at least raises the doubt.\", \"accuracy_why\": \"It clearly says the screenshots don't show a clipped emoji and confirms the code is unchanged, but it ticks the screenshot ask as done and misses the long-topic, font-size and reproducibility gaps.\", \"reply_why\": \"A bare reviewer ping that doesn't ask for a reproducing 'before' shot, long-topic examples or font-size tests.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Says 'Missing: nothing blocking' when the key lists a 'before' shot showing the bug, long-topic shots and font-size testing as still missing\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"NOTE is the right kind, but hand-off is the wrong action where the key says more feedback.\", \"accuracy_why\": \"It states plainly that the screenshots only show added spacing, not a clipped emoji becoming whole, but calls this non-blocking and misses f3 and f5.\", \"reply_why\": \"Thanks the author and pings laurynmm, but makes none of the key's asks.\"}, \"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Says 'Missing: nothing blocking' when key items are still missing\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 8, \"decision_why\": \"NOTE is the right kind, but it hands off instead of asking for more screenshots.\", \"accuracy_why\": \"It turns the missing bug reproduction into a question of whether the screenshots are 'precise enough' and misses f3 and f5.\", \"reply_why\": \"Pings laurynmm to check whether the screenshots meet the guidelines, which is closer to the issue, but it doesn't ask the author for the needed shots.\"}, \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Marks the precise before/after screenshots ask as met (✅)\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"NOTE is the right kind, but it recommends hand-off where the key says more feedback.\", \"accuracy_why\": \"It notes the shots show spacing rather than the original clipping, but it ticks the screenshot ask as satisfied and misses f3 and f5.\", \"reply_why\": \"A reviewer ping that misses the reply_ask.\"}, \"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Marks the precise before/after screenshots ask as met (✅)\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"NOTE is the right kind, but hand-off is the wrong action.\", \"accuracy_why\": \"It mentions the DPR 1 limitation only as an ℹ️ aside while ticking the screenshot ask as done, and misses f3 and f5.\", \"reply_why\": \"A reviewer ping that misses the reply_ask.\"}, \"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"States the shots 'match the precise screenshots ask' when the 'before' shot does not show the bug\"], \"rule_failures\": [\"filler_point\"], \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6, \"decision_why\": \"NOTE is the right kind, but hand-off is the wrong action.\", \"accuracy_why\": \"It explicitly calls the screenshot ask met, adds a filler row about the issue label, CI and assignment, and misses f3 and f5.\", \"reply_why\": \"A reviewer ping that misses the reply_ask.\"}}, \"ranking\": [\"O\", \"D\", \"S\", \"C\", \"N\", \"Z\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.284748
+}

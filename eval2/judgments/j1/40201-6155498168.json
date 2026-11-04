@@ -1,0 +1,161 @@
+{
+ "case": "40201-6155498168",
+ "repeat": 1,
+ "map": {
+  "X": [
+   "v2-r1"
+  ],
+  "T": [
+   "v1-r2"
+  ],
+  "F": [
+   "v1-r1"
+  ],
+  "H": [
+   "v2-r2"
+  ],
+  "V": [
+   "v3-r2"
+  ],
+  "M": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It correctly writes a NOTE and hands the PR off for review once CI passes.",
+    "accuracy_why": "It covers the CI fix and the AI-policy history, but it says nothing about the formatting fix or the new fixture, gives Niloth P only as an alternative, and doesn't say the author removed the label himself.",
+    "reply_why": "A one-line thanks plus a reviewer ping confirms CI is fixed and hands off, so it can be pasted as is."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It correctly writes a NOTE and hands the PR off.",
+    "accuracy_why": "It notes CI and the AI-policy history, but it doesn't mention Niloth P, gives no summary of the changes, and claims without support that the help-wanted rule doesn't apply.",
+    "reply_why": "A single reviewer ping is exactly what a hand-off needs."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" over the missing linked issue, even though the only feedback was addressed and the key says hand off.",
+    "accuracy_why": "Its summary of the changes and the author history is good, but it doesn't say the author removed the label himself and doesn't suggest a reviewer.",
+    "reply_why": "It asks for a linked help-wanted issue instead of confirming the hand-off, which is the wrong ask."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It blocks the hand-off on a linked issue, which is the wrong action.",
+    "accuracy_why": "It has the CI fix and the AI-policy history but doesn't describe what changed or name a reviewer.",
+    "reply_why": "It asks the author to link or open a help-wanted issue and to confirm testing, which is the wrong ask for a PR that should be handed off."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and raises closing, when the key says hand off.",
+    "accuracy_why": "It notes the CI fix and the new fixture, but it misses the AI-policy closure, the formatting fix, and a reviewer.",
+    "reply_why": "It asks for a help-wanted issue link instead of confirming the hand-off."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It explicitly withholds a reviewer and leans toward closing, the opposite of the hand-off the key calls for.",
+    "accuracy_why": "It mentions CI and the new fixture, but it misses the AI-policy history, the formatting fix, and a reviewer.",
+    "reply_why": "It asks for a help-wanted issue link, which is the wrong ask."
+   }
+  },
+  "ranking": [
+   "X",
+   "H",
+   "T",
+   "F",
+   "V",
+   "M"
+  ]
+ },
+ "text": "{\"outputs\": {\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It correctly writes a NOTE and hands the PR off for review once CI passes.\",\n   \"accuracy_why\": \"It covers the CI fix and the AI-policy history, but it says nothing about the formatting fix or the new fixture, gives Niloth P only as an alternative, and doesn't say the author removed the label himself.\",\n   \"reply_why\": \"A one-line thanks plus a reviewer ping confirms CI is fixed and hands off, so it can be pasted as is.\"},\n  \"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It correctly writes a NOTE and hands the PR off.\",\n   \"accuracy_why\": \"It notes CI and the AI-policy history, but it doesn't mention Niloth P, gives no summary of the changes, and claims without support that the help-wanted rule doesn't apply.\",\n   \"reply_why\": \"A single reviewer ping is exactly what a hand-off needs.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It keeps \\\"not ready\\\" over the missing linked issue, even though the only feedback was addressed and the key says hand off.\",\n   \"accuracy_why\": \"Its summary of the changes and the author history is good, but it doesn't say the author removed the label himself and doesn't suggest a reviewer.\",\n   \"reply_why\": \"It asks for a linked help-wanted issue instead of confirming the hand-off, which is the wrong ask.\"},\n  \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It blocks the hand-off on a linked issue, which is the wrong action.\",\n   \"accuracy_why\": \"It has the CI fix and the AI-policy history but doesn't describe what changed or name a reviewer.\",\n   \"reply_why\": \"It asks the author to link or open a help-wanted issue and to confirm testing, which is the wrong ask for a PR that should be handed off.\"},\n  \"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and raises closing, when the key says hand off.\",\n   \"accuracy_why\": \"It notes the CI fix and the new fixture, but it misses the AI-policy closure, the formatting fix, and a reviewer.\",\n   \"reply_why\": \"It asks for a help-wanted issue link instead of confirming the hand-off.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It explicitly withholds a reviewer and leans toward closing, the opposite of the hand-off the key calls for.\",\n   \"accuracy_why\": \"It mentions CI and the new fixture, but it misses the AI-policy history, the formatting fix, and a reviewer.\",\n   \"reply_why\": \"It asks for a help-wanted issue link, which is the wrong ask.\"}},\n \"ranking\": [\"X\", \"H\", \"T\", \"F\", \"V\", \"M\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.137136
+}

@@ -1,0 +1,167 @@
+{
+ "case": "40211-5916970551",
+ "repeat": 1,
+ "map": {
+  "T": [
+   "v3-r1"
+  ],
+  "Z": [
+   "v1-r1"
+  ],
+  "K": [
+   "v2-r1"
+  ],
+  "M": [
+   "v3-r2"
+  ],
+  "Y": [
+   "v2-r2"
+  ],
+  "U": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "T": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends closing, which matches both the key's kind and its observed action.",
+    "accuracy_why": "It covers the 2-to-123-file blowup, the missing issue and the first-time contributor, but it only implies the unmet reviewable-PR guide and leaves out the lack of local testing and the open question.",
+    "reply_why": "This is a clean closing reply on the right grounds, though it overstates the help-wanted rule and doesn't link the contributing guide."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends closing, which matches the key.",
+    "accuracy_why": "It names the bad merge from main, the 2-to-123-file growth, the missing issue and the lack of merged PRs, but it omits the lack of local testing and only implies the guide failure.",
+    "reply_why": "This is a sound closing reply, with an overstated help-wanted rule and no link to the guide."
+   },
+   "Y": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "repeats_first_card"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 8,
+    "reply_score": 5,
+    "brevity_score": 6,
+    "decision_why": "It writes a CARD that keeps the PR open for more feedback instead of closing it, though it does mention closing as a fallback.",
+    "accuracy_why": "It covers every cutoff must-have with no wrong facts, but it doesn't spell out that the guide request is still unmet.",
+    "reply_why": "Of the keep-going replies it matches reply_ask best (clean the branch, get an issue confirmed first, link to the guide), but it tells the author to continue on a PR that should be closed."
+   },
+   "K": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "repeats_first_card"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 8,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It is a CARD that keeps 'not ready' for more feedback where the key says NOTE and close.",
+    "accuracy_why": "It has accurate size numbers, the missing issue, no merged PRs and no local testing, with no wrong facts.",
+    "reply_why": "It gives a good reset-the-branch request with links to the guides, but it skips discussing the unfiled bug and keeps a should-close PR going."
+   },
+   "Z": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "repeats_first_card"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It is a CARD that keeps the PR open for more feedback and even names a reviewer, where the key says NOTE and close.",
+    "accuracy_why": "It is accurate on the broken diff, the missing issue, the local testing and the open question, but it doesn't mention that the author is a first-timer and treats the description as fine.",
+    "reply_why": "It only asks for a rebase and leaves out the contributing-guide and unfiled-bug part of reply_ask, on a PR that should be closed."
+   },
+   "U": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Marks commit discipline as satisfied (✅ one commit with a clear message), although the single commit contains about 120 unrelated files and the reviewable-PR guide is still not met."
+    ],
+    "rule_failures": [
+     "repeats_first_card"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It is a CARD that keeps 'not ready' for more feedback where the key says NOTE and close.",
+    "accuracy_why": "It gets the size blowup right but wrongly credits commit discipline, which contradicts f2.",
+    "reply_why": "It asks for a rebase and a local dev environment but leaves out the guide and issue discussion, and it keeps a should-close PR going."
+   }
+  },
+  "ranking": [
+   "M",
+   "T",
+   "Y",
+   "K",
+   "Z",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"T\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that recommends closing, which matches both the key's kind and its observed action.\",\n \"accuracy_why\": \"It covers the 2-to-123-file blowup, the missing issue and the first-time contributor, but it only implies the unmet reviewable-PR guide and leaves out the lack of local testing and the open question.\",\n \"reply_why\": \"This is a clean closing reply on the right grounds, though it overstates the help-wanted rule and doesn't link the contributing guide.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that recommends closing, which matches the key.\",\n \"accuracy_why\": \"It names the bad merge from main, the 2-to-123-file growth, the missing issue and the lack of merged PRs, but it omits the lack of local testing and only implies the guide failure.\",\n \"reply_why\": \"This is a sound closing reply, with an overstated help-wanted rule and no link to the guide.\"},\n\"Y\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"repeats_first_card\"],\n \"decision_score\": 3, \"accuracy_score\": 8, \"reply_score\": 5, \"brevity_score\": 6,\n \"decision_why\": \"It writes a CARD that keeps the PR open for more feedback instead of closing it, though it does mention closing as a fallback.\",\n \"accuracy_why\": \"It covers every cutoff must-have with no wrong facts, but it doesn't spell out that the guide request is still unmet.\",\n \"reply_why\": \"Of the keep-going replies it matches reply_ask best (clean the branch, get an issue confirmed first, link to the guide), but it tells the author to continue on a PR that should be closed.\"},\n\"K\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"repeats_first_card\"],\n \"decision_score\": 2, \"accuracy_score\": 8, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It is a CARD that keeps 'not ready' for more feedback where the key says NOTE and close.\",\n \"accuracy_why\": \"It has accurate size numbers, the missing issue, no merged PRs and no local testing, with no wrong facts.\",\n \"reply_why\": \"It gives a good reset-the-branch request with links to the guides, but it skips discussing the unfiled bug and keeps a should-close PR going.\"},\n\"Z\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"repeats_first_card\"],\n \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It is a CARD that keeps the PR open for more feedback and even names a reviewer, where the key says NOTE and close.\",\n \"accuracy_why\": \"It is accurate on the broken diff, the missing issue, the local testing and the open question, but it doesn't mention that the author is a first-timer and treats the description as fine.\",\n \"reply_why\": \"It only asks for a rebase and leaves out the contributing-guide and unfiled-bug part of reply_ask, on a PR that should be closed.\"},\n\"U\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"hedged\"},\n \"wrong_facts\": [\"Marks commit discipline as satisfied (✅ one commit with a clear message), although the single commit contains about 120 unrelated files and the reviewable-PR guide is still not met.\"],\n \"rule_failures\": [\"repeats_first_card\"],\n \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It is a CARD that keeps 'not ready' for more feedback where the key says NOTE and close.\",\n \"accuracy_why\": \"It gets the size blowup right but wrongly credits commit discipline, which contradicts f2.\",\n \"reply_why\": \"It asks for a rebase and a local dev environment but leaves out the guide and issue discussion, and it keeps a should-close PR going.\"}\n},\n\"ranking\": [\"M\", \"T\", \"Y\", \"K\", \"Z\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.19391199999999997
+}

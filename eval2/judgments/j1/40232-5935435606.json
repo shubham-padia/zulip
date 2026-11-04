@@ -1,0 +1,177 @@
+{
+ "case": "40232-5935435606",
+ "repeat": 1,
+ "map": {
+  "B": [
+   "v2-r2"
+  ],
+  "X": [
+   "v1-r1"
+  ],
+  "L": [
+   "v2-r1"
+  ],
+  "O": [
+   "v3-r2"
+  ],
+  "K": [
+   "v3-r1"
+  ],
+  "C": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It recommends hand_off where the key says more_feedback, but it does gate the handoff on checking the overlap with #40134.",
+    "accuracy_why": "It notes there was no push, flags #40134, and attributes the screenshot claim to the author, but it misses the self-removed label, which is decisive.",
+    "reply_why": "It pings laurynmm for another look instead of telling the author not to remove maintainer labels and to check that the images load."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Marks the screenshots as precise and done (✅) although no maintainer has confirmed them."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends hand_off where the key says more_feedback, though it does raise the #40134 decision.",
+    "accuracy_why": "It flags #40134 but asserts the screenshots are done, misses the label removal, and omits that no code was pushed.",
+    "reply_why": "A reviewer ping misses the reply_ask about labels and broken images."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing blocking is missing when the label removal and unverified screenshots remain."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It covers the lack of a push and the open reverse-sort question, but it claims nothing blocking and misses the label, the screenshot check, and #40134.",
+    "reply_why": "A reviewer ping misses the reply_ask."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the screenshots as done (✅) although no maintainer has confirmed them."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It notes there was no push but misses the label removal and #40134, and it treats the screenshots as verified.",
+    "reply_why": "A bare review request misses the reply_ask."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Marks the screenshots as precise and done (✅) although no maintainer has confirmed them."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It flags #40134 but misses the label removal, the lack of a push, and the need to check the screenshots.",
+    "reply_why": "The reply asserts the comparison is clear without anyone having verified it, and it misses the reply_ask."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing is missing when the label removal, unverified screenshots, and the reverse-sort question remain."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It flatly states nothing is missing, which the handoff rests on, and it misses the label, the screenshot check, and #40134.",
+    "reply_why": "It asks laurynmm to look at the screenshots rather than giving the author the reply_ask."
+   }
+  },
+  "ranking": [
+   "C",
+   "B",
+   "O",
+   "X",
+   "L",
+   "K"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It recommends hand_off where the key says more_feedback, but it does gate the handoff on checking the overlap with #40134.\",\n \"accuracy_why\": \"It notes there was no push, flags #40134, and attributes the screenshot claim to the author, but it misses the self-removed label, which is decisive.\",\n \"reply_why\": \"It pings laurynmm for another look instead of telling the author not to remove maintainer labels and to check that the images load.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Marks the screenshots as precise and done (✅) although no maintainer has confirmed them.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It recommends hand_off where the key says more_feedback, though it does raise the #40134 decision.\",\n \"accuracy_why\": \"It flags #40134 but asserts the screenshots are done, misses the label removal, and omits that no code was pushed.\",\n \"reply_why\": \"A reviewer ping misses the reply_ask about labels and broken images.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says nothing blocking is missing when the label removal and unverified screenshots remain.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends hand_off where the key says more_feedback.\",\n \"accuracy_why\": \"It covers the lack of a push and the open reverse-sort question, but it claims nothing blocking and misses the label, the screenshot check, and #40134.\",\n \"reply_why\": \"A reviewer ping misses the reply_ask.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Marks the screenshots as done (✅) although no maintainer has confirmed them.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It recommends hand_off where the key says more_feedback.\",\n \"accuracy_why\": \"It notes there was no push but misses the label removal and #40134, and it treats the screenshots as verified.\",\n \"reply_why\": \"A bare review request misses the reply_ask.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Marks the screenshots as precise and done (✅) although no maintainer has confirmed them.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It recommends hand_off where the key says more_feedback.\",\n \"accuracy_why\": \"It flags #40134 but misses the label removal, the lack of a push, and the need to check the screenshots.\",\n \"reply_why\": \"The reply asserts the comparison is clear without anyone having verified it, and it misses the reply_ask.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says nothing is missing when the label removal, unverified screenshots, and the reverse-sort question remain.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends hand_off where the key says more_feedback.\",\n \"accuracy_why\": \"It flatly states nothing is missing, which the handoff rests on, and it misses the label, the screenshot check, and #40134.\",\n \"reply_why\": \"It asks laurynmm to look at the screenshots rather than giving the author the reply_ask.\"}\n},\n\"ranking\": [\"C\", \"B\", \"O\", \"X\", \"L\", \"K\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.194984
+}

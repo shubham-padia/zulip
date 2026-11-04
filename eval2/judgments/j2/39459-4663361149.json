@@ -1,0 +1,159 @@
+{
+ "case": "39459-4663361149",
+ "repeat": 2,
+ "map": {
+  "C": [
+   "v2-r1"
+  ],
+  "K": [
+   "v2-r2"
+  ],
+  "U": [
+   "v1-r2"
+  ],
+  "D": [
+   "v3-r2"
+  ],
+  "T": [
+   "v3-r1"
+  ],
+  "M": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks for more work, but the key says the PR should be handed off for review.",
+    "accuracy_why": "It notes there was no new push and the checklist gaps, but it never names sahil839 as reviewer and doesn't flag the open question about his #38251 feedback.",
+    "reply_why": "It asks the author to rework commits and add tests instead of moving the PR to review, which is the wrong ask."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It recommends keeping \"not ready\", but the key says the triager should hand off.",
+    "accuracy_why": "It reports no new push and touches sahil839's feedback in the reply, but it names no reviewer and recommends the wrong action.",
+    "reply_why": "Mentioning sahil839's feedback is close to the key's ask, but the reply is a longer list of more-work requests rather than a hand-off."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 10,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends the hand-off to sahil839, matching the key.",
+    "accuracy_why": "Everything it states is correct, but it misses the open question of whether sahil839's #38251 feedback on keeping the changes small was applied.",
+    "reply_why": "A single thank-you plus reviewer ping is right for a hand-off."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 10,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending the hand-off with sahil839 as reviewer, matching the key.",
+    "accuracy_why": "It correctly says only the description changed and there are no tests, but it doesn't flag sahil839's earlier feedback as possibly unaddressed.",
+    "reply_why": "A single reviewer ping line that could be pasted as is."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 10,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE recommending the hand-off with sahil839 as reviewer, matching the key.",
+    "accuracy_why": "It is accurate on what changed and what's missing, but it omits the question of whether sahil839's feedback was applied.",
+    "reply_why": "A single reviewer ping line that could be pasted as is."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the approach is the smaller one sahil839 suggested on #38251, though the key says it's unclear whether his feedback was applied."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 10,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending the hand-off to sahil839, matching the key.",
+    "accuracy_why": "It asserts sahil839's feedback was followed, which is the opposite of the key's open concern.",
+    "reply_why": "A single reviewer ping line that could be pasted as is."
+   }
+  },
+  "ranking": [
+   "D",
+   "T",
+   "U",
+   "M",
+   "K",
+   "C"
+  ]
+ },
+ "text": "{\"outputs\": {\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"wrong\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, but the key says the PR should be handed off for review.\",\n   \"accuracy_why\": \"It notes there was no new push and the checklist gaps, but it never names sahil839 as reviewer and doesn't flag the open question about his #38251 feedback.\",\n   \"reply_why\": \"It asks the author to rework commits and add tests instead of moving the PR to review, which is the wrong ask.\"},\n  \"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"wrong\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It recommends keeping \\\"not ready\\\", but the key says the triager should hand off.\",\n   \"accuracy_why\": \"It reports no new push and touches sahil839's feedback in the reply, but it names no reviewer and recommends the wrong action.\",\n   \"reply_why\": \"Mentioning sahil839's feedback is close to the key's ask, but the reply is a longer list of more-work requests rather than a hand-off.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 10,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that recommends the hand-off to sahil839, matching the key.\",\n   \"accuracy_why\": \"Everything it states is correct, but it misses the open question of whether sahil839's #38251 feedback on keeping the changes small was applied.\",\n   \"reply_why\": \"A single thank-you plus reviewer ping is right for a hand-off.\"},\n  \"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 10,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE recommending the hand-off with sahil839 as reviewer, matching the key.\",\n   \"accuracy_why\": \"It correctly says only the description changed and there are no tests, but it doesn't flag sahil839's earlier feedback as possibly unaddressed.\",\n   \"reply_why\": \"A single reviewer ping line that could be pasted as is.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 10,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE recommending the hand-off with sahil839 as reviewer, matching the key.\",\n   \"accuracy_why\": \"It is accurate on what changed and what's missing, but it omits the question of whether sahil839's feedback was applied.\",\n   \"reply_why\": \"A single reviewer ping line that could be pasted as is.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Claims the approach is the smaller one sahil839 suggested on #38251, though the key says it's unclear whether his feedback was applied.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 10,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE recommending the hand-off to sahil839, matching the key.\",\n   \"accuracy_why\": \"It asserts sahil839's feedback was followed, which is the opposite of the key's open concern.\",\n   \"reply_why\": \"A single reviewer ping line that could be pasted as is.\"}},\n \"ranking\": [\"D\", \"T\", \"U\", \"M\", \"K\", \"C\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.22715200000000002
+}

@@ -1,0 +1,163 @@
+{
+ "case": "40177-5954127181",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v1-r1"
+  ],
+  "A": [
+   "v2-r2"
+  ],
+  "U": [
+   "v1-r2"
+  ],
+  "N": [
+   "v3-r2"
+  ],
+  "E": [
+   "v3-r1"
+  ],
+  "J": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It is the only output that matches the key: a NOTE recommending removing 'not ready', adding 'maintainer review' and assigning prakhar1144.",
+    "accuracy_why": "It covers the prior-work section, credit, cross-link, unchanged code and missing dark screenshot, but it doesn't mention the missing 'before' screenshot and only hints at the #37289 overlap.",
+    "reply_why": "The reviewer ping is right, but the reply adds a request to the author and omits the not-a-release-priority note, so it is capped at 6 for a hand_off."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 7,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' and floats closing, while the key hands off to prakhar1144.",
+    "accuracy_why": "The changed and still-missing items are thorough, including the missing before and dark screenshots, but it doesn't name a reviewer.",
+    "reply_why": "It asks the author to coordinate a takeover instead of announcing the move to maintainer review."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 7,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' pending a check with prakhar1144, while the key hands off.",
+    "accuracy_why": "It records the prior-work section, credit, cross-reference, no push, missing dark screenshot and the #37289 overlap, but it doesn't name a reviewer.",
+    "reply_why": "It asks for more work and coordination instead of moving the PR to review."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It explicitly says not to assign a reviewer yet, which is the opposite of the key's hand-off.",
+    "accuracy_why": "It casts doubt on the Co-authored-by credit, weakening the key point that the author did what was asked, and it doesn't name a reviewer.",
+    "reply_why": "It asks the author to get agreement for a takeover instead of moving the PR to review."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps 'not ready' and suggests closing this PR, while the key hands off.",
+    "accuracy_why": "It omits the cross-reference comment on #37289, doesn't name a reviewer, and the [ai] prefix row adds nothing.",
+    "reply_why": "It tells the author the PR can't move forward yet, contrary to the hand-off."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "It keeps 'not ready' with closing as a fallback, while the key hands off.",
+    "accuracy_why": "It misses the dark-theme screenshot gap, the cross-reference comment and a reviewer name.",
+    "reply_why": "It blocks review pending coordination instead of moving the PR to review."
+   }
+  },
+  "ranking": [
+   "E",
+   "U",
+   "A",
+   "J",
+   "K",
+   "N"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 6, \"brevity_score\": 9,\n \"decision_why\": \"It is the only output that matches the key: a NOTE recommending removing 'not ready', adding 'maintainer review' and assigning prakhar1144.\",\n \"accuracy_why\": \"It covers the prior-work section, credit, cross-link, unchanged code and missing dark screenshot, but it doesn't mention the missing 'before' screenshot and only hints at the #37289 overlap.\",\n \"reply_why\": \"The reviewer ping is right, but the reply adds a request to the author and omits the not-a-release-priority note, so it is capped at 6 for a hand_off.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 7, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps 'not ready' and floats closing, while the key hands off to prakhar1144.\",\n \"accuracy_why\": \"The changed and still-missing items are thorough, including the missing before and dark screenshots, but it doesn't name a reviewer.\",\n \"reply_why\": \"It asks the author to coordinate a takeover instead of announcing the move to maintainer review.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 7, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps 'not ready' pending a check with prakhar1144, while the key hands off.\",\n \"accuracy_why\": \"It records the prior-work section, credit, cross-reference, no push, missing dark screenshot and the #37289 overlap, but it doesn't name a reviewer.\",\n \"reply_why\": \"It asks for more work and coordination instead of moving the PR to review.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It explicitly says not to assign a reviewer yet, which is the opposite of the key's hand-off.\",\n \"accuracy_why\": \"It casts doubt on the Co-authored-by credit, weakening the key point that the author did what was asked, and it doesn't name a reviewer.\",\n \"reply_why\": \"It asks the author to get agreement for a takeover instead of moving the PR to review.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps 'not ready' and suggests closing this PR, while the key hands off.\",\n \"accuracy_why\": \"It omits the cross-reference comment on #37289, doesn't name a reviewer, and the [ai] prefix row adds nothing.\",\n \"reply_why\": \"It tells the author the PR can't move forward yet, contrary to the hand-off.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"It keeps 'not ready' with closing as a fallback, while the key hands off.\",\n \"accuracy_why\": \"It misses the dark-theme screenshot gap, the cross-reference comment and a reviewer name.\",\n \"reply_why\": \"It blocks review pending coordination instead of moving the PR to review.\"}\n},\n\"ranking\": [\"E\", \"U\", \"A\", \"J\", \"K\", \"N\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.288276
+}

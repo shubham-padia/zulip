@@ -1,0 +1,164 @@
+{
+ "case": "40234-5937541838",
+ "repeat": 1,
+ "map": {
+  "T": [
+   "v1-r1"
+  ],
+  "L": [
+   "v2-r2"
+  ],
+  "D": [
+   "v3-r2"
+  ],
+  "V": [
+   "v1-r2"
+  ],
+  "H": [
+   "v3-r1"
+  ],
+  "E": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for more feedback, but the author answered all three asks, so the right call was to hand off to a reviewer.",
+    "accuracy_why": "It credits all three changes and flags the constructed fixture, but it misses the documentation link and the unconfirmable commit-message claim, and it does not recommend a handoff.",
+    "reply_why": "It demands a recaptured payload instead of asking for the documentation link and saying the PR is going to review, and it runs several sentences where a handoff needs at most a ping."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends keeping \"not ready\" when the key's action is to hand off.",
+    "accuracy_why": "It marks the fixture explanation as unaddressed and treats the commit message as needing work, which undercuts the decisive point that all three asks were answered, and it misses the documentation link."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It sends the PR back to laurynmm for more feedback instead of recommending a handoff to a reviewer.",
+    "accuracy_why": "It credits all three changes and flags the constructed fixture and the missing push, but it misses the documentation link and does not recommend a handoff.",
+    "reply_why": "It asks for a recaptured fixture and a commit push instead of the documentation link and a review handoff."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" when the key's action is to hand off.",
+    "accuracy_why": "It credits the changes and flags the constructed fixture, and it correctly hedges the commit-message claim, but it misses the documentation link and the handoff.",
+    "reply_why": "It asks for a recaptured fixture and a commit push instead of the documentation link and a review handoff."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" when the key's action is to hand off.",
+    "accuracy_why": "It leaves out that the fixture details were added, it misses the documentation link and the handoff, and it mentions Niloth-p only as the person who rejected fixtures elsewhere, not as the reviewer.",
+    "reply_why": "It asks for a recaptured fixture and a commit push instead of the documentation link and a review handoff."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" when the key's action is to hand off.",
+    "accuracy_why": "It frames the fixture explanation and the issue reference as still open, which undercuts the decisive point that all three asks were answered, and it misses the documentation link.",
+    "reply_why": "It asks for a recaptured fixture and a commit push instead of the documentation link and a review handoff."
+   }
+  },
+  "ranking": [
+   "V",
+   "T",
+   "D",
+   "H",
+   "E",
+   "L"
+  ]
+ },
+ "text": "{\"outputs\": {\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8, \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more feedback, but the author answered all three asks, so the right call was to hand off to a reviewer.\", \"accuracy_why\": \"It credits all three changes and flags the constructed fixture, but it misses the documentation link and the unconfirmable commit-message claim, and it does not recommend a handoff.\", \"reply_why\": \"It demands a recaptured payload instead of asking for the documentation link and saying the PR is going to review, and it runs several sentences where a handoff needs at most a ping.\"}, \"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"asks_for_done_work\"], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"It recommends keeping \\\"not ready\\\" when the key's action is to hand off.\", \"accuracy_why\": \"It marks the fixture explanation as unaddressed and treats the commit message as needing work, which undercuts the decisive point that all three asks were answered, and it misses the documentation link.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"It sends the PR back to laurynmm for more feedback instead of recommending a handoff to a reviewer.\", \"accuracy_why\": \"It credits all three changes and flags the constructed fixture and the missing push, but it misses the documentation link and does not recommend a handoff.\", \"reply_why\": \"It asks for a recaptured fixture and a commit push instead of the documentation link and a review handoff.\"}, \"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"It keeps \\\"not ready\\\" when the key's action is to hand off.\", \"accuracy_why\": \"It credits the changes and flags the constructed fixture, and it correctly hedges the commit-message claim, but it misses the documentation link and the handoff.\", \"reply_why\": \"It asks for a recaptured fixture and a commit push instead of the documentation link and a review handoff.\"}, \"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"It keeps \\\"not ready\\\" when the key's action is to hand off.\", \"accuracy_why\": \"It leaves out that the fixture details were added, it misses the documentation link and the handoff, and it mentions Niloth-p only as the person who rejected fixtures elsewhere, not as the reviewer.\", \"reply_why\": \"It asks for a recaptured fixture and a commit push instead of the documentation link and a review handoff.\"}, \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"asks_for_done_work\"], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"It keeps \\\"not ready\\\" when the key's action is to hand off.\", \"accuracy_why\": \"It frames the fixture explanation and the issue reference as still open, which undercuts the decisive point that all three asks were answered, and it misses the documentation link.\", \"reply_why\": \"It asks for a recaptured fixture and a commit push instead of the documentation link and a review handoff.\"}}, \"ranking\": [\"V\", \"T\", \"D\", \"H\", \"E\", \"L\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.203932
+}

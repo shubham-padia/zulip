@@ -1,0 +1,165 @@
+{
+ "case": "40065-5545794788",
+ "repeat": 1,
+ "map": {
+  "F": [
+   "v2-r1"
+  ],
+  "M": [
+   "v2-r2"
+  ],
+  "A": [
+   "v1-r2"
+  ],
+  "S": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v3-r1"
+  ],
+  "K": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key.",
+    "accuracy_why": "It covers both asks and the DPR 1 caveat, and names Karl Stolley only as a second choice after laurynmm; it omits that there was no new push and that others could not reproduce the bug.",
+    "reply_why": "The ping is usable, but the thank-you to the author plus the review request is longer than a single reviewer ping and goes to laurynmm rather than a CSS reviewer."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key.",
+    "accuracy_why": "It covers both asks, the lack of a new push and the caveat that the clipping doesn't show, but it assigns laurynmm instead of a left-sidebar CSS reviewer and doesn't mention that others failed to reproduce the bug.",
+    "reply_why": "A concise reviewer ping that says what was added, though it goes to laurynmm rather than a CSS reviewer."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the author claims the clipping 'only' reproduces on high-DPI displays; the author said it reproduces 'most clearly' there."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key.",
+    "accuracy_why": "It is compact and covers both asks, the lack of a new push and the DPR caveat, but it overstates the author's claim, assigns laurynmm rather than a CSS reviewer, and omits that others could not reproduce the bug.",
+    "reply_why": "A single reviewer ping line, aimed at laurynmm rather than a left-sidebar CSS reviewer."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key.",
+    "accuracy_why": "It covers both asks, the lack of a new push and the DPR caveat with a sensible suggestion to check on a high-DPI monitor, but it picks laurynmm over a CSS reviewer and omits that others could not reproduce the bug.",
+    "reply_why": "A single reviewer ping line, aimed at laurynmm."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key.",
+    "accuracy_why": "It covers both asks, the lack of a new push and the DPR caveat, but it picks laurynmm over a CSS reviewer and omits that others could not reproduce the bug.",
+    "reply_why": "A short reviewer ping with useful context, aimed at laurynmm rather than a CSS reviewer."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key.",
+    "accuracy_why": "It covers both asks and the DPR caveat but omits the lack of a new push and that others could not reproduce the bug, picks laurynmm as reviewer, and pads the table with rows from the first round and an 'asked for review' row.",
+    "reply_why": "A single reviewer ping line, aimed at laurynmm."
+   }
+  },
+  "ranking": [
+   "F",
+   "Q",
+   "S",
+   "A",
+   "K",
+   "M"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key.\",\n \"accuracy_why\": \"It covers both asks and the DPR 1 caveat, and names Karl Stolley only as a second choice after laurynmm; it omits that there was no new push and that others could not reproduce the bug.\",\n \"reply_why\": \"The ping is usable, but the thank-you to the author plus the review request is longer than a single reviewer ping and goes to laurynmm rather than a CSS reviewer.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key.\",\n \"accuracy_why\": \"It covers both asks, the lack of a new push and the caveat that the clipping doesn't show, but it assigns laurynmm instead of a left-sidebar CSS reviewer and doesn't mention that others failed to reproduce the bug.\",\n \"reply_why\": \"A concise reviewer ping that says what was added, though it goes to laurynmm rather than a CSS reviewer.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the author claims the clipping 'only' reproduces on high-DPI displays; the author said it reproduces 'most clearly' there.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key.\",\n \"accuracy_why\": \"It is compact and covers both asks, the lack of a new push and the DPR caveat, but it overstates the author's claim, assigns laurynmm rather than a CSS reviewer, and omits that others could not reproduce the bug.\",\n \"reply_why\": \"A single reviewer ping line, aimed at laurynmm rather than a left-sidebar CSS reviewer.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key.\",\n \"accuracy_why\": \"It covers both asks, the lack of a new push and the DPR caveat with a sensible suggestion to check on a high-DPI monitor, but it picks laurynmm over a CSS reviewer and omits that others could not reproduce the bug.\",\n \"reply_why\": \"A single reviewer ping line, aimed at laurynmm.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 6,\n \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key.\",\n \"accuracy_why\": \"It covers both asks, the lack of a new push and the DPR caveat, but it picks laurynmm over a CSS reviewer and omits that others could not reproduce the bug.\",\n \"reply_why\": \"A short reviewer ping with useful context, aimed at laurynmm rather than a CSS reviewer.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 8, \"brevity_score\": 6,\n \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key.\",\n \"accuracy_why\": \"It covers both asks and the DPR caveat but omits the lack of a new push and that others could not reproduce the bug, picks laurynmm as reviewer, and pads the table with rows from the first round and an 'asked for review' row.\",\n \"reply_why\": \"A single reviewer ping line, aimed at laurynmm.\"}},\n \"ranking\": [\"F\", \"Q\", \"S\", \"A\", \"K\", \"M\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.31478799999999996
+}

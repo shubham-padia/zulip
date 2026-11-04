@@ -1,0 +1,175 @@
+{
+ "case": "40240-6313490306",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "v3-r2"
+  ],
+  "A": [
+   "v1-r1"
+  ],
+  "H": [
+   "v2-r2"
+  ],
+  "W": [
+   "v3-r1"
+  ],
+  "N": [
+   "v1-r2"
+  ],
+  "X": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It keeps the PR in 'not ready' and asks for more work, and only optionally raises #39758, when the key says to close in favor of #39758.",
+    "accuracy_why": "It covers the absent push, the AI policy, the missing tests and the #39758 overlap, but it omits the ui_init.js point, does not say laurynmm already handed #39758 to shubham-padia, and never recommends closing.",
+    "reply_why": "The reply tells the author to keep polishing a PR that should be closed, and only mentions #39758 in passing."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action",
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends more feedback and only hints that #39758 might be the PR to move forward, rather than recommending a close.",
+    "accuracy_why": "It states the #39758 overlap fully, including the shubham-padia handoff, but misses the tests and ui_init.js and only hedges on closing.",
+    "reply_why": "The reply asks the author to keep working and push more commits, and never mentions #39758 or a close."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action",
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It asks the author for an explanation in their own words, which is more feedback, when the key says to close.",
+    "accuracy_why": "It notes the missing tests and the overlap with #39758, but omits ui_init.js and the shubham-padia handoff, and does not recommend closing.",
+    "reply_why": "The reply keeps the author going on a PR that should be closed, with only a passing note about #39758."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 1,
+    "brevity_score": 9,
+    "decision_why": "It keeps 'not ready' and asks for more work, and only says the triager may want to choose between this PR and #39758.",
+    "accuracy_why": "It mentions the #39758 overlap but not the shubham-padia handoff, misses the tests and ui_init.js, and does not recommend closing.",
+    "reply_why": "The reply promises another look once the author responds and leaves out #39758 entirely, which is the opposite of closing."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It explicitly recommends more feedback and makes mentioning #39758 optional, when the key says to close.",
+    "accuracy_why": "It misses the shubham-padia handoff, the tests and ui_init.js, and any recommendation to close.",
+    "reply_why": "The reply asks the author to keep working and only notes that #39758 exists."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' and asks for confirmation from the author, rather than recommending a close in favor of #39758.",
+    "accuracy_why": "It states the #39758 overlap with the shubham-padia handoff clearly, but misses the tests and ui_init.js and does not recommend closing.",
+    "reply_why": "The reply asks the author for more before review, which is the wrong ask, though it does flag #39758."
+   }
+  },
+  "ranking": [
+   "X",
+   "A",
+   "D",
+   "H",
+   "W",
+   "N"
+  ]
+ },
+ "text": "{\"outputs\": {\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps the PR in 'not ready' and asks for more work, and only optionally raises #39758, when the key says to close in favor of #39758.\",\n   \"accuracy_why\": \"It covers the absent push, the AI policy, the missing tests and the #39758 overlap, but it omits the ui_init.js point, does not say laurynmm already handed #39758 to shubham-padia, and never recommends closing.\",\n   \"reply_why\": \"The reply tells the author to keep polishing a PR that should be closed, and only mentions #39758 in passing.\"},\n  \"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\", \"filler_point\"],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 1,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It recommends more feedback and only hints that #39758 might be the PR to move forward, rather than recommending a close.\",\n   \"accuracy_why\": \"It states the #39758 overlap fully, including the shubham-padia handoff, but misses the tests and ui_init.js and only hedges on closing.\",\n   \"reply_why\": \"The reply asks the author to keep working and push more commits, and never mentions #39758 or a close.\"},\n  \"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\", \"filler_point\"],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It asks the author for an explanation in their own words, which is more feedback, when the key says to close.\",\n   \"accuracy_why\": \"It notes the missing tests and the overlap with #39758, but omits ui_init.js and the shubham-padia handoff, and does not recommend closing.\",\n   \"reply_why\": \"The reply keeps the author going on a PR that should be closed, with only a passing note about #39758.\"},\n  \"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 1,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It keeps 'not ready' and asks for more work, and only says the triager may want to choose between this PR and #39758.\",\n   \"accuracy_why\": \"It mentions the #39758 overlap but not the shubham-padia handoff, misses the tests and ui_init.js, and does not recommend closing.\",\n   \"reply_why\": \"The reply promises another look once the author responds and leaves out #39758 entirely, which is the opposite of closing.\"},\n  \"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 2, \"accuracy_score\": 4, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It explicitly recommends more feedback and makes mentioning #39758 optional, when the key says to close.\",\n   \"accuracy_why\": \"It misses the shubham-padia handoff, the tests and ui_init.js, and any recommendation to close.\",\n   \"reply_why\": \"The reply asks the author to keep working and only notes that #39758 exists.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps 'not ready' and asks for confirmation from the author, rather than recommending a close in favor of #39758.\",\n   \"accuracy_why\": \"It states the #39758 overlap with the shubham-padia handoff clearly, but misses the tests and ui_init.js and does not recommend closing.\",\n   \"reply_why\": \"The reply asks the author for more before review, which is the wrong ask, though it does flag #39758.\"}},\n \"ranking\": [\"X\", \"A\", \"D\", \"H\", \"W\", \"N\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.23232799999999998
+}

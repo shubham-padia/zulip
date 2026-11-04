@@ -1,0 +1,168 @@
+{
+ "case": "40171-5795222359",
+ "repeat": 1,
+ "map": {
+  "P": [
+   "v3-r2"
+  ],
+  "B": [
+   "v1-r1"
+  ],
+  "X": [
+   "v2-r1"
+  ],
+  "O": [
+   "v3-r1"
+  ],
+  "K": [
+   "v1-r2"
+  ],
+  "D": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands off, matching the key.",
+    "accuracy_why": "All changes are right and the topic-required case is explicit, but guideline-format compliance is only implied by 'before/after table'.",
+    "reply_why": "A short thanks and a ping to Niloth-p can be pasted as is."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands off, matching the key.",
+    "accuracy_why": "It covers both feedback asks, the absence of a push, and the right reviewer.",
+    "reply_why": "A thanks and a ping to Niloth-p are pasteable."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Recommends laurynmm as reviewer instead of Niloth-p, who owns the file and diagnosed the bug"
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It hands off as a NOTE, but assigns the wrong reviewer.",
+    "accuracy_why": "Both asks are correctly marked met, but the reviewer choice contradicts the key.",
+    "reply_why": "The reply pings laurynmm rather than Niloth-p, so the ask must be rewritten."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands off, matching the key.",
+    "accuracy_why": "It is correct and complete, though it doesn't explicitly say the guideline format was met.",
+    "reply_why": "A brief thanks and a reviewer ping are pasteable."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says to add an 'integration review' label instead of 'maintainer review'"
+    ],
+    "rule_failures": [
+     "filler_point",
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It hands off as a NOTE, but names the wrong label in the next step.",
+    "accuracy_why": "The changes are right, but the handoff label is wrong and two points are filler.",
+    "reply_why": "A thanks and a ping to Niloth-p are pasteable."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 10,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands off, matching the key.",
+    "accuracy_why": "It explicitly confirms both asks, the absence of a push, and the right reviewer with reasons.",
+    "reply_why": "A one-line thanks and a ping to Niloth-p are ideal."
+   }
+  },
+  "ranking": [
+   "D",
+   "P",
+   "O",
+   "B",
+   "K",
+   "X"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that hands off, matching the key.\",\n   \"accuracy_why\": \"All changes are right and the topic-required case is explicit, but guideline-format compliance is only implied by 'before/after table'.\",\n   \"reply_why\": \"A short thanks and a ping to Niloth-p can be pasted as is.\"},\n \"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 9, \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that hands off, matching the key.\",\n   \"accuracy_why\": \"It covers both feedback asks, the absence of a push, and the right reviewer.\",\n   \"reply_why\": \"A thanks and a ping to Niloth-p are pasteable.\"},\n \"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Recommends laurynmm as reviewer instead of Niloth-p, who owns the file and diagnosed the bug\"], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 8, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 8,\n   \"decision_why\": \"It hands off as a NOTE, but assigns the wrong reviewer.\",\n   \"accuracy_why\": \"Both asks are correctly marked met, but the reviewer choice contradicts the key.\",\n   \"reply_why\": \"The reply pings laurynmm rather than Niloth-p, so the ask must be rewritten.\"},\n \"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that hands off, matching the key.\",\n   \"accuracy_why\": \"It is correct and complete, though it doesn't explicitly say the guideline format was met.\",\n   \"reply_why\": \"A brief thanks and a reviewer ping are pasteable.\"},\n \"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says to add an 'integration review' label instead of 'maintainer review'\"], \"rule_failures\": [\"filler_point\", \"filler_point\"],\n   \"decision_score\": 8, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 6,\n   \"decision_why\": \"It hands off as a NOTE, but names the wrong label in the next step.\",\n   \"accuracy_why\": \"The changes are right, but the handoff label is wrong and two points are filler.\",\n   \"reply_why\": \"A thanks and a ping to Niloth-p are pasteable.\"},\n \"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 10, \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that hands off, matching the key.\",\n   \"accuracy_why\": \"It explicitly confirms both asks, the absence of a push, and the right reviewer with reasons.\",\n   \"reply_why\": \"A one-line thanks and a ping to Niloth-p are ideal.\"}\n },\n \"ranking\": [\"D\", \"P\", \"O\", \"B\", \"K\", \"X\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.186508
+}
