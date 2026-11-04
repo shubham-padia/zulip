@@ -1,0 +1,11 @@
+{
+ "case": "40041-5479840283",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the discussion thread has no maintainer response yet**\n\nNew: The author started a chat.zulip.org thread and linked it in the PR description, but no new code was pushed. Missing: No maintainer has agreed the change is wanted, since the thread has only the author's own post. The \"How changes were tested\" section only says \"Verified no test failures\", and the PR overlaps with their other open PR, #40042.\n\n###### Next step\n\n\"not ready\" stays; laurynmm (who gave the feedback) can revisit once someone replies in the thread.\n\n###### Reply\n\n```quote\nThanks for starting the discussion! Please wait for a maintainer to weigh in there on whether this change is wanted, and meanwhile fill out the PR template properly (especially how you tested) and explain how this PR relates to #40042.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0082142
+}

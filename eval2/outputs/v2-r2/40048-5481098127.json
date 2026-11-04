@@ -1,0 +1,11 @@
+{
+ "case": "40048-5481098127",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close**\n\n|     |         |\n| --- | ------- |\n| ✅  | Screenshot of the rendered API docs is now in the description |\n| ✅  | Author says an #api design discussion was started (no link given, no new push) |\n| ℹ️  | Linked issue #20229 has no \"help wanted\" label, and the author has no merged PRs |\n| ℹ️  | zulipbot already warned the author about claiming an issue without \"help wanted\" |\n| ℹ️  | CI status is unknown |\n\n###### Next step\n\nClose the PR, because it should not have been opened on an issue without \"help wanted\": `gh pr close 40048`.\n\n###### Reply\n\n```quote\nThanks for the work here, but we're closing this PR because it addresses #20229, which isn't labeled \"help wanted\", and we only accept PRs for issues with that label. Please see the [guide on picking up issues](https://zulip.readthedocs.io/en/latest/contributing/contributing.html) for how this works.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0088107
+}

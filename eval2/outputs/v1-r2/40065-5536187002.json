@@ -1,0 +1,11 @@
+{
+ "case": "40065-5536187002",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author squashed the two commits into one and says they retook the before/after screenshots. The PR description now describes the back-to-back capture method.\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit history is now a single coherent commit with a descriptive message. |\n| ✅  | Before/after shots were taken in the same tab with the same viewport, scroll and crop, which matches the \"precise screenshots\" ask. |\n| ℹ️  | The author says the clipping doesn't reproduce at DPR 1, so the shots show added spacing rather than a fixed cut-off emoji. The reviewer should judge whether that is enough. |\n| ✅  | The linked issue has \"help wanted\" and is assigned to the author, and CI passed. |\n\n**Reviewer:** @laurynmm — gave the feedback, was asked for the re-review, and has handled the earlier attempts at this issue.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012743200000000001
+}

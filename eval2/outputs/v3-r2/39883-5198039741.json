@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the guide's checklist and testing details are still missing**\n\nNew: Two small pushes (net +1 line), and a comment saying tests and linting pass. The fixture tests were already in the PR when it was first looked at. Missing: The self-review checklist still has the AI-use-policy box and the manual-testing boxes unchecked, and the description doesn't say how the change was tested by hand. It also doesn't mention #39598, an open PR in maintainer review for the same issue.\n\n###### Next step\n\nKeep \"not ready\" and have the author finish the checklist and testing notes before anyone is assigned.\n\n###### Reply\n\n```quote\nThanks for the update! Please go through the [reviewable PRs guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) again: complete the self-review checklist (including the AI use policy item), describe how you tested this by hand, and note how it relates to #39598, which is already in review for the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0117514
+}

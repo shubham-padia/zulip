@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Clean up commit history: now a single commit |\n| ✅  | Precise before/after screenshots: same tab, same scroll state, in the description |\n| ✅  | Before/after screenshots of longer topic names, with and without emoji: in the description |\n| ✅  | Test with different app font sizes: 20px pair added, spacing numbers given |\n| ✅  | Ask for review again: done in the comments |\n| ℹ️  | The screenshots were taken at DPR 1, where the clipping doesn't show. The author says it appears on high-DPI monitors, so reviewers may need to check there. CI passed. |\n\n**Reviewer:** @laurynmm. She gave both rounds of feedback and the author asked her for another look.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011554400000000001
+}

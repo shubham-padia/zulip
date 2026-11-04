@@ -1,0 +1,11 @@
+{
+ "case": "40065-5536187002",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — history squashed, screenshots retaken**\n\nNew: The author squashed the two commits into one with a clear message, and the PR description now has before/after shots taken in the same tab with identical scroll state. Missing: nothing blocking, but the shots were taken at normal pixel density, where the clipping doesn't reproduce, so the reviewer should judge whether they're precise enough.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback and was pinged.\n\n###### Reply\n\n```quote\nThanks for cleaning this up! @laurynmm, could you take another look, including whether the before/after screenshots meet the guidelines?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.050627700000000005
+}

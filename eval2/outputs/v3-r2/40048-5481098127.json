@@ -1,0 +1,11 @@
+{
+ "case": "40048-5481098127",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — linked issue #20229 is not labeled \"help wanted\"**\n\nNew: The author updated the description with an API docs screenshot and started a topic in #api design. There was no new push. Missing: the linked issue has no \"help wanted\" label (zulipbot already warned about this), and the author has no merged PRs.\n\n###### Next step\n\nClose the PR, since contributors with no merged PRs can only work on \"help wanted\" issues and this doesn't continue a completion-candidate PR: `gh pr close 40048`\n\n###### Reply\n\n```quote\nThanks for the work here, but we're closing this PR because issue #20229 isn't labeled \"help wanted\", and we only accept PRs for issues with that label from contributors who don't yet have merged PRs.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.007065699999999999
+}

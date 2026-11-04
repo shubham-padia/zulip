@@ -1,0 +1,11 @@
+{
+ "case": "40041-5479840283",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author started a CZO thread and linked it in the PR description. There was no new push, and the code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ✅  | The asked-for discussion exists and is linked in the PR description. |\n| ❌  | The thread only has the author's own post. No maintainer has said the approach is wanted. |\n| ❌  | \"Fixes:\" is empty, and \"How changes were tested\" only says \"Verified no test failures\". |\n| ℹ️  | The same author's PR #40042 makes a similar change, so the two PRs may need to be combined or one closed. |\n\n###### Next step\n\nKeep \"not ready\" and wait for a maintainer to respond in the CZO thread. If one says the change is wanted, the PR can move on after the description is fixed.\n\n###### Reply\n\n```quote\nThanks for starting the discussion thread! Please wait for a maintainer to weigh in there on whether this approach is wanted. Meanwhile, please fill in the PR template properly: how you tested the change, and whether #40042 should be merged into this PR.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0094268
+}

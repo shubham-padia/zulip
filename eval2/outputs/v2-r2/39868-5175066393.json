@@ -1,0 +1,11 @@
+{
+ "case": "39868-5175066393",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ℹ️  | No written feedback: \"not ready\" was added with no comment, so the reason is unclear. The author's comment suggests failing tests. |\n| ⚠️  | Failing tests: there were new pushes after the label, but CI status isn't available, so a pass can't be confirmed. |\n| ⚠️  | Self-review checklist: the boxes for end-to-end testing of the buttons, corner cases, strings and tooltips, and automated tests are still unchecked. |\n| ℹ️  | Issue #38844 is assigned to the author and has \"help wanted\". Another PR for it, #39694, is still open. |\n\n###### Next step\n\nKeep \"not ready\" until CI is green and the self-review checklist is complete, then hand off to maintainer review.\n\n###### Reply\n\n```quote\nThanks for the update, @somaia02! Could you confirm CI is passing now, and finish the testing items in the self-review checklist (end-to-end behavior of the buttons and corner cases)?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013171500000000001
+}

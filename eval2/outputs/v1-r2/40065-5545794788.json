@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author didn't push new code, which wasn't needed. They added the requested longer-topic and 20px font-size before/after screenshots to the PR description and explained them in a comment.\n\n|     |         |\n| --- | ------- |\n| ✅  | Longer topic names: before/after pairs with a two-line wrapped plain topic, a mixed-emoji topic and an emoji-heavy topic are in the PR body. |\n| ✅  | Different font sizes: a 20px app font before/after pair is included, with the spacing scaling as described (5.14px to 7.14px). |\n| ⚠️  | At DPR 1 the original clipping doesn't reproduce, so the screenshots show the added spacing rather than a fixed clip. The reviewer may want to check on a high-DPI or external monitor. |\n| ℹ️  | CI passed, the PR is a single commit, and the linked issue has \"help wanted\" and is assigned to the author. |\n\n**Reviewer:** @laurynmm — gave the feedback on this PR and is already following the screenshots.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012081999999999999
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️ | Self-review checklist: the \"AI use policy\" box is still unchecked, and so are \"Calls out remaining decisions and concerns\" and the manual testing items |\n| ✅ | Description, \"Fixes: #38436\" and the fixture tests are in place (no screenshots needed, this isn't a UI change) |\n| ⚠️ | How it was tested: the fixture tests are described, but there is no note on manual testing, and the author's \"all passing\" claim can't be checked because CI status is unavailable |\n| ℹ️ | Another PR for the same issue, #39598, is already in maintainer review. #39280 is also open, and #39881 covers tabs in fenced code blocks. The author claimed the issue on the day this PR was opened |\n| ℹ️ | Since the feedback there were 2 pushes (+1 line), with the same commit message |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to finish the self-review checklist, including the AI policy item; you may also want to decide whether this PR is needed given #39598.\n\n###### Reply\n\n```quote\nThanks for the update! Please go through the self-review checklist again and check off the AI use policy item (only once it's true), and add a short note on how you tested this manually. Also, please take a look at #39598, which is already in review for the same issue, and say how this PR differs.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0134464
+}

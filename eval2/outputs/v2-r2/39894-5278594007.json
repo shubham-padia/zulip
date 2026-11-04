@@ -1,0 +1,11 @@
+{
+ "case": "39894-5278594007",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots in light and dark theme are now in the description, with a pixel-diff note. |\n| ℹ️  | The description admits one deliberate dark-theme change: the focus box-shadow blur goes from 5px to 6px. The issue says such minor adjustments should be discussed in #design, so the reviewer may want to decide on this. |\n\n**Reviewer:** @laurynmm — asked for the screenshots and was already asked to review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The screenshots are in the description, and it also notes a small dark-theme box-shadow change (5px to 6px blur) that you may want to weigh in on.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0092655
+}

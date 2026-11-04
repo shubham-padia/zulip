@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nSince the feedback, the author pushed twice, which added one line in total. The commit message is unchanged, and the comment says tests and linting pass and mentions test cases that the description already listed.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description is filled in, with \"Fixes: #38436\" (labeled \"help wanted\" and assigned to the author), a summary of the approach, and the fixture tests added. |\n| ❌  | The self-review checklist item for the AI use policy is still unchecked, and the description reads as AI-assisted. Nothing shows the author has understood and tested the change. |\n| ❌  | The description doesn't say how this differs from the other open PRs for the same issue (#39598, which is in maintainer review, plus #39280 and #39881), and the \"remaining decisions and concerns\" item is unchecked. |\n| ⚠️  | CI status isn't available. The author says checks pass, so confirm before any handoff. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to finish the checklist and explain how this relates to #39598.\n\n###### Reply\n\n```quote\nThanks for the update! Please complete the self-review checklist, including the [AI use policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines) item, and say in the description how you tested the change. Also tell us how this approach differs from the open PR #39598 for the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014173999999999999
+}

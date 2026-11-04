@@ -1,0 +1,11 @@
+{
+ "case": "40048-5481098127",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close**\n\nThe author added a docs screenshot to the description and says they started an #api design topic. There was no new push, and the code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ❌  | Issue #20229 is not labeled \"help wanted\", and the author has no merged PRs. zulipbot already warned them about claiming it. |\n| ✅  | A rendered API docs screenshot is now in the description. |\n| ⚠️  | An #api design topic is said to be started, but no thread or outcome is in the input. |\n| ❌  | The issue asks for an API changelog entry. The changed files don't include one. |\n\n###### Next step\n\nClose the PR, since the linked issue isn't open for contributors: `gh pr close 40048 --comment \"Thanks for the work here. We're closing this PR because #20229 isn't labeled 'help wanted', so it isn't open for contributors to pick up yet.\"`\n\n###### Reply\n\n```quote\nThanks for the work on this, but we're closing this PR because #20229 isn't labeled \"help wanted\", so it isn't open for contributors to pick up.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0111883
+}
