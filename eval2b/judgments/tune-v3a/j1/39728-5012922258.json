@@ -1,0 +1,70 @@
+{
+ "case": "39728-5012922258",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "eval2:v3-r1"
+  ],
+  "X": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps 'not ready' and recommends more feedback, which matches the key.",
+    "accuracy_why": "It correctly covers the new test commit, the messy commit history with the wrong issue number, and the custom checklist, but it never mentions checking the screenshots against the precise before/after guidelines.",
+    "reply_why": "The reply is specific, linked and ready to paste for commits and checklist, but it leaves out the screenshot-guidelines part of the ask."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the PR is ready for review with the description and self-review checklist in place, when the checklist is a custom one rather than the template's.",
+     "Presents the before/after screenshots as satisfying the request, though they were never checked against the precise-screenshot guidelines."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to review when the key says more feedback is needed.",
+    "accuracy_why": "It rests the hand-off on false claims that the checklist and screenshots are in order, and it notes the commit problems only to defer them.",
+    "reply_why": "It pings for review instead of telling the author what to fix, which is the wrong decision for this PR."
+   }
+  },
+  "ranking": [
+   "E",
+   "X"
+  ]
+ },
+ "text": "{\"outputs\": {\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that keeps 'not ready' and recommends more feedback, which matches the key.\",\n   \"accuracy_why\": \"It correctly covers the new test commit, the messy commit history with the wrong issue number, and the custom checklist, but it never mentions checking the screenshots against the precise before/after guidelines.\",\n   \"reply_why\": \"The reply is specific, linked and ready to paste for commits and checklist, but it leaves out the screenshot-guidelines part of the ask.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Claims the PR is ready for review with the description and self-review checklist in place, when the checklist is a custom one rather than the template's.\", \"Presents the before/after screenshots as satisfying the request, though they were never checked against the precise-screenshot guidelines.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to review when the key says more feedback is needed.\",\n   \"accuracy_why\": \"It rests the hand-off on false claims that the checklist and screenshots are in order, and it notes the commit problems only to defer them.\",\n   \"reply_why\": \"It pings for review instead of telling the author what to fix, which is the wrong decision for this PR.\"}},\n \"ranking\": [\"E\", \"X\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.287248
+}

@@ -1,0 +1,67 @@
+{
+ "case": "39785-5037857009",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "eval2:v3-r1"
+  ],
+  "H": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the posted image answers the screenshot feedback, but the key says it is still unclear whether it is a real screenshot from the development environment."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" for more feedback matches the key's kind and action.",
+    "accuracy_why": "It covers the lack of a new push, the missing #38931 link and the unshown right-placement arrow, but it accepts the image as a valid screenshot and misses the decisive authenticity concern.",
+    "reply_why": "The reply asks for the issue link and testing details but never asks how the image was made or for real dev-environment screenshots, so it misses the core of reply_ask."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the posted image is what was asked for and the PR is ready for review, while the key says it may not be a genuine dev-environment screenshot."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to a reviewer when the key calls for more feedback.",
+    "accuracy_why": "It notes no new push and the missing #38931 link, but its hand-off rests on wrongly treating the image as a satisfactory screenshot.",
+    "reply_why": "The reply pings laurynmm to review instead of questioning the image, which is the wrong decision for this case."
+   }
+  },
+  "ranking": [
+   "D",
+   "H"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says the posted image answers the screenshot feedback, but the key says it is still unclear whether it is a real screenshot from the development environment.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" for more feedback matches the key's kind and action.\",\n   \"accuracy_why\": \"It covers the lack of a new push, the missing #38931 link and the unshown right-placement arrow, but it accepts the image as a valid screenshot and misses the decisive authenticity concern.\",\n   \"reply_why\": \"The reply asks for the issue link and testing details but never asks how the image was made or for real dev-environment screenshots, so it misses the core of reply_ask.\"},\n  \"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"wrong\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says the posted image is what was asked for and the PR is ready for review, while the key says it may not be a genuine dev-environment screenshot.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to a reviewer when the key calls for more feedback.\",\n   \"accuracy_why\": \"It notes no new push and the missing #38931 link, but its hand-off rests on wrongly treating the image as a satisfactory screenshot.\",\n   \"reply_why\": \"The reply pings laurynmm to review instead of questioning the image, which is the wrong decision for this case.\"}},\n \"ranking\": [\"D\", \"H\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.097392
+}

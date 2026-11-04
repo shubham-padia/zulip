@@ -1,0 +1,65 @@
+{
+ "case": "39731-5006493904",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v3a-r1"
+  ],
+  "H": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 7,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for screenshots, but the key's action is to hand the PR off to maintainer review now.",
+    "accuracy_why": "It covers the changes and the missing screenshots correctly, but it names laurynmm instead of karlstolley and omits that no maintainer has confirmed the removals.",
+    "reply_why": "The reply asks for more screenshots instead of saying the PR is moving to maintainer review, so it misses the reply_ask."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Says 'Nothing is missing', but the precise before/after screenshots the issue requires are still absent."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "The kind (NOTE) and the action (hand off: remove \"not ready\", add \"maintainer review\") both match the key.",
+    "accuracy_why": "The changes are right, but it wrongly claims nothing is missing, skips the screenshot gap, and names laurynmm instead of karlstolley as reviewer.",
+    "reply_why": "It is a short thank-you plus a reviewer ping, close to pasteable, but it pings laurynmm rather than the CSS maintainer karlstolley."
+   }
+  },
+  "ranking": [
+   "H",
+   "K"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 7, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for screenshots, but the key's action is to hand the PR off to maintainer review now.\",\n   \"accuracy_why\": \"It covers the changes and the missing screenshots correctly, but it names laurynmm instead of karlstolley and omits that no maintainer has confirmed the removals.\",\n   \"reply_why\": \"The reply asks for more screenshots instead of saying the PR is moving to maintainer review, so it misses the reply_ask.\"},\n  \"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Says 'Nothing is missing', but the precise before/after screenshots the issue requires are still absent.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6,\n   \"brevity_score\": 9,\n   \"decision_why\": \"The kind (NOTE) and the action (hand off: remove \\\"not ready\\\", add \\\"maintainer review\\\") both match the key.\",\n   \"accuracy_why\": \"The changes are right, but it wrongly claims nothing is missing, skips the screenshot gap, and names laurynmm instead of karlstolley as reviewer.\",\n   \"reply_why\": \"It is a short thank-you plus a reviewer ping, close to pasteable, but it pings laurynmm rather than the CSS maintainer karlstolley.\"}},\n \"ranking\": [\"H\", \"K\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.251612
+}

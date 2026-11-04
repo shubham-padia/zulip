@@ -1,0 +1,72 @@
+{
+ "case": "39522-4714378606",
+ "repeat": 1,
+ "map": {
+  "O": [
+   "eval2:v3-r1"
+  ],
+  "K": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Headline says the PR is ready for review, implying Yogesh's open points are resolved, but the key says that is unconfirmed.",
+     "Recommends assigning laurynmm as reviewer, not karlstolley."
+    ],
+    "rule_failures": [
+     "skips_collaborator_signoff"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "NOTE with hand_off matches the key, but it drops the condition that Yogesh sign off first.",
+    "accuracy_why": "It gets the squash and +56 to +35 shrink right, but omits Yogesh's unconfirmed asks, treats the PR as ready, and names the wrong reviewer.",
+    "reply_why": "A single ping line fits hand_off, but it pings the wrong person and does not ask Yogesh to confirm his points."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "States the extra 'View all users' styles were removed, but the key says that removal is unconfirmed."
+    ],
+    "rule_failures": [
+     "names_no_reviewer_path"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' and sends more feedback, while the key's action is a hand-off once Yogesh signs off.",
+    "accuracy_why": "It correctly flags the screenshots, outline color and border radius as unconfirmed, but asserts the buddy-list removal as done and gives no hand-off path.",
+    "reply_why": "The multi-sentence reply to the author asks for relevant checks, but under hand_off it should ask Yogesh to confirm and point toward maintainer review."
+   }
+  },
+  "ranking": [
+   "K",
+   "O"
+  ]
+ },
+ "text": "{\"outputs\": {\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Headline says the PR is ready for review, implying Yogesh's open points are resolved, but the key says that is unconfirmed.\", \"Recommends assigning laurynmm as reviewer, not karlstolley.\"],\n   \"rule_failures\": [\"skips_collaborator_signoff\"],\n   \"decision_score\": 8, \"accuracy_score\": 3, \"reply_score\": 4,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE with hand_off matches the key, but it drops the condition that Yogesh sign off first.\",\n   \"accuracy_why\": \"It gets the squash and +56 to +35 shrink right, but omits Yogesh's unconfirmed asks, treats the PR as ready, and names the wrong reviewer.\",\n   \"reply_why\": \"A single ping line fits hand_off, but it pings the wrong person and does not ask Yogesh to confirm his points.\"},\n  \"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\"},\n   \"wrong_facts\": [\"States the extra 'View all users' styles were removed, but the key says that removal is unconfirmed.\"],\n   \"rule_failures\": [\"names_no_reviewer_path\"],\n   \"decision_score\": 4, \"accuracy_score\": 4, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps 'not ready' and sends more feedback, while the key's action is a hand-off once Yogesh signs off.\",\n   \"accuracy_why\": \"It correctly flags the screenshots, outline color and border radius as unconfirmed, but asserts the buddy-list removal as done and gives no hand-off path.\",\n   \"reply_why\": \"The multi-sentence reply to the author asks for relevant checks, but under hand_off it should ask Yogesh to confirm and point toward maintainer review.\"}},\n \"ranking\": [\"K\", \"O\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.239752
+}

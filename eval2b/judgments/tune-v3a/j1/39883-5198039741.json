@@ -1,0 +1,67 @@
+{
+ "case": "39883-5198039741",
+ "repeat": 1,
+ "map": {
+  "J": [
+   "v3a-r1"
+  ],
+  "P": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "J": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "The reply says maintainers can't review competing PRs for the issue in parallel; the cutoff facts only say a maintainer would likely lack capacity, which is not a rule against review."
+    ],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends closing where the key says to keep \"not ready\" and give more feedback, so the action is the wrong call.",
+    "accuracy_why": "It correctly notes the one-line push and the competing #39598, but it misses the screenshots and checklist gaps, and its close verdict rests on an overstated no-parallel-review claim.",
+    "reply_why": "It closes the PR of an author who should be told what to fix, so a maintainer could not paste it."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, matching the key on both kind and action.",
+    "accuracy_why": "It covers the trivial push, the unchecked AI-policy box, #39598 and #39881, but it says 'before/after examples' rather than dev-environment screenshots and leaves out the visual-appearance checklist item.",
+    "reply_why": "The ask is right and cites the guide, but it needs a small edit to request precise before/after screenshots from the dev environment instead of 'examples'."
+   }
+  },
+  "ranking": [
+   "P",
+   "J"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"J\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"The reply says maintainers can't review competing PRs for the issue in parallel; the cutoff facts only say a maintainer would likely lack capacity, which is not a rule against review.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 1,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends closing where the key says to keep \\\"not ready\\\" and give more feedback, so the action is the wrong call.\",\n   \"accuracy_why\": \"It correctly notes the one-line push and the competing #39598, but it misses the screenshots and checklist gaps, and its close verdict rests on an overstated no-parallel-review claim.\",\n   \"reply_why\": \"It closes the PR of an author who should be told what to fix, so a maintainer could not paste it.\"},\n  \"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, matching the key on both kind and action.\",\n   \"accuracy_why\": \"It covers the trivial push, the unchecked AI-policy box, #39598 and #39881, but it says 'before/after examples' rather than dev-environment screenshots and leaves out the visual-appearance checklist item.\",\n   \"reply_why\": \"The ask is right and cites the guide, but it needs a small edit to request precise before/after screenshots from the dev environment instead of 'examples'.\"}},\n \"ranking\": [\"P\", \"J\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.211804
+}

@@ -1,0 +1,67 @@
+{
+ "case": "39929-5293011728",
+ "repeat": 1,
+ "map": {
+  "X": [
+   "eval2:v3-r1"
+  ],
+  "C": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 10,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off matches both the key's kind and the observed triager action.",
+    "accuracy_why": "It covers the squash, the summary line, the removed merge commit and the unverified CI claim, but misses the missing API changelog and feature-level entry.",
+    "reply_why": "For a hand-off, \"No reply needed.\" is pasteable as is."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 10,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches both the key's kind and the observed triager action.",
+    "accuracy_why": "It confirms the cleanup but misses both the missing API changelog and the unverified CI claim, and flags an off-key screenshot gap instead.",
+    "reply_why": "For a hand-off, \"No reply needed.\" is pasteable as is."
+   }
+  },
+  "ranking": [
+   "X",
+   "C"
+  ]
+ },
+ "text": "{\"outputs\": {\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 10,\n   \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE recommending hand-off matches both the key's kind and the observed triager action.\",\n   \"accuracy_why\": \"It covers the squash, the summary line, the removed merge commit and the unverified CI claim, but misses the missing API changelog and feature-level entry.\",\n   \"reply_why\": \"For a hand-off, \\\"No reply needed.\\\" is pasteable as is.\"},\n  \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 10,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off matches both the key's kind and the observed triager action.\",\n   \"accuracy_why\": \"It confirms the cleanup but misses both the missing API changelog and the unverified CI claim, and flags an off-key screenshot gap instead.\",\n   \"reply_why\": \"For a hand-off, \\\"No reply needed.\\\" is pasteable as is.\"}},\n \"ranking\": [\"X\", \"C\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.13968
+}

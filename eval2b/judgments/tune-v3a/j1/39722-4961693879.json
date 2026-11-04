@@ -1,0 +1,72 @@
+{
+ "case": "39722-4961693879",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v3a-r1"
+  ],
+  "N": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "States as fact that the commit-message fixes were not made and the 'Fixes a part of' lines still need removing, while the key says any change was likely in the commit message bodies and the fixes still need checking."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "Kind NOTE and keeping 'not ready' with whilstsomebody's review as the next step both match the key.",
+    "accuracy_why": "It claims the commit fixes weren't made instead of saying they need checking, and it misses both the partial fix of #16094 and the identical German 'before' screenshots.",
+    "reply_why": "The main ask rests on the unsupported claim that the commits are unchanged, so it risks asking for done work, and it misses the identical-images point and the request to say which parts of #16094 are fixed."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "States as fact that the commit messages are unchanged and the commit fixes were not made.",
+     "Asserts the screenshots are still the full-width ones and not precise crops, which the cutoff facts cannot confirm."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "NOTE and keeping 'not ready' match the key, but the next step says 'no reviewer to assign yet' instead of pointing to whilstsomebody's pending review.",
+    "accuracy_why": "It confidently asserts that both the commit fixes and the screenshot fixes are undone, which are two unsupported claims, and it misses f3 and f4.",
+    "reply_why": "It tells the author to redo both changes on unverified grounds and misses the identical-images point, the partial-fix scope and the review next step."
+   }
+  },
+  "ranking": [
+   "K",
+   "N"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n   \"wrong_facts\": [\"States as fact that the commit-message fixes were not made and the 'Fixes a part of' lines still need removing, while the key says any change was likely in the commit message bodies and the fixes still need checking.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"Kind NOTE and keeping 'not ready' with whilstsomebody's review as the next step both match the key.\",\n   \"accuracy_why\": \"It claims the commit fixes weren't made instead of saying they need checking, and it misses both the partial fix of #16094 and the identical German 'before' screenshots.\",\n   \"reply_why\": \"The main ask rests on the unsupported claim that the commits are unchanged, so it risks asking for done work, and it misses the identical-images point and the request to say which parts of #16094 are fixed.\"},\n  \"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n   \"wrong_facts\": [\"States as fact that the commit messages are unchanged and the commit fixes were not made.\", \"Asserts the screenshots are still the full-width ones and not precise crops, which the cutoff facts cannot confirm.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 8, \"accuracy_score\": 2, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE and keeping 'not ready' match the key, but the next step says 'no reviewer to assign yet' instead of pointing to whilstsomebody's pending review.\",\n   \"accuracy_why\": \"It confidently asserts that both the commit fixes and the screenshot fixes are undone, which are two unsupported claims, and it misses f3 and f4.\",\n   \"reply_why\": \"It tells the author to redo both changes on unverified grounds and misses the identical-images point, the partial-fix scope and the review next step.\"}},\n \"ranking\": [\"K\", \"N\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.214256
+}

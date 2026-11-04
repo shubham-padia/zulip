@@ -1,0 +1,67 @@
+{
+ "case": "39927-5276328596",
+ "repeat": 1,
+ "map": {
+  "U": [
+   "eval2:v3-r1"
+  ],
+  "X": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing blocking remains, though the Before and After screenshots are still different sizes (1261×629 vs 2520×1274)."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key's kind and the action karlstolley actually took.",
+    "accuracy_why": "It covers both fixes and the 'Fixes #39794' issue, but misses the mismatched screenshot sizes and the missing self-review checklist, and calls the remaining state non-blocking.",
+    "reply_why": "Beyond the reviewer ping, it asks the author only to change 'Fixes', not to recapture the screenshots at matching size, so it misses the reply_ask."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches both the key's kind and the observed triager action.",
+    "accuracy_why": "It names the commit rename, the compose.css spacing fix and the mismatched screenshot widths, but omits the missing self-review checklist and the 'Fixes #39794' wording.",
+    "reply_why": "A single reviewer-ping line fits a hand-off and could be pasted as is."
+   }
+  },
+  "ranking": [
+   "X",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says nothing blocking remains, though the Before and After screenshots are still different sizes (1261×629 vs 2520×1274).\"],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key's kind and the action karlstolley actually took.\",\n   \"accuracy_why\": \"It covers both fixes and the 'Fixes #39794' issue, but misses the mismatched screenshot sizes and the missing self-review checklist, and calls the remaining state non-blocking.\",\n   \"reply_why\": \"Beyond the reviewer ping, it asks the author only to change 'Fixes', not to recapture the screenshots at matching size, so it misses the reply_ask.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches both the key's kind and the observed triager action.\",\n   \"accuracy_why\": \"It names the commit rename, the compose.css spacing fix and the mismatched screenshot widths, but omits the missing self-review checklist and the 'Fixes #39794' wording.\",\n   \"reply_why\": \"A single reviewer-ping line fits a hand-off and could be pasted as is.\"}},\n \"ranking\": [\"X\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.173372
+}

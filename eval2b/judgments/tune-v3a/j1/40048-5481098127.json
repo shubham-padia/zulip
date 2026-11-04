@@ -1,0 +1,65 @@
+{
+ "case": "40048-5481098127",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "v3a-r1"
+  ],
+  "U": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending that \"not ready\" stay on matches both the key's kind and its more_feedback action.",
+    "accuracy_why": "It covers the screenshot, the new #api design topic, that nothing was pushed, the missing changelog and feature level, and the unsettled discussion, but omits the non-decisive help-wanted/zulipbot point.",
+    "reply_why": "It correctly asks for the API changelog entry and feature level bump, but it doesn't ask the author to link the #api design topic in the PR, so a maintainer would add a clause."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends closing where the key calls for more feedback, which is the wrong action.",
+    "accuracy_why": "It notes that nothing was pushed, the unsettled discussion and the help-wanted flag, but misses the decisive gap: there is no API changelog entry or feature-level update.",
+    "reply_why": "The reply closes the PR instead of asking for the changelog entry and the topic link, which is the wrong decision."
+   }
+  },
+  "ranking": [
+   "D",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending that \\\"not ready\\\" stay on matches both the key's kind and its more_feedback action.\",\n   \"accuracy_why\": \"It covers the screenshot, the new #api design topic, that nothing was pushed, the missing changelog and feature level, and the unsettled discussion, but omits the non-decisive help-wanted/zulipbot point.\",\n   \"reply_why\": \"It correctly asks for the API changelog entry and feature level bump, but it doesn't ask the author to link the #api design topic in the PR, so a maintainer would add a clause.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends closing where the key calls for more feedback, which is the wrong action.\",\n   \"accuracy_why\": \"It notes that nothing was pushed, the unsettled discussion and the help-wanted flag, but misses the decisive gap: there is no API changelog entry or feature-level update.\",\n   \"reply_why\": \"The reply closes the PR instead of asking for the changelog entry and the topic link, which is the wrong decision.\"}},\n \"ranking\": [\"D\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.117928
+}

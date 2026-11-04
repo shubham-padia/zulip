@@ -1,0 +1,73 @@
+{
+ "case": "40021-5448685369",
+ "repeat": 1,
+ "map": {
+  "J": [
+   "v3a-r1"
+  ],
+  "U": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "J": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls #38612 a 'similar CSS-only attempt', which the inputs do not support; they show only that it touched reactions.css and was closed as not on track."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) is right, but it recommends closing where the key says keep \"not ready\" and give more feedback, which the rubric scores at the bottom.",
+    "accuracy_why": "It correctly names both decisive problems: whole-string truncation hides other reactors, and the comparison doesn't justify the PR over #39768 in evykassirer's review; but it misses the unrelated commit and adds an unsupported claim about #38612.",
+    "reply_why": "The reply closes the PR instead of asking the author how they will show part of each reactor's name or why this approach beats #39768, so it is the wrong decision for this case."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "The reply thanks the author for 'explaining how this relates to the other PRs', implying the comparison is adequate when the key says it does not justify this approach over #39768."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "Both the kind and the action match the key: keep \"not ready\" and don't assign a reviewer.",
+    "accuracy_why": "It misses both decisive must-haves (the whole-string truncation problem and the weak justification against #39768), focuses on commit cleanup, and implies the comparison was sufficient.",
+    "reply_why": "The reply asks only for squashing and dropping the unrelated commit, missing the key's ask about showing each reactor's name, and implies the PR would be reviewable after cleanup."
+   }
+  },
+  "ranking": [
+   "J",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"J\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Calls #38612 a 'similar CSS-only attempt', which the inputs do not support; they show only that it touched reactions.css and was closed as not on track.\"],\n   \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) is right, but it recommends closing where the key says keep \\\"not ready\\\" and give more feedback, which the rubric scores at the bottom.\",\n   \"accuracy_why\": \"It correctly names both decisive problems: whole-string truncation hides other reactors, and the comparison doesn't justify the PR over #39768 in evykassirer's review; but it misses the unrelated commit and adds an unsupported claim about #38612.\",\n   \"reply_why\": \"The reply closes the PR instead of asking the author how they will show part of each reactor's name or why this approach beats #39768, so it is the wrong decision for this case.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"The reply thanks the author for 'explaining how this relates to the other PRs', implying the comparison is adequate when the key says it does not justify this approach over #39768.\"],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"Both the kind and the action match the key: keep \\\"not ready\\\" and don't assign a reviewer.\",\n   \"accuracy_why\": \"It misses both decisive must-haves (the whole-string truncation problem and the weak justification against #39768), focuses on commit cleanup, and implies the comparison was sufficient.\",\n   \"reply_why\": \"The reply asks only for squashing and dropping the unrelated commit, missing the key's ask about showing each reactor's name, and implies the PR would be reviewable after cleanup.\"}},\n \"ranking\": [\"J\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.262964
+}

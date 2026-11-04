@@ -1,0 +1,67 @@
+{
+ "case": "40042-6183102956",
+ "repeat": 1,
+ "map": {
+  "Q": [
+   "v3a-r1"
+  ],
+  "C": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand_off to sahil839 matches the key's kind and the action the maintainers actually took.",
+    "accuracy_why": "It covers the reworded commits with unchanged code, Sahil's CZO approval, the hand-off and the reviewer, but it omits companion PR #40041, and the empty 'Fixes:' aside is not needed.",
+    "reply_why": "A single reviewer-ping line is what a hand-off needs, and a maintainer could paste it as is."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand_off with sahil839 as reviewer matches the key exactly.",
+    "accuracy_why": "It gives the push precisely (same size, same 3 files), the CZO approval and the hand-off, but it misses #40041 and adds non-blocking 'missing' items the triager doesn't need.",
+    "reply_why": "A short thanks plus a reviewer ping fits the reply_ask well, though the thanks line goes slightly beyond a bare ping."
+   }
+  },
+  "ranking": [
+   "Q",
+   "C"
+  ]
+ },
+ "text": "{\"outputs\": {\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand_off to sahil839 matches the key's kind and the action the maintainers actually took.\",\n   \"accuracy_why\": \"It covers the reworded commits with unchanged code, Sahil's CZO approval, the hand-off and the reviewer, but it omits companion PR #40041, and the empty 'Fixes:' aside is not needed.\",\n   \"reply_why\": \"A single reviewer-ping line is what a hand-off needs, and a maintainer could paste it as is.\"},\n  \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE recommending hand_off with sahil839 as reviewer matches the key exactly.\",\n   \"accuracy_why\": \"It gives the push precisely (same size, same 3 files), the CZO approval and the hand-off, but it misses #40041 and adds non-blocking 'missing' items the triager doesn't need.\",\n   \"reply_why\": \"A short thanks plus a reviewer ping fits the reply_ask well, though the thanks line goes slightly beyond a bare ping.\"}},\n \"ranking\": [\"Q\", \"C\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.11064399999999999
+}

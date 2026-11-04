@@ -1,0 +1,70 @@
+{
+ "case": "39987-5365589747",
+ "repeat": 1,
+ "map": {
+  "R": [
+   "v3a-r1"
+  ],
+  "L": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Headline says the PR is 'Ready for review', but the documentation screenshots are still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "NOTE is the right kind, but it recommends handing the PR off when the key says it needs more feedback.",
+    "accuracy_why": "It reports the avatar fix, the squash and the unverified CI correctly, but it misses the missing docs screenshots, and its 'ready for review' claim is the basis for the wrong action.",
+    "reply_why": "It pings a reviewer instead of asking the author for screenshots of the documentation page, so it misses the reply_ask."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says 'Missing: nothing blocking', but screenshots of the new documentation page are still missing.",
+     "Headline says the PR is 'Ready for review'."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "NOTE is the right kind, but it recommends handing the PR off when the key says it needs more feedback.",
+    "accuracy_why": "It gets the fixes and the unverified CI right, but it explicitly says nothing blocking is missing, which is wrong and is the basis for the hand-off.",
+    "reply_why": "It is a reviewer ping rather than a request for the documentation screenshots, so it misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "R",
+   "L"
+  ]
+ },
+ "text": "{\"outputs\": {\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Headline says the PR is 'Ready for review', but the documentation screenshots are still missing.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 9,\n   \"decision_why\": \"NOTE is the right kind, but it recommends handing the PR off when the key says it needs more feedback.\",\n   \"accuracy_why\": \"It reports the avatar fix, the squash and the unverified CI correctly, but it misses the missing docs screenshots, and its 'ready for review' claim is the basis for the wrong action.\",\n   \"reply_why\": \"It pings a reviewer instead of asking the author for screenshots of the documentation page, so it misses the reply_ask.\"},\n  \"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says 'Missing: nothing blocking', but screenshots of the new documentation page are still missing.\", \"Headline says the PR is 'Ready for review'.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 9,\n   \"decision_why\": \"NOTE is the right kind, but it recommends handing the PR off when the key says it needs more feedback.\",\n   \"accuracy_why\": \"It gets the fixes and the unverified CI right, but it explicitly says nothing blocking is missing, which is wrong and is the basis for the hand-off.\",\n   \"reply_why\": \"It is a reviewer ping rather than a request for the documentation screenshots, so it misses the reply_ask.\"}},\n \"ranking\": [\"R\", \"L\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.091528
+}

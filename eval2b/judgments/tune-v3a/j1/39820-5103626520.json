@@ -1,0 +1,69 @@
+{
+ "case": "39820-5103626520",
+ "repeat": 1,
+ "map": {
+  "C": [
+   "v3a-r1"
+  ],
+  "O": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the author 'filled in the checklist' as if that ask were met, but the checklist was trimmed instead of copied from the template."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) is right, but it recommends closing where the key calls for more feedback, which is the reverse case the rubric scores 1-2.",
+    "accuracy_why": "It correctly flags the squash and the missing comparison to #38098/#39481, but it treats the checklist as done, omits the python-zulip-api concern, and argues against keeping 'not ready'.",
+    "reply_why": "The reply is a closing message to an author who should get feedback, so it is the wrong decision even though it is well written."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "NOTE with 'not ready' kept and more feedback requested matches the key exactly.",
+    "accuracy_why": "It covers the squash, the multi-line fix, CI and the missing comparison to the open PRs, but it frames the checklist problem as one unchecked box rather than template items removed, and it omits the backwards-compatibility question and the lack of local test runs.",
+    "reply_why": "The comparison ask is right and well referenced, but the checklist ask targets one checkbox instead of restoring the full template, so a sentence needs rewriting."
+   }
+  },
+  "ranking": [
+   "O",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"C\": {\"kind\": \"NOTE\", \"action\": \"close\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Says the author 'filled in the checklist' as if that ask were met, but the checklist was trimmed instead of copied from the template.\"], \"rule_failures\": [\"reply_contradicts_key_action\"], \"decision_score\": 2, \"accuracy_score\": 4, \"reply_score\": 2, \"brevity_score\": 8, \"decision_why\": \"The kind (NOTE) is right, but it recommends closing where the key calls for more feedback, which is the reverse case the rubric scores 1-2.\", \"accuracy_why\": \"It correctly flags the squash and the missing comparison to #38098/#39481, but it treats the checklist as done, omits the python-zulip-api concern, and argues against keeping 'not ready'.\", \"reply_why\": \"The reply is a closing message to an author who should get feedback, so it is the wrong decision even though it is well written.\"}, \"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 8, \"decision_why\": \"NOTE with 'not ready' kept and more feedback requested matches the key exactly.\", \"accuracy_why\": \"It covers the squash, the multi-line fix, CI and the missing comparison to the open PRs, but it frames the checklist problem as one unchecked box rather than template items removed, and it omits the backwards-compatibility question and the lack of local test runs.\", \"reply_why\": \"The comparison ask is right and well referenced, but the checklist ask targets one checkbox instead of restoring the full template, so a sentence needs rewriting.\"}}, \"ranking\": [\"O\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.320148
+}

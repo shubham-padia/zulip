@@ -1,0 +1,72 @@
+{
+ "case": "40030-5442478190",
+ "repeat": 1,
+ "map": {
+  "V": [
+   "eval2:v3-r1"
+  ],
+  "C": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says the template is filled in, but the self-review checklist does not match Zulip's pull request template.",
+     "Calls the PR ready for review although nothing addressed what made it \"not ready\"."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "NOTE is the right kind, but it recommends handing off when the key calls for keeping \"not ready\" and giving more feedback.",
+    "accuracy_why": "It never mentions that the author removed the maintainer's label through zulipbot, and it wrongly claims the template is filled in, which helps support its hand-off verdict.",
+    "reply_why": "It tells the author the PR looks ready and pings for review, which is the wrong ask and misses the label, guide and context requests."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review although nothing addressed what made it \"not ready\"."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it recommends a hand-off where the key calls for more feedback.",
+    "accuracy_why": "It notes the squash and the missing linked issue, but it omits the self-removed label and the checklist mismatch and treats the missing context as minor.",
+    "reply_why": "A bare review ping is the wrong ask and misses the requests about labels, the PR guide and context."
+   }
+  },
+  "ranking": [
+   "C",
+   "V"
+  ]
+ },
+ "text": "{\"outputs\": {\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Says the template is filled in, but the self-review checklist does not match Zulip's pull request template.\", \"Calls the PR ready for review although nothing addressed what made it \\\"not ready\\\".\"],\n   \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2,\n   \"brevity_score\": 7,\n   \"decision_why\": \"NOTE is the right kind, but it recommends handing off when the key calls for keeping \\\"not ready\\\" and giving more feedback.\",\n   \"accuracy_why\": \"It never mentions that the author removed the maintainer's label through zulipbot, and it wrongly claims the template is filled in, which helps support its hand-off verdict.\",\n   \"reply_why\": \"It tells the author the PR looks ready and pings for review, which is the wrong ask and misses the label, guide and context requests.\"},\n  \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Calls the PR ready for review although nothing addressed what made it \\\"not ready\\\".\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE is the right kind, but it recommends a hand-off where the key calls for more feedback.\",\n   \"accuracy_why\": \"It notes the squash and the missing linked issue, but it omits the self-removed label and the checklist mismatch and treats the missing context as minor.\",\n   \"reply_why\": \"A bare review ping is the wrong ask and misses the requests about labels, the PR guide and context.\"}},\n \"ranking\": [\"C\", \"V\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.096944
+}

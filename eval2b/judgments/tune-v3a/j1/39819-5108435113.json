@@ -1,0 +1,69 @@
+{
+ "case": "39819-5108435113",
+ "repeat": 1,
+ "map": {
+  "U": [
+   "v3a-r1"
+  ],
+  "K": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_misses_table_format_ask"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more work, which matches the key's more_feedback.",
+    "accuracy_why": "It gets the missing push and the Test 2 failure right, but it only says the screenshots aren't \"precise pairs\" without naming side-by-side tables, it leads with a code fix instead of the screenshot ask, and it misses the commit summary.",
+    "reply_why": "The reply puts fixing Test 2 ahead of the screenshot ask and never asks for side-by-side tables with descriptions, so a maintainer would need to rewrite the main request."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_misses_table_format_ask"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and leaves the PR unassigned, which matches more_feedback.",
+    "accuracy_why": "It notes there is no new push, but it muddles Test 2 (\"collapsed then revealed\" rather than collapse-then-mute), only vaguely covers the screenshot formatting, and misses the commit summary.",
+    "reply_why": "Like U, the reply leads with a code fix and gives only a generic screenshot link with no tables ask, and its \"expand/collapse case\" wording is vague."
+   }
+  },
+  "ranking": [
+   "U",
+   "K"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_misses_table_format_ask\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more work, which matches the key's more_feedback.\",\n   \"accuracy_why\": \"It gets the missing push and the Test 2 failure right, but it only says the screenshots aren't \\\"precise pairs\\\" without naming side-by-side tables, it leads with a code fix instead of the screenshot ask, and it misses the commit summary.\",\n   \"reply_why\": \"The reply puts fixing Test 2 ahead of the screenshot ask and never asks for side-by-side tables with descriptions, so a maintainer would need to rewrite the main request.\"},\n  \"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_misses_table_format_ask\"],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and leaves the PR unassigned, which matches more_feedback.\",\n   \"accuracy_why\": \"It notes there is no new push, but it muddles Test 2 (\\\"collapsed then revealed\\\" rather than collapse-then-mute), only vaguely covers the screenshot formatting, and misses the commit summary.\",\n   \"reply_why\": \"Like U, the reply leads with a code fix and gives only a generic screenshot link with no tables ask, and its \\\"expand/collapse case\\\" wording is vague.\"}},\n \"ranking\": [\"U\", \"K\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.223204
+}

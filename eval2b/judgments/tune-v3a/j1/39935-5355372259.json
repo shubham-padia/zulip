@@ -1,0 +1,67 @@
+{
+ "case": "39935-5355372259",
+ "repeat": 1,
+ "map": {
+  "G": [
+   "v3a-r1"
+  ],
+  "K": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Presents the description as fixed and the PR as 'Ready for review', when the key says the description still doesn't follow the reviewable-PR guide (malformed 'Fixes #<36878>', misplaced screenshots, unchecked corner-case items)."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) is right, but it recommends handing off to review while the key says more feedback is needed.",
+    "accuracy_why": "It notes the CI commits, the lack of a new push and Daniel K's unblock, but wrongly treats the description as fixed, and the hand-off rests on that.",
+    "reply_why": "It pings Karl to review a PR whose commits and description still need work, and only adds the squash request as an aside."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps 'not ready' and withholds review matches the key's kind and its more_feedback action.",
+    "accuracy_why": "It covers the design unblock, the lack of a new push, the malformed Fixes line and the CI retry commits, and only lightly touches the feature commit's own discipline issues.",
+    "reply_why": "It thanks the author, asks for the description fix and the commit cleanup with links to both guides, and could be pasted as is."
+   }
+  },
+  "ranking": [
+   "K",
+   "G"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Presents the description as fixed and the PR as 'Ready for review', when the key says the description still doesn't follow the reviewable-PR guide (malformed 'Fixes #<36878>', misplaced screenshots, unchecked corner-case items).\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) is right, but it recommends handing off to review while the key says more feedback is needed.\",\n   \"accuracy_why\": \"It notes the CI commits, the lack of a new push and Daniel K's unblock, but wrongly treats the description as fixed, and the hand-off rests on that.\",\n   \"reply_why\": \"It pings Karl to review a PR whose commits and description still need work, and only adds the squash request as an aside.\"},\n  \"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps 'not ready' and withholds review matches the key's kind and its more_feedback action.\",\n   \"accuracy_why\": \"It covers the design unblock, the lack of a new push, the malformed Fixes line and the CI retry commits, and only lightly touches the feature commit's own discipline issues.\",\n   \"reply_why\": \"It thanks the author, asks for the description fix and the commit cleanup with links to both guides, and could be pasted as is.\"}},\n \"ranking\": [\"K\", \"G\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.181416
+}

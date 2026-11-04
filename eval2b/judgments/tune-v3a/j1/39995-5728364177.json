@@ -1,0 +1,63 @@
+{
+ "case": "39995-5728364177",
+ "repeat": 1,
+ "map": {
+  "J": [
+   "v3a-r1"
+  ],
+  "R": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Recommends adding \"integration review\" when the right next label is \"maintainer review\"; integration review is a later stage."
+    ],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands off to Niloth-p, which matches the key, but it names the wrong review label."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Treats the missing doc.md change as an unaddressed review item, though Niloth-p's question implied the model PRs may not touch doc.md and the key does not list it as missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks for more work, while the key says hand off because the author did what Niloth-p asked and pinged her as told."
+   }
+  },
+  "ranking": [
+   "J",
+   "R"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Recommends adding \\\"integration review\\\" when the right next label is \\\"maintainer review\\\"; integration review is a later stage.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 8, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that hands off to Niloth-p, which matches the key, but it names the wrong review label.\"},\n  \"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Treats the missing doc.md change as an unaddressed review item, though Niloth-p's question implied the model PRs may not touch doc.md and the key does not list it as missing.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, while the key says hand off because the author did what Niloth-p asked and pinged her as told.\"}},\n \"ranking\": [\"J\", \"R\"]}\n```\n\nThe schema asks for `accuracy_why` and `reply_why` too; they are below so the JSON stays as given:\n\n- **J accuracy_why:** It gets the fixture removal and the stale `include_emoji_indicators` claim right, but never says Niloth-p asked for the GitHub tag. It also picks the wrong label and skips the unanswered CZO questions.\n- **J reply_why:** It pings Niloth-p and asks the author to fix the stale description, which nearly matches the reply_ask. It leaves out the commit message and does not say the PR is moving to review.\n- **R accuracy_why:** It notes the fixture removal and the stale parameter claim, but misses that the ping was requested and rests its verdict on a doubtful doc.md gap.\n- **R reply_why:** It asks for more work before review, including a doc.md update that may not be needed, so it contradicts the key's hand-off.",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.277512
+}

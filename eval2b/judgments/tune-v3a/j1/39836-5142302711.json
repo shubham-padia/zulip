@@ -1,0 +1,65 @@
+{
+ "case": "39836-5142302711",
+ "repeat": 1,
+ "map": {
+  "N": [
+   "eval2:v3-r1"
+  ],
+  "W": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key's kind and action.",
+    "accuracy_why": "It covers the same-size screenshot pair and the missing wrapped-pill and zoomed-out states, but it assigns laurynmm instead of karlstolley and only implies that no code was pushed.",
+    "reply_why": "A single ping line suits a hand-off, but it pings laurynmm, the triager who gave the feedback, instead of a CSS reviewer like karlstolley, so it largely repeats the author's own comment."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key's kind and action.",
+    "accuracy_why": "It states the matched screenshot pair, says there was no new push, and flags the pill and wrapping side effects, but it assigns laurynmm instead of karlstolley.",
+    "reply_why": "A single ping line suits a hand-off, but it pings laurynmm rather than the right reviewer, karlstolley."
+   }
+  },
+  "ranking": [
+   "W",
+   "N"
+  ]
+ },
+ "text": "{\"outputs\": {\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key's kind and action.\",\n   \"accuracy_why\": \"It covers the same-size screenshot pair and the missing wrapped-pill and zoomed-out states, but it assigns laurynmm instead of karlstolley and only implies that no code was pushed.\",\n   \"reply_why\": \"A single ping line suits a hand-off, but it pings laurynmm, the triager who gave the feedback, instead of a CSS reviewer like karlstolley, so it largely repeats the author's own comment.\"},\n  \"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key's kind and action.\",\n   \"accuracy_why\": \"It states the matched screenshot pair, says there was no new push, and flags the pill and wrapping side effects, but it assigns laurynmm instead of karlstolley.\",\n   \"reply_why\": \"A single ping line suits a hand-off, but it pings laurynmm rather than the right reviewer, karlstolley.\"}},\n \"ranking\": [\"W\", \"N\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.237756
+}
