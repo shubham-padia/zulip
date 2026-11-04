@@ -1,0 +1,6 @@
+{
+ "case": "39840-5134964663",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked the author to follow the guide for presenting the PR for review, and the author responded by adding a screencast and an explanation of the before/after behavior, then asked whether anything else is needed to make it ready for review, which effectively hands the PR back.",
+ "cost_usd": 0.005792
+}

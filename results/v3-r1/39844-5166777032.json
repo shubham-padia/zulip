@@ -1,0 +1,6 @@
+{
+ "case": "39844-5166777032",
+ "answer": "no",
+ "text": "no\n\nThe author finished the screencast work but did not fix the commit message and asked for clarification on it, so one of the maintainer's requests is still outstanding and the PR is not being handed back as ready.",
+ "cost_usd": 0.005066
+}
