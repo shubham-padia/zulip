@@ -1,0 +1,6 @@
+{
+ "case": "39722-5006310507",
+ "answer": "no",
+ "text": "no\n\nThe maintainer asked whether the commits should say \"Fixes part of...\", and the author only explains that they had already used that wording (misplaced at first), without saying any work is done or that the PR is ready for review.",
+ "cost_usd": 0.0007748
+}

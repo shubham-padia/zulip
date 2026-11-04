@@ -1,0 +1,6 @@
+{
+ "case": "39731-5006493904",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked where the selectors could exist in the web app, and the author says they pushed a revised version that removes the dead selectors and verified the rest against the real elements, then asks for another look, so they are handing it back for review.",
+ "cost_usd": 0.0008563999999999999
+}
