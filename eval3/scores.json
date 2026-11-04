@@ -1,0 +1,932 @@
+{
+ "rows": {
+  "v1_file_history/run1": {
+   "n": 100,
+   "top1": 70,
+   "top3": 84,
+   "invalid": 0,
+   "author": 0
+  },
+  "v1_file_history/run2": {
+   "n": 0,
+   "top1": 0,
+   "top3": 0,
+   "invalid": 0,
+   "author": 0
+  },
+  "v2_area_activity/run1": {
+   "n": 0,
+   "top1": 0,
+   "top3": 0,
+   "invalid": 0,
+   "author": 0
+  },
+  "v2_area_activity/run2": {
+   "n": 0,
+   "top1": 0,
+   "top3": 0,
+   "invalid": 0,
+   "author": 0
+  },
+  "a_file_author": {
+   "n": 100,
+   "top1": 20,
+   "top3": 20
+  },
+  "b_path_history": {
+   "n": 100,
+   "top1": 9,
+   "top3": 32
+  }
+ },
+ "misses": {
+  "40418 amanagr": [
+   "v1_file_history/run1"
+  ],
+  "40416 emilysutherlin": [
+   "v1_file_history/run1"
+  ],
+  "40417 sahil839": [
+   "v1_file_history/run1"
+  ],
+  "40191 alexmv": [
+   "v1_file_history/run1"
+  ],
+  "40398 mateuszmandera": [
+   "v1_file_history/run1"
+  ],
+  "40376 alexmv": [
+   "v1_file_history/run1"
+  ],
+  "40318 amanagr": [
+   "v1_file_history/run1"
+  ],
+  "40097 Niloth-p": [
+   "v1_file_history/run1"
+  ],
+  "40096 Niloth-p": [
+   "v1_file_history/run1"
+  ],
+  "40241 prakhar1144": [
+   "v1_file_history/run1"
+  ],
+  "40187 prakhar1144": [
+   "v1_file_history/run1"
+  ],
+  "40192 sahil839": [
+   "v1_file_history/run1"
+  ],
+  "40085 evykassirer": [
+   "v1_file_history/run1"
+  ],
+  "39941 apoorvapendse": [
+   "v1_file_history/run1"
+  ],
+  "39504 alexmv": [
+   "v1_file_history/run1"
+  ],
+  "39792 Niloth-p": [
+   "v1_file_history/run1"
+  ],
+  "39881 PieterCK": [
+   "v1_file_history/run1"
+  ],
+  "39862 karlstolley": [
+   "v1_file_history/run1"
+  ],
+  "39767 alexmv": [
+   "v1_file_history/run1"
+  ],
+  "39622 sahil839": [
+   "v1_file_history/run1"
+  ],
+  "39916 laurynmm": [
+   "v1_file_history/run1"
+  ],
+  "39878 prakhar1144": [
+   "v1_file_history/run1"
+  ],
+  "39867 Niloth-p": [
+   "v1_file_history/run1"
+  ],
+  "39780 sahil839": [
+   "v1_file_history/run1"
+  ],
+  "39714 sahil839": [
+   "v1_file_history/run1"
+  ],
+  "39828 andersk": [
+   "v1_file_history/run1"
+  ],
+  "39758 laurynmm": [
+   "v1_file_history/run1"
+  ],
+  "39788 mateuszmandera": [
+   "v1_file_history/run1"
+  ],
+  "39770 sahil839": [
+   "v1_file_history/run1"
+  ],
+  "39536 evykassirer": [
+   "v1_file_history/run1"
+  ]
+ },
+ "detail": {
+  "40541": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "pratik-pc",
+    "amanagr"
+   ],
+   "assignee": "evykassirer"
+  },
+  "39747": {
+   "v1_file_history/run1": [
+    "karlstolley",
+    "laurynmm",
+    "alya"
+   ],
+   "assignee": "karlstolley"
+  },
+  "40418": {
+   "v1_file_history/run1": [
+    "amanagr",
+    "pratik-pc",
+    "karlstolley"
+   ],
+   "assignee": "evykassirer"
+  },
+  "40416": {
+   "v1_file_history/run1": [
+    "emilysutherlin",
+    "karlstolley",
+    "laurynmm"
+   ],
+   "assignee": "karlstolley"
+  },
+  "40417": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "alya",
+    "PieterCK"
+   ],
+   "assignee": "karlstolley"
+  },
+  "40191": {
+   "v1_file_history/run1": [
+    "alexmv",
+    "mateuszmandera",
+    "prakhar1144"
+   ],
+   "assignee": "laurynmm"
+  },
+  "40398": {
+   "v1_file_history/run1": [
+    "mateuszmandera",
+    "laurynmm",
+    "benprew"
+   ],
+   "assignee": "benprew"
+  },
+  "40376": {
+   "v1_file_history/run1": [
+    "alexmv",
+    "shubham-padia",
+    "timabbott"
+   ],
+   "assignee": "benprew"
+  },
+  "40148": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "andersk",
+    "alya"
+   ],
+   "assignee": "sahil839"
+  },
+  "40336": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "alexmv",
+    "laurynmm"
+   ],
+   "assignee": "Niloth-p"
+  },
+  "40352": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "andersk",
+    "alexmv"
+   ],
+   "assignee": "Niloth-p"
+  },
+  "40318": {
+   "v1_file_history/run1": [
+    "amanagr",
+    "laurynmm",
+    "shubham-padia"
+   ],
+   "assignee": "karlstolley"
+  },
+  "40320": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "amanagr",
+    "sahil839"
+   ],
+   "assignee": "evykassirer"
+  },
+  "40296": {
+   "v1_file_history/run1": [
+    "andersk",
+    "prakhar1144",
+    "laurynmm"
+   ],
+   "assignee": "andersk"
+  },
+  "40105": {
+   "v1_file_history/run1": [
+    "apoorvapendse",
+    "pratik-pc",
+    "amanagr"
+   ],
+   "assignee": "apoorvapendse"
+  },
+  "40097": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "alexmv",
+    "laurynmm"
+   ],
+   "assignee": "0xthedance"
+  },
+  "40096": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "alexmv",
+    "laurynmm"
+   ],
+   "assignee": "0xthedance"
+  },
+  "40311": {
+   "v1_file_history/run1": [
+    "PieterCK",
+    "Niloth-p",
+    "apoorvapendse"
+   ],
+   "assignee": "PieterCK"
+  },
+  "40124": {
+   "v1_file_history/run1": [
+    "apoorvapendse",
+    "amanagr",
+    "emilysutherlin"
+   ],
+   "assignee": "apoorvapendse"
+  },
+  "40232": {
+   "v1_file_history/run1": [
+    "pratik-pc",
+    "andersk",
+    "alya"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "40234": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "andersk"
+   ],
+   "assignee": "Niloth-p"
+  },
+  "40205": {
+   "v1_file_history/run1": [
+    "andersk",
+    "alexmv",
+    "gnprice"
+   ],
+   "assignee": "andersk"
+  },
+  "40113": {
+   "v1_file_history/run1": [
+    "pratik-pc",
+    "karlstolley",
+    "apoorvapendse"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "40177": {
+   "v1_file_history/run1": [
+    "prakhar1144",
+    "alexmv",
+    "andersk"
+   ],
+   "assignee": "prakhar1144"
+  },
+  "40171": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "PieterCK",
+    "laurynmm"
+   ],
+   "assignee": "Niloth-p"
+  },
+  "40241": {
+   "v1_file_history/run1": [
+    "prakhar1144",
+    "mateuszmandera",
+    "andersk"
+   ],
+   "assignee": "mateuszmandera"
+  },
+  "40247": {
+   "v1_file_history/run1": [
+    "amanagr",
+    "apoorvapendse",
+    "karlstolley"
+   ],
+   "assignee": "amanagr"
+  },
+  "40218": {
+   "v1_file_history/run1": [
+    "shubham-padia",
+    "pratik-pc",
+    "andersk"
+   ],
+   "assignee": "shubham-padia"
+  },
+  "40215": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "alexmv"
+   ],
+   "assignee": "Niloth-p"
+  },
+  "40208": {
+   "v1_file_history/run1": [
+    "shubham-padia",
+    "andersk",
+    "PieterCK"
+   ],
+   "assignee": "shubham-padia"
+  },
+  "40196": {
+   "v1_file_history/run1": [
+    "amanagr",
+    "andersk"
+   ],
+   "assignee": "amanagr"
+  },
+  "40187": {
+   "v1_file_history/run1": [
+    "prakhar1144",
+    "sahil839",
+    "amanagr"
+   ],
+   "assignee": "laurynmm"
+  },
+  "40192": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "amanagr",
+    "alexmv"
+   ],
+   "assignee": "amanagr"
+  },
+  "40176": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "laurynmm",
+    "karlstolley"
+   ],
+   "assignee": "Niloth-p"
+  },
+  "40175": {
+   "v1_file_history/run1": [
+    "amanagr",
+    "andersk"
+   ],
+   "assignee": "amanagr"
+  },
+  "40162": {
+   "v1_file_history/run1": [
+    "shubham-padia",
+    "sahil839",
+    "PieterCK"
+   ],
+   "assignee": "shubham-padia"
+  },
+  "40085": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "karlstolley",
+    "pratik-pc"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39941": {
+   "v1_file_history/run1": [
+    "apoorvapendse",
+    "pratik-pc",
+    "amanagr"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39742": {
+   "v1_file_history/run1": [
+    "pratik-pc",
+    "amanagr",
+    "alya"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39651": {
+   "v1_file_history/run1": [
+    "pratik-pc",
+    "amanagr",
+    "evykassirer"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39504": {
+   "v1_file_history/run1": [
+    "alexmv",
+    "sahil839",
+    "Niloth-p"
+   ],
+   "assignee": "PieterCK"
+  },
+  "39426": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "prakhar1144",
+    "apoorvapendse"
+   ],
+   "assignee": "Niloth-p"
+  },
+  "39424": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "prakhar1144",
+    "apoorvapendse"
+   ],
+   "assignee": "Niloth-p"
+  },
+  "40137": {
+   "v1_file_history/run1": [
+    "PieterCK",
+    "mateuszmandera",
+    "prakhar1144"
+   ],
+   "assignee": "PieterCK"
+  },
+  "39815": {
+   "v1_file_history/run1": [
+    "laurynmm",
+    "prakhar1144",
+    "sahil839"
+   ],
+   "assignee": "laurynmm"
+  },
+  "39285": {
+   "v1_file_history/run1": [
+    "prakhar1144",
+    "PieterCK",
+    "amanagr"
+   ],
+   "assignee": "prakhar1144"
+  },
+  "39792": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "laurynmm",
+    "sahil839"
+   ],
+   "assignee": "PieterCK"
+  },
+  "40012": {
+   "v1_file_history/run1": [
+    "laurynmm",
+    "andersk",
+    "timabbott"
+   ],
+   "assignee": "laurynmm"
+  },
+  "40065": {
+   "v1_file_history/run1": [
+    "pratik-pc",
+    "evykassirer",
+    "karlstolley"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39670": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "laurynmm",
+    "prakhar1144"
+   ],
+   "assignee": "sahil839"
+  },
+  "39881": {
+   "v1_file_history/run1": [
+    "PieterCK",
+    "andersk",
+    "alexmv"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39995": {
+   "v1_file_history/run1": [
+    "PieterCK",
+    "Niloth-p",
+    "laurynmm"
+   ],
+   "assignee": "PieterCK"
+  },
+  "40031": {
+   "v1_file_history/run1": [
+    "pratik-pc",
+    "amanagr",
+    "karlstolley"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39691": {
+   "v1_file_history/run1": [
+    "apoorvapendse",
+    "prakhar1144",
+    "pratik-pc"
+   ],
+   "assignee": "apoorvapendse"
+  },
+  "39929": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "timabbott",
+    "prakhar1144"
+   ],
+   "assignee": "sahil839"
+  },
+  "39862": {
+   "v1_file_history/run1": [
+    "karlstolley",
+    "PieterCK",
+    "emilysutherlin"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39977": {
+   "v1_file_history/run1": [
+    "amanagr",
+    "shubham-padia",
+    "andersk"
+   ],
+   "assignee": "amanagr"
+  },
+  "40009": {
+   "v1_file_history/run1": [
+    "andersk",
+    "alexmv",
+    "timabbott"
+   ],
+   "assignee": "andersk"
+  },
+  "39964": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "alexmv",
+    "timabbott"
+   ],
+   "assignee": "sahil839"
+  },
+  "39989": {
+   "v1_file_history/run1": [
+    "karlstolley",
+    "andersk",
+    "amanagr"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39855": {
+   "v1_file_history/run1": [
+    "PieterCK",
+    "prakhar1144",
+    "sahil839"
+   ],
+   "assignee": "PieterCK"
+  },
+  "39883": {
+   "v1_file_history/run1": [
+    "PieterCK",
+    "andersk",
+    "alexmv"
+   ],
+   "assignee": "PieterCK"
+  },
+  "39948": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "andersk",
+    "pratik-pc"
+   ],
+   "assignee": "evykassirer"
+  },
+  "39927": {
+   "v1_file_history/run1": [
+    "karlstolley",
+    "sahil839",
+    "amanagr"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39894": {
+   "v1_file_history/run1": [
+    "karlstolley",
+    "shubham-padia",
+    "laurynmm"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39767": {
+   "v1_file_history/run1": [
+    "alexmv",
+    "laurynmm",
+    "PieterCK"
+   ],
+   "assignee": "amanagr"
+  },
+  "39622": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "evykassirer",
+    "laurynmm"
+   ],
+   "assignee": "evykassirer"
+  },
+  "39916": {
+   "v1_file_history/run1": [
+    "laurynmm",
+    "prakhar1144",
+    "sahil839"
+   ],
+   "assignee": "prakhar1144"
+  },
+  "39901": {
+   "v1_file_history/run1": [
+    "amanagr",
+    "Niloth-p",
+    "alexmv"
+   ],
+   "assignee": "amanagr"
+  },
+  "39909": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "amanagr",
+    "pratik-pc"
+   ],
+   "assignee": "sahil839"
+  },
+  "39878": {
+   "v1_file_history/run1": [
+    "prakhar1144",
+    "laurynmm",
+    "sahil839"
+   ],
+   "assignee": "laurynmm"
+  },
+  "39867": {
+   "v1_file_history/run1": [
+    "Niloth-p",
+    "amanagr",
+    "laurynmm"
+   ],
+   "assignee": "laurynmm"
+  },
+  "39780": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "amanagr",
+    "alya"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39823": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "pratik-pc",
+    "laurynmm"
+   ],
+   "assignee": "evykassirer"
+  },
+  "39587": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "pratik-pc",
+    "karlstolley"
+   ],
+   "assignee": "evykassirer"
+  },
+  "39891": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "Niloth-p",
+    "alexmv"
+   ],
+   "assignee": "sahil839"
+  },
+  "39877": {
+   "v1_file_history/run1": [
+    "apoorvapendse",
+    "andersk",
+    "alexmv"
+   ],
+   "assignee": "apoorvapendse"
+  },
+  "39714": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "amanagr",
+    "alexmv"
+   ],
+   "assignee": "amanagr"
+  },
+  "39720": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "amanagr",
+    "sahil839"
+   ],
+   "assignee": "evykassirer"
+  },
+  "39870": {
+   "v1_file_history/run1": [
+    "mateuszmandera",
+    "shubham-padia",
+    "andersk"
+   ],
+   "assignee": "mateuszmandera"
+  },
+  "39830": {
+   "v1_file_history/run1": [
+    "mateuszmandera",
+    "alexmv",
+    "laurynmm"
+   ],
+   "assignee": "mateuszmandera"
+  },
+  "39844": {
+   "v1_file_history/run1": [
+    "apoorvapendse",
+    "pratik-pc",
+    "amanagr"
+   ],
+   "assignee": "apoorvapendse"
+  },
+  "39856": {
+   "v1_file_history/run1": [
+    "karlstolley",
+    "sahil839",
+    "shubham-padia"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39768": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "amanagr",
+    "pratik-pc"
+   ],
+   "assignee": "evykassirer"
+  },
+  "39836": {
+   "v1_file_history/run1": [
+    "karlstolley",
+    "evykassirer",
+    "sahil839"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39699": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "mateuszmandera",
+    "timabbott"
+   ],
+   "assignee": "sahil839"
+  },
+  "39804": {
+   "v1_file_history/run1": [
+    "PieterCK",
+    "andersk",
+    "Niloth-p"
+   ],
+   "assignee": "PieterCK"
+  },
+  "39819": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "pratik-pc",
+    "alya"
+   ],
+   "assignee": "evykassirer"
+  },
+  "39828": {
+   "v1_file_history/run1": [
+    "andersk",
+    "alexmv",
+    "timabbott"
+   ],
+   "assignee": "mateuszmandera"
+  },
+  "39826": {
+   "v1_file_history/run1": [
+    "pratik-pc",
+    "karlstolley",
+    "amanagr"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39827": {
+   "v1_file_history/run1": [
+    "pratik-pc",
+    "amanagr",
+    "shubham-padia"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39758": {
+   "v1_file_history/run1": [
+    "laurynmm",
+    "emilysutherlin",
+    "andersk"
+   ],
+   "assignee": "shubham-padia"
+  },
+  "39766": {
+   "v1_file_history/run1": [
+    "prakhar1144",
+    "alexmv",
+    "PieterCK"
+   ],
+   "assignee": "prakhar1144"
+  },
+  "39799": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "prakhar1144",
+    "timabbott"
+   ],
+   "assignee": "sahil839"
+  },
+  "39619": {
+   "v1_file_history/run1": [
+    "prakhar1144",
+    "sahil839",
+    "alexmv"
+   ],
+   "assignee": "prakhar1144"
+  },
+  "39307": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "alexmv",
+    "laurynmm"
+   ],
+   "assignee": "sahil839"
+  },
+  "39788": {
+   "v1_file_history/run1": [
+    "mateuszmandera",
+    "alexmv",
+    "amanagr"
+   ],
+   "assignee": "amanagr"
+  },
+  "39770": {
+   "v1_file_history/run1": [
+    "sahil839",
+    "pratik-pc",
+    "evykassirer"
+   ],
+   "assignee": "pratik-pc"
+  },
+  "39731": {
+   "v1_file_history/run1": [
+    "karlstolley",
+    "laurynmm",
+    "shubham-padia"
+   ],
+   "assignee": "karlstolley"
+  },
+  "39536": {
+   "v1_file_history/run1": [
+    "evykassirer",
+    "amanagr",
+    "pratik-pc"
+   ],
+   "assignee": "pratik-pc"
+  }
+ }
+}
