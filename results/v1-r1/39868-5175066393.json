@@ -1,0 +1,6 @@
+{
+ "case": "39868-5175066393",
+ "answer": "yes",
+ "text": "yes\nBy tagging the maintainer and saying she fixed the failing tests, the author is signaling that the issue blocking the PR has been addressed and implicitly asking for it to be re-reviewed.",
+ "cost_usd": 0.003592
+}
