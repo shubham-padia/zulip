@@ -1,0 +1,6 @@
+{
+ "case": "39995-5380602710",
+ "answer": "no",
+ "text": "no\n\nThe maintainer asked the author to confirm why the PR differs from the proposed mapping, and the author only explains the discrepancy and offers to change it (\"If you like I'll change it\"), without saying any work is done or that the PR is ready for review.",
+ "cost_usd": 0.0009022
+}
