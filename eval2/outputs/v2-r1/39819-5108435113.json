@@ -1,0 +1,11 @@
+{
+ "case": "39819-5108435113",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Precise before/after screenshots: the description now has Before/After pairs, but for Test 2 the \"After\" screenshots show the same wrong result as \"Before\", so they don't show a working fix |\n| ℹ️  | The author's own Test 2 says that after muting a collapsed message and clicking \"show more\", it is still not collapsed. That is the second behavior the issue asks for |\n| ℹ️  | There is no new push since the feedback, so the code is unchanged. The checklist says automated tests were added, but the PR changes only `web/src` files and no test files |\n| ℹ️  | CI status is unknown |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the muted-then-revealed collapsed case, with matching before/after screenshots.\n\n###### Reply\n\n```quote\nThanks for updating the description, @FAzabmpc! Your Test 2 notes say a collapsed message from a muted user still shows in full after clicking \"show more\", but the issue asks for it to stay collapsed, so please fix that first. Then show precise before/after screenshots of the same scenario, following the [guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.047436700000000005
+}

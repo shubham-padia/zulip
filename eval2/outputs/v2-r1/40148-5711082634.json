@@ -1,0 +1,11 @@
+{
+ "case": "40148-5711082634",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nThis adds three conveniences to the custom emoji upload in organization settings. Dragging a file onto the upload area now works. The emoji name fills in from the file name when the name box is empty. You can also pick or drop several files at once, and each one is uploaded as its own emoji. If some fail (for example, a duplicate name), the others are kept and the user is told which ones failed.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the feedback, the single commit was split into three (drag-and-drop fix, auto-fill, multi-file), and a test helper file was added. The size is now +175/-30 in 5 files. |\n| ✅  | The description now has a summary, \"Fixes #20316\", testing notes and screenshots/videos for each UI change. The linked issue has \"help wanted\" and the author is assigned. |\n| ✅  | Auto-fill now has automated tests. |\n| ❌  | The self-review checklist from the PR template is not in the description. |\n| ℹ️  | CI status is unknown from here. The author says all checks pass, but that can't be confirmed. |\n\n**Reviewer:** laurynmm — gave the first feedback and can hand it to a reviewer once the checklist is added.\n\n###### Next step\n\nKeep \"not ready\" until the self-review checklist is added and CI is confirmed green, then switch to \"maintainer review\" and assign a reviewer.\n\n###### Reply\n\n```quote\nThanks for splitting the commits and adding the screenshots, that helps a lot! Please add the self-review checklist from the [PR guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) to the description, and make sure CI is green, then we'll take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0446307
+}

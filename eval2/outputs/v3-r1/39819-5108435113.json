@@ -1,0 +1,11 @@
+{
+ "case": "39819-5108435113",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the PR's own Test 2 shows the issue's second case still fails**\n\nNew: The author says it's updated, but no new code was pushed. Missing: Test 2 says a collapsed message that is then revealed still shows hidden or needs collapsing again, so the issue's second case isn't fixed. The screenshots are also still a long set of unclear images rather than precise before/after pairs.\n\n###### Next step\n\nKeep \"not ready\" and leave it unassigned; laurynmm, who gave the feedback, can follow up when a new push arrives.\n\n###### Reply\n\n```quote\nThanks for the update! There are no new commits since the earlier feedback, and your Test 2 notes say the expand/collapse case from the issue still doesn't work, so please fix that and push. Then redo the screenshots following the [precise before/after guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots), and we'll take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.044591700000000005
+}

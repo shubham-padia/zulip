@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots: the description now has a Before/After table, and both images are the same size (1861×102) |\n| ℹ️  | Only one pair of screenshots is shown. The description says vertical centering is kept when pills wrap, but there is no screenshot of that case. |\n| ℹ️  | CI passes, there are no conflicts, and the linked issue #38919 is \"help wanted\". |\n\n**Reviewer:** laurynmm — gave the screenshot feedback and already knows the context.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at the updated screenshots?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.053950700000000004
+}

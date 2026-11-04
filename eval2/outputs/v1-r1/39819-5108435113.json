@@ -1,0 +1,11 @@
+{
+ "case": "39819-5108435113",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author said the PR was updated, but there is no new push: the head commit is unchanged since the feedback. The description still has the same hard-to-read screenshot sets.\n\n|     |         |\n| --- | ------- |\n| ❌  | The screenshots still don't follow the precise before/after guide: each test has several loosely captioned images, and it's unclear what changed between them. |\n| ❌  | The description's own Test 2 (collapse, then mute) says the bug still happens after the fix, so the behavior isn't fully working. |\n| ❌  | The checklist says automated tests verify the logic, but only `condense.ts` and `message_list_view.ts` changed, so no tests were added. |\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet; ask the author to push a fix and redo the screenshots.\n\n###### Reply\n\n```quote\nThanks for the update, @FAzabmpc! I don't see a new push since the feedback, and the screenshots still don't follow the [precise before/after guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Your Test 2 also says the collapse-then-mute case still fails, so please fix that (and add tests, or correct the checklist) before we review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.044984300000000005
+}

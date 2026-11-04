@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Precise before/after screenshots: the \"After\" was replaced (dated 07-29), but the \"Before\" is still the old image. It is 1110x144 like the one in the issue, while \"After\" is 703x63, so they don't show the same view. |\n| ✅  | Commit message and PR description updated (earlier request, now in place) |\n| ℹ️  | Two other open PRs (#39768, #39049) touch the same file for the same issue. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to retake the \"Before\" screenshot so it matches the \"After\".\n\n###### Reply\n\n```quote\nThanks for updating the screenshots, @ShreyasN707! The \"Before\" and \"After\" images still don't match up (different sizes, and the \"Before\" looks like the one from the issue), so please retake \"Before\" with the same message and window size as \"After\", following the [precise screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0345307
+}

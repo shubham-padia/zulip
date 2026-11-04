@@ -1,0 +1,11 @@
+{
+ "case": "39822-5091673928",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nNo new commits. The author edited the description to add the self-review checklist, before/after images and a link to the current docs page, and explained how the images were made.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after images and a link to the current docs page are now in the description. |\n| ✅  | The self-review checklist is back in the description. |\n| ℹ️  | The images come from the docs generator's output, not a running docs server. The author disclosed this and offered to redo them. |\n| ℹ️  | No linked issue (\"Fixes: no issue\"), so there is no \"help wanted\" label to check. This is a 3-line docs fix. |\n\n**Reviewer:** @laurynmm — she gave the feedback and has 28 recent commits on these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm. She can decide whether the generator-rendered images are enough or whether to ask for real docs-server screenshots.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots and checklist! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0229583
+}

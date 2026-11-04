@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots still don't look like a precise before/after pair**\n\nNew: The author swapped in a new \"After\" screenshot in the description, with no new code push. Missing: the \"Before\" image has the same size (1110x144) as an image in the issue, while \"After\" is a different size (703x63). They don't appear to be taken in the same view, so the comparison isn't precise. The PR also doesn't show the case from the issue where several people reacted.\n\n###### Next step\n\n\"not ready\" stays; no reviewer to assign yet, and laurynmm can re-check once the screenshots are fixed.\n\n###### Reply\n\n```quote\nThanks for updating! The Before and After images still look like they were taken at different sizes (and Before looks like the one from the issue), so please capture both from the same message and window, showing a long name, as described in the [precise before/after screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0295757
+}

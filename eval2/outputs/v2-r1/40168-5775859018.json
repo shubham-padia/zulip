@@ -1,0 +1,11 @@
+{
+ "case": "40168-5775859018",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Description filled in with \"Fixes: #40051\" and how it was tested |\n| ✅  | Screenshots added (in a comment, not in the description) |\n| ⚠️  | Self-review checklist is in the description, but \"Strings and tooltips\" and \"Corner cases\" are unchecked |\n| ℹ️  | The issue asks for before/after screenshots at different sizes. The two images in the comment may not show both. |\n| ℹ️  | Issue #40051 has \"help wanted\". The earlier claimant was unassigned on 2026-09-13, and their PR #40052 is still open and stale (same file). |\n| ℹ️  | CI passed, and there are no conflicts. |\n\n**Reviewer:** @laurynmm — gave the feedback and already knows the PR's history.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm. They can decide how to handle the older PR #40052.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The author has added screenshots and testing notes.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.029768700000000002
+}

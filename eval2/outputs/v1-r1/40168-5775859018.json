@@ -1,0 +1,11 @@
+{
+ "case": "40168-5775859018",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author posted two screenshots in a comment and said the description is updated. There was no new push, and the description still has the \"Screenshots to be added by author in comments\" placeholder.\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Screenshots were posted as a comment, not in the description. One looks like a desktop view and one a ~533px mobile view. |\n| ❌  | No before/after screenshots at different widths, which the issue (#40051) explicitly asks for. |\n| ❌  | The description still has the \"Screenshots to be added by author in comments\" placeholder. The self-review boxes for strings/tooltips and corner cases are unchecked. |\n| ℹ️  | An earlier open PR (#40052) touches the same file and has not been resolved. |\n\n###### Next step\n\nKeep \"not ready\" and ask for before/after screenshots at several widths in the PR description.\n\n###### Reply\n\n```quote\nThanks for the screenshots! Please put them in the PR description, replacing the placeholder, and show clear before/after comparisons at several narrow widths, as described in [our guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html). Please also complete the remaining self-review checklist items.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0260663
+}

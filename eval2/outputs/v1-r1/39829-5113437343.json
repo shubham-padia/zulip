@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author edited the PR description with a new \"After\" screenshot and asked what else is needed. There was no new push, and the code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ❌  | The \"Before\" image is 1110×144, the same size as the screenshot in the issue, so it may be the issue's image rather than one taken from this branch. |\n| ❌  | The \"After\" image is 703×63, a different size, so it is probably not the same window, message and reaction as \"Before\". That makes it not a precise before/after pair. |\n| ℹ️  | Another open PR (#39768) for the same issue got the same screenshot feedback. |\n\n###### Next step\n\nKeep \"not ready\" and ask for a matching before/after pair; no reviewer should be assigned yet.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots! The \"Before\" and \"After\" images are different sizes, and the \"Before\" looks like the one from the issue. Please take both from your own branch with the same window width, message and reaction, as described in the [precise before/after screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0321183
+}

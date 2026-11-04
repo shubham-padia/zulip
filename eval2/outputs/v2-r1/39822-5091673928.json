@@ -1,0 +1,11 @@
+{
+ "case": "39822-5091673928",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Screenshots of the docs change, with a link to the current docs page: before/after images and the link are now in the description |\n| ✅  | Self-review checklist: now filled in the description |\n| ℹ️  | The images are the real generated parameter block, not screenshots of a running docs server. The author says so and offers to redo them. |\n| ℹ️  | No linked issue (\"Fixes: no issue\"). The \"help wanted\" rule doesn't apply as written, since no issue is linked. |\n| ℹ️  | CI status is unknown, so check it before merging. |\n\n**Reviewer:** @laurynmm: gave the feedback and has 28 commits on these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0221907
+}

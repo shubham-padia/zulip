@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots were updated and are same-size pairs**\n\nNew: The author replaced the screenshots in the description with a same-size (1861×102) before/after pair; no code change was needed for that feedback. Missing: only one pair is shown, with no wrapped-pill or zoomed-out case, so the reviewer should check those states themselves.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the screenshot feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at the updated screenshots?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.054685700000000004
+}

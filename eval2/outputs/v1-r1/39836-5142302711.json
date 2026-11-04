@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author didn't push new code. They replaced the screenshots in the PR description with a Before/After table, which is what the feedback asked for.\n\n|     |         |\n| --- | ------- |\n| ✅  | Description has a Before/After table, and both images are the same size (1861×102), so they can be compared 1:1. |\n| ⚠️  | Only one pair is visible. The reviewer should check that it shows the caret when zoomed out and pills wrapping, since the description claims centering is preserved there. |\n| ✅  | Links #38919, which is \"help wanted\". CI passed. |\n\n**Reviewer:** laurynmm — gave the screenshot feedback and can judge whether the new ones are precise enough.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at the updated screenshots?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0569683
+}
