@@ -1,0 +1,6 @@
+{
+ "case": "39929-5293011728",
+ "answer": "yes",
+ "text": "yes\nThe author says the commit history is squashed into one commit, all checks pass, and asks whether anything else needs adjusting before the PR can move to review, which signals they believe it's ready for another look.",
+ "cost_usd": 0.003984
+}
