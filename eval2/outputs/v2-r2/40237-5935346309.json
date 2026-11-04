@@ -1,0 +1,11 @@
+{
+ "case": "40237-5935346309",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots: the comment shows the Save modal and the buddy list, before and after, with the plain-text theme |\n| ℹ️  | Competing PR #37967 (open, awaiting review) fixes the same issue #34985 with an extra parameter |\n| ℹ️  | CI status is unknown. The description says the new Puppeteer test passed in CI |\n| ℹ️  | Some self-review boxes are still unchecked (automated tests, manual testing), although a test was added and the screenshots show manual testing |\n| ℹ️  | How status emoji are displayed with the plain-text theme is still undecided in #design. The PR leaves it unchanged |\n\n**Reviewer:** @laurynmm. She gave the feedback and is already following the PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm. She may also want to decide between this PR and #37967.\n\n###### Reply\n\n```quote\nThanks for the screenshots, @byteayan. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0102412
+}

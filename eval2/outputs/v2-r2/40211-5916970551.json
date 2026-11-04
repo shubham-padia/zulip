@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nThis PR is meant to stop a scheduled message from being marked both \"delivered\" and \"failed\" when a later step errors after sending. After the squash, the PR now changes 123 files (+4994/-5409) instead of 2 files (+46/-11). Most of these changes are unrelated to scheduled messages, so the PR can't be reviewed as it stands.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the feedback, 6 commits were squashed into 1, but the diff grew from 2 files to 123, including web, puppet, docs, and corporate files unrelated to this fix. This looks like a bad squash or merge of upstream changes. |\n| ❌  | The diff must contain only the scheduled-message fix and its test. |\n| ❌  | No linked issue or \"Fixes: #N\". The description says the PR is not from a filed issue, and the author has no merged PRs. |\n| ⚠️  | Testing is partly done. The regression test was added, but the author did not run it locally and relied on CI. |\n| ✅  | The description was rewritten and the self-review checklist is filled in. |\n\n**Reviewer:** None yet. The PR is not ready for review.\n\n###### Next step\n\nKeep \"not ready\" and send the reply below. Close it if the author can't clean up the branch.\n\n###### Reply\n\n```quote\nThanks for squashing! The PR now includes about 120 unrelated files, probably from the upstream merge, so please rebase the branch so the diff contains only your scheduled-message fix and its test. Also, please link an existing \"help wanted\" issue, or open one for this bug and wait for a maintainer to confirm, as described in the [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014889900000000001
+}

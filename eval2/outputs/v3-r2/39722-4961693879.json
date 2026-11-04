@@ -1,0 +1,11 @@
+{
+ "case": "39722-4961693879",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — requested commit message fixes not made**\n\nNew: The author pushed once and says the changes are done, but the commit messages are unchanged and the diff is the same size (+27/-31). The description still says \"Fixes part of: #16094\" and still has the old screenshots. Missing: the commit messages still need \"Fixes a part of\" removed, with \"Fixes: #16094\" in the last commit after the description. The screenshots also need to be precise before/after crops.\n\n###### Next step\n\n\"not ready\" stays; no reassignment until the commits are fixed.\n\n###### Reply\n\n```quote\nThanks for the update! The commit messages still look unchanged: please remove \"Fixes a part of\" and put \"Fixes: #16094\" after the description in the last commit, following the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages). Please also replace the screenshots with [precise before/after crops](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0082109
+}

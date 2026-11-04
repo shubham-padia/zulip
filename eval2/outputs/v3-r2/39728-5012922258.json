@@ -1,0 +1,11 @@
+{
+ "case": "39728-5012922258",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — commits need cleanup and the checklist isn't the template's**\n\nNew: The author added a regression test case (the one they asked about) and, earlier, before/after screenshots. Missing: the four commits aren't organized (separate \"Fixes #17419\" and lint-fix commits, vague messages, and the test commit cites #17418 instead of #17419), and the self-review checklist is a custom list rather than the PR template's.\n\n###### Next step\n\nKeep \"not ready\" and leave it with laurynmm, who gave the earlier feedback.\n\n###### Reply\n\n```quote\nThanks for adding the test and screenshots! Please squash the lint fix and the \"Fixes\" commit into the commits they belong to, so the history follows our [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) (note the test commit says #17418, not #17419), and use the self-review checklist from the PR template.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0090706
+}

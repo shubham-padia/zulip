@@ -1,0 +1,11 @@
+{
+ "case": "40234-5937541838",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Don't close the issue: the description now says \"Part of #16189\", but there is no new push, so the commit message is unchanged |\n| ❌  | Explain how the fixture was captured: the description says it was built from Atlassian's API docs, not captured from a real Jira instance, which the fixture guidelines don't allow |\n| ✅  | Add a screenshot of the new notification to the description |\n| ℹ️  | A similar Jira PR (#39998) was told that constructed fixtures are not accepted |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to replace the constructed fixture with a payload captured from a real Jira instance, and to push the commit message fix.\n\n###### Reply\n\n```quote\nThanks for the updates, the screenshot and the \"Part of #16189\" description look good. The fixture still needs to be a payload captured from a real Jira instance (see the [fixture guidelines](https://zulip.readthedocs.io/en/latest/webhooks/incoming-webhooks-walkthrough.html#fixture-guidelines)), not one built from the API docs. Please also push the commit message change, since the commit itself hasn't changed yet.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011511400000000001
+}

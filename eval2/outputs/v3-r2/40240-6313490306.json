@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: only screenshots were added, and the AI-policy concern isn't addressed**\n\nNew: The author posted two screenshots in a comment and said it's solved, but there was no new push. The PR description still has the \"[Upload your screenshot or video here]\" placeholder. Missing: a reply to the AI-policy feedback, and the author's own explanation of the change. The earlier plan to update unit tests isn't in the changed files. Open PR #39758 from another author touches the same two files for the same issue.\n\n###### Next step\n\nKeep \"not ready\", assign no one, and optionally have laurynmm or shubham-padia decide how this relates to #39758.\n\n###### Reply\n\n```quote\nThanks for the screenshots! Please add them to the PR description in place of the placeholder, and explain in your own words how the change works and how you tested it, as the [AI use policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines) asks. Also note that #39758 is an open PR for the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.009263
+}

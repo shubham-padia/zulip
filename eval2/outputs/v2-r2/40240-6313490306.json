@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Review the AI assistant's comments and read the AI policy: the author apologized but didn't say what they reviewed or changed, and there is no new push |\n| ✅  | Screenshots: two are now in the author's comment (the description still has the placeholder) |\n| ℹ️  | The issue proposal promised tests in `web/tests/`, but the PR changes no test files |\n| ℹ️  | Open PR #39758 from another contributor fixes the same issue and touches the same two files |\n| ℹ️  | CI passes, no conflicts |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to confirm in their own words that they understand and tested the change; a triager may also want to decide how to handle the overlap with #39758.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots! Could you reply in your own words confirming that you've read the [AI policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines) and explaining how you tested this change yourself? Please also move the screenshots into the PR description, and note that there's another open PR (#39758) for this issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012068
+}

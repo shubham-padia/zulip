@@ -1,0 +1,11 @@
+{
+ "case": "40257-6023845324",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "CARD",
+ "text": "CARD\n**Ready for review**\n\nWhen the server or a proxy answers with a 5xx error that isn't JSON (such as a 502 from the dev proxy), the web app now logs the status and the start of the body. It also shows an error banner to the user, like the one for network errors. Before, nothing was logged and the user saw nothing. The server-side part of #6296 stays open.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the feedback: one new push added the error banner (new file `popup_banners.ts`), and the screenshots in the description were updated. |\n| ✅  | The error is logged with `blueslip.error` for non-JSON 5xx responses, like the existing 403 branch. |\n| ✅  | The user now sees an error banner, as requested. |\n| ✅  | The before/after screenshots are in the description; CI passed. |\n| ℹ️  | The commit message is unchanged and doesn't mention the banner. |\n\n**Reviewer:** @laurynmm — gave the feedback on the logging and banner behavior and has followed the PR from the start.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look? The error banner has been added alongside the blueslip error.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013013
+}

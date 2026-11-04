@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — no linked \"help wanted\" issue, and the squash/rebase broke the PR (123 files, ~10k lines changed)**\n\nNew: The author squashed the commits into one and updated the description, but the PR now includes 123 files of unrelated changes (about +4994/-5409), apparently from a bad merge or rebase of main, up from 2 files before. Missing: a linked issue labeled \"help wanted\" (the author says there is none and has no merged PRs), and a clean diff with only the scheduled-message fix and its test.\n\n###### Next step\n\nClose it, since a first-time contributor can't work on an unfiled issue and the diff is now unreviewable: `gh pr close 40211 --comment \"Closing: this doesn't link a 'help wanted' issue, and the branch now contains many unrelated changes.\"`\n\n###### Reply\n\n```quote\nThanks for looking into this, but we're closing this PR: contributors need to work on issues labeled \"help wanted\", and this one has no linked issue. The branch also now includes many unrelated changes from main, so the diff can't be reviewed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0042349
+}

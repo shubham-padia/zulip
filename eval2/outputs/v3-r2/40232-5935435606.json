@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots now use the same data for before and after**\n\nNew: The author updated the PR description with a Before/After table where all four screenshots use the same user, same six emoji from three authors, and the same viewport, which is what the feedback asked for. No new code was pushed, but the feedback was only about the screenshots. Missing: nothing blocking. The reviewer may want to confirm the author's call that clicking the Author header twice moves the current user's emoji to the bottom.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the screenshot feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look? The before/after screenshots now use the same data set.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0063345
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40234-5937541838",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the fixture was built by hand from the API docs, not captured from a real Jira instance**\n\nNew: Author changed the PR description to \"Part of #16189\", explained how the fixture was made, and added a screenshot. Missing: the description says the fixture was \"constructed following Atlassian's Jira Cloud Webhook API specification\", not captured from a real Jira payload, which the fixture guidelines require (another Jira PR for this issue, #39998, was told hand-built fixtures aren't accepted). Also, there was no new push, so the commit message update they mention isn't in the commit.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm follow up on the fixture.\n\n###### Reply\n\n```quote\nThanks for the updates, @huriazahra! The fixture still needs to be a payload captured from a real Jira instance (e.g. via a webhook capture tool) rather than constructed from the API spec, per the [fixture guidelines](https://zulip.readthedocs.io/en/latest/webhooks/incoming-webhooks-walkthrough.html#fixture-guidelines). Please also push the commit message update, since the commit hasn't changed yet.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0077464000000000005
+}

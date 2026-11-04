@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the screenshots still don't allow a clear before/after comparison**\n\nNew: The description now has a section comparing this PR to the completion candidate #33086, and the author says they added a fix and test for whitespace after `](`. Missing: The before/after screenshots are still two unmatched lists (4 \"before\", 2 \"after\") with no side-by-side pairing of the same input, and I couldn't confirm a new push for the whitespace fix.\n\n###### Next step\n\nKeep \"not ready\" and leave the assignee empty, since the screenshot feedback from laurynmm is still unaddressed.\n\n###### Reply\n\n```quote\nThanks, the explanation of how this relates to #33086 is much clearer now. The before/after screenshots still need to be precise, with the same input shown before and after the fix, side by side, as described in the [guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Please also push the whitespace fix if you haven't yet.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0116542
+}
