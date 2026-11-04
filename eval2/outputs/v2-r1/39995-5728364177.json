@@ -1,0 +1,11 @@
+{
+ "case": "39995-5728364177",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ❌  | Say which existing emoji integrations and PRs were used as a model (no answer, the comment only tags the reviewer) |\n| ❌  | Explain what those PRs did about `doc.md` (`doc.md` is not among the changed files) |\n| ⚠️  | Fixtures and tests: the six new fixtures are gone, but there is no explanation, and the input doesn't show whether the tests now loop over one fixture with edited statuses |\n| ❌  | Answer what the docs say about LLM-generated fixtures, and confirm the Contributing, AI use and Webhooks guides were read |\n| ℹ️  | The PR is back to its original size (+58/-5 in 2 files), and the description still mentions the `include_emoji_indicators` parameter the author said was removed. CI status is unknown. |\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet. Niloth-p's questions still need answers.\n\n###### Reply\n\n```quote\nThanks for the update, @tmvalijib24! Before we re-review, please answer the questions in Niloth-p's last comment: which existing emoji integrations and PRs did you use as a model, and what did they do about `doc.md`? Please also read the [Incoming Webhooks Guide](https://zulip.readthedocs.io/en/latest/webhooks/index.html) and the AI use guidelines, then tell us how that changes your fixtures and tests.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0635207
+}

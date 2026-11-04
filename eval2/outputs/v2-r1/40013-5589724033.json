@@ -1,0 +1,11 @@
+{
+ "case": "40013-5589724033",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ℹ️  | The \"not ready\" label came with no written feedback, so there were no open requests to check. |\n| ℹ️  | Since the label, 4 pushes added test updates in 3 files. The description now has testing notes, screenshots and a screen recording. |\n| ℹ️  | CI status is unknown, so check the checks before merging. |\n| ℹ️  | Some self-review boxes are unchecked (strings and tooltips, responsiveness, corner cases). The tooltip question was answered in chat, where Karl preferred the current hover approach. |\n\n**Reviewer:** laurynmm — added the \"not ready\" label, was pinged by the author, and has 23 recent commits on these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.10187270000000001
+}

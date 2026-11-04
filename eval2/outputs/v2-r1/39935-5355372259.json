@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️ | Description follows the PR guide: testing notes, screenshots and the self-review checklist are there. But \"Fixes:\" is empty, the issue is written as `Fixes #<36878>` (angle brackets), the change list is messy, and two checklist items are unchecked. |\n| ✅ | Take part in the CZO discussion: the author posted in the thread, and Daniel K replied that the PR isn't blocked and extends the filter UX from #24200. |\n| ℹ️ | No new push since the feedback. The history still has two \"ci:\" retry commits, and the whole change is one commit touching 11 files (contenteditable switch, parsing, filtering, tests), which doesn't follow commit discipline. |\n| ℹ️ | The author asked the bot to add \"maintainer review\" themselves, which only a triager should do. CI passes. |\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet.\n\n###### Reply\n\n```quote\nThanks for engaging with the CZO thread! Before this can go to review, please fix the description to use `Fixes: #36878` on its own line and complete the self-review checklist. Please also drop the \"ci:\" retry commits and split the work into coherent commits, following the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0381647
+}

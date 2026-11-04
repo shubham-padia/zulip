@@ -1,0 +1,11 @@
+{
+ "case": "40013-5589724033",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed 4 times since the label was added (+255/-74 in 11 files became +308/-74 in 14 files), adding tests in three more files, and then asked for review. The label came with no written feedback, so there were no specific asks to check.\n\n|     |         |\n| --- | ------- |\n| ✅  | PR template is filled in: description, \"Fixes: #29766\", testing notes, before/after screenshots and a screen recording. |\n| ✅  | New backend tests cover deleting a bot avatar, and the issue is assigned to the author. |\n| ⚠️  | CI status is unknown, so check it before merging. |\n| ⚠️  | The self-review checklist leaves i18n, tooltips/strings and corner cases unchecked. The tooltip question on CZO also looks mostly settled, since Karl Stolley prefers the hover text over a tooltip. |\n\n**Reviewer:** @laurynmm. She added the \"not ready\" label, and the author pinged her for review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0949503
+}

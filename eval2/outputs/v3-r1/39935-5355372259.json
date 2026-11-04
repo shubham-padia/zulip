@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the design block is cleared, but the feedback hasn't been addressed**\n\nNew: The author says Daniel K confirmed this extends the #24200 filters, so the design hold is lifted, and they asked for \"maintainer review\". There is no new push since the feedback. Missing: the description still has an empty \"Fixes:\" line and a malformed \"Fixes #<36878>\", and the history still includes two \"ci:\" retry commits that should be removed.\n\n###### Next step\n\nKeep \"not ready\" and don't add \"maintainer review\"; no reviewer needed yet. @karlstolley, who gave the feedback, can follow up when the PR is cleaned up.\n\n###### Reply\n\n```quote\nThanks for checking the design question with Daniel. Before we can review, please fix the PR description (a proper \"Fixes: #36878\" line, per the [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html)) and clean up the commits by dropping the two \"ci:\" retry commits, per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0338197
+}

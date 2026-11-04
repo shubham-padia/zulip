@@ -1,0 +1,11 @@
+{
+ "case": "40032-5484458133",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ❌  | Commit message must follow the commit style guidelines. The new subject is `web:suppress redundant nav tooltips on dm recipients_row and topic`. It has no space after `web:`, the summary isn't capitalized, it has no ending period, and there is no body explaining why. |\n| ✅  | Explain how this PR relates to the other open PR for the issue. The author answered, saying the two are unrelated. |\n| ℹ️  | The commit message was edited, but the only visible change is a shorter subject, which also dropped the space after the colon. This is the second round on the same request. |\n| ℹ️  | The competing PR #40027 is still open for the same issue. CI status is unknown. |\n\n###### Next step\n\nKeep \"not ready\" and ask for a commit message that follows the guide.\n\n###### Reply\n\n```quote\n@adityas27, not yet: the commit message still doesn't follow the [commit message guidelines](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages). Please compare it line by line with the examples there, covering the `web: ` prefix format, capitalization, ending the summary with a period, and adding a body that explains why.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.03721870000000001
+}

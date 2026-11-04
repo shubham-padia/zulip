@@ -1,0 +1,11 @@
+{
+ "case": "40012-5570902524",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Screenshots from the `/emails` page, HTML and text, for password-enabled and SSO-only realms |\n| ✅  | Self-review checklist is in the description (the \"Responsiveness and internationalization\" box is unchecked) |\n| ℹ️  | No new push since the feedback, which is fine because both requests were about the description |\n| ℹ️  | CI status is unknown, so check it before merging |\n| ℹ️  | The issue thread suggests linking to a /help/ guide on compromised accounts. This PR instead hides the reset link when password auth is off, and the description doesn't mention that choice |\n\n**Reviewer:** @laurynmm — gave the feedback on this PR and knows what was asked for.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The screenshots and self-review checklist are now in the description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.029204700000000004
+}

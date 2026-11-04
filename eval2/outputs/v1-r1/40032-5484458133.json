@@ -1,0 +1,11 @@
+{
+ "case": "40032-5484458133",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed twice, but only reworded and shortened the commit subject. The code is unchanged (+17/-6 in the same 2 files).\n\n|     |         |\n| --- | ------- |\n| ✅  | Subject is now under 72 characters. |\n| ❌  | Subject still breaks the style guide: no space after `web:`, the text after the prefix isn't capitalized, and there's no trailing period. |\n| ❌  | The commit has no body explaining what changed and why, which the guide asks for. |\n| ℹ️  | The code, the tooltip behavior and the testing notes are unchanged. Once the commit message is fixed, this can go to review. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the commit message.\n\n###### Reply\n\n```quote\nThanks for updating it! The commit message still doesn't follow our [commit message guidelines](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages). The subject needs a space after the colon, a capitalized first word, and a final period, and the commit needs a short body explaining the reasoning. Please compare it against the examples in the guide line by line before pushing again.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0353463
+}

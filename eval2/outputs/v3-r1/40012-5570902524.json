@@ -1,0 +1,11 @@
+{
+ "case": "40012-5570902524",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots and self-review checklist are now in the description**\n\nNew: The author added real `/emails` screenshots (HTML and text, password-enabled and SSO-only) and the self-review checklist to the description, which covers both requests. These were description edits, so no new push was needed.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback, and who may want to check that the conditional wording fits timabbott's suggestion on the issue to link a help guide instead.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots and checklist, this looks good now. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0241097
+}

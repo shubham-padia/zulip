@@ -1,0 +1,11 @@
+{
+ "case": "40013-5589724033",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — template filled, tests added, and 4 pushes since the label**\n\nNew: The author pushed 4 times, added backend tests for the avatar delete flow in 3 more test files, and says it's ready. Missing: a few self-review boxes are still unchecked (responsiveness, strings and tooltips, corner cases), and the tooltip question in #design is still open, but neither blocks a review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who labeled it and was pinged.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0897277
+}

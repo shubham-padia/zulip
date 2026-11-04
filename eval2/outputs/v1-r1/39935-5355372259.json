@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author says Daniel K confirmed this extends the filters from #24200, so the design hold is lifted, and asks to move to \"maintainer review\". There has been no new push since the feedback, so the description and commits are as they were.\n\n|     |         |\n| --- | ------- |\n| ✅  | The design question is settled: Daniel K said on CZO that the PR isn't blocked on the resolved-topics discussion. |\n| ❌  | The description still needs work: the \"Fixes:\" line is empty, the issue link is written as `Fixes #<36878>`, and the \"remaining decisions\" and \"corner cases\" checklist items are unchecked. |\n| ❌  | Two commits (\"Trigger fresh CI run…\", \"Retry after ShellCheck mirror timeout\") are CI retries, not coherent changes, so commit discipline isn't met. |\n| ℹ️  | The PR is large (+106/-21, 11 files). It also turns the search input into a `contenteditable` container, which is a separate change from the `is:followed` filter. |\n\n###### Next step\n\nKeep \"not ready\" and don't add \"maintainer review\" yet. Ask the author to fix the description and clean up the commits first.\n\n###### Reply\n\n```quote\nThanks for checking in with Daniel, and good to know the design isn't blocking this. Before it can go to review, please fix the description (a proper `Fixes: #36878` line, plus the unchecked checklist items) and squash the CI-retry commits into the real ones, following the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). We'll take another look once that's pushed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0371223
+}

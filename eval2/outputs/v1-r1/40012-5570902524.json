@@ -1,0 +1,11 @@
+{
+ "case": "40012-5570902524",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author didn't push new code, but both asks were about the description, and the description now has them. It has screenshots of the `/emails` page for the HTML and text versions, in both password-enabled and SSO-only cases, plus the self-review checklist.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after screenshots from `/emails`, HTML and text, for both cases |\n| ✅  | Self-review checklist is in the main PR description |\n| ℹ️  | The approach differs from the one in the issue: the PR hides the reset link for SSO-only realms. timabbott suggested linking to a /help/ guide on compromised accounts. A reviewer should confirm this is acceptable |\n| ℹ️  | The checklist leaves \"Responsiveness and internationalization\" unchecked. This is minor for an email text change |\n\n**Reviewer:** @laurynmm — gave the feedback and already knows the PR's history\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots and the checklist! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0258223
+}

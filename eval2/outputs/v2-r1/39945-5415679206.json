@@ -1,0 +1,11 @@
+{
+ "case": "39945-5415679206",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Don't remove maintainer labels: the author acknowledged it and apologized |\n| ✅  | Explain how this relates to the other open PRs: a \"Relationship to other work\" section is now in the description |\n| ✅  | Use the self-review checklist from the PR template: it now matches the template, same as on #39481 |\n| ℹ️  | CI passes, and there is no new push since the feedback (none was needed) |\n| ℹ️  | #38098 and #39481 are already in maintainer review with Niloth-p assigned. This is a fourth overlapping PR for #19589, and it is size XL |\n\n**Reviewer:** @Niloth-p. They are assigned to the two other in-review PRs for this issue and already reviewed #38098, so they can compare the approaches.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @Niloth-p so the overlapping PRs are reviewed together.\n\n###### Reply\n\n```quote\nThanks for updating the description. @Niloth-p, could you review this one along with the other open PRs for #19589?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.1055967
+}

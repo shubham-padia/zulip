@@ -1,0 +1,11 @@
+{
+ "case": "40021-5448685369",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots and description improved, but commits need cleanup**\n\nNew: The author pushed two more commits, raised the width cap to 15em, redid the before/after screenshots with a long name, and added a comparison with the other open PRs. Missing: the fix commits are not squashed into the main commit, and the diff (+59/-29) is much bigger than the described CSS change, including an unrelated font-weight animation edit.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer; the author can re-request review once the commits are cleaned up.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots and explaining how this relates to the other PRs! Please squash the \"fix:\" and \"css(reactions):\" commits into the main commit, and drop the unrelated font-weight and formatting changes so the diff only contains the truncation fix (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.051107700000000006
+}

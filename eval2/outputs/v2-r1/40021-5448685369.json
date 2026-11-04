@@ -1,0 +1,11 @@
+{
+ "case": "40021-5448685369",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after screenshots now show a very long name breaking the pill, then truncated |\n| ✅  | Explained how this PR relates to #39049, #39829 and #39768 |\n| ✅  | Truncating normal names: max-width changed from 150px to 15em (new push) |\n| ℹ️  | The two new commits are fix-ups (\"fix: increase max-width…\", \"css(reactions): avoid animating font-weight…\"). They should be squashed into the main commit, per commit discipline. |\n| ℹ️  | The font-weight change is not related to the issue, and the diff is +59/-29 for what is described as a minimal change. |\n| ℹ️  | #39768 is already in \"maintainer review\" (assigned to evykassirer) for the same issue. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to squash the fix-up commits and explain or drop the font-weight change.\n\n###### Reply\n\n```quote\nThanks for the update, @Srijansarkar17! Please squash the two follow-up commits into the main commit so each commit is a coherent idea, following the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). Also, please explain the font-weight change in the diff or remove it, since it doesn't look related to this issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.060292700000000005
+}

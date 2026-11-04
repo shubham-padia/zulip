@@ -1,0 +1,11 @@
+{
+ "case": "39995-5728364177",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author force-pushed once, dropping the six per-severity fixtures, so the PR is back to just `view.py` and `tests.py`. They then tagged Niloth-p for review without answering any of the questions in the feedback.\n\n|     |         |\n| --- | ------- |\n| ✅  | Separate per-severity fixtures are gone, which matches the advice to use a single fixture. |\n| ❌  | The questions about which integrations and PRs they studied, and what those did about `doc.md`, are still unanswered. |\n| ❌  | `doc.md` isn't in the PR's files, even though the feedback asked what the model PRs did there. |\n| ❌  | The description still says the feature relies on the `include_emoji_indicators` parameter, but the author said on CZO they removed it. |\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer until the author answers the questions and brings the description and `doc.md` in line with the code.\n\n###### Reply\n\n```quote\nThanks for the update! Before we re-review, please answer the questions in Niloth-p's last comment, namely which existing emoji integrations you followed and what they did in `doc.md`. Also update the PR description, which still mentions `include_emoji_indicators`, so it matches the code. The [Incoming Webhooks Guide](https://zulip.readthedocs.io/en/latest/webhooks/index.html) covers docs and fixtures.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0604883
+}
