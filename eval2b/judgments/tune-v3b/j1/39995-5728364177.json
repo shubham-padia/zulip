@@ -1,0 +1,69 @@
+{
+ "case": "39995-5728364177",
+ "repeat": 1,
+ "map": {
+  "C": [
+   "v3b-r1"
+  ],
+  "M": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "wrong_review_label"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE and hand-off to Niloth-p match the key, but it recommends \"integration review\" rather than \"maintainer review\", which skips the maintainer stage.",
+    "accuracy_why": "It covers the fixture removal and the stale `include_emoji_indicators` claim, but never says Niloth-p asked to be tagged on GitHub, so the ping's legitimacy goes unstated.",
+    "reply_why": "A reviewer ping plus one sentence asking the author to fix the stale description matches the reply_ask closely; it only lacks a thank-you and a mention of the commit message."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Claims the author never answered Niloth's questions about which emoji integrations they studied, but on CZO the author named #37757 and Niloth-p redirected them to commit e4097a00."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for more work, while the key says to hand off to maintainer review.",
+    "accuracy_why": "It notes the fixture removal and the stale opt-in claim, but its verdict rests on the false claim that Niloth's questions went unanswered and on a doc.md demand with no basis.",
+    "reply_why": "It blocks review and asks the author to redo answers already given on CZO and to change doc.md, instead of moving the PR to maintainer review."
+   }
+  },
+  "ranking": [
+   "C",
+   "M"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"hedged\", \"f4\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"wrong_review_label\"],\n   \"decision_score\": 8, \"accuracy_score\": 6, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE and hand-off to Niloth-p match the key, but it recommends \\\"integration review\\\" rather than \\\"maintainer review\\\", which skips the maintainer stage.\",\n   \"accuracy_why\": \"It covers the fixture removal and the stale `include_emoji_indicators` claim, but never says Niloth-p asked to be tagged on GitHub, so the ping's legitimacy goes unstated.\",\n   \"reply_why\": \"A reviewer ping plus one sentence asking the author to fix the stale description matches the reply_ask closely; it only lacks a thank-you and a mention of the commit message.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Claims the author never answered Niloth's questions about which emoji integrations they studied, but on CZO the author named #37757 and Niloth-p redirected them to commit e4097a00.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, while the key says to hand off to maintainer review.\",\n   \"accuracy_why\": \"It notes the fixture removal and the stale opt-in claim, but its verdict rests on the false claim that Niloth's questions went unanswered and on a doc.md demand with no basis.\",\n   \"reply_why\": \"It blocks review and asks the author to redo answers already given on CZO and to change doc.md, instead of moving the PR to maintainer review.\"}},\n \"ranking\": [\"C\", \"M\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.279288
+}

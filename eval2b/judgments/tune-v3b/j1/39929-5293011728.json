@@ -1,0 +1,69 @@
+{
+ "case": "39929-5293011728",
+ "repeat": 1,
+ "map": {
+  "R": [
+   "v3b-r1"
+  ],
+  "A": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_misaddressed"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It confirms the squash and the Zulip-style summary but misses the API changelog gap, the unverified CI and the Sahil reviewer suggestion, and its 'Missing: nothing' hides the changelog gap.",
+    "reply_why": "The reviewer ping fits a hand-off, but it thanks @karlstolley for the author's cleanup, so a sentence needs rewriting."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off with a reviewer matches the key exactly.",
+    "accuracy_why": "It covers the squash, the folded-in fixes, the unverified CI claim and the Sahil suggestion, and misses only the API changelog/feature-level gap.",
+    "reply_why": "'No reply needed.' scores high for a hand-off under the rubric."
+   }
+  },
+  "ranking": [
+   "A",
+   "R"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_misaddressed\"],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\",\n   \"accuracy_why\": \"It confirms the squash and the Zulip-style summary but misses the API changelog gap, the unverified CI and the Sahil reviewer suggestion, and its 'Missing: nothing' hides the changelog gap.\",\n   \"reply_why\": \"The reviewer ping fits a hand-off, but it thanks @karlstolley for the author's cleanup, so a sentence needs rewriting.\"},\n  \"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE recommending hand-off with a reviewer matches the key exactly.\",\n   \"accuracy_why\": \"It covers the squash, the folded-in fixes, the unverified CI claim and the Sahil suggestion, and misses only the API changelog/feature-level gap.\",\n   \"reply_why\": \"'No reply needed.' scores high for a hand-off under the rubric.\"}},\n \"ranking\": [\"A\", \"R\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.139188
+}

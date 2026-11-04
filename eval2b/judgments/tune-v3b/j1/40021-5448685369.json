@@ -1,0 +1,71 @@
+{
+ "case": "40021-5448685369",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v3b-r1"
+  ],
+  "O": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Claims both points of the feedback are addressed and the PR is ready for review, but the whole-string truncation still does not meet Alya's per-reactor requirement and the comparison does not justify the approach over #39768."
+    ],
+    "rule_failures": [
+     "reply_contradicts_missing_items"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "Kind matches, but it recommends handing off for review where the key calls for keeping \"not ready\" and giving more feedback.",
+    "accuracy_why": "It lists the surface changes and the commit cleanup, but misses both decisive gaps and wrongly says the feedback was fully addressed, which is what the hand-off rests on.",
+    "reply_why": "It pings a reviewer to look again instead of telling the author that whole-string truncation still hides other reactors, so the ask is wrong."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_implies_ready_after_cleanup"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for more feedback as a NOTE, matching both the key's kind and its action.",
+    "accuracy_why": "It covers the changes and the commit and unrelated-edit cleanup, but misses both decisive problems: per-reactor truncation and no justification over #39768.",
+    "reply_why": "It asks only for commit cleanup and thanks the author for the comparison, missing the core ask about showing each reactor's name or justifying the approach over #39768."
+   }
+  },
+  "ranking": [
+   "O",
+   "K"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"Claims both points of the feedback are addressed and the PR is ready for review, but the whole-string truncation still does not meet Alya's per-reactor requirement and the comparison does not justify the approach over #39768.\"],\n   \"rule_failures\": [\"reply_contradicts_missing_items\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"Kind matches, but it recommends handing off for review where the key calls for keeping \\\"not ready\\\" and giving more feedback.\",\n   \"accuracy_why\": \"It lists the surface changes and the commit cleanup, but misses both decisive gaps and wrongly says the feedback was fully addressed, which is what the hand-off rests on.\",\n   \"reply_why\": \"It pings a reviewer to look again instead of telling the author that whole-string truncation still hides other reactors, so the ask is wrong.\"},\n  \"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_implies_ready_after_cleanup\"],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more feedback as a NOTE, matching both the key's kind and its action.\",\n   \"accuracy_why\": \"It covers the changes and the commit and unrelated-edit cleanup, but misses both decisive problems: per-reactor truncation and no justification over #39768.\",\n   \"reply_why\": \"It asks only for commit cleanup and thanks the author for the comparison, missing the core ask about showing each reactor's name or justifying the approach over #39768.\"}},\n \"ranking\": [\"O\", \"K\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.24652000000000002
+}

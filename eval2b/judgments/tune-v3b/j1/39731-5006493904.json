@@ -1,0 +1,67 @@
+{
+ "case": "39731-5006493904",
+ "repeat": 1,
+ "map": {
+  "U": [
+   "eval2:v3-r1"
+  ],
+  "T": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Says \"Nothing is missing\", but the issue's required precise before/after screenshots in both themes are still absent and no maintainer has confirmed the removals."
+    ],
+    "rule_failures": [
+     "reply_to_author_too_long"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off (remove \"not ready\", add \"maintainer review\") matches the key's kind and action.",
+    "accuracy_why": "It correctly describes the dead-selector removal and the real-element measurements, but wrongly claims nothing is missing despite the absent screenshots, and it names laurynmm instead of karlstolley as reviewer.",
+    "reply_why": "It thanks the author and pings laurynmm rather than handing off to a CSS maintainer to confirm the removals, and it calls the measurements a full answer when screenshots are still missing."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key.",
+    "accuracy_why": "It covers the two-commit rework, the computed-style check and the missing screenshots, but assigns laurynmm instead of karlstolley and does not say that the removals still need maintainer confirmation.",
+    "reply_why": "It is a short reviewer ping that could be pasted nearly as is, though it targets laurynmm rather than a CSS maintainer who would confirm the dead-selector removals."
+   }
+  },
+  "ranking": [
+   "T",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Says \\\"Nothing is missing\\\", but the issue's required precise before/after screenshots in both themes are still absent and no maintainer has confirmed the removals.\"],\n   \"rule_failures\": [\"reply_to_author_too_long\"],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off (remove \\\"not ready\\\", add \\\"maintainer review\\\") matches the key's kind and action.\",\n   \"accuracy_why\": \"It correctly describes the dead-selector removal and the real-element measurements, but wrongly claims nothing is missing despite the absent screenshots, and it names laurynmm instead of karlstolley as reviewer.\",\n   \"reply_why\": \"It thanks the author and pings laurynmm rather than handing off to a CSS maintainer to confirm the removals, and it calls the measurements a full answer when screenshots are still missing.\"},\n \"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key.\",\n   \"accuracy_why\": \"It covers the two-commit rework, the computed-style check and the missing screenshots, but assigns laurynmm instead of karlstolley and does not say that the removals still need maintainer confirmation.\",\n   \"reply_why\": \"It is a short reviewer ping that could be pasted nearly as is, though it targets laurynmm rather than a CSS maintainer who would confirm the dead-selector removals.\"}\n},\n \"ranking\": [\"T\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.256828
+}

@@ -1,0 +1,67 @@
+{
+ "case": "39590-5004317162",
+ "repeat": 1,
+ "map": {
+  "Q": [
+   "v3b-r1"
+  ],
+  "X": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It posts a NOTE that keeps \"not ready\" and asks for more work, which matches the key's kind and action.",
+    "accuracy_why": "It correctly covers the rebase, the issue pointer, the missing screenshots and the overlapping PR #39267, but it never mentions the missing self-review checklist.",
+    "reply_why": "The reply asks for screenshots and the issue link but leaves out the self-review checklist, and it links the general review-process guide instead of the presenting-visual-changes guide, so a sentence needs rewriting."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It posts a NOTE that keeps \"not ready\" and asks for more work, which matches the key's kind and action.",
+    "accuracy_why": "All five must-haves are present with no wrong facts, though the aside that #37647's \"help wanted\" status \"isn't shown in the input\" is meta filler.",
+    "reply_why": "The reply covers screenshots, the template/checklist, the issue link and the overlapping PR, but it does not thank the author for linking the issue and points to the review-process guide rather than the visual-changes guide."
+   }
+  },
+  "ranking": [
+   "X",
+   "Q"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 6,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It posts a NOTE that keeps \\\"not ready\\\" and asks for more work, which matches the key's kind and action.\",\n   \"accuracy_why\": \"It correctly covers the rebase, the issue pointer, the missing screenshots and the overlapping PR #39267, but it never mentions the missing self-review checklist.\",\n   \"reply_why\": \"The reply asks for screenshots and the issue link but leaves out the self-review checklist, and it links the general review-process guide instead of the presenting-visual-changes guide, so a sentence needs rewriting.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 7,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It posts a NOTE that keeps \\\"not ready\\\" and asks for more work, which matches the key's kind and action.\",\n   \"accuracy_why\": \"All five must-haves are present with no wrong facts, though the aside that #37647's \\\"help wanted\\\" status \\\"isn't shown in the input\\\" is meta filler.\",\n   \"reply_why\": \"The reply covers screenshots, the template/checklist, the issue link and the overlapping PR, but it does not thank the author for linking the issue and points to the review-process guide rather than the visual-changes guide.\"}},\n \"ranking\": [\"X\", \"Q\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.10233199999999999
+}

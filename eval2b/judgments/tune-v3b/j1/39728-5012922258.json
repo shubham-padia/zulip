@@ -1,0 +1,69 @@
+{
+ "case": "39728-5012922258",
+ "repeat": 1,
+ "map": {
+  "T": [
+   "v3b-r1"
+  ],
+  "U": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says the author posted before/after screenshots as a new change, but the screenshot comment came before laurynmm's feedback and the screenshots were not redone."
+    ],
+    "rule_failures": [
+     "reply_thanks_for_unchanged_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps 'not ready' and asks for more feedback, which matches the key.",
+    "accuracy_why": "It names the custom checklist and the fixup commits, but it misses the message format and the wrong issue number, and it wrongly counts the old screenshots as new work, which hides the screenshot concern.",
+    "reply_why": "The checklist and squash asks are right, but it thanks the author for screenshots that weren't changed, never asks for precise screenshots, and stays vague on the commit message format."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps 'not ready' and leaves the PR with the original triager for more feedback, which matches the key.",
+    "accuracy_why": "It covers every decisive commit-discipline problem, including the 17418 typo and the message format, plus the checklist and the test-only push, and misses only the screenshot check.",
+    "reply_why": "It gives specific, pasteable commit and checklist asks but leaves out the precise before/after screenshot ask."
+   }
+  },
+  "ranking": [
+   "U",
+   "T"
+  ]
+ },
+ "text": "{\"outputs\": {\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Says the author posted before/after screenshots as a new change, but the screenshot comment came before laurynmm's feedback and the screenshots were not redone.\"],\n   \"rule_failures\": [\"reply_thanks_for_unchanged_work\"],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that keeps 'not ready' and asks for more feedback, which matches the key.\",\n   \"accuracy_why\": \"It names the custom checklist and the fixup commits, but it misses the message format and the wrong issue number, and it wrongly counts the old screenshots as new work, which hides the screenshot concern.\",\n   \"reply_why\": \"The checklist and squash asks are right, but it thanks the author for screenshots that weren't changed, never asks for precise screenshots, and stays vague on the commit message format.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that keeps 'not ready' and leaves the PR with the original triager for more feedback, which matches the key.\",\n   \"accuracy_why\": \"It covers every decisive commit-discipline problem, including the 17418 typo and the message format, plus the checklist and the test-only push, and misses only the screenshot check.\",\n   \"reply_why\": \"It gives specific, pasteable commit and checklist asks but leaves out the precise before/after screenshot ask.\"}},\n \"ranking\": [\"U\", \"T\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.294508
+}

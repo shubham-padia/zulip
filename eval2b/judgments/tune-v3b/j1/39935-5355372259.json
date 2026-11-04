@@ -1,0 +1,63 @@
+{
+ "case": "39935-5355372259",
+ "repeat": 1,
+ "map": {
+  "B": [
+   "eval2:v3-r1"
+  ],
+  "O": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key's kind and action.",
+    "accuracy_why": "All four must-haves are present, but the headline overstates things by saying the feedback hasn't been addressed when the CZO part was, and it skips the feature commit's messaging, the screenshots and the unchecked checklist items.",
+    "reply_why": "It thanks the author, then asks for the description fix and the removal of the ci commits, linking both the PR guide and the commit-discipline guide, though it doesn't ask for a proper feature-commit message."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key's kind and action.",
+    "accuracy_why": "All must-haves are present and it states the CZO resolution accurately, but it skips the feature commit's messaging, the screenshots and the unchecked checklist items.",
+    "reply_why": "The ask is right and it handles the self-labeling attempt, but it links only the PR guide and not commit discipline, which the cleanup depends on, and it doesn't ask for a proper feature-commit message."
+   }
+  },
+  "ranking": [
+   "B",
+   "O"
+  ]
+ },
+ "text": "{\"outputs\": {\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key's kind and action.\",\n   \"accuracy_why\": \"All four must-haves are present, but the headline overstates things by saying the feedback hasn't been addressed when the CZO part was, and it skips the feature commit's messaging, the screenshots and the unchecked checklist items.\",\n   \"reply_why\": \"It thanks the author, then asks for the description fix and the removal of the ci commits, linking both the PR guide and the commit-discipline guide, though it doesn't ask for a proper feature-commit message.\"},\n  \"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key's kind and action.\",\n   \"accuracy_why\": \"All must-haves are present and it states the CZO resolution accurately, but it skips the feature commit's messaging, the screenshots and the unchecked checklist items.\",\n   \"reply_why\": \"The ask is right and it handles the self-labeling attempt, but it links only the PR guide and not commit discipline, which the cleanup depends on, and it doesn't ask for a proper feature-commit message.\"}},\n \"ranking\": [\"B\", \"O\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.18509599999999998
+}

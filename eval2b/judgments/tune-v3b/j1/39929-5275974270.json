@@ -1,0 +1,67 @@
+{
+ "case": "39929-5275974270",
+ "repeat": 1,
+ "map": {
+  "Z": [
+   "eval2:v3-r1"
+  ],
+  "N": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It correctly picks a NOTE and a hand-off, though it routes the review to karlstolley instead of the files' main recent contributor.",
+    "accuracy_why": "It covers the squash, the unchanged code and the unknown CI, but it misses the missing API changelog and names the wrong reviewer.",
+    "reply_why": "A short thanks plus a reviewer ping is the right ask, but it pings karlstolley instead of sahil839, so a name needs changing."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It picks a NOTE and a hand-off to Sahil Batra, which matches the key and the reviewer the triager actually assigned.",
+    "accuracy_why": "It gets the cleanup right but omits the unknown CI, the missing API changelog and the unchanged-code point, and it adds a filler screenshot suggestion.",
+    "reply_why": "For a hand-off, \"No reply needed.\" is acceptable and could be pasted as is."
+   }
+  },
+  "ranking": [
+   "N",
+   "Z"
+  ]
+ },
+ "text": "{\"outputs\": {\"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It correctly picks a NOTE and a hand-off, though it routes the review to karlstolley instead of the files' main recent contributor.\",\n   \"accuracy_why\": \"It covers the squash, the unchanged code and the unknown CI, but it misses the missing API changelog and names the wrong reviewer.\",\n   \"reply_why\": \"A short thanks plus a reviewer ping is the right ask, but it pings karlstolley instead of sahil839, so a name needs changing.\"},\n  \"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It picks a NOTE and a hand-off to Sahil Batra, which matches the key and the reviewer the triager actually assigned.\",\n   \"accuracy_why\": \"It gets the cleanup right but omits the unknown CI, the missing API changelog and the unchanged-code point, and it adds a filler screenshot suggestion.\",\n   \"reply_why\": \"For a hand-off, \\\"No reply needed.\\\" is acceptable and could be pasted as is.\"}},\n \"ranking\": [\"N\", \"Z\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.1449
+}

@@ -1,0 +1,65 @@
+{
+ "case": "39927-5276328596",
+ "repeat": 1,
+ "map": {
+  "Y": [
+   "v3b-r1"
+  ],
+  "T": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches both the key's kind and the observed action.",
+    "accuracy_why": "It covers both fixes and correctly flags the mismatched screenshot sizes, but it misses the absent self-review checklist and the over-broad \"Fixes #39794\", and its headline overstates readiness given the screenshot gap.",
+    "reply_why": "For a hand-off, a single reviewer-ping line is pasteable as is."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches both the key's kind and the observed action.",
+    "accuracy_why": "It covers both fixes and the \"Fixes #39794\" problem, but says nothing blocking remains while missing both the mismatched screenshot sizes and the absent checklist.",
+    "reply_why": "It adds a second, author-directed ask about the issue link instead of the key's screenshot recapture, so a hand-off reply this long is capped and misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "Y",
+   "T"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches both the key's kind and the observed action.\",\n   \"accuracy_why\": \"It covers both fixes and correctly flags the mismatched screenshot sizes, but it misses the absent self-review checklist and the over-broad \\\"Fixes #39794\\\", and its headline overstates readiness given the screenshot gap.\",\n   \"reply_why\": \"For a hand-off, a single reviewer-ping line is pasteable as is.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches both the key's kind and the observed action.\",\n   \"accuracy_why\": \"It covers both fixes and the \\\"Fixes #39794\\\" problem, but says nothing blocking remains while missing both the mismatched screenshot sizes and the absent checklist.\",\n   \"reply_why\": \"It adds a second, author-directed ask about the issue link instead of the key's screenshot recapture, so a hand-off reply this long is capped and misses the reply_ask.\"}},\n \"ranking\": [\"Y\", \"T\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.173596
+}

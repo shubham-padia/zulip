@@ -1,0 +1,68 @@
+{
+ "case": "39883-5198039741",
+ "repeat": 1,
+ "map": {
+  "V": [
+   "v3b-r1"
+  ],
+  "P": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Presents the two fixture tests as newly added after the feedback, though the description already listed them before.",
+     "Says the description now covers the problem, fix and tests, implying a rework that the cutoff facts don't show."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending keeping \"not ready\" and giving more feedback matches the key.",
+    "accuracy_why": "It counts already-listed tests and an unchanged description as progress, misses the screenshots gap, and mentions only the AI-policy checklist box.",
+    "reply_why": "It asks for the checklist and the #39598 comparison but omits before/after screenshots from the dev environment, which is the core of the ask, and it thanks the author for tests that aren't new."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending keeping \"not ready\" and giving more feedback matches the key.",
+    "accuracy_why": "It correctly says the update was a one-line change plus a passing-tests claim, but it only vaguely asks for \"before/after examples\" rather than dev-environment screenshots, and it cites the wrong second checklist box instead of visual appearance.",
+    "reply_why": "The ask is mostly right, but a maintainer would rewrite the sentence to request precise before/after screenshots from the web app in the dev environment."
+   }
+  },
+  "ranking": [
+   "P",
+   "V"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"wrong\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"Presents the two fixture tests as newly added after the feedback, though the description already listed them before.\", \"Says the description now covers the problem, fix and tests, implying a rework that the cutoff facts don't show.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending keeping \\\"not ready\\\" and giving more feedback matches the key.\",\n   \"accuracy_why\": \"It counts already-listed tests and an unchanged description as progress, misses the screenshots gap, and mentions only the AI-policy checklist box.\",\n   \"reply_why\": \"It asks for the checklist and the #39598 comparison but omits before/after screenshots from the dev environment, which is the core of the ask, and it thanks the author for tests that aren't new.\"},\n  \"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending keeping \\\"not ready\\\" and giving more feedback matches the key.\",\n   \"accuracy_why\": \"It correctly says the update was a one-line change plus a passing-tests claim, but it only vaguely asks for \\\"before/after examples\\\" rather than dev-environment screenshots, and it cites the wrong second checklist box instead of visual appearance.\",\n   \"reply_why\": \"The ask is mostly right, but a maintainer would rewrite the sentence to request precise before/after screenshots from the web app in the dev environment.\"}},\n \"ranking\": [\"P\", \"V\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.213328
+}

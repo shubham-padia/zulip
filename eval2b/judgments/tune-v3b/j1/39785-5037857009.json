@@ -1,0 +1,67 @@
+{
+ "case": "39785-5037857009",
+ "repeat": 1,
+ "map": {
+  "H": [
+   "eval2:v3-r1"
+  ],
+  "G": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the before/after image answers the screenshot feedback, when the key says it is not clearly a real dev-environment screenshot."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" for more feedback matches the key's kind and action.",
+    "accuracy_why": "It correctly notes no new push, the unlinked #38931 and the unshown right-placement arrow, but it accepts the image as a valid screenshot instead of questioning whether it was really taken in the dev environment.",
+    "reply_why": "The reply asks for the issue link and testing notes but thanks the author for the screenshots and never asks how the image was made or for real dev-environment screenshots, which is the core of the ask."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshots asked for were added and that this satisfies the feedback, which makes the PR ready for review; the image's authenticity is still in question."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off for review when the key says more feedback is needed.",
+    "accuracy_why": "The hand-off rests on the wrong claim that the screenshot request was met, it never mentions that no code was pushed, and it only notes #38931 in passing.",
+    "reply_why": "Pinging laurynmm to review is the wrong decision, since the author should be asked for real dev-environment screenshots."
+   }
+  },
+  "ranking": [
+   "H",
+   "G"
+  ]
+ },
+ "text": "{\"outputs\": {\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says the before/after image answers the screenshot feedback, when the key says it is not clearly a real dev-environment screenshot.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" for more feedback matches the key's kind and action.\",\n   \"accuracy_why\": \"It correctly notes no new push, the unlinked #38931 and the unshown right-placement arrow, but it accepts the image as a valid screenshot instead of questioning whether it was really taken in the dev environment.\",\n   \"reply_why\": \"The reply asks for the issue link and testing notes but thanks the author for the screenshots and never asks how the image was made or for real dev-environment screenshots, which is the core of the ask.\"},\n  \"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says the screenshots asked for were added and that this satisfies the feedback, which makes the PR ready for review; the image's authenticity is still in question.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off for review when the key says more feedback is needed.\",\n   \"accuracy_why\": \"The hand-off rests on the wrong claim that the screenshot request was met, it never mentions that no code was pushed, and it only notes #38931 in passing.\",\n   \"reply_why\": \"Pinging laurynmm to review is the wrong decision, since the author should be asked for real dev-environment screenshots.\"}},\n \"ranking\": [\"H\", \"G\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.09857199999999999
+}

@@ -1,0 +1,65 @@
+{
+ "case": "39836-5142302711",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v3b-r1"
+  ],
+  "D": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending the hand-off to maintainer review matches the key exactly.",
+    "accuracy_why": "It correctly reports the matched same-size screenshot pair and the uncovered wrapped-pill and zoomed-out states, but it doesn't name karlstolley or say that no code was pushed.",
+    "reply_why": "A single reviewer-ping line fits the hand-off, but it pings laurynmm instead of karlstolley, the CSS reviewer who managed this issue."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending the hand-off to maintainer review matches the key exactly.",
+    "accuracy_why": "It covers the matched screenshot pair, notes that no code change was needed, and tells the reviewer to check the wrapped-pill and zoomed-out states, but it misses karlstolley as the natural reviewer.",
+    "reply_why": "A single reviewer-ping line fits the hand-off, but it pings laurynmm instead of karlstolley."
+   }
+  },
+  "ranking": [
+   "D",
+   "K"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"A NOTE recommending the hand-off to maintainer review matches the key exactly.\", \"accuracy_why\": \"It correctly reports the matched same-size screenshot pair and the uncovered wrapped-pill and zoomed-out states, but it doesn't name karlstolley or say that no code was pushed.\", \"reply_why\": \"A single reviewer-ping line fits the hand-off, but it pings laurynmm instead of karlstolley, the CSS reviewer who managed this issue.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"A NOTE recommending the hand-off to maintainer review matches the key exactly.\", \"accuracy_why\": \"It covers the matched screenshot pair, notes that no code change was needed, and tells the reviewer to check the wrapped-pill and zoomed-out states, but it misses karlstolley as the natural reviewer.\", \"reply_why\": \"A single reviewer-ping line fits the hand-off, but it pings laurynmm instead of karlstolley.\"}}, \"ranking\": [\"D\", \"K\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.236012
+}

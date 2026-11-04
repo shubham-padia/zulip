@@ -1,0 +1,69 @@
+{
+ "case": "39819-5108435113",
+ "repeat": 1,
+ "map": {
+  "G": [
+   "eval2:v3-r1"
+  ],
+  "E": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more work matches the key's kind and its more_feedback action.",
+    "accuracy_why": "It correctly reports no new push and that the screenshots are still not precise pairs, but it never mentions tables, frames Test 2 loosely instead of naming the lingering \"Show more\", and omits the commit-summary problem.",
+    "reply_why": "It asks for the screenshots to be redone but never mentions side-by-side tables, and it puts a code fix first as a precondition, which goes beyond what the triager asked."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "wrong",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the screenshot feedback is addressed and the screenshots are laid out as before/after per test, when they are still not in precise side-by-side tables."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_ask"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to review, but the key says to give more feedback and keep \"not ready\".",
+    "accuracy_why": "Its verdict rests on the false claim that the screenshot ask is met, and it leaves out the commit-summary problem.",
+    "reply_why": "It pings laurynmm to review instead of asking the authors to put their screenshots in tables, so it carries the wrong ask."
+   }
+  },
+  "ranking": [
+   "G",
+   "E"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more work matches the key's kind and its more_feedback action.\",\n   \"accuracy_why\": \"It correctly reports no new push and that the screenshots are still not precise pairs, but it never mentions tables, frames Test 2 loosely instead of naming the lingering \\\"Show more\\\", and omits the commit-summary problem.\",\n   \"reply_why\": \"It asks for the screenshots to be redone but never mentions side-by-side tables, and it puts a code fix first as a precondition, which goes beyond what the triager asked.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"wrong\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Claims the screenshot feedback is addressed and the screenshots are laid out as before/after per test, when they are still not in precise side-by-side tables.\"],\n   \"rule_failures\": [\"reply_contradicts_key_ask\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to review, but the key says to give more feedback and keep \\\"not ready\\\".\",\n   \"accuracy_why\": \"Its verdict rests on the false claim that the screenshot ask is met, and it leaves out the commit-summary problem.\",\n   \"reply_why\": \"It pings laurynmm to review instead of asking the authors to put their screenshots in tables, so it carries the wrong ask.\"}},\n \"ranking\": [\"G\", \"E\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.21450399999999997
+}

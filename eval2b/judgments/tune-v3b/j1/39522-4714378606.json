@@ -1,0 +1,72 @@
+{
+ "case": "39522-4714378606",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "eval2:v3-r1"
+  ],
+  "A": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Says the changes answer the earlier review questions, but Yogesh has not confirmed his points are resolved."
+    ],
+    "rule_failures": [
+     "wrong_reviewer"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key's kind and action, though it skips the step of waiting for Yogesh's sign-off.",
+    "accuracy_why": "It covers the squash and the +56 to +35 shrink, but it treats the review as resolved and omits the decisive open asks: the dark-theme outline, border radius, screenshots and buddy-list styles.",
+    "reply_why": "A single ping line is the right shape, but it pings laurynmm instead of karlstolley and doesn't ask Yogesh to confirm his points."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the out-of-scope .buddy-list-user-link styles were removed, which the key says is unconfirmed."
+    ],
+    "rule_failures": [
+     "wrong_reviewer",
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off matches the key's kind and action, though it is not conditioned on Yogesh signing off.",
+    "accuracy_why": "It asserts as done a removal the key lists as unconfirmed, and it only passes the dark-theme and border-radius checks to the reviewer instead of flagging them as open asks.",
+    "reply_why": "It pings the wrong reviewer, adds a commit-prefix nit, and misses the ask for Yogesh to confirm his review points."
+   }
+  },
+  "ranking": [
+   "D",
+   "A"
+  ]
+ },
+ "text": "{\"outputs\": {\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Says the changes answer the earlier review questions, but Yogesh has not confirmed his points are resolved.\"],\n   \"rule_failures\": [\"wrong_reviewer\"],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with a hand-off matches the key's kind and action, though it skips the step of waiting for Yogesh's sign-off.\",\n   \"accuracy_why\": \"It covers the squash and the +56 to +35 shrink, but it treats the review as resolved and omits the decisive open asks: the dark-theme outline, border radius, screenshots and buddy-list styles.\",\n   \"reply_why\": \"A single ping line is the right shape, but it pings laurynmm instead of karlstolley and doesn't ask Yogesh to confirm his points.\"},\n  \"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Claims the out-of-scope .buddy-list-user-link styles were removed, which the key says is unconfirmed.\"],\n   \"rule_failures\": [\"wrong_reviewer\", \"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 7,\n   \"decision_why\": \"NOTE with a hand-off matches the key's kind and action, though it is not conditioned on Yogesh signing off.\",\n   \"accuracy_why\": \"It asserts as done a removal the key lists as unconfirmed, and it only passes the dark-theme and border-radius checks to the reviewer instead of flagging them as open asks.\",\n   \"reply_why\": \"It pings the wrong reviewer, adds a commit-prefix nit, and misses the ask for Yogesh to confirm his review points.\"}},\n \"ranking\": [\"D\", \"A\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.230716
+}

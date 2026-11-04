@@ -1,0 +1,69 @@
+{
+ "case": "39987-5365589747",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "eval2:v3-r1"
+  ],
+  "M": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States 'Missing: nothing blocking' when screenshots of the new documentation page are still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "NOTE is the right kind, but it recommends handing off for review when the key says the PR needs more feedback.",
+    "accuracy_why": "It covers the avatar fix, the squash and the unverified CI, but it explicitly claims nothing is missing, and the hand-off rests on that claim, while docs screenshots are still absent.",
+    "reply_why": "The reviewer ping fits a hand-off, but it misses the needed ask for documentation screenshots."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "missing_still_missing_section"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "NOTE is the right kind, but it recommends a hand-off instead of keeping 'not ready' and asking for screenshots.",
+    "accuracy_why": "It correctly reports the avatar fix, the squash and the unverified CI, but it omits the decisive missing docs screenshots and has no 'still missing' part.",
+    "reply_why": "A reviewer ping is the wrong ask, since the author should be asked for screenshots of the rendered docs page."
+   }
+  },
+  "ranking": [
+   "M",
+   "K"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"States 'Missing: nothing blocking' when screenshots of the new documentation page are still missing.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE is the right kind, but it recommends handing off for review when the key says the PR needs more feedback.\",\n   \"accuracy_why\": \"It covers the avatar fix, the squash and the unverified CI, but it explicitly claims nothing is missing, and the hand-off rests on that claim, while docs screenshots are still absent.\",\n   \"reply_why\": \"The reviewer ping fits a hand-off, but it misses the needed ask for documentation screenshots.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"missing_still_missing_section\"],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE is the right kind, but it recommends a hand-off instead of keeping 'not ready' and asking for screenshots.\",\n   \"accuracy_why\": \"It correctly reports the avatar fix, the squash and the unverified CI, but it omits the decisive missing docs screenshots and has no 'still missing' part.\",\n   \"reply_why\": \"A reviewer ping is the wrong ask, since the author should be asked for screenshots of the rendered docs page.\"}},\n \"ranking\": [\"M\", \"K\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.09228399999999999
+}

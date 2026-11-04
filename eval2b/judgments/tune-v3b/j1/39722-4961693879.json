@@ -1,0 +1,73 @@
+{
+ "case": "39722-4961693879",
+ "repeat": 1,
+ "map": {
+  "Z": [
+   "v3b-r1"
+  ],
+  "H": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the requested commit-message fixes were not made, but the key says the one push likely changed only the commit bodies, so they may be done and need checking.",
+     "Asserts the screenshots are still the earlier ones, which the cutoff facts can't confirm."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "Its NOTE and keep-not-ready verdict match the key, but its next step leaves out whilstsomebody's pending code review.",
+    "accuracy_why": "It states as fact that the commit-message fixes are missing, when they may already be done, and it misses the partial-fix and identical German before-image points.",
+    "reply_why": "The reply asks for commit-message work that is likely already done, and it misses the key's asks: whilstsomebody's review, the duplicate German before images, and which parts of #16094 are covered."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit-message fixes aren't there and must be redone, but the key says they were likely made in the commit bodies.",
+     "Says the screenshots are still the full-width ones, which the cutoff facts can't confirm."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "Its NOTE and keep-not-ready verdict match the key, but it doesn't name whilstsomebody's code review as the next step.",
+    "accuracy_why": "It correctly notes the single push and unchanged size, and hedges with 'look unchanged', but still treats the commit fixes as missing and misses f3 and f4.",
+    "reply_why": "The reply rests on the same likely-wrong claim that the commits are unchanged and misses the key's real asks."
+   }
+  },
+  "ranking": [
+   "H",
+   "Z"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n   \"wrong_facts\": [\"Asserts the requested commit-message fixes were not made, but the key says the one push likely changed only the commit bodies, so they may be done and need checking.\", \"Asserts the screenshots are still the earlier ones, which the cutoff facts can't confirm.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 8, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"Its NOTE and keep-not-ready verdict match the key, but its next step leaves out whilstsomebody's pending code review.\",\n   \"accuracy_why\": \"It states as fact that the commit-message fixes are missing, when they may already be done, and it misses the partial-fix and identical German before-image points.\",\n   \"reply_why\": \"The reply asks for commit-message work that is likely already done, and it misses the key's asks: whilstsomebody's review, the duplicate German before images, and which parts of #16094 are covered.\"},\n \"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n   \"wrong_facts\": [\"Says the commit-message fixes aren't there and must be redone, but the key says they were likely made in the commit bodies.\", \"Says the screenshots are still the full-width ones, which the cutoff facts can't confirm.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 8, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"Its NOTE and keep-not-ready verdict match the key, but it doesn't name whilstsomebody's code review as the next step.\",\n   \"accuracy_why\": \"It correctly notes the single push and unchanged size, and hedges with 'look unchanged', but still treats the commit fixes as missing and misses f3 and f4.\",\n   \"reply_why\": \"The reply rests on the same likely-wrong claim that the commits are unchanged and misses the key's real asks.\"}},\n \"ranking\": [\"H\", \"Z\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.217736
+}

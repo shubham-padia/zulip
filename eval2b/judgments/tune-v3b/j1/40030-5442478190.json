@@ -1,0 +1,75 @@
+{
+ "case": "40030-5442478190",
+ "repeat": 1,
+ "map": {
+  "J": [
+   "eval2:v3-r1"
+  ],
+  "Q": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "hedged",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the template is filled in, but the self-review checklist does not match Zulip's pull request template.",
+     "Claims the PR is ready for review, though nothing addressed what made it \"not ready\"."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_ask",
+     "misses_label_removal"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE, as the key requires, but it recommends handing the PR off when the key calls for more feedback.",
+    "accuracy_why": "It misses that the author removed the maintainer's label, wrongly says the template is filled in, and hedges on the missing context, and the hand-off rests on these errors.",
+    "reply_why": "It tells the author the PR looks ready and asks laurynmm to review, which is the opposite of the needed ask."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Implies the PR is clean and ready for review, though the context is still missing and the checklist still doesn't match the template."
+    ],
+    "rule_failures": [
+     "misses_label_removal"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE, as the key requires, but it recommends handing the PR off instead of giving more feedback.",
+    "accuracy_why": "It notes the missing issue and the squash, but misses the label removal and the checklist mismatch, and its readiness verdict rests on these gaps.",
+    "reply_why": "It pings laurynmm for review and only softly asks for an issue link, so it misses the asks about the label, the reviewable-PR guide, and a chat.zulip.org discussion."
+   }
+  },
+  "ranking": [
+   "Q",
+   "J"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"hedged\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Claims the template is filled in, but the self-review checklist does not match Zulip's pull request template.\", \"Claims the PR is ready for review, though nothing addressed what made it \\\"not ready\\\".\"],\n \"rule_failures\": [\"reply_contradicts_key_ask\", \"misses_label_removal\"],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE, as the key requires, but it recommends handing the PR off when the key calls for more feedback.\",\n \"accuracy_why\": \"It misses that the author removed the maintainer's label, wrongly says the template is filled in, and hedges on the missing context, and the hand-off rests on these errors.\",\n \"reply_why\": \"It tells the author the PR looks ready and asks laurynmm to review, which is the opposite of the needed ask.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Implies the PR is clean and ready for review, though the context is still missing and the checklist still doesn't match the template.\"],\n \"rule_failures\": [\"misses_label_removal\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE, as the key requires, but it recommends handing the PR off instead of giving more feedback.\",\n \"accuracy_why\": \"It notes the missing issue and the squash, but misses the label removal and the checklist mismatch, and its readiness verdict rests on these gaps.\",\n \"reply_why\": \"It pings laurynmm for review and only softly asks for an issue link, so it misses the asks about the label, the reviewable-PR guide, and a chat.zulip.org discussion.\"}},\n \"ranking\": [\"Q\", \"J\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.102628
+}

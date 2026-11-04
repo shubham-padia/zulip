@@ -1,0 +1,73 @@
+{
+ "case": "39784-5042031450",
+ "repeat": 1,
+ "map": {
+  "T": [
+   "v3b-r1"
+  ],
+  "I": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Treats the screenshot request as satisfied ('The author added before/after screenshots', 'Thanks for adding the screenshots!'), but the key says they are still not precise paired comparisons."
+    ],
+    "rule_failures": [
+     "reply_misses_ask"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key's kind and action.",
+    "accuracy_why": "It correctly flags the missing #33086 discussion, but it states as fact that the screenshot request was met when it wasn't, and it omits the complexity context and the unconfirmed-push point.",
+    "reply_why": "The reply asks only about #33086 and thanks the author for screenshots that still fail the guidelines, so it misses half of the reply_ask."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "The reply thanks the author for updating the screenshots, implying that request is done when the key says it is still missing."
+    ],
+    "rule_failures": [
+     "reply_misses_ask"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key's kind and action.",
+    "accuracy_why": "It frames the update as the author's claim, quotes the description's 'Related issue' line and notes the unchecked checklist, but it never flags the screenshots as still inadequate and its reply implies they were fixed.",
+    "reply_why": "It correctly asks about #33086 and the AI-policy checklist, but it praises screenshots that still need redoing instead of asking for paired before/after comparisons."
+   }
+  },
+  "ranking": [
+   "I",
+   "T"
+  ]
+ },
+ "text": "{\"outputs\": {\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Treats the screenshot request as satisfied ('The author added before/after screenshots', 'Thanks for adding the screenshots!'), but the key says they are still not precise paired comparisons.\"], \"rule_failures\": [\"reply_misses_ask\"], \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 9, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key's kind and action.\", \"accuracy_why\": \"It correctly flags the missing #33086 discussion, but it states as fact that the screenshot request was met when it wasn't, and it omits the complexity context and the unconfirmed-push point.\", \"reply_why\": \"The reply asks only about #33086 and thanks the author for screenshots that still fail the guidelines, so it misses half of the reply_ask.\"}, \"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"}, \"wrong_facts\": [\"The reply thanks the author for updating the screenshots, implying that request is done when the key says it is still missing.\"], \"rule_failures\": [\"reply_misses_ask\"], \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 8, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key's kind and action.\", \"accuracy_why\": \"It frames the update as the author's claim, quotes the description's 'Related issue' line and notes the unchecked checklist, but it never flags the screenshots as still inadequate and its reply implies they were fixed.\", \"reply_why\": \"It correctly asks about #33086 and the AI-policy checklist, but it praises screenshots that still need redoing instead of asking for paired before/after comparisons.\"}}, \"ranking\": [\"I\", \"T\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.256392
+}
