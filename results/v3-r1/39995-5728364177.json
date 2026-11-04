@@ -1,0 +1,6 @@
+{
+ "case": "39995-5728364177",
+ "answer": "yes",
+ "text": "yes\n\nThe author tagged the maintainer for review, which signals they consider the PR ready to be looked at again, even though they did not answer the maintainer's questions.",
+ "cost_usd": 0.005584
+}

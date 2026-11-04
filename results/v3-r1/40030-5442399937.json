@@ -1,0 +1,6 @@
+{
+ "case": "40030-5442399937",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly says \"ready for review\" (a zulipbot command), signaling they are handing the PR back for maintainer review.",
+ "cost_usd": 0.00371
+}

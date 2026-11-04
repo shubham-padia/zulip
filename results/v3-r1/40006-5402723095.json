@@ -1,0 +1,6 @@
+{
+ "case": "40006-5402723095",
+ "answer": "yes",
+ "text": "yes\nThe author states they finished a pass, verified the relevant behavior, and explicitly says the PR is ready for review, which hands it back to the maintainer.",
+ "cost_usd": 0.004028
+}
