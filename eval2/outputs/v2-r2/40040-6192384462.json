@@ -1,0 +1,11 @@
+{
+ "case": "40040-6192384462",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Link the issue or discussion: the CZO thread is linked in the description and in the author's comment |\n| ✅  | Clean up commit history: now one commit, and the \"Trigger CI\" commit is gone |\n| ❌  | Answer Lauryn's question in the CZO thread (2026-10-08): how was this found, and is it a real problem? The author hasn't replied. |\n| ℹ️  | The \"Fixes:\" line in the description is empty, and there is no linked issue. CI passed. |\n| ℹ️  | The author pinged @sahil839, who isn't assigned to the PR. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to answer the open question in the CZO thread before any reviewer is assigned.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit history and linking the discussion. Could you reply to Lauryn's question in the CZO thread about how you found this and whether you've seen stale previews in practice? Please also fix the empty \"Fixes:\" line in the description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011579200000000001
+}

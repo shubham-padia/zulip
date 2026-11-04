@@ -1,0 +1,11 @@
+{
+ "case": "39927-5276328596",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit message follows Zulip commit style (the pushed commit is now \"compose: Migrate stream missing compose banner.\") |\n| ✅  | Spacing regression between the banner and the recipient row (new push adds a fix in `compose.css`) |\n| ✅  | \"After\" screenshot updated (the description now shows a new \"AFTER new\" image) |\n| ℹ️  | CI passed, no conflicts |\n| ℹ️  | The description says \"Fixes #39794\", but this is only the first banner of a multi-banner issue, so merging would close the whole issue |\n\n**Reviewer:** @karlstolley — gave the feedback and has the most recent commits in these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @karlstolley. Check whether \"Fixes #39794\" should become \"Part of #39794\".\n\n###### Reply\n\n```quote\n@karlstolley, could you take another look at this? The commit message and the spacing fix are both updated.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0106318
+}

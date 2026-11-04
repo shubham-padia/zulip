@@ -1,0 +1,50 @@
+{
+ "case": "40012-5570902524",
+ "cutoff": "2026-09-07T12:51:10Z",
+ "pushes": [
+  [
+   "2026-08-22T21:47:48Z",
+   "d5f24c844b",
+   "ci run"
+  ],
+  [
+   "2026-08-22T22:13:38Z",
+   "5988897773",
+   "force push"
+  ],
+  [
+   "2026-08-22T22:13:43Z",
+   "5988897773",
+   "ci run"
+  ],
+  [
+   "2026-09-08T22:41:31Z",
+   "bf4362f3e3",
+   "force push"
+  ],
+  [
+   "2026-09-08T22:41:36Z",
+   "bf4362f3e3",
+   "ci run"
+  ]
+ ],
+ "head_now": "bf4362f3e3f135caba150ad78978a9325e7e168f",
+ "body_edits": 3,
+ "body_edits_after_cutoff": 0,
+ "title_now": "emails: Don't suggest a password reset for SSO-only realms.",
+ "title_at_cutoff": "emails: Don't suggest a password reset for SSO-only realms.",
+ "labels_now": [
+  "size: L",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "laurynmm"
+ ],
+ "head_at_cutoff": "59888977730020eb41a6470795ef70db471ddce5",
+ "pr_shape": "from compare main...5988897773",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-08-25T11:21:06Z",
+ "head_at_feedback": "59888977730020eb41a6470795ef70db471ddce5",
+ "comments_total": 5,
+ "comments_at_cutoff": 4
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39929-5275974270",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author squashed the earlier commits, including the merge commit and the CI-fix commit, into one commit with the summary line \"settings: Let admins change user email addresses.\" The code and files are unchanged.\n\n|     |         |\n| --- | ------- |\n| ✅  | History is now a single commit, with no merge commit left. |\n| ✅  | Summary line follows Zulip style: area prefix, capitalized, ends with a period. |\n| ✅  | Linked issue #12203 has \"help wanted\" and is assigned to the author. |\n| ⚠️  | CI status isn't available, so check the checks before merging. |\n\n**Reviewer:** karlstolley — gave the feedback and can confirm the history now meets the style bar.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley.\n\n###### Reply\n\n```quote\nThanks for cleaning that up, the history looks good now. @karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011193900000000001
+}

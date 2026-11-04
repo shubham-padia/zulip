@@ -1,0 +1,11 @@
+{
+ "case": "39929-5293011728",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author squashed the history into one commit, dropped the merge commit, and fixed the earlier lint, type and OpenAPI failures. Size is nearly unchanged (+139/-31 in the same 13 files).\n\n|     |         |\n| --- | ------- |\n| ✅  | History cleaned up: one commit, no merge commit or \"fix lint\" follow-up. |\n| ✅  | Summary line follows Zulip style (\"settings: Let admins change user email addresses.\"). |\n| ℹ️  | The author says all 26 checks pass, but CI status isn't available here to confirm. |\n| ⚠️  | The \"How changes were tested\" section describes the change rather than how it was tested. The reviewer may want to ask about this. |\n\n**Reviewer:** @karlstolley — gave the feedback and already knows the PR history.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley.\n\n###### Reply\n\n```quote\n@karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010945700000000001
+}

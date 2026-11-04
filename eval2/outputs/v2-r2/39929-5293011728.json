@@ -1,0 +1,11 @@
+{
+ "case": "39929-5293011728",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Clean up commit history: the 3 commits, including a merge commit, are now 1 commit |\n| ✅  | Match Zulip style: the summary line has an area prefix, a capital letter, and a final period |\n| ℹ️  | CI status isn't in the input. The author says all 26 checks pass. |\n\n**Reviewer:** karlstolley — gave the feedback and can check that it was addressed.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley.\n\n###### Reply\n\n```quote\n@karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010448100000000002
+}

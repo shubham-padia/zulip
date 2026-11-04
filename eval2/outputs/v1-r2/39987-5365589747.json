@@ -1,0 +1,11 @@
+{
+ "case": "39987-5365589747",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed two updates: they added the missing generated bot avatar and squashed everything into one commit, \"integrations: Add Asyntai integration.\" They then commented asking for review.\n\n|     |         |\n| --- | ------- |\n| ✅  | The failing test was caused by the missing bot avatar, and that file is now in the PR. |\n| ✅  | The commits are squashed into one with a proper `integrations:` prefix. |\n| ✅  | The author commented asking for review, as requested. |\n| ℹ️  | CI status isn't visible to the bot, so the \"CI is green\" claim is unverified. Check the checks tab before assigning. |\n\n**Reviewer:** apoorvapendse — gave the original feedback and already knows the PR.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign apoorvapendse.\n\n###### Reply\n\n```quote\n@apoorvapendse, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0091829
+}

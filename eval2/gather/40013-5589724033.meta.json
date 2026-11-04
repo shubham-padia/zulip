@@ -1,0 +1,98 @@
+{
+ "case": "40013-5589724033",
+ "cutoff": "2026-09-08T18:12:27Z",
+ "pushes": [
+  [
+   "2026-08-24T01:42:31Z",
+   "4bc5906ab4",
+   "ci run"
+  ],
+  [
+   "2026-08-24T23:33:57Z",
+   "d85cb54dea",
+   "force push"
+  ],
+  [
+   "2026-08-24T23:34:03Z",
+   "d85cb54dea",
+   "ci run"
+  ],
+  [
+   "2026-08-25T19:09:09Z",
+   "a40bbeb6e0",
+   "force push"
+  ],
+  [
+   "2026-08-25T19:09:14Z",
+   "a40bbeb6e0",
+   "ci run"
+  ],
+  [
+   "2026-08-25T20:12:33Z",
+   "06073ef348",
+   "force push"
+  ],
+  [
+   "2026-08-25T20:12:39Z",
+   "06073ef348",
+   "ci run"
+  ],
+  [
+   "2026-08-25T20:31:52Z",
+   "0b74e926d7",
+   "force push"
+  ],
+  [
+   "2026-08-25T20:31:58Z",
+   "0b74e926d7",
+   "ci run"
+  ],
+  [
+   "2026-09-16T02:33:39Z",
+   "f2bd66767a",
+   "force push"
+  ],
+  [
+   "2026-09-16T02:33:45Z",
+   "f2bd66767a",
+   "ci run"
+  ],
+  [
+   "2026-09-16T02:53:07Z",
+   "f9a379af59",
+   "force push"
+  ],
+  [
+   "2026-09-16T02:53:11Z",
+   "f9a379af59",
+   "ci run"
+  ],
+  [
+   "2026-09-16T03:05:25Z",
+   "d07c22297e",
+   "force push"
+  ],
+  [
+   "2026-09-16T03:05:30Z",
+   "d07c22297e",
+   "ci run"
+  ]
+ ],
+ "head_now": "d07c22297e8b4089e0d96f171d478f7976b9b490",
+ "body_edits": 5,
+ "body_edits_after_cutoff": 1,
+ "title_now": "Enhance bot avatar management with upload, delete, and cropping to match existing user avatar uploads",
+ "title_at_cutoff": "Enhance bot avatar management with upload, delete, and cropping to match existing user avatar uploads",
+ "labels_now": [
+  "size: XL",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "0b74e926d7dfb3287d7e468b0c338729ec73741a",
+ "pr_shape": "from compare main...0b74e926d7",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": null,
+ "head_at_feedback": "4bc5906ab4585b15ab23a877405539c084c95989",
+ "comments_total": 3,
+ "comments_at_cutoff": 1
+}

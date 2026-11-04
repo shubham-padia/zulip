@@ -1,0 +1,11 @@
+{
+ "case": "40030-5442478190",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — squashed into one clean commit, CI passes, and the template is filled in**\n\nNew: The author pushed 5 times and folded the \"Fix patch reference in new unit tests\" fixup into the main commit, so there is now a single commit. The new test is in place and CI passes. Missing: no linked issue, so nothing confirms this bug was meant to be picked up; the maintainer should decide if that matters for a small 500 fix.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who added the \"not ready\" label.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commits, this looks ready for a look now. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0150497
+}

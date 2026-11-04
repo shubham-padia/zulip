@@ -1,0 +1,63 @@
+{
+ "case": "39945-5415679206",
+ "cutoff": "2026-08-25T19:34:00Z",
+ "pushes": [
+  [
+   "2026-08-14T08:56:25Z",
+   "af03108d8e",
+   "ci run"
+  ],
+  [
+   "2026-08-14T09:18:24Z",
+   "8ed14362e5",
+   "ci run"
+  ],
+  [
+   "2026-08-14T10:42:09Z",
+   "c3aad60b08",
+   "force push"
+  ],
+  [
+   "2026-08-14T10:42:14Z",
+   "c3aad60b08",
+   "ci run"
+  ],
+  [
+   "2026-08-15T06:59:17Z",
+   "1489d6c315",
+   "force push"
+  ],
+  [
+   "2026-08-15T06:59:20Z",
+   "1489d6c315",
+   "ci run"
+  ],
+  [
+   "2026-08-21T16:06:57Z",
+   "a0e6892487",
+   "force push"
+  ],
+  [
+   "2026-08-21T16:09:04Z",
+   "a0e6892487",
+   "ci run"
+  ]
+ ],
+ "head_now": "a0e689248714c7bca3d0be0d34d692f32414e5e8",
+ "body_edits": 6,
+ "body_edits_after_cutoff": 0,
+ "title_now": "outgoing_webhook: Split command and text for Slack-compat format.",
+ "title_at_cutoff": "outgoing_webhook: Split command and text for Slack-compat format.",
+ "labels_now": [
+  "size: XL",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "a0e689248714c7bca3d0be0d34d692f32414e5e8",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-08-24T14:57:36Z",
+ "head_at_feedback": "a0e689248714c7bca3d0be0d34d692f32414e5e8",
+ "comments_total": 8,
+ "comments_at_cutoff": 6
+}

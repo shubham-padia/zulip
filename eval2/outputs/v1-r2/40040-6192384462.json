@@ -1,0 +1,11 @@
+{
+ "case": "40040-6192384462",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author linked the CZO discussion in the description and squashed the branch into one commit (the extra \"Trigger CI\" commit is gone). They also reworded the commit message, and CI passed. The code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ✅  | Discussion linked in the PR description, as asked |\n| ✅  | History cleaned up to a single commit |\n| ⚠️  | Lauryn's 2026-10-08 question in the CZO thread (how the issue was found, whether it happens in practice) has no answer. The \"Fixes:\" line is also still empty. |\n| ℹ️  | CI passed |\n\n**Reviewer:** @sahil839 (Sahil Batra) — the author asked for him, and he has made 3 recent commits to these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign sahil839.\n\n###### Reply\n\n```quote\n@sahil839, could you review this? @Jaimin2687, please also reply to Lauryn's question in the CZO thread about how you found this issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0119668
+}

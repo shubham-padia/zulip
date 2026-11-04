@@ -1,0 +1,11 @@
+{
+ "case": "40030-5442478190",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ℹ️  | The \"not ready\" label had no written feedback, so there is no list of requests to check. |\n| ❌  | No linked issue. The description has no \"Fixes: #N\", so we can't check that the issue is labeled \"help wanted\". |\n| ✅  | Test added, and the description says how it was tested. |\n| ✅  | Screenshots are not needed (backend only), and the self-review checklist is filled in. |\n| ✅  | The 5 new pushes were squashed into one commit, and CI passes. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link the issue this fixes. If there is none, or it isn't \"help wanted\", this becomes a close candidate.\n\n###### Reply\n\n```quote\nThanks for the updates, @Prajvalkumar24! Please add the issue this fixes as \"Fixes: #N\" in the description (it needs to be labeled \"help wanted\"). Please also leave the \"not ready\" label to the maintainers; we'll change it once that is sorted out.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0125864
+}

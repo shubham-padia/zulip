@@ -1,0 +1,11 @@
+{
+ "case": "39927-5276328596",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed one new commit. It renames the commit to `compose: Migrate stream missing compose banner.` and adds a `compose.css` change for the banner spacing. The After screenshot was also replaced.\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit title now follows Zulip style (area prefix, imperative, ends with a period), still a single commit |\n| ✅  | Spacing regression addressed with a new `compose.css` change, and a new After screenshot was posted |\n\n**Reviewer:** @karlstolley — gave the feedback and has the most recent commits on these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley.\n\n###### Reply\n\n```quote\nThanks for the update! @karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010429399999999998
+}

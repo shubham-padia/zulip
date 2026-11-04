@@ -1,0 +1,11 @@
+{
+ "case": "40040-6192384462",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both asks from the feedback are done**\n\nNew: The author linked a chat.zulip.org discussion in the PR description and squashed to one commit with a reworded message, and CI passes. Missing: no reply yet to Lauryn's 10-08 question about whether this stale preview was seen in real use or found by reading the code, and the \"Fixes:\" line is still empty.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign sahil839, who has changed these files before and was pinged by the author.\n\n###### Reply\n\n```quote\n@sahil839, could you review this? @Jaimin2687, please also answer Lauryn's question in the chat thread about how you found this issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0232617
+}

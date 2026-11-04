@@ -1,0 +1,11 @@
+{
+ "case": "39987-5365589747",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Fix the failing tests: a new push added the missing bot avatar, and the author says CI is now green |\n| ✅  | Post a comment requesting a review |\n| ⚠️  | Follow the reviewable-PRs guide: the commit is squashed with a proper message and the testing notes are there, but the self-review checklist is not in the description |\n| ℹ️  | CI status isn't available to the bot, so \"CI is green\" is only the author's word |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to add the self-review checklist, then hand it off with \"integration review\" once CI is confirmed green.\n\n###### Reply\n\n```quote\nThanks for the update, @asyntai, the squashed commit and the avatar fix look good. Could you add the self-review checklist to the PR description, as described in the [reviewable PRs guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html)? Then we'll take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014155300000000001
+}

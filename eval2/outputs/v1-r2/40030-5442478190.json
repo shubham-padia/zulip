@@ -1,0 +1,11 @@
+{
+ "case": "40030-5442478190",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author squashed the test fix-up into the single commit (CI passes) and asked for the \"not ready\" label to be removed. No description or linked-issue changes were made, and the label came with no written feedback.\n\n|     |         |\n| --- | ------- |\n| ✅  | Fix-up commit squashed into one commit; CI passes |\n| ❌  | No linked issue (\"Fixes: #N\"), so we can't confirm it's \"help wanted\"; the author has no merged PRs |\n| ⚠️  | Description doesn't say which malformed `field_data` caused the 500 or how the fix handles it |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link an existing \"help wanted\" issue, or open one for triage, and to improve the description.\n\n###### Reply\n\n```quote\nThanks for tidying up the commits! Before this can go to review, please link the issue this fixes with \"Fixes: #N\" (it needs to be labeled \"help wanted\"), and expand the description to say which malformed `field_data` caused the 500 and how it's now handled. See [making reviewable PRs](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) for details.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011014
+}
