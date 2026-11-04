@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested precise before/after screenshots were added**\n\nNew: The author replaced the screenshots in the PR description with a new before/after pair, both the same size (1861x102), as the guide asks. Missing: only one pair is shown, so the pill-wrapping and zoomed-out cases, where the earlier attempt broke centering, aren't visible.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at the updated screenshots?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0536994
+}

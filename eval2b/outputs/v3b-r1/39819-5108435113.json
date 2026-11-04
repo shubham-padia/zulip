@@ -1,0 +1,11 @@
+{
+ "case": "39819-5108435113",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the screenshot feedback is addressed in the description**\n\nNew: The description now groups before/after screenshots by test, with captions and a result for each; there is no new code push. Missing: the author's own Test 2 shows a muted message that was revealed still doesn't go back to collapsed.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who asked for the screenshots.\n\n###### Reply\n\n```quote\n@laurynmm, the screenshots are now laid out as before/after for each test. Could you take another look? The author notes that Test 2 (collapse, then mute, then reveal) still isn't fully fixed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0488234
+}

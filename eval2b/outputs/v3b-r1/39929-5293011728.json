@@ -1,0 +1,11 @@
+{
+ "case": "39929-5293011728",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — commit cleanup is done**\n\nNew: The two extra commits (the merge commit and the CI-fix commit) are gone, leaving one commit with a Zulip-style summary line, \"settings: Let admins change user email addresses.\" Missing: nothing the feedback asked for.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @karlstolley, who gave the feedback, or another core contributor who works on these settings files.\n\n###### Reply\n\n```quote\nThanks for cleaning up the history, @karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.028585399999999997
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39785-5037857009",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots asked for were added**\n\nNew: The author posted a before/after dark mode screenshot comparison, which was the only thing the latest feedback asked for, and had already filled in the PR template. Missing: the description has no \"Fixes: #N\" line, though open issue #38931 looks related.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.020051399999999997
+}

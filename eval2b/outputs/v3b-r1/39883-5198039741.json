@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the self-review checklist is incomplete and the overlap with other open PRs isn't explained**\n\nNew: The author pushed twice and added two fixture tests (tab-indented nested list, tab-indented code block). The description now covers the problem, the fix, and the tests. Missing: the AI use policy box is still unchecked, and there's no explanation of how this differs from #39598 (already in maintainer review), #39280, or #39881 (tabs in fenced code blocks).\n\n###### Next step\n\nKeep \"not ready\" and don't assign anyone yet. Ask the author to finish the checklist and compare this PR with the other open ones.\n\n###### Reply\n\n```quote\nThanks for adding the tests! Before we review, please finish the self-review checklist (the AI use policy item is still unchecked), and add a note on how this differs from #39598, which is already in maintainer review. See the [guide on making PRs reviewable](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.045487400000000004
+}

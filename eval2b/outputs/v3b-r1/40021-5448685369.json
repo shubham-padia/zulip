@@ -1,0 +1,11 @@
+{
+ "case": "40021-5448685369",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both points of the feedback addressed**\n\nNew: The author pushed twice, with a new before/after showing a genuinely long name, `max-width` changed from 150px to 15em, and a description section comparing the approach with #39049, #39829 and #39768. Missing: the \"fix:\" and \"css(reactions):\" follow-up commits should be squashed into the main commit, and the unrelated font-weight change dropped.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign emilysutherlin, who gave the feedback.\n\n###### Reply\n\n```quote\n@emilysutherlin, could you take another look at this? The author updated the screenshots and added a comparison with the other open PRs.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0590414
+}

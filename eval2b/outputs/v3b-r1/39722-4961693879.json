@@ -1,0 +1,11 @@
+{
+ "case": "39722-4961693879",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — requested commit and screenshot fixes not visible**\n\nNew: One push since the feedback, but commit messages are unchanged and the PR description still has \"Fixes part of: #16094\" and the earlier screenshots. Missing: the commit message fixes (drop \"Fixes a part of\", put \"Fixes: #16094\" after the description in the last commit) and tightly cropped before/after screenshots.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet.\n\n###### Reply\n\n```quote\nThanks for the update! I don't see the commit messages changed yet: please remove \"Fixes a part of\" from them and put \"Fixes: #16094\" after the description in the last commit, per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages). The screenshots also still need to be [precise before/after crops](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.050274
+}

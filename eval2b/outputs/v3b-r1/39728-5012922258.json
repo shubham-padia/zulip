@@ -1,0 +1,11 @@
+{
+ "case": "39728-5012922258",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the PR template checklist and commit cleanup are still missing**\n\nNew: The author added a regression test case and posted before/after screenshots in a comment. Missing: the description still uses a custom self-review checklist instead of the one from the PR template, and the history still has fix-up commits (\"Fixes #17419\", \"fixed linting error to pass CI\") that aren't squashed into the commits they belong to.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet.\n\n###### Reply\n\n```quote\nThanks for adding the test and screenshots! Please replace the self-review checklist in the description with the one from the PR template, and squash the fix-up commits into well-formed commits following our [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.06983
+}

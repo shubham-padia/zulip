@@ -1,0 +1,11 @@
+{
+ "case": "40040-6192384462",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — maintainer's question about the change is unanswered**\n\nNew: Linked the CZO discussion and squashed the history to one commit with a cleaned-up message, so both items from the feedback are done. Missing: no reply yet to the question in the CZO thread about how this was found and whether stale previews are a real problem, and the \"Fixes:\" line in the description is still empty.\n\n###### Next step\n\nKeep \"not ready\" and leave it unassigned for now; @laurynmm, who gave the feedback and asked the open question, can take another look once the author answers.\n\n###### Reply\n\n```quote\nThanks for the cleanup, the history and discussion link look good. Before we review, please answer Lauryn's question in the CZO thread about how you found this and whether stale previews are a real problem, and fill in the empty \"Fixes:\" line in the description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.025567399999999997
+}
