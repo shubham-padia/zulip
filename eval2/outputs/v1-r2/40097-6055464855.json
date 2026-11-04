@@ -1,0 +1,11 @@
+{
+ "case": "40097-6055464855",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed 12 times since the \"not ready\" label, which came with no written feedback. The PR now has a second commit that fixes the gitea test, and the author says the issue-vs-PR comment mix-up they found has been fixed.\n\n|     |         |\n| --- | ------- |\n| ✅  | Template is filled in: description, how it was tested (on a live Forgejo instance), before/after screenshots, self-review checklist. |\n| ✅  | CI passes, and the gitea test for PR comments was updated to match the new behavior. |\n| ⚠️  | There is no linked issue; \"Fixes:\" is free text, so the \"help wanted\" rule can't be checked. |\n| ℹ️  | The same author has an open PR, #40096 (gogs PR topic title), in the same area. A reviewer should check the two don't overlap. |\n\n**Reviewer:** laurynmm — added the \"not ready\" label and is the person the author asked to review.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? Also, @Alexis211, please note how this relates to #40096 so the two PRs don't overlap.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011484499999999998
+}

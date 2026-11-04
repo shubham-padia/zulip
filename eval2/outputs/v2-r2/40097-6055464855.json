@@ -1,0 +1,11 @@
+{
+ "case": "40097-6055464855",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "CARD",
+ "text": "CARD\n**Ready for review**\n\nComments on pull requests from Gogs, Gitea and Forgejo should now show the right topic and message. Before, they looked like comments on an issue. The author tested this on a Forgejo instance and posted before and after screenshots.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | There were 12 new pushes since the \"not ready\" label, which came with no written feedback. The PR now has 2 files and 2 commits, including a fix to the Gitea test for PR comments. |\n| ✅  | The Gogs view now tells PR comments apart from issue comments. The author fixed the opposite bug (issue comments wrongly shown as PR comments) that they reported on 2026-09-08. |\n| ✅  | The description, how it was tested, screenshots and self-review checklist are filled in. CI passed. |\n| ⚠️  | The author says the check may not work if the Gogs or Gitea payload format has changed. Gogs has no `is_pull` field, so this check is the only option there. |\n| ℹ️  | The same author has an open PR, #40096, on the Gogs integration (topic title for pull requests). It may touch the same code. |\n\n**Reviewer:** @laurynmm — added the \"not ready\" label, and the author asked them for review. Niloth P has also changed these files recently.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.015016900000000001
+}

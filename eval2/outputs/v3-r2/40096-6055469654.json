@@ -1,0 +1,11 @@
+{
+ "case": "40096-6055469654",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — test fixes are in separate commits instead of the commit they belong to**\n\nNew: The author pushed 3 times since the label: the gogs view fix, a revert of the earlier fake Gitea fixture data, and corrected tests. CI passes and nobody has looked since. Missing: The first commit changes the view without updating the tests, so it fails on its own. The test fixes and the fixture revert should be folded into the commits they belong to.\n\n###### Next step\n\n\"not ready\" stays; no reviewer yet, and laurynmm (who added the label) can take it once the commits are cleaned up.\n\n###### Reply\n\n```quote\nThanks for the fix and for tracking down the bad test data! Could you reorganize the commits so each one passes tests on its own (e.g. the view change and its test updates together, and the fixture revert before the tests that depend on it)? See the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html), and then we'll get it reviewed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0091835
+}

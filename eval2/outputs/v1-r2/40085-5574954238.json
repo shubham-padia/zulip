@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close**\n\nThe author replaced the screenshot links in the description with public URLs and added two Before/After pairs. There was no new push, and none was needed for this feedback.\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise Before/After screenshots are now in the description (rows with avatars, and text-only slash-command rows), but I couldn't open the links to check them |\n| ❌  | The linked issue #37030 no longer has \"help wanted\"; it was removed on 2026-09-04 because the work \"requires discussion\" |\n| ❌  | The author has no merged PRs, and this PR doesn't continue a \"completion candidate\" PR |\n| ℹ️  | The plan the PR \"follows\" on #37030 has no maintainer reply, so no one approved it |\n\n###### Next step\n\nClose the PR, since the issue is not open to contributors, with `gh pr close 40085`.\n\n###### Reply\n\n```quote\nThanks for the PR and the screenshots. We're closing this because #37030 no longer has the \"help wanted\" label (it was removed as the approach needs discussion), and we only accept contributor PRs for issues with that label.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013089700000000001
+}

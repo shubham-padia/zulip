@@ -1,0 +1,11 @@
+{
+ "case": "40096-6055469654",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nPull request topics from Gogs, Gitea and Forgejo showed an internal ID instead of the real PR number. This changes the topic to use the real number. It also fixes the tests, which had mismatched PR numbers, and restores a Gitea test fixture that had been altered.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the \"not ready\" label, the PR grew from +1/-1 in 1 file to +18/-18 in 4 files and from 1 to 3 commits. It now includes Gitea test and fixture changes. |\n| ✅  | The fix uses the `number` field, with before/after screenshots from a Forgejo instance. The template and self-review checklist are filled in, and CI passes. |\n| ⚠️  | The test fixes are in a separate last commit instead of the commit they belong to, so the first commit changes the view without updating its tests. |\n| ⚠️  | Only tested on Forgejo; the author says Gogs and Gitea were not tested. |\n\n**Reviewer:** Niloth P — changed these files most often in the last year (5 commits), once the commits are cleaned up.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fold the test fixes into the commits they belong to.\n\n###### Reply\n\n```quote\nThanks for the update, @Alexis211! Could you fold the test fixes into the commits they belong to, so each commit passes tests on its own? See the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). Then we'll take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0208285
+}

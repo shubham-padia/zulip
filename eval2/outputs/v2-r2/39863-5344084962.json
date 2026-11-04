@@ -1,0 +1,11 @@
+{
+ "case": "39863-5344084962",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit message matches Zulip style: the title now has the `drafts:` prefix, a capital letter and a final period |\n| ✅  | Screencast is in the main PR description (earlier request from laurynmm) |\n| ℹ️  | The description says `Fixes: issue-#39005`, not `Fixes: #39005`, so GitHub doesn't link the issue. Please check that the issue has \"help wanted\". |\n| ℹ️  | PR #39959 is open with a similar title (\"message overlays: Enable keyboard navigation for row action buttons\"). It may overlap. |\n\n**Reviewer:** laurynmm — gave the earlier feedback and is already following this PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\" and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? @spacesyntaxwho, please also change the description to `Fixes: #39005` so the issue links properly.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0137548
+}

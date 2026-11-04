@@ -1,0 +1,11 @@
+{
+ "case": "39865-5194201765",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author edited the PR description to add before/after screenshots for each UI change. There was no new push, so the code is the same as when the feedback was given.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after screenshots were added to the description for the hint, typeahead and validation errors. |\n| ℹ️  | Each before/after pair has a slightly different window size (1918x903 vs 1916x885), so they are not strictly precise. |\n| ❌  | The approach is still being decided on chat.zulip.org. Sahil Batra wants the API to accept any casing and normalize it, but this PR rejects uppercase. The author said they will follow whichever approach he prefers. |\n| ⚠️  | The PR says \"Fixes #39847\", which has no \"help wanted\" label. #24044 does have it, and the author is assigned there. This is a single commit touching 14 files, so it may need splitting under the commit discipline guide. |\n\n###### Next step\n\nKeep \"not ready\" until Sahil Batra confirms the approach, then ask the author to update the PR and split it into coherent commits.\n\n###### Reply\n\n```quote\nThanks for adding the before/after screenshots. Before this can move to review, we need @sahil839 to confirm which approach to take (reject uppercase vs. normalize in the API), so please settle that on the CZO thread and update the PR to match. Also please split the work into coherent commits per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0154259
+}

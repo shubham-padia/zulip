@@ -1,0 +1,11 @@
+{
+ "case": "40096-6055469654",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed two new commits: one reverts a fixture that had been altered earlier, and one fixes tests with inconsistent PR numbers. CI now passes, and the author asked for review again after about a month with no reply.\n\n|     |         |\n| --- | ------- |\n| ✅  | The one-line fix is in place. The topic now uses `number` instead of `id`, and the before/after screenshots show the right PR number. |\n| ✅  | Tests and fixtures were corrected in the follow-up commits, and CI passed. |\n| ✅  | The PR template is filled in, with a description, how it was tested, and the self-review checklist. |\n| ℹ️  | Only tested on Forgejo, not on Gogs or Gitea. The author says the repo's existing Gogs and Gitea fixtures confirm `number` is the right field. |\n\n**Reviewer:** @laurynmm — added the \"not ready\" label, and the author is asking for their review.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0091961
+}

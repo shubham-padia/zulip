@@ -1,0 +1,11 @@
+{
+ "case": "39862-5398202815",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots: the description now has three Before/After tables |\n| ✅  | Self-review checklist restored to the PR template format |\n| ✅  | Wrong top-left screenshot replaced, as the author reported |\n| ✅  | Screenshots posted in the #design thread; Daniel K said \"I think these look good!\" and chose the text-only card |\n| ℹ️  | One new push since the feedback (+8 lines), with the same single commit. Nobody asked for it, so a reviewer should check it. |\n| ℹ️  | CI status is unknown. The author says checks pass, but the input has no check runs. |\n| ℹ️  | Issue #39831 has no \"help wanted\" label, but a maintainer (emilysutherlin) assigned it to the author, so this is not a close case. |\n\n**Reviewer:** @laurynmm — gave the feedback on this PR and has recently changed these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", assign @laurynmm, and consider dropping \"design review\" since the design is approved.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The screenshots and checklist are fixed, and the text-only card design was approved in the #design thread.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0185894
+}

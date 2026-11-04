@@ -1,0 +1,11 @@
+{
+ "case": "39863-5344084962",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — commit message was reworded and the earlier feedback is addressed**\n\nNew: The author pushed a new commit with the title \"drafts: Preserve focus on draft action controls.\", which follows the commit style, and CI passes. Missing: nothing blocking. The PR description's \"Fixes: issue-#39005\" isn't the standard \"Fixes: #39005\" form, which a reviewer can mention.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the earlier feedback and reviewed the screencast.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The commit message has been updated.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0100998
+}

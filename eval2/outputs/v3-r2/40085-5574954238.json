@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — linked issue no longer has \"help wanted\", and the author has no merged PRs**\n\nNew: The author replaced the screenshot links and edited the description, with no new code push. Missing: Issue #37030 had \"help wanted\" dropped on 2026-09-04 because it needs discussion, and it is now marked \"core team candidate\". The screenshots are therefore moot, since contributors may only work on \"help wanted\" issues.\n\n###### Next step\n\nClose the PR, since the issue is not open to contributors: `gh pr close 40085`.\n\n###### Reply\n\n```quote\nThanks for the PR and for updating the screenshots. We're closing this because #37030 no longer has the \"help wanted\" label (it needs discussion first), and we only accept contributor PRs for issues with that label.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0082571
+}

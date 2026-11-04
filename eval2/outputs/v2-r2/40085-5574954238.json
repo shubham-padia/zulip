@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close**\n\n|     |         |\n| --- | ------- |\n| ℹ️ | The linked issue #37030 no longer has \"help wanted\". A maintainer removed it on 2026-09-04 because the issue needs discussion. The author has no merged PRs, and this isn't a \"completion candidate\" PR. |\n| ✅ | Screenshots the maintainer couldn't open: the description now has before/after pairs at new URLs. |\n| ⚠️ | Screenshots documenting the manual testing: only two layout states are shown. The 12px and 20px font-size checks have no screenshots. |\n| ℹ️ | No new push since the feedback, and CI status is unknown. |\n\n###### Next step\n\nKeep \"not ready\" off the table and close the PR, because the issue is no longer open for contributors: `gh pr close 40085`\n\n###### Reply\n\n```quote\nThanks for the work here, but we're closing this PR because the linked issue #37030 no longer has the \"help wanted\" label (it needs more discussion first), and we only accept contributor PRs for issues with that label.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.009112100000000001
+}

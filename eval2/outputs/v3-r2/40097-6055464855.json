@@ -1,0 +1,11 @@
+{
+ "case": "40097-6055464855",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the author fixed the follow-up bug they found, and CI passes**\n\nNew: The author pushed 12 times since the label was added, fixing the reverse problem (issue comments wrongly shown as PR comments) and correcting a Gitea test. Missing: no linked issue, and it's unclear how this relates to the author's other open PR #40096, which also touches the Gogs topic title.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign laurynmm, who labeled it and was pinged (Niloth P, who changed these files recently, is an alternative).\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? Also, @Alexis211, please note in the description how this relates to #40096 so we can see whether the two overlap.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0098919
+}
