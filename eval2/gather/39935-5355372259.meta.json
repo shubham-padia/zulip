@@ -1,0 +1,109 @@
+{
+ "case": "39935-5355372259",
+ "cutoff": "2026-08-20T11:41:48Z",
+ "pushes": [
+  [
+   "2026-08-12T16:12:57Z",
+   "44fdfbb29a",
+   "ci run"
+  ],
+  [
+   "2026-08-12T17:52:02Z",
+   "e158d0cd67",
+   "force push"
+  ],
+  [
+   "2026-08-12T17:52:07Z",
+   "e158d0cd67",
+   "ci run"
+  ],
+  [
+   "2026-08-12T17:57:59Z",
+   "07eda87453",
+   "force push"
+  ],
+  [
+   "2026-08-12T17:58:03Z",
+   "07eda87453",
+   "ci run"
+  ],
+  [
+   "2026-08-12T18:35:00Z",
+   "cce8ebf0e7",
+   "ci run"
+  ],
+  [
+   "2026-08-12T19:47:54Z",
+   "2e43e6ac47",
+   "ci run"
+  ],
+  [
+   "2026-08-13T04:22:02Z",
+   "ab15ea7299",
+   "force push"
+  ],
+  [
+   "2026-08-13T04:22:06Z",
+   "ab15ea7299",
+   "ci run"
+  ],
+  [
+   "2026-08-13T05:02:17Z",
+   "3c9a119a92",
+   "force push"
+  ],
+  [
+   "2026-08-13T05:02:21Z",
+   "3c9a119a92",
+   "ci run"
+  ],
+  [
+   "2026-08-13T07:00:36Z",
+   "15dda2959f",
+   "force push"
+  ],
+  [
+   "2026-08-13T07:00:40Z",
+   "15dda2959f",
+   "ci run"
+  ],
+  [
+   "2026-08-13T07:27:37Z",
+   "77a0b612e1",
+   "force push"
+  ],
+  [
+   "2026-08-13T07:27:42Z",
+   "77a0b612e1",
+   "ci run"
+  ],
+  [
+   "2026-08-13T07:54:46Z",
+   "0ef464b684",
+   "force push"
+  ],
+  [
+   "2026-08-13T07:54:52Z",
+   "0ef464b684",
+   "ci run"
+  ]
+ ],
+ "head_now": "0ef464b6847aeeb79fcd7d564359c5226559853a",
+ "body_edits": 8,
+ "body_edits_after_cutoff": 0,
+ "title_now": "left_sidebar: Add a filter for checking followed topics.",
+ "title_at_cutoff": "left_sidebar: Add a filter for checking followed topics.",
+ "labels_now": [
+  "size: XL",
+  "changes requested",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "0ef464b6847aeeb79fcd7d564359c5226559853a",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "karlstolley 2026-08-14T21:29:44Z",
+ "head_at_feedback": "0ef464b6847aeeb79fcd7d564359c5226559853a",
+ "comments_total": 5,
+ "comments_at_cutoff": 4
+}

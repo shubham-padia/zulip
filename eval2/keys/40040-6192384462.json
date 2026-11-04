@@ -1,0 +1,58 @@
+{
+ "case": "40040-6192384462",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author did the asked-for cleanup and wants a review, so a triager needs to decide what happens next; the approach, files and commit are unchanged, so a new card is not warranted.",
+  "triager_action": "close",
+  "action_source": "observed",
+  "action_why": "sahil839 closed the PR unmerged on 2026-10-19, explaining that the function only sets description metadata for API docs and policy pages, not link previews, and that hashing the content (which contains a random placeholder) would stop the cache from ever being hit.",
+  "changed": [
+   "The author started a #backend CZO thread and linked it in the PR description.",
+   "The author squashed the history into a single commit.",
+   "The author rewrote the commit message to explain the motivation."
+  ],
+  "still_missing": [
+   "The author has not answered Lauryn Menard's 2026-10-08 CZO question about whether this was found by reading code or with an AI tool, or from a real stale preview.",
+   "No maintainer has agreed in CZO that the problem is real or worth fixing; Lauryn noted the feature is not turned on in the community.",
+   "The PR description's \"Fixes:\" line still names no issue, and no evidence shows the change fixes a user-visible problem."
+  ],
+  "reply_ask": "Ask the author to answer Lauryn's CZO question about whether this fixes a stale preview anyone has actually hit, and to show where open_graph_description_cache_key is used, before anyone reviews it.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says Lauryn Menard's CZO question (whether this was found by reading code or with an AI tool, or from a real stale preview) is still unanswered.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says no maintainer has agreed the problem is worth fixing, and notes Lauryn said the feature is not turned on in the community.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recognizes the change is doubtful on the merits: the cached function serves description metadata for API docs and policy pages, not general link previews, and hashing content containing a random placeholder would defeat the cache.",
+    "decisive": true,
+    "at_cutoff": false
+   },
+   {
+    "id": "f4",
+    "fact": "Says the asks from the feedback (link a CZO discussion, clean up the commit history) are done.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Does not recommend handing off to sahil839 or another reviewer and keeps \"not ready\" or suggests closing.",
+    "decisive": true,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author did the asked-for cleanup and wants a review, so a triager needs to decide what happens next; the approach, files and commit are unchanged, so a new card is not warranted.\",\n \"triager_action\": \"close\",\n \"action_source\": \"observed\",\n \"action_why\": \"sahil839 closed the PR unmerged on 2026-10-19, explaining that the function only sets description metadata for API docs and policy pages, not link previews, and that hashing the content (which contains a random placeholder) would stop the cache from ever being hit.\",\n \"changed\": [\"The author started a #backend CZO thread and linked it in the PR description.\", \"The author squashed the history into a single commit.\", \"The author rewrote the commit message to explain the motivation.\"],\n \"still_missing\": [\"The author has not answered Lauryn Menard's 2026-10-08 CZO question about whether this was found by reading code or with an AI tool, or from a real stale preview.\", \"No maintainer has agreed in CZO that the problem is real or worth fixing; Lauryn noted the feature is not turned on in the community.\", \"The PR description's \\\"Fixes:\\\" line still names no issue, and no evidence shows the change fixes a user-visible problem.\"],\n \"reply_ask\": \"Ask the author to answer Lauryn's CZO question about whether this fixes a stale preview anyone has actually hit, and to show where open_graph_description_cache_key is used, before anyone reviews it.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says Lauryn Menard's CZO question (whether this was found by reading code or with an AI tool, or from a real stale preview) is still unanswered.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says no maintainer has agreed the problem is worth fixing, and notes Lauryn said the feature is not turned on in the community.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recognizes the change is doubtful on the merits: the cached function serves description metadata for API docs and policy pages, not general link previews, and hashing content containing a random placeholder would defeat the cache.\", \"decisive\": true, \"at_cutoff\": false},\n  {\"id\": \"f4\", \"fact\": \"Says the asks from the feedback (link a CZO discussion, clean up the commit history) are done.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Does not recommend handing off to sahil839 or another reviewer and keeps \\\"not ready\\\" or suggests closing.\", \"decisive\": true, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.092308
+}

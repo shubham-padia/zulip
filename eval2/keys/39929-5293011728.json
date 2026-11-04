@@ -1,0 +1,58 @@
+{
+ "case": "39929-5293011728",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author did what the triager asked by squashing the history into one Zulip-style commit, so the triager needs a short note to decide on hand-off; nothing changed enough to need a new card.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-08-26 karlstolley removed \"not ready\", added \"maintainer review\" and assigned sahil839.",
+  "changed": [
+   "Squashed the three commits, including a merge commit and a CI-fix commit, into a single commit.",
+   "Rewrote the commit summary line in Zulip style: \"settings: Let admins change user email addresses.\"",
+   "Folded the lint, TypeScript and OpenAPI example fixes into that commit (+131 to +139 lines, same 13 files).",
+   "Says all 26 CI checks now pass, though the bot cannot verify CI."
+  ],
+  "still_missing": [
+   "The API change edits zulip.yaml but the file list shows no API changelog or feature-level entry.",
+   "CI status is unconfirmed because the check runs aren't available to the bot."
+  ],
+  "reply_ask": "Thank the author for cleaning up the history and tell them the PR is moving to maintainer review with a reviewer assigned.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the requested cleanup is done: the history is now one commit with a Zulip-style summary line and no merge commit.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends handing off: remove \"not ready\" and add \"maintainer review\".",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Suggests Sahil Batra (sahil839) as the reviewer, as the top recent committer to these files.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Flags that the API change seems to lack an API changelog or feature-level entry.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that CI passing is only the author's claim and could not be verified.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author did what the triager asked by squashing the history into one Zulip-style commit, so the triager needs a short note to decide on hand-off; nothing changed enough to need a new card.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-08-26 karlstolley removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned sahil839.\",\n \"changed\": [\n  \"Squashed the three commits, including a merge commit and a CI-fix commit, into a single commit.\",\n  \"Rewrote the commit summary line in Zulip style: \\\"settings: Let admins change user email addresses.\\\"\",\n  \"Folded the lint, TypeScript and OpenAPI example fixes into that commit (+131 to +139 lines, same 13 files).\",\n  \"Says all 26 CI checks now pass, though the bot cannot verify CI.\"\n ],\n \"still_missing\": [\n  \"The API change edits zulip.yaml but the file list shows no API changelog or feature-level entry.\",\n  \"CI status is unconfirmed because the check runs aren't available to the bot.\"\n ],\n \"reply_ask\": \"Thank the author for cleaning up the history and tell them the PR is moving to maintainer review with a reviewer assigned.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the requested cleanup is done: the history is now one commit with a Zulip-style summary line and no merge commit.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends handing off: remove \\\"not ready\\\" and add \\\"maintainer review\\\".\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Suggests Sahil Batra (sahil839) as the reviewer, as the top recent committer to these files.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Flags that the API change seems to lack an API changelog or feature-level entry.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes that CI passing is only the author's claim and could not be verified.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.127224
+}

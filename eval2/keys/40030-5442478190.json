@@ -1,0 +1,57 @@
+{
+ "case": "40030-5442478190",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author used zulipbot to remove a \"not ready\" label a maintainer had just added, and no maintainer is assigned, so the triager needs to see it and respond.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm re-added \"not ready\" and told the author to follow the reviewable-PR guide and not to remove maintainer labels; later she asked for context from an issue or community discussion.",
+  "changed": [
+   "The author force-pushed five times and squashed the two commits into one, so the PR went from +49/-4 to +38/-4 in the same two files.",
+   "The author removed the \"not ready\" label through zulipbot instead of asking for another look."
+  ],
+  "still_missing": [
+   "There is no linked issue or chat.zulip.org discussion explaining the bug and why this fix is wanted.",
+   "The description is thin, and its self-review checklist does not match Zulip's pull request template.",
+   "Nothing shows the author addressed whatever made the PR \"not ready\"; only the commits were squashed."
+  ],
+  "reply_ask": "Ask the author not to remove labels that maintainers add, to follow the guide on submitting reviewable PRs, and to give context by linking a tracked issue or starting a chat.zulip.org discussion.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author removed the maintainer-added \"not ready\" label themselves with zulipbot, and that the label should be restored and the author asked not to do this.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the PR has no linked issue or chat.zulip.org discussion giving context for the fix.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping \"not ready\" and giving more feedback rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Says the only code change since the label was squashing two commits into one in the same files, with no substantive change.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that the description's self-review checklist does not match Zulip's pull request template.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author used zulipbot to remove a \\\"not ready\\\" label a maintainer had just added, and no maintainer is assigned, so the triager needs to see it and respond.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm re-added \\\"not ready\\\" and told the author to follow the reviewable-PR guide and not to remove maintainer labels; later she asked for context from an issue or community discussion.\",\n \"changed\": [\"The author force-pushed five times and squashed the two commits into one, so the PR went from +49/-4 to +38/-4 in the same two files.\", \"The author removed the \\\"not ready\\\" label through zulipbot instead of asking for another look.\"],\n \"still_missing\": [\"There is no linked issue or chat.zulip.org discussion explaining the bug and why this fix is wanted.\", \"The description is thin, and its self-review checklist does not match Zulip's pull request template.\", \"Nothing shows the author addressed whatever made the PR \\\"not ready\\\"; only the commits were squashed.\"],\n \"reply_ask\": \"Ask the author not to remove labels that maintainers add, to follow the guide on submitting reviewable PRs, and to give context by linking a tracked issue or starting a chat.zulip.org discussion.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author removed the maintainer-added \\\"not ready\\\" label themselves with zulipbot, and that the label should be restored and the author asked not to do this.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the PR has no linked issue or chat.zulip.org discussion giving context for the fix.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping \\\"not ready\\\" and giving more feedback rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Says the only code change since the label was squashing two commits into one in the same files, with no substantive change.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes that the description's self-review checklist does not match Zulip's pull request template.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.082572
+}

@@ -1,0 +1,58 @@
+{
+ "case": "39927-5276328596",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered both asks with a new push that adds a CSS fix and renames the commit, and the PR has no assigned reviewer, so a triager needs to see it; the approach and files are unchanged, so the first card still holds.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-08-14 karlstolley removed \"not ready\", added \"maintainer review\" and assigned himself.",
+  "changed": [
+   "The commit was renamed from \"Migrate stream missing compose banner\" to the Zulip-style \"compose: Migrate stream missing compose banner.\"",
+   "web/styles/compose.css was added to the PR (+4 lines) to fix the spacing regression between the banner and the recipient row.",
+   "The author says the After screenshot was updated to show the fix."
+  ],
+  "still_missing": [
+   "The Before (1261×629) and After (2520×1274) screenshots are still different sizes, so they are not precise matching before/after shots.",
+   "The PR description has no Zulip self-review checklist.",
+   "The description says \"Fixes #39794\" even though this PR is only the first incremental banner migration in that issue."
+  ],
+  "reply_ask": "Thank the author, say the PR is moving to maintainer review with karlstolley, and ask them to recapture the Before and After screenshots at the same size and content.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author addressed both feedback points: the commit now uses Zulip style (\"compose: ...\") and a compose.css change was pushed to fix the banner/recipient-row spacing.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends handing off: remove \"not ready\" and add \"maintainer review\".",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Names karlstolley, who gave the feedback and is the top recent contributor to these files, as the reviewer.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the Before and After screenshots are still different sizes (1261×629 vs 2520×1274).",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that the PR description is missing the Zulip self-review checklist.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered both asks with a new push that adds a CSS fix and renames the commit, and the PR has no assigned reviewer, so a triager needs to see it; the approach and files are unchanged, so the first card still holds.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-08-14 karlstolley removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned himself.\",\n \"changed\": [\n  \"The commit was renamed from \\\"Migrate stream missing compose banner\\\" to the Zulip-style \\\"compose: Migrate stream missing compose banner.\\\"\",\n  \"web/styles/compose.css was added to the PR (+4 lines) to fix the spacing regression between the banner and the recipient row.\",\n  \"The author says the After screenshot was updated to show the fix.\"\n ],\n \"still_missing\": [\n  \"The Before (1261×629) and After (2520×1274) screenshots are still different sizes, so they are not precise matching before/after shots.\",\n  \"The PR description has no Zulip self-review checklist.\",\n  \"The description says \\\"Fixes #39794\\\" even though this PR is only the first incremental banner migration in that issue.\"\n ],\n \"reply_ask\": \"Thank the author, say the PR is moving to maintainer review with karlstolley, and ask them to recapture the Before and After screenshots at the same size and content.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author addressed both feedback points: the commit now uses Zulip style (\\\"compose: ...\\\") and a compose.css change was pushed to fix the banner/recipient-row spacing.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends handing off: remove \\\"not ready\\\" and add \\\"maintainer review\\\".\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Names karlstolley, who gave the feedback and is the top recent contributor to these files, as the reviewer.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the Before and After screenshots are still different sizes (1261×629 vs 2520×1274).\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes that the PR description is missing the Zulip self-review checklist.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.155424
+}

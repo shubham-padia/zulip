@@ -1,0 +1,48 @@
+{
+ "case": "39987-5365589747",
+ "cutoff": "2026-08-21T05:29:10Z",
+ "pushes": [
+  [
+   "2026-08-20T08:01:45Z",
+   "9ae15dacdb",
+   "ci run"
+  ],
+  [
+   "2026-08-20T18:38:53Z",
+   "c891af5fc4",
+   "ci run"
+  ],
+  [
+   "2026-08-21T04:50:48Z",
+   "9aed0d2478",
+   "force push"
+  ],
+  [
+   "2026-08-21T04:50:54Z",
+   "9aed0d2478",
+   "ci run"
+  ],
+  [
+   "2026-10-13T04:18:29Z",
+   "dc6022e369",
+   "ci run"
+  ]
+ ],
+ "head_now": "dc6022e369e4a07111a99046df78d19c3b628631",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 1,
+ "title_now": "integrations: Add Asyntai integration.",
+ "title_at_cutoff": "integrations: Add Asyntai integration.",
+ "labels_now": [
+  "size: M",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "9aed0d2478ff8ab226f83adaff2336dee87fecd8",
+ "pr_shape": "from compare main...9aed0d2478",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "apoorvapendse 2026-08-20T18:29:15Z",
+ "head_at_feedback": "9ae15dacdbc37faba3f55b757274b2f27349fdc5",
+ "comments_total": 4,
+ "comments_at_cutoff": 2
+}

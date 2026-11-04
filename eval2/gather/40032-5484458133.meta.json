@@ -1,0 +1,108 @@
+{
+ "case": "40032-5484458133",
+ "cutoff": "2026-08-31T20:57:15Z",
+ "pushes": [
+  [
+   "2026-08-27T10:29:33Z",
+   "74eab24fff",
+   "ci run"
+  ],
+  [
+   "2026-08-27T11:19:17Z",
+   "6f3b11a8a4",
+   "force push"
+  ],
+  [
+   "2026-08-27T11:19:23Z",
+   "6f3b11a8a4",
+   "ci run"
+  ],
+  [
+   "2026-08-27T20:46:08Z",
+   "9592a4fdcf",
+   "force push"
+  ],
+  [
+   "2026-08-27T20:46:13Z",
+   "9592a4fdcf",
+   "ci run"
+  ],
+  [
+   "2026-08-27T21:55:09Z",
+   "6763397ee5",
+   "force push"
+  ],
+  [
+   "2026-08-27T21:55:12Z",
+   "6763397ee5",
+   "ci run"
+  ],
+  [
+   "2026-08-28T19:17:40Z",
+   "6bde387322",
+   "force push"
+  ],
+  [
+   "2026-08-28T19:17:44Z",
+   "6bde387322",
+   "ci run"
+  ],
+  [
+   "2026-08-28T19:58:07Z",
+   "143fb0607e",
+   "force push"
+  ],
+  [
+   "2026-08-28T19:58:11Z",
+   "143fb0607e",
+   "ci run"
+  ],
+  [
+   "2026-09-04T21:04:18Z",
+   "ac23c6f51a",
+   "force push"
+  ],
+  [
+   "2026-09-04T21:04:24Z",
+   "ac23c6f51a",
+   "ci run"
+  ],
+  [
+   "2026-09-15T23:05:55Z",
+   "0737f551b9",
+   "force push"
+  ],
+  [
+   "2026-09-15T23:05:59Z",
+   "0737f551b9",
+   "ci run"
+  ],
+  [
+   "2026-09-15T23:10:55Z",
+   "c0515f20cb",
+   "force push"
+  ],
+  [
+   "2026-09-15T23:10:59Z",
+   "c0515f20cb",
+   "ci run"
+  ]
+ ],
+ "head_now": "c0515f20cbcef79ac651d0cb301fb4f5bc5a3057",
+ "body_edits": 7,
+ "body_edits_after_cutoff": 4,
+ "title_now": "tooltips: Suppress redundant navigation tooltips.",
+ "title_at_cutoff": "web:suppress redundant nav tooltips on dm recipients_row and topic",
+ "labels_now": [
+  "size: S",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "143fb0607e9f9527d34c92a43bb46b6962ab20cd",
+ "pr_shape": "from compare main...143fb0607e",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-08-28T15:25:05Z",
+ "head_at_feedback": "6763397ee5e08159f2d03aae717cf0ab8b79fbed",
+ "comments_total": 13,
+ "comments_at_cutoff": 5
+}

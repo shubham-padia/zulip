@@ -1,0 +1,53 @@
+{
+ "case": "40042-6183881101",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the commit-message feedback and removed a guard with a new push, so the triager needs to know the PR may be ready to hand off; no maintainer was assigned, and the PR did not change enough to need a new card.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "sahil839 removed \"not ready\" and merged the PR the same day without asking for more work.",
+  "changed": [
+   "The author rewrote all three commit messages, with new summary lines such as \"user_groups: Use update_fields when saving permission setting.\"",
+   "The author removed an unneeded empty-list guard, which shrank the diff from +14/-4 to +13/-4, and force-pushed."
+  ],
+  "still_missing": [],
+  "reply_ask": "Thank the author for rewriting the commit messages and say the PR is being handed to sahil839 for final review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author rewrote the commit messages and force-pushed, addressing sahil839's commit-message feedback, the only outstanding ask.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Notes that Sahil Batra already said on CZO that the update_fields changes look fine, with only the commit messages needing fixes.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends removing \"not ready\" and handing the PR to maintainer review.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Names sahil839 (Sahil Batra) as the reviewer.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that CI passes and there are no merge conflicts.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the commit-message feedback and removed a guard with a new push, so the triager needs to know the PR may be ready to hand off; no maintainer was assigned, and the PR did not change enough to need a new card.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"sahil839 removed \\\"not ready\\\" and merged the PR the same day without asking for more work.\",\n \"changed\": [\"The author rewrote all three commit messages, with new summary lines such as \\\"user_groups: Use update_fields when saving permission setting.\\\"\", \"The author removed an unneeded empty-list guard, which shrank the diff from +14/-4 to +13/-4, and force-pushed.\"],\n \"still_missing\": [],\n \"reply_ask\": \"Thank the author for rewriting the commit messages and say the PR is being handed to sahil839 for final review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author rewrote the commit messages and force-pushed, addressing sahil839's commit-message feedback, the only outstanding ask.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Notes that Sahil Batra already said on CZO that the update_fields changes look fine, with only the commit messages needing fixes.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends removing \\\"not ready\\\" and handing the PR to maintainer review.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Names sahil839 (Sahil Batra) as the reviewer.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions that CI passes and there are no merge conflicts.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.088176
+}

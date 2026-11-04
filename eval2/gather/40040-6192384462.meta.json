@@ -1,0 +1,63 @@
+{
+ "case": "40040-6192384462",
+ "cutoff": "2026-10-15T12:45:48Z",
+ "pushes": [
+  [
+   "2026-08-29T03:02:13Z",
+   "eb6a911171",
+   "ci run"
+  ],
+  [
+   "2026-08-29T04:05:31Z",
+   "eb2355e1c6",
+   "force push"
+  ],
+  [
+   "2026-08-29T04:05:36Z",
+   "eb2355e1c6",
+   "ci run"
+  ],
+  [
+   "2026-08-29T04:25:15Z",
+   "af9674f83b",
+   "ci run"
+  ],
+  [
+   "2026-08-31T14:22:30Z",
+   "d6c0558778",
+   "force push"
+  ],
+  [
+   "2026-08-31T14:22:35Z",
+   "d6c0558778",
+   "ci run"
+  ],
+  [
+   "2026-10-15T12:44:57Z",
+   "c0554d0404",
+   "force push"
+  ],
+  [
+   "2026-10-15T12:45:02Z",
+   "c0554d0404",
+   "ci run"
+  ]
+ ],
+ "head_now": "c0554d0404b4c096881e011fc1fafbf2f6905565",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "cache: Include content hash in open_graph_description_cache_key.",
+ "title_at_cutoff": "cache: Include content hash in open_graph_description_cache_key.",
+ "labels_now": [
+  "size: S",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "c0554d0404b4c096881e011fc1fafbf2f6905565",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-08-31T14:10:34Z",
+ "head_at_feedback": "af9674f83b1e5caf31690f620fe831849cd735e0",
+ "comments_total": 4,
+ "comments_at_cutoff": 3
+}

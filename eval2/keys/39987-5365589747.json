@@ -1,0 +1,57 @@
+{
+ "case": "39987-5365589747",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author fixed what was asked and asked for review on an unassigned PR, so a triager needs a short note, but the PR is the same small integration and doesn't need a new card.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied asking for screenshots of the new user-facing documentation and a link to Asyntai's own Zulip integration page, so the PR stays not ready.",
+  "changed": [
+   "Added the missing generated bot avatar (static/images/integrations/bot_avatars/asyntai.png), which the author says fixed the failing tests.",
+   "Squashed the three upload commits into one properly named commit, 'integrations: Add Asyntai integration.'",
+   "Posted a comment asking for review and says CI is now green."
+  ],
+  "still_missing": [
+   "There are no screenshots of the new documentation page: the description says 'None', but the outgoing-integration exemption covers only example message screenshots, not screenshots of user-facing docs.",
+   "CI status can't be confirmed from the available data; only the author says it passed."
+  ],
+  "reply_ask": "Ask the author to add screenshots of the rendered /integrations/asyntai documentation page (and the catalog entry) to the PR description, noting that the exemption covers only example message screenshots.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says screenshots of the new documentation page are still missing, and that the claimed exemption covers only example message screenshots, not docs screenshots.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping 'not ready' and asking for more work instead of handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the asked-for test fix (adding the missing bot avatar) and the squash into one well-named commit were done.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that CI status is unverified and rests only on the author's claim.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Suggests the author link Asyntai's own Zulip integration page in the PR description.",
+    "decisive": false,
+    "at_cutoff": false
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author fixed what was asked and asked for review on an unassigned PR, so a triager needs a short note, but the PR is the same small integration and doesn't need a new card.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied asking for screenshots of the new user-facing documentation and a link to Asyntai's own Zulip integration page, so the PR stays not ready.\",\n \"changed\": [\"Added the missing generated bot avatar (static/images/integrations/bot_avatars/asyntai.png), which the author says fixed the failing tests.\", \"Squashed the three upload commits into one properly named commit, 'integrations: Add Asyntai integration.'\", \"Posted a comment asking for review and says CI is now green.\"],\n \"still_missing\": [\"There are no screenshots of the new documentation page: the description says 'None', but the outgoing-integration exemption covers only example message screenshots, not screenshots of user-facing docs.\", \"CI status can't be confirmed from the available data; only the author says it passed.\"],\n \"reply_ask\": \"Ask the author to add screenshots of the rendered /integrations/asyntai documentation page (and the catalog entry) to the PR description, noting that the exemption covers only example message screenshots.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says screenshots of the new documentation page are still missing, and that the claimed exemption covers only example message screenshots, not docs screenshots.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends keeping 'not ready' and asking for more work instead of handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the asked-for test fix (adding the missing bot avatar) and the squash into one well-named commit were done.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that CI status is unverified and rests only on the author's claim.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Suggests the author link Asyntai's own Zulip integration page in the PR description.\", \"decisive\": false, \"at_cutoff\": false}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.073824
+}

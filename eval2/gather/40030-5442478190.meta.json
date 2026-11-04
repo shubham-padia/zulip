@@ -1,0 +1,78 @@
+{
+ "case": "40030-5442478190",
+ "cutoff": "2026-08-27T17:00:11Z",
+ "pushes": [
+  [
+   "2026-08-27T05:31:59Z",
+   "6aa5063e0a",
+   "ci run"
+  ],
+  [
+   "2026-08-27T06:16:19Z",
+   "fab7de5ef6",
+   "ci run"
+  ],
+  [
+   "2026-08-27T13:54:46Z",
+   "d84aef88b5",
+   "ci run"
+  ],
+  [
+   "2026-08-27T14:30:30Z",
+   "eb6642b968",
+   "force push"
+  ],
+  [
+   "2026-08-27T14:32:09Z",
+   "eb6642b968",
+   "ci run"
+  ],
+  [
+   "2026-08-27T14:37:01Z",
+   "f12611ef23",
+   "force push"
+  ],
+  [
+   "2026-08-27T14:37:06Z",
+   "f12611ef23",
+   "ci run"
+  ],
+  [
+   "2026-08-27T15:43:15Z",
+   "7413402bb4",
+   "force push"
+  ],
+  [
+   "2026-08-27T15:43:19Z",
+   "7413402bb4",
+   "ci run"
+  ],
+  [
+   "2026-08-27T16:17:57Z",
+   "5d689ec26b",
+   "force push"
+  ],
+  [
+   "2026-08-27T16:18:02Z",
+   "5d689ec26b",
+   "ci run"
+  ]
+ ],
+ "head_now": "5d689ec26b6d0afb49b59eb34f760e84187ba6c4",
+ "body_edits": 4,
+ "body_edits_after_cutoff": 2,
+ "title_now": "custom profile fields: Fix 500 error on malformed field_data.",
+ "title_at_cutoff": "custom profile fields: Fix 500 error on malformed field_data.",
+ "labels_now": [
+  "size: M",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "5d689ec26b6d0afb49b59eb34f760e84187ba6c4",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": null,
+ "head_at_feedback": "fab7de5ef6ae11198adbea53da8a6764529f8245",
+ "comments_total": 6,
+ "comments_at_cutoff": 2
+}
