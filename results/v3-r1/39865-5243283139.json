@@ -1,0 +1,6 @@
+{
+ "case": "39865-5243283139",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked for precise before/after screenshots, and the author says they've updated the PR description with new precise screenshots (plus a CSS fix) and asks whether this is what was expected, which effectively hands the PR back for review.",
+ "cost_usd": 0.005088
+}
