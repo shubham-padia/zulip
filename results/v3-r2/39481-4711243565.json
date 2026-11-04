@@ -1,0 +1,6 @@
+{
+ "case": "39481-4711243565",
+ "answer": "yes",
+ "text": "yes\n\nThe author explicitly states \"Ready for review!\", which hands the PR back, even though the preceding comment was just a question from another contributor asking whether the issue was still open.",
+ "cost_usd": 0.0006510999999999999
+}

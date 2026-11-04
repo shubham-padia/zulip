@@ -1,0 +1,6 @@
+{
+ "case": "39522-4721834312",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer's comment was a rebuke about working on multiple PRs at once, and the author responds by saying this is their last push, that they've fixed every failure they could find, and inviting further review, which effectively hands the PR back.",
+ "cost_usd": 0.0008555
+}

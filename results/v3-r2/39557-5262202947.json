@@ -1,0 +1,6 @@
+{
+ "case": "39557-5262202947",
+ "answer": "no",
+ "text": "no\n\nThe author is closing this PR in favor of a different one (#39879), which is giving up on this PR rather than handing it back for review.",
+ "cost_usd": 0.0005322
+}
