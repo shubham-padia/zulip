@@ -1,0 +1,60 @@
+{
+ "case": "39927-5276328596",
+ "cutoff": "2026-08-13T05:26:00Z",
+ "pushes": [
+  [
+   "2026-08-12T10:17:53Z",
+   "49a4381257",
+   "ci run"
+  ],
+  [
+   "2026-08-12T10:32:07Z",
+   "762be79102",
+   "force push"
+  ],
+  [
+   "2026-08-12T10:32:12Z",
+   "762be79102",
+   "ci run"
+  ],
+  [
+   "2026-08-12T11:09:52Z",
+   "9f86207f96",
+   "force push"
+  ],
+  [
+   "2026-08-12T11:09:56Z",
+   "9f86207f96",
+   "ci run"
+  ],
+  [
+   "2026-08-13T04:24:19Z",
+   "e97707e5f3",
+   "force push"
+  ],
+  [
+   "2026-08-13T04:24:23Z",
+   "e97707e5f3",
+   "ci run"
+  ]
+ ],
+ "head_now": "e97707e5f399a680cc09a3cfdcd59fba7833e1c4",
+ "body_edits": 7,
+ "body_edits_after_cutoff": 5,
+ "title_now": "Migrate stream missing compose banner",
+ "title_at_cutoff": "Migrate stream missing compose banner",
+ "labels_now": [
+  "size: M",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "karlstolley"
+ ],
+ "head_at_cutoff": "e97707e5f399a680cc09a3cfdcd59fba7833e1c4",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "karlstolley 2026-08-12T20:53:15Z",
+ "head_at_feedback": "9f86207f9697723f8b1773c2871a7cfab9d0035e",
+ "comments_total": 9,
+ "comments_at_cutoff": 2
+}

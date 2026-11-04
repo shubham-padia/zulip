@@ -1,0 +1,57 @@
+{
+ "case": "40048-5481098127",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the feedback by editing the description and opening an api-design discussion, but pushed no code, so a short note on what was and wasn't addressed is enough and a new card is not needed.",
+  "triager_action": "more_feedback",
+  "action_source": "inferred",
+  "action_why": "The issue requires the standard API-change documentation, and the PR still has no API changelog entry or feature-level update, so a careful triager would keep \"not ready\" and ask for those, not hand off.",
+  "changed": [
+   "The author says the PR description now has a screenshot of the rendered API documentation.",
+   "The author says they started a discussion topic in #api design on chat.zulip.org."
+  ],
+  "still_missing": [
+   "There is no API changelog entry (no api_docs/unmerged.d file) and no feature-level note for this API change, which issue #20229 explicitly asks for.",
+   "The #api design discussion was only just started, has no link in the PR, and has reached no agreement yet.",
+   "No new code was pushed after the feedback: the head commit is unchanged and only the description was edited."
+  ],
+  "reply_ask": "Ask the author to add an API changelog entry (api_docs/unmerged.d with feature-level notes in zulip.yaml) as API changes require, and to link the #api design topic in the PR so maintainers can follow the decision.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR still lacks an API changelog entry / feature-level documentation (no api_docs/unmerged.d file), which issue #20229 requires for this API change.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says no new code was pushed since the feedback; the only changes are the description screenshot and a new CZO #api design topic.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that the #api design discussion has only just started and has reached no agreement, so the API change isn't approved yet.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Recommends keeping \"not ready\" and giving more feedback, not handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that issue #20229 has no \"help wanted\" label and that zulipbot flagged the author's attempt to claim it.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the feedback by editing the description and opening an api-design discussion, but pushed no code, so a short note on what was and wasn't addressed is enough and a new card is not needed.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"inferred\",\n \"action_why\": \"The issue requires the standard API-change documentation, and the PR still has no API changelog entry or feature-level update, so a careful triager would keep \\\"not ready\\\" and ask for those, not hand off.\",\n \"changed\": [\n  \"The author says the PR description now has a screenshot of the rendered API documentation.\",\n  \"The author says they started a discussion topic in #api design on chat.zulip.org.\"\n ],\n \"still_missing\": [\n  \"There is no API changelog entry (no api_docs/unmerged.d file) and no feature-level note for this API change, which issue #20229 explicitly asks for.\",\n  \"The #api design discussion was only just started, has no link in the PR, and has reached no agreement yet.\",\n  \"No new code was pushed after the feedback: the head commit is unchanged and only the description was edited.\"\n ],\n \"reply_ask\": \"Ask the author to add an API changelog entry (api_docs/unmerged.d with feature-level notes in zulip.yaml) as API changes require, and to link the #api design topic in the PR so maintainers can follow the decision.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR still lacks an API changelog entry / feature-level documentation (no api_docs/unmerged.d file), which issue #20229 requires for this API change.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says no new code was pushed since the feedback; the only changes are the description screenshot and a new CZO #api design topic.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that the #api design discussion has only just started and has reached no agreement, so the API change isn't approved yet.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Recommends keeping \\\"not ready\\\" and giving more feedback, not handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions that issue #20229 has no \\\"help wanted\\\" label and that zulipbot flagged the author's attempt to claim it.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.10394800000000001
+}

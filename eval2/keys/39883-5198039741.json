@@ -1,0 +1,59 @@
+{
+ "case": "39883-5198039741",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author's comment asks for another look on a PR with no assigned reviewer, and the approach is unchanged, so a short note is enough for the triager to decide.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "The next day laurynmm put \"not ready\" back on and asked how the screenshots were made, because backend rendering changes need real before/after screenshots from the dev environment.",
+  "changed": [
+   "The author pushed twice more, but the size only grew from +54/-3 to +55/-3, with the same files and an unchanged commit message.",
+   "The author's comment says tests and linting now pass and points to the two fixture tests, which the description already listed before the feedback."
+  ],
+  "still_missing": [
+   "Nothing in the cutoff facts shows the PR description was reworked to follow the reviewable-PR guide the maintainer linked.",
+   "There are no before/after screenshots of the rendered messages, and \"Visual appearance of the changes\" is unchecked, even though the change alters how messages render.",
+   "The self-review checklist still has \"Followed the AI use policy\" and \"Calls out remaining decisions and concerns\" unchecked.",
+   "CI status is unknown, so the claim that tests are passing can't be checked.",
+   "The PR does not mention that #39598, another PR for the same issue, is already in maintainer review, or how this PR relates to the overlapping #39881 and #17419 on code-block tabs."
+  ],
+  "reply_ask": "Ask the author to follow the reviewable-PR guide by adding precise before/after screenshots of the rendered lists from the web app in the dev environment and completing the self-review checklist (including the AI use policy), and point out that #39598 for the same issue is already in maintainer review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author's update does not address the feedback: the two pushes added only one line, and the comment only claims tests and lint pass.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says before/after screenshots of the rendered messages from the dev environment are missing, even though this backend markdown change affects how messages render.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping \"not ready\" and giving more feedback rather than handing the PR to a maintainer reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the self-review checklist still leaves the AI use policy and the visual-appearance items unchecked.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that #39598, a competing PR for the same issue, is already in maintainer review.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author's comment asks for another look on a PR with no assigned reviewer, and the approach is unchanged, so a short note is enough for the triager to decide.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"The next day laurynmm put \\\"not ready\\\" back on and asked how the screenshots were made, because backend rendering changes need real before/after screenshots from the dev environment.\",\n \"changed\": [\n  \"The author pushed twice more, but the size only grew from +54/-3 to +55/-3, with the same files and an unchanged commit message.\",\n  \"The author's comment says tests and linting now pass and points to the two fixture tests, which the description already listed before the feedback.\"\n ],\n \"still_missing\": [\n  \"Nothing in the cutoff facts shows the PR description was reworked to follow the reviewable-PR guide the maintainer linked.\",\n  \"There are no before/after screenshots of the rendered messages, and \\\"Visual appearance of the changes\\\" is unchecked, even though the change alters how messages render.\",\n  \"The self-review checklist still has \\\"Followed the AI use policy\\\" and \\\"Calls out remaining decisions and concerns\\\" unchecked.\",\n  \"CI status is unknown, so the claim that tests are passing can't be checked.\",\n  \"The PR does not mention that #39598, another PR for the same issue, is already in maintainer review, or how this PR relates to the overlapping #39881 and #17419 on code-block tabs.\"\n ],\n \"reply_ask\": \"Ask the author to follow the reviewable-PR guide by adding precise before/after screenshots of the rendered lists from the web app in the dev environment and completing the self-review checklist (including the AI use policy), and point out that #39598 for the same issue is already in maintainer review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author's update does not address the feedback: the two pushes added only one line, and the comment only claims tests and lint pass.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says before/after screenshots of the rendered messages from the dev environment are missing, even though this backend markdown change affects how messages render.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping \\\"not ready\\\" and giving more feedback rather than handing the PR to a maintainer reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the self-review checklist still leaves the AI use policy and the visual-appearance items unchecked.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions that #39598, a competing PR for the same issue, is already in maintainer review.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.19844
+}

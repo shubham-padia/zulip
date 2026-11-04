@@ -1,0 +1,57 @@
+{
+ "case": "40065-5536187002",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author asked for another look after squashing the commits and retaking screenshots, and no maintainer is assigned, so the triager needs a short note on what was done and what is still missing; the code itself is unchanged, so a new card is not needed.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm's first reply after the comment kept the PR in progress and asked for more screenshots of longer topic names with and without emoji and for testing at different app font sizes; the later hand-off and closing came after further rounds, and the PR was closed because the issue was likely already fixed by #35691.",
+  "changed": [
+   "Squashed the two commits into one commit on current main, with no code change (+7/-2 in left_sidebar.css, as before).",
+   "Retook the before/after screenshots back-to-back in the same tab with the same viewport, narrow and scroll state, and added full-window captures plus a pixel-diff check."
+  ],
+  "still_missing": [
+   "The 'before' screenshot does not show the emoji clipping: the author says the clipping does not reproduce at DPR 1, so the pair does not prove the change fixes the reported bug.",
+   "No screenshots of longer topic names (two-line, line-clamped) with and without emoji, although the issue asks for the impact on topics in general.",
+   "No screenshots or testing at different app font sizes or information-density settings."
+  ],
+  "reply_ask": "Ask for a 'before' screenshot that actually reproduces the emoji clipping and a matching 'after', plus before/after examples of long topic names with and without emoji and at a different app font size.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the screenshots still don't show the bug: the author admits the clipping doesn't reproduce at DPR 1, so the 'before' shot shows no cut-off emoji.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping 'not ready' and asking for more screenshots rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Asks for screenshots of longer, two-line topic names with and without emoji and at a different app font size, since the issue wants the impact on topics in general.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Confirms the commit-history ask is done: the PR is now a single commit and the code is unchanged.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that others (Karl Stolley, ravisharma-09) could not reproduce the clipping, so whether the bug still exists on main is uncertain.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author asked for another look after squashing the commits and retaking screenshots, and no maintainer is assigned, so the triager needs a short note on what was done and what is still missing; the code itself is unchanged, so a new card is not needed.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm's first reply after the comment kept the PR in progress and asked for more screenshots of longer topic names with and without emoji and for testing at different app font sizes; the later hand-off and closing came after further rounds, and the PR was closed because the issue was likely already fixed by #35691.\",\n \"changed\": [\"Squashed the two commits into one commit on current main, with no code change (+7/-2 in left_sidebar.css, as before).\",\n             \"Retook the before/after screenshots back-to-back in the same tab with the same viewport, narrow and scroll state, and added full-window captures plus a pixel-diff check.\"],\n \"still_missing\": [\"The 'before' screenshot does not show the emoji clipping: the author says the clipping does not reproduce at DPR 1, so the pair does not prove the change fixes the reported bug.\",\n                   \"No screenshots of longer topic names (two-line, line-clamped) with and without emoji, although the issue asks for the impact on topics in general.\",\n                   \"No screenshots or testing at different app font sizes or information-density settings.\"],\n \"reply_ask\": \"Ask for a 'before' screenshot that actually reproduces the emoji clipping and a matching 'after', plus before/after examples of long topic names with and without emoji and at a different app font size.\",\n \"must_have\": [{\"id\": \"f1\", \"fact\": \"Says the screenshots still don't show the bug: the author admits the clipping doesn't reproduce at DPR 1, so the 'before' shot shows no cut-off emoji.\", \"decisive\": true, \"at_cutoff\": true},\n               {\"id\": \"f2\", \"fact\": \"Recommends keeping 'not ready' and asking for more screenshots rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n               {\"id\": \"f3\", \"fact\": \"Asks for screenshots of longer, two-line topic names with and without emoji and at a different app font size, since the issue wants the impact on topics in general.\", \"decisive\": false, \"at_cutoff\": true},\n               {\"id\": \"f4\", \"fact\": \"Confirms the commit-history ask is done: the PR is now a single commit and the code is unchanged.\", \"decisive\": false, \"at_cutoff\": true},\n               {\"id\": \"f5\", \"fact\": \"Notes that others (Karl Stolley, ravisharma-09) could not reproduce the clipping, so whether the bug still exists on main is uncertain.\", \"decisive\": false, \"at_cutoff\": true}]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.231192
+}

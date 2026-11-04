@@ -1,0 +1,56 @@
+{
+ "case": "39894-5278594007",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the only ask by adding before/after screenshots, so a maintainer needs a short note saying the PR is now reviewable; nothing about the code changed, so a new card is not needed.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-08-14 karlstolley removed \"not ready\", added \"maintainer review\" and assigned himself.",
+  "changed": [
+   "The author added before/after screenshots for both light and dark themes to the PR description.",
+   "The author added a pixel-diff summary: light theme is unchanged, and the dark theme differs only in the input's box-shadow.",
+   "The code is unchanged: the head commit is the same, and CI still passes."
+  ],
+  "still_missing": [
+   "The PR makes a deliberate visual change in dark theme (box-shadow blur from 5px to 6px), which is not 'no visual change' and has not been discussed in #design as the issue asks for minor adjustments."
+  ],
+  "reply_ask": "Thank the author for adding the light and dark before/after screenshots, and say the PR is going to a maintainer for review, who will judge the 5px→6px dark-theme blur change.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author has now added before/after screenshots in both light and dark themes, which answers laurynmm's only request.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends handing off: remove \"not ready\" and add \"maintainer review\".",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Flags that the PR deliberately changes the dark-theme focus box-shadow blur from 5px to 6px, a visual change the reviewer (or #design) must judge.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Suggests karlstolley (author of the dark_theme.css cleanup issue #39354) as the reviewer.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes there was no new code push: the screenshots were added to the description, and CI still passes.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the only ask by adding before/after screenshots, so a maintainer needs a short note saying the PR is now reviewable; nothing about the code changed, so a new card is not needed.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-08-14 karlstolley removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned himself.\",\n \"changed\": [\n  \"The author added before/after screenshots for both light and dark themes to the PR description.\",\n  \"The author added a pixel-diff summary: light theme is unchanged, and the dark theme differs only in the input's box-shadow.\",\n  \"The code is unchanged: the head commit is the same, and CI still passes.\"\n ],\n \"still_missing\": [\n  \"The PR makes a deliberate visual change in dark theme (box-shadow blur from 5px to 6px), which is not 'no visual change' and has not been discussed in #design as the issue asks for minor adjustments.\"\n ],\n \"reply_ask\": \"Thank the author for adding the light and dark before/after screenshots, and say the PR is going to a maintainer for review, who will judge the 5px→6px dark-theme blur change.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author has now added before/after screenshots in both light and dark themes, which answers laurynmm's only request.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends handing off: remove \\\"not ready\\\" and add \\\"maintainer review\\\".\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Flags that the PR deliberately changes the dark-theme focus box-shadow blur from 5px to 6px, a visual change the reviewer (or #design) must judge.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Suggests karlstolley (author of the dark_theme.css cleanup issue #39354) as the reviewer.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes there was no new code push: the screenshots were added to the description, and CI still passes.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.216944
+}

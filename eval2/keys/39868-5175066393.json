@@ -1,0 +1,58 @@
+{
+ "case": "39868-5175066393",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author reports fixed tests on a PR that a maintainer labeled not ready, so the triager needs a short update, but the approach and files are unchanged and a new card isn't warranted.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied asking for precise before/after screenshots per the guidelines, then said the styling change needs a #design discussion, and the PR kept \"not ready\".",
+  "changed": [
+   "The author says the failing tests are fixed.",
+   "The author pushed twice since the label, taking the PR from +12/-5 to +15/-5 in the same 3 files with the same two commits."
+  ],
+  "still_missing": [
+   "The screenshots are not precise before/after pairs as the visual-changes guidelines require; they show only the current state and some freehand crops.",
+   "The PR changes the text styling (replaces `font-variant: all-small-caps` with `text-transform: uppercase` and a smaller font size), which the issue didn't ask for, and there is no #design discussion of it.",
+   "The PR doesn't respond to Karl Stolley's #design advice to use flexbox or grid and to wrap the label text in a DOM element.",
+   "CI status can't be confirmed (check runs unavailable), so the test fix is unverified."
+  ],
+  "reply_ask": "Ask the author to add precise before/after screenshots following the presenting-visual-changes guidelines and to start a #design discussion about changing the small-caps text styling.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says precise before/after screenshots, per the visual-changes guidelines, are still missing from the PR.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping \"not ready\" and giving more feedback rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes the PR changes the button text styling (all-small-caps replaced by uppercase with a smaller font size) beyond what issue #38844 asks, and this needs a #design discussion on chat.zulip.org.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Says the author only reported fixing failing tests and CI status is unknown, so the fix can't be confirmed.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions the existing #design thread where Karl Stolley advised using flexbox or grid with the label as its own DOM element, and that #39694 is another open PR for the same issue.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author reports fixed tests on a PR that a maintainer labeled not ready, so the triager needs a short update, but the approach and files are unchanged and a new card isn't warranted.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied asking for precise before/after screenshots per the guidelines, then said the styling change needs a #design discussion, and the PR kept \\\"not ready\\\".\",\n \"changed\": [\"The author says the failing tests are fixed.\", \"The author pushed twice since the label, taking the PR from +12/-5 to +15/-5 in the same 3 files with the same two commits.\"],\n \"still_missing\": [\"The screenshots are not precise before/after pairs as the visual-changes guidelines require; they show only the current state and some freehand crops.\", \"The PR changes the text styling (replaces `font-variant: all-small-caps` with `text-transform: uppercase` and a smaller font size), which the issue didn't ask for, and there is no #design discussion of it.\", \"The PR doesn't respond to Karl Stolley's #design advice to use flexbox or grid and to wrap the label text in a DOM element.\", \"CI status can't be confirmed (check runs unavailable), so the test fix is unverified.\"],\n \"reply_ask\": \"Ask the author to add precise before/after screenshots following the presenting-visual-changes guidelines and to start a #design discussion about changing the small-caps text styling.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says precise before/after screenshots, per the visual-changes guidelines, are still missing from the PR.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends keeping \\\"not ready\\\" and giving more feedback rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes the PR changes the button text styling (all-small-caps replaced by uppercase with a smaller font size) beyond what issue #38844 asks, and this needs a #design discussion on chat.zulip.org.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Says the author only reported fixing failing tests and CI status is unknown, so the fix can't be confirmed.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions the existing #design thread where Karl Stolley advised using flexbox or grid with the label as its own DOM element, and that #39694 is another open PR for the same issue.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.205348
+}

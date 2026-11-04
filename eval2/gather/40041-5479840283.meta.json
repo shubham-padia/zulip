@@ -1,0 +1,58 @@
+{
+ "case": "40041-5479840283",
+ "cutoff": "2026-08-31T14:31:10Z",
+ "pushes": [
+  [
+   "2026-08-29T03:03:41Z",
+   "af1771bbaf",
+   "ci run"
+  ],
+  [
+   "2026-08-29T04:05:29Z",
+   "a09905b050",
+   "force push"
+  ],
+  [
+   "2026-08-29T04:05:35Z",
+   "a09905b050",
+   "ci run"
+  ],
+  [
+   "2026-10-09T12:09:06Z",
+   "c49892b66b",
+   "force push"
+  ],
+  [
+   "2026-10-09T12:09:12Z",
+   "c49892b66b",
+   "ci run"
+  ],
+  [
+   "2026-10-15T02:34:01Z",
+   "8abf18ef1b",
+   "force push"
+  ],
+  [
+   "2026-10-15T02:34:06Z",
+   "8abf18ef1b",
+   "ci run"
+  ]
+ ],
+ "head_now": "8abf18ef1be66ef8df1e1eefe0f78e77b62935ec",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "actions: Add update_fields to bare .save() calls.",
+ "title_at_cutoff": "actions: Add update_fields to bare .save() calls.",
+ "labels_now": [
+  "size: S"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "a09905b0505f0404d7eb6429817566402718adb4",
+ "pr_shape": "from compare main...a09905b050",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-08-31T14:10:47Z",
+ "head_at_feedback": "a09905b0505f0404d7eb6429817566402718adb4",
+ "comments_total": 7,
+ "comments_at_cutoff": 2,
+ "author_association": "CONTRIBUTOR now, no merged PR before cutoff"
+}

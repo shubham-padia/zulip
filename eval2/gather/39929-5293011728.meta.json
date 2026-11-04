@@ -1,0 +1,120 @@
+{
+ "case": "39929-5293011728",
+ "cutoff": "2026-08-14T11:56:57Z",
+ "pushes": [
+  [
+   "2026-08-12T10:27:54Z",
+   "d0801f8ac0",
+   "ci run"
+  ],
+  [
+   "2026-08-12T18:26:37Z",
+   "130b6037b6",
+   "ci run"
+  ],
+  [
+   "2026-08-13T04:27:13Z",
+   "5a6080eaff",
+   "force push"
+  ],
+  [
+   "2026-08-13T04:27:17Z",
+   "5a6080eaff",
+   "ci run"
+  ],
+  [
+   "2026-08-13T05:28:30Z",
+   "7c7e5535b3",
+   "force push"
+  ],
+  [
+   "2026-08-13T05:28:35Z",
+   "7c7e5535b3",
+   "ci run"
+  ],
+  [
+   "2026-08-28T10:47:53Z",
+   "f4b3ac0e46",
+   "force push"
+  ],
+  [
+   "2026-08-28T11:21:02Z",
+   "61f664e43a",
+   "force push"
+  ],
+  [
+   "2026-08-28T11:21:06Z",
+   "61f664e43a",
+   "ci run"
+  ],
+  [
+   "2026-08-28T11:40:11Z",
+   "90f0aece15",
+   "force push"
+  ],
+  [
+   "2026-08-28T11:40:16Z",
+   "90f0aece15",
+   "ci run"
+  ],
+  [
+   "2026-09-02T09:41:21Z",
+   "31675e522c",
+   "force push"
+  ],
+  [
+   "2026-09-02T09:41:29Z",
+   "31675e522c",
+   "ci run"
+  ],
+  [
+   "2026-09-02T09:45:30Z",
+   "8db2931136",
+   "force push"
+  ],
+  [
+   "2026-09-02T09:45:34Z",
+   "8db2931136",
+   "ci run"
+  ],
+  [
+   "2026-09-02T10:18:27Z",
+   "448400171c",
+   "force push"
+  ],
+  [
+   "2026-09-02T10:18:32Z",
+   "448400171c",
+   "ci run"
+  ],
+  [
+   "2026-09-03T18:33:13Z",
+   "572bc71486",
+   "force push"
+  ],
+  [
+   "2026-09-03T18:33:20Z",
+   "572bc71486",
+   "ci run"
+  ]
+ ],
+ "head_now": "572bc71486fae5204acb89db4281303aebbf9840",
+ "body_edits": 0,
+ "body_edits_after_cutoff": 0,
+ "title_now": "settings: Let admins change user email addresses",
+ "title_at_cutoff": "settings: Let admins change user email addresses",
+ "labels_now": [
+  "size: XL",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "sahil839"
+ ],
+ "head_at_cutoff": "7c7e5535b36184e21cf6f01afb22bf9b129b09b9",
+ "pr_shape": "from compare main...7c7e5535b3",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "karlstolley 2026-08-12T20:56:17Z",
+ "head_at_feedback": "130b6037b64b8d2af1549da20602f5b64c932b9f",
+ "comments_total": 11,
+ "comments_at_cutoff": 3
+}

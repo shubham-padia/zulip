@@ -1,0 +1,90 @@
+{
+ "case": "39883-5198039741",
+ "cutoff": "2026-08-05T22:18:27Z",
+ "pushes": [
+  [
+   "2026-08-05T20:45:14Z",
+   "7ae68a956f",
+   "force push"
+  ],
+  [
+   "2026-08-05T20:54:12Z",
+   "b56caf364c",
+   "force push"
+  ],
+  [
+   "2026-08-05T21:02:08Z",
+   "911dcf5571",
+   "force push"
+  ],
+  [
+   "2026-08-05T21:24:19Z",
+   "60a6a684c5",
+   "force push"
+  ],
+  [
+   "2026-08-05T21:42:43Z",
+   "4e2ee28d51",
+   "force push"
+  ],
+  [
+   "2026-08-06T14:44:58Z",
+   "694fbb2844",
+   "force push"
+  ],
+  [
+   "2026-08-18T15:53:54Z",
+   "fc20f4c304",
+   "force push"
+  ],
+  [
+   "2026-08-20T05:46:40Z",
+   "f5de4029ce",
+   "force push"
+  ],
+  [
+   "2026-08-20T06:07:50Z",
+   "1dadeb2965",
+   "force push"
+  ],
+  [
+   "2026-08-27T15:04:18Z",
+   "52e539c8a8",
+   "force push"
+  ],
+  [
+   "2026-08-27T15:24:13Z",
+   "7bd4547916",
+   "force push"
+  ],
+  [
+   "2026-08-27T16:16:27Z",
+   "c3627cef5b",
+   "force push"
+  ],
+  [
+   "2026-08-27T16:16:31Z",
+   "c3627cef5b",
+   "ci run"
+  ]
+ ],
+ "head_now": "c3627cef5ba2e51428857c72e0801cb098b901e5",
+ "body_edits": 14,
+ "body_edits_after_cutoff": 9,
+ "title_now": "markdown: Expand tabs to 2 spaces for nested list support.",
+ "title_at_cutoff": "markdown: Expand tabs to 2 spaces for nested list support.",
+ "labels_now": [
+  "size: XL",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "PieterCK"
+ ],
+ "head_at_cutoff": "4e2ee28d519480a775708ee5786bca8adfc36bb4",
+ "pr_shape": "from compare main...4e2ee28d51",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "karlstolley 2026-08-05T21:10:46Z",
+ "head_at_feedback": "911dcf5571c2e5f3968adfc87a85f7d199919374",
+ "comments_total": 17,
+ "comments_at_cutoff": 3
+}

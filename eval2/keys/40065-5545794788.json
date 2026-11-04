@@ -1,0 +1,56 @@
+{
+ "case": "40065-5545794788",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered both of the triager's follow-up asks in the PR body and asked for another review, so a maintainer needs to see this, but the approach and the single commit are unchanged, so the first card still holds.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-09-07 laurynmm removed \"not ready\", added \"maintainer review\" and assigned pratik-pc, noting it may still need more screenshots; the later close came after pratik-pc and Karl Stolley found the issue was likely already fixed by #35691.",
+  "changed": [
+   "Added before/after screenshots of long topic names, with and without emoji, at the default 16px font, including a two-line clamped row.",
+   "Added before/after screenshots of the same long-topic view with the app font size set to 20px, showing that the spacing scales (5.14px to 7.14px).",
+   "No code changes: the head commit is the same as when the feedback was given."
+  ],
+  "still_missing": [
+   "No before screenshot actually shows the emoji clipping bug; the author says the pair was taken at DPR 1, where the clipping does not show, so the screenshots show the added spacing but not the fix."
+  ],
+  "reply_ask": "Thank the author for adding the long-topic and font-size screenshots and say the PR is moving to maintainer review, noting that a before screenshot that reproduces the clipping would show the fix works.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author covered both follow-up asks: long topic names with and without emoji, and a different app font size (20px).",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends moving the PR to maintainer review with a left-sidebar CSS reviewer such as Pratik Chanda (pratik-pc) or Karl Stolley.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that the before screenshots, taken at DPR 1, do not reproduce the emoji clipping, so they do not prove the change fixes the reported bug.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the answer is in the PR description and comment only, with no new push: the code is the same single commit.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that others (e.g. ravisharma-09, and Karl Stolley earlier) could not reproduce the clipping on current main, so the bug may no longer occur.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered both of the triager's follow-up asks in the PR body and asked for another review, so a maintainer needs to see this, but the approach and the single commit are unchanged, so the first card still holds.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-09-07 laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned pratik-pc, noting it may still need more screenshots; the later close came after pratik-pc and Karl Stolley found the issue was likely already fixed by #35691.\",\n \"changed\": [\n  \"Added before/after screenshots of long topic names, with and without emoji, at the default 16px font, including a two-line clamped row.\",\n  \"Added before/after screenshots of the same long-topic view with the app font size set to 20px, showing that the spacing scales (5.14px to 7.14px).\",\n  \"No code changes: the head commit is the same as when the feedback was given.\"\n ],\n \"still_missing\": [\n  \"No before screenshot actually shows the emoji clipping bug; the author says the pair was taken at DPR 1, where the clipping does not show, so the screenshots show the added spacing but not the fix.\"\n ],\n \"reply_ask\": \"Thank the author for adding the long-topic and font-size screenshots and say the PR is moving to maintainer review, noting that a before screenshot that reproduces the clipping would show the fix works.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author covered both follow-up asks: long topic names with and without emoji, and a different app font size (20px).\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends moving the PR to maintainer review with a left-sidebar CSS reviewer such as Pratik Chanda (pratik-pc) or Karl Stolley.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that the before screenshots, taken at DPR 1, do not reproduce the emoji clipping, so they do not prove the change fixes the reported bug.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the answer is in the PR description and comment only, with no new push: the code is the same single commit.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions that others (e.g. ravisharma-09, and Karl Stolley earlier) could not reproduce the clipping on current main, so the bug may no longer occur.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.24441600000000002
+}

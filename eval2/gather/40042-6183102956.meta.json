@@ -1,0 +1,58 @@
+{
+ "case": "40042-6183102956",
+ "cutoff": "2026-10-15T02:35:22Z",
+ "pushes": [
+  [
+   "2026-08-29T04:17:07Z",
+   "986b922ec5",
+   "ci run"
+  ],
+  [
+   "2026-10-09T12:09:38Z",
+   "09f5e01bb6",
+   "force push"
+  ],
+  [
+   "2026-10-09T12:09:43Z",
+   "09f5e01bb6",
+   "ci run"
+  ],
+  [
+   "2026-10-15T02:34:49Z",
+   "62f0677c4e",
+   "force push"
+  ],
+  [
+   "2026-10-15T02:34:54Z",
+   "62f0677c4e",
+   "ci run"
+  ],
+  [
+   "2026-10-15T03:41:37Z",
+   "d363f1c4f4",
+   "force push"
+  ],
+  [
+   "2026-10-15T03:41:42Z",
+   "d363f1c4f4",
+   "ci run"
+  ]
+ ],
+ "head_now": "d363f1c4f45cfc0b11de7eb61046d04863b94700",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "actions: Add update_fields to more bare .save() calls.",
+ "title_at_cutoff": "actions: Add update_fields to more bare .save() calls.",
+ "labels_now": [
+  "size: S"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "62f0677c4e46d3f0d91cf86d8e0efc625ff73fef",
+ "pr_shape": "from compare main...62f0677c4e",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "sahil839 2026-10-14T11:35:56Z",
+ "head_at_feedback": "09f5e01bb6c598151fb6d075ae9600d9f427ca76",
+ "comments_total": 7,
+ "comments_at_cutoff": 4,
+ "author_association": "CONTRIBUTOR now, no merged PR before cutoff"
+}
