@@ -1,0 +1,67 @@
+{
+ "case": "40040-6192384462",
+ "repeat": 1,
+ "map": {
+  "U": [
+   "eval2:v3-r1"
+  ],
+  "F": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 5,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends removing \"not ready\" and assigning sahil839, a hand-off where the key's action is close.",
+    "accuracy_why": "It correctly reports the done asks, Lauryn's unanswered question and the empty Fixes line, but omits that no maintainer has agreed the problem is real and that the feature isn't turned on in the community.",
+    "reply_why": "It pings sahil839 for review of a PR that should not go to review, and treats Lauryn's question as a side note rather than a blocker."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "Keeping \"not ready\" and asking for more information is defensible at the cutoff, but the key's action is close, and the rubric scores more_feedback against close at 1-2.",
+    "accuracy_why": "It captures the unanswered CZO question and that the feature isn't turned on, but omits the linked CZO discussion among the changes and the still-empty Fixes line.",
+    "reply_why": "It makes the key's main ask, answering Lauryn's question about whether a real stale preview was seen, but doesn't ask where the function is actually used."
+   }
+  },
+  "ranking": [
+   "F",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 1, \"accuracy_score\": 5, \"reply_score\": 1,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends removing \\\"not ready\\\" and assigning sahil839, a hand-off where the key's action is close.\",\n   \"accuracy_why\": \"It correctly reports the done asks, Lauryn's unanswered question and the empty Fixes line, but omits that no maintainer has agreed the problem is real and that the feature isn't turned on in the community.\",\n   \"reply_why\": \"It pings sahil839 for review of a PR that should not go to review, and treats Lauryn's question as a side note rather than a blocker.\"},\n  \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"Keeping \\\"not ready\\\" and asking for more information is defensible at the cutoff, but the key's action is close, and the rubric scores more_feedback against close at 1-2.\",\n   \"accuracy_why\": \"It captures the unanswered CZO question and that the feature isn't turned on, but omits the linked CZO discussion among the changes and the still-empty Fixes line.\",\n   \"reply_why\": \"It makes the key's main ask, answering Lauryn's question about whether a real stale preview was seen, but doesn't ask where the function is actually used.\"}},\n \"ranking\": [\"F\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.117584
+}

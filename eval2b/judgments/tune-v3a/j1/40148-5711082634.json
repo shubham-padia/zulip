@@ -1,0 +1,65 @@
+{
+ "case": "40148-5711082634",
+ "repeat": 1,
+ "map": {
+  "M": [
+   "eval2:v3-r1"
+  ],
+  "X": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It covers the commit split, screenshots, tests, the missing checklist and the unverified CI, but it raises the multi-file question only as a maintainer's call, not as an unsettled CZO design issue, and it suggests laurynmm instead of sahil839.",
+    "reply_why": "A short thank-you plus a reviewer ping that names the open question is close to pasteable, though it addresses the author more than a bare ping line would."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It gets the restructuring right but leaves out the missing self-review checklist and the unverified CI, treats the batch-endpoint question as optional input rather than unsettled design, and suggests laurynmm instead of sahil839.",
+    "reply_why": "A brief thank-you and reviewer ping is nearly pasteable, but it doesn't mention the design question the reviewer will need to weigh."
+   }
+  },
+  "ranking": [
+   "M",
+   "X"
+  ]
+ },
+ "text": "{\"outputs\": {\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\",\n   \"accuracy_why\": \"It covers the commit split, screenshots, tests, the missing checklist and the unverified CI, but it raises the multi-file question only as a maintainer's call, not as an unsettled CZO design issue, and it suggests laurynmm instead of sahil839.\",\n   \"reply_why\": \"A short thank-you plus a reviewer ping that names the open question is close to pasteable, though it addresses the author more than a bare ping line would.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\",\n   \"accuracy_why\": \"It gets the restructuring right but leaves out the missing self-review checklist and the unverified CI, treats the batch-endpoint question as optional input rather than unsettled design, and suggests laurynmm instead of sahil839.\",\n   \"reply_why\": \"A brief thank-you and reviewer ping is nearly pasteable, but it doesn't mention the design question the reviewer will need to weigh.\"}},\n \"ranking\": [\"M\", \"X\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.17549599999999999
+}

@@ -1,0 +1,71 @@
+{
+ "case": "40232-5935435606",
+ "repeat": 1,
+ "map": {
+  "F": [
+   "v3a-r1"
+  ],
+  "M": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Implies the PR is ready for review, but key items are still missing: the self-removed label and the unverified screenshots.",
+     "Tells the triager to remove \"not ready\", but zulipbot already removed it at the author's request."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It covers the no-push point but misses the author's self-removal of the label, the need to check the screenshots, and the competing PR #40134.",
+    "reply_why": "It pings laurynmm to review instead of telling the author not to remove maintainer labels and to make sure the images load."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States \"Missing: nothing\", although the self-removed label, the unverified screenshots and the reverse-sort question are all still open.",
+     "Tells the triager to remove \"not ready\", but zulipbot already removed it at the author's request."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "NOTE is the right kind, but it recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "The explicit \"Missing: nothing\" claim is false, the hand-off rests on it, and it omits the self-removed label and PR #40134.",
+    "reply_why": "Asking laurynmm to look at the updated screenshots edges toward a check, but it still misses the reply_ask to the author about labels and working image links."
+   }
+  },
+  "ranking": [
+   "M",
+   "F"
+  ]
+ },
+ "text": "{\"outputs\": {\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Implies the PR is ready for review, but key items are still missing: the self-removed label and the unverified screenshots.\", \"Tells the triager to remove \\\"not ready\\\", but zulipbot already removed it at the author's request.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE is the right kind, but it recommends hand_off where the key says more_feedback.\",\n   \"accuracy_why\": \"It covers the no-push point but misses the author's self-removal of the label, the need to check the screenshots, and the competing PR #40134.\",\n   \"reply_why\": \"It pings laurynmm to review instead of telling the author not to remove maintainer labels and to make sure the images load.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"States \\\"Missing: nothing\\\", although the self-removed label, the unverified screenshots and the reverse-sort question are all still open.\", \"Tells the triager to remove \\\"not ready\\\", but zulipbot already removed it at the author's request.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 4,\n   \"brevity_score\": 7,\n   \"decision_why\": \"NOTE is the right kind, but it recommends hand_off where the key says more_feedback.\",\n   \"accuracy_why\": \"The explicit \\\"Missing: nothing\\\" claim is false, the hand-off rests on it, and it omits the self-removed label and PR #40134.\",\n   \"reply_why\": \"Asking laurynmm to look at the updated screenshots edges toward a check, but it still misses the reply_ask to the author about labels and working image links.\"}},\n \"ranking\": [\"M\", \"F\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.161696
+}

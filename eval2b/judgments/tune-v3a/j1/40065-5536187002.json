@@ -1,0 +1,69 @@
+{
+ "case": "40065-5536187002",
+ "repeat": 1,
+ "map": {
+  "I": [
+   "eval2:v3-r1"
+  ],
+  "F": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing blocking is missing, when the key says the screenshots still don't show the bug and lack long-topic and font-size examples."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to a reviewer, but the key says the triager should give more feedback.",
+    "accuracy_why": "It notes the shots were taken where the clipping doesn't reproduce, yet calls that non-blocking, and it omits the long-topic and font-size gaps.",
+    "reply_why": "It pings laurynmm for review instead of asking the author for screenshots that reproduce the bug, plus long-topic and font-size examples."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It correctly keeps 'not ready' and asks for more screenshots in a NOTE.",
+    "accuracy_why": "It correctly identifies the decisive gap that the before shot doesn't show clipping, but it omits the long-topic and font-size screenshots and the reproducibility doubts.",
+    "reply_why": "It makes the right core ask with a guideline link but leaves out the long-topic and font-size examples, so a sentence must be added."
+   }
+  },
+  "ranking": [
+   "F",
+   "I"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says nothing blocking is missing, when the key says the screenshots still don't show the bug and lack long-topic and font-size examples.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to a reviewer, but the key says the triager should give more feedback.\",\n   \"accuracy_why\": \"It notes the shots were taken where the clipping doesn't reproduce, yet calls that non-blocking, and it omits the long-topic and font-size gaps.\",\n   \"reply_why\": \"It pings laurynmm for review instead of asking the author for screenshots that reproduce the bug, plus long-topic and font-size examples.\"},\n \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 9,\n   \"decision_why\": \"It correctly keeps 'not ready' and asks for more screenshots in a NOTE.\",\n   \"accuracy_why\": \"It correctly identifies the decisive gap that the before shot doesn't show clipping, but it omits the long-topic and font-size screenshots and the reproducibility doubts.\",\n   \"reply_why\": \"It makes the right core ask with a guideline link but leaves out the long-topic and font-size examples, so a sentence must be added.\"}},\n \"ranking\": [\"F\", \"I\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.2455
+}

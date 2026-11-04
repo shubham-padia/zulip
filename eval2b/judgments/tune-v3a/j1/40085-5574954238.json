@@ -1,0 +1,67 @@
+{
+ "case": "40085-5574954238",
+ "repeat": 1,
+ "map": {
+  "X": [
+   "v3a-r1"
+  ],
+  "E": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends a hand-off to maintainer review, which matches the key's kind and its observed action.",
+    "accuracy_why": "It covers the public screenshots for both layouts, no new push, and the non-blocking font-size gap, but it names laurynmm rather than a frontend/CSS reviewer and leaves out the other typeahead types.",
+    "reply_why": "A single reviewer ping line fits a hand-off, though pinging the triager who flagged it rather than a CSS reviewer is a minor choice."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the issue isn't open to contributors and the PR must be closed for that reason, but the author was assigned to #37030 (labeled 'in progress') after posting a plan."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing where the key's action is a hand-off to maintainer review.",
+    "accuracy_why": "It notes the screenshot fix and the lack of new code, but its close rationale rests on a misreading of the issue's status, and it skips the reviewer recommendation.",
+    "reply_why": "It tells the author the PR is being closed when the right ask was to thank them and move the PR to review."
+   }
+  },
+  "ranking": [
+   "X",
+   "E"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that recommends a hand-off to maintainer review, which matches the key's kind and its observed action.\",\n   \"accuracy_why\": \"It covers the public screenshots for both layouts, no new push, and the non-blocking font-size gap, but it names laurynmm rather than a frontend/CSS reviewer and leaves out the other typeahead types.\",\n   \"reply_why\": \"A single reviewer ping line fits a hand-off, though pinging the triager who flagged it rather than a CSS reviewer is a minor choice.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Claims the issue isn't open to contributors and the PR must be closed for that reason, but the author was assigned to #37030 (labeled 'in progress') after posting a plan.\"],\n   \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 1,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It recommends closing where the key's action is a hand-off to maintainer review.\",\n   \"accuracy_why\": \"It notes the screenshot fix and the lack of new code, but its close rationale rests on a misreading of the issue's status, and it skips the reviewer recommendation.\",\n   \"reply_why\": \"It tells the author the PR is being closed when the right ask was to thank them and move the PR to review.\"}},\n \"ranking\": [\"X\", \"E\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.22568
+}

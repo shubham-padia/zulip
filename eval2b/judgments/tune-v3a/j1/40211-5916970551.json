@@ -1,0 +1,65 @@
+{
+ "case": "40211-5916970551",
+ "repeat": 1,
+ "map": {
+  "R": [
+   "eval2:v3-r1"
+  ],
+  "C": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Claims Zulip only accepts contributions for issues labeled \"help wanted\"; this is an overstated policy not supported by the inputs, which point to discussing unfiled bugs first."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "NOTE recommending close matches both the key's kind and the observed close.",
+    "accuracy_why": "It captures the 2-to-123-file blowup, the missing issue and the first-time author, but it never ties this to the reviewable-PR guide or local testing, and the close rests partly on an overstated \"help wanted only\" rule.",
+    "reply_why": "A closing reply fits the decision, but its main justification is the unsupported \"help wanted\" policy rather than the contributing guide and the broken diff."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 8,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for more work where the key's action is close, which the rubric scores 1-2 even though it rightly avoids a hand-off.",
+    "accuracy_why": "The size change, the need for a clean diff and the missing issue or sign-off are all accurate, but it omits the first-time author and the lack of local testing.",
+    "reply_why": "It correctly asks for a clean rebase, but it encourages continuing on a PR that should close and skips the contributing guide and discussing unfiled bugs first."
+   }
+  },
+  "ranking": [
+   "R",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"R\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [\"Claims Zulip only accepts contributions for issues labeled \\\"help wanted\\\"; this is an overstated policy not supported by the inputs, which point to discussing unfiled bugs first.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE recommending close matches both the key's kind and the observed close.\",\n   \"accuracy_why\": \"It captures the 2-to-123-file blowup, the missing issue and the first-time author, but it never ties this to the reviewable-PR guide or local testing, and the close rests partly on an overstated \\\"help wanted only\\\" rule.\",\n   \"reply_why\": \"A closing reply fits the decision, but its main justification is the unsupported \\\"help wanted\\\" policy rather than the contributing guide and the broken diff.\"},\n  \"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 8, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work where the key's action is close, which the rubric scores 1-2 even though it rightly avoids a hand-off.\",\n   \"accuracy_why\": \"The size change, the need for a clean diff and the missing issue or sign-off are all accurate, but it omits the first-time author and the lack of local testing.\",\n   \"reply_why\": \"It correctly asks for a clean rebase, but it encourages continuing on a PR that should close and skips the contributing guide and discussing unfiled bugs first.\"}},\n \"ranking\": [\"R\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.151452
+}

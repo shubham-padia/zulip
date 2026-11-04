@@ -1,0 +1,69 @@
+{
+ "case": "40234-5937541838",
+ "repeat": 1,
+ "map": {
+  "R": [
+   "v3a-r1"
+  ],
+  "P": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) is right, but it keeps \"not ready\" and asks for more feedback, while the key's action is to hand off to a maintainer.",
+    "accuracy_why": "It credits all three addressed asks and correctly flags the constructed fixture and Niloth-p's stance, but it doesn't name Niloth-p as reviewer or note the missing Atlassian doc link.",
+    "reply_why": "It is well-written and pasteable, but it asks for a recaptured fixture instead of the doc link plus a note that the PR is going to review, so it misses the reply_ask."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States definitively that the commit message was not changed, whereas the key says this cannot be confirmed from the head commit."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) is right, but it recommends keeping \"not ready\" for more feedback instead of handing off as the key says.",
+    "accuracy_why": "It frames the added fixture-generation details only as a gap rather than an addressed ask, overstates the commit-message claim as fact, and misses the reviewer and the doc link.",
+    "reply_why": "It asks for a recaptured fixture and a commit-message push that may already be done, instead of the doc link and a note that the PR is going to review."
+   }
+  },
+  "ranking": [
+   "R",
+   "P"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) is right, but it keeps \\\"not ready\\\" and asks for more feedback, while the key's action is to hand off to a maintainer.\",\n   \"accuracy_why\": \"It credits all three addressed asks and correctly flags the constructed fixture and Niloth-p's stance, but it doesn't name Niloth-p as reviewer or note the missing Atlassian doc link.\",\n   \"reply_why\": \"It is well-written and pasteable, but it asks for a recaptured fixture instead of the doc link plus a note that the PR is going to review, so it misses the reply_ask.\"},\n  \"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"States definitively that the commit message was not changed, whereas the key says this cannot be confirmed from the head commit.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) is right, but it recommends keeping \\\"not ready\\\" for more feedback instead of handing off as the key says.\",\n   \"accuracy_why\": \"It frames the added fixture-generation details only as a gap rather than an addressed ask, overstates the commit-message claim as fact, and misses the reviewer and the doc link.\",\n   \"reply_why\": \"It asks for a recaptured fixture and a commit-message push that may already be done, instead of the doc link and a note that the PR is going to review.\"}},\n \"ranking\": [\"R\", \"P\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.171884
+}

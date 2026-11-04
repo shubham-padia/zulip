@@ -1,0 +1,65 @@
+{
+ "case": "40191-5798802930",
+ "repeat": 1,
+ "map": {
+  "M": [
+   "v3a-r1"
+  ],
+  "Z": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key, though it suggests laurynmm instead of Vector73 as reviewer.",
+    "accuracy_why": "It covers both completed asks and mentions the fallbacks and tests, but doesn't say the code is unchanged, and it misses the Vector73 suggestion and the admin-facing backward-compatibility concern.",
+    "reply_why": "It is a reviewer ping with a short justification that could be pasted almost as is, but it has no thanks to the author."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key, though it suggests laurynmm rather than Vector73.",
+    "accuracy_why": "It gets both completed asks right, but it doesn't note that the code is unchanged, misses the fallbacks, the Vector73 suggestion and the backward-compatibility concern, and has no explicit line saying nothing is missing.",
+    "reply_why": "A short thanks plus a single reviewer ping is pasteable as is."
+   }
+  },
+  "ranking": [
+   "M",
+   "Z"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand-off matches the key, though it suggests laurynmm instead of Vector73 as reviewer.\",\n   \"accuracy_why\": \"It covers both completed asks and mentions the fallbacks and tests, but doesn't say the code is unchanged, and it misses the Vector73 suggestion and the admin-facing backward-compatibility concern.\",\n   \"reply_why\": \"It is a reviewer ping with a short justification that could be pasted almost as is, but it has no thanks to the author.\"},\n  \"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand-off matches the key, though it suggests laurynmm rather than Vector73.\",\n   \"accuracy_why\": \"It gets both completed asks right, but it doesn't note that the code is unchanged, misses the fallbacks, the Vector73 suggestion and the backward-compatibility concern, and has no explicit line saying nothing is missing.\",\n   \"reply_why\": \"A short thanks plus a single reviewer ping is pasteable as is.\"}},\n \"ranking\": [\"M\", \"Z\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.266688
+}
