@@ -1,0 +1,69 @@
+{
+ "case": "39784-5042031450",
+ "repeat": 1,
+ "map": {
+  "L": [
+   "eval2:v3-r1"
+  ],
+  "M": [
+   "v3a-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "The reply thanks the author for updating the screenshots, implying they now meet the guidelines, when they are still unpaired full-window images."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE with keep-not-ready and more feedback matches the key.",
+    "accuracy_why": "It correctly flags the missing #33086 discussion and the checklist gaps, but it treats the screenshots as fixed and skips the complexity concern.",
+    "reply_why": "The reply praises the screenshots that still need rework and drops half of the required ask."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "NOTE with keep-not-ready and more feedback matches the key.",
+    "accuracy_why": "It correctly says #33086 is never mentioned but misses that the screenshots still aren't precise paired comparisons and omits the complexity concern.",
+    "reply_why": "The #33086 ask is good and pasteable, but the reply omits the required screenshot rework."
+   }
+  },
+  "ranking": [
+   "M",
+   "L"
+  ]
+ },
+ "text": "{\"outputs\": {\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"The reply thanks the author for updating the screenshots, implying they now meet the guidelines, when they are still unpaired full-window images.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with keep-not-ready and more feedback matches the key.\",\n   \"accuracy_why\": \"It correctly flags the missing #33086 discussion and the checklist gaps, but it treats the screenshots as fixed and skips the complexity concern.\",\n   \"reply_why\": \"The reply praises the screenshots that still need rework and drops half of the required ask.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with keep-not-ready and more feedback matches the key.\",\n   \"accuracy_why\": \"It correctly says #33086 is never mentioned but misses that the screenshots still aren't precise paired comparisons and omits the complexity concern.\",\n   \"reply_why\": \"The #33086 ask is good and pasteable, but the reply omits the required screenshot rework.\"}},\n \"ranking\": [\"M\", \"L\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.03483460000000001
+}
