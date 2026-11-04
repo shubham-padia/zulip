@@ -1,0 +1,6 @@
+{
+ "case": "40030-5442399937",
+ "answer": "yes",
+ "text": "yes\nThe author's comment \"@zulipbot ready for review\" is the Zulip bot command that signals the PR is ready for maintainers to review again, which swaps the \"in progress\"/\"not ready\" label for a review-ready one.",
+ "cost_usd": 0.003672
+}

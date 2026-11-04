@@ -1,0 +1,6 @@
+{
+ "case": "40031-5448011368",
+ "answer": "yes",
+ "text": "yes\nThe author says they updated the before/after captures as the maintainer requested, which implicitly signals the PR is ready for re-review, even though they don't explicitly ask for another look.",
+ "cost_usd": 0.004854
+}
