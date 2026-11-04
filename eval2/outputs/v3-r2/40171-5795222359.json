@@ -1,0 +1,11 @@
+{
+ "case": "40171-5795222359",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested before/after screenshots are now in the description**\n\nNew: The author updated the description with a before/after table for the DM option and for `#development help`, plus a screenshot showing the button becomes active once a topic is entered, so channels requiring topics are shown to behave the same. No new code was pushed, and none was asked for.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Niloth-p, who diagnosed the bug and has the most recent commits on this file.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots, they cover the channel-requires-topic case. @Niloth-p, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.006579599999999999
+}

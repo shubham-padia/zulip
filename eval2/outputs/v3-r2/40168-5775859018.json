@@ -1,0 +1,11 @@
+{
+ "case": "40168-5775859018",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots added, small fix, CI passes**\n\nNew: The author posted two screenshots in a comment (desktop width and 375px mobile) and described how they tested. There is no new push. The PR description still says \"Screenshots to be added by author in comments\", but the screenshots are in the thread. Missing: nothing blocking, though the screenshots don't clearly show before and after, and the older PR #40052 for the same issue is still open.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm; the reviewer can decide how to handle #40052.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0105
+}
