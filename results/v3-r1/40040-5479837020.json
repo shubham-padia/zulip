@@ -1,0 +1,6 @@
+{
+ "case": "40040-5479837020",
+ "answer": "yes",
+ "text": "yes\n\nThe author completed both requested items (linked a CZO discussion and squashed the commit history), which effectively hands the PR back for another look, even though they didn't explicitly say \"ready for review.\"",
+ "cost_usd": 0.00523
+}
