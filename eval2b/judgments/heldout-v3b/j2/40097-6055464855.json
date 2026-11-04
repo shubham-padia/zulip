@@ -1,0 +1,115 @@
+{
+ "case": "40097-6055464855",
+ "repeat": 2,
+ "map": {
+  "X": [
+   "v3-r2"
+  ],
+  "Z": [
+   "v3b-r2"
+  ],
+  "G": [
+   "v3-r1"
+  ],
+  "V": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the first commit breaks the test on its own and must be squashed, a guess the inputs don't support and on which the whole verdict rests"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for a squash, when the key's action is to hand the PR off to maintainer review.",
+    "accuracy_why": "It gets the fixes and CI right, but it never notes that the label came with no written feedback, and its blocking point is an unsupported guess.",
+    "reply_why": "The reply asks for a squash the key never asks for and doesn't move the PR toward review."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that hands the PR off matches the key.",
+    "accuracy_why": "It covers the fixes, the missing feedback, CI and #40096, but it says \"integration review\" instead of \"maintainer review\" and omits the missing Gogs tests.",
+    "reply_why": "Besides the reviewer ping, it adds a request to the author about #40096, which a hand-off doesn't need."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that hands the PR off matches the key.",
+    "accuracy_why": "It never says the label came without written feedback, which is the decisive reason nothing is outstanding, and it names the wrong review label.",
+    "reply_why": "The reply is a single reviewer ping, which is ideal for a hand-off."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that hands the PR off matches the key.",
+    "accuracy_why": "It states every cutoff must-have, including that no written feedback is outstanding, but it says \"integration review\" and misses the gap in Gogs tests.",
+    "reply_why": "It pings the reviewer but adds an extra request for the author to update the description about #40096, which a hand-off doesn't need."
+   }
+  },
+  "ranking": [
+   "G",
+   "V",
+   "Z",
+   "X"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the first commit breaks the test on its own and must be squashed, a guess the inputs don't support and on which the whole verdict rests\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for a squash, when the key's action is to hand the PR off to maintainer review.\",\n \"accuracy_why\": \"It gets the fixes and CI right, but it never notes that the label came with no written feedback, and its blocking point is an unsupported guess.\",\n \"reply_why\": \"The reply asks for a squash the key never asks for and doesn't move the PR toward review.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE that hands the PR off matches the key.\",\n \"accuracy_why\": \"It covers the fixes, the missing feedback, CI and #40096, but it says \\\"integration review\\\" instead of \\\"maintainer review\\\" and omits the missing Gogs tests.\",\n \"reply_why\": \"Besides the reviewer ping, it adds a request to the author about #40096, which a hand-off doesn't need.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE that hands the PR off matches the key.\",\n \"accuracy_why\": \"It never says the label came without written feedback, which is the decisive reason nothing is outstanding, and it names the wrong review label.\",\n \"reply_why\": \"The reply is a single reviewer ping, which is ideal for a hand-off.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 5, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE that hands the PR off matches the key.\",\n \"accuracy_why\": \"It states every cutoff must-have, including that no written feedback is outstanding, but it says \\\"integration review\\\" and misses the gap in Gogs tests.\",\n \"reply_why\": \"It pings the reviewer but adds an extra request for the author to update the description about #40096, which a hand-off doesn't need.\"}\n},\n\"ranking\": [\"G\", \"V\", \"Z\", \"X\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.140796
+}

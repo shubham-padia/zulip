@@ -1,0 +1,113 @@
+{
+ "case": "40201-6155498168",
+ "repeat": 2,
+ "map": {
+  "G": [
+   "v3-r2"
+  ],
+  "N": [
+   "v3b-r1"
+  ],
+  "L": [
+   "v3-r1"
+  ],
+  "C": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE with hand_off matches the key: CI was the only ask, and it now passes.",
+    "accuracy_why": "It gets the decisive CI fact and the new fixture right, but it suggests laurynmm instead of Niloth P, omits the author's other PR closed over AI policy, misses that the author self-removed the label, and skips the stale-description gap.",
+    "reply_why": "A single reviewer ping line fits a hand_off, though the reviewer choice is not the slack_incoming expert."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "NOTE with hand_off matches the key, and it states that CI was the only thing the feedback asked for.",
+    "accuracy_why": "It has the same coverage as N: it misses Niloth P, the AI-policy flag, the self-removed label and the description's stale fixture list.",
+    "reply_why": "A single reviewer ping line is appropriate for a hand_off, though laurynmm is a weaker reviewer choice than Niloth P."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" over a missing linked issue, even though the only feedback (CI) is addressed and the key says hand off.",
+    "accuracy_why": "It correctly notes that CI was answered and that the description lists only one fixture, but it misses the reviewer suggestion, the AI-policy history and the self-removed label.",
+    "reply_why": "It asks the author for a help-wanted issue link instead of telling them the PR is going to review, which misses the reply_ask."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It withholds review and even raises closing over a missing issue link, when the key says to hand off now that CI passes.",
+    "accuracy_why": "It notes that CI is fixed and that the commit message is unchanged, but it misses the stale description, the reviewer suggestion, the AI-policy history and the self-removed label.",
+    "reply_why": "It asks for a Fixes line instead of confirming that the PR is going to a maintainer for review, which is the wrong ask."
+   }
+  },
+  "ranking": [
+   "N",
+   "C",
+   "L",
+   "G"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with hand_off matches the key: CI was the only ask, and it now passes.\",\n \"accuracy_why\": \"It gets the decisive CI fact and the new fixture right, but it suggests laurynmm instead of Niloth P, omits the author's other PR closed over AI policy, misses that the author self-removed the label, and skips the stale-description gap.\",\n \"reply_why\": \"A single reviewer ping line fits a hand_off, though the reviewer choice is not the slack_incoming expert.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with hand_off matches the key, and it states that CI was the only thing the feedback asked for.\",\n \"accuracy_why\": \"It has the same coverage as N: it misses Niloth P, the AI-policy flag, the self-removed label and the description's stale fixture list.\",\n \"reply_why\": \"A single reviewer ping line is appropriate for a hand_off, though laurynmm is a weaker reviewer choice than Niloth P.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" over a missing linked issue, even though the only feedback (CI) is addressed and the key says hand off.\",\n \"accuracy_why\": \"It correctly notes that CI was answered and that the description lists only one fixture, but it misses the reviewer suggestion, the AI-policy history and the self-removed label.\",\n \"reply_why\": \"It asks the author for a help-wanted issue link instead of telling them the PR is going to review, which misses the reply_ask.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It withholds review and even raises closing over a missing issue link, when the key says to hand off now that CI passes.\",\n \"accuracy_why\": \"It notes that CI is fixed and that the commit message is unchanged, but it misses the stale description, the reviewer suggestion, the AI-policy history and the self-removed label.\",\n \"reply_why\": \"It asks for a Fixes line instead of confirming that the PR is going to a maintainer for review, which is the wrong ask.\"}\n},\n\"ranking\": [\"N\", \"C\", \"L\", \"G\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.129528
+}

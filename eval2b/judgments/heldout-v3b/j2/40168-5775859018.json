@@ -1,0 +1,122 @@
+{
+ "case": "40168-5775859018",
+ "repeat": 2,
+ "map": {
+  "M": [
+   "v3b-r2"
+  ],
+  "K": [
+   "v3b-r1"
+  ],
+  "D": [
+   "v3-r1"
+  ],
+  "B": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the PR is ready for review and the guide's items are covered, though the key says the screenshots and description still fall short of the requirements."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off for review, but the key action is close.",
+    "accuracy_why": "It notes the placeholder, the missing before/after screenshots and #40052, but the verdict that the PR is ready rests on a wrong fact, and it never asks the triager to check for button overlap.",
+    "reply_why": "It pings a reviewer for a PR that should be closed, so it pushes the wrong decision, even though it also asks for before/after screenshots."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says the requested PR presentation is now done, though the key lists it as still missing.",
+     "Describes a filled-in checklist, but two self-review items are still unchecked."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off for review, but the key action is close.",
+    "accuracy_why": "It wrongly says the feedback was addressed, only hedges on before/after, and omits both #40052 and the overlap check.",
+    "reply_why": "It requests review on a PR that should be closed and only weakly asks for the screenshots to be moved."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It correctly keeps the PR out of review, but it suggests more feedback where the key's observed action is close.",
+    "accuracy_why": "It correctly reports the unchanged code, the placeholder and the missing before/after shots, but it misses the overlap check and #40052.",
+    "reply_why": "It asks for before/after screenshots at several sizes in the description, but never mentions the button being visible without overlap, and it encourages the author to continue on a PR that should be closed."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It correctly keeps the PR out of review, but it suggests more feedback where the key's observed action is close.",
+    "accuracy_why": "It covers the unchanged code, the placeholder, the missing before/after shots and the competing #40052, missing only the decisive overlap check.",
+    "reply_why": "It gives a clear before/after ask with a guide link and notes the unchecked checklist items, but it skips the overlap point and keeps the author going on a PR that should be closed."
+   }
+  },
+  "ranking": [
+   "B",
+   "D",
+   "M",
+   "K"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n  \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n  \"wrong_facts\": [\"Claims the PR is ready for review and the guide's items are covered, though the key says the screenshots and description still fall short of the requirements.\"],\n  \"rule_failures\": [\"reply_contradicts_verdict\"],\n  \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 7,\n  \"decision_why\": \"It recommends handing off for review, but the key action is close.\",\n  \"accuracy_why\": \"It notes the placeholder, the missing before/after screenshots and #40052, but the verdict that the PR is ready rests on a wrong fact, and it never asks the triager to check for button overlap.\",\n  \"reply_why\": \"It pings a reviewer for a PR that should be closed, so it pushes the wrong decision, even though it also asks for before/after screenshots.\"},\n \"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n  \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"wrong\"},\n  \"wrong_facts\": [\"Says the requested PR presentation is now done, though the key lists it as still missing.\", \"Describes a filled-in checklist, but two self-review items are still unchecked.\"],\n  \"rule_failures\": [\"reply_contradicts_verdict\"],\n  \"decision_score\": 1, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 7,\n  \"decision_why\": \"It recommends handing off for review, but the key action is close.\",\n  \"accuracy_why\": \"It wrongly says the feedback was addressed, only hedges on before/after, and omits both #40052 and the overlap check.\",\n  \"reply_why\": \"It requests review on a PR that should be closed and only weakly asks for the screenshots to be moved.\"},\n \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n  \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n  \"wrong_facts\": [],\n  \"rule_failures\": [],\n  \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 8,\n  \"decision_why\": \"It correctly keeps the PR out of review, but it suggests more feedback where the key's observed action is close.\",\n  \"accuracy_why\": \"It correctly reports the unchanged code, the placeholder and the missing before/after shots, but it misses the overlap check and #40052.\",\n  \"reply_why\": \"It asks for before/after screenshots at several sizes in the description, but never mentions the button being visible without overlap, and it encourages the author to continue on a PR that should be closed.\"},\n \"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n  \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n  \"wrong_facts\": [],\n  \"rule_failures\": [],\n  \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 8,\n  \"decision_why\": \"It correctly keeps the PR out of review, but it suggests more feedback where the key's observed action is close.\",\n  \"accuracy_why\": \"It covers the unchanged code, the placeholder, the missing before/after shots and the competing #40052, missing only the decisive overlap check.\",\n  \"reply_why\": \"It gives a clear before/after ask with a guide link and notes the unchecked checklist items, but it skips the overlap point and keeps the author going on a PR that should be closed.\"}},\n \"ranking\": [\"B\", \"D\", \"M\", \"K\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.18592
+}

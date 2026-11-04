@@ -1,0 +1,120 @@
+{
+ "case": "39865-5194201765",
+ "repeat": 2,
+ "map": {
+  "I": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v3b-r1"
+  ],
+  "Z": [
+   "v3-r1"
+  ],
+  "G": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Treats the added screenshots as satisfying the feedback, when each before/after pair differs in size and capture date and is not precise."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off for review, but the key action is more feedback because the screenshots are still imprecise.",
+    "accuracy_why": "The hand-off rests on the false claim that the screenshot feedback was met, though it does correctly note the open design question and the lack of a new push.",
+    "reply_why": "It pings Sahil for review instead of asking the author for precise screenshots, and it awkwardly thanks the author and pings Sahil in the same sentence."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshots cover the requested feedback and 'look good', when they are not precise."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It correctly keeps \"not ready\" with more feedback, but bases that only on the design question rather than on the screenshots.",
+    "accuracy_why": "It misses the decisive problem that the screenshots are imprecise and wrongly says they meet the feedback.",
+    "reply_why": "The reply praises the screenshots and asks about the API design, so it misses the needed ask to retake precise before/after pairs."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshots are fixed and 'look good', when they are not precise.",
+     "Presents Sahil's last CZO comment as asking for normalization, when he was still undecided."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "Its action of keeping \"not ready\" matches the key, though for the wrong reasons.",
+    "accuracy_why": "It misses the imprecise screenshots, overstates Sahil's position as a firm request, and adds a valid but secondary point about splitting the single large commit.",
+    "reply_why": "It approves the screenshots and asks for a design decision and a commit split, but never asks for precise screenshots."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshots are done and 'look good', when they are not precise."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" with more feedback, which matches the key's action even though its reason is the design question.",
+    "accuracy_why": "It describes Sahil's CZO comments and the author's response accurately, but misses that the screenshots are still imprecise.",
+    "reply_why": "It tells the author the screenshots look good and to wait for Sahil, so it misses the request for precise screenshots."
+   }
+  },
+  "ranking": [
+   "G",
+   "Q",
+   "Z",
+   "I"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Treats the added screenshots as satisfying the feedback, when each before/after pair differs in size and capture date and is not precise.\"],\n \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off for review, but the key action is more feedback because the screenshots are still imprecise.\",\n \"accuracy_why\": \"The hand-off rests on the false claim that the screenshot feedback was met, though it does correctly note the open design question and the lack of a new push.\",\n \"reply_why\": \"It pings Sahil for review instead of asking the author for precise screenshots, and it awkwardly thanks the author and pings Sahil in the same sentence.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the screenshots cover the requested feedback and 'look good', when they are not precise.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It correctly keeps \\\"not ready\\\" with more feedback, but bases that only on the design question rather than on the screenshots.\",\n \"accuracy_why\": \"It misses the decisive problem that the screenshots are imprecise and wrongly says they meet the feedback.\",\n \"reply_why\": \"The reply praises the screenshots and asks about the API design, so it misses the needed ask to retake precise before/after pairs.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the screenshots are fixed and 'look good', when they are not precise.\", \"Presents Sahil's last CZO comment as asking for normalization, when he was still undecided.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"Its action of keeping \\\"not ready\\\" matches the key, though for the wrong reasons.\",\n \"accuracy_why\": \"It misses the imprecise screenshots, overstates Sahil's position as a firm request, and adds a valid but secondary point about splitting the single large commit.\",\n \"reply_why\": \"It approves the screenshots and asks for a design decision and a commit split, but never asks for precise screenshots.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the screenshots are done and 'look good', when they are not precise.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" with more feedback, which matches the key's action even though its reason is the design question.\",\n \"accuracy_why\": \"It describes Sahil's CZO comments and the author's response accurately, but misses that the screenshots are still imprecise.\",\n \"reply_why\": \"It tells the author the screenshots look good and to wait for Sahil, so it misses the request for precise screenshots.\"}\n},\n\"ranking\": [\"G\", \"Q\", \"Z\", \"I\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.343068
+}

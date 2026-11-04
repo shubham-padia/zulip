@@ -1,0 +1,117 @@
+{
+ "case": "40257-6023845324",
+ "repeat": 2,
+ "map": {
+  "L": [
+   "v3b-r2"
+  ],
+  "B": [
+   "v3-r1"
+  ],
+  "O": [
+   "v3b-r1"
+  ],
+  "J": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key exactly.",
+    "accuracy_why": "It covers the banner, the network-error parallel and passing CI, and flags that the text still describes only logging, though it points at the description rather than the commit message and title, and it omits the client-side-only scope.",
+    "reply_why": "A short thanks plus a reviewer ping is nearly pasteable, but it doesn't ask for the commit message or title update."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 10,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "It has the banner, CI and screenshot facts right but says nothing is missing, skipping the stale commit message and title and the partial scope.",
+    "reply_why": "\"No reply needed.\" is the allowed best reply for a hand-off."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the screenshot feedback is addressed, but the author never confirmed the swapped before/after labels were fixed."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "It overstates the screenshot fix, omits CI, the commit message and title gap and the partial scope, and adds one wrong fact.",
+    "reply_why": "A single reviewer ping line is pasteable as is."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says both of laurynmm's requests are done, but the before/after label fix is unconfirmed."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "It names popup_banners.ts but omits CI, the network-error parallel, the stale commit message and title, and the partial scope, and it wrongly claims both requests are done.",
+    "reply_why": "A single reviewer ping line is pasteable as is."
+   }
+  },
+  "ranking": [
+   "J",
+   "B",
+   "O",
+   "L"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key exactly.\",\n \"accuracy_why\": \"It covers the banner, the network-error parallel and passing CI, and flags that the text still describes only logging, though it points at the description rather than the commit message and title, and it omits the client-side-only scope.\",\n \"reply_why\": \"A short thanks plus a reviewer ping is nearly pasteable, but it doesn't ask for the commit message or title update.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 10, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It has the banner, CI and screenshot facts right but says nothing is missing, skipping the stale commit message and title and the partial scope.\",\n \"reply_why\": \"\\\"No reply needed.\\\" is the allowed best reply for a hand-off.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the screenshot feedback is addressed, but the author never confirmed the swapped before/after labels were fixed.\"], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It overstates the screenshot fix, omits CI, the commit message and title gap and the partial scope, and adds one wrong fact.\",\n \"reply_why\": \"A single reviewer ping line is pasteable as is.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says both of laurynmm's requests are done, but the before/after label fix is unconfirmed.\"], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It names popup_banners.ts but omits CI, the network-error parallel, the stale commit message and title, and the partial scope, and it wrongly claims both requests are done.\",\n \"reply_why\": \"A single reviewer ping line is pasteable as is.\"}\n},\n\"ranking\": [\"J\", \"B\", \"O\", \"L\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.184552
+}

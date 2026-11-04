@@ -1,0 +1,115 @@
+{
+ "case": "39862-5398202815",
+ "repeat": 2,
+ "map": {
+  "K": [
+   "v3b-r1"
+  ],
+  "W": [
+   "v3-r2"
+  ],
+  "F": [
+   "v3b-r2"
+  ],
+  "Q": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key's kind and action.",
+    "accuracy_why": "It notes Daniel K's approval but never says the title-only and narrow-window screenshots he requested were posted, skips the stale \"design review\" label, and spends a line on earlier fixes the first card already covers.",
+    "reply_why": "A single reviewer ping line is exactly right for a hand-off."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key exactly.",
+    "accuracy_why": "It covers the design sign-off, the requested extra screenshots, and removal of both labels, with an accurate CI caveat and no wrong facts.",
+    "reply_why": "A brief thanks plus a reviewer ping is pasteable with at most a trivial trim."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Lists the title-only and narrow-window screenshots as still missing because they are only in the chat thread, though Daniel K requested them there and they were delivered, so nothing is outstanding."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off matches the key's kind and action.",
+    "accuracy_why": "It invents an outstanding item from Daniel's already-fulfilled screenshot request, omits the \"design review\" label, and restates earlier fixes.",
+    "reply_why": "A short thanks and a reviewer ping work, needing at most a tiny trim."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key exactly.",
+    "accuracy_why": "It covers the approval after the extra screenshots and removal of both labels, with no wrong facts.",
+    "reply_why": "A short thanks plus a reviewer ping is pasteable with at most a trivial trim."
+   }
+  },
+  "ranking": [
+   "W",
+   "Q",
+   "K",
+   "F"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with a hand-off matches the key's kind and action.\",\n   \"accuracy_why\": \"It notes Daniel K's approval but never says the title-only and narrow-window screenshots he requested were posted, skips the stale \\\"design review\\\" label, and spends a line on earlier fixes the first card already covers.\",\n   \"reply_why\": \"A single reviewer ping line is exactly right for a hand-off.\"},\n  \"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE with a hand-off matches the key exactly.\",\n   \"accuracy_why\": \"It covers the design sign-off, the requested extra screenshots, and removal of both labels, with an accurate CI caveat and no wrong facts.\",\n   \"reply_why\": \"A brief thanks plus a reviewer ping is pasteable with at most a trivial trim.\"},\n  \"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Lists the title-only and narrow-window screenshots as still missing because they are only in the chat thread, though Daniel K requested them there and they were delivered, so nothing is outstanding.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 8,\n   \"brevity_score\": 7,\n   \"decision_why\": \"NOTE with a hand-off matches the key's kind and action.\",\n   \"accuracy_why\": \"It invents an outstanding item from Daniel's already-fulfilled screenshot request, omits the \\\"design review\\\" label, and restates earlier fixes.\",\n   \"reply_why\": \"A short thanks and a reviewer ping work, needing at most a tiny trim.\"},\n  \"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with a hand-off matches the key exactly.\",\n   \"accuracy_why\": \"It covers the approval after the extra screenshots and removal of both labels, with no wrong facts.\",\n   \"reply_why\": \"A short thanks plus a reviewer ping is pasteable with at most a trivial trim.\"}},\n \"ranking\": [\"W\", \"Q\", \"K\", \"F\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.211388
+}

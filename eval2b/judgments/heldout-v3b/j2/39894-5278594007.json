@@ -1,0 +1,113 @@
+{
+ "case": "39894-5278594007",
+ "repeat": 2,
+ "map": {
+  "E": [
+   "v3b-r2"
+  ],
+  "L": [
+   "v3-r1"
+  ],
+  "X": [
+   "v3b-r1"
+  ],
+  "J": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key, though it suggests laurynmm rather than karlstolley as reviewer.",
+    "accuracy_why": "It covers the screenshots and flags the 5px→6px blur for #design, but it omits that there was no new push or CI change and doesn't suggest karlstolley.",
+    "reply_why": "The reviewer ping is usable but reads like the author's own comment and doesn't thank the author."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key, with laurynmm instead of karlstolley as reviewer.",
+    "accuracy_why": "It notes the screenshots, the pixel diff, that there was no push, and the blur change for the reviewer to judge, missing only the karlstolley suggestion.",
+    "reply_why": "A short thanks plus a reviewer ping that a maintainer could paste as is."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key, with laurynmm instead of karlstolley as reviewer.",
+    "accuracy_why": "It flags the blur change as not strictly no-visual-change, but it omits that there was no push or CI change and doesn't suggest karlstolley.",
+    "reply_why": "The reviewer ping works but reads as the author's voice and doesn't thank the author."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key, with laurynmm instead of karlstolley as reviewer.",
+    "accuracy_why": "It covers the screenshots, the pixel diff, that there was no push, and the blur decision for the reviewer, missing only the karlstolley suggestion.",
+    "reply_why": "A short thanks plus a reviewer ping, ready to paste."
+   }
+  },
+  "ranking": [
+   "L",
+   "J",
+   "E",
+   "X"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with a hand-off matches the key, though it suggests laurynmm rather than karlstolley as reviewer.\",\n \"accuracy_why\": \"It covers the screenshots and flags the 5px→6px blur for #design, but it omits that there was no new push or CI change and doesn't suggest karlstolley.\",\n \"reply_why\": \"The reviewer ping is usable but reads like the author's own comment and doesn't thank the author.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off matches the key, with laurynmm instead of karlstolley as reviewer.\",\n \"accuracy_why\": \"It notes the screenshots, the pixel diff, that there was no push, and the blur change for the reviewer to judge, missing only the karlstolley suggestion.\",\n \"reply_why\": \"A short thanks plus a reviewer ping that a maintainer could paste as is.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with a hand-off matches the key, with laurynmm instead of karlstolley as reviewer.\",\n \"accuracy_why\": \"It flags the blur change as not strictly no-visual-change, but it omits that there was no push or CI change and doesn't suggest karlstolley.\",\n \"reply_why\": \"The reviewer ping works but reads as the author's voice and doesn't thank the author.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with a hand-off matches the key, with laurynmm instead of karlstolley as reviewer.\",\n \"accuracy_why\": \"It covers the screenshots, the pixel diff, that there was no push, and the blur decision for the reviewer, missing only the karlstolley suggestion.\",\n \"reply_why\": \"A short thanks plus a reviewer ping, ready to paste.\"}\n},\n\"ranking\": [\"L\", \"J\", \"E\", \"X\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.257088
+}

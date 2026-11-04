@@ -1,0 +1,124 @@
+{
+ "case": "40096-6055469654",
+ "repeat": 2,
+ "map": {
+  "D": [
+   "v3b-r1"
+  ],
+  "W": [
+   "v3-r1"
+  ],
+  "G": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands off, which matches the key, but it says \"integration review\" where the key says \"maintainer review\".",
+    "accuracy_why": "It covers CI passing and the label-only feedback, but it misses the docs-screenshot flag and Niloth P, and pads \"Missing\" with a no-issue-link point and an untested-on-Gitea point that don't block review.",
+    "reply_why": "It is a short reviewer ping that says CI passes, which fits a hand-off and could be pasted as is."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Lists a separate test-fix commit as still missing, when the key says nothing is outstanding."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands off, which is right, but it uses the \"integration review\" label instead of \"maintainer review\".",
+    "accuracy_why": "It has CI passing and Niloth P, but it misses the label-only feedback and the docs-screenshot flag, and it invents a squash requirement.",
+    "reply_why": "It pings the reviewer but also asks the author for squash work the key doesn't require, which undercuts the hand-off."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the commits must be squashed before review, when the key says nothing is still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks for more work, when the key says to hand the PR off.",
+    "accuracy_why": "The more-feedback action rests on a commit-structure problem that the key doesn't list as missing.",
+    "reply_why": "It asks for a squash instead of telling the author the PR is moving to review, so it misses the reply_ask."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commits must be squashed before review, when the key says nothing is still missing.",
+     "Speculates that the fixture revert has to be folded in or reordered so each commit passes on its own."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" and asks for more work, when the key says to hand the PR off.",
+    "accuracy_why": "The action rests on an invented commit-structure problem, with extra speculation about the fixture-revert commit.",
+    "reply_why": "It asks for a squash instead of handing off, so it misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "Q",
+   "D",
+   "G",
+   "W"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 8, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that hands off, which matches the key, but it says \\\"integration review\\\" where the key says \\\"maintainer review\\\".\",\n \"accuracy_why\": \"It covers CI passing and the label-only feedback, but it misses the docs-screenshot flag and Niloth P, and pads \\\"Missing\\\" with a no-issue-link point and an untested-on-Gitea point that don't block review.\",\n \"reply_why\": \"It is a short reviewer ping that says CI passes, which fits a hand-off and could be pasted as is.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Lists a separate test-fix commit as still missing, when the key says nothing is outstanding.\"],\n \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 8, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that hands off, which is right, but it uses the \\\"integration review\\\" label instead of \\\"maintainer review\\\".\",\n \"accuracy_why\": \"It has CI passing and Niloth P, but it misses the label-only feedback and the docs-screenshot flag, and it invents a squash requirement.\",\n \"reply_why\": \"It pings the reviewer but also asks the author for squash work the key doesn't require, which undercuts the hand-off.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the commits must be squashed before review, when the key says nothing is still missing.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, when the key says to hand the PR off.\",\n \"accuracy_why\": \"The more-feedback action rests on a commit-structure problem that the key doesn't list as missing.\",\n \"reply_why\": \"It asks for a squash instead of telling the author the PR is moving to review, so it misses the reply_ask.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commits must be squashed before review, when the key says nothing is still missing.\", \"Speculates that the fixture revert has to be folded in or reordered so each commit passes on its own.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, when the key says to hand the PR off.\",\n \"accuracy_why\": \"The action rests on an invented commit-structure problem, with extra speculation about the fixture-revert commit.\",\n \"reply_why\": \"It asks for a squash instead of handing off, so it misses the reply_ask.\"}\n},\n\"ranking\": [\"Q\", \"D\", \"G\", \"W\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.13713999999999998
+}

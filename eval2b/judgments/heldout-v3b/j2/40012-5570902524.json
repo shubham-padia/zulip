@@ -1,0 +1,113 @@
+{
+ "case": "40012-5570902524",
+ "repeat": 2,
+ "map": {
+  "R": [
+   "v3b-r1"
+  ],
+  "P": [
+   "v3b-r2"
+  ],
+  "V": [
+   "v3-r2"
+  ],
+  "N": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It picks NOTE with a hand-off to laurynmm, which matches the key.",
+    "accuracy_why": "It confirms both asks are met and flags the gap with timabbott's /help/ suggestion, but omits that there was no new code push.",
+    "reply_why": "A short thanks plus a reviewer ping is pasteable, though the 'look good' judgment adds a word more than needed."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 10,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It picks NOTE with a hand-off to laurynmm, which matches the key.",
+    "accuracy_why": "It covers every must-have: both asks met, no new push, and the gap with the issue's suggested help-guide approach.",
+    "reply_why": "A one-line thanks plus a reviewer ping matches the reply ask and is pasteable with at most a word changed."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It picks NOTE with a hand-off to laurynmm, which matches the key.",
+    "accuracy_why": "It correctly reports both asks met and no new push, but says nothing is missing instead of flagging the approach difference from timabbott's suggestion.",
+    "reply_why": "A single reviewer ping line is ideal for a hand-off."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It picks NOTE with a hand-off to laurynmm, which matches the key.",
+    "accuracy_why": "It covers both asks and the absence of a new push, but omits the point about the issue's suggested /help/ guide approach.",
+    "reply_why": "A single reviewer ping line is ideal for a hand-off."
+   }
+  },
+  "ranking": [
+   "P",
+   "N",
+   "V",
+   "R"
+  ]
+ },
+ "text": "{\"outputs\": {\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It picks NOTE with a hand-off to laurynmm, which matches the key.\",\n   \"accuracy_why\": \"It confirms both asks are met and flags the gap with timabbott's /help/ suggestion, but omits that there was no new code push.\",\n   \"reply_why\": \"A short thanks plus a reviewer ping is pasteable, though the 'look good' judgment adds a word more than needed.\"},\n  \"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 10, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It picks NOTE with a hand-off to laurynmm, which matches the key.\",\n   \"accuracy_why\": \"It covers every must-have: both asks met, no new push, and the gap with the issue's suggested help-guide approach.\",\n   \"reply_why\": \"A one-line thanks plus a reviewer ping matches the reply ask and is pasteable with at most a word changed.\"},\n  \"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It picks NOTE with a hand-off to laurynmm, which matches the key.\",\n   \"accuracy_why\": \"It correctly reports both asks met and no new push, but says nothing is missing instead of flagging the approach difference from timabbott's suggestion.\",\n   \"reply_why\": \"A single reviewer ping line is ideal for a hand-off.\"},\n  \"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It picks NOTE with a hand-off to laurynmm, which matches the key.\",\n   \"accuracy_why\": \"It covers both asks and the absence of a new push, but omits the point about the issue's suggested /help/ guide approach.\",\n   \"reply_why\": \"A single reviewer ping line is ideal for a hand-off.\"}},\n \"ranking\": [\"P\", \"N\", \"V\", \"R\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.14157999999999998
+}

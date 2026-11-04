@@ -1,0 +1,125 @@
+{
+ "case": "40237-5935346309",
+ "repeat": 2,
+ "map": {
+  "O": [
+   "v3-r2"
+  ],
+  "T": [
+   "v3b-r1"
+  ],
+  "G": [
+   "v3-r1"
+  ],
+  "Z": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the PR is ready for review, when the `:grinning:` text display still conflicts with the #design discussion and the design remains unsettled."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) matches, but it recommends handing off for review where the key says more feedback was needed.",
+    "accuracy_why": "It correctly reports the screenshots, the absence of a push and the overlap with #37967, but misses the text-emoji design conflict that the readiness verdict depends on.",
+    "reply_why": "It thanks the author but asks laurynmm for review instead of asking the author to follow the status emoji design."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the PR is ready for review, when the `:grinning:` text display still conflicts with the #design discussion and the design remains unsettled."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind (NOTE) matches, but it recommends handing off where the key says more feedback was needed.",
+    "accuracy_why": "It omits the absence of a push, the overlap with #37967 and the design conflict, and flags only a minor test leftover.",
+    "reply_why": "It is a review ping to laurynmm and misses the ask to follow the design."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the PR is ready for review, when the `:grinning:` text display still conflicts with the #design discussion and the design remains unsettled."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) matches, but it recommends handing off where the key says more feedback was needed.",
+    "accuracy_why": "It covers the screenshots, the absence of a push and #37967, but misses the text-emoji design conflict.",
+    "reply_why": "It is a review ping to laurynmm and misses the ask to follow the design."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the PR is ready for review, when the `:grinning:` text display still conflicts with the #design discussion and the design remains unsettled."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind (NOTE) matches, but it recommends handing off where the key says more feedback was needed.",
+    "accuracy_why": "It notes the screenshots and the absence of a push, but misses #37967 and the design conflict, which is the decisive point.",
+    "reply_why": "It is a review ping to laurynmm and misses the ask to follow the design."
+   }
+  },
+  "ranking": [
+   "O",
+   "G",
+   "Z",
+   "T"
+  ]
+ },
+ "text": "{\"outputs\": {\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Claims the PR is ready for review, when the `:grinning:` text display still conflicts with the #design discussion and the design remains unsettled.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) matches, but it recommends handing off for review where the key says more feedback was needed.\",\n   \"accuracy_why\": \"It correctly reports the screenshots, the absence of a push and the overlap with #37967, but misses the text-emoji design conflict that the readiness verdict depends on.\",\n   \"reply_why\": \"It thanks the author but asks laurynmm for review instead of asking the author to follow the status emoji design.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Claims the PR is ready for review, when the `:grinning:` text display still conflicts with the #design discussion and the design remains unsettled.\"],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"The kind (NOTE) matches, but it recommends handing off where the key says more feedback was needed.\",\n   \"accuracy_why\": \"It omits the absence of a push, the overlap with #37967 and the design conflict, and flags only a minor test leftover.\",\n   \"reply_why\": \"It is a review ping to laurynmm and misses the ask to follow the design.\"},\n  \"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Claims the PR is ready for review, when the `:grinning:` text display still conflicts with the #design discussion and the design remains unsettled.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) matches, but it recommends handing off where the key says more feedback was needed.\",\n   \"accuracy_why\": \"It covers the screenshots, the absence of a push and #37967, but misses the text-emoji design conflict.\",\n   \"reply_why\": \"It is a review ping to laurynmm and misses the ask to follow the design.\"},\n  \"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Claims the PR is ready for review, when the `:grinning:` text display still conflicts with the #design discussion and the design remains unsettled.\"],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"The kind (NOTE) matches, but it recommends handing off where the key says more feedback was needed.\",\n   \"accuracy_why\": \"It notes the screenshots and the absence of a push, but misses #37967 and the design conflict, which is the decisive point.\",\n   \"reply_why\": \"It is a review ping to laurynmm and misses the ask to follow the design.\"}},\n \"ranking\": [\"O\", \"G\", \"Z\", \"T\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.24274400000000002
+}

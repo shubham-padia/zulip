@@ -1,0 +1,115 @@
+{
+ "case": "40065-5545794788",
+ "repeat": 2,
+ "map": {
+  "C": [
+   "v3b-r2"
+  ],
+  "J": [
+   "v3b-r1"
+  ],
+  "B": [
+   "v3-r1"
+  ],
+  "Y": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to maintainer review matches the key, but it assigns laurynmm instead of a left-sidebar CSS reviewer such as pratik-pc or Karl Stolley.",
+    "accuracy_why": "It covers both asks, including two-line wrapping, the absence of a new push, and the DPR 1 limitation, but omits that others could not reproduce the bug on main.",
+    "reply_why": "The ping is short and pasteable, but it targets the triager rather than a reviewer and adds a thank-you line to the author."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off matches the key, but the assigned reviewer is laurynmm rather than a left-sidebar CSS reviewer.",
+    "accuracy_why": "It covers both asks, the absence of a new push, and the DPR 1 caveat, but misses the reproducibility doubts and restates the commit and CI status the triager already knows.",
+    "reply_why": "A single ping line with context is near-pasteable, though it goes to the triager rather than a reviewer."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key, but it assigns laurynmm instead of pratik-pc or Karl Stolley.",
+    "accuracy_why": "It clearly flags that the DPR 1 screenshots do not show the clipping fixed, but omits that there was no new push and the reproducibility doubts.",
+    "reply_why": "The two-sentence thanks-plus-ping is fine, but it pings the triager herself and does not mention the missing clipping repro."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key, but the reviewer choice is laurynmm rather than a left-sidebar CSS reviewer.",
+    "accuracy_why": "It misses the key still-missing item, that no before screenshot reproduces the clipping, and it implies everything requested is covered.",
+    "reply_why": "A single contextual ping line is near-pasteable, though it is addressed to the triager rather than a reviewer."
+   }
+  },
+  "ranking": [
+   "Y",
+   "B",
+   "J",
+   "C"
+  ]
+ },
+ "text": "{\"outputs\": {\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 8, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 9, \"decision_why\": \"NOTE with a hand-off to maintainer review matches the key, but it assigns laurynmm instead of a left-sidebar CSS reviewer such as pratik-pc or Karl Stolley.\", \"accuracy_why\": \"It covers both asks, including two-line wrapping, the absence of a new push, and the DPR 1 limitation, but omits that others could not reproduce the bug on main.\", \"reply_why\": \"The ping is short and pasteable, but it targets the triager rather than a reviewer and adds a thank-you line to the author.\"}, \"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 8, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"NOTE with a hand-off matches the key, but the assigned reviewer is laurynmm rather than a left-sidebar CSS reviewer.\", \"accuracy_why\": \"It covers both asks, the absence of a new push, and the DPR 1 caveat, but misses the reproducibility doubts and restates the commit and CI status the triager already knows.\", \"reply_why\": \"A single ping line with context is near-pasteable, though it goes to the triager rather than a reviewer.\"}, \"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 8, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 9, \"decision_why\": \"NOTE with a hand-off matches the key, but it assigns laurynmm instead of pratik-pc or Karl Stolley.\", \"accuracy_why\": \"It clearly flags that the DPR 1 screenshots do not show the clipping fixed, but omits that there was no new push and the reproducibility doubts.\", \"reply_why\": \"The two-sentence thanks-plus-ping is fine, but it pings the triager herself and does not mention the missing clipping repro.\"}, \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 8, \"accuracy_score\": 5, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"NOTE with a hand-off matches the key, but the reviewer choice is laurynmm rather than a left-sidebar CSS reviewer.\", \"accuracy_why\": \"It misses the key still-missing item, that no before screenshot reproduces the clipping, and it implies everything requested is covered.\", \"reply_why\": \"A single contextual ping line is near-pasteable, though it is addressed to the triager rather than a reviewer.\"}}, \"ranking\": [\"Y\", \"B\", \"J\", \"C\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.276308
+}

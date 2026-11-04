@@ -1,0 +1,119 @@
+{
+ "case": "40041-5479840283",
+ "repeat": 2,
+ "map": {
+  "Z": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v3-r1"
+  ],
+  "P": [
+   "v3b-r2"
+  ],
+  "M": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_unrequested_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and waits, but the only blocker has been resolved, so the PR should be handed off.",
+    "accuracy_why": "It correctly reports the new thread, the lack of a push and the lack of replies, but it gets the decisive hand-off wrong and omits #40042 and the commit structure.",
+    "reply_why": "It tells the author to wait and asks for testing details instead of saying the PR is moving to review."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_unrequested_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" even though the requested discussion link was supplied.",
+    "accuracy_why": "It notes the #40042 overlap, the lack of a push and the empty thread, but it plays down the resolved feedback, gets the hand-off wrong and omits the commit structure.",
+    "reply_why": "It asks the author to wait, add testing details and consider merging with #40042, none of which matches the key's ask."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_unrequested_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands off with \"maintainer review\" and an assigned reviewer, matching the key.",
+    "accuracy_why": "It has both decisive facts and #40042, but it omits the lack of a push and of thread replies, and the commit structure.",
+    "reply_why": "It thanks the author and pings a reviewer, but it adds a new request to explain #40042 in the description, which pushes it beyond a ping line."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands off by removing \"not ready\", adding \"maintainer review\" and assigning a reviewer, matching the key.",
+    "accuracy_why": "It has both decisive facts and the missing thread reply, but it omits #40042, the lack of a push and the commit structure.",
+    "reply_why": "It is a short thanks plus a reviewer ping and nearly pasteable, though it doesn't mention #40042."
+   }
+  },
+  "ranking": [
+   "M",
+   "P",
+   "Z",
+   "Q"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"asks_for_unrequested_work\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" and waits, but the only blocker has been resolved, so the PR should be handed off.\",\n \"accuracy_why\": \"It correctly reports the new thread, the lack of a push and the lack of replies, but it gets the decisive hand-off wrong and omits #40042 and the commit structure.\",\n \"reply_why\": \"It tells the author to wait and asks for testing details instead of saying the PR is moving to review.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"asks_for_unrequested_work\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" even though the requested discussion link was supplied.\",\n \"accuracy_why\": \"It notes the #40042 overlap, the lack of a push and the empty thread, but it plays down the resolved feedback, gets the hand-off wrong and omits the commit structure.\",\n \"reply_why\": \"It asks the author to wait, add testing details and consider merging with #40042, none of which matches the key's ask.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"asks_for_unrequested_work\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that hands off with \\\"maintainer review\\\" and an assigned reviewer, matching the key.\",\n \"accuracy_why\": \"It has both decisive facts and #40042, but it omits the lack of a push and of thread replies, and the commit structure.\",\n \"reply_why\": \"It thanks the author and pings a reviewer, but it adds a new request to explain #40042 in the description, which pushes it beyond a ping line.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands off by removing \\\"not ready\\\", adding \\\"maintainer review\\\" and assigning a reviewer, matching the key.\",\n \"accuracy_why\": \"It has both decisive facts and the missing thread reply, but it omits #40042, the lack of a push and the commit structure.\",\n \"reply_why\": \"It is a short thanks plus a reviewer ping and nearly pasteable, though it doesn't mention #40042.\"}\n},\n\"ranking\": [\"M\", \"P\", \"Z\", \"Q\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.140664
+}

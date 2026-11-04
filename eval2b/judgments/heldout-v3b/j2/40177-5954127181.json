@@ -1,0 +1,123 @@
+{
+ "case": "40177-5954127181",
+ "repeat": 2,
+ "map": {
+  "Z": [
+   "v3b-r2"
+  ],
+  "L": [
+   "v3-r2"
+  ],
+  "U": [
+   "v3b-r1"
+  ],
+  "X": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Treats the continuing-unfinished-work steps as unfinished because the work is one new commit with a Co-authored-by line, but the key says the author did what laurynmm asked."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "The kind matches, but it keeps 'not ready' when the key's action is to hand off to maintainer review.",
+    "accuracy_why": "It gets the description, credit and cross-reference changes right, but the verdict rests on a commit-restructuring gap the key doesn't recognize, and it omits the dark-theme screenshot.",
+    "reply_why": "It asks the author to restructure commits and coordinate instead of saying the PR is moving to maintainer review with prakhar1144."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps 'not ready', though its conditional plan to hand the PR to prakhar1144 for maintainer review comes closest to the key's hand-off.",
+    "accuracy_why": "It covers the changes, the overlap with #37289 and the missing dark-theme screenshots, but it contradicts the decisive hand-off fact.",
+    "reply_why": "It asks for confirmation and screenshots rather than telling the author the PR is moving to maintainer review, which misses the reply_ask."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the guide's steps aren't finished because the work isn't built on #37289's original commits, but the key says the author completed laurynmm's ask."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It explicitly says not to assign a reviewer, which is the opposite of the observed hand-off to prakhar1144.",
+    "accuracy_why": "The action rests on a commit-structure gap the key doesn't support, it advises against the reviewer the key names, and it omits the dark-theme screenshot.",
+    "reply_why": "It asks the author to rebuild on the original commits, which is a wrong ask, and it misses the hand-off message."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says 'Nothing since the feedback', although the author added the prior-work section, credit and a cross-reference on #37289 in response to it."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' and only loops in prakhar1144 for an opinion, instead of handing the PR off to him for review.",
+    "accuracy_why": "It flags the overlap with #37289 and the missing dark-theme screenshots, but it downplays the author's completed response as 'nothing'.",
+    "reply_why": "It asks for coordination and screenshots rather than announcing maintainer review with prakhar1144."
+   }
+  },
+  "ranking": [
+   "L",
+   "X",
+   "Z",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Treats the continuing-unfinished-work steps as unfinished because the work is one new commit with a Co-authored-by line, but the key says the author did what laurynmm asked.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 8,\n   \"decision_why\": \"The kind matches, but it keeps 'not ready' when the key's action is to hand off to maintainer review.\",\n   \"accuracy_why\": \"It gets the description, credit and cross-reference changes right, but the verdict rests on a commit-restructuring gap the key doesn't recognize, and it omits the dark-theme screenshot.\",\n   \"reply_why\": \"It asks the author to restructure commits and coordinate instead of saying the PR is moving to maintainer review with prakhar1144.\"},\n  \"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n   \"decision_why\": \"It keeps 'not ready', though its conditional plan to hand the PR to prakhar1144 for maintainer review comes closest to the key's hand-off.\",\n   \"accuracy_why\": \"It covers the changes, the overlap with #37289 and the missing dark-theme screenshots, but it contradicts the decisive hand-off fact.\",\n   \"reply_why\": \"It asks for confirmation and screenshots rather than telling the author the PR is moving to maintainer review, which misses the reply_ask.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Claims the guide's steps aren't finished because the work isn't built on #37289's original commits, but the key says the author completed laurynmm's ask.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 8,\n   \"decision_why\": \"It explicitly says not to assign a reviewer, which is the opposite of the observed hand-off to prakhar1144.\",\n   \"accuracy_why\": \"The action rests on a commit-structure gap the key doesn't support, it advises against the reviewer the key names, and it omits the dark-theme screenshot.\",\n   \"reply_why\": \"It asks the author to rebuild on the original commits, which is a wrong ask, and it misses the hand-off message.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"Says 'Nothing since the feedback', although the author added the prior-work section, credit and a cross-reference on #37289 in response to it.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n   \"decision_why\": \"It keeps 'not ready' and only loops in prakhar1144 for an opinion, instead of handing the PR off to him for review.\",\n   \"accuracy_why\": \"It flags the overlap with #37289 and the missing dark-theme screenshots, but it downplays the author's completed response as 'nothing'.\",\n   \"reply_why\": \"It asks for coordination and screenshots rather than announcing maintainer review with prakhar1144.\"}},\n \"ranking\": [\"L\", \"X\", \"Z\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.273916
+}

@@ -1,0 +1,127 @@
+{
+ "case": "39945-5415679206",
+ "repeat": 2,
+ "map": {
+  "B": [
+   "v3-r2"
+  ],
+  "K": [
+   "v3b-r1"
+  ],
+  "C": [
+   "v3-r1"
+  ],
+  "Z": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the new section compares the author's approach to the other open PRs, but it only claims independent work.",
+     "Claims both requested fixes are done, but the continuing-unfinished-work comparison is still missing."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 2,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to laurynmm, but the key's action is close.",
+    "accuracy_why": "It wrongly says the relationship section compares this PR with the others and that all feedback is addressed, and it misses the compatibility question.",
+    "reply_why": "It pings laurynmm for review, which pushes the PR forward when it should wait for the core team's pick and then be closed."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says both feedback items are done, though the comparison with other PRs is still missing.",
+     "Says the section explains what this approach does differently, though it only describes its own approach without comparing."
+    ],
+    "rule_failures": [
+     "code_details"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It hands off to Niloth-p, but the key's action is close.",
+    "accuracy_why": "It notes the missing why-not-#38098 point, but its verdict rests on the false claim that the feedback is done.",
+    "reply_why": "It asks Niloth-p to review alongside the competing PRs, which is closer to the core-team choice than B's ask but is still a hand-off."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and leaves the PR unassigned, which is closest to the key, but it asks for more feedback instead of leaving the choice to the core team and closing.",
+    "accuracy_why": "It is accurate on the changes, the missing comparison and the competing PRs in review, but it omits the python-zulip-api compatibility question.",
+    "reply_why": "It tells the author to keep working on a comparison when the reply should say a core team member will choose among the PRs and nothing more is needed."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "The headline says all three feedback items are done, which contradicts its own Missing line and the key."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It hands off to laurynmm, but the key's action is close.",
+    "accuracy_why": "It names the missing why-prefer comparison but still calls the PR ready, and it omits the no-push fact and the compatibility question.",
+    "reply_why": "It pings laurynmm to review, which is the wrong ask for a PR that should wait on the core team's choice."
+   }
+  },
+  "ranking": [
+   "C",
+   "K",
+   "Z",
+   "B"
+  ]
+ },
+ "text": "{\"outputs\": {\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Claims the new section compares the author's approach to the other open PRs, but it only claims independent work.\", \"Claims both requested fixes are done, but the continuing-unfinished-work comparison is still missing.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 1, \"accuracy_score\": 2, \"reply_score\": 1,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to laurynmm, but the key's action is close.\", \"accuracy_why\": \"It wrongly says the relationship section compares this PR with the others and that all feedback is addressed, and it misses the compatibility question.\", \"reply_why\": \"It pings laurynmm for review, which pushes the PR forward when it should wait for the core team's pick and then be closed.\"},\n  \"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says both feedback items are done, though the comparison with other PRs is still missing.\", \"Says the section explains what this approach does differently, though it only describes its own approach without comparing.\"],\n   \"rule_failures\": [\"code_details\"],\n   \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It hands off to Niloth-p, but the key's action is close.\", \"accuracy_why\": \"It notes the missing why-not-#38098 point, but its verdict rests on the false claim that the feedback is done.\", \"reply_why\": \"It asks Niloth-p to review alongside the competing PRs, which is closer to the core-team choice than B's ask but is still a hand-off.\"},\n  \"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and leaves the PR unassigned, which is closest to the key, but it asks for more feedback instead of leaving the choice to the core team and closing.\", \"accuracy_why\": \"It is accurate on the changes, the missing comparison and the competing PRs in review, but it omits the python-zulip-api compatibility question.\", \"reply_why\": \"It tells the author to keep working on a comparison when the reply should say a core team member will choose among the PRs and nothing more is needed.\"},\n  \"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"The headline says all three feedback items are done, which contradicts its own Missing line and the key.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It hands off to laurynmm, but the key's action is close.\", \"accuracy_why\": \"It names the missing why-prefer comparison but still calls the PR ready, and it omits the no-push fact and the compatibility question.\", \"reply_why\": \"It pings laurynmm to review, which is the wrong ask for a PR that should wait on the core team's choice.\"}},\n \"ranking\": [\"C\", \"K\", \"Z\", \"B\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.467812
+}

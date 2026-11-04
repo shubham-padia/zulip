@@ -1,0 +1,125 @@
+{
+ "case": "39868-5175066393",
+ "repeat": 2,
+ "map": {
+  "K": [
+   "v3-r1"
+  ],
+  "L": [
+   "v3b-r1"
+  ],
+  "J": [
+   "v3b-r2"
+  ],
+  "G": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review, but precise before/after screenshots and a #design discussion of the text-style change are still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) matches, but it recommends handing off where the key says more feedback, though it does make that conditional on green CI.",
+    "accuracy_why": "It correctly flags CI as unverified, but it misses the screenshot gap, the small-caps styling change and the #design advice, and it wrongly calls the PR ready.",
+    "reply_why": "It pings laurynmm for review instead of asking the author for precise screenshots and a #design discussion."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review despite missing precise screenshots and design discussion.",
+     "States the label was for failing tests, but the label came with no comment."
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) matches, but it recommends a conditional hand-off where the key says more feedback.",
+    "accuracy_why": "It notes CI is unconfirmed, but it guesses the label's reason and misses every decisive gap.",
+    "reply_why": "A review ping that misses the screenshot and #design ask."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims nothing else was asked for and the PR is ready, though precise screenshots and a #design discussion are still needed."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends an unconditional hand-off where the key says more feedback.",
+    "accuracy_why": "It notes CI is unconfirmed but misses the screenshot and styling gaps and calls the PR ready.",
+    "reply_why": "It asks laurynmm to review rather than asking the author for screenshots and a design discussion."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States the only thing flagged was failing tests, but the label came with no comment.",
+     "Invents a requirement to squash the click-fix commit, which nothing in the inputs asks for."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off where the key says more feedback.",
+    "accuracy_why": "It misses every decisive gap and replaces them with an invented squash request.",
+    "reply_why": "It asks for review while also asking for an unrequested squash, and it misses the real screenshot and #design ask."
+   }
+  },
+  "ranking": [
+   "K",
+   "G",
+   "L",
+   "J"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review, but precise before/after screenshots and a #design discussion of the text-style change are still missing.\"],\n \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"The kind (NOTE) matches, but it recommends handing off where the key says more feedback, though it does make that conditional on green CI.\",\n \"accuracy_why\": \"It correctly flags CI as unverified, but it misses the screenshot gap, the small-caps styling change and the #design advice, and it wrongly calls the PR ready.\",\n \"reply_why\": \"It pings laurynmm for review instead of asking the author for precise screenshots and a #design discussion.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review despite missing precise screenshots and design discussion.\", \"States the label was for failing tests, but the label came with no comment.\"],\n \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"The kind (NOTE) matches, but it recommends a conditional hand-off where the key says more feedback.\",\n \"accuracy_why\": \"It notes CI is unconfirmed, but it guesses the label's reason and misses every decisive gap.\",\n \"reply_why\": \"A review ping that misses the screenshot and #design ask.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims nothing else was asked for and the PR is ready, though precise screenshots and a #design discussion are still needed.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends an unconditional hand-off where the key says more feedback.\",\n \"accuracy_why\": \"It notes CI is unconfirmed but misses the screenshot and styling gaps and calls the PR ready.\",\n \"reply_why\": \"It asks laurynmm to review rather than asking the author for screenshots and a design discussion.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"States the only thing flagged was failing tests, but the label came with no comment.\", \"Invents a requirement to squash the click-fix commit, which nothing in the inputs asks for.\"],\n \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off where the key says more feedback.\",\n \"accuracy_why\": \"It misses every decisive gap and replaces them with an invented squash request.\",\n \"reply_why\": \"It asks for review while also asking for an unrequested squash, and it misses the real screenshot and #design ask.\"}\n},\n\"ranking\": [\"K\", \"G\", \"L\", \"J\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.24129199999999998
+}

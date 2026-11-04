@@ -1,0 +1,109 @@
+{
+ "case": "40171-5795222359",
+ "repeat": 2,
+ "map": {
+  "P": [
+   "v3b-r1"
+  ],
+  "T": [
+   "v3-r1"
+  ],
+  "B": [
+   "v3b-r2"
+  ],
+  "R": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key's decision and observed action.",
+    "accuracy_why": "It correctly reports that the topic-required channel screenshots meet the ask, but never says no code was pushed.",
+    "reply_why": "A short thanks plus a Niloth-p ping matches the reply ask and can be pasted as is."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key exactly.",
+    "accuracy_why": "It covers every must-have, including no code push and Niloth-p's role, though it doesn't name #development help.",
+    "reply_why": "A single reviewer ping line is ideal for a hand-off, though it skips thanking the author."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key exactly.",
+    "accuracy_why": "It lists every changed item and must-have accurately, with no wrong facts.",
+    "reply_why": "A brief thanks and a Niloth-p ping match the reply ask and can be pasted as is."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key exactly.",
+    "accuracy_why": "All must-haves are covered, but saying Niloth-p 'suggested this fix' slightly overstates diagnosing the bug.",
+    "reply_why": "The reply is right but carries a slightly redundant clause to the author before the ping."
+   }
+  },
+  "ranking": [
+   "B",
+   "T",
+   "R",
+   "P"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key's decision and observed action.\",\n \"accuracy_why\": \"It correctly reports that the topic-required channel screenshots meet the ask, but never says no code was pushed.\",\n \"reply_why\": \"A short thanks plus a Niloth-p ping matches the reply ask and can be pasted as is.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"It covers every must-have, including no code push and Niloth-p's role, though it doesn't name #development help.\",\n \"reply_why\": \"A single reviewer ping line is ideal for a hand-off, though it skips thanking the author.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"It lists every changed item and must-have accurately, with no wrong facts.\",\n \"reply_why\": \"A brief thanks and a Niloth-p ping match the reply ask and can be pasted as is.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"All must-haves are covered, but saying Niloth-p 'suggested this fix' slightly overstates diagnosing the bug.\",\n \"reply_why\": \"The reply is right but carries a slightly redundant clause to the author before the ping.\"}},\n\"ranking\": [\"B\", \"T\", \"R\", \"P\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.15628799999999998
+}

@@ -1,0 +1,113 @@
+{
+ "case": "40240-6313490306",
+ "repeat": 2,
+ "map": {
+  "P": [
+   "v3b-r2"
+  ],
+  "U": [
+   "v3-r1"
+  ],
+  "Z": [
+   "v3b-r1"
+  ],
+  "L": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) is right, but keeping the PR not-ready for laurynmm to follow up is more_feedback, where the key says to close it as a duplicate of #39758.",
+    "accuracy_why": "It covers no new push, the screenshots and the same-approach #39758 already with a maintainer, but raises the AI-policy concern only in the reply and omits the missing tests and the unexplained ui_init.js change.",
+    "reply_why": "Asking the author how the PR differs from #39758 and to fix the description invites more work on a PR that should be closed."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It cites #39758 and laurynmm's request to shubham-padia, yet still recommends keeping not-ready rather than closing.",
+    "accuracy_why": "It covers no new push, the unanswered AI-policy concern and the full #39758 context, but omits the tests and ui_init.js and never recommends closing.",
+    "reply_why": "The reply asks the author to keep going and does not mention #39758 at all, so it misses the reply_ask entirely."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It frames #39758 as a 'competing' PR and recommends keeping not-ready instead of closing.",
+    "accuracy_why": "It notes the same files and issue as #39758 but not that a maintainer already has it, leaves the AI-policy concern to the reply, and omits the tests and ui_init.js.",
+    "reply_why": "Asking how this approach differs from #39758 encourages the author to continue a PR that should be closed."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It comes closest to closing by holding review until the author coordinates with #39758, but it is still more_feedback rather than close.",
+    "accuracy_why": "It covers no new push, the unanswered AI-policy concern, the unexplained ui_init.js change and the same change in #39758, but omits the missing tests and that a maintainer already has #39758.",
+    "reply_why": "It flags #39758 but asks the author to explain and continue rather than telling them the PR is being closed."
+   }
+  },
+  "ranking": [
+   "L",
+   "U",
+   "P",
+   "Z"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 4, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"The kind (NOTE) is right, but keeping the PR not-ready for laurynmm to follow up is more_feedback, where the key says to close it as a duplicate of #39758.\",\n \"accuracy_why\": \"It covers no new push, the screenshots and the same-approach #39758 already with a maintainer, but raises the AI-policy concern only in the reply and omits the missing tests and the unexplained ui_init.js change.\",\n \"reply_why\": \"Asking the author how the PR differs from #39758 and to fix the description invites more work on a PR that should be closed.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 1, \"brevity_score\": 8,\n \"decision_why\": \"It cites #39758 and laurynmm's request to shubham-padia, yet still recommends keeping not-ready rather than closing.\",\n \"accuracy_why\": \"It covers no new push, the unanswered AI-policy concern and the full #39758 context, but omits the tests and ui_init.js and never recommends closing.\",\n \"reply_why\": \"The reply asks the author to keep going and does not mention #39758 at all, so it misses the reply_ask entirely.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"It frames #39758 as a 'competing' PR and recommends keeping not-ready instead of closing.\",\n \"accuracy_why\": \"It notes the same files and issue as #39758 but not that a maintainer already has it, leaves the AI-policy concern to the reply, and omits the tests and ui_init.js.\",\n \"reply_why\": \"Asking how this approach differs from #39758 encourages the author to continue a PR that should be closed.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It comes closest to closing by holding review until the author coordinates with #39758, but it is still more_feedback rather than close.\",\n \"accuracy_why\": \"It covers no new push, the unanswered AI-policy concern, the unexplained ui_init.js change and the same change in #39758, but omits the missing tests and that a maintainer already has #39758.\",\n \"reply_why\": \"It flags #39758 but asks the author to explain and continue rather than telling them the PR is being closed.\"}\n},\n\"ranking\": [\"L\", \"U\", \"P\", \"Z\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.214416
+}
