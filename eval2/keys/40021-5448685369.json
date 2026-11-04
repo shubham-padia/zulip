@@ -1,0 +1,60 @@
+{
+ "case": "40021-5448685369",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the feedback with new pushes, new screenshots and a comparison section, and a maintainer needs to judge it, but the approach is unchanged so the first card still describes the PR accurately.",
+  "triager_action": "more_feedback",
+  "action_source": "inferred",
+  "action_why": "The PR is still a pure-CSS ellipsis on the whole reactor-name string, like the approaches maintainers said were not on track, so a careful triager would keep \"not ready\" and say what is still wrong rather than hand it off.",
+  "changed": [
+   "Replaced the before/after screenshots with ones showing a single very long name (DemanosDemanos...) overflowing, then truncated.",
+   "Changed max-width on .message_reaction from 150px to 15em.",
+   "Added a section comparing this PR with #39049, #39829 and #39768.",
+   "Added a commit that stops animating font-weight and adds an EOF newline in reactions.css."
+  ],
+  "still_missing": [
+   "The fix still truncates the whole comma-separated reactor string as one text node, so a long first name can hide the other reactors; Alya asked that part of every reactor's name be shown.",
+   "The comparison does not explain why a whole-string CSS truncation is worth considering over #39768, which does per-name truncation and is already in maintainer review with evykassirer.",
+   "The screenshots show only one reactor, not 2-3 reactors where one name is long.",
+   "The font-weight animation commit is unrelated to the issue, and the commit messages (\"fix: ...\", \"css(reactions): ...\") do not follow Zulip's commit style."
+  ],
+  "reply_ask": "Tell the author that truncating the whole name list with CSS still hides other reactors when one name is long (the same problem that got earlier attempts rejected), and ask them to explain how they will show part of each reactor's name, or why this is worth considering over #39768, and to drop the unrelated commit.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR still applies one CSS ellipsis to the whole reactor-name string, so with 2-3 reactors a long name can hide the others, contrary to Alya's requirement to show part of every reactor's name.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the comparison section does not justify this approach over #39768, which truncates each name separately and is already in maintainer review with evykassirer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping \"not ready\" and giving the author more feedback rather than assigning a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Acknowledges that the screenshots were replaced and max-width was changed to 15em as the feedback asked.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Flags the unrelated font-weight/EOF commit and the non-Zulip-style commit messages.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the feedback with new pushes, new screenshots and a comparison section, and a maintainer needs to judge it, but the approach is unchanged so the first card still describes the PR accurately.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"inferred\",\n \"action_why\": \"The PR is still a pure-CSS ellipsis on the whole reactor-name string, like the approaches maintainers said were not on track, so a careful triager would keep \\\"not ready\\\" and say what is still wrong rather than hand it off.\",\n \"changed\": [\n  \"Replaced the before/after screenshots with ones showing a single very long name (DemanosDemanos...) overflowing, then truncated.\",\n  \"Changed max-width on .message_reaction from 150px to 15em.\",\n  \"Added a section comparing this PR with #39049, #39829 and #39768.\",\n  \"Added a commit that stops animating font-weight and adds an EOF newline in reactions.css.\"\n ],\n \"still_missing\": [\n  \"The fix still truncates the whole comma-separated reactor string as one text node, so a long first name can hide the other reactors; Alya asked that part of every reactor's name be shown.\",\n  \"The comparison does not explain why a whole-string CSS truncation is worth considering over #39768, which does per-name truncation and is already in maintainer review with evykassirer.\",\n  \"The screenshots show only one reactor, not 2-3 reactors where one name is long.\",\n  \"The font-weight animation commit is unrelated to the issue, and the commit messages (\\\"fix: ...\\\", \\\"css(reactions): ...\\\") do not follow Zulip's commit style.\"\n ],\n \"reply_ask\": \"Tell the author that truncating the whole name list with CSS still hides other reactors when one name is long (the same problem that got earlier attempts rejected), and ask them to explain how they will show part of each reactor's name, or why this is worth considering over #39768, and to drop the unrelated commit.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR still applies one CSS ellipsis to the whole reactor-name string, so with 2-3 reactors a long name can hide the others, contrary to Alya's requirement to show part of every reactor's name.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the comparison section does not justify this approach over #39768, which truncates each name separately and is already in maintainer review with evykassirer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping \\\"not ready\\\" and giving the author more feedback rather than assigning a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Acknowledges that the screenshots were replaced and max-width was changed to 15em as the feedback asked.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Flags the unrelated font-weight/EOF commit and the non-Zulip-style commit messages.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.23886000000000002
+}

@@ -1,0 +1,56 @@
+{
+ "case": "40032-5484458133",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author asked for a re-review after only tweaking the commit message, so a short note is enough. The commit message still breaks the guidelines, so the triager needs to send more feedback. The code and approach are unchanged, so a new card isn't warranted.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "On 2026-09-07 laurynmm replied with more work: the commit summary still lacked a period, and she asked for before/after screenshots with the mouse cursor visible, including one showing the tooltip still appearing in views with multiple topics.",
+  "changed": [
+   "The author force-pushed twice; the only visible change is the commit summary, shortened from 'web: suppress redundant navigation tooltips...' to 'web:suppress redundant nav tooltips on dm recipients_row and topic'.",
+   "The code is unchanged: still +17/-6 in the same 2 files."
+  ],
+  "still_missing": [
+   "The commit message still does not follow Zulip's commit guidelines: no space after 'web:', a lowercase summary, no trailing period, and file-style wording instead of a clear summary like 'tooltips: Suppress redundant navigation tooltips.'",
+   "The PR description has only video links, with no precise before/after screenshots showing the mouse cursor and the tooltip still present in interleaved views."
+  ],
+  "reply_ask": "Tell the author the commit message still doesn't follow the commit-discipline guidelines (area prefix followed by a space, capitalized summary ending in a period) and ask them to fix it and add precise before/after screenshots with the cursor visible before asking for another look.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the commit message still does not follow Zulip's commit message guidelines, so the requested change is not done.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping 'not ready' and giving more feedback rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Names concrete commit-message problems: no space after 'web:', lowercase summary, and missing trailing period.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes the two new pushes changed only the commit message, and the code is still +17/-6 in the same two files.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes the PR shows only videos and lacks precise before/after screenshots with the cursor visible, including one where the tooltip still appears in interleaved/multi-topic views.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author asked for a re-review after only tweaking the commit message, so a short note is enough. The commit message still breaks the guidelines, so the triager needs to send more feedback. The code and approach are unchanged, so a new card isn't warranted.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-09-07 laurynmm replied with more work: the commit summary still lacked a period, and she asked for before/after screenshots with the mouse cursor visible, including one showing the tooltip still appearing in views with multiple topics.\",\n \"changed\": [\n  \"The author force-pushed twice; the only visible change is the commit summary, shortened from 'web: suppress redundant navigation tooltips...' to 'web:suppress redundant nav tooltips on dm recipients_row and topic'.\",\n  \"The code is unchanged: still +17/-6 in the same 2 files.\"\n ],\n \"still_missing\": [\n  \"The commit message still does not follow Zulip's commit guidelines: no space after 'web:', a lowercase summary, no trailing period, and file-style wording instead of a clear summary like 'tooltips: Suppress redundant navigation tooltips.'\",\n  \"The PR description has only video links, with no precise before/after screenshots showing the mouse cursor and the tooltip still present in interleaved views.\"\n ],\n \"reply_ask\": \"Tell the author the commit message still doesn't follow the commit-discipline guidelines (area prefix followed by a space, capitalized summary ending in a period) and ask them to fix it and add precise before/after screenshots with the cursor visible before asking for another look.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the commit message still does not follow Zulip's commit message guidelines, so the requested change is not done.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends keeping 'not ready' and giving more feedback rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Names concrete commit-message problems: no space after 'web:', lowercase summary, and missing trailing period.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes the two new pushes changed only the commit message, and the code is still +17/-6 in the same two files.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes the PR shows only videos and lacks precise before/after screenshots with the cursor visible, including one where the tooltip still appears in interleaved/multi-topic views.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.16782
+}

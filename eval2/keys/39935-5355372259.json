@@ -1,0 +1,52 @@
+{
+ "case": "39935-5355372259",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the triager's feedback and asked for maintainer review on the same approach and code, so a short note under the first card is the right size.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "apoorvapendse replied that the commit messages make no sense, pointed back to the guide Karl posted, asked the author to clean up the commit history before asking for review again, and added \"changes requested\".",
+  "changed": [
+   "The author joined the CZO design thread, and Daniel K said there that the PR isn't blocked on the design discussion because it extends the #24200 filter UX to a second location.",
+   "The author says they fixed up the PR description, which now links the CZO thread and lists the changes.",
+   "The author tried to add the \"maintainer review\" label themselves and asked whether that is okay."
+  ],
+  "still_missing": [
+   "There has been no new push since the feedback, so the code and commits are unchanged.",
+   "The commit history doesn't follow commit discipline: one XL feature commit plus two \"ci: Trigger fresh CI run / Retry after ShellCheck mirror timeout\" commits that should be dropped.",
+   "The description still doesn't fully follow the reviewable-PR guide: \"Fixes #<36878>\" is malformed, the screenshots sit outside their section with no explanation, and the corner-case checklist items are unchecked."
+  ],
+  "reply_ask": "Thank them for checking with the design team, then ask them to clean up the commit history per commit discipline (drop the CI-retry commits and split or describe the feature commit properly) and finish tidying the description before requesting review again.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the commit history still needs cleanup: the two \"ci:\" retry commits violate commit discipline and must be removed or squashed.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping \"not ready\" and not adding \"maintainer review\" or assigning a reviewer yet.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that there has been no new push since Karl's feedback (head commit unchanged).",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that Daniel K said on CZO the PR isn't blocked by the design discussion, so the design concern from the feedback is resolved.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the triager's feedback and asked for maintainer review on the same approach and code, so a short note under the first card is the right size.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"apoorvapendse replied that the commit messages make no sense, pointed back to the guide Karl posted, asked the author to clean up the commit history before asking for review again, and added \\\"changes requested\\\".\",\n \"changed\": [\n  \"The author joined the CZO design thread, and Daniel K said there that the PR isn't blocked on the design discussion because it extends the #24200 filter UX to a second location.\",\n  \"The author says they fixed up the PR description, which now links the CZO thread and lists the changes.\",\n  \"The author tried to add the \\\"maintainer review\\\" label themselves and asked whether that is okay.\"\n ],\n \"still_missing\": [\n  \"There has been no new push since the feedback, so the code and commits are unchanged.\",\n  \"The commit history doesn't follow commit discipline: one XL feature commit plus two \\\"ci: Trigger fresh CI run / Retry after ShellCheck mirror timeout\\\" commits that should be dropped.\",\n  \"The description still doesn't fully follow the reviewable-PR guide: \\\"Fixes #<36878>\\\" is malformed, the screenshots sit outside their section with no explanation, and the corner-case checklist items are unchecked.\"\n ],\n \"reply_ask\": \"Thank them for checking with the design team, then ask them to clean up the commit history per commit discipline (drop the CI-retry commits and split or describe the feature commit properly) and finish tidying the description before requesting review again.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the commit history still needs cleanup: the two \\\"ci:\\\" retry commits violate commit discipline and must be removed or squashed.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends keeping \\\"not ready\\\" and not adding \\\"maintainer review\\\" or assigning a reviewer yet.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that there has been no new push since Karl's feedback (head commit unchanged).\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that Daniel K said on CZO the PR isn't blocked by the design discussion, so the design concern from the feedback is resolved.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.16058399999999998
+}

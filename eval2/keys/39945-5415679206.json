@@ -1,0 +1,60 @@
+{
+ "case": "39945-5415679206",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the triager's feedback by editing only the description, and no maintainer is assigned, so a short note is needed to decide what happens with this PR, which competes with several others for #19589.",
+  "triager_action": "close",
+  "action_source": "observed",
+  "action_why": "laurynmm first replied that the core team would review all the open PRs for #19589 and pick one, so there was nothing to do here, and Niloth-p then closed this PR unmerged on 2026-09-07 after closing the issue.",
+  "changed": [
+   "The author apologized for removing the \"not ready\" label and said it won't happen again.",
+   "The description now has a \"Relationship to other work\" section listing #38098, #39481, #39820 and #39892 and saying this was written independently.",
+   "The self-review checklist was replaced with one that appears to match the current PR template.",
+   "No new code was pushed; the head commit is the same as when the feedback was given."
+  ],
+  "still_missing": [
+   "The relationship section only says the work is independent; it doesn't compare this PR to the others or say why it should go ahead instead of #38098 or #39481, which are already in maintainer review.",
+   "The section leaves out the other open PRs #39606 and #40004 for the same issue.",
+   "The \"Explains differences from previous plans\" checklist item is still unchecked.",
+   "There is no manual end-to-end test with a real Slack-format receiver such as GitLab, and the earlier backward-compatibility question about python-zulip-api is not addressed."
+  ],
+  "reply_ask": "Thank the author for the updates and explain that, with many open PRs for #19589 (two already in maintainer review), a core team member will choose which one to move forward with, so there is nothing more to do here for now.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says that #38098 and #39481 for the same issue are already labeled \"maintainer review\" and assigned to Niloth-p, so this PR competes with them rather than being handed off on its own.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the author only edited the PR description and comment, with no new code push since the feedback.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the new \"Relationship to other work\" section only claims independent work and does not explain how this PR compares to, or why it should be preferred over, the existing PRs.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Recommends not removing \"not ready\" or assigning a separate reviewer, and instead leaving the choice among the #19589 PRs to the core team or Niloth-p.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that the issue's open design question (backward compatibility with python-zulip-api, raised by Tim Abbott) remains unaddressed.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the triager's feedback by editing only the description, and no maintainer is assigned, so a short note is needed to decide what happens with this PR, which competes with several others for #19589.\",\n \"triager_action\": \"close\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm first replied that the core team would review all the open PRs for #19589 and pick one, so there was nothing to do here, and Niloth-p then closed this PR unmerged on 2026-09-07 after closing the issue.\",\n \"changed\": [\n  \"The author apologized for removing the \\\"not ready\\\" label and said it won't happen again.\",\n  \"The description now has a \\\"Relationship to other work\\\" section listing #38098, #39481, #39820 and #39892 and saying this was written independently.\",\n  \"The self-review checklist was replaced with one that appears to match the current PR template.\",\n  \"No new code was pushed; the head commit is the same as when the feedback was given.\"\n ],\n \"still_missing\": [\n  \"The relationship section only says the work is independent; it doesn't compare this PR to the others or say why it should go ahead instead of #38098 or #39481, which are already in maintainer review.\",\n  \"The section leaves out the other open PRs #39606 and #40004 for the same issue.\",\n  \"The \\\"Explains differences from previous plans\\\" checklist item is still unchecked.\",\n  \"There is no manual end-to-end test with a real Slack-format receiver such as GitLab, and the earlier backward-compatibility question about python-zulip-api is not addressed.\"\n ],\n \"reply_ask\": \"Thank the author for the updates and explain that, with many open PRs for #19589 (two already in maintainer review), a core team member will choose which one to move forward with, so there is nothing more to do here for now.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says that #38098 and #39481 for the same issue are already labeled \\\"maintainer review\\\" and assigned to Niloth-p, so this PR competes with them rather than being handed off on its own.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the author only edited the PR description and comment, with no new code push since the feedback.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the new \\\"Relationship to other work\\\" section only claims independent work and does not explain how this PR compares to, or why it should be preferred over, the existing PRs.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Recommends not removing \\\"not ready\\\" or assigning a separate reviewer, and instead leaving the choice among the #19589 PRs to the core team or Niloth-p.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions that the issue's open design question (backward compatibility with python-zulip-api, raised by Tim Abbott) remains unaddressed.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.429488
+}

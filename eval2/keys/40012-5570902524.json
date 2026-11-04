@@ -1,0 +1,56 @@
+{
+ "case": "40012-5570902524",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author says both of laurynmm's asks are done, and no reviewer was assigned before the comment, so the triager needs a short note to confirm the asks are met and hand the PR off; the approach itself is unchanged, so no new card is needed.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-09-08 laurynmm removed \"not ready\", added \"maintainer review\" and assigned herself, then did a quick review without asking the author for more presentation work.",
+  "changed": [
+   "The author replaced the reconstructed renderings with real screenshots from the dev /emails page: HTML and text versions, for both password-enabled and SSO-only realms.",
+   "The author added the self-review checklist to the PR description.",
+   "There was no new code push: only the description changed."
+  ],
+  "still_missing": [
+   "The description doesn't discuss timabbott's suggestion on #30248 to link a /help/ guide for compromised accounts instead of making the sentence conditional (not something the triager asked for)."
+  ],
+  "reply_ask": "Thank the author for adding the /emails screenshots and the self-review checklist, and say the PR is moving to maintainer review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says both feedback asks are now met in the PR description: real screenshots from the dev /emails page (HTML and text, password-enabled and SSO-only) and the self-review checklist.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends handing off: remove \"not ready\", add \"maintainer review\" and assign a reviewer, rather than asking for more work.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Suggests laurynmm, who gave the earlier feedback, as the reviewer.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes there was no new code push since the feedback, so the code is the same single commit as before and only the description changed.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that the PR makes the password-reset sentence conditional on password auth, which differs from timabbott's suggested fix of linking a /help/ guide, as a point for the reviewer.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author says both of laurynmm's asks are done, and no reviewer was assigned before the comment, so the triager needs a short note to confirm the asks are met and hand the PR off; the approach itself is unchanged, so no new card is needed.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-09-08 laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned herself, then did a quick review without asking the author for more presentation work.\",\n \"changed\": [\"The author replaced the reconstructed renderings with real screenshots from the dev /emails page: HTML and text versions, for both password-enabled and SSO-only realms.\", \"The author added the self-review checklist to the PR description.\", \"There was no new code push: only the description changed.\"],\n \"still_missing\": [\"The description doesn't discuss timabbott's suggestion on #30248 to link a /help/ guide for compromised accounts instead of making the sentence conditional (not something the triager asked for).\"],\n \"reply_ask\": \"Thank the author for adding the /emails screenshots and the self-review checklist, and say the PR is moving to maintainer review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says both feedback asks are now met in the PR description: real screenshots from the dev /emails page (HTML and text, password-enabled and SSO-only) and the self-review checklist.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends handing off: remove \\\"not ready\\\", add \\\"maintainer review\\\" and assign a reviewer, rather than asking for more work.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Suggests laurynmm, who gave the earlier feedback, as the reviewer.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes there was no new code push since the feedback, so the code is the same single commit as before and only the description changed.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions that the PR makes the password-reset sentence conditional on password auth, which differs from timabbott's suggested fix of linking a /help/ guide, as a point for the reviewer.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.108632
+}

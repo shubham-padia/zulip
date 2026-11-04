@@ -1,0 +1,241 @@
+{
+ "case": "39995-5728364177",
+ "cutoff": "2026-09-18T09:55:52Z",
+ "pushes": [
+  [
+   "2026-08-21T07:37:11Z",
+   "a7106bb36a",
+   "ci run"
+  ],
+  [
+   "2026-08-26T05:23:08Z",
+   "8e463b838c",
+   "ci run"
+  ],
+  [
+   "2026-08-26T06:09:18Z",
+   "7a874a881f",
+   "force push"
+  ],
+  [
+   "2026-08-26T06:09:23Z",
+   "7a874a881f",
+   "ci run"
+  ],
+  [
+   "2026-08-26T06:10:14Z",
+   "b5b9e3d464",
+   "ci run"
+  ],
+  [
+   "2026-08-26T06:19:32Z",
+   "f9415c53df",
+   "force push"
+  ],
+  [
+   "2026-08-26T06:19:36Z",
+   "f9415c53df",
+   "ci run"
+  ],
+  [
+   "2026-08-26T11:33:55Z",
+   "58d86d9d52",
+   "force push"
+  ],
+  [
+   "2026-08-26T11:33:59Z",
+   "58d86d9d52",
+   "ci run"
+  ],
+  [
+   "2026-08-28T14:43:52Z",
+   "dedd7aa667",
+   "ci run"
+  ],
+  [
+   "2026-08-28T14:52:35Z",
+   "579c1a9359",
+   "force push"
+  ],
+  [
+   "2026-08-28T14:52:40Z",
+   "579c1a9359",
+   "ci run"
+  ],
+  [
+   "2026-08-30T12:53:20Z",
+   "e2cc529cd7",
+   "ci run"
+  ],
+  [
+   "2026-08-30T12:58:11Z",
+   "332dd38924",
+   "force push"
+  ],
+  [
+   "2026-08-30T12:58:14Z",
+   "332dd38924",
+   "ci run"
+  ],
+  [
+   "2026-09-01T10:10:22Z",
+   "8138de319b",
+   "force push"
+  ],
+  [
+   "2026-09-01T10:10:27Z",
+   "8138de319b",
+   "ci run"
+  ],
+  [
+   "2026-09-02T06:07:52Z",
+   "32a7ad295d",
+   "force push"
+  ],
+  [
+   "2026-09-02T06:07:57Z",
+   "32a7ad295d",
+   "ci run"
+  ],
+  [
+   "2026-09-03T12:11:59Z",
+   "209b0dafff",
+   "force push"
+  ],
+  [
+   "2026-09-03T12:12:03Z",
+   "209b0dafff",
+   "ci run"
+  ],
+  [
+   "2026-09-05T09:29:17Z",
+   "7c45f55a66",
+   "force push"
+  ],
+  [
+   "2026-09-05T09:29:21Z",
+   "7c45f55a66",
+   "ci run"
+  ],
+  [
+   "2026-09-07T16:42:42Z",
+   "e00cca7344",
+   "force push"
+  ],
+  [
+   "2026-09-07T16:42:46Z",
+   "e00cca7344",
+   "ci run"
+  ],
+  [
+   "2026-09-18T09:22:28Z",
+   "ebf8154c2c",
+   "force push"
+  ],
+  [
+   "2026-09-18T09:22:33Z",
+   "ebf8154c2c",
+   "ci run"
+  ],
+  [
+   "2026-09-25T10:18:22Z",
+   "f86efcda7a",
+   "force push"
+  ],
+  [
+   "2026-09-25T10:18:26Z",
+   "f86efcda7a",
+   "ci run"
+  ],
+  [
+   "2026-09-26T17:05:38Z",
+   "dcba6d04f7",
+   "force push"
+  ],
+  [
+   "2026-09-26T17:05:42Z",
+   "dcba6d04f7",
+   "ci run"
+  ],
+  [
+   "2026-09-28T11:00:00Z",
+   "f994ddc2de",
+   "force push"
+  ],
+  [
+   "2026-09-28T11:00:04Z",
+   "f994ddc2de",
+   "ci run"
+  ],
+  [
+   "2026-10-02T14:11:37Z",
+   "1511fe2657",
+   "force push"
+  ],
+  [
+   "2026-10-02T14:11:42Z",
+   "1511fe2657",
+   "ci run"
+  ],
+  [
+   "2026-10-17T05:34:34Z",
+   "c1d24e045f",
+   "force push"
+  ],
+  [
+   "2026-10-17T05:34:38Z",
+   "c1d24e045f",
+   "ci run"
+  ],
+  [
+   "2026-10-17T05:38:55Z",
+   "778e085284",
+   "force push"
+  ],
+  [
+   "2026-10-17T05:38:59Z",
+   "778e085284",
+   "ci run"
+  ],
+  [
+   "2026-10-17T06:28:39Z",
+   "092351e03f",
+   "force push"
+  ],
+  [
+   "2026-10-17T06:28:44Z",
+   "092351e03f",
+   "ci run"
+  ],
+  [
+   "2026-10-20T05:19:27Z",
+   "fd36086ae0",
+   "force push"
+  ],
+  [
+   "2026-10-20T05:19:32Z",
+   "fd36086ae0",
+   "ci run"
+  ]
+ ],
+ "head_now": "fd36086ae011ad46b77a64be5e7605f21aff7805",
+ "body_edits": 21,
+ "body_edits_after_cutoff": 7,
+ "title_now": "webhooks/zabbix: Add severity-based emoji indicators.",
+ "title_at_cutoff": "webhooks/zabbix: Add severity-based emoji indicators.",
+ "labels_now": [
+  "area: integrations",
+  "size: M",
+  "integration review"
+ ],
+ "assignees_now": [
+  "Niloth-p"
+ ],
+ "head_at_cutoff": "ebf8154c2ccde75f3fadc2ceef23704b8b344bd0",
+ "pr_shape": "from compare main...ebf8154c2c",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "Niloth-p 2026-09-07T22:13:10Z",
+ "head_at_feedback": "e00cca73441ecd309042ee28d36a0e2fe397b133",
+ "comments_total": 19,
+ "comments_at_cutoff": 11
+}

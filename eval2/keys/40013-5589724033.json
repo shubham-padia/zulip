@@ -1,0 +1,53 @@
+{
+ "case": "40013-5589724033",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author asked laurynmm for review after four pushes, but the PR still makes undiscussed API changes, so a maintainer needs a short update with a next step rather than a new card or silence.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied that the new response field and the new parameter on an existing endpoint are API changes, which need discussion, approval and user-facing API docs with screenshots, so 'not ready' stays.",
+  "changed": [
+   "Pushed four times since 'not ready' was added; the commit messages are unchanged.",
+   "Grew from +255/-74 in 11 files to +308/-74 in 14 files by adding test_custom_profile_data.py, test_home.py and test_users.py, likely to account for the new avatar_source field.",
+   "Commented only to ping laurynmm that the PR is ready for review, without saying what changed."
+  ],
+  "still_missing": [
+   "The PR changes the API (it exposes avatar_source on bot user objects and adds an avatar-delete option to the existing bot PATCH endpoint) without a #api design discussion or approval.",
+   "There is no API changelog entry (api_docs/unmerged.d) or feature-level note, and no screenshots of the API documentation changes.",
+   "The design question about tooltips on the bot avatar is still open in #design.",
+   "CI status is unknown, and the self-review boxes for corner cases, responsiveness/i18n, and strings/tooltips are unchecked."
+  ],
+  "reply_ask": "Tell the author that adding avatar_source to bot objects and a delete option to the bot PATCH endpoint are API changes: per the API design docs, these must be discussed in #api design, with an API changelog entry and screenshots of the API doc updates, before the PR can go to review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR changes the API: it exposes avatar_source on bot user objects and adds avatar deletion through the existing bot PATCH endpoint (patch_bot_backend).",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says these API changes have no #api design discussion or approval, and no API changelog entry or API documentation screenshots.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping 'not ready' and sending more feedback, not handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that no written feedback came with the 'not ready' label, and that the author's comment only pings laurynmm while the pushes mainly added test files.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author asked laurynmm for review after four pushes, but the PR still makes undiscussed API changes, so a maintainer needs a short update with a next step rather than a new card or silence.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied that the new response field and the new parameter on an existing endpoint are API changes, which need discussion, approval and user-facing API docs with screenshots, so 'not ready' stays.\",\n \"changed\": [\n  \"Pushed four times since 'not ready' was added; the commit messages are unchanged.\",\n  \"Grew from +255/-74 in 11 files to +308/-74 in 14 files by adding test_custom_profile_data.py, test_home.py and test_users.py, likely to account for the new avatar_source field.\",\n  \"Commented only to ping laurynmm that the PR is ready for review, without saying what changed.\"\n ],\n \"still_missing\": [\n  \"The PR changes the API (it exposes avatar_source on bot user objects and adds an avatar-delete option to the existing bot PATCH endpoint) without a #api design discussion or approval.\",\n  \"There is no API changelog entry (api_docs/unmerged.d) or feature-level note, and no screenshots of the API documentation changes.\",\n  \"The design question about tooltips on the bot avatar is still open in #design.\",\n  \"CI status is unknown, and the self-review boxes for corner cases, responsiveness/i18n, and strings/tooltips are unchecked.\"\n ],\n \"reply_ask\": \"Tell the author that adding avatar_source to bot objects and a delete option to the bot PATCH endpoint are API changes: per the API design docs, these must be discussed in #api design, with an API changelog entry and screenshots of the API doc updates, before the PR can go to review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR changes the API: it exposes avatar_source on bot user objects and adds avatar deletion through the existing bot PATCH endpoint (patch_bot_backend).\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says these API changes have no #api design discussion or approval, and no API changelog entry or API documentation screenshots.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping 'not ready' and sending more feedback, not handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that no written feedback came with the 'not ready' label, and that the author's comment only pings laurynmm while the pushes mainly added test files.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.352472
+}

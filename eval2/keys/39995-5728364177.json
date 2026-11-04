@@ -1,0 +1,53 @@
+{
+ "case": "39995-5728364177",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The PR is still labeled \"not ready\" and the author made the fix Niloth-p asked for on CZO, so a triager needs to see it, but the approach and issue are unchanged, so a short note under the first card is enough.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-09-19 Niloth-p removed \"not ready\", added \"maintainer review\" and assigned herself and PieterCK, with no new request for work before that.",
+  "changed": [
+   "Removed the six per-severity fixture files, so the PR went from +86/-5 in 8 files to +58/-5 in 2 files (view.py and tests.py), in line with Niloth-p's CZO guidance to loop over severity values on a single fixture.",
+   "On CZO the author said they set up Zabbix on a VM to capture a real payload, which answers the concern about LLM-generated fixtures.",
+   "On CZO the author named the PR they had studied (#37757), and Niloth-p redirected them to commit e4097a00 as the model to follow.",
+   "Tagged Niloth-p on GitHub for review, as she asked on CZO."
+  ],
+  "still_missing": [
+   "The PR description and commit message still say the feature uses the opt-in `include_emoji_indicators` parameter, which the author says they removed on 2026-09-07.",
+   "There is no written answer on GitHub to Niloth-p's questions about which integrations or PRs were followed and what they did about doc.md.",
+   "The emoji mapping has no final approved plan linked from the PR, which issue #31240 asks for."
+  ],
+  "reply_ask": "Thank the author, say the PR is moving to maintainer review with Niloth-p, and ask them to update the PR description and commit message to drop the stale `include_emoji_indicators` opt-in claim.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the latest push removed the six per-severity fixture files (now +58/-5 in 2 files), which is the single-fixture approach Niloth-p asked for.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Notes that Niloth-p told the author on CZO to tag her on GitHub after updating, so this ping is the expected next step and not a premature one.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends handing off: remove \"not ready\", add \"maintainer review\", and name Niloth-p as the reviewer (PieterCK is already the assignee).",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Flags that the PR description still claims an `include_emoji_indicators` opt-in parameter that the author says was removed.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The PR is still labeled \\\"not ready\\\" and the author made the fix Niloth-p asked for on CZO, so a triager needs to see it, but the approach and issue are unchanged, so a short note under the first card is enough.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-09-19 Niloth-p removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned herself and PieterCK, with no new request for work before that.\",\n \"changed\": [\n   \"Removed the six per-severity fixture files, so the PR went from +86/-5 in 8 files to +58/-5 in 2 files (view.py and tests.py), in line with Niloth-p's CZO guidance to loop over severity values on a single fixture.\",\n   \"On CZO the author said they set up Zabbix on a VM to capture a real payload, which answers the concern about LLM-generated fixtures.\",\n   \"On CZO the author named the PR they had studied (#37757), and Niloth-p redirected them to commit e4097a00 as the model to follow.\",\n   \"Tagged Niloth-p on GitHub for review, as she asked on CZO.\"\n ],\n \"still_missing\": [\n   \"The PR description and commit message still say the feature uses the opt-in `include_emoji_indicators` parameter, which the author says they removed on 2026-09-07.\",\n   \"There is no written answer on GitHub to Niloth-p's questions about which integrations or PRs were followed and what they did about doc.md.\",\n   \"The emoji mapping has no final approved plan linked from the PR, which issue #31240 asks for.\"\n ],\n \"reply_ask\": \"Thank the author, say the PR is moving to maintainer review with Niloth-p, and ask them to update the PR description and commit message to drop the stale `include_emoji_indicators` opt-in claim.\",\n \"must_have\": [\n   {\"id\": \"f1\", \"fact\": \"Says the latest push removed the six per-severity fixture files (now +58/-5 in 2 files), which is the single-fixture approach Niloth-p asked for.\", \"decisive\": true, \"at_cutoff\": true},\n   {\"id\": \"f2\", \"fact\": \"Notes that Niloth-p told the author on CZO to tag her on GitHub after updating, so this ping is the expected next step and not a premature one.\", \"decisive\": true, \"at_cutoff\": true},\n   {\"id\": \"f3\", \"fact\": \"Recommends handing off: remove \\\"not ready\\\", add \\\"maintainer review\\\", and name Niloth-p as the reviewer (PieterCK is already the assignee).\", \"decisive\": true, \"at_cutoff\": true},\n   {\"id\": \"f4\", \"fact\": \"Flags that the PR description still claims an `include_emoji_indicators` opt-in parameter that the author says was removed.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.261752
+}
