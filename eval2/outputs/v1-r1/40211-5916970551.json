@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nThe intended change is small: a scheduled message that was already delivered should not also be marked failed when a later step, such as removing the scheduled-message notification, raises. The PR now touches 123 files (+4994/-5409) across web, corporate, puppet, scripts and docs, so the earlier card describing a 2-file fix no longer matches it.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the feedback, the author squashed to one commit and updated the description, but the diff grew from 2 files (+46/-11) to 123 files (+4994/-5409). |\n| ❌  | The diff has about 120 unrelated files (e.g. `web/src/*`, `pnpm-lock.yaml`, `CODE_OF_CONDUCT.md`), probably from a bad merge or squash. It can't be reviewed in this state. |\n| ⚠️  | No linked issue and no \"Fixes: #N\". The author says the bug was found while reading code, so no \"help wanted\" issue exists for it. |\n| ⚠️  | The author didn't run the test locally and relied on CI. The description also leaves open whether anything else depends on `delivered` and `failed` being mutually exclusive. |\n| ✅  | The description now follows the template, and the commit message and regression test are described. |\n\n**Reviewer:** laurynmm — gave the feedback, but only after the diff is cleaned up to the 2 intended files.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to rebase so only the fix and its test remain. Hold off on assigning a reviewer until then.\n\n###### Reply\n\n```quote\nThanks for squashing the commits! The PR now includes about 120 unrelated files, which looks like a bad merge or rebase. Please rebase onto `main` so the diff contains only the scheduled-messages fix and its test, and then we can take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0317623
+}

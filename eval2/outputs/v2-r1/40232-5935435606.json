@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots with the same dataset: the description now has a Before/After table for ascending and descending sort, all from the same data, user and viewport |\n| ℹ️  | Open PR #40134 by another contributor also sorts the current user's custom emoji first in the same files. The triager may want to decide which one to keep |\n| ℹ️  | CI passed, no merge conflicts, and the linked issue #8170 has \"help wanted\" |\n\n**Reviewer:** @laurynmm — gave the screenshot feedback and is already following this PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\nThanks for retaking the screenshots, the before/after comparison is clear now. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0314187
+}

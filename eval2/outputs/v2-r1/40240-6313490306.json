@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Review the AI assistant's comments and read the AI policy: the author apologized but didn't say they read the policy or whether AI was used, and there was no new push |\n| ℹ️  | Another open PR, #39758, targets the same issue and the same two files, and a maintainer has already asked @shubham-padia to look at it |\n| ℹ️  | Screenshots are now in the author's comment, but the description still has the \"[Upload your screenshot or video here]\" placeholder. CI passed |\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet. The triager may also want to decide how this PR relates to #39758.\n\n###### Reply\n\n```quote\nThanks for the screenshots! Before we review this, could you confirm in your own words that you've read our [AI policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines), say whether you used an AI tool here, and confirm you understand and tested the changes yourself? Please also note that #39758 is an open PR for the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0469387
+}

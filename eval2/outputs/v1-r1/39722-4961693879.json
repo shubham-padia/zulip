@@ -1,0 +1,11 @@
+{
+ "case": "39722-4961693879",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed once and said the requested changes were made. Commit messages, file list and size are all the same as before, and the PR description still reads as it did.\n\n|     |         |\n| --- | ------- |\n| ❌  | Commit messages are unchanged, so \"Fixes: #16094\" is not in the last commit and the \"Fixes a part of\" wording was not removed. |\n| ❌  | The PR description still says \"Fixes part of: #16094\" and still has it before the testing section. |\n| ❌  | The screenshots look unchanged: the same wide before/after images are still there, with no cropped, precise ones. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to make the commit and description changes and replace the screenshots.\n\n###### Reply\n\n```quote\nThanks @Amormio25! The commit messages and PR description don't look updated yet. Could you remove \"Fixes part of\" from the commits, add \"Fixes: #16094\" to the last commit, and move it after the description? Please also replace the screenshots with [precise before/after ones](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0397323
+}

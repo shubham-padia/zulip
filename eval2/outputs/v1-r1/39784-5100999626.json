@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe description now has a long section on how this PR relates to #33086. The author says they also fixed the whitespace case with a test, but I couldn't compare the code before and after, so that push is unconfirmed. The screenshots still look the same as before.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description now discusses completion candidate #33086: same strategy, a different way of detecting `](`, and a lower line count. |\n| ❌  | The screenshots are still not a clear before/after comparison. There are 4 \"before\" images and 2 \"after\" images with no captions, plus separate videos, so the scenarios don't line up. |\n| ⚠️  | The continuing-unfinished-work guide asks authors to build on the existing PR's work. This is a fresh reimplementation instead, and a maintainer should decide whether that is acceptable. |\n| ℹ️  | The whitespace fix (`]( #**…**)`) and its test are claimed but not verified, because the code diff since the feedback is unknown. |\n\n###### Next step\n\nKeep \"not ready\" and ask for a paired before/after presentation of the screenshots.\n\n###### Reply\n\n```quote\nThanks for adding the comparison with #33086. The screenshots still aren't set up for easy review: please show each scenario as a matched before/after pair (for example, a table with the same input in both columns) with a short caption, following the [guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Also please say why you're not building on the commits from #33086, as the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html) describes.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0652143
+}

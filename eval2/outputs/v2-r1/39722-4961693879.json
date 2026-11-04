@@ -1,0 +1,11 @@
+{
+ "case": "39722-4961693879",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ❌  | Remove \"Fixes a part of …\" from all commit messages (messages are unchanged since the feedback) |\n| ❌  | Put \"Fixes: #16094\" in the last commit, after the description (commit messages unchanged) |\n| ⚠️  | Precise before/after screenshots: the description still shows the same screenshots, so it's unclear whether they were trimmed to the changed text |\n| ℹ️  | CI status is unknown, and the PR description still says \"Fixes part of: #16094\" |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the commit messages and confirm the screenshots.\n\n###### Reply\n\n```quote\nThanks @Amormio25! The commit messages still look unchanged: please remove \"Fixes a part of …\" from all of them and put \"Fixes: #16094\" in the last commit, after the description (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages)). Please also trim the screenshots to only the changed text, per the [precise before/after guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0452747
+}

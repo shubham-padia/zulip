@@ -1,0 +1,11 @@
+{
+ "case": "40257-6023845324",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed one new commit that adds an error banner for non-JSON 5xx responses, alongside the existing `blueslip.error`. They also updated the screenshot in the description.\n\n|     |         |\n| --- | ------- |\n| ✅  | Console error: `blueslip.error` logs the status and start of the body for non-JSON 5xx responses, with a test in `channel.test.cjs`. |\n| ✅  | User-facing banner: a banner was added in `popup_banners.ts`, as the feedback asked. |\n| ✅  | Screenshots: the \"After\" screenshot was replaced with a newer one, and the description now has Before and After shots. |\n| ℹ️  | Linked issue #6296 has \"help wanted\", and CI passed. The PR says \"Partially addresses\", so the issue stays open for the server-side work. |\n\n**Reviewer:** @laurynmm — gave the feedback on the console error and banner, and already knows the context.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, the banner is now in alongside the blueslip error, and the screenshots are updated. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0280763
+}

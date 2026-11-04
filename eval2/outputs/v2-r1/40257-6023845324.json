@@ -1,0 +1,11 @@
+{
+ "case": "40257-6023845324",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "CARD",
+ "text": "CARD\n**Ready for review**\n\nWhen the server or a proxy returns a 5xx error that isn't JSON (for example an HTML page or a plain-text 502), the web app now logs a `blueslip.error` with the status and the start of the response. It also shows an error banner to the user, like the one for network errors. Before, nothing was logged and the user saw nothing.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | One new push added `popup_banners.ts` (+30 lines), so the PR now touches 3 files. It still has one commit and CI passes. |\n| ✅  | The `blueslip.error` log for non-JSON 5xx responses is in `channel.ts`, with tests in `channel.test.cjs`. |\n| ✅  | An error banner is now shown to the user, as the maintainer asked. |\n| ✅  | The description has before/after screenshots, now in the right order, and the author says the \"after\" one was updated. |\n| ✅  | The linked issue #6296 has \"help wanted\" and is assigned to the author. The PR says only the client side is done, so the issue stays open. |\n\n**Reviewer:** @laurynmm — gave the feedback on the logging, the banner and the screenshots, and is already following this PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\nThanks for adding the banner and fixing the screenshots! @laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0295287
+}

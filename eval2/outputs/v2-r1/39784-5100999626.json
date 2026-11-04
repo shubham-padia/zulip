@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Explain how this PR relates to the completion candidate PR #33086. The description now has a \"Relationship to prior work\" section. |\n| ⚠️  | Present precise before/after screenshots that allow clear comparison. Before and After are still separate image lists (4 vs. 2, plus a video), not paired by scenario. |\n| ℹ️  | The code changes since the feedback couldn't be checked. The author says the whitespace case after `](` was fixed with a test, but the PR still shows one commit. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to pair the before/after screenshots, so the PR is not handed off yet.\n\n###### Reply\n\n```quote\nThanks, @PrinceXDev, the section on #33086 is helpful. The screenshots still aren't easy to compare: please show each scenario (including `[label]( #**channel>topic**)`) as a before/after pair, for example in a table, following the [guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0664967
+}

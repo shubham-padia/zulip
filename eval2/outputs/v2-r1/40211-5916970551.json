@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nThis PR is meant to stop a scheduled message that was already sent from also being marked as failed when a later step errors. The idea is small, but the PR now shows 123 changed files with thousands of unrelated lines, so it can't be reviewed as it stands.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | The squash replaced the 6 earlier commits with 1, but the PR grew from +46/-11 in 2 files to +4994/-5409 in 123 files. It now includes unrelated web, docs, corporate and tooling files, which looks like a bad rebase or merge from main. |\n| ❌  | The unrelated changes must be removed so the PR contains only the scheduled-message fix and its test. |\n| ⚠️  | The author did not run the tests locally and relied on CI. With this diff, a passing CI doesn't show the fix is tested. |\n| ⚠️  | There is no linked issue, and the author has no merged PRs. The author said this came from reading the code, not from a \"help wanted\" issue. |\n| ✅  | The description now explains the change, and the self-review checklist is filled in. |\n\n**Reviewer:** None yet. The PR is not ready for a maintainer.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer until the diff is back to the intended files.\n\n###### Reply\n\n```quote\nThanks for squashing! The PR now shows 123 changed files, which looks like a bad rebase or merge from main. Could you reset the branch so it contains only your scheduled-message fix and its test (about 2 files)? The [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) and the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) cover how to do that.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.030414700000000003
+}

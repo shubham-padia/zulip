@@ -1,0 +1,11 @@
+{
+ "case": "40237-5935346309",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author did not push new code. They posted the requested before/after screenshots in a comment, showing the plain-text theme with `:grinning:` picked and Save clicked.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after screenshots are posted. They show the modal stuck on Save with \"Invalid emoji type.\" before the fix, and the modal closing with the status in the buddy list after. |\n| ✅  | The linked issue #34985 has \"help wanted\", and the author has merged PRs before. |\n| ℹ️  | Open PR #37967 (a collaborator's, since February, no maintainer comments) fixes the same bug. The reviewer should decide which one to take. |\n| ℹ️  | How status emoji are displayed with the plain-text theme is still undecided in #design. This PR leaves display unchanged. |\n\n**Reviewer:** @laurynmm — gave the screenshot feedback and can now check the screenshots against the change.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who can also decide between this PR and #37967.\n\n###### Reply\n\n```quote\nThanks for the screenshots, they make the fix clear. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0427743
+}

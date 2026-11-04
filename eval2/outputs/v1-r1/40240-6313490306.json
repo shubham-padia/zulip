@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author replied with two screenshots and an apology but did not push any new commits, so the code is the same as when the feedback was given.\n\n|     |         |\n| --- | ------- |\n| ❌  | No new push, so nothing in the PR changed in response to the feedback. |\n| ❌  | The AI-policy feedback is unanswered: the comment only apologizes and does not say what was fixed or confirm the author understands the change. |\n| ⚠️  | Screenshots were posted in a comment, but the PR description still has the \"[Upload your screenshot or video here]\" placeholder. |\n| ℹ️  | PR #39758 (open, from another contributor) fixes the same issue in the same two files, and its last maintainer comment asks @shubham-padia to look at it. |\n\n###### Next step\n\nKeep \"not ready\" and give more feedback, and consider whether #39758 should be the one that moves forward.\n\n###### Reply\n\n```quote\nThanks for the screenshots! Please move them into the PR description, and tell us in your own words what the change does and what you tested. Please also read the [AI use policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines) and push any changes you make as updated commits.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0434163
+}

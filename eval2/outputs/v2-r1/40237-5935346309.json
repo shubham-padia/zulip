@@ -1,0 +1,11 @@
+{
+ "case": "40237-5935346309",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots: now in the author's comment, with the plain-text theme, `:grinning:` picked, and both the Save modal and the buddy list shown |\n| ℹ️  | #37967 (open, from a collaborator) fixes the same issue #34985 and is still awaiting review, so a maintainer should choose which one to continue |\n| ℹ️  | CI status is unknown from the input; the author says the new Puppeteer test passed in CI |\n\n**Reviewer:** laurynmm — gave the feedback and already knows the PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, after deciding how this relates to #37967.\n\n###### Reply\n\n```quote\nThanks for the screenshots, they make the change clear. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0407867
+}

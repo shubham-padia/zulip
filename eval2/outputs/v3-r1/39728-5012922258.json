@@ -1,0 +1,11 @@
+{
+ "case": "39728-5012922258",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: commits aren't cleaned up and the description still uses a non-template checklist**\n\nNew: The author pushed one commit adding a tab-preservation test case, which answers their own testing question. Missing: the history is still four rough commits (\"fixed linting error to pass CI\", \"Fixes #17419\", and a test commit that names issue 17418), where fixes should be squashed into the commits they belong to and use Zulip's commit message format. The self-review checklist in the description is also still custom rather than the PR template's.\n\n###### Next step\n\nKeep \"not ready\" and leave it with laurynmm, who gave the earlier feedback; no reviewer assignment yet.\n\n###### Reply\n\n```quote\nThanks for adding the test! Before we review, please reorganize your commits following our [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html): squash the lint fix and \"Fixes #17419\" commits into the main one, put the test with the fix, use the `area: Summary.` message format, and double-check the issue number in the test commit. Please also replace the custom self-review checklist in the description with the one from the PR template.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0604077
+}

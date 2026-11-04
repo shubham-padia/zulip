@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nNo new commits. The author replaced the screenshots in the PR description with a Before/After table for ascending and descending Author sort, all from the same data set, user and viewport.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after screenshots now use the same data set (three authors, six emoji, logged in as the same user) |\n| ✅  | Description explains the reverse-sort behavior as a deliberate choice; the node test and CI pass |\n\n**Reviewer:** @laurynmm — gave the screenshot feedback and can confirm the new table meets the guidelines.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0338563
+}

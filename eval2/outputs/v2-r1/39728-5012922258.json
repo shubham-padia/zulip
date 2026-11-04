@@ -1,0 +1,11 @@
+{
+ "case": "39728-5012922258",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Description, \"Fixes: #17419\" and how it was tested are filled in |\n| ✅  | Before/after screenshots, posted in a comment |\n| ✅  | Regression test case added in a new push after the feedback |\n| ⚠️  | Self-review checklist is there, but it is a custom list, not the PR template's checklist |\n| ❌  | Commit discipline: fixes are not squashed into the commits they belong to (\"fixed linting error to pass CI\", a separate \"added test case\" commit), commit messages don't follow Zulip's format, and the test commit names #17418 instead of #17419 |\n| ℹ️  | CI status is unknown (check runs aren't available) |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to clean up the commits and use the template's self-review checklist.\n\n###### Reply\n\n```quote\nThanks for adding the test, @adityas27! Two things are still needed: please squash the lint fix and the test into the commit they belong to, with a proper commit message following our [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) (the test commit also says #17418 instead of #17419). Please also replace the self-review checklist with the one from the PR template.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.06579270000000001
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39728-5012922258",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nSince the feedback, the author pushed one new commit that adds a markdown test case. The screenshots and filled-in description were already there from before the feedback.\n\n|     |         |\n| --- | ------- |\n| ✅  | PR description follows the template: \"Fixes: #17419\", testing steps, before/after screenshots, and a self-review checklist. The issue has \"help wanted\". |\n| ✅  | A regression test case was added in `markdown_test_cases.json`. |\n| ❌  | Commits don't follow commit discipline: there are four, including a \"fixed linting error\" fixup and a separate test commit. None has a proper area-prefixed message such as \"markdown: Preserve tab characters in code blocks.\" |\n| ⚠️  | The test commit message says \"17418\" (wrong issue number). The description also has a typo (\"methon\"), and the checklist item about adding a test is ticked \"as I get a say from reviewer\" although no reviewer asked for one. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to clean up the commits; once that's done, this can go to \"maintainer review\".\n\n###### Reply\n\n```quote\nThanks for adding the test and filling in the description! Before we can review, please squash this into a single well-formed commit, with the fix and its test together, a message like \"markdown: Preserve tab characters in code blocks.\", and no lint-fix commit, following our [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). Please also fix the typos in the description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0620603
+}
