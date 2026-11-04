@@ -1,0 +1,6 @@
+{
+ "case": "39540-4708052713",
+ "answer": "yes",
+ "text": "yes\nThe author says \"PR is ready\" and explicitly asks for a review, which is the re-request the maintainer asked for, even though the comment is addressed to a different person (@Asteriskkkk) rather than the triager.",
+ "cost_usd": 0.0008074
+}
