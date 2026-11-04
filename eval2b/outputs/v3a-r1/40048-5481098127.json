@@ -1,0 +1,11 @@
+{
+ "case": "40048-5481098127",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — API design discussion has no outcome yet, and the API changelog entry and feature level are missing**\n\nNew: The author added a rendered API docs screenshot to the description and says they started a topic in #api design. There is no new push. Missing: agreement on the API design in that discussion, and the API changelog entry and feature level bump, since the changed files include no changelog or version file.\n\n###### Next step\n\nKeep \"not ready\" and leave the PR unassigned until the #api design discussion reaches a conclusion.\n\n###### Reply\n\n```quote\nThanks for adding the screenshot and starting the #api design topic. Please wait for that discussion to settle, then add the API changelog entry and feature level bump described in the [API design guide](https://zulip.readthedocs.io/en/latest/processes/api-design.html), and push the update.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0268015
+}

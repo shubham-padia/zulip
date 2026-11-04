@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots now compare the same data set**\n\nNew: The author redid the before/after screenshots as a table covering ascending and descending sort, all with the same user, data set and viewport, which is what the feedback asked for. There was no new push, and none was needed because the change was only to the screenshots.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the screenshot feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The before/after screenshots now use the same data set.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0356855
+}

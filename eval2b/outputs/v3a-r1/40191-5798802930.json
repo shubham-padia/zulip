@@ -1,0 +1,11 @@
+{
+ "case": "40191-5798802930",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both of laurynmm's asks are done**\n\nNew: Commit messages were rewritten, and the Home Assistant doc change was removed and moved to #40197, so the PR now has only the two settings renames with backward-compatibility fallbacks and tests. Missing: nothing blocking.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at this? The commit messages are updated and the docs change is split out into #40197.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0572815
+}

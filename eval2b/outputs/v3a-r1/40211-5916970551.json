@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the squash pulled about 120 unrelated files into the PR**\n\nNew: The author squashed the commits into one and updated the description. The diff grew from 2 files (+46/-11) to 123 files (+4994/-5409), covering the web app, docs, package files and more. Missing: the diff must contain only the scheduled-message fix and its test. There is also still no linked issue or maintainer sign-off that this change is wanted.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer; the author needs to clean up the branch first.\n\n###### Reply\n\n```quote\nThanks for squashing! The PR now shows 123 changed files, most of them unrelated to the scheduled-message fix, which looks like a bad rebase or merge. Please rebase onto current `main` so the diff has only the fix and its test (see the [Git guide](https://zulip.readthedocs.io/en/latest/git/index.html)).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0290675
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40065-5536187002",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots don't show the clipping bug or that it's fixed**\n\nNew: The commit history is now a single commit, and the author says the before/after shots were retaken in one tab with the same scroll state and viewport. Missing: the PR's own note says the clipping doesn't reproduce at DPR 1, so the pair only shows extra spacing, not clipped emoji before and clear emoji after (for example at the DPR 1.5 setup or on a high-DPI display where it reproduces).\n\n###### Next step\n\nKeep \"not ready\" and ask the author to show the clipping reproduced before the change and gone after it, then ask again.\n\n###### Reply\n\n```quote\nThanks for squashing the commits. The screenshots still need to show the actual problem: emoji visibly clipped before the change and fully visible after it, e.g. on the high-DPI setup where you saw it. See [the guide on precise before/after screenshots](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0543875
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots now cover both layouts**\n\nNew: Replaced the inaccessible images with public links and added before/after pairs of the same size for rows with an avatar or icon and rows without. There was no new push, and none was needed since the feedback was about screenshots. Missing: nothing that blocks review; the font-size spot checks have no screenshots.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback and can confirm the new screenshot links open.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look? The before/after screenshots are now on public links.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0500975
+}

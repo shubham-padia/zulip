@@ -1,0 +1,11 @@
+{
+ "case": "39995-5728364177",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the extra fixtures are gone and the PR is now down to the view and its tests**\n\nNew: The author pushed once, dropping the six per-severity fixture files, so the PR now touches only the Zabbix view and tests (+58/-5), in line with the \"single fixture, loop in the test\" guidance. Missing: the PR description still says the feature depends on the `include_emoji_indicators` parameter, which was removed earlier.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and ask Niloth-p, who gave the feedback and was tagged, to review (PieterCK is the current assignee).\n\n###### Reply\n\n```quote\nThanks for the update! @Niloth-p, could you take another look? @tmvalijib24, please also update the PR description, since it still mentions the `include_emoji_indicators` parameter.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0627635
+}
