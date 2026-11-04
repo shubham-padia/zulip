@@ -1,0 +1,168 @@
+{
+ "case": "39868-5175066393",
+ "repeat": 2,
+ "map": {
+  "P": [
+   "v3-r2"
+  ],
+  "V": [
+   "v2-r1"
+  ],
+  "I": [
+   "v2-r2"
+  ],
+  "L": [
+   "v1-r1"
+  ],
+  "S": [
+   "v1-r2"
+  ],
+  "R": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more work, which matches the key.",
+    "accuracy_why": "It covers unverified CI, Karl's flexbox advice and the open #39694, but it misses the decisive screenshot gap and the small-caps restyling that needs a #design discussion.",
+    "reply_why": "It points to the #design thread but asks about CI and the checklist instead of precise before/after screenshots and a design discussion of the text restyling."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" as a NOTE, though its next step implies a hand-off once CI and the checklist are done, which is premature.",
+    "accuracy_why": "It notes unknown CI and the open #39694, but it misses the screenshots, the styling change and Karl's advice.",
+    "reply_why": "It asks only for CI confirmation and checklist items, so it misses the screenshot and design-discussion ask."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "unsupported_ask"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and gives more feedback, as the key does.",
+    "accuracy_why": "It mentions unverified CI and Karl's advice, but it misses the decisive screenshot gap and the styling change, and it leads with an unsupported squash request.",
+    "reply_why": "It asks for a squash and checklist items instead of precise screenshots and a #design discussion."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" in a NOTE, which matches the key.",
+    "accuracy_why": "It only notes the push, the test claim and unknown CI, missing the screenshots, the styling change and the design-thread context.",
+    "reply_why": "It asks about the checklist and CI rather than screenshots and a design discussion."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "unsupported_ask"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" without assigning a reviewer, as the key does.",
+    "accuracy_why": "It notes unknown CI but misses the screenshots, the styling change and the design-thread context, and it puts weight on an unsupported squash claim.",
+    "reply_why": "It asks for a squash and checklist work, so it misses the key's screenshot and design-discussion ask."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "unsupported_ask",
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" as a NOTE, which matches the key.",
+    "accuracy_why": "It covers unknown CI only, misses the screenshots, the styling change and the design-thread context, and adds a filler point about claiming the issue.",
+    "reply_why": "It asks for a squash and checklist work instead of precise screenshots and a #design discussion."
+   }
+  },
+  "ranking": [
+   "V",
+   "I",
+   "L",
+   "R",
+   "P",
+   "S"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more work, which matches the key.\",\n \"accuracy_why\": \"It covers unverified CI, Karl's flexbox advice and the open #39694, but it misses the decisive screenshot gap and the small-caps restyling that needs a #design discussion.\",\n \"reply_why\": \"It points to the #design thread but asks about CI and the checklist instead of precise before/after screenshots and a design discussion of the text restyling.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" as a NOTE, though its next step implies a hand-off once CI and the checklist are done, which is premature.\",\n \"accuracy_why\": \"It notes unknown CI and the open #39694, but it misses the screenshots, the styling change and Karl's advice.\",\n \"reply_why\": \"It asks only for CI confirmation and checklist items, so it misses the screenshot and design-discussion ask.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [\"unsupported_ask\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and gives more feedback, as the key does.\",\n \"accuracy_why\": \"It mentions unverified CI and Karl's advice, but it misses the decisive screenshot gap and the styling change, and it leads with an unsupported squash request.\",\n \"reply_why\": \"It asks for a squash and checklist items instead of precise screenshots and a #design discussion.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" in a NOTE, which matches the key.\",\n \"accuracy_why\": \"It only notes the push, the test claim and unknown CI, missing the screenshots, the styling change and the design-thread context.\",\n \"reply_why\": \"It asks about the checklist and CI rather than screenshots and a design discussion.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"unsupported_ask\"],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" without assigning a reviewer, as the key does.\",\n \"accuracy_why\": \"It notes unknown CI but misses the screenshots, the styling change and the design-thread context, and it puts weight on an unsupported squash claim.\",\n \"reply_why\": \"It asks for a squash and checklist work, so it misses the key's screenshot and design-discussion ask.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"unsupported_ask\", \"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" as a NOTE, which matches the key.\",\n \"accuracy_why\": \"It covers unknown CI only, misses the screenshots, the styling change and the design-thread context, and adds a filler point about claiming the issue.\",\n \"reply_why\": \"It asks for a squash and checklist work instead of precise screenshots and a #design discussion.\"}},\n\"ranking\": [\"V\", \"I\", \"L\", \"R\", \"P\", \"S\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.262252
+}

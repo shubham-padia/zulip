@@ -1,0 +1,173 @@
+{
+ "case": "40030-5442478190",
+ "repeat": 2,
+ "map": {
+  "S": [
+   "v2-r2"
+  ],
+  "M": [
+   "v1-r2"
+  ],
+  "O": [
+   "v1-r1"
+  ],
+  "J": [
+   "v3-r2"
+  ],
+  "Z": [
+   "v3-r1"
+  ],
+  "H": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Marks the self-review checklist as fine, but it does not match Zulip's PR template.",
+     "Says the 5 pushes were squashed into one commit, when two commits were squashed."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "NOTE with keep-'not ready' and more feedback matches the key.",
+    "accuracy_why": "It flags the missing issue and the squash, but it only implies the self-removed label in the reply and wrongly passes the checklist.",
+    "reply_why": "It asks for an issue and tells the author to leave labels to maintainers, but it does not offer a CZO discussion as an alternative or link the reviewable-PR guide."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Marks the description and self-review checklist as filled in correctly, but the checklist does not match the template."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "NOTE recommending keeping 'not ready' and asking for an issue matches the key.",
+    "accuracy_why": "It covers the missing issue and the squash, but it never says the author removed the label and it wrongly approves the checklist.",
+    "reply_why": "It asks for an issue, but 'leave the label for now' is weaker than asking the author not to remove maintainer labels, and it does not link the guide."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It gets the squash, the missing issue and the thin description right, but it misses that the author removed the label himself and the checklist mismatch.",
+    "reply_why": "It asks for an issue and a better description and links the reviewable-PR guide, but it says nothing about not removing maintainer labels."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 6,
+    "decision_why": "NOTE with keep-'not ready' and more feedback matches the key.",
+    "accuracy_why": "It describes the squash and the missing issue accurately, but it misses the self-removed label and the checklist mismatch.",
+    "reply_why": "It asks for an issue and a description, but it skips the label warning and the guide link."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It is concise and right on the squash and the missing issue, but it misses the self-removed label and the checklist mismatch.",
+    "reply_why": "It asks only for a help-wanted issue, links the review-process page instead of the reviewable-PR guide, and says nothing about labels."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says the PR template is filled in, but the checklist does not match it.",
+     "Calls the PR ready for review."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends hand-off where the key calls for more feedback.",
+    "accuracy_why": "The hand-off rests on a false claim that the template is satisfied, and it ignores that the author removed the label himself.",
+    "reply_why": "It pings a reviewer instead of telling the author what is missing."
+   }
+  },
+  "ranking": [
+   "S",
+   "H",
+   "M",
+   "O",
+   "J",
+   "Z"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Marks the self-review checklist as fine, but it does not match Zulip's PR template.\", \"Says the 5 pushes were squashed into one commit, when two commits were squashed.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with keep-'not ready' and more feedback matches the key.\",\n \"accuracy_why\": \"It flags the missing issue and the squash, but it only implies the self-removed label in the reply and wrongly passes the checklist.\",\n \"reply_why\": \"It asks for an issue and tells the author to leave labels to maintainers, but it does not offer a CZO discussion as an alternative or link the reviewable-PR guide.\"},\n\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Marks the description and self-review checklist as filled in correctly, but the checklist does not match the template.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"NOTE recommending keeping 'not ready' and asking for an issue matches the key.\",\n \"accuracy_why\": \"It covers the missing issue and the squash, but it never says the author removed the label and it wrongly approves the checklist.\",\n \"reply_why\": \"It asks for an issue, but 'leave the label for now' is weaker than asking the author not to remove maintainer labels, and it does not link the guide.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It gets the squash, the missing issue and the thin description right, but it misses that the author removed the label himself and the checklist mismatch.\",\n \"reply_why\": \"It asks for an issue and a better description and links the reviewable-PR guide, but it says nothing about not removing maintainer labels.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 6,\n \"decision_why\": \"NOTE with keep-'not ready' and more feedback matches the key.\",\n \"accuracy_why\": \"It describes the squash and the missing issue accurately, but it misses the self-removed label and the checklist mismatch.\",\n \"reply_why\": \"It asks for an issue and a description, but it skips the label warning and the guide link.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It is concise and right on the squash and the missing issue, but it misses the self-removed label and the checklist mismatch.\",\n \"reply_why\": \"It asks only for a help-wanted issue, links the review-process page instead of the reviewable-PR guide, and says nothing about labels.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Says the PR template is filled in, but the checklist does not match it.\", \"Calls the PR ready for review.\"],\n \"rule_failures\": [\"reply_contradicts_key\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It recommends hand-off where the key calls for more feedback.\",\n \"accuracy_why\": \"The hand-off rests on a false claim that the template is satisfied, and it ignores that the author removed the label himself.\",\n \"reply_why\": \"It pings a reviewer instead of telling the author what is missing.\"}\n},\n\"ranking\": [\"S\", \"H\", \"M\", \"O\", \"J\", \"Z\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.15522
+}

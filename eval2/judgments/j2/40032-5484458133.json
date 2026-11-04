@@ -1,0 +1,175 @@
+{
+ "case": "40032-5484458133",
+ "repeat": 2,
+ "map": {
+  "L": [
+   "v1-r1"
+  ],
+  "K": [
+   "v3-r2"
+  ],
+  "J": [
+   "v1-r2"
+  ],
+  "H": [
+   "v2-r1"
+  ],
+  "V": [
+   "v3-r1"
+  ],
+  "N": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE that keeps 'not ready' and sends more feedback matches the key.",
+    "accuracy_why": "It correctly says only the commit message changed and lists its concrete defects, but it never mentions the missing precise screenshots.",
+    "reply_why": "It gives a clear, specific commit-message ask a maintainer could paste almost as is, though it leaves out the screenshot request."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the commit has no message body, a guess the input doesn't support"
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with more feedback while keeping 'not ready' matches the key.",
+    "accuracy_why": "It correctly notes the subject got further from the guide, but it guesses about a missing body and omits the screenshot gap.",
+    "reply_why": "It gives a concrete format ask with the guide link; only the body claim is shaky."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "NOTE that keeps 'not ready' and asks for more feedback matches the key.",
+    "accuracy_why": "It names the commit defects, but it never says the code is unchanged and it misses the screenshots; the #40027 and CI rows are filler.",
+    "reply_why": "It points to the right areas but only hints at the fixes instead of stating them."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Asserts there is no commit body, a guess the input doesn't support"
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It lists the commit defects accurately, but it guesses about a missing body, misses the screenshots, and pads with rows on #40027 and CI.",
+    "reply_why": "It gives the right ask with the guide link, though its 'web: prefix format' wording is a little awkward."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the commit has no body, which is unsupported",
+     "Says the PR can go to review once the commit message is fixed, though the precise screenshots are still missing"
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "NOTE that keeps 'not ready' and asks for more feedback matches the key.",
+    "accuracy_why": "It is right that only the subject changed, but it guesses about the body and implies the PR is otherwise ready for review.",
+    "reply_why": "It makes a specific commit-message ask with the link, but it includes the unsupported body request and omits the screenshots."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says the PR is otherwise complete with videos, though precise screenshots are still missing",
+     "Asserts the commit has no body, which is unsupported"
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It describes the commit defects well, but it wrongly calls the presentation complete and guesses about a missing body.",
+    "reply_why": "It makes the right commit-message ask with the guide link, but it includes the body claim and leaves out the screenshots."
+   }
+  },
+  "ranking": [
+   "V",
+   "K",
+   "N",
+   "H",
+   "L",
+   "J"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE that keeps 'not ready' and sends more feedback matches the key.\",\n \"accuracy_why\": \"It correctly says only the commit message changed and lists its concrete defects, but it never mentions the missing precise screenshots.\",\n \"reply_why\": \"It gives a clear, specific commit-message ask a maintainer could paste almost as is, though it leaves out the screenshot request.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Asserts the commit has no message body, a guess the input doesn't support\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with more feedback while keeping 'not ready' matches the key.\",\n \"accuracy_why\": \"It correctly notes the subject got further from the guide, but it guesses about a missing body and omits the screenshot gap.\",\n \"reply_why\": \"It gives a concrete format ask with the guide link; only the body claim is shaky.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"NOTE that keeps 'not ready' and asks for more feedback matches the key.\",\n \"accuracy_why\": \"It names the commit defects, but it never says the code is unchanged and it misses the screenshots; the #40027 and CI rows are filler.\",\n \"reply_why\": \"It points to the right areas but only hints at the fixes instead of stating them.\"},\n\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Asserts there is no commit body, a guess the input doesn't support\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 7, \"brevity_score\": 6,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It lists the commit defects accurately, but it guesses about a missing body, misses the screenshots, and pads with rows on #40027 and CI.\",\n \"reply_why\": \"It gives the right ask with the guide link, though its 'web: prefix format' wording is a little awkward.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Asserts the commit has no body, which is unsupported\", \"Says the PR can go to review once the commit message is fixed, though the precise screenshots are still missing\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"NOTE that keeps 'not ready' and asks for more feedback matches the key.\",\n \"accuracy_why\": \"It is right that only the subject changed, but it guesses about the body and implies the PR is otherwise ready for review.\",\n \"reply_why\": \"It makes a specific commit-message ask with the link, but it includes the unsupported body request and omits the screenshots.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Says the PR is otherwise complete with videos, though precise screenshots are still missing\", \"Asserts the commit has no body, which is unsupported\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 7, \"brevity_score\": 6,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It describes the commit defects well, but it wrongly calls the presentation complete and guesses about a missing body.\",\n \"reply_why\": \"It makes the right commit-message ask with the guide link, but it includes the body claim and leaves out the screenshots.\"}\n},\n\"ranking\": [\"V\", \"K\", \"N\", \"H\", \"L\", \"J\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.22723200000000002
+}

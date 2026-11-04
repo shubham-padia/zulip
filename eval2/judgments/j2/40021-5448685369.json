@@ -1,0 +1,163 @@
+{
+ "case": "40021-5448685369",
+ "repeat": 2,
+ "map": {
+  "Z": [
+   "v1-r1"
+  ],
+  "H": [
+   "v1-r2"
+  ],
+  "Y": [
+   "v3-r2"
+  ],
+  "C": [
+   "v3-r1"
+  ],
+  "Q": [
+   "v2-r2"
+  ],
+  "V": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "NOTE with keep 'not ready' and more feedback matches the key.",
+    "accuracy_why": "It covers the screenshots, the 15em change and the unrelated commit, but misses both decisive problems: whole-string truncation and no case made over #39768.",
+    "reply_why": "It asks only for commit cleanup, which misses the core ask about showing each reactor's name or justifying the approach over #39768."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It covers the changes and the commit hygiene, but omits the whole-string truncation flaw and the #39768 comparison gap.",
+    "reply_why": "It asks only for squashing and dropping the unrelated changes, so it misses the substantive ask."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It states that truncating the whole reactor list goes against Alya's requirement, but never raises #39768 or the weak justification.",
+    "reply_why": "It asks for screenshots with 2–3 reactors and partly visible names, but does not ask for a case against #39768, and its next step implies cleanup alone is enough."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps 'not ready' with no reviewer matches the key.",
+    "accuracy_why": "It notes only the commit-hygiene problems and misses both decisive design concerns.",
+    "reply_why": "Its ask is commit cleanup only, and it suggests review can follow, which misses reply_ask."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It names the whole-string truncation flaw and that #39768 is in maintainer review, but leaves the viability question to a maintainer and does not call the font-weight commit unrelated.",
+    "reply_why": "It asks how the fix behaves with several reactors, which is the right direction, but does not mention #39768 or dropping the unrelated commit."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It mentions #39768 being in review only as info and misses the whole-string truncation flaw.",
+    "reply_why": "It asks only for squashing and explaining the font-weight change, so it misses the core design ask."
+   }
+  },
+  "ranking": [
+   "Q",
+   "Y",
+   "V",
+   "C",
+   "H",
+   "Z"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with keep 'not ready' and more feedback matches the key.\",\n \"accuracy_why\": \"It covers the screenshots, the 15em change and the unrelated commit, but misses both decisive problems: whole-string truncation and no case made over #39768.\",\n \"reply_why\": \"It asks only for commit cleanup, which misses the core ask about showing each reactor's name or justifying the approach over #39768.\"},\n\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It covers the changes and the commit hygiene, but omits the whole-string truncation flaw and the #39768 comparison gap.\",\n \"reply_why\": \"It asks only for squashing and dropping the unrelated changes, so it misses the substantive ask.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It states that truncating the whole reactor list goes against Alya's requirement, but never raises #39768 or the weak justification.\",\n \"reply_why\": \"It asks for screenshots with 2–3 reactors and partly visible names, but does not ask for a case against #39768, and its next step implies cleanup alone is enough.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps 'not ready' with no reviewer matches the key.\",\n \"accuracy_why\": \"It notes only the commit-hygiene problems and misses both decisive design concerns.\",\n \"reply_why\": \"Its ask is commit cleanup only, and it suggests review can follow, which misses reply_ask.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It names the whole-string truncation flaw and that #39768 is in maintainer review, but leaves the viability question to a maintainer and does not call the font-weight commit unrelated.\",\n \"reply_why\": \"It asks how the fix behaves with several reactors, which is the right direction, but does not mention #39768 or dropping the unrelated commit.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It mentions #39768 being in review only as info and misses the whole-string truncation flaw.\",\n \"reply_why\": \"It asks only for squashing and explaining the font-weight change, so it misses the core design ask.\"}\n},\n\"ranking\": [\"Q\", \"Y\", \"V\", \"C\", \"H\", \"Z\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.29438
+}

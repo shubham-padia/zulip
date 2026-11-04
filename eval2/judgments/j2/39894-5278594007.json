@@ -1,0 +1,163 @@
+{
+ "case": "39894-5278594007",
+ "repeat": 2,
+ "map": {
+  "P": [
+   "v3-r1"
+  ],
+  "V": [
+   "v2-r2"
+  ],
+  "W": [
+   "v1-r1"
+  ],
+  "A": [
+   "v1-r2"
+  ],
+  "C": [
+   "v3-r2"
+  ],
+  "T": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands off, which matches the key.",
+    "accuracy_why": "It covers the screenshots, the no-push status and the 5px→6px blur with the #design question, but suggests laurynmm instead of karlstolley.",
+    "reply_why": "A short thanks plus a reviewer ping that could be pasted as is."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands off, which matches the key.",
+    "accuracy_why": "It gets the screenshots, pixel diff, no push and blur change right, but does not mention #design and suggests laurynmm instead of karlstolley.",
+    "reply_why": "A clear two-sentence reviewer ping that only needs light editing."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands off, which matches the key.",
+    "accuracy_why": "It covers the screenshots, no push, CI and the blur change, but suggests laurynmm instead of karlstolley.",
+    "reply_why": "A good reviewer ping that mentions the blur change."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands off, which matches the key.",
+    "accuracy_why": "It flags the blur change and #design well, but never says there was no new push or that CI passes, and it suggests laurynmm.",
+    "reply_why": "A sound reviewer ping that raises the blur question."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that hands off, which matches the key.",
+    "accuracy_why": "Its facts are right and it covers no push, CI and the blur change, but it suggests laurynmm instead of karlstolley.",
+    "reply_why": "A clean reviewer ping, though it leaves out the blur change."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands off, which matches the key.",
+    "accuracy_why": "It flags the blur change and the missing #design discussion, but does not say there was no new push, and it suggests laurynmm.",
+    "reply_why": "The ping is three sentences, so a word or two needs trimming."
+   }
+  },
+  "ranking": [
+   "C",
+   "P",
+   "A",
+   "V",
+   "W",
+   "T"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands off, which matches the key.\",\n \"accuracy_why\": \"It covers the screenshots, the no-push status and the 5px→6px blur with the #design question, but suggests laurynmm instead of karlstolley.\",\n \"reply_why\": \"A short thanks plus a reviewer ping that could be pasted as is.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands off, which matches the key.\",\n \"accuracy_why\": \"It gets the screenshots, pixel diff, no push and blur change right, but does not mention #design and suggests laurynmm instead of karlstolley.\",\n \"reply_why\": \"A clear two-sentence reviewer ping that only needs light editing.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that hands off, which matches the key.\",\n \"accuracy_why\": \"It covers the screenshots, no push, CI and the blur change, but suggests laurynmm instead of karlstolley.\",\n \"reply_why\": \"A good reviewer ping that mentions the blur change.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that hands off, which matches the key.\",\n \"accuracy_why\": \"It flags the blur change and #design well, but never says there was no new push or that CI passes, and it suggests laurynmm.\",\n \"reply_why\": \"A sound reviewer ping that raises the blur question.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that hands off, which matches the key.\",\n \"accuracy_why\": \"Its facts are right and it covers no push, CI and the blur change, but it suggests laurynmm instead of karlstolley.\",\n \"reply_why\": \"A clean reviewer ping, though it leaves out the blur change.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that hands off, which matches the key.\",\n \"accuracy_why\": \"It flags the blur change and the missing #design discussion, but does not say there was no new push, and it suggests laurynmm.\",\n \"reply_why\": \"The ping is three sentences, so a word or two needs trimming.\"}\n},\n\"ranking\": [\"C\", \"P\", \"A\", \"V\", \"W\", \"T\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.26994
+}

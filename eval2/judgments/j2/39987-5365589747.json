@@ -1,0 +1,163 @@
+{
+ "case": "39987-5365589747",
+ "repeat": 2,
+ "map": {
+  "Y": [
+   "v3-r1"
+  ],
+  "T": [
+   "v3-r2"
+  ],
+  "D": [
+   "v1-r2"
+  ],
+  "X": [
+   "v1-r1"
+  ],
+  "F": [
+   "v2-r1"
+  ],
+  "Z": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps 'not ready', which matches the key, but it rests that on the self-review checklist rather than the missing docs screenshots.",
+    "accuracy_why": "It covers the avatar fix, the squash and the unverified CI, but misses the decisive gap: the documentation screenshots, whose exemption the author wrongly claimed.",
+    "reply_why": "The tone is good, but it asks for a self-review checklist instead of screenshots of the rendered /integrations/asyntai page, so it misses the reply_ask."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It correctly keeps 'not ready' in a NOTE, but for the self-review checklist rather than the docs screenshots.",
+    "accuracy_why": "Its changes and the CI caveat are right, but it misses the decisive point that docs screenshots are still missing and are not covered by the exemption.",
+    "reply_why": "It is pasteable in tone but asks for the checklist rather than docs screenshots, missing the key ask; the next step's CI request also isn't in the reply."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off for review, but the key says more feedback is needed because the docs screenshots are missing.",
+    "accuracy_why": "It reports the avatar fix, the squash and the unverified CI correctly, but never notices the missing documentation screenshots.",
+    "reply_why": "It is a reviewer ping for a PR that isn't ready, so it misses the screenshot ask entirely."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It hands the PR off when it should have stayed 'not ready' pending docs screenshots.",
+    "accuracy_why": "Its changes and CI caveat are accurate, but it misses the decisive screenshot gap.",
+    "reply_why": "A reviewer ping is the wrong ask; the author should be asked for documentation screenshots."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It recommends hand-off, but the key says more feedback because screenshots are missing.",
+    "accuracy_why": "It is right about the avatar, the squash and the CI caveat, but misses the decisive docs-screenshot gap, and 'check before merging' places the CI check oddly late.",
+    "reply_why": "A reviewer ping misses the screenshot ask the author actually needs."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States 'Missing: nothing blocking' when the documentation screenshots are still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It hands off a PR that should stay 'not ready' pending docs screenshots.",
+    "accuracy_why": "It explicitly says nothing blocking is missing, a wrong fact the hand-off rests on, which caps accuracy.",
+    "reply_why": "The reviewer ping misses the required ask for documentation screenshots."
+   }
+  },
+  "ranking": [
+   "Z",
+   "F",
+   "T",
+   "D",
+   "X",
+   "Y"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 8, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps 'not ready', which matches the key, but it rests that on the self-review checklist rather than the missing docs screenshots.\",\n \"accuracy_why\": \"It covers the avatar fix, the squash and the unverified CI, but misses the decisive gap: the documentation screenshots, whose exemption the author wrongly claimed.\",\n \"reply_why\": \"The tone is good, but it asks for a self-review checklist instead of screenshots of the rendered /integrations/asyntai page, so it misses the reply_ask.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 8, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"It correctly keeps 'not ready' in a NOTE, but for the self-review checklist rather than the docs screenshots.\",\n \"accuracy_why\": \"Its changes and the CI caveat are right, but it misses the decisive point that docs screenshots are still missing and are not covered by the exemption.\",\n \"reply_why\": \"It is pasteable in tone but asks for the checklist rather than docs screenshots, missing the key ask; the next step's CI request also isn't in the reply.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off for review, but the key says more feedback is needed because the docs screenshots are missing.\",\n \"accuracy_why\": \"It reports the avatar fix, the squash and the unverified CI correctly, but never notices the missing documentation screenshots.\",\n \"reply_why\": \"It is a reviewer ping for a PR that isn't ready, so it misses the screenshot ask entirely.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It hands the PR off when it should have stayed 'not ready' pending docs screenshots.\",\n \"accuracy_why\": \"Its changes and CI caveat are accurate, but it misses the decisive screenshot gap.\",\n \"reply_why\": \"A reviewer ping is the wrong ask; the author should be asked for documentation screenshots.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It recommends hand-off, but the key says more feedback because screenshots are missing.\",\n \"accuracy_why\": \"It is right about the avatar, the squash and the CI caveat, but misses the decisive docs-screenshot gap, and 'check before merging' places the CI check oddly late.\",\n \"reply_why\": \"A reviewer ping misses the screenshot ask the author actually needs.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"States 'Missing: nothing blocking' when the documentation screenshots are still missing.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It hands off a PR that should stay 'not ready' pending docs screenshots.\",\n \"accuracy_why\": \"It explicitly says nothing blocking is missing, a wrong fact the hand-off rests on, which caps accuracy.\",\n \"reply_why\": \"The reviewer ping misses the required ask for documentation screenshots.\"}\n},\n\"ranking\": [\"Z\", \"F\", \"T\", \"D\", \"X\", \"Y\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.1274
+}

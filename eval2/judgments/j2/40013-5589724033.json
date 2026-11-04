@@ -1,0 +1,161 @@
+{
+ "case": "40013-5589724033",
+ "repeat": 2,
+ "map": {
+  "N": [
+   "v3-r1"
+  ],
+  "L": [
+   "v1-r2"
+  ],
+  "V": [
+   "v1-r1"
+  ],
+  "B": [
+   "v3-r2"
+  ],
+  "F": [
+   "v2-r1"
+  ],
+  "I": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the 3 newly added test files hold backend tests for the avatar delete flow; the delete tests are in test_bots.py, and the new files likely cover the avatar_source field."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "It recommends hand-off when the key needs more feedback, because the API changes are undiscussed.",
+    "accuracy_why": "It misses the undiscussed API changes, says nothing blocks review, and misdescribes what the new test files contain.",
+    "reply_why": "A review ping misses the needed ask to take the API changes to #api design and add docs and screenshots."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Claims the issue's 'help wanted' label is gone, but nothing shows it ever had one."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 3,
+    "brevity_score": 5,
+    "decision_why": "It recommends hand-off instead of more feedback about the API changes.",
+    "accuracy_why": "It notes the pushes and the label without feedback, but misses both decisive API points and adds an unsupported label claim.",
+    "reply_why": "A review ping is the wrong ask; the author needs to start the API design process first."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends hand-off when the key says more feedback.",
+    "accuracy_why": "It gets the size change, the missing feedback, unknown CI and the checklist right, but misses the decisive API-change issue.",
+    "reply_why": "A review ping misses the ask about API design approval and documentation."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "It recommends hand-off instead of more feedback.",
+    "accuracy_why": "It describes the pushes and the open tooltip question correctly but misses the decisive API changes.",
+    "reply_why": "A review ping is the wrong ask for a PR with unapproved API changes."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends hand-off when the key says more feedback.",
+    "accuracy_why": "It covers the missing feedback, the test pushes, unknown CI and the checklist, but misses the API-change blockers.",
+    "reply_why": "A review ping misses the API design ask."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends hand-off instead of more feedback.",
+    "accuracy_why": "It names the added test files and unknown CI, but never connects them to the new API field or flags the undiscussed API changes.",
+    "reply_why": "A review ping is the wrong ask; the author needs to take the changes through API design."
+   }
+  },
+  "ranking": [
+   "B",
+   "F",
+   "V",
+   "I",
+   "N",
+   "L"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says the 3 newly added test files hold backend tests for the avatar delete flow; the delete tests are in test_bots.py, and the new files likely cover the avatar_source field.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"It recommends hand-off when the key needs more feedback, because the API changes are undiscussed.\",\n \"accuracy_why\": \"It misses the undiscussed API changes, says nothing blocks review, and misdescribes what the new test files contain.\",\n \"reply_why\": \"A review ping misses the needed ask to take the API changes to #api design and add docs and screenshots.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Claims the issue's 'help wanted' label is gone, but nothing shows it ever had one.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 3, \"brevity_score\": 5,\n \"decision_why\": \"It recommends hand-off instead of more feedback about the API changes.\",\n \"accuracy_why\": \"It notes the pushes and the label without feedback, but misses both decisive API points and adds an unsupported label claim.\",\n \"reply_why\": \"A review ping is the wrong ask; the author needs to start the API design process first.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It recommends hand-off when the key says more feedback.\",\n \"accuracy_why\": \"It gets the size change, the missing feedback, unknown CI and the checklist right, but misses the decisive API-change issue.\",\n \"reply_why\": \"A review ping misses the ask about API design approval and documentation.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"It recommends hand-off instead of more feedback.\",\n \"accuracy_why\": \"It describes the pushes and the open tooltip question correctly but misses the decisive API changes.\",\n \"reply_why\": \"A review ping is the wrong ask for a PR with unapproved API changes.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It recommends hand-off when the key says more feedback.\",\n \"accuracy_why\": \"It covers the missing feedback, the test pushes, unknown CI and the checklist, but misses the API-change blockers.\",\n \"reply_why\": \"A review ping misses the API design ask.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It recommends hand-off instead of more feedback.\",\n \"accuracy_why\": \"It names the added test files and unknown CI, but never connects them to the new API field or flags the undiscussed API changes.\",\n \"reply_why\": \"A review ping is the wrong ask; the author needs to take the changes through API design.\"}\n},\n\"ranking\": [\"B\", \"F\", \"V\", \"I\", \"N\", \"L\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.395364
+}

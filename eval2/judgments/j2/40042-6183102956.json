@@ -1,0 +1,161 @@
+{
+ "case": "40042-6183102956",
+ "repeat": 2,
+ "map": {
+  "X": [
+   "v2-r1"
+  ],
+  "K": [
+   "v3-r1"
+  ],
+  "V": [
+   "v3-r2"
+  ],
+  "L": [
+   "v2-r2"
+  ],
+  "H": [
+   "v1-r2"
+  ],
+  "M": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It covers every must-have, including companion PR #40041, and has no wrong facts.",
+    "reply_why": "The reply is a single reviewer-ping line that can be pasted as is."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It clearly states that the only open ask was answered and that Sahil approved the code, but it omits companion PR #40041.",
+    "reply_why": "The reply is a clean single reviewer ping."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It covers the decisive facts and the reviewer, but it omits #40041 and re-lists the old CZO-link item.",
+    "reply_why": "The reply is a single reviewer ping that can be pasted as is."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It has all the decisive facts and the reviewer, but it omits companion PR #40041.",
+    "reply_why": "The reply thanks the author and pings Sahil, which fits the ask but is a sentence longer than a bare ping."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends handing off, though it asks the triager to skim the commit bodies before doing so.",
+    "accuracy_why": "It has the decisive facts and the reviewer, but it omits #40041.",
+    "reply_why": "The reply is a single reviewer ping that can be pasted as is."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It has the decisive facts and the reviewer, but it omits #40041.",
+    "reply_why": "The reply is a single reviewer ping that can be pasted as is."
+   }
+  },
+  "ranking": [
+   "X",
+   "V",
+   "L",
+   "K",
+   "M",
+   "H"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It covers every must-have, including companion PR #40041, and has no wrong facts.\",\n \"reply_why\": \"The reply is a single reviewer-ping line that can be pasted as is.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It clearly states that the only open ask was answered and that Sahil approved the code, but it omits companion PR #40041.\",\n \"reply_why\": \"The reply is a clean single reviewer ping.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It covers the decisive facts and the reviewer, but it omits #40041 and re-lists the old CZO-link item.\",\n \"reply_why\": \"The reply is a single reviewer ping that can be pasted as is.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It has all the decisive facts and the reviewer, but it omits companion PR #40041.\",\n \"reply_why\": \"The reply thanks the author and pings Sahil, which fits the ask but is a sentence longer than a bare ping.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that recommends handing off, though it asks the triager to skim the commit bodies before doing so.\",\n \"accuracy_why\": \"It has the decisive facts and the reviewer, but it omits #40041.\",\n \"reply_why\": \"The reply is a single reviewer ping that can be pasted as is.\"},\n\"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It has the decisive facts and the reviewer, but it omits #40041.\",\n \"reply_why\": \"The reply is a single reviewer ping that can be pasted as is.\"}\n},\n\"ranking\": [\"X\", \"V\", \"L\", \"K\", \"M\", \"H\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.14676
+}

@@ -1,0 +1,165 @@
+{
+ "case": "40041-5479840283",
+ "repeat": 2,
+ "map": {
+  "Z": [
+   "v1-r2"
+  ],
+  "I": [
+   "v1-r1"
+  ],
+  "X": [
+   "v2-r2"
+  ],
+  "V": [
+   "v2-r1"
+  ],
+  "E": [
+   "v3-r1"
+  ],
+  "S": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key, and it names a reviewer.",
+    "accuracy_why": "It covers the resolved ask, the silent thread and the #40042 overlap, but it omits the no-new-push fact and the commit-structure concern.",
+    "reply_why": "It is a short thanks plus a reviewer ping that a maintainer could paste almost as is."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands the PR off with a reviewer, which matches the key.",
+    "accuracy_why": "It only says #40042 'may overlap', omits the no-new-push fact, and misses the commit-structure concern.",
+    "reply_why": "A single reviewer ping line fits a hand_off."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' even though the only blocker was resolved, so it is the wrong action.",
+    "accuracy_why": "Its changes are right and it mentions the #40042 overlap, but it treats the lack of a maintainer reply as a blocker and misses the commit concern.",
+    "reply_why": "It tells the author to wait and redo the template instead of saying the PR is moving to review."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps 'not ready' when the key says to hand off.",
+    "accuracy_why": "The resolved ask and no-push facts are right, but it frames #40042 as combine-or-close and misses the commit concern.",
+    "reply_why": "It asks the author to wait and fix the template, which is the wrong ask for a hand-off."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' and says no reviewer is needed, which contradicts the key's hand_off.",
+    "accuracy_why": "It downplays the resolved ask, omits #40042 entirely, and misses the commit concern.",
+    "reply_why": "It tells the author to wait for a maintainer instead of moving the PR to review."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps 'not ready' and adds the #40042 overlap as a blocker, which is the wrong action.",
+    "accuracy_why": "Its facts are right, but it treats #40042 as something to combine or close rather than review alongside, and it misses the commit concern.",
+    "reply_why": "It asks the author to combine or close PRs and wait, which is the wrong ask."
+   }
+  },
+  "ranking": [
+   "X",
+   "V",
+   "S",
+   "Z",
+   "E",
+   "I"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key, and it names a reviewer.\",\n \"accuracy_why\": \"It covers the resolved ask, the silent thread and the #40042 overlap, but it omits the no-new-push fact and the commit-structure concern.\",\n \"reply_why\": \"It is a short thanks plus a reviewer ping that a maintainer could paste almost as is.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that hands the PR off with a reviewer, which matches the key.\",\n \"accuracy_why\": \"It only says #40042 'may overlap', omits the no-new-push fact, and misses the commit-structure concern.\",\n \"reply_why\": \"A single reviewer ping line fits a hand_off.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps 'not ready' even though the only blocker was resolved, so it is the wrong action.\",\n \"accuracy_why\": \"Its changes are right and it mentions the #40042 overlap, but it treats the lack of a maintainer reply as a blocker and misses the commit concern.\",\n \"reply_why\": \"It tells the author to wait and redo the template instead of saying the PR is moving to review.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps 'not ready' when the key says to hand off.\",\n \"accuracy_why\": \"The resolved ask and no-push facts are right, but it frames #40042 as combine-or-close and misses the commit concern.\",\n \"reply_why\": \"It asks the author to wait and fix the template, which is the wrong ask for a hand-off.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps 'not ready' and says no reviewer is needed, which contradicts the key's hand_off.\",\n \"accuracy_why\": \"It downplays the resolved ask, omits #40042 entirely, and misses the commit concern.\",\n \"reply_why\": \"It tells the author to wait for a maintainer instead of moving the PR to review.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps 'not ready' and adds the #40042 overlap as a blocker, which is the wrong action.\",\n \"accuracy_why\": \"Its facts are right, but it treats #40042 as something to combine or close rather than review alongside, and it misses the commit concern.\",\n \"reply_why\": \"It asks the author to combine or close PRs and wait, which is the wrong ask.\"}\n},\n\"ranking\": [\"X\", \"V\", \"S\", \"Z\", \"E\", \"I\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.14363599999999999
+}

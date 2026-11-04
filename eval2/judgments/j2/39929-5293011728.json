@@ -1,0 +1,167 @@
+{
+ "case": "39929-5293011728",
+ "repeat": 2,
+ "map": {
+  "S": [
+   "v3-r2"
+  ],
+  "V": [
+   "v1-r2"
+  ],
+  "Q": [
+   "v1-r1"
+  ],
+  "Z": [
+   "v3-r1"
+  ],
+  "N": [
+   "v2-r1"
+  ],
+  "C": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 10,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to maintainer review matches the key, and it assigns sahil839.",
+    "accuracy_why": "It confirms the squash and the Zulip-style summary and flags that CI is unverified, but it misses the gap in the API changelog and feature level.",
+    "reply_why": "\"No reply needed.\" fits a hand-off under the rules."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 10,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off to Sahil Batra matches the key.",
+    "accuracy_why": "It covers the squash, the folded-in fixes and the unverified CI, but it misses the API changelog gap.",
+    "reply_why": "\"No reply needed.\" is acceptable for a hand-off."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off is correct, though it routes review back to the triager, karlstolley, instead of a domain reviewer.",
+    "accuracy_why": "It is concise and correct on the cleanup and CI, but it misses both the reviewer suggestion and the API changelog gap.",
+    "reply_why": "A single ping line is pasteable, but it pings karlstolley rather than a recent committer to these files."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off is correct, but it assigns karlstolley.",
+    "accuracy_why": "It covers the cleanup and the CI caveat and makes a valid point about the testing section, but it misses the reviewer and the API changelog gap.",
+    "reply_why": "A single ping line works but targets karlstolley."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "NOTE with a hand-off is correct, but it assigns karlstolley.",
+    "accuracy_why": "It is accurate on the cleanup and CI, but it misses the reviewer suggestion and the API changelog gap and adds a filler row about the issue labels.",
+    "reply_why": "Thanks plus a ping is fine, but it is two sentences and pings karlstolley."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off is correct, but the reviewer choice is split between karlstolley and Sahil.",
+    "accuracy_why": "It confirms the cleanup, but it never mentions that CI is unverified or the API changelog gap, and it hedges on the reviewer.",
+    "reply_why": "Thanks plus a ping to karlstolley is usable, but it is two sentences and has the wrong ping target."
+   }
+  },
+  "ranking": [
+   "N",
+   "Z",
+   "C",
+   "V",
+   "Q",
+   "S"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 10, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to maintainer review matches the key, and it assigns sahil839.\",\n \"accuracy_why\": \"It confirms the squash and the Zulip-style summary and flags that CI is unverified, but it misses the gap in the API changelog and feature level.\",\n \"reply_why\": \"\\\"No reply needed.\\\" fits a hand-off under the rules.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 10, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off to Sahil Batra matches the key.\",\n \"accuracy_why\": \"It covers the squash, the folded-in fixes and the unverified CI, but it misses the API changelog gap.\",\n \"reply_why\": \"\\\"No reply needed.\\\" is acceptable for a hand-off.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off is correct, though it routes review back to the triager, karlstolley, instead of a domain reviewer.\",\n \"accuracy_why\": \"It is concise and correct on the cleanup and CI, but it misses both the reviewer suggestion and the API changelog gap.\",\n \"reply_why\": \"A single ping line is pasteable, but it pings karlstolley rather than a recent committer to these files.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off is correct, but it assigns karlstolley.\",\n \"accuracy_why\": \"It covers the cleanup and the CI caveat and makes a valid point about the testing section, but it misses the reviewer and the API changelog gap.\",\n \"reply_why\": \"A single ping line works but targets karlstolley.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 6,\n \"decision_why\": \"NOTE with a hand-off is correct, but it assigns karlstolley.\",\n \"accuracy_why\": \"It is accurate on the cleanup and CI, but it misses the reviewer suggestion and the API changelog gap and adds a filler row about the issue labels.\",\n \"reply_why\": \"Thanks plus a ping is fine, but it is two sentences and pings karlstolley.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off is correct, but the reviewer choice is split between karlstolley and Sahil.\",\n \"accuracy_why\": \"It confirms the cleanup, but it never mentions that CI is unverified or the API changelog gap, and it hedges on the reviewer.\",\n \"reply_why\": \"Thanks plus a ping to karlstolley is usable, but it is two sentences and has the wrong ping target.\"}\n},\n\"ranking\": [\"N\", \"Z\", \"C\", \"V\", \"Q\", \"S\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.182516
+}

@@ -1,0 +1,165 @@
+{
+ "case": "39927-5276328596",
+ "repeat": 2,
+ "map": {
+  "D": [
+   "v3-r2"
+  ],
+  "P": [
+   "v1-r2"
+  ],
+  "A": [
+   "v1-r1"
+  ],
+  "Q": [
+   "v3-r1"
+  ],
+  "U": [
+   "v2-r1"
+  ],
+  "K": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key.",
+    "accuracy_why": "It covers both fixes and flags the mismatched screenshot sizes with exact dimensions, but it misses the absent self-review checklist and the \"Fixes #39794\" problem.",
+    "reply_why": "A single reviewer-ping line that a maintainer would paste as is."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key.",
+    "accuracy_why": "It flags the \"Fixes #39794\" problem but misses the screenshot size mismatch and the missing checklist.",
+    "reply_why": "A clean reviewer ping that is pasteable as is."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key.",
+    "accuracy_why": "It flags \"Fixes #39794\" but misses the screenshot size mismatch and the missing checklist.",
+    "reply_why": "The reply adds a request to the author beyond the reviewer ping, and it asks about the Fixes line instead of the screenshot recapture."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key.",
+    "accuracy_why": "It reports both fixes correctly but says nothing is missing, so it misses all three still-missing items.",
+    "reply_why": "A reviewer ping that is pasteable as is."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key.",
+    "accuracy_why": "It reports both fixes but misses all three still-missing items.",
+    "reply_why": "A short thanks plus a reviewer ping, fine to paste."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the PR template is filled in, but the description lacks the Zulip self-review checklist."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 3,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key.",
+    "accuracy_why": "It wrongly says the PR template is complete and misses the screenshot size mismatch and the \"Fixes\" problem.",
+    "reply_why": "A reviewer ping that is pasteable as is."
+   }
+  },
+  "ranking": [
+   "U",
+   "K",
+   "Q",
+   "D",
+   "P",
+   "A"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key.\",\n \"accuracy_why\": \"It covers both fixes and flags the mismatched screenshot sizes with exact dimensions, but it misses the absent self-review checklist and the \\\"Fixes #39794\\\" problem.\",\n \"reply_why\": \"A single reviewer-ping line that a maintainer would paste as is.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key.\",\n \"accuracy_why\": \"It flags the \\\"Fixes #39794\\\" problem but misses the screenshot size mismatch and the missing checklist.\",\n \"reply_why\": \"A clean reviewer ping that is pasteable as is.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key.\",\n \"accuracy_why\": \"It flags \\\"Fixes #39794\\\" but misses the screenshot size mismatch and the missing checklist.\",\n \"reply_why\": \"The reply adds a request to the author beyond the reviewer ping, and it asks about the Fixes line instead of the screenshot recapture.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key.\",\n \"accuracy_why\": \"It reports both fixes correctly but says nothing is missing, so it misses all three still-missing items.\",\n \"reply_why\": \"A reviewer ping that is pasteable as is.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key.\",\n \"accuracy_why\": \"It reports both fixes but misses all three still-missing items.\",\n \"reply_why\": \"A short thanks plus a reviewer ping, fine to paste.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Claims the PR template is filled in, but the description lacks the Zulip self-review checklist.\"], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 3, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key.\",\n \"accuracy_why\": \"It wrongly says the PR template is complete and misses the screenshot size mismatch and the \\\"Fixes\\\" problem.\",\n \"reply_why\": \"A reviewer ping that is pasteable as is.\"}\n},\n\"ranking\": [\"U\", \"K\", \"Q\", \"D\", \"P\", \"A\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.206196
+}

@@ -1,0 +1,165 @@
+{
+ "case": "40042-6183881101",
+ "repeat": 2,
+ "map": {
+  "H": [
+   "v2-r2"
+  ],
+  "D": [
+   "v1-r2"
+  ],
+  "Z": [
+   "v2-r1"
+  ],
+  "T": [
+   "v3-r1"
+  ],
+  "W": [
+   "v3-r2"
+  ],
+  "U": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE recommending hand-off to sahil839, which matches the key.",
+    "accuracy_why": "It covers the reworded commits, Sahil's CZO approval and the guard removal, and mentions CI but not merge conflicts.",
+    "reply_why": "A single reviewer ping that is ready to paste."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "The decisive facts are present, but it never mentions CI or merge conflicts.",
+    "reply_why": "A clean single ping to sahil839."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "All decisive facts are present, and it mentions CI but not merge conflicts.",
+    "reply_why": "The reviewer ping is fine, but the added 'Thanks for the update!' mixes addressing the author and the reviewer."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "It is concise and accurate on the commits, guard and Sahil's approval, and mentions CI but not merge conflicts.",
+    "reply_why": "A single reviewer ping that is ready to paste."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "The decisive facts are present, but it does not mention CI or merge conflicts.",
+    "reply_why": "A single reviewer ping that is ready to paste."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 5,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "All decisive facts are present, with CI mentioned but not conflicts, plus a small grammatical slip about Sahil.",
+    "reply_why": "A clean single ping to sahil839."
+   }
+  },
+  "ranking": [
+   "T",
+   "H",
+   "W",
+   "Z",
+   "D",
+   "U"
+  ]
+ },
+ "text": "{\"outputs\": {\"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8, \"decision_why\": \"It is a NOTE recommending hand-off to sahil839, which matches the key.\", \"accuracy_why\": \"It covers the reworded commits, Sahil's CZO approval and the guard removal, and mentions CI but not merge conflicts.\", \"reply_why\": \"A single reviewer ping that is ready to paste.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 6, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"The decisive facts are present, but it never mentions CI or merge conflicts.\", \"reply_why\": \"A clean single ping to sahil839.\"}, \"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"All decisive facts are present, and it mentions CI but not merge conflicts.\", \"reply_why\": \"The reviewer ping is fine, but the added 'Thanks for the update!' mixes addressing the author and the reviewer.\"}, \"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"It is concise and accurate on the commits, guard and Sahil's approval, and mentions CI but not merge conflicts.\", \"reply_why\": \"A single reviewer ping that is ready to paste.\"}, \"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"The decisive facts are present, but it does not mention CI or merge conflicts.\", \"reply_why\": \"A single reviewer ping that is ready to paste.\"}, \"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 5, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"All decisive facts are present, with CI mentioned but not conflicts, plus a small grammatical slip about Sahil.\", \"reply_why\": \"A clean single ping to sahil839.\"}}, \"ranking\": [\"T\", \"H\", \"W\", \"Z\", \"D\", \"U\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.140036
+}

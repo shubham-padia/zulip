@@ -1,0 +1,172 @@
+{
+ "case": "39945-5415679206",
+ "repeat": 2,
+ "map": {
+  "P": [
+   "v3-r1"
+  ],
+  "D": [
+   "v1-r2"
+  ],
+  "G": [
+   "v2-r2"
+  ],
+  "A": [
+   "v2-r1"
+  ],
+  "L": [
+   "v3-r2"
+  ],
+  "J": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the new section explains how this approach differs from the other PRs, but the key says it only claims independent work and compares nothing."
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off where the key says close, though sending it to Niloth-p to choose among the PRs is nearer the outcome.",
+    "accuracy_why": "It treats the relationship request as satisfied when no comparison was made, and the hand-off rests on that wrong fact.",
+    "reply_why": "It asks for a review instead of telling the author a core team member will pick one PR and there is nothing to do for now."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It hands off to laurynmm where the key says close, despite flagging the competing PRs.",
+    "accuracy_why": "It correctly flags the missing comparison and the omitted #39606 and #40004 but recommends removing \"not ready\" and skips the python-zulip-api question.",
+    "reply_why": "A bare review ping is the wrong ask for a PR that should wait for the core team's choice and then be closed."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 6,
+    "decision_why": "It recommends a hand-off where the key says close.",
+    "accuracy_why": "It marks the relationship request done without noting that the section compares nothing, and it misses the decisive f3.",
+    "reply_why": "It thanks the author and pings a reviewer, which is the wrong ask."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls this a fourth overlapping PR for #19589, but six other open PRs target the issue."
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It hands off to Niloth-p where the key says close, though it frames this as comparing the overlapping PRs.",
+    "accuracy_why": "It misses the missing comparison, recommends removing \"not ready\", and miscounts the competing PRs.",
+    "reply_why": "Asking Niloth-p to review alongside the others is closer to the intent, but it is still a review request rather than \"nothing to do for now\"."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the section explains how the approach differs from the others.",
+     "Says nothing the feedback asked for is missing, though the comparison to the other PRs was never made."
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 2,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends a hand-off where the key says close.",
+    "accuracy_why": "It flatly says nothing is missing when the decisive comparison gap remains, and the action rests on that.",
+    "reply_why": "It sends a review request to Niloth-p instead of telling the author to wait for the core team's choice."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 6,
+    "decision_why": "It hands off to laurynmm where the key says close.",
+    "accuracy_why": "It notes the missing direct comparison with #38098 and #39481 but still recommends removing \"not ready\" and skips the compatibility question.",
+    "reply_why": "It pings laurynmm to review, which is the wrong ask."
+   }
+  },
+  "ranking": [
+   "D",
+   "J",
+   "A",
+   "G",
+   "P",
+   "L"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the new section explains how this approach differs from the other PRs, but the key says it only claims independent work and compares nothing.\"],\n \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off where the key says close, though sending it to Niloth-p to choose among the PRs is nearer the outcome.\",\n \"accuracy_why\": \"It treats the relationship request as satisfied when no comparison was made, and the hand-off rests on that wrong fact.\",\n \"reply_why\": \"It asks for a review instead of telling the author a core team member will pick one PR and there is nothing to do for now.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It hands off to laurynmm where the key says close, despite flagging the competing PRs.\",\n \"accuracy_why\": \"It correctly flags the missing comparison and the omitted #39606 and #40004 but recommends removing \\\"not ready\\\" and skips the python-zulip-api question.\",\n \"reply_why\": \"A bare review ping is the wrong ask for a PR that should wait for the core team's choice and then be closed.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 2, \"accuracy_score\": 4, \"reply_score\": 2, \"brevity_score\": 6,\n \"decision_why\": \"It recommends a hand-off where the key says close.\",\n \"accuracy_why\": \"It marks the relationship request done without noting that the section compares nothing, and it misses the decisive f3.\",\n \"reply_why\": \"It thanks the author and pings a reviewer, which is the wrong ask.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls this a fourth overlapping PR for #19589, but six other open PRs target the issue.\"],\n \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It hands off to Niloth-p where the key says close, though it frames this as comparing the overlapping PRs.\",\n \"accuracy_why\": \"It misses the missing comparison, recommends removing \\\"not ready\\\", and miscounts the competing PRs.\",\n \"reply_why\": \"Asking Niloth-p to review alongside the others is closer to the intent, but it is still a review request rather than \\\"nothing to do for now\\\".\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the section explains how the approach differs from the others.\", \"Says nothing the feedback asked for is missing, though the comparison to the other PRs was never made.\"],\n \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 2, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends a hand-off where the key says close.\",\n \"accuracy_why\": \"It flatly says nothing is missing when the decisive comparison gap remains, and the action rests on that.\",\n \"reply_why\": \"It sends a review request to Niloth-p instead of telling the author to wait for the core team's choice.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2, \"brevity_score\": 6,\n \"decision_why\": \"It hands off to laurynmm where the key says close.\",\n \"accuracy_why\": \"It notes the missing direct comparison with #38098 and #39481 but still recommends removing \\\"not ready\\\" and skips the compatibility question.\",\n \"reply_why\": \"It pings laurynmm to review, which is the wrong ask.\"}},\n \"ranking\": [\"D\", \"J\", \"A\", \"G\", \"P\", \"L\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.494188
+}

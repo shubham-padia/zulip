@@ -1,0 +1,167 @@
+{
+ "case": "39883-5198039741",
+ "repeat": 2,
+ "map": {
+  "O": [
+   "v1-r2"
+  ],
+  "Q": [
+   "v2-r2"
+  ],
+  "X": [
+   "v1-r1"
+  ],
+  "N": [
+   "v2-r1"
+  ],
+  "F": [
+   "v3-r1"
+  ],
+  "M": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "It covers the tiny pushes, the unchecked AI policy box and #39598, and it flags missing before/after examples of the rendering, but it doesn't specify dev-environment screenshots or the visual-appearance box.",
+    "reply_why": "It links the guide and asks for the checklist, before/after examples and the #39598 relation, needing only a tweak to say web-app screenshots from the dev environment."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "NOTE with more_feedback, which matches the key.",
+    "accuracy_why": "It correctly says the update adds nothing new and covers the checklist gaps and #39598, but it misses the decisive need for before/after screenshots.",
+    "reply_why": "It has a good guide link and asks for the checklist and the #39598 relation, but asks for hand-testing notes instead of screenshots, so a sentence needs rewriting."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "NOTE with more_feedback, which matches the key.",
+    "accuracy_why": "It notes that the pushes and fixtures aren't new and covers the AI box and #39598, but it omits screenshots and is vague on the visual item.",
+    "reply_why": "It asks for the checklist, manual testing and the #39598 relation, but has no screenshot request and no guide link."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more_feedback, which matches the key.",
+    "accuracy_why": "It covers the trivial update, the AI box and #39598, but it misses screenshots, never mentions the visual item, and adds a speculative claim that the description reads as AI-assisted.",
+    "reply_why": "It asks for the AI policy item, testing notes and the #39598 difference, but no screenshots."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "NOTE with more_feedback, which matches the key.",
+    "accuracy_why": "It never says the update changed almost nothing and misses screenshots, so two decisive must-haves are absent.",
+    "reply_why": "It asks only for the checklist and manual testing, with no screenshots or #39598, so it misses most of the reply ask."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says no screenshots are needed because this isn't a UI change, though the change alters how messages render and screenshots are required."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more_feedback, which matches the key.",
+    "accuracy_why": "It explicitly says screenshots aren't needed, which contradicts the decisive missing item, and it lists the pushes without saying they don't address the feedback.",
+    "reply_why": "Its ask rests on the wrong no-screenshots claim, so it never requests the rendering screenshots the author must provide."
+   }
+  },
+  "ranking": [
+   "F",
+   "M",
+   "X",
+   "O",
+   "N",
+   "Q"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"It covers the tiny pushes, the unchecked AI policy box and #39598, and it flags missing before/after examples of the rendering, but it doesn't specify dev-environment screenshots or the visual-appearance box.\",\n \"reply_why\": \"It links the guide and asks for the checklist, before/after examples and the #39598 relation, needing only a tweak to say web-app screenshots from the dev environment.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with more_feedback, which matches the key.\",\n \"accuracy_why\": \"It correctly says the update adds nothing new and covers the checklist gaps and #39598, but it misses the decisive need for before/after screenshots.\",\n \"reply_why\": \"It has a good guide link and asks for the checklist and the #39598 relation, but asks for hand-testing notes instead of screenshots, so a sentence needs rewriting.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with more_feedback, which matches the key.\",\n \"accuracy_why\": \"It notes that the pushes and fixtures aren't new and covers the AI box and #39598, but it omits screenshots and is vague on the visual item.\",\n \"reply_why\": \"It asks for the checklist, manual testing and the #39598 relation, but has no screenshot request and no guide link.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with more_feedback, which matches the key.\",\n \"accuracy_why\": \"It covers the trivial update, the AI box and #39598, but it misses screenshots, never mentions the visual item, and adds a speculative claim that the description reads as AI-assisted.\",\n \"reply_why\": \"It asks for the AI policy item, testing notes and the #39598 difference, but no screenshots.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with more_feedback, which matches the key.\",\n \"accuracy_why\": \"It never says the update changed almost nothing and misses screenshots, so two decisive must-haves are absent.\",\n \"reply_why\": \"It asks only for the checklist and manual testing, with no screenshots or #39598, so it misses most of the reply ask.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says no screenshots are needed because this isn't a UI change, though the change alters how messages render and screenshots are required.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with more_feedback, which matches the key.\",\n \"accuracy_why\": \"It explicitly says screenshots aren't needed, which contradicts the decisive missing item, and it lists the pushes without saying they don't address the feedback.\",\n \"reply_why\": \"Its ask rests on the wrong no-screenshots claim, so it never requests the rendering screenshots the author must provide.\"}\n},\n\"ranking\": [\"F\", \"M\", \"X\", \"O\", \"N\", \"Q\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.259756
+}

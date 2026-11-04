@@ -1,0 +1,178 @@
+{
+ "case": "39995-5728364177",
+ "repeat": 2,
+ "map": {
+  "H": [
+   "v1-r2"
+  ],
+  "O": [
+   "v2-r1"
+  ],
+  "N": [
+   "v2-r2"
+  ],
+  "S": [
+   "v1-r1"
+  ],
+  "M": [
+   "v3-r1"
+  ],
+  "U": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Treats the missing doc.md change as an outstanding gap the PR must fix",
+     "Refers to Niloth-p as 'his'"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "The NOTE kind is right, but it keeps \"not ready\" when the key's action is to hand off to Niloth-p.",
+    "accuracy_why": "It captures the fixture removal and the stale include_emoji_indicators claim, but it misses that the ping was requested and rests the verdict on a doc.md gap.",
+    "reply_why": "It includes the description fix, but it is a multi-sentence more-feedback reply that also re-asks the doc.md questions instead of moving the PR to review."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the LLM-generated fixtures concern is unanswered, though the author captured a real payload on a VM",
+     "Treats the missing doc.md change as an outstanding gap"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It explicitly withholds a reviewer when the key says to hand off.",
+    "accuracy_why": "It hedges the fixture change, misses the requested tag, and lists already-addressed questions as missing.",
+    "reply_why": "It re-asks answered questions and omits the description fix that is the key's ask."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the LLM-generated fixtures question has no answer, though the author set up Zabbix to capture a real payload",
+     "Treats the missing doc.md change as an outstanding gap"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" instead of handing off, even while leaving the PR with Niloth-p.",
+    "accuracy_why": "It hedges the single-fixture change, misses that the tag was requested, and wrongly lists the fixture-provenance question as open.",
+    "reply_why": "It includes the description fix but re-asks answered questions in a multi-sentence more-feedback reply."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says doc.md must be brought in line before review, which no maintainer asked for"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It withholds a reviewer when the key says to hand off.",
+    "accuracy_why": "It has the fixture removal and the stale-description point, but it misses the requested tag and gates the decision on an invented doc.md requirement.",
+    "reply_why": "It asks for the description fix, but within a more-feedback reply that re-asks the review questions."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Lists a missing doc.md change as something the author must fix"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and delays review when the key says to hand off.",
+    "accuracy_why": "It is concise and right about the fixtures and the stale parameter, but it misses that the ping was requested and invents a doc.md requirement.",
+    "reply_why": "It asks the author to update doc.md, which is the wrong ask, before any review."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Lists a missing doc.md change as something the author must fix"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" but notes that Niloth-p was tagged as asked and can confirm the approach, which is closest to the hand-off.",
+    "accuracy_why": "It is the only output that notes the requested tag, but it still rests on a doc.md change no maintainer asked for.",
+    "reply_why": "It asks for a doc.md update and tells the author to ping Niloth-p again, which they already did."
+   }
+  },
+  "ranking": [
+   "U",
+   "H",
+   "S",
+   "M",
+   "N",
+   "O"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Treats the missing doc.md change as an outstanding gap the PR must fix\", \"Refers to Niloth-p as 'his'\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"The NOTE kind is right, but it keeps \\\"not ready\\\" when the key's action is to hand off to Niloth-p.\",\n \"accuracy_why\": \"It captures the fixture removal and the stale include_emoji_indicators claim, but it misses that the ping was requested and rests the verdict on a doc.md gap.\",\n \"reply_why\": \"It includes the description fix, but it is a multi-sentence more-feedback reply that also re-asks the doc.md questions instead of moving the PR to review.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the LLM-generated fixtures concern is unanswered, though the author captured a real payload on a VM\", \"Treats the missing doc.md change as an outstanding gap\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It explicitly withholds a reviewer when the key says to hand off.\",\n \"accuracy_why\": \"It hedges the fixture change, misses the requested tag, and lists already-addressed questions as missing.\",\n \"reply_why\": \"It re-asks answered questions and omits the description fix that is the key's ask.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the LLM-generated fixtures question has no answer, though the author set up Zabbix to capture a real payload\", \"Treats the missing doc.md change as an outstanding gap\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" instead of handing off, even while leaving the PR with Niloth-p.\",\n \"accuracy_why\": \"It hedges the single-fixture change, misses that the tag was requested, and wrongly lists the fixture-provenance question as open.\",\n \"reply_why\": \"It includes the description fix but re-asks answered questions in a multi-sentence more-feedback reply.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says doc.md must be brought in line before review, which no maintainer asked for\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It withholds a reviewer when the key says to hand off.\",\n \"accuracy_why\": \"It has the fixture removal and the stale-description point, but it misses the requested tag and gates the decision on an invented doc.md requirement.\",\n \"reply_why\": \"It asks for the description fix, but within a more-feedback reply that re-asks the review questions.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Lists a missing doc.md change as something the author must fix\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" and delays review when the key says to hand off.\",\n \"accuracy_why\": \"It is concise and right about the fixtures and the stale parameter, but it misses that the ping was requested and invents a doc.md requirement.\",\n \"reply_why\": \"It asks the author to update doc.md, which is the wrong ask, before any review.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Lists a missing doc.md change as something the author must fix\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 4, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" but notes that Niloth-p was tagged as asked and can confirm the approach, which is closest to the hand-off.\",\n \"accuracy_why\": \"It is the only output that notes the requested tag, but it still rests on a doc.md change no maintainer asked for.\",\n \"reply_why\": \"It asks for a doc.md update and tells the author to ping Niloth-p again, which they already did.\"}\n},\n\"ranking\": [\"U\", \"H\", \"S\", \"M\", \"N\", \"O\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.31978799999999996
+}

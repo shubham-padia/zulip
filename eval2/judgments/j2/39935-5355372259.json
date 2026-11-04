@@ -1,0 +1,157 @@
+{
+ "case": "39935-5355372259",
+ "repeat": 2,
+ "map": {
+  "V": [
+   "v1-r1"
+  ],
+  "H": [
+   "v2-r2"
+  ],
+  "J": [
+   "v2-r1"
+  ],
+  "F": [
+   "v3-r2"
+  ],
+  "W": [
+   "v1-r2"
+  ],
+  "O": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "Correctly posts a NOTE, keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "It covers the design hold being lifted, that nothing was pushed, the malformed Fixes line, the CI-retry commits and the unsplit feature commit, and every point is correct.",
+    "reply_why": "The reply is short, thanks the author, asks for the description fix and commit cleanup, and links both guides, so it is ready to paste."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and holds off on review, matching the key.",
+    "accuracy_why": "All must-haves are there, but it doesn't say the single large feature commit also breaks commit discipline.",
+    "reply_why": "The reply is concise, asks for the Fixes line and for dropping the CI commits, and links both guides, so it is pasteable as is."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It posts a NOTE and recommends keeping \"not ready\" with more feedback, as the key does.",
+    "accuracy_why": "It correctly covers the design hold being lifted, that nothing was pushed, the description problems and the CI-retry commits, and it notes the bundled contenteditable change.",
+    "reply_why": "The reply is well-toned and pasteable, asking for the description fix and for squashing the CI commits, with a link to commit discipline."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, matching the key.",
+    "accuracy_why": "Every changed and still-missing item is covered correctly, including that the feature commit bundles several changes.",
+    "reply_why": "The ask is correct, but the reply runs a little long and restates the Daniel K confirmation, so a maintainer might trim a phrase."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It posts a NOTE that keeps \"not ready\" and doesn't assign a reviewer, matching the key.",
+    "accuracy_why": "The must-haves are present, but the first row opens by saying the description follows the PR guide, and its claim that only a triager should add the label is unsupported framing.",
+    "reply_why": "The reply is concise and correct, asking for the Fixes line, the checklist, dropping the CI commits and splitting the work, so it is pasteable."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps \"not ready\" with more feedback, as the key says.",
+    "accuracy_why": "All must-haves are correctly covered, including the CI-retry commits and the mixed feature commit.",
+    "reply_why": "The reply is good and pasteable, asking for the description fixes, squashing the retries and coherent commits, with both guides linked."
+   }
+  },
+  "ranking": [
+   "F",
+   "O",
+   "V",
+   "J",
+   "W",
+   "H"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"Correctly posts a NOTE, keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"It covers the design hold being lifted, that nothing was pushed, the malformed Fixes line, the CI-retry commits and the unsplit feature commit, and every point is correct.\",\n \"reply_why\": \"The reply is short, thanks the author, asks for the description fix and commit cleanup, and links both guides, so it is ready to paste.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and holds off on review, matching the key.\",\n \"accuracy_why\": \"All must-haves are there, but it doesn't say the single large feature commit also breaks commit discipline.\",\n \"reply_why\": \"The reply is concise, asks for the Fixes line and for dropping the CI commits, and links both guides, so it is pasteable as is.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It posts a NOTE and recommends keeping \\\"not ready\\\" with more feedback, as the key does.\",\n \"accuracy_why\": \"It correctly covers the design hold being lifted, that nothing was pushed, the description problems and the CI-retry commits, and it notes the bundled contenteditable change.\",\n \"reply_why\": \"The reply is well-toned and pasteable, asking for the description fix and for squashing the CI commits, with a link to commit discipline.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, matching the key.\",\n \"accuracy_why\": \"Every changed and still-missing item is covered correctly, including that the feature commit bundles several changes.\",\n \"reply_why\": \"The ask is correct, but the reply runs a little long and restates the Daniel K confirmation, so a maintainer might trim a phrase.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It posts a NOTE that keeps \\\"not ready\\\" and doesn't assign a reviewer, matching the key.\",\n \"accuracy_why\": \"The must-haves are present, but the first row opens by saying the description follows the PR guide, and its claim that only a triager should add the label is unsupported framing.\",\n \"reply_why\": \"The reply is concise and correct, asking for the Fixes line, the checklist, dropping the CI commits and splitting the work, so it is pasteable.\"},\n\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" with more feedback, as the key says.\",\n \"accuracy_why\": \"All must-haves are correctly covered, including the CI-retry commits and the mixed feature commit.\",\n \"reply_why\": \"The reply is good and pasteable, asking for the description fixes, squashing the retries and coherent commits, with both guides linked.\"}\n},\n\"ranking\": [\"F\", \"O\", \"V\", \"J\", \"W\", \"H\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.23338799999999998
+}

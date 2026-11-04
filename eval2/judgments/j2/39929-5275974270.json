@@ -1,0 +1,165 @@
+{
+ "case": "39929-5275974270",
+ "repeat": 2,
+ "map": {
+  "K": [
+   "v3-r2"
+  ],
+  "M": [
+   "v3-r1"
+  ],
+  "X": [
+   "v2-r1"
+  ],
+  "J": [
+   "v1-r1"
+  ],
+  "T": [
+   "v2-r2"
+  ],
+  "R": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It confirms both requested fixes and names Sahil Batra, but it leaves out the missing API changelog and doesn't say the code is unchanged.",
+    "reply_why": "\"No reply needed.\" is acceptable for a hand-off."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE with a hand-off, matching the key.",
+    "accuracy_why": "It covers the squash and notes the code is unchanged, but it mentions Sahil only as an alternative to karlstolley and misses the API changelog gap.",
+    "reply_why": "A short thanks plus a reviewer ping is pasteable, though it pings karlstolley rather than the best reviewer."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE with a hand-off, matching the key.",
+    "accuracy_why": "The cleanup and unchanged code are correct, but it assigns karlstolley instead of Sahil and misses the API changelog gap.",
+    "reply_why": "A brief thanks plus a ping works, but it goes to karlstolley."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE with a hand-off, matching the key.",
+    "accuracy_why": "It confirms both fixes but misses the reviewer choice, the API changelog gap, and the unchanged-code point.",
+    "reply_why": "It is a single reviewer-ping line, which suits a hand-off."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE with a hand-off, matching the key.",
+    "accuracy_why": "The fixes and unchanged code are right, but it names karlstolley rather than Sahil, misses the changelog gap, and adds a filler point about the issue.",
+    "reply_why": "A thanks plus a ping is fine, but it goes to karlstolley."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE with a hand-off, matching the key.",
+    "accuracy_why": "The fixes and unchanged code are right, but it picks karlstolley over Sahil, misses the changelog gap, and adds a filler issue-status point.",
+    "reply_why": "It is a single reviewer-ping line, which is pasteable."
+   }
+  },
+  "ranking": [
+   "X",
+   "K",
+   "M",
+   "T",
+   "R",
+   "J"
+  ]
+ },
+ "text": "{\"outputs\": {\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n \"accuracy_why\": \"It confirms both requested fixes and names Sahil Batra, but it leaves out the missing API changelog and doesn't say the code is unchanged.\",\n \"reply_why\": \"\\\"No reply needed.\\\" is acceptable for a hand-off.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE with a hand-off, matching the key.\",\n \"accuracy_why\": \"It covers the squash and notes the code is unchanged, but it mentions Sahil only as an alternative to karlstolley and misses the API changelog gap.\",\n \"reply_why\": \"A short thanks plus a reviewer ping is pasteable, though it pings karlstolley rather than the best reviewer.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE with a hand-off, matching the key.\",\n \"accuracy_why\": \"The cleanup and unchanged code are correct, but it assigns karlstolley instead of Sahil and misses the API changelog gap.\",\n \"reply_why\": \"A brief thanks plus a ping works, but it goes to karlstolley.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE with a hand-off, matching the key.\",\n \"accuracy_why\": \"It confirms both fixes but misses the reviewer choice, the API changelog gap, and the unchanged-code point.\",\n \"reply_why\": \"It is a single reviewer-ping line, which suits a hand-off.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE with a hand-off, matching the key.\",\n \"accuracy_why\": \"The fixes and unchanged code are right, but it names karlstolley rather than Sahil, misses the changelog gap, and adds a filler point about the issue.\",\n \"reply_why\": \"A thanks plus a ping is fine, but it goes to karlstolley.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE with a hand-off, matching the key.\",\n \"accuracy_why\": \"The fixes and unchanged code are right, but it picks karlstolley over Sahil, misses the changelog gap, and adds a filler issue-status point.\",\n \"reply_why\": \"It is a single reviewer-ping line, which is pasteable.\"}\n},\n\"ranking\": [\"X\", \"K\", \"M\", \"T\", \"R\", \"J\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.1774
+}

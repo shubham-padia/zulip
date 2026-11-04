@@ -1,0 +1,169 @@
+{
+ "case": "40012-5570902524",
+ "repeat": 2,
+ "map": {
+  "W": [
+   "v2-r1"
+  ],
+  "O": [
+   "v3-r2"
+  ],
+  "P": [
+   "v3-r1"
+  ],
+  "A": [
+   "v2-r2"
+  ],
+  "Z": [
+   "v1-r1"
+  ],
+  "V": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "It covers both met asks and the lack of a push, and it raises timabbott's /help/ suggestion as a point for the reviewer, with no errors.",
+    "reply_why": "It thanks the author and pings laurynmm, but 'this looks good now' slightly pre-judges the review."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "Every must-have is present and accurate, including the approach difference from timabbott's suggestion.",
+    "reply_why": "It is a short thank-you plus a reviewer ping that a maintainer could paste with little change."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "All must-haves are present and correct.",
+    "reply_why": "The reviewer ping is usable, but it never thanks the author, which the reply_ask calls for."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "It is accurate on what changed but omits the non-decisive point about timabbott's /help/ guide suggestion.",
+    "reply_why": "It thanks the author and pings laurynmm, with a slightly pre-judging 'looks good'."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Presents dropping the title tag as an earlier maintainer ask, though laurynmm never asked for it."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "It covers the asks and the approach difference but invents a title-tag ask and never notes that there was no new push.",
+    "reply_why": "It is a short thank-you plus a reviewer ping that a maintainer could paste."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key.",
+    "accuracy_why": "It is correct on the met asks but omits the /help/ guide point and adds an irrelevant remark about the 'help wanted' label.",
+    "reply_why": "It is a short thank-you plus a reviewer ping that a maintainer could paste."
+   }
+  },
+  "ranking": [
+   "P",
+   "Z",
+   "W",
+   "O",
+   "A",
+   "V"
+  ]
+ },
+ "text": "{\"outputs\": {\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"It covers both met asks and the lack of a push, and it raises timabbott's /help/ suggestion as a point for the reviewer, with no errors.\", \"reply_why\": \"It thanks the author and pings laurynmm, but 'this looks good now' slightly pre-judges the review.\"}, \"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"Every must-have is present and accurate, including the approach difference from timabbott's suggestion.\", \"reply_why\": \"It is a short thank-you plus a reviewer ping that a maintainer could paste with little change.\"}, \"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 7, \"brevity_score\": 7, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"All must-haves are present and correct.\", \"reply_why\": \"The reviewer ping is usable, but it never thanks the author, which the reply_ask calls for.\"}, \"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"It is accurate on what changed but omits the non-decisive point about timabbott's /help/ guide suggestion.\", \"reply_why\": \"It thanks the author and pings laurynmm, with a slightly pre-judging 'looks good'.\"}, \"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [\"Presents dropping the title tag as an earlier maintainer ask, though laurynmm never asked for it.\"], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 6, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"It covers the asks and the approach difference but invents a title-tag ask and never notes that there was no new push.\", \"reply_why\": \"It is a short thank-you plus a reviewer ping that a maintainer could paste.\"}, \"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 6, \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key.\", \"accuracy_why\": \"It is correct on the met asks but omits the /help/ guide point and adds an irrelevant remark about the 'help wanted' label.\", \"reply_why\": \"It is a short thank-you plus a reviewer ping that a maintainer could paste.\"}}, \"ranking\": [\"P\", \"Z\", \"W\", \"O\", \"A\", \"V\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.158064
+}
