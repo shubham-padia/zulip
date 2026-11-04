@@ -1,0 +1,11 @@
+{
+ "case": "40013-5589724033",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — author pushed fixes and added tests**\n\nNew: 4 new pushes since the label, adding backend tests for deleting bot avatars and fixes to three existing test files. Missing: the self-review boxes for responsiveness, strings and tooltips, and corner cases are still unchecked, and the tooltip question in #design is still open. Neither blocks a first review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who added the label and was pinged by the author.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013405600000000002
+}

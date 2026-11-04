@@ -1,0 +1,11 @@
+{
+ "case": "40021-5448685369",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — commits are messy, and the multi-reactor case isn't addressed**\n\nNew: Author pushed two more commits, updated the screenshots to show a long name, raised the max width to 15em, and explained how this differs from the other open PRs. Missing: the fixup-style commits need squashing, and the diff has unrelated edits (+59/-29 for a width cap, including a font-weight animation change). The fix also truncates the whole reactor list at once, so with several reactors later names get cut, and Alya has said everyone's name should at least partly show.\n\n###### Next step\n\n\"not ready\" stays; no reviewer yet, and the author can ping emilysutherlin once the commits are cleaned up.\n\n###### Reply\n\n```quote\nThanks for the update, the screenshots and comparison with the other PRs are much clearer. Before we review, please squash the \"fix:\" commits into one clean commit and drop the unrelated changes (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)), and show how this looks with 2–3 reactors, since each name should stay at least partly visible.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0108446
+}
