@@ -1,0 +1,6 @@
+{
+ "case": "40222-6155500518",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly says \"Ready for review,\" explains they addressed the maintainer's request (screenshots, checklist, passing CI), and issues a command to remove the \"not ready\" label.",
+ "cost_usd": 0.004198
+}

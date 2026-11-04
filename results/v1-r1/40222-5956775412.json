@@ -1,0 +1,6 @@
+{
+ "case": "40222-5956775412",
+ "answer": "no",
+ "text": "no\n\"ok\" only acknowledges the maintainer's instructions; it doesn't say the changes have been made or ask for re-review, so it doesn't signal the PR is ready.",
+ "cost_usd": 0.003926
+}
