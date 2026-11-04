@@ -1,0 +1,6 @@
+{
+ "case": "40201-6155498168",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly states the PR is ready for review, reports that CI checks now pass, and asks to remove the \"not ready\" label.",
+ "cost_usd": 0.008904
+}
