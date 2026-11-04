@@ -1,0 +1,6 @@
+{
+ "case": "39723-4964864334",
+ "answer": "no",
+ "text": "no\n\nThe author only explains how the PR relates to #34299 and offers to close it, but doesn't say they've made changes or followed the PR guide, so they aren't signaling it's ready for re-review.",
+ "cost_usd": 0.0048
+}

@@ -1,0 +1,6 @@
+{
+ "case": "39728-5051202036",
+ "answer": "no",
+ "text": "no\n\nThe author reports finishing commit cleanup, self-review, and a regression test, but doesn't say the PR is ready. They push back on the screenshot requirement and ask the maintainer how to document the change, so they're waiting on guidance rather than requesting another look.",
+ "cost_usd": 0.005252000000000001
+}
