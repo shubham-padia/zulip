@@ -1,0 +1,6 @@
+{
+ "case": "40191-5953763720",
+ "answer": "no",
+ "text": "no\n\nThe author describes a rebase, code cleanup, and a PR description change, but never says the commit message was fixed or the docs change was split out with a screenshot, and doesn't say the PR is ready for review.",
+ "cost_usd": 0.004726
+}

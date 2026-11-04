@@ -1,0 +1,6 @@
+{
+ "case": "40177-5954127181",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked the author to work through the continuing-unfinished-work guidelines, and the author says the PR description is updated with prior work and credits, CI is green, and asks for the `not ready` label to be removed so it can enter review, which amounts to handing it back as ready.",
+ "cost_usd": 0.004984000000000001
+}

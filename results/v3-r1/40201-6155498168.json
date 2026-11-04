@@ -1,0 +1,6 @@
+{
+ "case": "40201-6155498168",
+ "answer": "yes",
+ "text": "yes\nThe maintainer asked the author to fix CI test failures, and the author says all CI checks now pass, declares the PR \"Ready for review,\" and asks to remove the \"not ready\" label, which is handing the PR back.",
+ "cost_usd": 0.00433
+}
