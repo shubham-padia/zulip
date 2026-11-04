@@ -1,0 +1,6 @@
+{
+ "case": "39767-5289438773",
+ "answer": "no",
+ "text": "no\n\nThe maintainer only re-ran the tests and reassigned the author to another issue, and the author's reply is a simple thanks that does not say the PR is ready for review.",
+ "cost_usd": 0.0006418
+}

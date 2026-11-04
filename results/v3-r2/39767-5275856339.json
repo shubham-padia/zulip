@@ -1,0 +1,6 @@
+{
+ "case": "39767-5275856339",
+ "answer": "no",
+ "text": "no\n\nThe maintainer asked for squashing commits and reformatting the commit message, and the author's comment says nothing about doing either; it only reports a CI failure and asks for a re-trigger.",
+ "cost_usd": 0.0007462
+}

@@ -1,0 +1,6 @@
+{
+ "case": "39823-5225799846",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked the author to check whether to credit the prior author, and the author addressed it (no co-authored-by since no code was reused), then said they pushed changes and updated the PR description, which signals the work is done and handed back.",
+ "cost_usd": 0.0008637
+}
