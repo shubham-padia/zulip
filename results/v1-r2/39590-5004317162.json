@@ -1,0 +1,6 @@
+{
+ "case": "39590-5004317162",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly asks the maintainer to take another look and whether the \"not ready\" label can be dropped, after reporting a rebase, passing CI, and a recap of the changes.",
+ "cost_usd": 0.0007298
+}
