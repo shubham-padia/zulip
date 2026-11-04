@@ -1,0 +1,6 @@
+{
+ "case": "39481-4711243565",
+ "answer": "yes",
+ "text": "yes\nThe author's comment \"Ready for review!\" explicitly signals that they consider the PR ready for maintainers to look at again, despite the \"not ready\" label.",
+ "cost_usd": 0.0036899999999999997
+}
