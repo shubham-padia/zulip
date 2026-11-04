@@ -1,0 +1,6 @@
+{
+ "case": "40221-6126518759",
+ "answer": "no",
+ "text": "no\n\nThe maintainer asked whether the PR addresses all three bullet points, and the author says it covers only the 1st and 3rd \"which were left to be completed\", so it doesn't claim to cover all three and doesn't say the PR is ready for review.",
+ "cost_usd": 0.0009056
+}

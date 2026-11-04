@@ -1,0 +1,6 @@
+{
+ "case": "40211-5916970551",
+ "answer": "yes",
+ "text": "yes\nThe maintainer asked the author to follow the reviewable-PR guide, and the author says they squashed the commits, updated the description, and explicitly states it is ready for another look.",
+ "cost_usd": 0.0006921000000000001
+}

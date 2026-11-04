@@ -1,0 +1,6 @@
+{
+ "case": "40257-6230507734",
+ "answer": "no",
+ "text": "no\n\nThe maintainer asked for fixed screenshot labels and an error banner shown to the user, and the author's comment does not say either was done; it only checks in, notes passing tests, and offers to make changes.",
+ "cost_usd": 0.0007618
+}
