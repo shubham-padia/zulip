@@ -1,0 +1,198 @@
+{
+ "per_run": {
+  "v1_file_history/run1": [
+   23,
+   30
+  ],
+  "v1_file_history/run2": [
+   20,
+   31
+  ],
+  "v2_area_activity/run1": [
+   18,
+   22
+  ],
+  "v2_area_activity/run2": [
+   18,
+   20
+  ]
+ },
+ "verdicts": {
+  "40418 amanagr": {
+   "reasonable": true,
+   "reason": "Aman is the top committer to recent_view_ui.ts and received all earlier hand-offs touching that file."
+  },
+  "40416 emilysutherlin": {
+   "reasonable": true,
+   "reason": "Emily reported the stale manual-testing docs in the chat thread that prompted this PR and engaged with the author."
+  },
+  "40417 sahil839": {
+   "reasonable": true,
+   "reason": "Sahil is the top recent committer to settings.css and received most earlier hand-offs touching that file."
+  },
+  "40191 alexmv": {
+   "reasonable": true,
+   "reason": "Alex has the most commits (21) to these server settings files; a settings rename with backward compatibility fits his expertise."
+  },
+  "40398 mateuszmandera": {
+   "reasonable": false,
+   "reason": "Despite mateuszmandera's link to predecessor #39830, karlstolley explicitly asked benprew to review this PR."
+  },
+  "40376 alexmv": {
+   "reasonable": true,
+   "reason": "Tim named alexmv the right maintainer for this issue; he is top committer to these nginx/errors files."
+  },
+  "40318 amanagr": {
+   "reasonable": true,
+   "reason": "amanagr has 7 recent compose_ui.ts commits, many prior hand-offs there, and approved the original indent-shortcut PR."
+  },
+  "40097 Niloth-p": {
+   "reasonable": true,
+   "reason": "Niloth-p has 5 recent commits to these gogs/gitea webhook files; no maintainer pointed the review at someone else."
+  },
+  "40096 Niloth-p": {
+   "reasonable": true,
+   "reason": "Niloth-p has 5 recent commits to these gogs/gitea webhook files; no maintainer directed the review elsewhere."
+  },
+  "40241 prakhar1144": {
+   "reasonable": false,
+   "reason": "Although prakhar1144 knows upload code, laurynmm explicitly asked mateuszmandera to review this PR."
+  },
+  "40187 prakhar1144": {
+   "reasonable": true,
+   "reason": "Top recent committer to these narrow/API files (24 commits) with many earlier hand-offs in these directories; no one else was requested."
+  },
+  "40192 sahil839": {
+   "reasonable": false,
+   "reason": "Maintainer laurynmm explicitly asked amanagr to review this PR, so it was meant for him despite Sahil's file history."
+  },
+  "40085 evykassirer": {
+   "reasonable": true,
+   "reason": "Evy filed linked issue #37030 from her own PR follow-ups, committed to typeahead.css, and has many hand-offs in this area."
+  },
+  "39941 apoorvapendse": {
+   "reasonable": true,
+   "reason": "Filed the linked issue, top committer to both files, and reviewed predecessor PR #39584 on the same files."
+  },
+  "39504 alexmv": {
+   "reasonable": true,
+   "reason": "42 commits to touched files including puppet/production code, and actively shaped LiveKit naming in the API design thread."
+  },
+  "39792 Niloth-p": {
+   "reasonable": true,
+   "reason": "Niloth-p reviewed and was assigned to predecessor PR #38519 and is the top committer to these video call files."
+  },
+  "39881 PieterCK": {
+   "reasonable": true,
+   "reason": "PieterCK has 6 recent markdown commits and was assigned recent markdown PRs #39767 and #39883 touching same files."
+  },
+  "39862 karlstolley": {
+   "reasonable": true,
+   "reason": "Karl is top committer on these files, gave design feedback in the thread, and was assigned earlier rendered_markdown.css PRs."
+  },
+  "39767 alexmv": {
+   "reasonable": true,
+   "reason": "alexmv is top committer (8) to markdown files and received an earlier hand-off on test_markdown.py."
+  },
+  "39622 sahil839": {
+   "reasonable": true,
+   "reason": "Top committer on custom profile fields, prior hand-offs on these files, and shaped the pronoun-field design in the thread."
+  },
+  "39916 laurynmm": {
+   "reasonable": true,
+   "reason": "Top committer to these API doc files; reviewed sibling PRs #39878 and #39599 touching the same files."
+  },
+  "39878 prakhar1144": {
+   "reasonable": false,
+   "reason": "Despite prakhar owning the stacked base PR, karlstolley explicitly tagged laurynmm for maintainer review of this PR."
+  },
+  "39867 Niloth-p": {
+   "reasonable": false,
+   "reason": "Niloth-p knows gitlab code, but karlstolley explicitly asked laurynmm to do the maintainer review."
+  },
+  "39780 sahil839": {
+   "reasonable": true,
+   "reason": "Top recent committer to these files and received earlier hand-offs touching user_card_popover.ts and tippyjs.ts."
+  },
+  "39714 sahil839": {
+   "reasonable": true,
+   "reason": "Top committer to these events/register files and received several earlier hand-offs touching the same files."
+  },
+  "39828 andersk": {
+   "reasonable": true,
+   "reason": "andersk was assigned the identical prior PR #39250 and is the only recent committer to zulip-puppet-apply."
+  },
+  "39758 laurynmm": {
+   "reasonable": true,
+   "reason": "laurynmm already engaged reviewing this PR and has recent commits to these notification files."
+  },
+  "39788 mateuszmandera": {
+   "reasonable": false,
+   "reason": "Resubmission of a PR amanagr was asked to review and already approved; it clearly belongs to amanagr, despite mateuszmandera's issue link."
+  },
+  "39770 sahil839": {
+   "reasonable": false,
+   "reason": "Though sahil839 knows the code, maintainer laurynmm explicitly asked pratik-pc to review this PR."
+  },
+  "39536 evykassirer": {
+   "reasonable": true,
+   "reason": "Top committer to sidebar files, received earlier stream_list.ts hand-offs, and steered this design in the CZO thread."
+  },
+  "40417 alya": {
+   "reasonable": false,
+   "reason": "Alya deferred strategy to @karlstolley on predecessor PR and said she didn't want to spend time on this."
+  },
+  "40113 apoorvapendse": {
+   "reasonable": false,
+   "reason": "laurynmm explicitly asked @pratik-pc to do maintainer review; apoorvapendse's link is only commit counts on broad files like click_handlers.ts."
+  },
+  "40218 pratik-pc": {
+   "reasonable": false,
+   "reason": "Maintainer laurynmm explicitly asked shubham-padia to review this PR, so it was meant for him."
+  },
+  "40187 amanagr": {
+   "reasonable": true,
+   "reason": "Aman implemented the with operator and was pinged into the CZO api design thread, where he weighed in on this change."
+  },
+  "40162 sahil839": {
+   "reasonable": false,
+   "reason": "laurynmm explicitly asked @shubham-padia to do maintainer review, even though sahil839 proposed the change and knows these files."
+  },
+  "40065 evykassirer": {
+   "reasonable": false,
+   "reason": "Maintainer laurynmm explicitly asked pratik-pc to review this PR, despite evykassirer's file history."
+  },
+  "39767 PieterCK": {
+   "reasonable": true,
+   "reason": "PieterCK has 6 recent commits to these markdown files, showing clear familiarity with the code."
+  },
+  "39758 emilysutherlin": {
+   "reasonable": false,
+   "reason": "Only triage-style guidance on the issue; no commits to these files and never assigned code review in any hand-off."
+  },
+  "40318 laurynmm": {
+   "reasonable": true,
+   "reason": "laurynmm is a maintainer already engaged on this PR, having reviewed it and requested changes."
+  },
+  "39989 apoorvapendse": {
+   "reasonable": false,
+   "reason": "Apoorva only triaged and explicitly asked karlstolley to assess; no file history in lightbox code."
+  },
+  "39927 amanagr": {
+   "reasonable": true,
+   "reason": "Engaged on linked banner-migration issue, reviewed recent compose_banner.ts PR #39909, and is top compose-area assignee."
+  },
+  "39894 laurynmm": {
+   "reasonable": true,
+   "reason": "Lauryn already engaged on this PR's screenshots, author asked her to review, and she is active in dark_theme cleanup."
+  },
+  "39767 laurynmm": {
+   "reasonable": true,
+   "reason": "laurynmm triaged this PR, was pinged by contributors, has markdown commits and 9 directory hand-offs."
+  },
+  "39780 alya": {
+   "reasonable": true,
+   "reason": "Alya filed the issue, led the design discussion, and reviewed earlier attempts; she is clearly engaged with this work."
+  }
+ }
+}
