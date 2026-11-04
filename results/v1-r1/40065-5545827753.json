@@ -1,0 +1,6 @@
+{
+ "case": "40065-5545827753",
+ "answer": "yes",
+ "text": "yes\nThe author supplies exactly what the maintainer requested (before/after screenshots of long topic names with and without emoji, plus a larger 20px font test), which implicitly signals the PR is ready for re-review, though they don't say so explicitly.",
+ "cost_usd": 0.006750000000000001
+}

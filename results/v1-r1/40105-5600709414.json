@@ -1,0 +1,6 @@
+{
+ "case": "40105-5600709414",
+ "answer": "yes",
+ "text": "yes\nThe author addressed both maintainer requests (squashed the commits and added a before/after demo), plus described an additional fix and test, which signals the PR is ready for re-review.",
+ "cost_usd": 0.004784
+}

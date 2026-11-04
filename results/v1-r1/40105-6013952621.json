@@ -1,0 +1,6 @@
+{
+ "case": "40105-6013952621",
+ "answer": "yes",
+ "text": "yes\n\nThe author explicitly asks maintainers to remove the \"not ready\" label and review the PR, which is a request for another look (even though it doesn't say whether the requested cleanup was done).",
+ "cost_usd": 0.004177999999999999
+}

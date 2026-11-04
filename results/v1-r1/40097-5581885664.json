@@ -1,0 +1,6 @@
+{
+ "case": "40097-5581885664",
+ "answer": "no",
+ "text": "no\nThe author is explicitly setting the PR back to WIP because of a new bug, saying a fixed version will come later, so it is not ready for another look.",
+ "cost_usd": 0.003578
+}
