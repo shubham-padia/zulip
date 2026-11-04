@@ -1,0 +1,56 @@
+{
+ "case": "39863-5344084962",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the commit-message feedback with a force push but no code or approach change, so a short note under the existing card is enough and nobody is actively reviewing the PR yet.",
+  "triager_action": "more_feedback",
+  "action_source": "inferred",
+  "action_why": "Maintainers did nothing for 14 days, and the rewritten commit summary \"drafts: Preserve focus on draft action controls.\" still ends with a period, which Zulip commit style forbids, so a careful triager would keep \"not ready\" and point that out instead of handing off.",
+  "changed": [
+   "The author force-pushed once and rewrote the commit summary from \"drafts: Enable keyboard navigation for draft action buttons\" to \"drafts: Preserve focus on draft action controls.\".",
+   "The code is the same as before: +26/-6 in the same 3 files."
+  ],
+  "still_missing": [
+   "The commit summary line still ends with a period, which does not match Zulip commit style.",
+   "The issue is written as \"Fixes: issue-#39005\", which GitHub does not link, so the PR is not linked to #39005 (it should say \"Fixes #39005\", ideally in the commit message)."
+  ],
+  "reply_ask": "Ask the author to remove the trailing period from the commit summary line and to reference the issue as \"Fixes #39005\" so it links, then ask for another look.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the new commit summary \"drafts: Preserve focus on draft action controls.\" still ends with a period, so the commit message still does not match Zulip style.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping \"not ready\" and giving more feedback rather than handing the PR to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the push changed only the commit message, with no code changes (still +26/-6 in the same 3 files).",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that \"Fixes: issue-#39005\" is not a GitHub linking keyword, so the PR is not linked to issue #39005 and should use \"Fixes #39005\".",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Flags the overlapping open PR #39959 (keyboard navigation for row action buttons in message overlays), which works in the same area.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the commit-message feedback with a force push but no code or approach change, so a short note under the existing card is enough and nobody is actively reviewing the PR yet.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"inferred\",\n \"action_why\": \"Maintainers did nothing for 14 days, and the rewritten commit summary \\\"drafts: Preserve focus on draft action controls.\\\" still ends with a period, which Zulip commit style forbids, so a careful triager would keep \\\"not ready\\\" and point that out instead of handing off.\",\n \"changed\": [\"The author force-pushed once and rewrote the commit summary from \\\"drafts: Enable keyboard navigation for draft action buttons\\\" to \\\"drafts: Preserve focus on draft action controls.\\\".\", \"The code is the same as before: +26/-6 in the same 3 files.\"],\n \"still_missing\": [\"The commit summary line still ends with a period, which does not match Zulip commit style.\", \"The issue is written as \\\"Fixes: issue-#39005\\\", which GitHub does not link, so the PR is not linked to #39005 (it should say \\\"Fixes #39005\\\", ideally in the commit message).\"],\n \"reply_ask\": \"Ask the author to remove the trailing period from the commit summary line and to reference the issue as \\\"Fixes #39005\\\" so it links, then ask for another look.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the new commit summary \\\"drafts: Preserve focus on draft action controls.\\\" still ends with a period, so the commit message still does not match Zulip style.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends keeping \\\"not ready\\\" and giving more feedback rather than handing the PR to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the push changed only the commit message, with no code changes (still +26/-6 in the same 3 files).\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that \\\"Fixes: issue-#39005\\\" is not a GitHub linking keyword, so the PR is not linked to issue #39005 and should use \\\"Fixes #39005\\\".\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Flags the overlapping open PR #39959 (keyboard navigation for row action buttons in message overlays), which works in the same area.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.098352
+}

@@ -1,0 +1,51 @@
+{
+ "case": "40085-5574954238",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the screenshot feedback and no maintainer was assigned to the PR, so the triager needs a short note to decide; the code did not change, so the first card still holds.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "Within 14 days karlstolley removed \"not ready\", added \"maintainer review\" and assigned himself.",
+  "changed": [
+   "Replaced the inaccessible screenshots with public URLs from a separate pr-assets branch in the author's fork.",
+   "Updated the description with precise Before/After pairs at the same 1462×664 size for the two layout shapes: rows with an avatar/icon (mention typeahead) and text-only rows (slash commands).",
+   "Explained that the font-size checks stayed manual spot checks, with no screenshots for them.",
+   "Made no code changes; the head commit is the same as when the feedback was given."
+  ],
+  "still_missing": [
+   "There are no screenshots for the other manually tested cases the reviewer asked about, such as the 12px and 20px font sizes and the user group, emoji, channel and topic typeaheads named in the author's plan."
+  ],
+  "reply_ask": "Thank the author for making the screenshots accessible and say the PR is moving to maintainer review, while noting that a reviewer may still ask for screenshots of the extra font sizes or typeahead types.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the Before/After screenshots are now publicly accessible and cover the avatar/icon layout and the text-only layout, which answers the main ask.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says there were no code changes since the feedback (same head commit), only the description was updated.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that the font-size and other typeahead-type cases are still documented only as manual spot checks, with no screenshots, and treats this as not blocking.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Recommends removing \"not ready\", adding \"maintainer review\" and assigning a frontend/CSS reviewer such as karlstolley or evykassirer (who filed #37030).",
+    "decisive": true,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the screenshot feedback and no maintainer was assigned to the PR, so the triager needs a short note to decide; the code did not change, so the first card still holds.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"Within 14 days karlstolley removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned himself.\",\n \"changed\": [\n  \"Replaced the inaccessible screenshots with public URLs from a separate pr-assets branch in the author's fork.\",\n  \"Updated the description with precise Before/After pairs at the same 1462×664 size for the two layout shapes: rows with an avatar/icon (mention typeahead) and text-only rows (slash commands).\",\n  \"Explained that the font-size checks stayed manual spot checks, with no screenshots for them.\",\n  \"Made no code changes; the head commit is the same as when the feedback was given.\"\n ],\n \"still_missing\": [\n  \"There are no screenshots for the other manually tested cases the reviewer asked about, such as the 12px and 20px font sizes and the user group, emoji, channel and topic typeaheads named in the author's plan.\"\n ],\n \"reply_ask\": \"Thank the author for making the screenshots accessible and say the PR is moving to maintainer review, while noting that a reviewer may still ask for screenshots of the extra font sizes or typeahead types.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the Before/After screenshots are now publicly accessible and cover the avatar/icon layout and the text-only layout, which answers the main ask.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says there were no code changes since the feedback (same head commit), only the description was updated.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that the font-size and other typeahead-type cases are still documented only as manual spot checks, with no screenshots, and treats this as not blocking.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Recommends removing \\\"not ready\\\", adding \\\"maintainer review\\\" and assigning a frontend/CSS reviewer such as karlstolley or evykassirer (who filed #37030).\", \"decisive\": true, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.205548
+}

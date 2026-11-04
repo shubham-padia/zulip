@@ -1,0 +1,55 @@
+{
+ "case": "40096-6055469654",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The PR keeps the same one-line fix and only adds commits that make CI pass. A short note that it now looks ready for review is enough, and a new card is not needed.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-10-08, hours after the ping, laurynmm removed \"not ready\", added \"maintainer review\" and assigned 0xthedance.",
+  "changed": [
+   "Added a commit that reverts the Gitea pull_request__merged.json fixture to its original data, undoing commit 5de2a7115c09, which the author says faked the data for a docs screenshot.",
+   "Added a commit that fixes Gogs and Gitea tests whose expected topic PR numbers did not match the messages.",
+   "CI now passes, after failing on the first push.",
+   "Explained in a comment why CI failed and what the two extra commits do."
+  ],
+  "still_missing": [],
+  "reply_ask": "Thank the author for fixing the tests and fixture so CI passes, and tell them the PR is moving to maintainer review with a reviewer assigned.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says CI now passes after the author fixed the Gogs/Gitea tests and the Gitea fixture, which addresses the likely reason for the \"not ready\" label.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends removing \"not ready\", adding \"maintainer review\" and assigning a reviewer, because no further author work is outstanding.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that the \"not ready\" label came with no written maintainer feedback, so there was no explicit ask left to check.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Flags for the reviewer that the PR reverts the Gitea pull_request__merged.json fixture, which was used for a docs screenshot, so the docs image may need a look.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Suggests an integrations reviewer, such as Niloth P, who recently changed these webhook files.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The PR keeps the same one-line fix and only adds commits that make CI pass. A short note that it now looks ready for review is enough, and a new card is not needed.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-10-08, hours after the ping, laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned 0xthedance.\",\n \"changed\": [\n  \"Added a commit that reverts the Gitea pull_request__merged.json fixture to its original data, undoing commit 5de2a7115c09, which the author says faked the data for a docs screenshot.\",\n  \"Added a commit that fixes Gogs and Gitea tests whose expected topic PR numbers did not match the messages.\",\n  \"CI now passes, after failing on the first push.\",\n  \"Explained in a comment why CI failed and what the two extra commits do.\"\n ],\n \"still_missing\": [],\n \"reply_ask\": \"Thank the author for fixing the tests and fixture so CI passes, and tell them the PR is moving to maintainer review with a reviewer assigned.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says CI now passes after the author fixed the Gogs/Gitea tests and the Gitea fixture, which addresses the likely reason for the \\\"not ready\\\" label.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends removing \\\"not ready\\\", adding \\\"maintainer review\\\" and assigning a reviewer, because no further author work is outstanding.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that the \\\"not ready\\\" label came with no written maintainer feedback, so there was no explicit ask left to check.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Flags for the reviewer that the PR reverts the Gitea pull_request__merged.json fixture, which was used for a docs screenshot, so the docs image may need a look.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Suggests an integrations reviewer, such as Niloth P, who recently changed these webhook files.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.087716
+}

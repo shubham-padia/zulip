@@ -1,0 +1,73 @@
+{
+ "case": "40048-5481098127",
+ "cutoff": "2026-08-31T16:12:28Z",
+ "pushes": [
+  [
+   "2026-08-29T18:32:59Z",
+   "78a805b50c",
+   "ci run"
+  ],
+  [
+   "2026-08-29T18:35:01Z",
+   "323bb952a1",
+   "force push"
+  ],
+  [
+   "2026-08-29T18:35:05Z",
+   "323bb952a1",
+   "ci run"
+  ],
+  [
+   "2026-08-29T19:11:00Z",
+   "044eea3cc7",
+   "force push"
+  ],
+  [
+   "2026-08-29T19:11:05Z",
+   "044eea3cc7",
+   "ci run"
+  ],
+  [
+   "2026-09-09T04:46:43Z",
+   "fcbf183dbb",
+   "force push"
+  ],
+  [
+   "2026-09-09T04:55:57Z",
+   "253bc62f5d",
+   "force push"
+  ],
+  [
+   "2026-09-09T04:56:01Z",
+   "253bc62f5d",
+   "ci run"
+  ],
+  [
+   "2026-09-09T09:26:40Z",
+   "06140410b9",
+   "force push"
+  ],
+  [
+   "2026-09-09T09:26:46Z",
+   "06140410b9",
+   "ci run"
+  ]
+ ],
+ "head_now": "06140410b9356312f06d19349b7f903a267e4fb7",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "events: Support dictionary-based narrow parameter in /register endpoint.",
+ "title_at_cutoff": "events: Support dictionary-based narrow parameter in /register endpoint.",
+ "labels_now": [
+  "size: XL",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "044eea3cc7800ff282d99f985064d27683760326",
+ "pr_shape": "from compare main...044eea3cc7",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-08-31T14:11:52Z",
+ "head_at_feedback": "044eea3cc7800ff282d99f985064d27683760326",
+ "comments_total": 3,
+ "comments_at_cutoff": 2
+}

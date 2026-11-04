@@ -1,0 +1,51 @@
+{
+ "case": "40096-6055469654",
+ "cutoff": "2026-10-08T07:59:58Z",
+ "pushes": [
+  [
+   "2026-09-07T08:06:36Z",
+   "31214dceaf",
+   "ci run"
+  ],
+  [
+   "2026-09-08T17:14:33Z",
+   "aa96eff8c0",
+   "ci run"
+  ],
+  [
+   "2026-09-08T17:26:01Z",
+   "5fd774b417",
+   "ci run"
+  ],
+  [
+   "2026-09-08T17:32:05Z",
+   "39100b07b9",
+   "force push"
+  ],
+  [
+   "2026-09-08T17:32:09Z",
+   "39100b07b9",
+   "ci run"
+  ]
+ ],
+ "head_now": "39100b07b929be56e75e7203c386bb9add0059db",
+ "body_edits": 5,
+ "body_edits_after_cutoff": 0,
+ "title_now": "webhooks/gogs: fix topic title for pull requests",
+ "title_at_cutoff": "webhooks/gogs: fix topic title for pull requests",
+ "labels_now": [
+  "size: M",
+  "has conflicts",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "0xthedance"
+ ],
+ "head_at_cutoff": "39100b07b929be56e75e7203c386bb9add0059db",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": null,
+ "head_at_feedback": "31214dceaf286c735a4287af8899005709c2b93f",
+ "comments_total": 6,
+ "comments_at_cutoff": 3
+}

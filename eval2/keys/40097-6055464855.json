@@ -1,0 +1,56 @@
+{
+ "case": "40097-6055464855",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author fixed the reverse bug, added a Gitea test commit and asked for review, so the triager needs to decide on a hand-off; the approach is unchanged, so a short note is enough and no new card is needed.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-10-08 laurynmm removed \"not ready\", added \"maintainer review\" and assigned 0xthedance.",
+  "changed": [
+   "Fixed the reverse bug, where issue comments were wrongly identified as PR comments, over 12 force-pushes.",
+   "Added a second commit that fixes the Gitea test for PR comments (zerver/webhooks/gitea/tests.py).",
+   "Removed the WIP prefix and marked the PR ready for review on 2026-09-15, then pinged laurynmm again on 2026-10-08."
+  ],
+  "still_missing": [
+   "No Gogs tests or fixtures were added to cover the new issue-vs-PR disambiguation; only the Gitea test was touched."
+  ],
+  "reply_ask": "Thank the author, say the PR is moving to maintainer review with a reviewer assigned, and apologize for the wait.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author has since fixed the reverse misidentification (issue comments treated as PR comments) and added a commit fixing the Gitea test.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Notes the \"not ready\" label came with no written maintainer feedback, so there is no outstanding requested change.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends removing \"not ready\", adding \"maintainer review\" and assigning a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Mentions that CI passes.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions the author's related open PR #40096 on Gogs PR topic titles as overlapping work.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author fixed the reverse bug, added a Gitea test commit and asked for review, so the triager needs to decide on a hand-off; the approach is unchanged, so a short note is enough and no new card is needed.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-10-08 laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned 0xthedance.\",\n \"changed\": [\n  \"Fixed the reverse bug, where issue comments were wrongly identified as PR comments, over 12 force-pushes.\",\n  \"Added a second commit that fixes the Gitea test for PR comments (zerver/webhooks/gitea/tests.py).\",\n  \"Removed the WIP prefix and marked the PR ready for review on 2026-09-15, then pinged laurynmm again on 2026-10-08.\"\n ],\n \"still_missing\": [\n  \"No Gogs tests or fixtures were added to cover the new issue-vs-PR disambiguation; only the Gitea test was touched.\"\n ],\n \"reply_ask\": \"Thank the author, say the PR is moving to maintainer review with a reviewer assigned, and apologize for the wait.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author has since fixed the reverse misidentification (issue comments treated as PR comments) and added a commit fixing the Gitea test.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Notes the \\\"not ready\\\" label came with no written maintainer feedback, so there is no outstanding requested change.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends removing \\\"not ready\\\", adding \\\"maintainer review\\\" and assigning a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Mentions that CI passes.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions the author's related open PR #40096 on Gogs PR topic titles as overlapping work.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.08426
+}

@@ -1,0 +1,50 @@
+{
+ "case": "39865-5194201765",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author says the requested before/after screenshots are done, so the triager needs to know whether they meet the guidelines; nothing changed enough to need a new card, and no maintainer is assigned.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "The next day laurynmm replied that the screenshots still don't follow the precise before/after guidance and kept \"not ready\" on the PR.",
+  "changed": [
+   "The author edited the PR description to add before/after screenshot pairs for the UI hint, the dropdown and the validation error.",
+   "No code was pushed; the head commit is the same as when the feedback was given."
+  ],
+  "still_missing": [
+   "The screenshots are not precise: each before/after pair has different dimensions (1918x903 vs 1916x885) and was taken on different days, so they can't be compared by flipping between them.",
+   "Maintainers have not decided on the approach in CZO; Sahil Batra is still weighing strict lowercase validation against normalizing in the backend."
+  ],
+  "reply_ask": "Ask the author to retake each before/after pair at the same viewport size, crop and state, following the precise-screenshots guide, and to check them by switching between the two images in separate tabs.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the new screenshots still aren't precise before/after shots, because each pair differs in size or framing.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says there was no new code push and only the PR description was updated.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping \"not ready\" and asking for precise screenshots, rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the design (strict lowercase vs backend normalization) is still unresolved in the CZO thread, with Sahil Batra undecided.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author says the requested before/after screenshots are done, so the triager needs to know whether they meet the guidelines; nothing changed enough to need a new card, and no maintainer is assigned.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"The next day laurynmm replied that the screenshots still don't follow the precise before/after guidance and kept \\\"not ready\\\" on the PR.\",\n \"changed\": [\"The author edited the PR description to add before/after screenshot pairs for the UI hint, the dropdown and the validation error.\", \"No code was pushed; the head commit is the same as when the feedback was given.\"],\n \"still_missing\": [\"The screenshots are not precise: each before/after pair has different dimensions (1918x903 vs 1916x885) and was taken on different days, so they can't be compared by flipping between them.\", \"Maintainers have not decided on the approach in CZO; Sahil Batra is still weighing strict lowercase validation against normalizing in the backend.\"],\n \"reply_ask\": \"Ask the author to retake each before/after pair at the same viewport size, crop and state, following the precise-screenshots guide, and to check them by switching between the two images in separate tabs.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the new screenshots still aren't precise before/after shots, because each pair differs in size or framing.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says there was no new code push and only the PR description was updated.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping \\\"not ready\\\" and asking for precise screenshots, rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the design (strict lowercase vs backend normalization) is still unresolved in the CZO thread, with Sahil Batra undecided.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.298436
+}

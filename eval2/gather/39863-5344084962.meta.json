@@ -1,0 +1,38 @@
+{
+ "case": "39863-5344084962",
+ "cutoff": "2026-08-19T15:10:49Z",
+ "pushes": [
+  [
+   "2026-08-01T10:36:43Z",
+   "d4507271a7",
+   "ci run"
+  ],
+  [
+   "2026-08-19T15:09:13Z",
+   "a6b4f9f108",
+   "force push"
+  ],
+  [
+   "2026-08-19T15:09:21Z",
+   "a6b4f9f108",
+   "ci run"
+  ]
+ ],
+ "head_now": "a6b4f9f1088bdc72d93171443c2c1dc3f5977cde",
+ "body_edits": 3,
+ "body_edits_after_cutoff": 0,
+ "title_now": "drafts: Enable keyboard navigation for draft action buttons",
+ "title_at_cutoff": "drafts: Enable keyboard navigation for draft action buttons",
+ "labels_now": [
+  "size: M",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "a6b4f9f1088bdc72d93171443c2c1dc3f5977cde",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "karlstolley 2026-08-11T19:48:59Z",
+ "head_at_feedback": "d4507271a7633933e5f135fdd5fef903da3ac627",
+ "comments_total": 7,
+ "comments_at_cutoff": 7
+}

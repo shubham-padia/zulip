@@ -1,0 +1,58 @@
+{
+ "case": "39862-5398202815",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author reports that the design question laurynmm deferred to the #design thread is now settled, and a triager needs to act on that, but the approach and files are unchanged, so a new card isn't warranted.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "The day after the comment, laurynmm removed \"not ready\" and \"design review\", added \"maintainer review\", and assigned pratik-pc.",
+  "changed": [
+   "Posted the extra screenshots Daniel K asked for in #design: a title-only page and a narrow (~600px) window.",
+   "Daniel K approved the visuals in #design and chose the text-only card over the placeholder-image approach in #39272.",
+   "Pushed one update (+96/-33 to +104/-33, same files and commit message), apparently adjusting the card after the design feedback.",
+   "Earlier, fixed the before/after screenshots and restored the self-review checklist, as laurynmm and emilysutherlin asked."
+  ],
+  "still_missing": [
+   "The PR still has the \"design review\" label, although the design discussion is now resolved.",
+   "No reviewer is assigned yet for the code review."
+  ],
+  "reply_ask": "Thank the author, confirm that the #design approval is noted, and say the PR is moving to maintainer review with a named reviewer.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the design was approved in the #design thread: Daniel K said the screenshots look good and chose the text-only card over a placeholder image.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends removing \"not ready\" (and \"design review\"), adding \"maintainer review\", and assigning a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the screenshots Daniel K asked for (title-only page and narrow window) were posted, so no requested work is outstanding.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Proposes a specific maintainer reviewer (in the end, laurynmm assigned pratik-pc).",
+    "decisive": false,
+    "at_cutoff": false
+   },
+   {
+    "id": "f5",
+    "fact": "Flags that the PR changes message-content HTML, which counts as an API change that needs an #api design discussion.",
+    "decisive": false,
+    "at_cutoff": false
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author reports that the design question laurynmm deferred to the #design thread is now settled, and a triager needs to act on that, but the approach and files are unchanged, so a new card isn't warranted.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"The day after the comment, laurynmm removed \\\"not ready\\\" and \\\"design review\\\", added \\\"maintainer review\\\", and assigned pratik-pc.\",\n \"changed\": [\n  \"Posted the extra screenshots Daniel K asked for in #design: a title-only page and a narrow (~600px) window.\",\n  \"Daniel K approved the visuals in #design and chose the text-only card over the placeholder-image approach in #39272.\",\n  \"Pushed one update (+96/-33 to +104/-33, same files and commit message), apparently adjusting the card after the design feedback.\",\n  \"Earlier, fixed the before/after screenshots and restored the self-review checklist, as laurynmm and emilysutherlin asked.\"\n ],\n \"still_missing\": [\n  \"The PR still has the \\\"design review\\\" label, although the design discussion is now resolved.\",\n  \"No reviewer is assigned yet for the code review.\"\n ],\n \"reply_ask\": \"Thank the author, confirm that the #design approval is noted, and say the PR is moving to maintainer review with a named reviewer.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the design was approved in the #design thread: Daniel K said the screenshots look good and chose the text-only card over a placeholder image.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends removing \\\"not ready\\\" (and \\\"design review\\\"), adding \\\"maintainer review\\\", and assigning a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the screenshots Daniel K asked for (title-only page and narrow window) were posted, so no requested work is outstanding.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Proposes a specific maintainer reviewer (in the end, laurynmm assigned pratik-pc).\", \"decisive\": false, \"at_cutoff\": false},\n  {\"id\": \"f5\", \"fact\": \"Flags that the PR changes message-content HTML, which counts as an API change that needs an #api design discussion.\", \"decisive\": false, \"at_cutoff\": false}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.16372
+}

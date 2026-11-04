@@ -1,0 +1,74 @@
+{
+ "case": "39868-5175066393",
+ "cutoff": "2026-08-04T05:39:20Z",
+ "pushes": [
+  [
+   "2026-08-02T20:04:42Z",
+   "06112f3afe",
+   "ci run"
+  ],
+  [
+   "2026-08-03T09:07:24Z",
+   "8621df9430",
+   "ci run"
+  ],
+  [
+   "2026-08-03T16:02:42Z",
+   "100b73d9d7",
+   "force push"
+  ],
+  [
+   "2026-08-03T16:02:49Z",
+   "100b73d9d7",
+   "ci run"
+  ],
+  [
+   "2026-08-03T18:44:13Z",
+   "7ec2bd9cd1",
+   "force push"
+  ],
+  [
+   "2026-08-03T18:44:18Z",
+   "7ec2bd9cd1",
+   "ci run"
+  ],
+  [
+   "2026-08-15T05:55:35Z",
+   "f1252d9f96",
+   "force push"
+  ],
+  [
+   "2026-08-15T05:55:40Z",
+   "f1252d9f96",
+   "ci run"
+  ],
+  [
+   "2026-08-15T06:24:19Z",
+   "fd403bff63",
+   "force push"
+  ],
+  [
+   "2026-08-15T06:24:23Z",
+   "fd403bff63",
+   "ci run"
+  ]
+ ],
+ "head_now": "fd403bff63fdf9b35d750f1765e131b008ce69cd",
+ "body_edits": 5,
+ "body_edits_after_cutoff": 3,
+ "title_now": "message feed: Add icons to \"show more\"/\"show less\" buttons",
+ "title_at_cutoff": "message feed: Add icons to \"show more\"/\"show less\" buttons",
+ "labels_now": [
+  "size: S",
+  "design review",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "7ec2bd9cd17d485de46f5858a1217e9907f9b93f",
+ "pr_shape": "from compare main...7ec2bd9cd1",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": null,
+ "head_at_feedback": "8621df9430289f2ea9c3c9c18b5888b736386acc",
+ "comments_total": 6,
+ "comments_at_cutoff": 2
+}

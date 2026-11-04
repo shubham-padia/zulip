@@ -1,0 +1,50 @@
+{
+ "case": "39894-5278594007",
+ "cutoff": "2026-08-13T09:36:02Z",
+ "pushes": [
+  [
+   "2026-08-07T07:51:04Z",
+   "12da4162a9",
+   "ci run"
+  ],
+  [
+   "2026-08-07T07:53:30Z",
+   "aa103af67f",
+   "force push"
+  ],
+  [
+   "2026-08-07T07:53:33Z",
+   "aa103af67f",
+   "ci run"
+  ],
+  [
+   "2026-08-07T07:57:14Z",
+   "1419150f70",
+   "force push"
+  ],
+  [
+   "2026-08-07T07:57:20Z",
+   "1419150f70",
+   "ci run"
+  ]
+ ],
+ "head_now": "1419150f7027c73ceb803ee238a1a62e5c056950",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "css: Use input focus variables for popover filter input.",
+ "title_at_cutoff": "css: Use input focus variables for popover filter input.",
+ "labels_now": [
+  "size: S",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "karlstolley"
+ ],
+ "head_at_cutoff": "1419150f7027c73ceb803ee238a1a62e5c056950",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-08-07T12:51:12Z",
+ "head_at_feedback": "1419150f7027c73ceb803ee238a1a62e5c056950",
+ "comments_total": 7,
+ "comments_at_cutoff": 4
+}

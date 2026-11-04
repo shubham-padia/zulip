@@ -1,0 +1,45 @@
+{
+ "case": "40065-5545794788",
+ "cutoff": "2026-09-04T19:59:06Z",
+ "pushes": [
+  [
+   "2026-09-01T19:33:35Z",
+   "f6d245fad9",
+   "ci run"
+  ],
+  [
+   "2026-09-02T07:16:51Z",
+   "95a47816fa",
+   "ci run"
+  ],
+  [
+   "2026-09-03T14:23:27Z",
+   "b2d66df1a2",
+   "force push"
+  ],
+  [
+   "2026-09-03T14:23:33Z",
+   "b2d66df1a2",
+   "ci run"
+  ]
+ ],
+ "head_now": "b2d66df1a24afa38e151dbb56e81c4aef5f51b06",
+ "body_edits": 4,
+ "body_edits_after_cutoff": 0,
+ "title_now": "left_sidebar: Add 2px vertical breathing room for emoji in topic names.",
+ "title_at_cutoff": "left_sidebar: Add 2px vertical breathing room for emoji in topic names.",
+ "labels_now": [
+  "size: S",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "pratik-pc"
+ ],
+ "head_at_cutoff": "b2d66df1a24afa38e151dbb56e81c4aef5f51b06",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-09-04T09:51:55Z",
+ "head_at_feedback": "b2d66df1a24afa38e151dbb56e81c4aef5f51b06",
+ "comments_total": 10,
+ "comments_at_cutoff": 4
+}

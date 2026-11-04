@@ -1,0 +1,57 @@
+{
+ "case": "39829-5113437343",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author is asking for another look after only swapping a screenshot, no maintainer is assigned or reviewing, and the triager needs to know the screenshot ask is still not met.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied again asking for precise screenshots and pointed to karlstolley's and Yogesh-Shivaji365's merged PRs as examples, keeping \"not ready\".",
+  "changed": [
+   "The author replaced the \"After\" screenshot in the description with a new capture dated 2026-07-29.",
+   "No code was pushed since the feedback; the head commit is unchanged."
+  ],
+  "still_missing": [
+   "The before/after screenshots are still not precise: the \"Before\" is the 1110x144 image copied from the issue, not a capture from the same view, crop and zoom as the 703x63 \"After\".",
+   "There is no screenshot or explanation for pills with several reactors, where Alya asked that part of every reactor's name be shown.",
+   "The PR doesn't explain how it relates to, or differs from, the other open PRs for #38594 (#39049, #39768)."
+  ],
+  "reply_ask": "Ask the author to replace the copied \"Before\" image with matching before/after captures of the same view from their own dev environment, following merged PRs by karlstolley or Yogesh-Shivaji365 as examples, and to cover the multi-reactor case.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the precise before/after screenshots asked for are still missing, because the \"Before\" is the issue's image and doesn't match the \"After\" in view, crop or size.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping \"not ready\" and asking for more changes rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that nothing in the code changed since the feedback and only the description's screenshot was updated.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the multi-reactor case, where Alya asked that part of every reactor's name be shown, is not demonstrated.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions the other open PRs for #38594 (#39049, #39768) and that this PR doesn't explain how it differs from them.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author is asking for another look after only swapping a screenshot, no maintainer is assigned or reviewing, and the triager needs to know the screenshot ask is still not met.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied again asking for precise screenshots and pointed to karlstolley's and Yogesh-Shivaji365's merged PRs as examples, keeping \\\"not ready\\\".\",\n \"changed\": [\n  \"The author replaced the \\\"After\\\" screenshot in the description with a new capture dated 2026-07-29.\",\n  \"No code was pushed since the feedback; the head commit is unchanged.\"\n ],\n \"still_missing\": [\n  \"The before/after screenshots are still not precise: the \\\"Before\\\" is the 1110x144 image copied from the issue, not a capture from the same view, crop and zoom as the 703x63 \\\"After\\\".\",\n  \"There is no screenshot or explanation for pills with several reactors, where Alya asked that part of every reactor's name be shown.\",\n  \"The PR doesn't explain how it relates to, or differs from, the other open PRs for #38594 (#39049, #39768).\"\n ],\n \"reply_ask\": \"Ask the author to replace the copied \\\"Before\\\" image with matching before/after captures of the same view from their own dev environment, following merged PRs by karlstolley or Yogesh-Shivaji365 as examples, and to cover the multi-reactor case.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the precise before/after screenshots asked for are still missing, because the \\\"Before\\\" is the issue's image and doesn't match the \\\"After\\\" in view, crop or size.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends keeping \\\"not ready\\\" and asking for more changes rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that nothing in the code changed since the feedback and only the description's screenshot was updated.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the multi-reactor case, where Alya asked that part of every reactor's name be shown, is not demonstrated.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions the other open PRs for #38594 (#39049, #39768) and that this PR doesn't explain how it differs from them.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.14462
+}
