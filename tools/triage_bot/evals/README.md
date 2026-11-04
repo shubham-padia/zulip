@@ -18,7 +18,7 @@ the prompts, and an agent can write the scripts from it.
 ## Procedure
 
 Each case is replayed as of a cutoff: when the bot would have posted
-its card (see `resolve_event` in `../triage_bot.py`). A bot model
+its card (see `scan` in `../triage_bot.py`). A bot model
 writes a card from what was known then. A judge model then scores
 the card against what maintainers later did with the item.
 

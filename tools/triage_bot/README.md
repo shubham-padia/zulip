@@ -10,10 +10,11 @@ code. Items opened by a maintainer get a one-line card instead,
 written without the model. The list of maintainers is `MAINTAINERS` in
 `gather.py`.
 
-The bot runs from `.github/workflows/triage-bot.yml`, only in the
-zulip/zulip repository. A PR's card waits for its first Zulip CI run,
-so that the card can say whether CI passed. Draft PRs get a card when
-they are marked ready for review.
+The bot runs once a day from `.github/workflows/triage-bot.yml`, only
+in the zulip/zulip repository. Each run posts cards for the open
+items updated in the last two days that don't have one yet. A PR's
+card waits for its Zulip CI run, so that the card can say whether CI
+passed. Draft PRs get a card after they are marked ready for review.
 
 ## One-time setup
 
