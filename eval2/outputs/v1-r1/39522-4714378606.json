@@ -1,0 +1,11 @@
+{
+ "case": "39522-4714378606",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author squashed the work into one commit (+35/-0, down from +56/-0) and no longer deletes any existing code. The comment is addressed to the earlier reviewer and does not answer the visual concerns raised.\n\n|     |         |\n| --- | ------- |\n| ✅  | The earlier accidental deletions of CSS and comments are gone (0 lines removed), and the history is now one commit. |\n| ❌  | The earlier point that the focus border radius does not match the left sidebar link is not addressed in the description or comment. |\n| ❌  | The commit title uses the `style:` prefix instead of an area prefix like `right_sidebar:`, which the previous commit had. |\n| ⚠️  | 35 added lines is a lot for one focus style. The author said earlier that they added `.buddy-list-user-link` focus rules, which are out of scope. The input doesn't show whether those rules are still in. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the border radius and commit title and to confirm the diff contains only the invite link styling.\n\n###### Reply\n\n```quote\nThanks for squashing this down! Before review, please check that the focus ring's border radius matches the \"Browse more channels\" link in the left sidebar, and that the diff contains only the invite link styling (no `.buddy-list-user-link` rules). Please also rename the commit with an area prefix such as `right_sidebar:`, per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0486343
+}

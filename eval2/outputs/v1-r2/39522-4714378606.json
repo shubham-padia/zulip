@@ -1,0 +1,11 @@
+{
+ "case": "39522-4714378606",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author squashed the PR into one commit (now +35/-0, down from +56/-0) and said the commit history is cleaned up. The comment says nothing about the visual problems raised earlier.\n\n|     |         |\n| --- | ------- |\n| ❌ | The earlier review said the dark-theme ring looked white instead of blue and that the border radius didn't match the left sidebar link. Neither the comment nor the description says this was checked or fixed. |\n| ⚠️ | The before/after screenshots are different sizes (e.g. 370x60 vs 367x62), so they are probably still not precise. |\n| ⚠️ | The 6/15 comment said a `.buddy-list-user-link` (\"View all users\") focus block was added, which is out of scope and belongs to #39540. The description doesn't mention it, and 35 added lines looks large for this fix, so it may still be there. |\n| ❌ | The commit prefix changed from `right_sidebar:` to `style:`, which isn't a Zulip area prefix. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to confirm the focus ring matches the left sidebar and to fix the commit prefix. No reviewer should be assigned yet.\n\n###### Reply\n\n```quote\nThanks for tidying up the commit! Before this is ready for review, please make sure the focus ring (colour and border radius, in both themes) matches the \"Browse more channels\" link, and update the screenshots to be precise per the [visual changes guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Please also use an area prefix like `right_sidebar:` in the commit title, per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html), and make sure the \"View all users\" focus changes belong only to #39540.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0191728
+}

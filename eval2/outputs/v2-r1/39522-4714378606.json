@@ -1,0 +1,11 @@
+{
+ "case": "39522-4714378606",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Restore the accidentally deleted CSS block and comments (diff is now +35/-0, no deletions) |\n| ✅  | Clean, minimal commit history (squashed into one commit with a description) |\n| ⚠️  | Remove the out-of-scope `.buddy-list-user-link` focus block: the diff shrank from +56 to +35, but the author said on 06-15 that they had added it, so the diff needs a quick check |\n| ⚠️  | Precise before/after screenshots: they are in the description, but the dark-theme before (370×60) and after (367×62) differ in size, so they are not the same region |\n| ⚠️  | Style like the left sidebar link (blue ring, matching border radius): the outline color and offset are described, but the border radius is never mentioned |\n| ℹ️  | CI status is not available; the author says all checks pass |\n| ℹ️  | The same author has PR #39540 open on the same file, and was already told to focus on one PR at a time |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the screenshots and the border radius.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit and the diff! Two things are still open: the dark-theme before/after screenshots should cover exactly the same region (see [the guide on precise screenshots](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots)), and the focus ring's border radius should match the \"Browse more channels\" link in the left sidebar.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0520267
+}

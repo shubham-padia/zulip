@@ -1,0 +1,11 @@
+{
+ "case": "39590-5004317162",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author rebased the branch (one push, same size and commit message) and said CI passes. Nothing was added to the PR description, and no screenshots or testing notes were posted.\n\n|     |         |\n| --- | ------- |\n| ❌  | The PR description doesn't link the issue with \"Fixes: #N\". The author only mentions #37647 in a comment. |\n| ❌  | This is a UI change, but there are no before/after screenshots and no description of how it was tested. |\n| ⚠️  | PR #39267 is still open for the same issue and may overlap. Whether #37647 has \"help wanted\" isn't shown in the input. |\n| ℹ️  | The earlier feedback asked for a discussion first. The issue #37647 already exists, so that part is probably covered once it is linked. |\n\n###### Next step\n\n\"not ready\" stays. Check whether #37647 has \"help wanted\" and how this PR relates to #39267 before handing it off.\n\n###### Reply\n\n```quote\nThanks for the rebase, @Shinu-Cherian! Before we can review, please update the PR description to follow the [review process guide](https://zulip.readthedocs.io/en/latest/contributing/review-process.html): add \"Fixes: #37647\", before/after screenshots, and how you tested it. Also please check how this relates to the open PR #39267 for the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011452299999999999
+}

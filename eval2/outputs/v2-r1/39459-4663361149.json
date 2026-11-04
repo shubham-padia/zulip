@@ -1,0 +1,11 @@
+{
+ "case": "39459-4663361149",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Explain how this PR relates to the other open PRs: the description now covers #38251 and says why this approach differs. |\n| ⚠️  | Work through the continuing-unfinished-work guide: the relationship is explained, but this is a single new commit with no sign it builds on, or credits, the #38251 commits. |\n| ℹ️  | No new push since the feedback. The \"Automated tests\" and \"remaining decisions and concerns\" checklist items are unchecked, and no test files are changed. |\n| ℹ️  | #38251 is a \"completion candidate\" assigned to sahil839 and has maintainer feedback on the same three files. CI status is unknown. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to follow the continuing-unfinished-work guide, then add tests.\n\n###### Reply\n\n```quote\nThanks for explaining how this relates to #38251, @xchel-rico. Please work through the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html): build on the commits from #38251 and credit them, or explain why starting fresh is better. Please also add automated tests for the new hash handling.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.043652699999999996
+}

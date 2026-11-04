@@ -1,0 +1,11 @@
+{
+ "case": "39459-4663361149",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Explain how this PR relates to the other open PR (#38251) |\n| ⚠️  | Work through the \"continuing unfinished work\" guide: the description explains the relationship, but the PR is still one new commit with no sign it builds on or credits #38251 (a completion candidate) |\n| ℹ️  | No new push since the feedback, so the code is unchanged |\n| ℹ️  | Self-review checklist still has \"Automated tests verify logic\" and \"Calls out remaining decisions and concerns\" unchecked, and no test files changed |\n| ℹ️  | CI status unknown (check runs not available) |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to finish the unfinished-work guide steps and the self-review checklist.\n\n###### Reply\n\n```quote\nThanks for updating the description, @xchel-rico! Could you also work through the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html) for #38251 (building on its commits and crediting its author where you reuse its work, and addressing sahil839's feedback there)? Please also complete the self-review checklist, including automated tests where appropriate.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0152161
+}

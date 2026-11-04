@@ -1,0 +1,11 @@
+{
+ "case": "39459-4663361149",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nNo new push; the author only updated the PR description to explain how it relates to #38251, which is what the feedback asked for.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description now says this PR covers the same issue as #38251 and how its approach differs. |\n| ✅  | The approach is the smaller one that sahil839 suggested on #38251: the tab-to-URL map is in `hash_util.ts`, and the tab toggler updates the URL. |\n| ✅  | The issue has \"help wanted\" and is assigned to the author. |\n| ⚠️  | The checklist items for automated tests and for remaining concerns are unchecked, and no test files changed. A reviewer may ask for tests. |\n\n**Reviewer:** @sahil839 — he gave the detailed feedback on #38251 and has made the most recent commits to these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign sahil839.\n\n###### Reply\n\n```quote\nThanks for clarifying how this relates to #38251. @sahil839, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.046570299999999995
+}

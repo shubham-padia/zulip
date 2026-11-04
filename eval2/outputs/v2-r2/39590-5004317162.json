@@ -1,0 +1,11 @@
+{
+ "case": "39590-5004317162",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️ | Discuss in an issue first: #37647 exists and the author mentions it in the comment, but the PR description doesn't link it |\n| ❌ | PR template: no \"Fixes: #N\", no testing notes, no before/after screenshots for this UI change, no self-review checklist |\n| ℹ️ | The only new push is a rebase (same +24/-4, same commit), and CI is passing |\n| ℹ️ | The description says the fix came from \"code analysis\", with no sign it was checked in a browser |\n| ℹ️ | Open PR #39267 targets the same issue, and two earlier attempts (#38352, #38370) were closed. The input doesn't show whether #37647 has \"help wanted\", so check it before handing this off |\n\n###### Next step\n\nKeep \"not ready\" and ask for the template fields. If #37647 turns out to lack \"help wanted\" or #39267 is further along, close it instead.\n\n###### Reply\n\n```quote\nThanks for the rebase, @Shinu-Cherian! Please add \"Fixes: #37647\" to the PR description and include before/after screenshots plus how you tested it in the browser (see the [review process guide](https://zulip.readthedocs.io/en/latest/contributing/review-process.html)). Please also confirm how this differs from #39267, which targets the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0119347
+}

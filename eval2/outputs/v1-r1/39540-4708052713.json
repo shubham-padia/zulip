@@ -1,0 +1,11 @@
+{
+ "case": "39540-4708052713",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed twice since the feedback, but the commit messages and the +37/-0 size are unchanged. They then asked @Asteriskkkk for review.\n\n|     |         |\n| --- | ------- |\n| ❌ | The commit history still lists \"Merge branch 'main' into fix-view-all-users-focus\" next to the main commit, so the cleanup asked for was not done. |\n| ℹ️ | The visual fix is approved in the CZO thread and has before/after screenshots for both themes. |\n| ℹ️ | The comment asks @Asteriskkkk to review, but nobody is assigned to the PR. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to rebase onto main to remove the merge commit, then post again to request review.\n\n###### Reply\n\n```quote\nThanks for the update! The history still has a \"Merge branch 'main'\" commit. Please rebase onto main so only the focus-styling commit remains (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)), then post again to request a review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0230203
+}

@@ -1,0 +1,180 @@
+{
+ "case": "39691-5277811900",
+ "cutoff": "2026-08-13T08:16:33Z",
+ "pushes": [
+  [
+   "2026-07-07T11:01:35Z",
+   "fdfab2442a",
+   "ci run"
+  ],
+  [
+   "2026-07-07T21:21:16Z",
+   "a5579d204b",
+   "force push"
+  ],
+  [
+   "2026-07-07T21:21:20Z",
+   "a5579d204b",
+   "ci run"
+  ],
+  [
+   "2026-07-07T22:26:39Z",
+   "9d2987ac58",
+   "force push"
+  ],
+  [
+   "2026-07-07T22:26:42Z",
+   "9d2987ac58",
+   "ci run"
+  ],
+  [
+   "2026-07-09T14:47:58Z",
+   "4c60a3a780",
+   "force push"
+  ],
+  [
+   "2026-07-09T14:48:04Z",
+   "4c60a3a780",
+   "ci run"
+  ],
+  [
+   "2026-07-09T17:33:11Z",
+   "06bf9d24a0",
+   "force push"
+  ],
+  [
+   "2026-07-09T17:33:16Z",
+   "06bf9d24a0",
+   "ci run"
+  ],
+  [
+   "2026-07-14T08:18:58Z",
+   "46918916c1",
+   "force push"
+  ],
+  [
+   "2026-07-14T08:19:04Z",
+   "46918916c1",
+   "ci run"
+  ],
+  [
+   "2026-07-17T12:41:28Z",
+   "4e1d5e7b86",
+   "force push"
+  ],
+  [
+   "2026-07-17T12:41:34Z",
+   "4e1d5e7b86",
+   "ci run"
+  ],
+  [
+   "2026-07-17T13:42:37Z",
+   "4399b97d95",
+   "force push"
+  ],
+  [
+   "2026-07-17T13:42:43Z",
+   "4399b97d95",
+   "ci run"
+  ],
+  [
+   "2026-07-17T15:42:07Z",
+   "707cd8b830",
+   "force push"
+  ],
+  [
+   "2026-07-17T15:42:11Z",
+   "707cd8b830",
+   "ci run"
+  ],
+  [
+   "2026-07-28T12:26:15Z",
+   "c8b8f03c87",
+   "force push"
+  ],
+  [
+   "2026-07-28T12:26:21Z",
+   "c8b8f03c87",
+   "ci run"
+  ],
+  [
+   "2026-08-03T17:55:35Z",
+   "6ad986593d",
+   "force push"
+  ],
+  [
+   "2026-08-03T17:55:41Z",
+   "6ad986593d",
+   "ci run"
+  ],
+  [
+   "2026-08-03T17:58:04Z",
+   "7e1afd9745",
+   "force push"
+  ],
+  [
+   "2026-08-03T17:58:12Z",
+   "7e1afd9745",
+   "ci run"
+  ],
+  [
+   "2026-08-07T16:22:46Z",
+   "74ba0d613c",
+   "force push"
+  ],
+  [
+   "2026-08-07T16:22:51Z",
+   "74ba0d613c",
+   "ci run"
+  ],
+  [
+   "2026-08-14T12:45:13Z",
+   "385819e533",
+   "force push"
+  ],
+  [
+   "2026-08-14T12:45:18Z",
+   "385819e533",
+   "ci run"
+  ],
+  [
+   "2026-09-09T21:10:35Z",
+   "325f79a1ae",
+   "force push"
+  ],
+  [
+   "2026-09-09T21:10:39Z",
+   "325f79a1ae",
+   "ci run"
+  ],
+  [
+   "2026-09-24T15:06:07Z",
+   "c9a89ac064",
+   "force push"
+  ],
+  [
+   "2026-09-24T15:06:13Z",
+   "c9a89ac064",
+   "ci run"
+  ]
+ ],
+ "head_now": "c9a89ac064497e628fdb57c682e93197a6d2a057",
+ "body_edits": 5,
+ "body_edits_after_cutoff": 0,
+ "title_now": "compose_call: Base meeting name on compose state.",
+ "title_at_cutoff": "compose_call: Base meeting name on compose state.",
+ "labels_now": [
+  "size: XL",
+  "integration review"
+ ],
+ "assignees_now": [
+  "karlstolley"
+ ],
+ "head_at_cutoff": "74ba0d613c6822171dfdccef9a0dba2fb311c834",
+ "pr_shape": "from compare main...74ba0d613c",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "karlstolley 2026-08-12T21:04:50Z",
+ "head_at_feedback": "74ba0d613c6822171dfdccef9a0dba2fb311c834",
+ "comments_total": 24,
+ "comments_at_cutoff": 14
+}

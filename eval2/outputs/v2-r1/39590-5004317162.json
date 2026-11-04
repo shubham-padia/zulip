@@ -1,0 +1,11 @@
+{
+ "case": "39590-5004317162",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️ | Discuss in an issue before the PR: the comment mentions #37647, but the PR doesn't link it with \"Fixes: #N\" and there is no discussion with maintainers |\n| ❌ | PR template: no \"Fixes: #N\", no testing notes, no screenshots for this UI change, no self-review checklist |\n| ℹ️ | The only new push is a rebase, with no code change. CI is passing |\n| ℹ️ | Open PR #39267 targets the same issue (#37647). Check whether #37647 has \"help wanted\", as the author has no merged PRs |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link the issue and complete the PR template. Close it if #37647 turns out not to be \"help wanted\" or if #39267 is the one being pursued.\n\n###### Reply\n\n```quote\nThanks for the update, @Shinu-Cherian! Please link the issue in the PR description with \"Fixes: #37647\", and fill in the rest of the PR template: how you tested, before/after screenshots, and the self-review checklist (see the [guide on making PRs reviewable](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html)). Please also check that the issue is labeled \"help wanted\" and look at #39267, which targets the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0207367
+}

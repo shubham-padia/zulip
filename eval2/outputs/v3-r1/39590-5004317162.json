@@ -1,0 +1,11 @@
+{
+ "case": "39590-5004317162",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the PR template isn't filled in, and nothing shows the change was tested**\n\nNew: The author rebased (no change to the code or commit) and says the PR addresses #37647, though the PR doesn't link it. Missing: \"Fixes: #37647\", screenshots and a description of manual testing (the PR says the fix came from \"code analysis\"), and the self-review checklist. Open PR #39267 also targets the same issue, and #37647's \"help wanted\" status isn't shown in the input.\n\n###### Next step\n\n\"not ready\" stays; apoorvapendse (who gave the first feedback) should check whether #37647 has \"help wanted\" and whether #39267 already covers it.\n\n###### Reply\n\n```quote\nThanks for the rebase! Please keep \"not ready\" for now: add \"Fixes: #37647\" and fill in the rest of the PR template, including before/after screenshots and how you tested it in the browser (see the [review process guide](https://zulip.readthedocs.io/en/latest/contributing/review-process.html)). Also note that #39267 is an open PR for the same issue, so please compare with it.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.019321699999999997
+}

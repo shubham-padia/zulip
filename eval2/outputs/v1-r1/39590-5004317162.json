@@ -1,0 +1,11 @@
+{
+ "case": "39590-5004317162",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author rebased onto main (one push, same +24/-4 in one file), and CI passes. They said the PR addresses #37647, but nothing else changed.\n\n|     |         |\n| --- | ------- |\n| ⚠️  | The feedback asked for discussion first. Issue #37647 exists, but the PR doesn't link it with \"Fixes: #37647\", and the input doesn't show whether it has \"help wanted\". |\n| ❌  | The PR template is incomplete. There is no \"Fixes: #N\", no description of how it was tested, no before/after screenshots for this UI change, and no self-review checklist. |\n| ⚠️  | Open PR #39267 (\"channel folder: Improve selector spacing and row alignment\") covers the same issue. Two earlier PRs (#38352, #38370) for it were closed. |\n| ℹ️  | CI passing is not a concern here. |\n\n###### Next step\n\nKeep \"not ready\". Check whether #37647 has \"help wanted\" and how #39267 relates. If the issue isn't \"help wanted\" or #39267 is the active attempt, closing is an option, since the author has no merged PRs.\n\n###### Reply\n\n```quote\nThanks for the rebase, @Shinu-Cherian! Please link the issue with \"Fixes: #37647\" and complete the PR template, including how you tested and before/after screenshots of the dropdowns. Also take a look at #39267, which targets the same issue, and tell us how this PR differs.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0189543
+}
