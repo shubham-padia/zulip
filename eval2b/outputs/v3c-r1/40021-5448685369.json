@@ -1,0 +1,11 @@
+{
+ "case": "40021-5448685369",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots, width, and comparison with other PRs were all addressed**\n\nNew: The author replaced the screenshots with a very long name that breaks the layout (before) and truncates cleanly (after). They raised the width cap from 150px to 15em, and added a comparison with #39049, #39829 and #39768 to the description. Missing: the two follow-up commits should be squashed into the main commit.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign emilysutherlin, who gave the feedback.\n\n###### Reply\n\n```quote\n@emilysutherlin, could you take another look at this? The author has updated the screenshots, the max-width, and the comparison with the other open PRs for this issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.055701099999999996
+}

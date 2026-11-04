@@ -1,0 +1,11 @@
+{
+ "case": "39820-5103626520",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — self-review checklist still has an unchecked item**\n\nNew: The author squashed the history into one commit on current `main`, fixed multi-line text handling after the bot mention, and CI is passing. Missing: The \"Automated tests verify logic where appropriate\" box in the PR description is still unchecked, even though the author says the checklist is complete. There is also no note on how this compares to the open PRs for the same issue (#38098, #39481, #39606).\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm, who gave the feedback, follow up with the author.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit! The self-review checklist in the PR description still has an unchecked item (\"Automated tests verify logic where appropriate\"), so please complete it. Also, since #38098, #39481, and #39606 are open for the same issue, please add a short note on how your approach compares to them.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0718631
+}

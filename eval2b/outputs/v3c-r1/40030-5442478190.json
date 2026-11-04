@@ -1,0 +1,11 @@
+{
+ "case": "40030-5442478190",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — squashed to one commit, CI passes, and the fix has a test**\n\nNew: The author pushed 5 times and squashed everything into one commit, and the extra \"fix patch reference\" commit is gone. The change adds a test for the malformed-data case, and CI passes. No specific feedback was given beyond the label. Missing: the description's \"Fixes:\" line has no issue number (a small leftover).\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Niloth P, who changed these files recently.\n\n###### Reply\n\n```quote\n@Niloth-P, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0174411
+}

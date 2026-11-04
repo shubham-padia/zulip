@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the description and commits still don't meet the guide**\n\nNew: The author joined the CZO thread, and Daniel K said the PR extends the filters settled in #24200, so the design question is cleared. There is no new push, and the description still reads as before. Missing: a cleaned-up description (the `Fixes #<36878>` line is malformed, the screenshots have no explanation, and \"Fixes:\" at the top is empty), and the two \"ci: Retry/Trigger fresh CI run\" commits folded away.\n\n###### Next step\n\nKeep \"not ready\" and don't add \"maintainer review\" yet; karlstolley, who gave the feedback, can confirm once the description and commits are fixed.\n\n###### Reply\n\n```quote\nThanks for joining the CZO discussion, and good to hear Daniel K sees this as an extension of #24200. Before this goes to review, please fix the PR description following the [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) (a proper `Fixes: #36878` line, screenshots that show the before and after), and squash the CI-retry commits into the main commit per [commit discipline](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.038565100000000005
+}

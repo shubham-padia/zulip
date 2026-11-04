@@ -1,0 +1,11 @@
+{
+ "case": "39722-4961693879",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: commit messages and screenshots unchanged**\n\nNew: The author pushed once and said the changes are made. Commit messages are unchanged, and the PR description still has \"Fixes part of: #16094\" and the same wide screenshots. Missing: the commit message fixes (remove \"Fixes a part of\", add \"Fixes: #16094\" after the description in the last commit) and precise before/after screenshots.\n\n###### Next step\n\nKeep \"not ready\" and leave the PR unassigned until the author fixes these.\n\n###### Reply\n\n```quote\nThanks for the update! The commit messages still look unchanged (please remove \"Fixes a part of\" and put \"Fixes: #16094\" after the description in the last commit), and the screenshots still show a lot of unchanged UI. Please crop them to just the changed part, following the [precise before/after screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.04963
+}

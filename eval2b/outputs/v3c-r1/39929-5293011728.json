@@ -1,0 +1,11 @@
+{
+ "case": "39929-5293011728",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — commit cleanup the feedback asked for is done**\n\nNew: The history is now one commit with a Zulip-style summary line, and the merge commit is gone. Missing: The description's \"How changes were tested\" explains the change but not how it was tested, and there is no screenshot of the now-editable email field.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Sahil Batra, who has changed these settings files most often.\n\n###### Reply\n\n```quote\nNo reply needed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0287611
+}

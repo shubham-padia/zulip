@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the before/after screenshots were replaced with a same-size pair**\n\nNew: The author swapped in a new Before/After pair, both 1861×102, so they can be compared directly. There was no new code push, and the feedback only asked for screenshots. Missing: no screenshot shows pills wrapping, though the description claims vertical centering is preserved there.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots! @laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0556471
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39590-5004317162",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: no issue link, no screenshots or testing, and an open PR for the same issue**\n\nNew: The author rebased onto main (same +24/-4 diff, same commit) and says the PR addresses #37647. Missing: the description has no \"Fixes: #37647\", no testing notes, and no before/after screenshots for this UI change. The author also hasn't said how this compares to open PR #39267, which looks like it targets the same issue.\n\n###### Next step\n\nKeep \"not ready\" and have the author fix the PR description and explain how this compares to #39267.\n\n###### Reply\n\n```quote\nThanks for the rebase, @Shinu-Cherian! Please update the description to follow the PR template (add \"Fixes: #37647\", how you tested, and before/after screenshots), and explain how this differs from the open PR #39267 for the same issue. See the [review process guide](https://zulip.readthedocs.io/en/latest/contributing/review-process.html) for what we look for.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.032314
+}

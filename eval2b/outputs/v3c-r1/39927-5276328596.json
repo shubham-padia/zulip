@@ -1,0 +1,11 @@
+{
+ "case": "39927-5276328596",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — commit style fixed and spacing change pushed**\n\nNew: The author renamed the commit to \"compose: Migrate stream missing compose banner.\", pushed a CSS change for the banner spacing, and replaced the After screenshot. Missing: the Before and After screenshots are different sizes, so they don't compare exactly.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley, who gave the feedback.\n\n###### Reply\n\n```quote\n@karlstolley, the commit message and banner spacing are updated. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0299851
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39819-5108435113",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots not redone, and the PR's own notes show a case still broken**\n\nNew: The author says the PR is updated, but there is no new push since the feedback, and the description still has the same long list of before/after images with no clear explanation of what each one shows. Missing: precise before/after screenshots as the guide describes, and a fix for the \"collapse, then mute\" case, which the PR's own test notes say still stays hidden after clicking \"show more\".\n\n###### Next step\n\nKeep \"not ready\" and have the author fix that case and redo the screenshots; no reviewer yet.\n\n###### Reply\n\n```quote\nThanks for the update! I don't see a new push yet, and the screenshots still don't clearly show one problem and its fix per scenario, as described in [the guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Your test notes also say that collapsing a message and then muting the user still doesn't work after clicking \"show more\", so please fix that and then re-request review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0475951
+}

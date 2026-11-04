@@ -1,0 +1,11 @@
+{
+ "case": "39728-5012922258",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — commits aren't cleaned up and the checklist isn't the template's**\n\nNew: The author added a regression test case to the Markdown fixtures file. Missing: the history still has \"Fixes #17419\" and \"fixed linting error to pass CI\" as separate commits, with the test in its own commit (which also names the wrong issue, 17418). The self-review checklist is a custom list, not the one from the PR template.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm (who gave the feedback) point the author to the commit discipline guide.\n\n###### Reply\n\n```quote\nThanks for adding the test! Please squash the fix, lint fix, and test into a single commit with a message that follows our [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html), and replace your custom checklist with the self-review checklist from the PR template. It's also worth moving the before/after screenshots into the PR description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.071948
+}

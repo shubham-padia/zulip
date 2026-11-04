@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the PR template is only partly filled in, and the overlap with other open PRs isn't addressed**\n\nNew: The author made two small pushes (+1 line) and says the fixture tests are added, but those tests were already in the PR when it was labeled. Missing: the AI use policy box is still unchecked, and nothing explains how this differs from #39598 (already in maintainer review), #39280, or #39881 (tab handling in code blocks).\n\n###### Next step\n\nKeep \"not ready\" and leave it unassigned until the author completes the checklist and compares this with the other open PRs.\n\n###### Reply\n\n```quote\nThanks for the update! Please finish the self-review checklist (including the AI use policy item), and add a short note on how this approach compares to #39598, which is already in review, and to #39881, which also changes tab handling in code blocks.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.043967099999999995
+}

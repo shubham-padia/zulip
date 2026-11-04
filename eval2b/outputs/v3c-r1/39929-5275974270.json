@@ -1,0 +1,11 @@
+{
+ "case": "39929-5275974270",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — commit history is now a single clean commit**\n\nNew: Squashed the earlier commits, including the merge commit and the lint-fix commit, into one commit titled \"settings: Let admins change user email addresses.\" The code is unchanged (+131/-31 in the same 13 files). Missing: a screenshot of the now-editable email field in the Manage User panel, a small leftover that shouldn't hold it back.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Sahil Batra, who has made the most recent commits to these settings files.\n\n###### Reply\n\n```quote\nNo reply needed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0275291
+}

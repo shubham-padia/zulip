@@ -1,0 +1,11 @@
+{
+ "case": "40040-6192384462",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — Lauryn's question in the chat thread is still unanswered**\n\nNew: The author linked the chat discussion in the description and squashed the work into one commit with a reworded message. Missing: no reply to Lauryn's 2026-10-08 question in the chat thread about how the stale-preview problem was found and whether it happens in practice, so it's unclear the change is wanted.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet; @laurynmm can decide once the author answers in the thread.\n\n###### Reply\n\n```quote\nThanks for linking the discussion and cleaning up the commit. Before we review, please answer Lauryn's question in the [chat thread](https://chat.zulip.org/#narrow/channel/3-backend/topic/cache.3A.20Open.20Graph.20description.20key.20content.20hashing): how did you find this, and have you seen it cause stale previews in practice? Please also fill in the `Fixes:` line, or say that there's no issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.025431099999999998
+}

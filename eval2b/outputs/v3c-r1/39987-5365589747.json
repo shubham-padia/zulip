@@ -1,0 +1,11 @@
+{
+ "case": "39987-5365589747",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the avatar fix is pushed, the commits are squashed, and review was requested**\n\nNew: The author added the missing bot avatar file, which they say was the cause of the test failure, and squashed everything into one properly named commit. They then asked for review as requested. Missing: I can't see CI results in the input, so confirm that it's green.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign apoorvapendse, who gave the feedback.\n\n###### Reply\n\n```quote\n@apoorvapendse, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0168231
+}
