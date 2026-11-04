@@ -1,0 +1,6 @@
+{
+ "case": "39767-5275856339",
+ "answer": "no",
+ "text": "no\nThe author only asks for CI to be re-triggered after a transient failure, and doesn't say they've squashed commits or fixed the message as the maintainer requested, so it isn't a signal that the PR is ready for re-review.",
+ "cost_usd": 0.000858
+}
