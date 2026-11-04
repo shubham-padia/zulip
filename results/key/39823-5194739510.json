@@ -1,0 +1,6 @@
+{
+ "case": "39823-5194739510",
+ "answer": "no",
+ "text": "no\nThe author explains why they didn't rebase the earlier PR and asks whether they can keep working without restricting reordering to the creator, but never says the changes are done or that the PR is ready for review.",
+ "cost_usd": 0.01142
+}
