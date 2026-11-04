@@ -1,0 +1,11 @@
+{
+ "case": "39894-5278594007",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — before/after screenshots now in the description**\n\nNew: The author added light and dark before/after screenshots to the description, plus a pixel-diff note. The note says light theme is unchanged and dark theme differs only by a 1px box-shadow blur change (5px to 6px) that the author calls out. There was no new push, so the code is the same.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who asked for the screenshots and can decide whether the 1px dark-theme blur change is acceptable.\n\n###### Reply\n\n```quote\n@laurynmm, the precise before/after screenshots are now in the PR description, including the small dark-theme shadow difference. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0509937
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40041-5479840283",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author started a discussion thread on chat.zulip.org, and the link is already in the PR description. There was no new push.\n\n|     |         |\n| --- | ------- |\n| ✅  | The discussion link is now in the PR description, which was the ask. |\n| ⚠️  | The thread has only the author's own post. No maintainer has said this change is wanted. |\n| ❌  | PR #40042 by the same author makes the same kind of change (\"more bare .save() calls\"). The two should probably be combined or one closed. |\n| ❌  | \"Fixes:\" is empty, and \"How changes were tested\" only says \"Verified no test failures\". |\n\n###### Next step\n\nKeep \"not ready\" until a maintainer replies in the discussion thread, and ask the author to sort out the overlap with #40042.\n\n###### Reply\n\n```quote\nThanks for starting the discussion! Please wait for a maintainer to weigh in there before we review this. In the meantime, #40042 looks like the same kind of change, so please combine the two or close one, and fill in the \"Fixes:\" line and a more specific testing description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0205743
+}

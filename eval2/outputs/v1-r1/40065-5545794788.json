@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nNo new code was pushed. The author added the longer-topic and 20px font-size screenshot pairs to the PR description and explained them in a comment.\n\n|     |         |\n| --- | ------- |\n| ✅  | Longer topics requested: a long plain-text topic, a long mixed-emoji topic and an emoji-heavy topic now have before/after pairs |\n| ✅  | Font size question answered: a 20px app font pair is included, with spacing going from 5.14px to 7.14px |\n| ✅  | Earlier feedback is still satisfied: single commit, CI passing, linked issue #38264 has \"help wanted\" and is assigned to the author |\n| ℹ️  | The author says the clipping doesn't reproduce at DPR 1, so the screenshots show added spacing rather than a visible bug fix. The reviewer will need to judge that |\n\n**Reviewer:** @laurynmm — gave both rounds of feedback and is already following this PR\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The longer-topic and font-size screenshots you asked for are now in the PR description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0551423
+}

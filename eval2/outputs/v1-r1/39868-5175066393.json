@@ -1,0 +1,11 @@
+{
+ "case": "39868-5175066393",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed twice (+3 lines) and says the failing tests are fixed. The label came with no written feedback, and the commit list is unchanged.\n\n|     |         |\n| --- | ------- |\n| ❌ | \"Fix click behavior on text and icons\" fixes a bug introduced by the first commit, so it should be squashed into it per commit discipline. |\n| ⚠️ | CI status isn't available, so \"fixed the failing tests\" can't be confirmed. |\n| ❌ | Self-review items for end-to-end testing of the buttons and corner cases are unchecked, and the click bug shows this testing was needed. |\n| ℹ️ | The design thread (Karl Stolley) suggests flexbox/grid with the icon and text as separate elements. It's unclear whether this PR follows that. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to squash the fix commit and finish testing; no reviewer assignment yet.\n\n###### Reply\n\n```quote\nThanks for the update! Please squash the \"Fix click behavior\" commit into the commit it fixes (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)). Also finish the unchecked testing items in the self-review checklist, and confirm CI is green after the push.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0363563
+}

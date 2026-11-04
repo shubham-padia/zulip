@@ -1,0 +1,11 @@
+{
+ "case": "40048-5481098127",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — the linked issue isn't \"help wanted\" and the author has no merged PRs**\n\nNew: The author added the docs screenshot to the description and started an #api design topic, with no new push. Missing: Issue #20229 still has no \"help wanted\" label (zulipbot warned about this), and the API design discussion has no outcome yet.\n\n###### Next step\n\nClose the PR, since the author has no merged PRs and the issue isn't open for contributors: `gh pr close 40048`\n\n###### Reply\n\n```quote\nThanks for the updates, but we're closing this PR because #20229 isn't labeled \"help wanted\", and contributors can only work on issues with that label. Please see our guide on picking up issues for how to choose one.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0241117
+}

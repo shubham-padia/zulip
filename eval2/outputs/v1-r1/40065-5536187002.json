@@ -1,0 +1,11 @@
+{
+ "case": "40065-5536187002",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author squashed the PR into one commit and rewrote the screenshot section in the description. The new section describes back-to-back captures in the same tab with identical scroll state, plus full-viewport images.\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit history cleaned up: one commit, no content change (+7/-2 in 1 file, same as before). |\n| ✅  | Before/after screenshots retaken with a precise method (same tab, viewport, narrow and scroll state), and full-size captures are linked. |\n| ⚠️  | The author says the clipping doesn't reproduce at DPR 1, so the screenshots only show the added spacing, not a clipped emoji becoming fully visible. The reviewer should judge whether that's enough. |\n\n**Reviewer:** laurynmm — gave the feedback on commits and screenshots, and can check that both asks were met.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0518203
+}

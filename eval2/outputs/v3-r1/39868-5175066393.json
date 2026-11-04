@@ -1,0 +1,11 @@
+{
+ "case": "39868-5175066393",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — test fixes pushed, but the PR description still shows incomplete testing**\n\nNew: The author pushed two updates (+3 lines) and says the failing tests are fixed, though CI status isn't visible here. Missing: the self-review checklist still has end-to-end functionality, corner cases, and strings unchecked, and the author hasn't confirmed CI is now green.\n\n###### Next step\n\nKeep \"not ready\" and leave it with laurynmm, who added the label, until the checklist is completed.\n\n###### Reply\n\n```quote\nThanks for the update! Please finish the testing items in the self-review checklist (buttons end-to-end, corner cases) and confirm CI is passing, per the [reviewable PRs guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html), then ask for another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0342637
+}

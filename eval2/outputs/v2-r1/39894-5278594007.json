@@ -1,0 +1,11 @@
+{
+ "case": "39894-5278594007",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots in light and dark theme are now in the description, with a pixel diff of the captures |\n| ℹ️  | The dark-theme box-shadow blur changes from 5px to 6px. The author flags this in the description, but the issue says minor adjustments like this should be discussed in #design, and no such discussion is linked |\n| ℹ️  | CI passed, there are no conflicts, and the screenshots only cover the emoji picker popover |\n\n**Reviewer:** @laurynmm — gave the screenshot feedback and has reviewed other dark-theme cleanup PRs for this issue.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who can decide whether the 5px→6px change needs a #design discussion.\n\n###### Reply\n\n```quote\n@laurynmm, the before/after screenshots are now in the description. Could you take another look? The dark-theme shadow blur changes slightly (5px → 6px), so please say whether that needs a #design discussion.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0524887
+}

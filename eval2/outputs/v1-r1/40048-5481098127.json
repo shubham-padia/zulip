@@ -1,0 +1,11 @@
+{
+ "case": "40048-5481098127",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close**\n\nThe author updated the PR description with a rendered API docs screenshot and said they started a topic in #api design. There was no new push, so the code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ❌  | The linked issue #20229 doesn't have the \"help wanted\" label, and zulipbot already warned the author about this. The author has no merged PRs, and this isn't continuing a \"completion candidate\" PR. |\n| ✅  | The rendered API docs screenshot is now in the description. |\n| ℹ️  | The #api design discussion was only just started. Nothing in the input shows a decision on the API change. |\n\n###### Next step\n\nClose the PR because the issue isn't \"help wanted\": `gh pr close 40048 --comment \"Closing this PR because #20229 is not labeled 'help wanted', and contributors can only work on issues with that label.\"`\n\n###### Reply\n\n```quote\nThanks for the PR, but we're closing it because #20229 isn't labeled \"help wanted\", and we only accept PRs for issues with that label.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.024994299999999997
+}

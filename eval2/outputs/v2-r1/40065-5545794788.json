@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Clean up commit history: now a single commit with a clear message |\n| ✅  | Precise before/after screenshots: back-to-back pairs from the same tab are in the description |\n| ✅  | Screenshots of longer topic names, with and without emoji: in the description |\n| ✅  | Test with different app font sizes: 20px pair and notes are in the description |\n| ℹ️  | The author says the clipping itself doesn't reproduce at DPR 1, so the screenshots show the added spacing, not a fixed cut-off emoji. |\n\n**Reviewer:** @laurynmm — gave the feedback and is already following the PR; Karl Stolley is a second option, since he suggested the approach and has changed this file.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\nThanks for the extra screenshots and font-size testing! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0589347
+}

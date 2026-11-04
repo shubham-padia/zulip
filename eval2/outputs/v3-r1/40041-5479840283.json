@@ -1,0 +1,11 @@
+{
+ "case": "40041-5479840283",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — linked thread is only the author's own post, with no maintainer agreement**\n\nNew: The author linked a chat.zulip.org thread, but they started it themselves and no one has replied. There was no new push. Missing: A maintainer agreeing the change is wanted, and a filled-in PR description (the \"Fixes:\" line is empty and testing is just \"Verified no test failures\").\n\n###### Next step\n\n\"not ready\" stays; no reviewer needed until someone responds in the thread.\n\n###### Reply\n\n```quote\nThanks for starting the thread! Please wait for a maintainer to weigh in there on whether this approach is wanted, and meanwhile update the PR description with how you tested (see the [PR guidelines](https://zulip.readthedocs.io/en/latest/contributing/pull-requests.html)).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0185117
+}

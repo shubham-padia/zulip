@@ -1,0 +1,11 @@
+{
+ "case": "40065-5536187002",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Clean up commit history: now a single commit, pushed after the feedback |\n| ✅  | Precise before/after screenshots: retaken back-to-back in the same tab with the same scroll state, and now in the description |\n| ℹ️  | CI passed. The screenshots are at DPR 1, where the clipping doesn't reproduce, so they show only the added spacing. The author says so in the description. |\n\n**Reviewer:** @laurynmm — gave the feedback and was pinged by the author for another look\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.050682700000000004
+}

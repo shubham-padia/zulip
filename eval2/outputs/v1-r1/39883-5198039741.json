@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed twice (+1 line, same files, same commit message) and says tests and linting pass and that fixture tests were added. The fixture file was already part of the PR when it was given feedback.\n\n|     |         |\n| --- | ------- |\n| ❌  | The \"Followed the AI use policy\" checkbox is still unchecked, so it's unclear whether the author understands and tested the change. |\n| ❌  | The self-review checklist is mostly incomplete, and the description doesn't say how the change was tested beyond the fixtures. |\n| ⚠️  | \"Tests passing\" can't be confirmed, because no CI results are available. |\n| ⚠️  | PR #39598 (in maintainer review) and PR #39280 (open) already try to fix the same issue. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to finish the checklist and AI policy item. A maintainer may also want to decide how this relates to #39598.\n\n###### Reply\n\n```quote\nThanks for the update! Please go through the self-review checklist again, including the AI use policy item, and describe how you tested this (including manual testing). Also note that #39598 is already in maintainer review for the same issue, so please explain how your approach differs.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0395023
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | PR description filled in: summary, \"Fixes: #38436\", and the fixture tests it adds |\n| ⚠️  | Self-review checklist is there but incomplete: the AI use policy box and \"Calls out remaining decisions and concerns\" are unchecked, and no manual testing is described |\n| ℹ️  | CI status is unknown. The author says tests and linting pass, but nothing confirms it |\n| ℹ️  | Other open PRs target the same issue: #39598 (reported as in maintainer review), #39280 and #39881 (tabs in fenced code blocks). Someone should decide how they relate |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to finish the self-review checklist, including the AI policy item. Someone should also check #39598 before spending reviewer time here.\n\n###### Reply\n\n```quote\nThanks for the update! Please finish the self-review checklist in the PR description, including the AI use policy item, and say how you tested this manually. The [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) explains what each item means.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0412247
+}

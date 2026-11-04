@@ -1,0 +1,11 @@
+{
+ "case": "40041-5479840283",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Link the issue or discussion: the CZO thread is in the PR description and in the author's comment |\n| ℹ️  | The CZO thread has only the author's own post so far, with no maintainer reply on the approach |\n| ℹ️  | The same author has PR #40042, \"Add update_fields to more bare .save() calls\", which may overlap with this one |\n| ℹ️  | CI status is unknown (check runs aren't available) |\n\n**Reviewer:** @laurynmm — gave the feedback and already knows the context.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0241967
+}

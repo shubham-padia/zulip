@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the guide's steps are mostly not done yet**\n\nNew: Two small pushes (+1 line) and a comment saying tests and linting pass; the commit message is unchanged. Missing: the self-review checklist still has the AI use policy box and \"calls out remaining decisions\" unchecked, and the description has no manual testing notes or before/after examples of the rendering. The PR also doesn't mention #39598, which is already in maintainer review for the same issue and touches the same two files, and #39881, which overlaps on code block tabs.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to complete the PR template and explain how this relates to #39598 and #39881.\n\n###### Reply\n\n```quote\nThanks for the update! Please finish the self-review checklist (including the AI use policy item), describe how you tested this by hand with before/after examples, and say how it relates to #39598 and #39881, following the [guide on submitting a PR](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0381297
+}

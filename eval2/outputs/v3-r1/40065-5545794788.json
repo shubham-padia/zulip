@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the screenshots and font-size testing laurynmm asked for are now in the PR description**\n\nNew: The author added before/after screenshots of long topic names, with and without emoji, and a set at the 20px app font size. No new push was needed, since the feedback asked only for screenshots and testing. The PR description says the clipping doesn't show at the author's setup, so reviewers will need to judge the 2px change from the images alone.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, the author has added the long-topic and larger-font screenshots you asked for. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0536397
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39868-5175066393",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️ | Failing tests: there were 2 new pushes and the author says they're fixed, but CI status isn't visible, so please check it before handing off |\n| ⚠️ | Self-review checklist: several testing boxes are still unchecked (strings and tooltips, end-to-end button behavior, corner cases) |\n| ℹ️ | The \"not ready\" label came with no written feedback, so the failing tests are the only request we can identify |\n| ℹ️ | In the CZO design thread, Karl Stolley suggested flexbox/grid with the icon and text as separate DOM elements. It isn't clear from the input whether this PR does that. |\n| ℹ️ | Issue #38844 is \"help wanted\" and assigned to this author. Another PR for it, #39694, is still open. |\n\n###### Next step\n\nKeep \"not ready\" until CI is confirmed green and the checklist is completed; no labels or assignee change yet.\n\n###### Reply\n\n```quote\nThanks for the update! Could you confirm that CI is passing now, and finish the testing items in the self-review checklist (see the [reviewable PRs guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html))? Also take a look at Karl's layout suggestion in the [#design thread](https://chat.zulip.org/#narrow/channel/101-design/topic/Style.20of.20.22show.20more.22.2F.22show.20less.22.20buttons.20on.20long.20messages).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0389687
+}
