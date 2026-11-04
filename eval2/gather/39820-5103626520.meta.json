@@ -1,0 +1,48 @@
+{
+ "case": "39820-5103626520",
+ "cutoff": "2026-07-28T11:37:16Z",
+ "pushes": [
+  [
+   "2026-07-25T06:49:03Z",
+   "25465d47be",
+   "ci run"
+  ],
+  [
+   "2026-07-27T19:41:22Z",
+   "861995c1eb",
+   "ci run"
+  ],
+  [
+   "2026-07-27T19:48:03Z",
+   "2feadd0d13",
+   "ci run"
+  ],
+  [
+   "2026-07-28T11:35:31Z",
+   "770c71d3aa",
+   "force push"
+  ],
+  [
+   "2026-07-28T11:35:35Z",
+   "770c71d3aa",
+   "ci run"
+  ]
+ ],
+ "head_now": "770c71d3aa0df92860c8d539b3d726993efc8672",
+ "body_edits": 3,
+ "body_edits_after_cutoff": 1,
+ "title_now": "outgoing_webhooks: Parse command and text for Slack webhooks.",
+ "title_at_cutoff": "outgoing_webhooks: Parse command and text for Slack webhooks.",
+ "labels_now": [
+  "size: M",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "770c71d3aa0df92860c8d539b3d726993efc8672",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-07-28T11:08:35Z",
+ "head_at_feedback": "2feadd0d13d460c6e06899bbee004a4a6b124e35",
+ "comments_total": 4,
+ "comments_at_cutoff": 3
+}

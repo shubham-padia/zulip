@@ -1,0 +1,51 @@
+{
+ "case": "39785-5037857009",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the triager's screenshot request with an image, so the triager needs to check whether that image really meets the ask, and no maintainer is assigned to see it on GitHub; the PR itself hasn't changed enough to need a new card.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied asking how the screenshot was made, said it looked AI-generated rather than taken in the development environment, and pointed the author to the AI use policy, so the PR stayed \"not ready\".",
+  "changed": [
+   "The author posted one before/after image of the emoji picker arrow in dark mode in a comment, with an explanation of the color values.",
+   "No code was pushed since the feedback; the head commit is unchanged."
+  ],
+  "still_missing": [
+   "There is no clear sign the image is a real screenshot taken in the Zulip development environment; it is a single 'demo' image hosted on a pr-assets branch.",
+   "The image only covers the variable color change and does not show the newly added right-placement arrow override in popovers.css.",
+   "The PR does not link open issue #38931 (emoji and global time popover arrows should match the background), which covers the same problem."
+  ],
+  "reply_ask": "Ask the author how the image was made, ask for real before/after screenshots taken in the Zulip development environment (point to the AI use policy), and suggest linking issue #38931.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Recommends keeping \"not ready\" and giving more feedback rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Questions whether the posted image is a genuine screenshot from the Zulip development environment rather than a generated or mocked-up demo, and asks for real screenshots.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says no new code was pushed since the feedback; the author only added a comment with an image.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Points out the PR does not link open issue #38931, which covers matching popover arrows to the background.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the triager's screenshot request with an image, so the triager needs to check whether that image really meets the ask, and no maintainer is assigned to see it on GitHub; the PR itself hasn't changed enough to need a new card.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied asking how the screenshot was made, said it looked AI-generated rather than taken in the development environment, and pointed the author to the AI use policy, so the PR stayed \\\"not ready\\\".\",\n \"changed\": [\"The author posted one before/after image of the emoji picker arrow in dark mode in a comment, with an explanation of the color values.\", \"No code was pushed since the feedback; the head commit is unchanged.\"],\n \"still_missing\": [\"There is no clear sign the image is a real screenshot taken in the Zulip development environment; it is a single 'demo' image hosted on a pr-assets branch.\", \"The image only covers the variable color change and does not show the newly added right-placement arrow override in popovers.css.\", \"The PR does not link open issue #38931 (emoji and global time popover arrows should match the background), which covers the same problem.\"],\n \"reply_ask\": \"Ask the author how the image was made, ask for real before/after screenshots taken in the Zulip development environment (point to the AI use policy), and suggest linking issue #38931.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Recommends keeping \\\"not ready\\\" and giving more feedback rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Questions whether the posted image is a genuine screenshot from the Zulip development environment rather than a generated or mocked-up demo, and asks for real screenshots.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says no new code was pushed since the feedback; the author only added a comment with an image.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Points out the PR does not link open issue #38931, which covers matching popover arrows to the background.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.085816
+}

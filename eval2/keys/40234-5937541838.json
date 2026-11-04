@@ -1,0 +1,58 @@
+{
+ "case": "40234-5937541838",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered all three asks without a new push and no maintainer is assigned yet, so a short note helps the triager decide whether to hand the PR off; nothing changed enough to need a new card.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "laurynmm removed \"not ready\", added \"maintainer review\", \"area: integrations (incoming webhooks)\" and \"priority: low\", and assigned Niloth-p, asking only for the Atlassian documentation link to be added to the description.",
+  "changed": [
+   "The PR description now says \"Part of #16189\" instead of closing the issue.",
+   "The description now has a \"Fixture generation details\" section saying the fixture was built from Atlassian's Jira Cloud webhook API spec and existing Jira fixture schemas.",
+   "A screenshot of the notification, generated in the dev environment with send_webhook_fixture_message, was added to the description."
+  ],
+  "still_missing": [
+   "The fixture was built by hand from Atlassian's documentation, not captured from a real Jira instance as the fixture guidelines ask.",
+   "The description does not link the Atlassian documentation that the fixture was built from.",
+   "The author says the commit message was updated, but there was no new push after the feedback, so that cannot be confirmed from the head commit."
+  ],
+  "reply_ask": "Thank the author, ask them to add a link to the Atlassian documentation they used for the fixture (or to capture a real payload if they can), and say the PR is going to a maintainer for review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author addressed the three asks: the issue is now referenced as \"Part of #16189\", fixture generation details were added, and a dev-environment screenshot was added.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Flags that the fixture was constructed from Atlassian's documentation rather than captured from a real Jira instance, which matters because Niloth-p has said that LLM-constructed fixtures are not accepted (on #39998).",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends handing off: remove \"not ready\", add \"maintainer review\", and assign a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Names Niloth-p as the reviewer, since they are the main recent contributor to the Jira webhook files.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that the description does not yet link the Atlassian documentation the fixture is based on.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered all three asks without a new push and no maintainer is assigned yet, so a short note helps the triager decide whether to hand the PR off; nothing changed enough to need a new card.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\", \\\"area: integrations (incoming webhooks)\\\" and \\\"priority: low\\\", and assigned Niloth-p, asking only for the Atlassian documentation link to be added to the description.\",\n \"changed\": [\n  \"The PR description now says \\\"Part of #16189\\\" instead of closing the issue.\",\n  \"The description now has a \\\"Fixture generation details\\\" section saying the fixture was built from Atlassian's Jira Cloud webhook API spec and existing Jira fixture schemas.\",\n  \"A screenshot of the notification, generated in the dev environment with send_webhook_fixture_message, was added to the description.\"\n ],\n \"still_missing\": [\n  \"The fixture was built by hand from Atlassian's documentation, not captured from a real Jira instance as the fixture guidelines ask.\",\n  \"The description does not link the Atlassian documentation that the fixture was built from.\",\n  \"The author says the commit message was updated, but there was no new push after the feedback, so that cannot be confirmed from the head commit.\"\n ],\n \"reply_ask\": \"Thank the author, ask them to add a link to the Atlassian documentation they used for the fixture (or to capture a real payload if they can), and say the PR is going to a maintainer for review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author addressed the three asks: the issue is now referenced as \\\"Part of #16189\\\", fixture generation details were added, and a dev-environment screenshot was added.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Flags that the fixture was constructed from Atlassian's documentation rather than captured from a real Jira instance, which matters because Niloth-p has said that LLM-constructed fixtures are not accepted (on #39998).\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends handing off: remove \\\"not ready\\\", add \\\"maintainer review\\\", and assign a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Names Niloth-p as the reviewer, since they are the main recent contributor to the Jira webhook files.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes that the description does not yet link the Atlassian documentation the fixture is based on.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.144964
+}

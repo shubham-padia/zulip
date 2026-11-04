@@ -1,0 +1,67 @@
+{
+ "case": "40201-6155498168",
+ "cutoff": "2026-10-13T21:23:53Z",
+ "pushes": [
+  [
+   "2026-09-24T18:00:28Z",
+   "8d5220caac",
+   "ci run"
+  ],
+  [
+   "2026-09-24T18:37:28Z",
+   "9c29860254",
+   "force push"
+  ],
+  [
+   "2026-09-24T18:37:33Z",
+   "9c29860254",
+   "ci run"
+  ],
+  [
+   "2026-10-06T18:02:31Z",
+   "44e5d5c112",
+   "force push"
+  ],
+  [
+   "2026-10-06T18:02:38Z",
+   "44e5d5c112",
+   "ci run"
+  ],
+  [
+   "2026-10-06T18:26:22Z",
+   "2ec894fd9e",
+   "force push"
+  ],
+  [
+   "2026-10-06T18:26:26Z",
+   "2ec894fd9e",
+   "ci run"
+  ],
+  [
+   "2026-10-07T17:34:13Z",
+   "e852f6fc76",
+   "force push"
+  ],
+  [
+   "2026-10-07T17:34:20Z",
+   "e852f6fc76",
+   "ci run"
+  ]
+ ],
+ "head_now": "e852f6fc76d99ed137d18640cc1d07e8e2b4bb50",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "slack_incoming: Add support for message_changed events.",
+ "title_at_cutoff": "slack_incoming: Add support for message_changed events.",
+ "labels_now": [
+  "size: L"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "e852f6fc76d99ed137d18640cc1d07e8e2b4bb50",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-09-30T11:36:45Z",
+ "head_at_feedback": "9c2986025402eba573c46b7b34b37866672f9206",
+ "comments_total": 4,
+ "comments_at_cutoff": 4
+}

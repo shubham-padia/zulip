@@ -1,0 +1,59 @@
+{
+ "case": "40177-5954127181",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the triager's only ask and asked for 'not ready' to be removed, so a triager needs to see this; the code and approach did not change, so a new card is not needed.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-10-05 laurynmm removed 'not ready', added 'maintainer review' and 'priority: low', and assigned prakhar1144, who had reviewed #37289.",
+  "changed": [
+   "The author confirmed the PR continues #37289 and added a 'Prior work and relationship to #37289' section to the description.",
+   "The description now credits CerealNotFound through Co-authored-by in the commit.",
+   "The author left a cross-reference comment on #37289 pointing to this PR.",
+   "No code was pushed after the feedback; the head commit is unchanged."
+  ],
+  "still_missing": [
+   "There is no dark-theme screenshot, which prakhar1144 asked for on #37289 and the author's plan promised.",
+   "There is no 'before' screenshot; the description shows only one after-state preview.",
+   "The cutoff facts don't show the code comment about color mixing that prakhar1144 asked for on #37289."
+  ],
+  "reply_ask": "Thank the author for documenting the prior work and crediting it, and say the PR is moving to maintainer review with prakhar1144, noting the issue is not a release priority.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author did what laurynmm asked by adding a prior-work section, Co-authored-by credit and a cross-reference on #37289, with no new code push.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends handing off: remove 'not ready' and add 'maintainer review'.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Names prakhar1144 as the reviewer because he reviewed #37289 and changed these files most often.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Points out that #37289 is still open and prakhar1144 said on 2026-09-04 he planned to finish it himself, so the two PRs overlap and one should be superseded.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Points out that the dark-theme screenshot asked for on #37289 is still missing from this PR.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the triager's only ask and asked for 'not ready' to be removed, so a triager needs to see this; the code and approach did not change, so a new card is not needed.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-10-05 laurynmm removed 'not ready', added 'maintainer review' and 'priority: low', and assigned prakhar1144, who had reviewed #37289.\",\n \"changed\": [\n  \"The author confirmed the PR continues #37289 and added a 'Prior work and relationship to #37289' section to the description.\",\n  \"The description now credits CerealNotFound through Co-authored-by in the commit.\",\n  \"The author left a cross-reference comment on #37289 pointing to this PR.\",\n  \"No code was pushed after the feedback; the head commit is unchanged.\"\n ],\n \"still_missing\": [\n  \"There is no dark-theme screenshot, which prakhar1144 asked for on #37289 and the author's plan promised.\",\n  \"There is no 'before' screenshot; the description shows only one after-state preview.\",\n  \"The cutoff facts don't show the code comment about color mixing that prakhar1144 asked for on #37289.\"\n ],\n \"reply_ask\": \"Thank the author for documenting the prior work and crediting it, and say the PR is moving to maintainer review with prakhar1144, noting the issue is not a release priority.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author did what laurynmm asked by adding a prior-work section, Co-authored-by credit and a cross-reference on #37289, with no new code push.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends handing off: remove 'not ready' and add 'maintainer review'.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Names prakhar1144 as the reviewer because he reviewed #37289 and changed these files most often.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Points out that #37289 is still open and prakhar1144 said on 2026-09-04 he planned to finish it himself, so the two PRs overlap and one should be superseded.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Points out that the dark-theme screenshot asked for on #37289 is still missing from this PR.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.229636
+}

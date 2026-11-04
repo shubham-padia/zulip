@@ -1,0 +1,57 @@
+{
+ "case": "39784-5042031450",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author says the requested fixes are done, but the PR has no assigned reviewer and is still on the same approach and files, so a short note under the existing card is the right size.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied that she saw no discussion of the completion candidate PR and that the screenshots still were not presented for clear comparison, and kept \"not ready\"; the author, not a maintainer, later closed the PR.",
+  "changed": [
+   "The author commented that the description now explains how this PR relates to the other open PRs and has precise before/after screenshots plus a demo video, but no code push could be confirmed."
+  ],
+  "still_missing": [
+   "The description still only says \"Related issue: #31985\" and never mentions the completion candidate PR #33086 or how this PR differs from it.",
+   "The before/after screenshots are separate bulleted lists of full-window images rather than precise, paired comparisons as the guidelines ask.",
+   "The description does not address timabbott's complexity concern about #33086, which is the reason that PR was deferred.",
+   "The self-review checklist still leaves the AI use policy and commit-discipline items unchecked."
+  ],
+  "reply_ask": "Tell the author the description still doesn't discuss completion candidate #33086 (how this PR builds on or differs from it and whether it addresses the complexity concern), and that the screenshots need to be cropped, paired before/after comparisons per the visual-changes guidelines.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR description still does not mention or discuss the completion candidate PR #33086, despite the author's claim.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the screenshots are still not presented as precise before/after comparisons (they are separate lists of full-window images).",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping \"not ready\" and sending the author more feedback rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that #33086 uses the same strategy and was deferred by timabbott for backend complexity, so this PR must explain how it relates to that work.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that no code changes since the feedback could be confirmed; the author's update is a comment claiming the description was fixed.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author says the requested fixes are done, but the PR has no assigned reviewer and is still on the same approach and files, so a short note under the existing card is the right size.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied that she saw no discussion of the completion candidate PR and that the screenshots still were not presented for clear comparison, and kept \\\"not ready\\\"; the author, not a maintainer, later closed the PR.\",\n \"changed\": [\"The author commented that the description now explains how this PR relates to the other open PRs and has precise before/after screenshots plus a demo video, but no code push could be confirmed.\"],\n \"still_missing\": [\"The description still only says \\\"Related issue: #31985\\\" and never mentions the completion candidate PR #33086 or how this PR differs from it.\", \"The before/after screenshots are separate bulleted lists of full-window images rather than precise, paired comparisons as the guidelines ask.\", \"The description does not address timabbott's complexity concern about #33086, which is the reason that PR was deferred.\", \"The self-review checklist still leaves the AI use policy and commit-discipline items unchecked.\"],\n \"reply_ask\": \"Tell the author the description still doesn't discuss completion candidate #33086 (how this PR builds on or differs from it and whether it addresses the complexity concern), and that the screenshots need to be cropped, paired before/after comparisons per the visual-changes guidelines.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR description still does not mention or discuss the completion candidate PR #33086, despite the author's claim.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the screenshots are still not presented as precise before/after comparisons (they are separate lists of full-window images).\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping \\\"not ready\\\" and sending the author more feedback rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that #33086 uses the same strategy and was deferred by timabbott for backend complexity, so this PR must explain how it relates to that work.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes that no code changes since the feedback could be confirmed; the author's update is a comment claiming the description was fixed.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.23488399999999998
+}

@@ -1,0 +1,57 @@
+{
+ "case": "40232-5935435606",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the screenshot feedback by editing the description and removed \"not ready\" themselves, so a triager needs a short note to check the screenshots and restore the label; the PR itself is unchanged, so a new card is not justified.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm put \"not ready\" back, told the author not to remove maintainer-assigned labels, and reported that the updated images returned 404 when opened, which asked for more work before handing off.",
+  "changed": [
+   "The author retook all four before/after screenshots with the same data set, user and viewport, and laid them out as a Before/After table in the description.",
+   "No code was pushed; the head commit is the same as when the feedback was given."
+  ],
+  "still_missing": [
+   "The author removed the maintainer-assigned \"not ready\" label with zulipbot instead of leaving it for a maintainer.",
+   "No maintainer has yet confirmed that the new screenshots load and meet the precise before/after guidelines.",
+   "The reverse-sort question is still unanswered: should the current user's emoji move to the bottom on descending sort or stay pinned at the top?"
+  ],
+  "reply_ask": "Tell the author not to remove labels set by maintainers, and ask them to make sure the screenshot images open correctly (permanent attachment links) so the PR can go to review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author removed the maintainer-assigned \"not ready\" label via zulipbot, and that the label should be restored or the author told not to do this.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the screenshot ask was answered only by editing the description, with no new code push.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the triager should open and check the new screenshots before handing off.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the updated screenshot images return 404 when opened directly.",
+    "decisive": true,
+    "at_cutoff": false
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that another open PR (#40134) takes the same approach to issue #8170 in the same files.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the screenshot feedback by editing the description and removed \\\"not ready\\\" themselves, so a triager needs a short note to check the screenshots and restore the label; the PR itself is unchanged, so a new card is not justified.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm put \\\"not ready\\\" back, told the author not to remove maintainer-assigned labels, and reported that the updated images returned 404 when opened, which asked for more work before handing off.\",\n \"changed\": [\"The author retook all four before/after screenshots with the same data set, user and viewport, and laid them out as a Before/After table in the description.\", \"No code was pushed; the head commit is the same as when the feedback was given.\"],\n \"still_missing\": [\"The author removed the maintainer-assigned \\\"not ready\\\" label with zulipbot instead of leaving it for a maintainer.\", \"No maintainer has yet confirmed that the new screenshots load and meet the precise before/after guidelines.\", \"The reverse-sort question is still unanswered: should the current user's emoji move to the bottom on descending sort or stay pinned at the top?\"],\n \"reply_ask\": \"Tell the author not to remove labels set by maintainers, and ask them to make sure the screenshot images open correctly (permanent attachment links) so the PR can go to review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author removed the maintainer-assigned \\\"not ready\\\" label via zulipbot, and that the label should be restored or the author told not to do this.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the screenshot ask was answered only by editing the description, with no new code push.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the triager should open and check the new screenshots before handing off.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the updated screenshot images return 404 when opened directly.\", \"decisive\": true, \"at_cutoff\": false},\n  {\"id\": \"f5\", \"fact\": \"Mentions that another open PR (#40134) takes the same approach to issue #8170 in the same files.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.146868
+}

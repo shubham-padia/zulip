@@ -1,0 +1,38 @@
+{
+ "case": "39785-5037857009",
+ "cutoff": "2026-07-21T18:53:00Z",
+ "pushes": [
+  [
+   "2026-07-21T09:12:01Z",
+   "cd95c4d453",
+   "force push"
+  ],
+  [
+   "2026-07-21T09:15:16Z",
+   "38a711e8ee",
+   "force push"
+  ],
+  [
+   "2026-07-21T09:15:21Z",
+   "38a711e8ee",
+   "ci run"
+  ]
+ ],
+ "head_now": "38a711e8ee3068a380ae1507eda6da3d3b6f0b1b",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "popovers: Fix emoji picker popover arrow color in dark mode.",
+ "title_at_cutoff": "popovers: Fix emoji picker popover arrow color in dark mode.",
+ "labels_now": [
+  "size: S",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "38a711e8ee3068a380ae1507eda6da3d3b6f0b1b",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-07-21T18:31:22Z",
+ "head_at_feedback": "38a711e8ee3068a380ae1507eda6da3d3b6f0b1b",
+ "comments_total": 6,
+ "comments_at_cutoff": 4
+}

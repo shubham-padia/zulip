@@ -1,0 +1,121 @@
+{
+ "case": "40191-5798802930",
+ "cutoff": "2026-09-23T16:41:42Z",
+ "pushes": [
+  [
+   "2026-09-23T04:47:40Z",
+   "07f9d4899d",
+   "ci run"
+  ],
+  [
+   "2026-09-23T04:53:46Z",
+   "783572d387",
+   "force push"
+  ],
+  [
+   "2026-09-23T04:53:50Z",
+   "783572d387",
+   "ci run"
+  ],
+  [
+   "2026-09-23T05:08:59Z",
+   "2dd2bd339c",
+   "force push"
+  ],
+  [
+   "2026-09-23T05:09:03Z",
+   "2dd2bd339c",
+   "ci run"
+  ],
+  [
+   "2026-09-23T05:25:47Z",
+   "febb1d2556",
+   "force push"
+  ],
+  [
+   "2026-09-23T05:25:51Z",
+   "febb1d2556",
+   "ci run"
+  ],
+  [
+   "2026-09-23T05:58:57Z",
+   "2d3cdeb65e",
+   "force push"
+  ],
+  [
+   "2026-09-23T05:59:03Z",
+   "2d3cdeb65e",
+   "ci run"
+  ],
+  [
+   "2026-09-23T06:19:17Z",
+   "bbafb08e12",
+   "force push"
+  ],
+  [
+   "2026-09-23T06:19:22Z",
+   "bbafb08e12",
+   "ci run"
+  ],
+  [
+   "2026-09-23T06:52:56Z",
+   "8932bbfd06",
+   "force push"
+  ],
+  [
+   "2026-09-23T06:52:59Z",
+   "8932bbfd06",
+   "ci run"
+  ],
+  [
+   "2026-09-23T16:12:44Z",
+   "182b4f870a",
+   "force push"
+  ],
+  [
+   "2026-09-23T16:12:49Z",
+   "182b4f870a",
+   "ci run"
+  ],
+  [
+   "2026-10-02T13:44:53Z",
+   "3b14c153a7",
+   "force push"
+  ],
+  [
+   "2026-10-02T13:44:59Z",
+   "3b14c153a7",
+   "ci run"
+  ],
+  [
+   "2026-10-22T14:02:42Z",
+   "755bfd29e4",
+   "force push"
+  ],
+  [
+   "2026-10-22T14:02:47Z",
+   "755bfd29e4",
+   "ci run"
+  ]
+ ],
+ "head_now": "755bfd29e410aef8e2032d812a796a874333b172",
+ "body_edits": 6,
+ "body_edits_after_cutoff": 2,
+ "title_now": "[ai] settings: Replace deprecated URI with URL in avatar/logo settings.",
+ "title_at_cutoff": "settings: Replace deprecated URI with URL in avatar/logo settings.",
+ "labels_now": [
+  "size: XL",
+  "maintainer review",
+  "priority: low"
+ ],
+ "assignees_now": [
+  "laurynmm"
+ ],
+ "head_at_cutoff": "182b4f870a3eb95c8211f400e79ff128d3931e90",
+ "pr_shape": "from compare main...182b4f870a",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-09-23T14:51:00Z",
+ "head_at_feedback": "8932bbfd0611cacfc12fdcc86a5b65e306670b15",
+ "comments_total": 10,
+ "comments_at_cutoff": 4
+}

@@ -1,0 +1,48 @@
+{
+ "case": "39819-5108435113",
+ "cutoff": "2026-07-28T18:54:58Z",
+ "pushes": [
+  [
+   "2026-07-25T05:40:25Z",
+   "fd24d248c5",
+   "ci run"
+  ],
+  [
+   "2026-07-30T19:07:56Z",
+   "9243d16a75",
+   "force push"
+  ],
+  [
+   "2026-07-31T10:21:27Z",
+   "9243d16a75",
+   "ci run"
+  ],
+  [
+   "2026-08-21T18:30:18Z",
+   "c7bcf391ac",
+   "ci run"
+  ]
+ ],
+ "head_now": "c7bcf391ac3ef0ef575a24bc07eecef60fc9253b",
+ "body_edits": 3,
+ "body_edits_after_cutoff": 1,
+ "title_now": "Change collapsed messages for muted users",
+ "title_at_cutoff": "Change collapsed messages for muted users",
+ "labels_now": [
+  "size: S",
+  "has conflicts",
+  "area: message feed (display)",
+  "maintainer review",
+  "changes requested"
+ ],
+ "assignees_now": [
+  "evykassirer"
+ ],
+ "head_at_cutoff": "fd24d248c5b08389bf7ece90f4268cef7e58073a",
+ "pr_shape": "from compare main...fd24d248c5",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-07-27T11:34:46Z",
+ "head_at_feedback": "fd24d248c5b08389bf7ece90f4268cef7e58073a",
+ "comments_total": 14,
+ "comments_at_cutoff": 2
+}

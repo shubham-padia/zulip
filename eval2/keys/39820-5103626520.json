@@ -1,0 +1,60 @@
+{
+ "case": "39820-5103626520",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the commit-cleanup and checklist feedback with a squash and small parser fix, which is not a new approach, so a short note under the first card is right.",
+  "triager_action": "more_feedback",
+  "action_source": "inferred",
+  "action_why": "Maintainers took no action within 14 days. The commit ask is met, but the checklist was trimmed instead of copied from the template, and the PR does not explain how it differs from the open PRs for #19589 that Niloth-p was asked to review. A careful triager would keep \"not ready\" and ask for both.",
+  "changed": [
+   "Squashed the three commits, including a merge commit and a lint-fix commit, into one commit rebased on current main.",
+   "Filled in a self-review checklist in the PR description.",
+   "Changed the parser to keep multi-line text after a leading bot mention and added a test for it (+25/-7 now, was +24/-6).",
+   "CI passes after the force-push."
+  ],
+  "still_missing": [
+   "The checklist is not the full PR template: items such as \"Explains differences from previous plans\" and the manual-testing items were removed rather than left unchecked.",
+   "The PR does not say how it compares to the other open PRs for #19589 (#38098, #39481, #39606), even though a maintainer asked new attempts to do so.",
+   "The author has not run the backend tests locally (Windows, no dev environment) and relies on CI alone.",
+   "Tim Abbott's open question about backwards compatibility with the python-zulip-api bots framework is not addressed."
+  ],
+  "reply_ask": "Thank the author for cleaning up the commits, then ask them to restore the complete self-review checklist from the PR template and explain how this PR differs from the existing open PRs for #19589 (#38098, #39481).",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the commit history is now one coherent commit on main, so the commit-cleanup ask is done.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the self-review checklist is not the full template (items like \"Explains differences from previous plans\" were removed), so that ask is only partly met.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Points out that other open PRs for #19589 (#38098 and #39481, with Niloth-p asked to review them) already exist and this PR does not explain how it compares to them.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Recommends keeping \"not ready\" and asking for more work rather than handing off to maintainer review.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes the unresolved backwards-compatibility question about python-zulip-api, or doubts about the issue's design, that maintainers raised on #19589.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the commit-cleanup and checklist feedback with a squash and small parser fix, which is not a new approach, so a short note under the first card is right.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"inferred\",\n \"action_why\": \"Maintainers took no action within 14 days. The commit ask is met, but the checklist was trimmed instead of copied from the template, and the PR does not explain how it differs from the open PRs for #19589 that Niloth-p was asked to review. A careful triager would keep \\\"not ready\\\" and ask for both.\",\n \"changed\": [\"Squashed the three commits, including a merge commit and a lint-fix commit, into one commit rebased on current main.\",\n  \"Filled in a self-review checklist in the PR description.\",\n  \"Changed the parser to keep multi-line text after a leading bot mention and added a test for it (+25/-7 now, was +24/-6).\",\n  \"CI passes after the force-push.\"],\n \"still_missing\": [\"The checklist is not the full PR template: items such as \\\"Explains differences from previous plans\\\" and the manual-testing items were removed rather than left unchecked.\",\n  \"The PR does not say how it compares to the other open PRs for #19589 (#38098, #39481, #39606), even though a maintainer asked new attempts to do so.\",\n  \"The author has not run the backend tests locally (Windows, no dev environment) and relies on CI alone.\",\n  \"Tim Abbott's open question about backwards compatibility with the python-zulip-api bots framework is not addressed.\"],\n \"reply_ask\": \"Thank the author for cleaning up the commits, then ask them to restore the complete self-review checklist from the PR template and explain how this PR differs from the existing open PRs for #19589 (#38098, #39481).\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the commit history is now one coherent commit on main, so the commit-cleanup ask is done.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the self-review checklist is not the full template (items like \\\"Explains differences from previous plans\\\" were removed), so that ask is only partly met.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Points out that other open PRs for #19589 (#38098 and #39481, with Niloth-p asked to review them) already exist and this PR does not explain how it compares to them.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Recommends keeping \\\"not ready\\\" and asking for more work rather than handing off to maintainer review.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes the unresolved backwards-compatibility question about python-zulip-api, or doubts about the issue's design, that maintainers raised on #19589.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.303376
+}

@@ -1,0 +1,53 @@
+{
+ "case": "40211-5916970551",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The fix itself is still the same two-file scheduled-message change, so the first card is not wrong in substance, but the triager needs to know the author's force-push broke the branch and pulled in 121 unrelated files.",
+  "triager_action": "close",
+  "action_source": "observed",
+  "action_why": "laurynmm closed the PR unmerged on 2026-10-05 because it did not follow the contributing guidelines and was not on track to be mergeable.",
+  "changed": [
+   "The author force-pushed twice and squashed the six earlier commits, including a merge commit, into one commit titled 'scheduled messages: Preserve delivered state after notification failure.'",
+   "The author says the PR description was updated, for example to explain that there is no filed issue."
+  ],
+  "still_missing": [
+   "The squash/rebase is broken: the diff grew from +46/-11 in 2 files to +4994/-5409 in 123 files, mostly unrelated main-branch changes (pnpm-lock.yaml, web/src/*, templates, version.py, etc.).",
+   "The PR still does not follow the reviewable-PR guide the maintainer pointed to, because one commit should contain only the intended change.",
+   "There is no linked issue and no chat.zulip.org discussion for this self-found bug.",
+   "The author has not tested locally because the dev environment is not provisioned, and relied only on CI.",
+   "The author's open question about other code that reads ScheduledMessage.failed/delivered is still unanswered."
+  ],
+  "reply_ask": "Tell the author that the force-push pulled about 120 unrelated files into the PR, so it cannot be reviewed; ask them to reset the branch so it contains only the scheduled-message fix and test, and to follow the contributing guide (including discussing unfiled bugs first) before asking for review again.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR grew from +46/-11 in 2 files to +4994/-5409 in 123 files after the force-push, with mostly unrelated files from main, so the squash/rebase went wrong.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the maintainer's request to follow the reviewable-PR guide is still not met, despite the author's claim that the commit is clean.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends not handing the PR off for maintainer review: keep 'not ready' or close, rather than removing the label or assigning a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the PR has no linked issue or prior discussion, comes from a first-time contributor with no merged PRs, and was not tested locally.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The fix itself is still the same two-file scheduled-message change, so the first card is not wrong in substance, but the triager needs to know the author's force-push broke the branch and pulled in 121 unrelated files.\",\n \"triager_action\": \"close\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm closed the PR unmerged on 2026-10-05 because it did not follow the contributing guidelines and was not on track to be mergeable.\",\n \"changed\": [\"The author force-pushed twice and squashed the six earlier commits, including a merge commit, into one commit titled 'scheduled messages: Preserve delivered state after notification failure.'\", \"The author says the PR description was updated, for example to explain that there is no filed issue.\"],\n \"still_missing\": [\"The squash/rebase is broken: the diff grew from +46/-11 in 2 files to +4994/-5409 in 123 files, mostly unrelated main-branch changes (pnpm-lock.yaml, web/src/*, templates, version.py, etc.).\", \"The PR still does not follow the reviewable-PR guide the maintainer pointed to, because one commit should contain only the intended change.\", \"There is no linked issue and no chat.zulip.org discussion for this self-found bug.\", \"The author has not tested locally because the dev environment is not provisioned, and relied only on CI.\", \"The author's open question about other code that reads ScheduledMessage.failed/delivered is still unanswered.\"],\n \"reply_ask\": \"Tell the author that the force-push pulled about 120 unrelated files into the PR, so it cannot be reviewed; ask them to reset the branch so it contains only the scheduled-message fix and test, and to follow the contributing guide (including discussing unfiled bugs first) before asking for review again.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR grew from +46/-11 in 2 files to +4994/-5409 in 123 files after the force-push, with mostly unrelated files from main, so the squash/rebase went wrong.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the maintainer's request to follow the reviewable-PR guide is still not met, despite the author's claim that the commit is clean.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends not handing the PR off for maintainer review: keep 'not ready' or close, rather than removing the label or assigning a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the PR has no linked issue or prior discussion, comes from a first-time contributor with no merged PRs, and was not tested locally.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.110144
+}
