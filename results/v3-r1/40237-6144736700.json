@@ -1,0 +1,6 @@
+{
+ "case": "40237-6144736700",
+ "answer": "yes",
+ "text": "yes\nThe maintainer asked for the PR to follow the design (show the default-theme emoji rather than plain text), and the author says it now follows that design, CI passes, and asks for another look, which hands it back for review.",
+ "cost_usd": 0.00487
+}

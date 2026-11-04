@@ -1,0 +1,6 @@
+{
+ "case": "40221-6001435552",
+ "answer": "yes",
+ "text": "yes\nThe author re-uploaded the broken screenshots, explained that before/after were taken in the same state from the base and PR branches, and described the change, which addresses the maintainer's request and effectively hands the PR back for another look.",
+ "cost_usd": 0.005006
+}

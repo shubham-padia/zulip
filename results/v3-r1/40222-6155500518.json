@@ -1,0 +1,6 @@
+{
+ "case": "40222-6155500518",
+ "answer": "yes",
+ "text": "yes\nThe maintainer asked the author to follow the reviewable-PR guide, and the author says they've added screenshots, completed the self-review checklist, and passed CI, explicitly declaring \"Ready for review\" and requesting removal of the \"not ready\" label.",
+ "cost_usd": 0.004746
+}
