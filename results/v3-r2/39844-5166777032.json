@@ -1,0 +1,6 @@
+{
+ "case": "39844-5166777032",
+ "answer": "no",
+ "text": "no\n\nThe author says the screencast was updated, but the commit message item is unresolved and they are asking the maintainer for clarification, so they are not handing the PR back as ready.",
+ "cost_usd": 0.0006648
+}

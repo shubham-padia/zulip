@@ -1,0 +1,6 @@
+{
+ "case": "39840-5134964663",
+ "answer": "yes",
+ "text": "yes\nThe maintainer asked the author to follow the reviewable-PRs guide, and the author responded by adding a screencast with before/after descriptions and asking if anything else is needed to make the PR ready for review, which signals they consider the requested work done and are handing it back.",
+ "cost_usd": 0.0009972
+}

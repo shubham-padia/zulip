@@ -1,0 +1,6 @@
+{
+ "case": "39830-5092200745",
+ "answer": "yes",
+ "text": "yes\nThe author reports completing both requested items (reproduced the issue with a screenshot added to the PR description, and restored the self-review checklist), which effectively hands the PR back for review.",
+ "cost_usd": 0.0007079
+}
