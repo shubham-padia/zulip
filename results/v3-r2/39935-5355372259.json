@@ -1,0 +1,6 @@
+{
+ "case": "39935-5355372259",
+ "answer": "yes",
+ "text": "yes\nThe author asks for the \"maintainer review\" label via zulipbot, which signals they consider the PR ready for re-review, even though they didn't directly address the PR description cleanup the maintainer requested.",
+ "cost_usd": 0.0007778
+}
