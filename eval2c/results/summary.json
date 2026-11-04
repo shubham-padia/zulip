@@ -1,0 +1,1157 @@
+{
+ "v3f": {
+  "n": 236,
+  "score": 6.5,
+  "by_run": {
+   "v3f-r1": 6.567796610169491,
+   "v3f-r2": 6.432203389830509
+  },
+  "by_judge": {
+   "1": 6.47457627118644,
+   "2": 6.52542372881356
+  },
+  "wrong": 0.3728813559322034,
+  "missed": 1.4152542372881356,
+  "words": 82.63559322033899,
+  "fwords": 82.63559322033899,
+  "low": 0.13135593220338984
+ },
+ "v3": {
+  "n": 236,
+  "score": 6.593220338983051,
+  "by_run": {
+   "v3-r1": 6.5423728813559325,
+   "v3-r2": 6.6440677966101696
+  },
+  "by_judge": {
+   "1": 6.5423728813559325,
+   "2": 6.6440677966101696
+  },
+  "wrong": 0.423728813559322,
+  "missed": 1.4364406779661016,
+  "words": 124.50847457627118,
+  "fwords": 54.59322033898305,
+  "low": 0.18220338983050846
+ },
+ "paired": {
+  "mean": -0.09322033898305085,
+  "se": 0.23422608936598505,
+  "n": 59,
+  "v3f_better": 24,
+  "v3_better": 30,
+  "tie": 5,
+  "worst": [
+   [
+    -4.5,
+    "40177-5954127181"
+   ],
+   [
+    -4.25,
+    "40042-6183881101"
+   ],
+   [
+    -2.75,
+    "40042-6183102956"
+   ],
+   [
+    -2.5,
+    "39829-5113437343"
+   ],
+   [
+    -2.5,
+    "40065-5545794788"
+   ]
+  ],
+  "best": [
+   [
+    2.25,
+    "40168-5775859018"
+   ],
+   [
+    3.0,
+    "40085-5574954238"
+   ],
+   [
+    3.25,
+    "39865-5194201765"
+   ],
+   [
+    4.0,
+    "40096-6055469654"
+   ],
+   [
+    4.25,
+    "40257-6023845324"
+   ]
+  ]
+ },
+ "judge_repeat_mean_abs_diff": 0.3125,
+ "v3f_kinds_all60x2": {
+  "NOTE": 118,
+  "NOTHING": 2
+ },
+ "v3f_ranked": [
+  {
+   "score": 1.0,
+   "case": "40177-5954127181",
+   "run": "v3f-r2",
+   "why": [
+    "Outputs NOTHING where a note is needed, and wrongly says the prior-work section existed before the feedback.",
+    "A NOTHING where a note is needed, and it wrongly says the prior-work section came before the feedback."
+   ]
+  },
+  {
+   "score": 1.5,
+   "case": "40177-5954127181",
+   "run": "v3f-r1",
+   "why": [
+    "Outputs NOTHING where the key needs a note, and ignores the prior-work updates the author made in response to the feedback.",
+    "A NOTHING where the key needs a note; it does not say what the author did or what is still missing."
+   ]
+  },
+  {
+   "score": 2.5,
+   "case": "39785-5037857009",
+   "run": "v3f-r2",
+   "why": [
+    "Treats the screenshot request as fully met and lists nothing missing, missing every key gap.",
+    "It gets what changed right but says the feedback was fully met, which is wrong about the main missing item."
+   ]
+  },
+  {
+   "score": 3.0,
+   "case": "39785-5037857009",
+   "run": "v3f-r1",
+   "why": [
+    "Describes the new image and lack of push correctly, but the only missing item it names is a placement nit and it misses the authenticity question, the uncovered right-placement rule, and issue #38931.",
+    "The 'new' part is accurate, but the only gap it names is where the image sits, and it misses all three key missing items, including the main one about whether the screenshot is real."
+   ]
+  },
+  {
+   "score": 3.0,
+   "case": "40021-5448685369",
+   "run": "v3f-r1",
+   "why": [
+    "Describes the changes correctly but says nothing is missing, when the main problems are still there.",
+    "Describes the changes accurately but says nothing is missing, even though the main problem is still there."
+   ]
+  },
+  {
+   "score": 3.0,
+   "case": "40237-5935346309",
+   "run": "v3f-r2",
+   "why": [
+    "Gets the new screenshots and no-push right but says nothing is missing, listing only description and checkbox items and missing the design conflict and #37967 overlap.",
+    "Its account of what changed is accurate, but it says nothing is missing, lists only description and checkbox gaps, and misses both the design conflict and #37967."
+   ]
+  },
+  {
+   "score": 3.5,
+   "case": "39945-5415679206",
+   "run": "v3f-r1",
+   "why": [
+    "Its account of what changed is accurate and detailed, but it says nothing is missing when the main item, a real comparison with the other PRs, is still absent.",
+    "It describes the changes accurately but says nothing is missing, when the main item, a real comparison, is still absent."
+   ]
+  },
+  {
+   "score": 3.5,
+   "case": "40065-5536187002",
+   "run": "v3f-r2",
+   "why": [
+    "Describes the changes correctly but claims nothing is missing, even though the main screenshot problem remains.",
+    "Changes are right and it mentions the DPR caveat, but it says nothing is missing when the main screenshot issue remains."
+   ]
+  },
+  {
+   "score": 3.5,
+   "case": "40232-5935435606",
+   "run": "v3f-r1",
+   "why": [
+    "It describes the change accurately and hedges with 'the description says', but it says nothing is missing and leaves out the decisive label and screenshot-check items.",
+    "Accurate, hedged account of the description edit with no push, but says nothing is missing and omits the decisive label removal and the screenshot check."
+   ]
+  },
+  {
+   "score": 4.0,
+   "case": "39868-5175066393",
+   "run": "v3f-r1",
+   "why": [
+    "Accurately states what changed and that CI is unverifiable, but treats the checklist as the gap and misses the screenshots, the styling change and the design advice.",
+    "What changed is accurate (size, files, commits, tests claim, CI unconfirmed), but it says there is nothing specific to check against and lists only checklist items, so it misses the screenshot, styling and design-advice gaps."
+   ]
+  },
+  {
+   "score": 4.0,
+   "case": "40232-5935435606",
+   "run": "v3f-r2",
+   "why": [
+    "It describes the change accurately, hedges on the screenshots and notes the zulipbot label request, but it does not flag that request as a problem and says nothing is missing.",
+    "Mentions the label command, but as a request rather than a removal that must be undone, and otherwise says nothing is missing, so it misses the screenshot check and the reverse-sort question."
+   ]
+  },
+  {
+   "score": 4.0,
+   "case": "40237-5935346309",
+   "run": "v3f-r1",
+   "why": [
+    "The new items are right, but the missing list only covers small description and checkbox issues and leaves out the main design conflict and the #37967 overlap.",
+    "Its account of what changed is accurate and it makes no false claim that the PR is complete, but it lists only description and checkbox gaps and misses the main design problem and #37967."
+   ]
+  },
+  {
+   "score": 4.5,
+   "case": "39722-4961693879",
+   "run": "v3f-r1",
+   "why": [
+    "It describes the push correctly but makes overconfident claims about the screenshots and commits, and it misses the key's specific still-missing items.",
+    "Describes the push correctly but says the requested fixes were definitely not made, and it misses the key's specific remaining items."
+   ]
+  },
+  {
+   "score": 4.5,
+   "case": "39820-5103626520",
+   "run": "v3f-r1",
+   "why": [
+    "Its account of the changes is detailed and accurate and it notes the tests were never run locally, but it misses the decisive missing comparison to other open PRs and the trimmed template.",
+    "Accurate on what changed and on the untested-locally point, but misses the decisive comparison to other open PRs and the trimmed-template issue."
+   ]
+  },
+  {
+   "score": 4.5,
+   "case": "39820-5103626520",
+   "run": "v3f-r2",
+   "why": [
+    "Changes are reported correctly and it notes CI-only testing, but it misses the decisive missing comparison to other open PRs and reduces the trimmed-template problem to a single unchecked box.",
+    "Changes and the no-local-test point are right, but it misses the decisive missing comparison to other open PRs and only half-captures the checklist problem."
+   ]
+  },
+  {
+   "score": 4.5,
+   "case": "39862-5398202815",
+   "run": "v3f-r2",
+   "why": [
+    "Gets the push and Daniel K's approval right, but doesn't say the requested screenshots were posted, invents outstanding items, and misses both key missing items.",
+    "Gets the new push and Daniel K's approval (including text-only over placeholder) right, but its missing list is minor description nits (true but not what matters) and leaves out the stale design-review label and the missing reviewer, which suggests author work is still outstanding."
+   ]
+  },
+  {
+   "score": 4.5,
+   "case": "39987-5365589747",
+   "run": "v3f-r1",
+   "why": [
+    "It gets the changes (avatar, squash, review request) and the unverified CI right, but it says nothing is missing when the main item, docs screenshots, still is.",
+    "Accurately describes the changes and the unconfirmed CI, and limits 'nothing missing' to the last feedback, but misses the main missing item, the documentation screenshots."
+   ]
+  },
+  {
+   "score": 4.5,
+   "case": "39987-5365589747",
+   "run": "v3f-r2",
+   "why": [
+    "It describes the changes and the unverified CI accurately and adds a minor checklist point, but it misses the main missing item, docs screenshots.",
+    "Correct about the avatar, the squash, the comment and unverified CI, and it limits 'nothing missing' to the last feedback, but it misses the main missing item, the docs screenshots."
+   ]
+  },
+  {
+   "score": 4.5,
+   "case": "40042-6183881101",
+   "run": "v3f-r2",
+   "why": [
+    "It reports the changes correctly but presents unrequested items and doubt about the commit messages as still missing, and it wrongly says the author never mentioned the commit-message rewrite.",
+    "It gets the pushes and the guard removal right, but it misreads the author's comments, casts doubt on the commit-message fix (the main ask) and adds missing items that aren't required."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39522-4714378606",
+   "run": "v3f-r2",
+   "why": [
+    "Correct on what changed but only mentions border radius among Yogesh's asks, missing the dark-theme color, the out-of-scope styles and the screenshots.",
+    "What changed is right, but of the main open items it names only the border radius and misses the dark-theme color, the out-of-scope styles and the screenshots."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39728-5012922258",
+   "run": "v3f-r2",
+   "why": [
+    "It covers commit discipline, typos, the unanswered question and CI well, but it misstates what is new and leaves out the decisive point that the checklist is not the template's.",
+    "It covers commit discipline and the smaller gaps well, but it misstates what changed since the feedback and leaves out the decisive point that the checklist is not the template's."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39819-5108435113",
+   "run": "v3f-r1",
+   "why": [
+    "Gets the no-push fact right but hedges on the main screenshot-formatting gap and misstates the Test 2 result.",
+    "It gets the no-push fact right but hedges on the main screenshot-format gap and misstates the Test 2 failure."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39829-5113437343",
+   "run": "v3f-r1",
+   "why": [
+    "Gets the changes right but only hedges that the screenshots may not be precise because of the size difference, without saying the Before is copied from the issue, and omits the multi-reactor case and the other PRs.",
+    "What changed is right, but it only hedges that the screenshots may not be precise, doesn't notice the copied Before image, and leaves out the multi-reactor case and the other PRs."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39829-5113437343",
+   "run": "v3f-r2",
+   "why": [
+    "Gets the changes right but leaves the main missing item unconfirmed, noting only the size mismatch and not that the Before came from the issue, and omits the multi-reactor case and the other PRs.",
+    "What changed is right, but the main missing item is only hedged as unconfirmed, it doesn't notice the Before is the issue's image, and it leaves out the other missing items."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39862-5398202815",
+   "run": "v3f-r1",
+   "why": [
+    "Describes the changes accurately, including the requested screenshots and the text-only choice over #39272, but lists items that were never asked for as missing and misses both key missing items.",
+    "Gets the changes right in detail (requested screenshots posted, approval, text-only choice, one push), but lists only minor description gaps as missing and leaves out the stale design-review label and the missing reviewer."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39868-5175066393",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly describes the two pushes, the tests-fixed claim, unverifiable CI and Karl Stolley's flexbox advice, but misses the main item (precise before/after screenshots) and the unrequested styling change.",
+    "Accurate on what changed and flags both the unconfirmed CI and Karl's unaddressed flexbox advice, but misses the main gap (precise before/after screenshots) and the unrequested styling change."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39894-5278594007",
+   "run": "v3f-r2",
+   "why": [
+    "New facts are right and it mentions the 6px blur change, but it wrongly concludes nothing from the feedback is missing and does not treat the visual change as an open issue.",
+    "It gets what changed right and mentions the 6px blur, but says nothing is missing, so it misses the main open item."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39927-5276328596",
+   "run": "v3f-r1",
+   "why": [
+    "Accurately and precisely describes what changed (commit rename, +4 line compose stylesheet change, claimed screenshot update), but reports nothing missing and so misses all of the key's still-missing items.",
+    "The changes are reported accurately with a fair caveat about the screenshot, but it says nothing is missing and leaves out all three remaining gaps."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "39927-5276328596",
+   "run": "v3f-r2",
+   "why": [
+    "What changed is correct (new commit title, compose.css added, 'AFTER new' screenshot), but it says nothing is missing and misses the screenshot size mismatch, checklist and Fixes wording.",
+    "The changes are reported accurately, but it says nothing is missing and leaves out all three remaining gaps, including the main one, the mismatched screenshot sizes."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "40013-5589724033",
+   "run": "v3f-r1",
+   "why": [
+    "What changed is accurate, and it lists the self-review boxes, the tooltip question and the unknown CI status, but it misses the main missing item: the undiscussed API changes and their docs.",
+    "What changed is accurate and names the files, and the minor missing items are covered, but it leaves out the undiscussed API changes and the missing API docs."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "40013-5589724033",
+   "run": "v3f-r2",
+   "why": [
+    "The changes are reported accurately with the size numbers, and the self-review, tooltip and CI items are right, but it misses the main missing item: the undiscussed API changes and their changelog and docs.",
+    "What changed is stated accurately (pushes, size, unchanged commit messages), as are the self-review boxes, tooltip and CI items, but it misses the main gap, the undiscussed API changes."
+   ]
+  },
+  {
+   "score": 5.0,
+   "case": "40021-5448685369",
+   "run": "v3f-r2",
+   "why": [
+    "Gets the changes right and flags the unrelated commit and commit style, but misses the main item (whole-string truncation hides other reactors) and the weak comparison with #39768.",
+    "Gets the changes and the commit and unrelated-change problems right, but misses both decisive gaps: the multi-reactor truncation and the missing justification over #39768."
+   ]
+  },
+  {
+   "score": 5.5,
+   "case": "39865-5194201765",
+   "run": "v3f-r2",
+   "why": [
+    "Describes the changes accurately and points out the size mismatch and differing dates, but presents precision as an open question rather than missing, and leaves out the unresolved design.",
+    "Gets what changed right and points out the mismatched dimensions and dates, but treats the precision problem as uncertain rather than missing, and leaves out the unresolved design question."
+   ]
+  },
+  {
+   "score": 5.5,
+   "case": "39883-5198039741",
+   "run": "v3f-r2",
+   "why": [
+    "Changes and checklist/CI/guide gaps are right, but it misses the main missing item (before/after screenshots) and frames the pre-existing fixture tests as newly added.",
+    "What changed is accurate and it covers the checklist, the guide, CI and the competing PRs, but it leaves out the main missing item: screenshots of the rendering change."
+   ]
+  },
+  {
+   "score": 5.5,
+   "case": "39929-5275974270",
+   "run": "v3f-r1",
+   "why": [
+    "Gets the squash and unchanged size exactly right, but says nothing is missing, leaving out both the unknown CI status and the missing API changelog.",
+    "Gets the change right, but it says nothing is missing and leaves out both the unknown CI status and the missing API changelog."
+   ]
+  },
+  {
+   "score": 5.5,
+   "case": "40042-6183102956",
+   "run": "v3f-r2",
+   "why": [
+    "Gets the change right, but its \"Still missing\" section is full of items that aren't outstanding requests, which implies the PR still needs work.",
+    "Gets the commit message rewrite right, but its still-missing list has items that aren't outstanding and suggests the PR isn't ready, which matters."
+   ]
+  },
+  {
+   "score": 5.5,
+   "case": "40042-6183881101",
+   "run": "v3f-r1",
+   "why": [
+    "It describes the changes accurately with details, but it lists several unrequested items as still missing, though the key says nothing is outstanding.",
+    "It reports the changes accurately, including the new titles and the size, but it treats the main ask as unconfirmed and pads the missing list with items that aren't required."
+   ]
+  },
+  {
+   "score": 5.5,
+   "case": "40048-5481098127",
+   "run": "v3f-r2",
+   "why": [
+    "It correctly notes the code is unchanged and the discussion has no link or replies, but it leaves out the missing API changelog entry, which is the main gap.",
+    "Correctly says no code changed and the discussion is unlinked with no replies, but misses the main missing item, the API changelog entry."
+   ]
+  },
+  {
+   "score": 5.5,
+   "case": "40240-6313490306",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly says no push, only screenshots, and AI-policy concern unanswered, but omits the decisive duplicate #39758 and the promised tests and ui_init.js points.",
+    "Gets the no-push and unanswered AI-policy points right, but leaves out the duplicate #39758, the missing promised tests (it only says the tests were not changed) and the ui_init.js change."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39459-4663361149",
+   "run": "v3f-r1",
+   "why": [
+    "Gets the description edit, no push, missing tests and unchecked checklist items right, but misses sahil839's feedback about reducing the hash_util.ts changes and focuses on contacting the #38251 author instead.",
+    "Gives a detailed, accurate account of the description edit and the missing tests and unchecked checklist items, but frames the gap as the unfinished-work guidelines rather than sahil839's feedback about keeping hash_util.ts changes small."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39459-4663361149",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly reports the description update, no new push, and missing tests, but misses the main open item, sahil839's #38251 feedback about keeping hash_util.ts changes small, and instead says the continuing-unfinished-work guidelines weren't shown as followed.",
+    "Correctly says only the description changed (no push) and flags missing tests, but never raises the main open question of whether sahil839's #38251 feedback on minimizing hash_util.ts changes was applied, focusing instead on the unfinished-work guidelines."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39481-4711243565",
+   "run": "v3f-r1",
+   "why": [
+    "Gets the changes, the #38098 gap, docs and testing detail right, but misses the non-template checklist and adds a doubtful formatting complaint.",
+    "Correct on the changes, #38098, the docs and the thin manual testing, but misses the decisive non-template checklist."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39590-5004317162",
+   "run": "v3f-r1",
+   "why": [
+    "Flags the missing link and screenshots, but wrongly treats the discuss-first ask as unanswered and leaves out the self-review checklist.",
+    "Gets the rebase, the missing link and the missing screenshots right, but wrongly treats the discuss-first ask as unmet and leaves out the self-review checklist."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39691-5277811900",
+   "run": "v3f-r1",
+   "why": [
+    "Gets the no-push change and the missing confirmation right, but misreads prakhar1144's request in a way that suggests it may not be done, and leaves out PIG208's nits.",
+    "It correctly notes no push and no confirmation, but it misreads prakhar1144's request in a way that wrongly casts doubt on whether it was done, and it leaves out PIG208's nits."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39722-4961693879",
+   "run": "v3f-r2",
+   "why": [
+    "It is hedged and mostly accurate ('not shown', 'appears the same') about what can't be verified, but it misses the identical-image detail, the pending code review and the partial-fix scope.",
+    "Describes the one push and the author's claim accurately and words the fixes carefully as not shown rather than not made, but it misses the specific still-missing items (duplicate German image, pending code review, partial issue scope)."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39731-5006493904",
+   "run": "v3f-r1",
+   "why": [
+    "It gets the changes right, but it leaves out both remaining items: the precise screenshots and the maintainer confirmation of the dead selectors.",
+    "It describes the changes accurately and limits 'nothing missing' to the last feedback, but it misses the screenshot requirement, which is the main item still missing."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39731-5006493904",
+   "run": "v3f-r2",
+   "why": [
+    "It gets the changes right, but saying nothing is missing from the last feedback leaves out the screenshots the issue requires and the pending maintainer confirmation.",
+    "It summarizes the two-commit rework and the re-verification correctly, though vaguely, and misses the screenshot gap."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39784-5042031450",
+   "run": "v3f-r1",
+   "why": [
+    "Correct on the missing #33086 discussion, the unconfirmed code changes and the checklist, but describes the screenshots without flagging that they still fail the precise-comparison guidelines.",
+    "Accurately describes the image counts, the missing #33086 mention, the unchecked checklist items and the unconfirmed code changes, but never says the screenshots fail the precise before/after guideline."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39784-5042031450",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly says #33086 is never mentioned and lists the unchecked checklist items, but treats the screenshots as present without noting they are still not precise paired comparisons.",
+    "Gets the missing #33086 discussion, the unchecked checklist items and the unconfirmed code changes right, but treats the screenshots as present and never says they still are not precise paired comparisons."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "39822-5091673928",
+   "run": "v3f-r1",
+   "why": [
+    "It reports the changes correctly, but it wrongly says two things are still missing when the key says nothing is.",
+    "Correctly reports what changed (description edit, no push, checklist, images, link), but names two things as still missing when nothing requested is still outstanding."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "40065-5536187002",
+   "run": "v3f-r1",
+   "why": [
+    "Gets what changed right and flags the main gap (the before shot does not show clipping at DPR 1), but leaves out the long-topic and font-size screenshots.",
+    "Changes are accurate and it correctly lists as missing that the screenshots don't show a clipped emoji, but it omits the long-topic and font-size gaps."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "40065-5545794788",
+   "run": "v3f-r1",
+   "why": [
+    "Accurately says there is no new push and lists the screenshots added, but leaves out that none of them shows the clipping bug.",
+    "Accurately reports what changed but says nothing is missing, leaving out that the before screenshots don't reproduce the clipping."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "40065-5545794788",
+   "run": "v3f-r2",
+   "why": [
+    "Changes and no-push are accurate, but it misses the main remaining gap: the before screenshots do not reproduce the clipping.",
+    "Accurately reports the description edit, the screenshots and the scaling, but leaves out that the before screenshots don't show the clipping bug."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "40201-6155498168",
+   "run": "v3f-r2",
+   "why": [
+    "The changes are reported accurately (3 pushes, size growth, new fixture, CI passing), but it says nothing is missing and leaves out the lack of a linked issue or reviewer.",
+    "Its account of what changed is accurate and complete, but it says nothing is missing and so leaves out both still_missing items."
+   ]
+  },
+  {
+   "score": 6.0,
+   "case": "40240-6313490306",
+   "run": "v3f-r2",
+   "why": [
+    "Accurate on no push, screenshots, AI policy and missing promised tests, but leaves out the decisive duplicate #39758.",
+    "Correctly reports no new push, only screenshots, the unanswered AI-policy concern and the missing promised tests, but leaves out the decisive duplicate #39758 and the unexplained ui_init.js change."
+   ]
+  },
+  {
+   "score": 6.5,
+   "case": "39481-4711243565",
+   "run": "v3f-r2",
+   "why": [
+    "Correct on what changed and covers the #38098 relationship, docs and manual-testing gaps, but never says the checklist is not the template one.",
+    "Accurate on the changes, #38098, the manual testing detail and the docs, but leaves out the non-template checklist, which is a decisive item."
+   ]
+  },
+  {
+   "score": 6.5,
+   "case": "39883-5198039741",
+   "run": "v3f-r1",
+   "why": [
+    "Checklist, CI and overlapping-PR gaps are accurate and the visual-appearance box is noted, but screenshots are not named as missing and the fixture tests are framed as new.",
+    "What changed and the checklist, CI and overlapping-PR gaps are accurate, but it never names the missing screenshots and doesn't say #39598 is in maintainer review."
+   ]
+  },
+  {
+   "score": 6.5,
+   "case": "39929-5275974270",
+   "run": "v3f-r2",
+   "why": [
+    "The new-work part is accurate and it flags unknown CI, but it pads the missing list with debatable items that weren't requested and misses the API changelog gap.",
+    "Correctly describes the squash into one Zulip-style commit with unchanged size and files, and notes that CI status is unknown, but it misses the missing API changelog and adds minor gaps (testing notes, screenshots) that the feedback never asked for."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "39540-4708052713",
+   "run": "v3f-r1",
+   "why": [
+    "Accurate on the unchanged pushes, the Asteriskkkk request and the remaining merge commit, and its extra checklist and CI points are true, but it misses the dark-theme screenshot mismatch.",
+    "Correctly reports the unchanged pushes, the Asteriskkkk request and the lingering merge commit, and notes the messages are unchanged, but never names the commit-message rewrite as missing and leaves out the mismatched dark-theme screenshots."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "39540-4708052713",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly says nothing meaningful changed beyond the pushes and the review request, and that the merge commit remains; misses the screenshot issue.",
+    "Accurately describes the unchanged pushes and the lingering merge commit and notes the messages are unchanged, but leaves out the commit-message rewrite as a missing item and the screenshot sizes."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "39694-4914523135",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly describes the three CSS commits and flags the unsquashed fixup commits, but never raises the hand-tuned offset or the screenshots that still need a maintainer's check, and casts some doubt on the screenshot update.",
+    "It gives the CSS changes in accurate detail and names the fixup commits to squash, but it wrongly doubts that the screenshots were updated and does not raise the hand-tuned offsets."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "39945-5415679206",
+   "run": "v3f-r2",
+   "why": [
+    "It reports the changes correctly and names the main missing item, the lack of a real comparison with #38098 and #39481, which are already in review, but it leaves out the secondary gaps.",
+    "It gets the changes right and names the main missing item, the lack of a real comparison with #38098 and #39481, but leaves out the smaller gaps."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "39995-5728364177",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly reports the fixture removal, stale opt-in description and unanswered GitHub questions, but misses the approved-plan link, overstates the unanswered questions, and does not say the tag was the ping Niloth-p asked for.",
+    "Accurate on the fixture removal, stale opt-in description and unanswered questions, but treats the LLM-fixture concern as open and omits the approved-plan link."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40030-5442478190",
+   "run": "v3f-r1",
+   "why": [
+    "Accurately describes the five pushes, squash and size change and the missing linked issue, but omits the checklist-template mismatch and the author's self-removal of the label.",
+    "Accurate on the five pushes, the squash and +38/-4, and flags the missing issue, but misses the checklist mismatch and the lack of substantive change."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40030-5442478190",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly describes the squash and size change and the missing linked issue/context, but omits the checklist-template mismatch and only frames the label removal as a request rather than noting zulipbot actually removed it.",
+    "Correctly describes the squash and size change and flags the missing linked issue, but omits the checklist/template mismatch and does not say plainly that nothing substantive changed."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40040-6192384462",
+   "run": "v3f-r1",
+   "why": [
+    "It gets the squash, the unanswered CZO question and the empty Fixes line right, but misframes the CZO link as not new and omits the lack of maintainer agreement.",
+    "Its new and missing items are accurate, including the unanswered 2026-10-08 question and the empty Fixes line, but it leaves out that no maintainer has agreed the change is needed."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40040-6192384462",
+   "run": "v3f-r2",
+   "why": [
+    "It gets the squash, the unanswered question and the empty Fixes line right, but misframes the CZO link as not new and omits the lack of maintainer agreement.",
+    "What it says changed is accurate, and it notes the unanswered CZO question and the empty Fixes line, but it leaves out that no maintainer has agreed the problem is worth fixing and pads the note with checklist boxes that do not matter."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40041-5479840283",
+   "run": "v3f-r1",
+   "why": [
+    "Accurate on the linked thread, no new push and no replies, with the feedback addressed, but omits the commit structure concern and treats the missing maintainer reply only in passing.",
+    "Gets the new facts right (thread link, no push, no replies) and says nothing from the feedback is missing, but omits the commit structure concern and does not treat the missing maintainer reply as open."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40041-5479840283",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly notes the linked #backend thread, no push, and no replies yet, and rightly says the feedback is addressed, but does not frame the missing maintainer reply as outstanding and omits the commit structure concern.",
+    "Accurately states the thread was linked, no new push and no replies, and correctly says the feedback is addressed, but leaves out the commit structure issue and does not list the missing maintainer reply as an open item."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40085-5574954238",
+   "run": "v3f-r1",
+   "why": [
+    "It gets the changes and the missing font-size screenshots right, but it wrongly casts doubt on whether the screenshots are now accessible.",
+    "What changed and the missing font-size screenshots are right, but it wrongly doubts that the main accessibility ask was answered."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40096-6055469654",
+   "run": "v3f-r2",
+   "why": [
+    "Gets the fixture revert, test fixes and passing CI right, but says the original fix was new and adds gaps that are not in the key.",
+    "It correctly says nothing is left from the feedback and covers the fixture revert, test fixes and passing CI, but it miscounts the original fix as new and adds minor missing items the key does not list."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40148-5711082634",
+   "run": "v3f-r1",
+   "why": [
+    "Changes are complete and accurate and the checklist and CI gaps are correct, but the unsettled multi-file design question is omitted.",
+    "Changes and the checklist and CI gaps are all correct, but it leaves out the unsettled multi-file design question."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40148-5711082634",
+   "run": "v3f-r2",
+   "why": [
+    "Changes are reported accurately (commit split, test helper, screenshots, description) and the checklist and CI gaps are noted, but the unsettled multi-file design question is left out.",
+    "Changes are accurately described (though it only mentions the test helper, not the auto-fill tests) and the checklist and CI gaps are noted, but it leaves out the open multi-file design question."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40234-5937541838",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly lists all three description changes and flags the hand-built fixture, but omits the missing documentation link and the unconfirmed commit-message claim.",
+    "Accurate on all three changes and the hand-built fixture, but does not connect 'no new push' to the author's commit-message claim and omits the missing doc link."
+   ]
+  },
+  {
+   "score": 7.0,
+   "case": "40234-5937541838",
+   "run": "v3f-r2",
+   "why": [
+    "Correct on all three changes and the main missing item (constructed fixture), but omits the missing documentation link and the unconfirmed commit-message claim.",
+    "Changes and the main missing item (hand-built fixture) are correct; it notes no new push but does not flag the unverifiable commit-message claim or the missing doc link."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "39590-5004317162",
+   "run": "v3f-r2",
+   "why": [
+    "Gets the changes, the missing link and the missing screenshots right, but leaves out the missing self-review checklist.",
+    "Correctly reports the rebase, the #37647 reference, the missing formal link and the missing screenshots, but leaves out the missing self-review checklist and slightly misframes the discuss-first ask."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "39622-5419621157",
+   "run": "v3f-r1",
+   "why": [
+    "It describes the change correctly and names the main missing item (Yogesh's sign-off), but never says his outstanding review comments still look unaddressed.",
+    "Describes the change and Yogesh's missing sign-off correctly, but leaves out both the unaddressed review comments and the unknown CI status."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "39622-5419621157",
+   "run": "v3f-r2",
+   "why": [
+    "It describes the change in detail and names both the missing Yogesh sign-off and the unknown CI, but it leaves out the unaddressed review comments and says Yogesh hasn't commented since 07-25, when he did on 08-04.",
+    "Gives an accurate, detailed account of the change and covers the missing sign-off and unknown CI, but does not say his outstanding review comments remain unaddressed."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "39691-5277811900",
+   "run": "v3f-r2",
+   "why": [
+    "Accurate on what changed and on the missing prakhar1144 confirmation, and points out that keeping the helpers hasn't been agreed, but leaves out PIG208's open nits.",
+    "It is accurate on no push, the Galène reason and the missing confirmation, and it partly raises the helper question, but it misreads which helper prakhar1144 wanted dropped and leaves out PIG208's nits."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "39694-4914523135",
+   "run": "v3f-r1",
+   "why": [
+    "Accurate on the new commits, updated screenshots and the need to squash, plus true checklist and CI details, but leaves out the unconfirmed hand-tuned alignment.",
+    "It describes the three commits and the updated screenshots correctly and flags the unsquashed fixup commits, but it never says the hand-tuned alignment still needs a maintainer check."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "39929-5293011728",
+   "run": "v3f-r1",
+   "why": [
+    "It gets the squash, the new Zulip-style summary line and the unverifiable CI claim right, but says nothing is missing and so leaves out the missing API changelog entry.",
+    "Accurate on the squash, the new title, the size change and the unverifiable CI, and adds fair caveats, but misses the missing API changelog/feature-level entry."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "39929-5293011728",
+   "run": "v3f-r2",
+   "why": [
+    "It describes the changes accurately and says CI cannot be confirmed, but it misses the missing API changelog and feature-level entry.",
+    "Accurately describes the squash, new summary line, folded-in fixes and size change, and notes that CI can't be verified, but leaves out the missing API changelog/feature-level entry."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "40042-6183102956",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly reports one force-push rewording all three commits with unchanged files and size, but hedges that the rewrite can't be confirmed and lists items that aren't part of the feedback as still missing.",
+    "Gets the change right and points to the author's explanation, but frames non-outstanding items as still missing; it softens this by noting they weren't part of the feedback."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "40097-6055464855",
+   "run": "v3f-r1",
+   "why": [
+    "It correctly says no Gogs test change was made (only the Gitea test file changed), but it never says the reverse-misidentification bug was fixed.",
+    "Correctly notes the Gitea test commit and the missing Gogs tests, but its 'new' section never says the author fixed the reverse issue-vs-PR misidentification bug."
+   ]
+  },
+  {
+   "score": 7.5,
+   "case": "40201-6155498168",
+   "run": "v3f-r1",
+   "why": [
+    "It reports the changes and the label-removal request accurately, flags the missing linked issue, and the commit-message note is backed by the input's 'Commit messages: unchanged', but it leaves out the description's fixture gap.",
+    "Its pushes, size, fixture, CI and label-request facts are accurate, it flags the missing linked issue, and its commit-message remark matches the input, but it leaves out the description/fixture mismatch."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "39522-4714378606",
+   "run": "v3f-r1",
+   "why": [
+    "Correct on changes and covers border radius, dark-theme white outline, the buddy-list styles question and CI, but omits the precise-screenshots ask.",
+    "What changed is right, and it covers the border radius, the dark-theme outline, the uncertain buddy-list styles and CI, but it leaves out the screenshot precision point."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "39728-5012922258",
+   "run": "v3f-r1",
+   "why": [
+    "What changed and the main gaps (commits, wrong issue number, custom checklist, garbled description) are accurate; it misses the point about precise screenshots and CI.",
+    "It describes the change correctly and covers both decisive gaps plus the garbled description, but it does not get the screenshot-precision point and a couple of smaller items."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "39784-5100999626",
+   "run": "v3f-r1",
+   "why": [
+    "Accurately covers the new #33086 section, the unverifiable whitespace fix, unpaired screenshots and the missing image-syntax note, but leaves out the marked.cjs comment.",
+    "Correctly covers the new #33086 section, the unverifiable push, the unpaired screenshots and the absent image-syntax note, missing only the frontend marked.cjs comment."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "39784-5100999626",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly reports the #33086 section, the unverified whitespace claim, unpaired screenshots and the missing image-syntax note, but omits the left-out marked.cjs frontend comment.",
+    "Accurately reports the #33086 comparison, unknown code changes, unpaired screenshots and missing image-syntax note, but omits the left-out frontend comment."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "39819-5108435113",
+   "run": "v3f-r2",
+   "why": [
+    "Accurately says no push, description possibly edited with three Before/After sets, screenshots still not precise, and Test 2 still failing; omits the commit summary.",
+    "It reports no new push and a possibly edited description, and says the screenshot sets and the Test 2 problem are still unresolved, but it misses the commit summary issue."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "39865-5194201765",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly reports the description-only update, the dimension mismatch, the missing images for the last check and the unresolved design debate, though it hedges the imprecision as 'may not be matched' rather than stating it.",
+    "Gets what changed right (three pairs plus one unillustrated check, no push), flags the mismatched 1918x903 vs 1916x885 sizes and the open casing question, though it hedges on precision instead of saying it is still missing."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "39995-5728364177",
+   "run": "v3f-r1",
+   "why": [
+    "Accurately covers the fixture removal, the tag Niloth-p asked for, the stale description and the unanswered GitHub questions, but misses the approved-plan link.",
+    "Gets the fixture removal, the tag as requested on CZO, the unanswered questions and the stale description right, missing only the approved-plan link."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "40032-5484458133",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly says only the commit message changed and names the remaining commit-message problems (space, capitalization, period, code-style wording), but omits the missing precise screenshots.",
+    "Accurately quotes the new commit summary, notes the code is unchanged and lists the concrete commit-message problems, but leaves out the missing screenshots."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "40032-5484458133",
+   "run": "v3f-r2",
+   "why": [
+    "Correctly reports two pushes that changed only the commit message (+17/-6 in 2 files) and the main commit-message flaws; its added points about the checklist and CI are true but minor, and it misses the screenshots.",
+    "Correctly reports two pushes that changed only the message, with code still +17/-6 in 2 files, and lists the commit-message problems; its extra checklist and CI points are true but minor, and it leaves out the missing screenshots."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "40168-5775859018",
+   "run": "v3f-r1",
+   "why": [
+    "Accurately reports the screenshots, no push, the unchanged placeholder, missing labeled before/after comparisons and unchecked self-review items, but omits the competing PR #40052.",
+    "Gets what changed right and covers the before/after screenshots, the placeholder and the unchecked self-review items, but leaves out the competing PR #40052."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "40168-5775859018",
+   "run": "v3f-r2",
+   "why": [
+    "Covers no push, placeholder, unchecked self-review items, missing before/after comparisons and the unfollowed guide correctly, but leaves out the competing PR #40052.",
+    "Gets what changed right and lists the placeholder, the unchecked self-review items, the missing before/after comparisons and the guide not being followed, but leaves out the competing PR #40052."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "40171-5795222359",
+   "run": "v3f-r2",
+   "why": [
+    "It gets the screenshots and the lack of a push right and says nothing from the feedback is missing, but under 'Still missing' it lists unchecked self-review items that the feedback never asked for, which muddies the picture a little.",
+    "What changed is correct, but it presents unrequested checklist items as still missing."
+   ]
+  },
+  {
+   "score": 8.0,
+   "case": "40211-5916970551",
+   "run": "v3f-r2",
+   "why": [
+    "Gets the squash, the 123-file broken diff, the unapplied guide, no linked issue and no local testing right, but adds an unsupported claim that the description is unchanged.",
+    "Covers the 123-file diff, the reviewable-PR guide not being met, the lack of a local test and the missing issue, but claims without support that the description is unchanged."
+   ]
+  },
+  {
+   "score": 8.5,
+   "case": "39728-5051202036",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly reports the squash with an unchanged diff and the screen-recording offer, and lists the missing screenshots, the unchanged commit titles with the wrong issue number, and the checklist still not matching.",
+    "Correctly says the change was a squash with an unchanged diff, and correctly says the screenshots and commit-style fixes are still missing (including the wrong issue number and the checklist box), but it presents one uncertain point about the commit bodies as fact."
+   ]
+  },
+  {
+   "score": 8.5,
+   "case": "40012-5570902524",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly reports both asks met with only description edits (and accurately notes one unchecked checklist item), but omits the timabbott /help/ guide divergence.",
+    "Correctly reports the screenshots, the checklist and no new push, and accurately notes the one unchecked checklist item; it skips the timabbott point, which the triager never asked for."
+   ]
+  },
+  {
+   "score": 8.5,
+   "case": "40012-5570902524",
+   "run": "v3f-r2",
+   "why": [
+    "Accurately states the screenshots and checklist were added via description edit with no push, but leaves out the timabbott /help/ guide point.",
+    "Correctly reports the description-only edits adding HTML/text screenshots for both realm types and the checklist, with no new push, and nothing left from the feedback; it skips the timabbott point, which the triager never asked for."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "39728-5051202036",
+   "run": "v3f-r2",
+   "why": [
+    "Accurately describes the squash with no code change, the screenshot pushback and the recording offer, and covers all three missing items, including the unchecked template checklist boxes.",
+    "Accurately describes the squash, the unchanged diff and the author's argument, and covers every missing item: screenshots, the unchanged commit titles with the mistyped issue number, the unconfirmed Fixes line, and the unchecked checklist items."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "39836-5142302711",
+   "run": "v3f-r1",
+   "why": [
+    "It correctly reports the replaced same-size 1861x102 pair with no code push, and names the missing other zoom levels and wrapped-pill states.",
+    "It correctly reports the same-size replacement pair with no new push, and says other zoom levels and wrapped-pill states are missing."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "39836-5142302711",
+   "run": "v3f-r2",
+   "why": [
+    "It correctly reports the new 1861x102 pair with no push, and says the single view lacks the zoomed-out and wrapped-pill cases that the issue and #35672 were about.",
+    "It correctly reports the replaced 1861x102 pair with no code push, and says the pair shows only one view, with no zoomed-out or wrapped-pill states."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "39894-5278594007",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly reports the screenshots, pixel-diff note and unchanged code, and identifies that the dark-theme 5px to 6px blur change means 'no visual change' is not shown.",
+    "It gets what changed right and correctly says 'no visual change' is not shown because the dark-theme blur goes from 5px to 6px; its caveat about screenshot precision is hedged, not false."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "39935-5355372259",
+   "run": "v3f-r1",
+   "why": [
+    "Complete and accurate on what is new (no push, CZO post, Daniel K, label request) and on what is missing (Fixes lines, screenshots placement, unchecked boxes, ci commits); 'duplicated summary' is a small stretch.",
+    "It is complete and accurate: no push, Daniel K's confirmation, the label request, every description problem (Fixes lines, screenshots, unchecked boxes) and the CI-retry commits."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "39935-5355372259",
+   "run": "v3f-r2",
+   "why": [
+    "Accurate and nearly complete: no push, the author joined CZO, Daniel K's not-blocked remark, the label request, the Fixes problems, the unchecked boxes and the ci retry commits; only the screenshot placement is left out.",
+    "It correctly reports the CZO participation, Daniel K's message, the label request and that nothing was pushed, and it lists the CI-retry commits plus the description problems (malformed Fixes line, unchecked boxes); it leaves out only the misplaced screenshots."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "40048-5481098127",
+   "run": "v3f-r1",
+   "why": [
+    "It covers every key item: what is new, no push, no API changelog or feature-level entry, no link to the discussion and no outcome from it.",
+    "Correctly says there was no push, that the API changelog and feature level are missing, and that the API discussion is unlinked and unresolved."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "40085-5574954238",
+   "run": "v3f-r2",
+   "why": [
+    "It describes the two new public Before/After pairs and the unchanged code correctly, and it names the missing screenshots for the other manual checks (the 12px and 20px font sizes), plus the self-review checklist items that really are unchecked.",
+    "It correctly reports the two Before/After pairs hosted on the fork with no code change, and correctly names the missing 12px/20px font-size screenshots, though it does not name the other typeahead types."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "40097-6055464855",
+   "run": "v3f-r2",
+   "why": [
+    "It gets the changes right (reverse fix, Gitea test, ping), notes there was no written feedback, and names the missing Gogs test for telling issue comments from PR comments.",
+    "Covers the reverse bug fix, the Gitea test fix and the ping, and correctly says no new Gogs test was added, with no false statements."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "40171-5795222359",
+   "run": "v3f-r1",
+   "why": [
+    "It is accurate and complete on what changed, including that there was no push, and says nothing from the feedback is missing, with a mild hedge about whether the screenshots meet the guidelines.",
+    "Correctly reports no new push plus the DM and #development help before/after table and topic-entered screenshot, and nothing missing; the hedge about the guidelines is cautious but not false."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "40211-5916970551",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly covers the squash, the description update, the 2-to-123-file growth, the unreviewable change, the lack of local testing and the missing linked issue.",
+    "Correctly reports the squash, the description update and the jump from 2 to 123 files, and lists the unrelated files, the lack of a local test and the missing linked issue as still missing."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "40257-6023845324",
+   "run": "v3f-r1",
+   "why": [
+    "It gets the banner push and size change right, and it flags both key missing items: the commit message and description still describe only logging, and the label fix can't be confirmed. The extra test point is hedged.",
+    "It gets the change right (banner, +72/-0 in 3 files, screenshot updated) and names both still-missing items: the commit message and description don't mention the banner, and the before/after labels are unconfirmed."
+   ]
+  },
+  {
+   "score": 9.0,
+   "case": "40257-6023845324",
+   "run": "v3f-r2",
+   "why": [
+    "It gets the banner push and CI right, and it flags the commit message and description that still describe only logging, plus the before/after labels that can't be confirmed.",
+    "It correctly reports the banner push, the +30 lines and CI passing, and it flags that the commit message and description don't mention the banner and that the before/after labels are unconfirmed."
+   ]
+  },
+  {
+   "score": 9.5,
+   "case": "40096-6055469654",
+   "run": "v3f-r1",
+   "why": [
+    "Correctly lists the fixture revert, the test fixes and passing CI as new, and correctly says nothing is missing because the label came with no written feedback.",
+    "It accurately describes the fixture revert, the test fixes, the new size and passing CI, and correctly says nothing is missing because the label came with no written feedback."
+   ]
+  },
+  {
+   "score": 10.0,
+   "case": "39822-5091673928",
+   "run": "v3f-r2",
+   "why": [
+    "It says correctly that there was no new push and that the checklist, images and current-docs link were added, explains the image caveat, and says nothing is missing.",
+    "Reports every change accurately, including no new push and how the images were made, and correctly says nothing from the feedback is still missing."
+   ]
+  },
+  {
+   "score": 10.0,
+   "case": "40191-5798802930",
+   "run": "v3f-r1",
+   "why": [
+    "It accurately reports the single push, the removed docs commit moved to #40197, the reworded commit messages and the unchanged code, and it correctly says nothing from the feedback is missing.",
+    "Accurately reports the docs commit removal to #40197, the reworded commits as the author's claim, code unchanged, and nothing missing."
+   ]
+  },
+  {
+   "score": 10.0,
+   "case": "40191-5798802930",
+   "run": "v3f-r2",
+   "why": [
+    "It accurately reports the docs commit moved to #40197 with screenshots, the reworded commits and the unchanged code, and it correctly says nothing from the feedback is missing.",
+    "Correctly reports the docs commit moved to #40197 with screenshots, both commits reworded, code unchanged, and nothing missing; its caveats about unverifiable details are accurate."
+   ]
+  }
+ ]
+}
