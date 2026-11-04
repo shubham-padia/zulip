@@ -1,0 +1,11 @@
+{
+ "case": "39459-4663361149",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the author answered how this relates to #38251, the other PR for the issue**\n\nNew: The author updated the PR description to explain that this PR takes a more focused approach than #38251, which is a completion candidate, and it covers Sahil's earlier concern about the settings overlay. There was no new push. Missing: automated tests for the new URL handling, and the checklist items on tests and remaining concerns are still unchecked.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign sahil839, who reviewed #38251 and has changed these files the most.\n\n###### Reply\n\n```quote\nThanks for explaining how this relates to #38251. @sahil839, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.015376
+}

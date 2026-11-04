@@ -1,0 +1,11 @@
+{
+ "case": "39822-5091673928",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the screenshots, comparison link and checklist you asked for are now in the description**\n\nNew: The author added before/after images of the parameter table, a link to the current published page, and the filled-in self-review checklist. The images were generated from the docs table generator rather than a running docs server, and the author says so openly.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots and checklist! @laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0112357
+}

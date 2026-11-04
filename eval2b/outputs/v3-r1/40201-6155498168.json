@@ -1,0 +1,11 @@
+{
+ "case": "40201-6155498168",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: no linked issue, so it's unclear this work was approved**\n\nNew: The author pushed 3 times, CI now passes, and they filled in the checklist and testing notes, which answers the CI feedback. Missing: the description has no \"Fixes: #N\" and no issue is linked, so there's no sign the change was requested or labeled \"help wanted\". The description also mentions only one of the two new fixtures.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link a \"help wanted\" issue. If none exists, a maintainer (laurynmm gave the earlier feedback) should decide whether the PR can continue.\n\n###### Reply\n\n```quote\nThanks for fixing the CI issues! Please add a \"Fixes: #N\" line to the description pointing to a \"help wanted\" issue for this change (see our [contributing guide](https://zulip.readthedocs.io/en/latest/contributing/contributing.html)), and mention both fixture files in the testing notes.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0231437
+}

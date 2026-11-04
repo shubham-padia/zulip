@@ -1,0 +1,11 @@
+{
+ "case": "40096-6055469654",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the fixes are in separate commits instead of the commits they belong to**\n\nNew: The author pushed 3 times since the label. They fixed the PR number in the Gogs topic, restored the Gitea fixture to its original state, and corrected the inconsistent PR numbers in the Gogs and Gitea tests. CI passes. Missing: The test corrections are in their own commit, so the first commit (the `view.py` change) leaves the tests failing. The fixture revert is also a separate commit that the test changes depend on, so it should be folded in or ordered so each commit passes on its own.\n\n###### Next step\n\nKeep \"not ready\" and have the author squash the history. Once it's clean, remove \"not ready\", add \"integration review\", and assign laurynmm (who added the label) or Niloth P (most recent commits on these files).\n\n###### Reply\n\n```quote\nThanks for the fixes, the change itself looks like what we want. Could you squash the test corrections into the commit they belong to, so each commit passes tests on its own, following the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)? Then we can hand it off for review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0252637
+}

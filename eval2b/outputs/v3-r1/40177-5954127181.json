@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the earlier PR is still open and claimed by a maintainer**\n\nNew: Nothing since the feedback. There is no new push, and the author only asked again after updating the description to credit the earlier PR. Missing: Nobody has confirmed that the earlier PR (#37289) is abandoned, even though it is open and assigned to @prakhar1144, who said on 2026-09-04 he plans to finish it. There are also no dark-theme screenshots, which the issue asks for and which were requested on the earlier PR.\n\n###### Next step\n\nKeep \"not ready\", and loop in prakhar1144 (assigned on #37289) to say whether this PR should replace that one.\n\n###### Reply\n\n```quote\nThanks for updating the description! #37289 is still open and assigned to @prakhar1144, who plans to finish it, so please check with him and @CerealNotFound that taking it over is fine, as the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html) describes. Please also add dark-theme screenshots of the header bars.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0657717
+}

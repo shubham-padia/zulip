@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — template filled in, but open competing work and docs are unaddressed**\n\nNew: Author pushed once (squashed to one commit) and filled in the description with \"Fixes\", testing notes and the checklist, though the code formatting in it is garbled. Missing: any explanation of how this relates to the open PR #38098 and to the issue now assigned to pranjal499, and updates to the outgoing webhook docs (`outgoing-webhook-payload.md`) that the earlier attempt was asked to make.\n\n###### Next step\n\nKeep \"not ready\" and let laurynmm follow up, since they gave the original feedback.\n\n###### Reply\n\n```quote\nThanks for updating the description! Issue #19589 already has an open PR (#38098) and is assigned to someone else, so please explain how your work relates to it, following our [guide on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please also update the outgoing webhook docs to match your change and fix the broken code formatting in the description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0146225
+}

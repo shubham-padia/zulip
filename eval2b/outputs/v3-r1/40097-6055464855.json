@@ -1,0 +1,11 @@
+{
+ "case": "40097-6055464855",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — fixes pushed since the label, CI passes, template filled in**\n\nNew: The author pushed 12 times since \"not ready\" was added, including a fix for the reverse bug (issue comments being treated as PR comments), and updated the Gitea test for PR comments. Missing: nothing blocking; the author says the check may not hold for older Gogs/Gitea payloads, and the same author's open PR #40096 touches the same Gogs PR topic code.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign laurynmm, who added the label.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0217097
+}

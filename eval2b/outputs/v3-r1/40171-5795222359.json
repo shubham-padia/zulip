@@ -1,0 +1,11 @@
+{
+ "case": "40171-5795222359",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots now cover the requested cases**\n\nNew: The author updated the before/after screenshots in the PR description. They now show the DM option and a channel that requires a topic (before, after, and with a topic filled in). No new code was pushed, but the feedback only asked for screenshots.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Niloth-p, who diagnosed the bug and has the most recent commits on this file.\n\n###### Reply\n\n```quote\n@Niloth-p, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0322177
+}

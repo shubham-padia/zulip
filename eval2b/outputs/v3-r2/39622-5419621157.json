@@ -1,0 +1,11 @@
+{
+ "case": "39622-5419621157",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — Yogesh hasn't signed off on the initial review yet**\n\nNew: One new push that renumbers the data migration (0807 to 0810) and trims about 28 lines, with commit messages unchanged. Yogesh hasn't reviewed since 2026-07-25, so nothing shows his open comments were addressed. Missing: Yogesh's confirmation that his review comments are resolved, which is the condition evykassirer set for maintainer review.\n\n###### Next step\n\nKeep \"not ready\" and leave Yogesh-Shivaji365 as the assignee. He should review the latest push and remove the label himself once he's happy.\n\n###### Reply\n\n```quote\nThanks for the update! Maintainer review waits until Yogesh finishes his initial pass, so please don't re-request it yet. @Yogesh-Shivaji365, could you take another look at the latest push?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0123133
+}

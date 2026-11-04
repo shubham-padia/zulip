@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the before/after screenshots are still not comparable**\n\nNew: The description now explains how this PR relates to the completion candidate #33086, and why the author chose a new, smaller implementation. The author says they also added the whitespace-after-`](` case with a test, though the input can't show whether that was pushed. Missing: Before/after screenshots that match case for case. \"Before\" has four images and a video, \"After\" has two images and a video, and nothing pairs them up. The PR also doesn't say whether the author tried continuing #33086, as the guide on continuing unfinished work asks.\n\n###### Next step\n\n\"Not ready\" stays, so no label changes or assignment are needed yet.\n\n###### Reply\n\n```quote\nThanks for adding the comparison with #33086. The screenshots still can't be compared easily: please show each case as a matching before/after pair (for example in a table), following the [guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Please also say whether you considered continuing #33086's commits instead of replacing them, as described in the [guide on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.015043100000000002
+}

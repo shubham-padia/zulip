@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the before/after screenshots still don't match**\n\nNew: The author swapped in a new \"After\" screenshot in the PR description, with no new code push. Missing: the \"Before\" image has the same size (1110×144) as the image in the issue, so it looks copied from there rather than taken from their own build. It is also a different size from the \"After\" (703×63), so the two don't show the same message and window. The thread with Alya on #design also asked to show part of every reactor's name, and the PR doesn't say whether it handles pills with several reactors.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm, who gave the earlier feedback, take another look once the screenshots are fixed.\n\n###### Reply\n\n```quote\nThanks for updating! The \"Before\" looks like the image from the issue, and the two screenshots differ in size. Please take both from your own build with the same message and window size, ideally covering a pill with several reactors, as described in the [guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0125292
+}

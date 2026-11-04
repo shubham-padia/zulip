@@ -1,0 +1,11 @@
+{
+ "case": "40041-5479840283",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the discussion thread has no maintainer reply yet**\n\nNew: The author linked a CZO thread, which was already in the PR description, and made no new push. The thread contains only the author's own post. Missing: maintainer agreement that this change is wanted, and a filled-in description (empty \"Fixes:\", and \"Verified no test failures\" doesn't say what was run). The same author's #40042 does the same kind of change, so the two PRs overlap.\n\n###### Next step\n\nKeep \"not ready\", assign no one yet, and wait for a maintainer such as laurynmm or a core contributor who changed these files (e.g. Aman Agrawal) to weigh in on the CZO thread.\n\n###### Reply\n\n```quote\nThanks for starting the thread! Please wait for maintainer feedback there on whether this approach is wanted, and meanwhile update the PR description with how you tested it and consider merging this with #40042, since the two overlap.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.024225700000000003
+}

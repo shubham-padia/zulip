@@ -1,0 +1,11 @@
+{
+ "case": "39691-5277811900",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review: the earlier changes were already pushed, and the author has explained what is left**\n\nNew: The author confirmed the requested changes were made before the \"not ready\" label and that they had messaged @prakhar1144 directly, with no new push since. They kept the reply-button label helpers on purpose, to reuse them in the Galène video call PR (#39792). Missing: @prakhar1144 hasn't confirmed that this satisfies his dismissed review, and the self-review checklist is still unchecked.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @prakhar1144, who requested the changes and can decide whether keeping the helpers is acceptable.\n\n###### Reply\n\n```quote\nThanks for clarifying. I'm moving this back to maintainer review, and @prakhar1144, could you take another look at whether keeping those helpers is OK?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0137176
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: no new push, and the AI-policy feedback is unanswered**\n\nNew: The author posted two screenshots and an apology, but pushed nothing since the feedback. Missing: the PR description still has the \"Upload your screenshot\" placeholder, and nothing shows the author understands and tested the changes themselves, as the AI policy requires.\n\n###### Next step\n\nKeep \"not ready\" and don't assign anyone. #39758 is an earlier open PR for the same issue with the same approach, which laurynmm already asked shubham-padia to look at.\n\n###### Reply\n\n```quote\nThanks for the screenshots! Please add them to the PR description (it still has the placeholder), and confirm in your own words that you've reviewed and tested the changes yourself, per the [AI use policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.046517699999999995
+}
