@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parent
 MAX_CHARS = 6000
 WORKERS = 4
 PUSH_EVERY = 20
-PUSH_REMOTE = "git@github.com:shubham-padia/zulip.git"
+PUSH_REMOTE = "https://github.com/shubham-padia/zulip.git"
 PUSH_BRANCH = "triage-eval1"
 
 STAGES = {
@@ -66,7 +66,7 @@ def push(message: str) -> None:
     if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
         return
     subprocess.run(["git", "commit", "-qm", message], cwd=ROOT, check=True)
-    subprocess.run(["git", "push", "-q", "-f", PUSH_REMOTE, f"HEAD:{PUSH_BRANCH}"], cwd=ROOT)
+    subprocess.run(["git", "-c", "credential.helper=!gh auth git-credential", "push", "-q", "-f", PUSH_REMOTE, f"HEAD:{PUSH_BRANCH}"], cwd=ROOT)
 
 
 def run_one(run: str, model: str, effort: str | None, prompt: str, case: dict) -> None:
