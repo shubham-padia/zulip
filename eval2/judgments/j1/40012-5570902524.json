@@ -1,0 +1,165 @@
+{
+ "case": "40012-5570902524",
+ "repeat": 1,
+ "map": {
+  "I": [
+   "v3-r2"
+  ],
+  "Y": [
+   "v2-r1"
+  ],
+  "P": [
+   "v1-r2"
+  ],
+  "K": [
+   "v2-r2"
+  ],
+  "E": [
+   "v1-r1"
+  ],
+  "H": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key exactly.",
+    "accuracy_why": "It covers both met asks, notes there was no push, and briefly flags timabbott's /help/ suggestion for the reviewer.",
+    "reply_why": "A short thanks plus a reviewer ping matches the ask, though 'this looks good now' slightly overreaches for a triager."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "All must-haves are present and correct, including the approach difference from timabbott's suggestion.",
+    "reply_why": "A thanks plus a reviewer ping is pasteable and matches the ask."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "All must-haves are present with no wrong facts; the CI and unchecked-box lines are extra but true.",
+    "reply_why": "The reviewer ping works, but it doesn't thank the author as the reply ask suggests."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "It is accurate and concise, but it omits the approach difference from timabbott's /help/ suggestion.",
+    "reply_why": "A thanks plus a reviewer ping is fine, with a slight 'looks good' overreach."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "It misses the timabbott approach point and adds an irrelevant 'help wanted' close-reason remark.",
+    "reply_why": "A thanks plus a reviewer ping is pasteable."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Claims laurynmm earlier asked the author to drop the title tag, which she did not explicitly ask."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 5,
+    "decision_why": "NOTE with a hand-off to laurynmm matches the key.",
+    "accuracy_why": "It omits that there was no new push and misattributes the title-tag change as a requested ask.",
+    "reply_why": "A thanks plus a reviewer ping is pasteable."
+   }
+  },
+  "ranking": [
+   "H",
+   "E",
+   "Y",
+   "I",
+   "P",
+   "K"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key exactly.\",\n \"accuracy_why\": \"It covers both met asks, notes there was no push, and briefly flags timabbott's /help/ suggestion for the reviewer.\",\n \"reply_why\": \"A short thanks plus a reviewer ping matches the ask, though 'this looks good now' slightly overreaches for a triager.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"All must-haves are present and correct, including the approach difference from timabbott's suggestion.\",\n \"reply_why\": \"A thanks plus a reviewer ping is pasteable and matches the ask.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"All must-haves are present with no wrong facts; the CI and unchecked-box lines are extra but true.\",\n \"reply_why\": \"The reviewer ping works, but it doesn't thank the author as the reply ask suggests.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It is accurate and concise, but it omits the approach difference from timabbott's /help/ suggestion.\",\n \"reply_why\": \"A thanks plus a reviewer ping is fine, with a slight 'looks good' overreach.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 6,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It misses the timabbott approach point and adds an irrelevant 'help wanted' close-reason remark.\",\n \"reply_why\": \"A thanks plus a reviewer ping is pasteable.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Claims laurynmm earlier asked the author to drop the title tag, which she did not explicitly ask.\"], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 5,\n \"decision_why\": \"NOTE with a hand-off to laurynmm matches the key.\",\n \"accuracy_why\": \"It omits that there was no new push and misattributes the title-tag change as a requested ask.\",\n \"reply_why\": \"A thanks plus a reviewer ping is pasteable.\"}\n},\n\"ranking\": [\"H\", \"E\", \"Y\", \"I\", \"P\", \"K\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.163584
+}

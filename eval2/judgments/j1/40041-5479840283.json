@@ -1,0 +1,165 @@
+{
+ "case": "40041-5479840283",
+ "repeat": 1,
+ "map": {
+  "M": [
+   "v2-r1"
+  ],
+  "D": [
+   "v3-r1"
+  ],
+  "P": [
+   "v3-r2"
+  ],
+  "N": [
+   "v1-r1"
+  ],
+  "Q": [
+   "v1-r2"
+  ],
+  "G": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 10,
+    "brevity_score": 8,
+    "decision_why": "It correctly writes a NOTE that recommends removing \"not ready\" and handing the PR to maintainer review.",
+    "accuracy_why": "It confirms the requested link and that the thread has no maintainer reply, but it doesn't say no code was pushed, omits the commit-structure concern, and adds a filler CI-unknown line.",
+    "reply_why": "A single reviewer ping is exactly right for a hand-off."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It correctly writes a NOTE that hands the PR off and assigns a reviewer.",
+    "accuracy_why": "It covers the link, the silent thread and #40042, but it doesn't say no code was pushed, misses the commit-structure concern, and carries a filler CI line.",
+    "reply_why": "A short thanks plus a reviewer ping is pasteable as is."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" even though the only blocker was resolved, when the key calls for a hand-off.",
+    "accuracy_why": "It acknowledges the ask was met and notes no push, no maintainer reply and #40042, but it misses the commit-structure concern and recommends the wrong action.",
+    "reply_why": "It tells the author to wait and redo the template instead of moving the PR to review, which misses the reply_ask."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" when the key says to hand off.",
+    "accuracy_why": "Its facts on the link, no push, the silent thread and #40042 are right, but it misses the commit-structure concern and the action is wrong.",
+    "reply_why": "It asks the author to wait and to redo the template rather than announcing review, so it misses the reply_ask."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks for more work when the key says to hand off.",
+    "accuracy_why": "It acknowledges the ask was met and covers the overlap, but it misses the commit-structure concern and wrongly marks the #40042 overlap as a blocker.",
+    "reply_why": "It wrongly asks the author to combine the PRs or close one and to wait, which goes against the hand-off."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" when the only blocker has been resolved.",
+    "accuracy_why": "It notes the thread and no push but frames the feedback as unaddressed, omits #40042, and misses the commit-structure concern.",
+    "reply_why": "It tells the author to wait for a maintainer instead of moving the PR to review."
+   }
+  },
+  "ranking": [
+   "M",
+   "G",
+   "Q",
+   "P",
+   "N",
+   "D"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 10, \"brevity_score\": 8,\n \"decision_why\": \"It correctly writes a NOTE that recommends removing \\\"not ready\\\" and handing the PR to maintainer review.\",\n \"accuracy_why\": \"It confirms the requested link and that the thread has no maintainer reply, but it doesn't say no code was pushed, omits the commit-structure concern, and adds a filler CI-unknown line.\",\n \"reply_why\": \"A single reviewer ping is exactly right for a hand-off.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It correctly writes a NOTE that hands the PR off and assigns a reviewer.\",\n \"accuracy_why\": \"It covers the link, the silent thread and #40042, but it doesn't say no code was pushed, misses the commit-structure concern, and carries a filler CI line.\",\n \"reply_why\": \"A short thanks plus a reviewer ping is pasteable as is.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" even though the only blocker was resolved, when the key calls for a hand-off.\",\n \"accuracy_why\": \"It acknowledges the ask was met and notes no push, no maintainer reply and #40042, but it misses the commit-structure concern and recommends the wrong action.\",\n \"reply_why\": \"It tells the author to wait and redo the template instead of moving the PR to review, which misses the reply_ask.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" when the key says to hand off.\",\n \"accuracy_why\": \"Its facts on the link, no push, the silent thread and #40042 are right, but it misses the commit-structure concern and the action is wrong.\",\n \"reply_why\": \"It asks the author to wait and to redo the template rather than announcing review, so it misses the reply_ask.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work when the key says to hand off.\",\n \"accuracy_why\": \"It acknowledges the ask was met and covers the overlap, but it misses the commit-structure concern and wrongly marks the #40042 overlap as a blocker.\",\n \"reply_why\": \"It wrongly asks the author to combine the PRs or close one and to wait, which goes against the hand-off.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" when the only blocker has been resolved.\",\n \"accuracy_why\": \"It notes the thread and no push but frames the feedback as unaddressed, omits #40042, and misses the commit-structure concern.\",\n \"reply_why\": \"It tells the author to wait for a maintainer instead of moving the PR to review.\"}\n},\n\"ranking\": [\"M\", \"G\", \"Q\", \"P\", \"N\", \"D\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.147496
+}

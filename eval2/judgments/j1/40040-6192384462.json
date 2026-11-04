@@ -1,0 +1,170 @@
+{
+ "case": "40040-6192384462",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v1-r2"
+  ],
+  "A": [
+   "v3-r2"
+  ],
+  "E": [
+   "v2-r2"
+  ],
+  "R": [
+   "v3-r1"
+  ],
+  "W": [
+   "v2-r1"
+  ],
+  "Z": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "verdict_ignores_open_question",
+     "reply_contradicts_missing_items"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It hands off to sahil839, but the key's observed action is to close.",
+    "accuracy_why": "It flags Lauryn's unanswered question and the done asks, but it never says no maintainer has agreed the problem is real, and it calls the PR ready anyway.",
+    "reply_why": "The reply asks sahil839 to review a PR that should not be reviewed yet."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It keeps \"not ready\" and asks for more feedback rather than closing, though it rightly holds off on assigning a reviewer.",
+    "accuracy_why": "It covers the done asks, the unanswered CZO question and the lack of maintainer agreement, but it omits that the feature is off in the community.",
+    "reply_why": "The reply asks the author to answer Lauryn's question as the key wants, though it doesn't ask where the function is used."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for more feedback instead of closing.",
+    "accuracy_why": "Its checklist of done asks and the open question is accurate, but it never says no maintainer has agreed the problem is worth fixing.",
+    "reply_why": "The reply has the right ask about Lauryn's question and would be pasted almost as is."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "verdict_ignores_open_question",
+     "reply_contradicts_missing_items"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to sahil839 where the key says close.",
+    "accuracy_why": "It notes the unanswered question, yet it declares the PR ready and leaves out the lack of maintainer agreement.",
+    "reply_why": "The reply requests a review from sahil839, which is the wrong decision."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and waits for the author rather than recommending a close.",
+    "accuracy_why": "It covers the done asks, the open question and that previews are off on chat.zulip.org, but it doesn't say no maintainer has agreed the problem is real.",
+    "reply_why": "The reply asks the right question about Lauryn's thread in a pasteable tone, though it misses the ask about where the function is used."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "verdict_ignores_open_question",
+     "reply_contradicts_missing_items"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It hands off to sahil839 where the key says close.",
+    "accuracy_why": "It lists the done asks and the unanswered question, but it calls the PR ready and omits the lack of maintainer agreement.",
+    "reply_why": "The reply pings sahil839 for review, contrary to the right decision."
+   }
+  },
+  "ranking": [
+   "A",
+   "W",
+   "E",
+   "R",
+   "K",
+   "Z"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"verdict_ignores_open_question\", \"reply_contradicts_missing_items\"],\n   \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 2,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It hands off to sahil839, but the key's observed action is to close.\",\n   \"accuracy_why\": \"It flags Lauryn's unanswered question and the done asks, but it never says no maintainer has agreed the problem is real, and it calls the PR ready anyway.\",\n   \"reply_why\": \"The reply asks sahil839 to review a PR that should not be reviewed yet.\"},\n  \"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more feedback rather than closing, though it rightly holds off on assigning a reviewer.\",\n   \"accuracy_why\": \"It covers the done asks, the unanswered CZO question and the lack of maintainer agreement, but it omits that the feature is off in the community.\",\n   \"reply_why\": \"The reply asks the author to answer Lauryn's question as the key wants, though it doesn't ask where the function is used.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more feedback instead of closing.\",\n   \"accuracy_why\": \"Its checklist of done asks and the open question is accurate, but it never says no maintainer has agreed the problem is worth fixing.\",\n   \"reply_why\": \"The reply has the right ask about Lauryn's question and would be pasted almost as is.\"},\n  \"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"verdict_ignores_open_question\", \"reply_contradicts_missing_items\"],\n   \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to sahil839 where the key says close.\",\n   \"accuracy_why\": \"It notes the unanswered question, yet it declares the PR ready and leaves out the lack of maintainer agreement.\",\n   \"reply_why\": \"The reply requests a review from sahil839, which is the wrong decision.\"},\n  \"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and waits for the author rather than recommending a close.\",\n   \"accuracy_why\": \"It covers the done asks, the open question and that previews are off on chat.zulip.org, but it doesn't say no maintainer has agreed the problem is real.\",\n   \"reply_why\": \"The reply asks the right question about Lauryn's thread in a pasteable tone, though it misses the ask about where the function is used.\"},\n  \"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"verdict_ignores_open_question\", \"reply_contradicts_missing_items\"],\n   \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 2,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It hands off to sahil839 where the key says close.\",\n   \"accuracy_why\": \"It lists the done asks and the unanswered question, but it calls the PR ready and omits the lack of maintainer agreement.\",\n   \"reply_why\": \"The reply pings sahil839 for review, contrary to the right decision.\"}},\n \"ranking\": [\"A\", \"W\", \"E\", \"R\", \"K\", \"Z\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.152236
+}

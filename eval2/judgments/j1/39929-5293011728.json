@@ -1,0 +1,167 @@
+{
+ "case": "39929-5293011728",
+ "repeat": 1,
+ "map": {
+  "U": [
+   "v1-r2"
+  ],
+  "L": [
+   "v2-r1"
+  ],
+  "W": [
+   "v2-r2"
+  ],
+  "D": [
+   "v1-r1"
+  ],
+  "T": [
+   "v3-r2"
+  ],
+  "C": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE that recommends hand-off, which matches the key.",
+    "accuracy_why": "It covers the cleanup and flags CI as unverified, but it suggests karlstolley instead of sahil839 and misses the missing API changelog and feature-level entry; its note on the testing section is a fair extra.",
+    "reply_why": "A single reviewer-ping line fits a hand-off, though it pings karlstolley rather than the better-suited reviewer."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE that recommends hand-off, which matches the key.",
+    "accuracy_why": "It has every cutoff must-have except the missing API changelog entry, and it names Sahil Batra correctly.",
+    "reply_why": "\"No reply needed.\" is acceptable for a hand-off."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE that recommends hand-off, which matches the key.",
+    "accuracy_why": "It covers the cleanup and the unverified CI concisely, but it picks karlstolley over sahil839 and misses the API changelog gap.",
+    "reply_why": "A single reviewer-ping line is fine, though it pings karlstolley rather than the better-suited reviewer."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "It writes a NOTE that recommends hand-off, which matches the key.",
+    "accuracy_why": "It describes the cleanup and flags CI as unverified, but it misses the sahil839 suggestion and the API changelog gap.",
+    "reply_why": "The thank-you plus reviewer ping fits the ask, but it runs to two sentences and pings karlstolley."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the code changes small (+8 lines), when the PR is +139/-31 and size XL; +8 is only the change since the feedback."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE that recommends hand-off, which matches the key.",
+    "accuracy_why": "It leaves the reviewer choice open between karlstolley and Sahil, omits the unverified-CI caveat and the API changelog gap, and misstates the PR's size.",
+    "reply_why": "The thank-you plus ping is serviceable but runs to two sentences and pings karlstolley."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE that recommends hand-off, which matches the key.",
+    "accuracy_why": "It has every cutoff must-have except the API changelog gap and names Sahil Batra correctly.",
+    "reply_why": "\"No reply needed.\" is acceptable for a hand-off."
+   }
+  },
+  "ranking": [
+   "L",
+   "C",
+   "U",
+   "W",
+   "D",
+   "T"
+  ]
+ },
+ "text": "{\"outputs\": {\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It writes a NOTE that recommends hand-off, which matches the key.\",\n   \"accuracy_why\": \"It covers the cleanup and flags CI as unverified, but it suggests karlstolley instead of sahil839 and misses the missing API changelog and feature-level entry; its note on the testing section is a fair extra.\",\n   \"reply_why\": \"A single reviewer-ping line fits a hand-off, though it pings karlstolley rather than the better-suited reviewer.\"},\n  \"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It writes a NOTE that recommends hand-off, which matches the key.\",\n   \"accuracy_why\": \"It has every cutoff must-have except the missing API changelog entry, and it names Sahil Batra correctly.\",\n   \"reply_why\": \"\\\"No reply needed.\\\" is acceptable for a hand-off.\"},\n  \"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It writes a NOTE that recommends hand-off, which matches the key.\",\n   \"accuracy_why\": \"It covers the cleanup and the unverified CI concisely, but it picks karlstolley over sahil839 and misses the API changelog gap.\",\n   \"reply_why\": \"A single reviewer-ping line is fine, though it pings karlstolley rather than the better-suited reviewer.\"},\n  \"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 6,\n   \"decision_why\": \"It writes a NOTE that recommends hand-off, which matches the key.\",\n   \"accuracy_why\": \"It describes the cleanup and flags CI as unverified, but it misses the sahil839 suggestion and the API changelog gap.\",\n   \"reply_why\": \"The thank-you plus reviewer ping fits the ask, but it runs to two sentences and pings karlstolley.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Calls the code changes small (+8 lines), when the PR is +139/-31 and size XL; +8 is only the change since the feedback.\"], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 7,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It writes a NOTE that recommends hand-off, which matches the key.\",\n   \"accuracy_why\": \"It leaves the reviewer choice open between karlstolley and Sahil, omits the unverified-CI caveat and the API changelog gap, and misstates the PR's size.\",\n   \"reply_why\": \"The thank-you plus ping is serviceable but runs to two sentences and pings karlstolley.\"},\n  \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It writes a NOTE that recommends hand-off, which matches the key.\",\n   \"accuracy_why\": \"It has every cutoff must-have except the API changelog gap and names Sahil Batra correctly.\",\n   \"reply_why\": \"\\\"No reply needed.\\\" is acceptable for a hand-off.\"}},\n \"ranking\": [\"L\", \"C\", \"U\", \"W\", \"D\", \"T\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.18222
+}

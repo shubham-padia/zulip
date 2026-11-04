@@ -1,0 +1,170 @@
+{
+ "case": "40013-5589724033",
+ "repeat": 1,
+ "map": {
+  "H": [
+   "v2-r1"
+  ],
+  "X": [
+   "v2-r2"
+  ],
+  "W": [
+   "v3-r1"
+  ],
+  "D": [
+   "v1-r2"
+  ],
+  "F": [
+   "v3-r2"
+  ],
+  "Y": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE matches the key, but it recommends handing off where the key says keep 'not ready' and send more feedback.",
+    "accuracy_why": "It describes the pushes, test files and open tooltip question correctly, but misses the undiscussed API changes, which decide the case.",
+    "reply_why": "It is a review ping instead of telling the author the API changes need #api design discussion and docs."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "NOTE matches, but hand_off is wrong because unapproved API changes keep the PR not ready.",
+    "accuracy_why": "Its stated facts are accurate and it hedges on the tooltip, but it misses both decisive API facts and calls the tooltip question 'mostly settled'.",
+    "reply_why": "The reply pings for review instead of asking for #api design discussion, a changelog entry and API doc screenshots."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Says the 3 added test files hold backend tests for the avatar delete flow; they likely cover the new avatar_source field.",
+     "Says nothing missing blocks a review, while the undiscussed API changes do."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "NOTE matches, but it hands off when the key says more feedback.",
+    "accuracy_why": "It misreads what the new test files are for and misses the API-change problem entirely.",
+    "reply_why": "A review ping misses the needed ask about API design approval."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Says the new pushes added the backend tests for deleting bot avatars and 'fixes', but those delete tests were in test_bots.py, which was already in the PR before the label.",
+     "Says nothing missing blocks a first review."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "NOTE matches, but hand_off is the wrong action.",
+    "accuracy_why": "It misstates what the pushes added and misses the API changes that decide the case.",
+    "reply_why": "The reply asks for review instead of API design discussion and docs."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the tooltip question was answered in chat, but it is still open in #design (the author has only one go-ahead)."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE matches, but it hands off when the key says more feedback.",
+    "accuracy_why": "It wrongly calls the tooltip question settled and misses both decisive API facts.",
+    "reply_why": "A plain review ping misses the API-design ask."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the issue's 'help wanted' label is gone, which nothing in the inputs supports."
+    ],
+    "rule_failures": [
+     "filler_point",
+     "code_details"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 5,
+    "decision_why": "NOTE matches, but hand_off is wrong.",
+    "accuracy_why": "It notes the PR reuses patch_bot_backend but never flags that as an unapproved API change, and it adds an unsupported claim about the label.",
+    "reply_why": "The reply pings for review instead of asking for API design approval and docs."
+   }
+  },
+  "ranking": [
+   "X",
+   "Y",
+   "W",
+   "F",
+   "H",
+   "D"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"NOTE matches the key, but it recommends handing off where the key says keep 'not ready' and send more feedback.\",\n \"accuracy_why\": \"It describes the pushes, test files and open tooltip question correctly, but misses the undiscussed API changes, which decide the case.\",\n \"reply_why\": \"It is a review ping instead of telling the author the API changes need #api design discussion and docs.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"NOTE matches, but hand_off is wrong because unapproved API changes keep the PR not ready.\",\n \"accuracy_why\": \"Its stated facts are accurate and it hedges on the tooltip, but it misses both decisive API facts and calls the tooltip question 'mostly settled'.\",\n \"reply_why\": \"The reply pings for review instead of asking for #api design discussion, a changelog entry and API doc screenshots.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"hedged\"},\n \"wrong_facts\": [\"Says the 3 added test files hold backend tests for the avatar delete flow; they likely cover the new avatar_source field.\", \"Says nothing missing blocks a review, while the undiscussed API changes do.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"NOTE matches, but it hands off when the key says more feedback.\",\n \"accuracy_why\": \"It misreads what the new test files are for and misses the API-change problem entirely.\",\n \"reply_why\": \"A review ping misses the needed ask about API design approval.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"hedged\"},\n \"wrong_facts\": [\"Says the new pushes added the backend tests for deleting bot avatars and 'fixes', but those delete tests were in test_bots.py, which was already in the PR before the label.\", \"Says nothing missing blocks a first review.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"NOTE matches, but hand_off is the wrong action.\",\n \"accuracy_why\": \"It misstates what the pushes added and misses the API changes that decide the case.\",\n \"reply_why\": \"The reply asks for review instead of API design discussion and docs.\"},\n\"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the tooltip question was answered in chat, but it is still open in #design (the author has only one go-ahead).\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"NOTE matches, but it hands off when the key says more feedback.\",\n \"accuracy_why\": \"It wrongly calls the tooltip question settled and misses both decisive API facts.\",\n \"reply_why\": \"A plain review ping misses the API-design ask.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says the issue's 'help wanted' label is gone, which nothing in the inputs supports.\"],\n \"rule_failures\": [\"filler_point\", \"code_details\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 5,\n \"decision_why\": \"NOTE matches, but hand_off is wrong.\",\n \"accuracy_why\": \"It notes the PR reuses patch_bot_backend but never flags that as an unapproved API change, and it adds an unsupported claim about the label.\",\n \"reply_why\": \"The reply pings for review instead of asking for API design approval and docs.\"}\n},\n\"ranking\": [\"X\", \"Y\", \"W\", \"F\", \"H\", \"D\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.401372
+}

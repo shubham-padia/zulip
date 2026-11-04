@@ -1,0 +1,163 @@
+{
+ "case": "39894-5278594007",
+ "repeat": 1,
+ "map": {
+  "S": [
+   "v2-r2"
+  ],
+  "R": [
+   "v1-r1"
+  ],
+  "I": [
+   "v3-r1"
+  ],
+  "K": [
+   "v2-r1"
+  ],
+  "N": [
+   "v3-r2"
+  ],
+  "B": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key exactly.",
+    "accuracy_why": "It covers the screenshots and the 5px→6px blur with the #design point, but it never says there was no new push or that CI passed, and it suggests laurynmm rather than karlstolley.",
+    "reply_why": "This is a clean reviewer ping that flags the blur change and can be pasted as is."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "Everything is covered except the karlstolley reviewer suggestion.",
+    "reply_why": "This is a simple reviewer ping that can be pasted as is."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "It is accurate on the screenshots, the unchanged code and the blur change, and misses only the karlstolley reviewer suggestion.",
+    "reply_why": "This is a concise reviewer ping that mentions the shadow difference and can be pasted as is."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "It is strong on the #design concern and mentions CI, but it never says there was no new push and it misses karlstolley.",
+    "reply_why": "This is a clear reviewer ping that raises the #design question and can be pasted as is."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "It covers the screenshots, the lack of a new push and the blur change with #design, and misses only the karlstolley suggestion.",
+    "reply_why": "It thanks the author and pings a reviewer in one short line, which matches the reply ask."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "It is accurate on the lack of a new push, CI, the screenshots and the blur change, and misses only the karlstolley suggestion.",
+    "reply_why": "This is a reviewer ping that mentions the blur change and can be pasted as is."
+   }
+  },
+  "ranking": [
+   "N",
+   "I",
+   "K",
+   "B",
+   "S",
+   "R"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"It covers the screenshots and the 5px→6px blur with the #design point, but it never says there was no new push or that CI passed, and it suggests laurynmm rather than karlstolley.\",\n \"reply_why\": \"This is a clean reviewer ping that flags the blur change and can be pasted as is.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"Everything is covered except the karlstolley reviewer suggestion.\",\n \"reply_why\": \"This is a simple reviewer ping that can be pasted as is.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"It is accurate on the screenshots, the unchanged code and the blur change, and misses only the karlstolley reviewer suggestion.\",\n \"reply_why\": \"This is a concise reviewer ping that mentions the shadow difference and can be pasted as is.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"It is strong on the #design concern and mentions CI, but it never says there was no new push and it misses karlstolley.\",\n \"reply_why\": \"This is a clear reviewer ping that raises the #design question and can be pasted as is.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"It covers the screenshots, the lack of a new push and the blur change with #design, and misses only the karlstolley suggestion.\",\n \"reply_why\": \"It thanks the author and pings a reviewer in one short line, which matches the reply ask.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"It is accurate on the lack of a new push, CI, the screenshots and the blur change, and misses only the karlstolley suggestion.\",\n \"reply_why\": \"This is a reviewer ping that mentions the blur change and can be pasted as is.\"}\n},\n\"ranking\": [\"N\", \"I\", \"K\", \"B\", \"S\", \"R\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.26288
+}

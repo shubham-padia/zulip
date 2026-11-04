@@ -1,0 +1,163 @@
+{
+ "case": "40042-6183102956",
+ "repeat": 1,
+ "map": {
+  "Q": [
+   "v2-r1"
+  ],
+  "C": [
+   "v1-r2"
+  ],
+  "J": [
+   "v1-r1"
+  ],
+  "M": [
+   "v3-r1"
+  ],
+  "B": [
+   "v2-r2"
+  ],
+  "P": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It covers every must-have, including companion PR #40041, and has no wrong facts.",
+    "reply_why": "A single ping line asking sahil839 to take another look is what a hand-off needs."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It is accurate throughout but omits companion PR #40041.",
+    "reply_why": "A single reviewer ping can be pasted as is."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It recommends hand-off, but asking the triager to skim the commit bodies before handing off slightly hedges that call.",
+    "accuracy_why": "It is accurate but omits companion PR #40041.",
+    "reply_why": "A single reviewer ping can be pasted as is."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It is accurate and compact but omits companion PR #40041.",
+    "reply_why": "A short thanks plus the ping matches the reply ask, though it is slightly more than a single ping line."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It is accurate but omits #40041 and doesn't say the files and size are unchanged.",
+    "reply_why": "A single reviewer ping can be pasted as is."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 10,
+    "decision_why": "It writes a NOTE that recommends handing off, which matches the key.",
+    "accuracy_why": "It covers all decisive facts concisely but omits companion PR #40041.",
+    "reply_why": "A single reviewer ping can be pasted as is."
+   }
+  },
+  "ranking": [
+   "P",
+   "Q",
+   "M",
+   "B",
+   "C",
+   "J"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It writes a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It covers every must-have, including companion PR #40041, and has no wrong facts.\",\n \"reply_why\": \"A single ping line asking sahil839 to take another look is what a hand-off needs.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It writes a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It is accurate throughout but omits companion PR #40041.\",\n \"reply_why\": \"A single reviewer ping can be pasted as is.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It recommends hand-off, but asking the triager to skim the commit bodies before handing off slightly hedges that call.\",\n \"accuracy_why\": \"It is accurate but omits companion PR #40041.\",\n \"reply_why\": \"A single reviewer ping can be pasted as is.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It writes a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It is accurate and compact but omits companion PR #40041.\",\n \"reply_why\": \"A short thanks plus the ping matches the reply ask, though it is slightly more than a single ping line.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It writes a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It is accurate but omits #40041 and doesn't say the files and size are unchanged.\",\n \"reply_why\": \"A single reviewer ping can be pasted as is.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 10,\n \"decision_why\": \"It writes a NOTE that recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It covers all decisive facts concisely but omits companion PR #40041.\",\n \"reply_why\": \"A single reviewer ping can be pasted as is.\"}\n},\n\"ranking\": [\"P\", \"Q\", \"M\", \"B\", \"C\", \"J\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.148668
+}

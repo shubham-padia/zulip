@@ -1,0 +1,167 @@
+{
+ "case": "39865-5194201765",
+ "repeat": 1,
+ "map": {
+  "I": [
+   "v1-r2"
+  ],
+  "R": [
+   "v2-r2"
+  ],
+  "G": [
+   "v3-r2"
+  ],
+  "X": [
+   "v1-r1"
+  ],
+  "Y": [
+   "v3-r1"
+  ],
+  "Z": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "It catches the mismatched pair sizes, the lack of a push and the unsettled CZO design, though the hedge that it can't view the images is unnecessary.",
+    "reply_why": "It asks for precise same-viewport pairs and links the guide, and a maintainer could paste it with at most a light trim of the design sentence."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for matched screenshots, which matches the key.",
+    "accuracy_why": "The screenshot mismatch and the open design are right, but it never says there was no new push.",
+    "reply_why": "The screenshot ask is right, but the extra request that the author note the CZO discussion on the PR is odd and should be reworded."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\", but it does so for the design question rather than the screenshots.",
+    "accuracy_why": "It notes the size mismatch only as a minor info point and doesn't treat it as the blocker.",
+    "reply_why": "The reply thanks the author for the screenshots and never asks for precise ones, so it misses the reply_ask."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "The added screenshots satisfy laurynmm's request."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "It keeps \"not ready\", but it blocks only on the design, not on the screenshots.",
+    "accuracy_why": "It wrongly says the screenshot feedback was addressed, and that error drives what it asks for.",
+    "reply_why": "It asks only about the design and misses the precise-screenshot ask."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "The added screenshots cover the earlier feedback."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\", but for the design and commit-splitting reasons, not the screenshots.",
+    "accuracy_why": "It wrongly treats the screenshot request as done, which hides the decisive gap.",
+    "reply_why": "It asks for design settlement and commit splitting but not for precise screenshots."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "The PR now has precise before/after screenshots."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off to a reviewer when the key says to give more feedback.",
+    "accuracy_why": "It marks the screenshots as precise, and the hand-off rests on that false claim.",
+    "reply_why": "It pings a reviewer instead of asking for retaken screenshots."
+   }
+  },
+  "ranking": [
+   "X",
+   "Z",
+   "I",
+   "Y",
+   "G",
+   "R"
+  ]
+ },
+ "text": "{\"outputs\": {\n\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"It catches the mismatched pair sizes, the lack of a push and the unsettled CZO design, though the hedge that it can't view the images is unnecessary.\",\n \"reply_why\": \"It asks for precise same-viewport pairs and links the guide, and a maintainer could paste it with at most a light trim of the design sentence.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for matched screenshots, which matches the key.\",\n \"accuracy_why\": \"The screenshot mismatch and the open design are right, but it never says there was no new push.\",\n \"reply_why\": \"The screenshot ask is right, but the extra request that the author note the CZO discussion on the PR is odd and should be reworded.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\", but it does so for the design question rather than the screenshots.\",\n \"accuracy_why\": \"It notes the size mismatch only as a minor info point and doesn't treat it as the blocker.\",\n \"reply_why\": \"The reply thanks the author for the screenshots and never asks for precise ones, so it misses the reply_ask.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"The added screenshots satisfy laurynmm's request.\"], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"It keeps \\\"not ready\\\", but it blocks only on the design, not on the screenshots.\",\n \"accuracy_why\": \"It wrongly says the screenshot feedback was addressed, and that error drives what it asks for.\",\n \"reply_why\": \"It asks only about the design and misses the precise-screenshot ask.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\"},\n \"wrong_facts\": [\"The added screenshots cover the earlier feedback.\"], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\", but for the design and commit-splitting reasons, not the screenshots.\",\n \"accuracy_why\": \"It wrongly treats the screenshot request as done, which hides the decisive gap.\",\n \"reply_why\": \"It asks for design settlement and commit splitting but not for precise screenshots.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"The PR now has precise before/after screenshots.\"], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It recommends handing off to a reviewer when the key says to give more feedback.\",\n \"accuracy_why\": \"It marks the screenshots as precise, and the hand-off rests on that false claim.\",\n \"reply_why\": \"It pings a reviewer instead of asking for retaken screenshots.\"}\n},\n\"ranking\": [\"X\", \"Z\", \"I\", \"Y\", \"G\", \"R\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.365492
+}

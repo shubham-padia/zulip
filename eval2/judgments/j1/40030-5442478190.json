@@ -1,0 +1,168 @@
+{
+ "case": "40030-5442478190",
+ "repeat": 1,
+ "map": {
+  "X": [
+   "v2-r1"
+  ],
+  "E": [
+   "v2-r2"
+  ],
+  "Y": [
+   "v3-r2"
+  ],
+  "H": [
+   "v3-r1"
+  ],
+  "G": [
+   "v1-r2"
+  ],
+  "N": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Marks the self-review checklist as fine (✅ filled in), but it does not match Zulip's PR template."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending keeping \"not ready\" and asking for more matches the key.",
+    "accuracy_why": "It catches the missing issue and the squash, but it never says the author removed the label himself, and it wrongly approves the checklist.",
+    "reply_why": "It asks for an issue link and asks the author to leave the label, but it gives no guide link and doesn't offer a chat.zulip.org discussion as an option."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Marks the self-review checklist as fine (✅ filled in), but it does not match the template.",
+     "Says the 5 pushes were squashed, when two commits were squashed into one."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "A NOTE with more_feedback matches the key, though the \"close candidate\" framing goes further than the key does.",
+    "accuracy_why": "It names the missing issue, but it never says the author removed the label himself, wrongly approves the checklist, and misstates the squash.",
+    "reply_why": "It asks the author to leave the label and link a \"help wanted\" issue, but it misses the chat.zulip.org discussion option and the guide link."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "A NOTE with more_feedback matches the key.",
+    "accuracy_why": "It covers the squash, the missing issue and the thin description, but it describes the label removal as a request and never flags it, and it skips the checklist mismatch.",
+    "reply_why": "It links the reviewable-PRs guide and asks for context, but it doesn't ask the author to stop removing maintainer labels."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "A NOTE with more_feedback matches the key.",
+    "accuracy_why": "The squash, the missing issue and the thin description are right, but it never flags the self-removed label and skips the checklist mismatch.",
+    "reply_why": "It asks for an issue and a better description, but it has no label request and no guide link."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "A NOTE with more_feedback matches the key.",
+    "accuracy_why": "It names the missing issue and the squash, but it ignores the self-removed label and the checklist mismatch.",
+    "reply_why": "It asks only for a \"help wanted\" issue, links the wrong guide, and doesn't ask the author to leave the label alone."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says the template is filled in and the PR is ready for review."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing the PR off for review, but the key says to keep \"not ready\" and give more feedback.",
+    "accuracy_why": "It treats a bare squash as readiness, ignores the self-removed label, and wrongly approves the template.",
+    "reply_why": "Pinging a reviewer is the wrong decision for a PR that still needs feedback."
+   }
+  },
+  "ranking": [
+   "X",
+   "E",
+   "G",
+   "N",
+   "Y",
+   "H"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Marks the self-review checklist as fine (✅ filled in), but it does not match Zulip's PR template.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending keeping \\\"not ready\\\" and asking for more matches the key.\",\n   \"accuracy_why\": \"It catches the missing issue and the squash, but it never says the author removed the label himself, and it wrongly approves the checklist.\",\n   \"reply_why\": \"It asks for an issue link and asks the author to leave the label, but it gives no guide link and doesn't offer a chat.zulip.org discussion as an option.\"},\n \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Marks the self-review checklist as fine (✅ filled in), but it does not match the template.\", \"Says the 5 pushes were squashed, when two commits were squashed into one.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE with more_feedback matches the key, though the \\\"close candidate\\\" framing goes further than the key does.\",\n   \"accuracy_why\": \"It names the missing issue, but it never says the author removed the label himself, wrongly approves the checklist, and misstates the squash.\",\n   \"reply_why\": \"It asks the author to leave the label and link a \\\"help wanted\\\" issue, but it misses the chat.zulip.org discussion option and the guide link.\"},\n \"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE with more_feedback matches the key.\",\n   \"accuracy_why\": \"It covers the squash, the missing issue and the thin description, but it describes the label removal as a request and never flags it, and it skips the checklist mismatch.\",\n   \"reply_why\": \"It links the reviewable-PRs guide and asks for context, but it doesn't ask the author to stop removing maintainer labels.\"},\n \"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE with more_feedback matches the key.\",\n   \"accuracy_why\": \"The squash, the missing issue and the thin description are right, but it never flags the self-removed label and skips the checklist mismatch.\",\n   \"reply_why\": \"It asks for an issue and a better description, but it has no label request and no guide link.\"},\n \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE with more_feedback matches the key.\",\n   \"accuracy_why\": \"It names the missing issue and the squash, but it ignores the self-removed label and the checklist mismatch.\",\n   \"reply_why\": \"It asks only for a \\\"help wanted\\\" issue, links the wrong guide, and doesn't ask the author to leave the label alone.\"},\n \"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Says the template is filled in and the PR is ready for review.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 7,\n   \"decision_why\": \"It recommends handing the PR off for review, but the key says to keep \\\"not ready\\\" and give more feedback.\",\n   \"accuracy_why\": \"It treats a bare squash as readiness, ignores the self-removed label, and wrongly approves the template.\",\n   \"reply_why\": \"Pinging a reviewer is the wrong decision for a PR that still needs feedback.\"}},\n \"ranking\": [\"X\", \"E\", \"G\", \"N\", \"Y\", \"H\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.15572
+}

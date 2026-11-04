@@ -1,0 +1,176 @@
+{
+ "case": "39945-5415679206",
+ "repeat": 1,
+ "map": {
+  "V": [
+   "v2-r1"
+  ],
+  "H": [
+   "v3-r1"
+  ],
+  "O": [
+   "v1-r2"
+  ],
+  "T": [
+   "v3-r2"
+  ],
+  "S": [
+   "v2-r2"
+  ],
+  "G": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 6,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends removing \"not ready\" and assigning laurynmm, but the right action is to close the PR (or at least leave it parked) while the core team picks among the competing PRs.",
+    "accuracy_why": "It correctly flags that the relationship section omits #39606 and #40004 and doesn't say why this PR over #38098, but it misses the python-zulip-api concern and the core-team-choice framing.",
+    "reply_why": "A bare review request to laurynmm hands the PR off instead of telling the author a core-team choice is pending."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It hands off to laurynmm even though the PR competes with two in-review PRs and was ultimately closed.",
+    "accuracy_why": "It notes that the section doesn't compare against #38098 and #39481, but it adds a filler 'help wanted / one commit / CI' row and misses the backward-compatibility question.",
+    "reply_why": "Asking laurynmm to review is the wrong ask for a PR that should be closed or left for the core team to choose among."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the relationship-to-other-PRs request as done, though the section doesn't compare this PR to the others",
+     "Calls this a fourth overlapping PR when at least six other open PRs target #19589"
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It hands off, though routing to Niloth-p to review the overlapping PRs together is closer to letting the core team choose.",
+    "accuracy_why": "It treats the comparison request as satisfied and miscounts the competing PRs, and the hand-off rests on both.",
+    "reply_why": "The reply pings Niloth-p for review rather than telling the author that a choice among PRs is pending."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the section explains how the approach differs from the other PRs",
+     "Says nothing the feedback asked for is missing"
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It hands off to Niloth-p for comparison instead of closing or leaving the PR parked.",
+    "accuracy_why": "It wrongly says the relationship section explains the differences and that nothing is missing, which is what the hand-off rests on.",
+    "reply_why": "Asking Niloth-p to review the PRs together is the wrong ask, though it hints at the comparison."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the section says how this approach differs from the other open PRs"
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "It hands off to Niloth-p, which is the wrong action for a PR that should be closed.",
+    "accuracy_why": "It overstates the relationship section as a comparison and lists nothing still missing.",
+    "reply_why": "The reply requests a review instead of explaining that the core team will pick one PR."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the relationship-to-other-PRs request as done, though the section doesn't compare this PR to the others"
+    ],
+    "rule_failures": [
+     "names_contributor",
+     "filler_point"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 6,
+    "decision_why": "It hands off to laurynmm instead of closing or leaving the choice to the core team.",
+    "accuracy_why": "It treats the comparison request as fully met, misses the open design question, and pads with CI and merge-conflict rows.",
+    "reply_why": "It names the contributor and asks laurynmm to review, which is the wrong ask."
+   }
+  },
+  "ranking": [
+   "O",
+   "G",
+   "V",
+   "T",
+   "H",
+   "S"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 6, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It recommends removing \\\"not ready\\\" and assigning laurynmm, but the right action is to close the PR (or at least leave it parked) while the core team picks among the competing PRs.\",\n \"accuracy_why\": \"It correctly flags that the relationship section omits #39606 and #40004 and doesn't say why this PR over #38098, but it misses the python-zulip-api concern and the core-team-choice framing.\",\n \"reply_why\": \"A bare review request to laurynmm hands the PR off instead of telling the author a core-team choice is pending.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 1, \"accuracy_score\": 5, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It hands off to laurynmm even though the PR competes with two in-review PRs and was ultimately closed.\",\n \"accuracy_why\": \"It notes that the section doesn't compare against #38098 and #39481, but it adds a filler 'help wanted / one commit / CI' row and misses the backward-compatibility question.\",\n \"reply_why\": \"Asking laurynmm to review is the wrong ask for a PR that should be closed or left for the core team to choose among.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Marks the relationship-to-other-PRs request as done, though the section doesn't compare this PR to the others\", \"Calls this a fourth overlapping PR when at least six other open PRs target #19589\"],\n \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It hands off, though routing to Niloth-p to review the overlapping PRs together is closer to letting the core team choose.\",\n \"accuracy_why\": \"It treats the comparison request as satisfied and miscounts the competing PRs, and the hand-off rests on both.\",\n \"reply_why\": \"The reply pings Niloth-p for review rather than telling the author that a choice among PRs is pending.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the section explains how the approach differs from the other PRs\", \"Says nothing the feedback asked for is missing\"],\n \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It hands off to Niloth-p for comparison instead of closing or leaving the PR parked.\",\n \"accuracy_why\": \"It wrongly says the relationship section explains the differences and that nothing is missing, which is what the hand-off rests on.\",\n \"reply_why\": \"Asking Niloth-p to review the PRs together is the wrong ask, though it hints at the comparison.\"},\n\"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the section says how this approach differs from the other open PRs\"],\n \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"It hands off to Niloth-p, which is the wrong action for a PR that should be closed.\",\n \"accuracy_why\": \"It overstates the relationship section as a comparison and lists nothing still missing.\",\n \"reply_why\": \"The reply requests a review instead of explaining that the core team will pick one PR.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Marks the relationship-to-other-PRs request as done, though the section doesn't compare this PR to the others\"],\n \"rule_failures\": [\"names_contributor\", \"filler_point\"],\n \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 6,\n \"decision_why\": \"It hands off to laurynmm instead of closing or leaving the choice to the core team.\",\n \"accuracy_why\": \"It treats the comparison request as fully met, misses the open design question, and pads with CI and merge-conflict rows.\",\n \"reply_why\": \"It names the contributor and asks laurynmm to review, which is the wrong ask.\"}\n},\n\"ranking\": [\"O\", \"G\", \"V\", \"T\", \"H\", \"S\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.49914800000000004
+}

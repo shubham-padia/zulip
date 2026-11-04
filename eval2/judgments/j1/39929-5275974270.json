@@ -1,0 +1,165 @@
+{
+ "case": "39929-5275974270",
+ "repeat": 1,
+ "map": {
+  "P": [
+   "v3-r2"
+  ],
+  "O": [
+   "v3-r1"
+  ],
+  "W": [
+   "v1-r1"
+  ],
+  "M": [
+   "v2-r2"
+  ],
+  "Q": [
+   "v2-r1"
+  ],
+  "I": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the squash and the unchanged code, but offers Sahil only as a backup to karlstolley and misses the missing API changelog.",
+    "reply_why": "A short thanks plus a reviewer ping is pasteable, though it pings the feedback-giver rather than the files' top contributor."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It gets the squash and the unchanged size and files right, but misses both Sahil as reviewer and the missing API changelog.",
+    "reply_why": "A short thanks plus a ping is pasteable, but it pings karlstolley instead of a files expert."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the cleanup and the unchanged code, but misses Sahil and the API changelog gap.",
+    "reply_why": "A single reviewer ping line is pasteable as is."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It confirms the cleanup but misses Sahil, the API changelog gap, and the fact that the code is unchanged.",
+    "reply_why": "A concise reviewer ping that a maintainer could paste."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 10,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands off and assigns Sahil Batra, matching the key and the observed action.",
+    "accuracy_why": "It names the right reviewer and confirms the cleanup, but misses the API changelog gap and doesn't say the code is unchanged.",
+    "reply_why": "\"No reply needed.\" is acceptable for a hand-off."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the cleanup and the unchanged code, but misses Sahil and the API changelog gap, and adds a filler point about the issue.",
+    "reply_why": "The reply is longer than needed, with a two-clause thanks before the ping, and it pings karlstolley rather than a files expert."
+   }
+  },
+  "ranking": [
+   "Q",
+   "P",
+   "O",
+   "M",
+   "W",
+   "I"
+  ]
+ },
+ "text": "{\"outputs\": {\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\", \"accuracy_why\": \"It covers the squash and the unchanged code, but offers Sahil only as a backup to karlstolley and misses the missing API changelog.\", \"reply_why\": \"A short thanks plus a reviewer ping is pasteable, though it pings the feedback-giver rather than the files' top contributor.\"}, \"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\", \"accuracy_why\": \"It gets the squash and the unchanged size and files right, but misses both Sahil as reviewer and the missing API changelog.\", \"reply_why\": \"A short thanks plus a ping is pasteable, but it pings karlstolley instead of a files expert.\"}, \"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 6, \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\", \"accuracy_why\": \"It covers the cleanup and the unchanged code, but misses Sahil and the API changelog gap.\", \"reply_why\": \"A single reviewer ping line is pasteable as is.\"}, \"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\", \"accuracy_why\": \"It confirms the cleanup but misses Sahil, the API changelog gap, and the fact that the code is unchanged.\", \"reply_why\": \"A concise reviewer ping that a maintainer could paste.\"}, \"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 10, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that hands off and assigns Sahil Batra, matching the key and the observed action.\", \"accuracy_why\": \"It names the right reviewer and confirms the cleanup, but misses the API changelog gap and doesn't say the code is unchanged.\", \"reply_why\": \"\\\"No reply needed.\\\" is acceptable for a hand-off.\"}, \"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 6, \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\", \"accuracy_why\": \"It covers the cleanup and the unchanged code, but misses Sahil and the API changelog gap, and adds a filler point about the issue.\", \"reply_why\": \"The reply is longer than needed, with a two-clause thanks before the ping, and it pings karlstolley rather than a files expert.\"}}, \"ranking\": [\"Q\", \"P\", \"O\", \"M\", \"W\", \"I\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.18004799999999999
+}

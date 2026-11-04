@@ -1,0 +1,170 @@
+{
+ "case": "39995-5728364177",
+ "repeat": 1,
+ "map": {
+  "Q": [
+   "v1-r1"
+  ],
+  "W": [
+   "v3-r1"
+  ],
+  "O": [
+   "v3-r2"
+  ],
+  "R": [
+   "v1-r2"
+  ],
+  "K": [
+   "v2-r2"
+  ],
+  "I": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_handoff"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "NOTE is right, but it keeps \"not ready\" when the key says to hand off to maintainer review, though its next step at least points to Niloth-p.",
+    "accuracy_why": "It notes the fixture cleanup, that the tag was requested, and the stale `include_emoji_indicators` claim, but its keep-not-ready verdict rests on missing the hand-off.",
+    "reply_why": "It asks for the description fix, but it adds doc.md work and another ping instead of telling the author the PR is moving to review."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind is right, but it recommends more feedback instead of the hand-off.",
+    "accuracy_why": "It gets the fixture change and the stale description, but it misses that Niloth-p asked for this tag, and its verdict depends on that miss.",
+    "reply_why": "The reply holds back review for doc.md and answers to the questions, which is the wrong ask for a hand-off."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE matches, but it says to keep \"not ready\" and not assign a reviewer, which is the opposite of the key.",
+    "accuracy_why": "It covers the fixture removal and the stale opt-in claim, but it presents the tag as premature when Niloth-p asked for it.",
+    "reply_why": "The reply asks for answers and doc.md before re-review instead of moving the PR forward with a description fix."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Refers to Niloth-p as \"his\", while the key refers to her as \"she\"."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "The kind is right, but it keeps \"not ready\" instead of handing off.",
+    "accuracy_why": "It has the fixture change and the stale description, but it misses that the tag was requested, misgenders the reviewer, and adds a checklist filler point.",
+    "reply_why": "The reply asks for the description fix but gates review on the doc.md question, which is the wrong ask."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Marks the LLM-generated fixtures concern as unanswered, but the author captured a real payload from a Zabbix VM on CZO."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 6,
+    "decision_why": "The kind is right, but the action is the wrong one: no label or assignee change.",
+    "accuracy_why": "It hedges on the fixture fix, misses the requested tag, and wrongly treats the LLM-fixtures question as open.",
+    "reply_why": "The reply asks the author to explain the LLM-fixtures guidance they already addressed, and it blocks review."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Marks the LLM-generated fixtures concern as unanswered, but the author captured a real payload from a Zabbix VM on CZO."
+    ],
+    "rule_failures": [
+     "asks_for_done_work",
+     "soft_closing_reply"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 6,
+    "decision_why": "NOTE matches, but it says not to assign a reviewer, the reverse of the hand-off.",
+    "accuracy_why": "It has the size change and the stale description, but it misses the requested tag and wrongly treats the LLM-fixtures concern as open.",
+    "reply_why": "The reply tells the author to reread the guides and rethink fixtures that are already real, and it never asks for the description fix."
+   }
+  },
+  "ranking": [
+   "O",
+   "W",
+   "Q",
+   "R",
+   "K",
+   "I"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"reply_contradicts_handoff\"],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"NOTE is right, but it keeps \\\"not ready\\\" when the key says to hand off to maintainer review, though its next step at least points to Niloth-p.\",\n \"accuracy_why\": \"It notes the fixture cleanup, that the tag was requested, and the stale `include_emoji_indicators` claim, but its keep-not-ready verdict rests on missing the hand-off.\",\n \"reply_why\": \"It asks for the description fix, but it adds doc.md work and another ping instead of telling the author the PR is moving to review.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"The kind is right, but it recommends more feedback instead of the hand-off.\",\n \"accuracy_why\": \"It gets the fixture change and the stale description, but it misses that Niloth-p asked for this tag, and its verdict depends on that miss.\",\n \"reply_why\": \"The reply holds back review for doc.md and answers to the questions, which is the wrong ask for a hand-off.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"NOTE matches, but it says to keep \\\"not ready\\\" and not assign a reviewer, which is the opposite of the key.\",\n \"accuracy_why\": \"It covers the fixture removal and the stale opt-in claim, but it presents the tag as premature when Niloth-p asked for it.\",\n \"reply_why\": \"The reply asks for answers and doc.md before re-review instead of moving the PR forward with a description fix.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Refers to Niloth-p as \\\"his\\\", while the key refers to her as \\\"she\\\".\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"The kind is right, but it keeps \\\"not ready\\\" instead of handing off.\",\n \"accuracy_why\": \"It has the fixture change and the stale description, but it misses that the tag was requested, misgenders the reviewer, and adds a checklist filler point.\",\n \"reply_why\": \"The reply asks for the description fix but gates review on the doc.md question, which is the wrong ask.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Marks the LLM-generated fixtures concern as unanswered, but the author captured a real payload from a Zabbix VM on CZO.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 6,\n \"decision_why\": \"The kind is right, but the action is the wrong one: no label or assignee change.\",\n \"accuracy_why\": \"It hedges on the fixture fix, misses the requested tag, and wrongly treats the LLM-fixtures question as open.\",\n \"reply_why\": \"The reply asks the author to explain the LLM-fixtures guidance they already addressed, and it blocks review.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Marks the LLM-generated fixtures concern as unanswered, but the author captured a real payload from a Zabbix VM on CZO.\"],\n \"rule_failures\": [\"asks_for_done_work\", \"soft_closing_reply\"],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 6,\n \"decision_why\": \"NOTE matches, but it says not to assign a reviewer, the reverse of the hand-off.\",\n \"accuracy_why\": \"It has the size change and the stale description, but it misses the requested tag and wrongly treats the LLM-fixtures concern as open.\",\n \"reply_why\": \"The reply tells the author to reread the guides and rethink fixtures that are already real, and it never asks for the description fix.\"}\n},\n\"ranking\": [\"O\", \"W\", \"Q\", \"R\", \"K\", \"I\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.314396
+}

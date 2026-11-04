@@ -1,0 +1,169 @@
+{
+ "case": "39868-5175066393",
+ "repeat": 1,
+ "map": {
+  "J": [
+   "v1-r1"
+  ],
+  "Z": [
+   "v3-r2"
+  ],
+  "U": [
+   "v2-r2"
+  ],
+  "D": [
+   "v1-r2"
+  ],
+  "H": [
+   "v2-r1"
+  ],
+  "A": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps \"not ready\" for more feedback, which matches the key.",
+    "accuracy_why": "It covers unverified CI, Karl's flexbox advice and the open #39694, but it misses the decisive missing precise before/after screenshots and the small-caps styling change.",
+    "reply_why": "Pointing to Karl's #design advice is useful, but the reply doesn't ask for precise before/after screenshots or a design discussion of the text styling."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" but says to hand off once CI and the checklist are done, which leans toward hand_off too early.",
+    "accuracy_why": "It notes unverified CI and the open #39694, but it misses the screenshots, the small-caps change and Karl's advice.",
+    "reply_why": "It asks only for CI confirmation and checklist items, missing the screenshot and design asks."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and leaves the PR with laurynmm, which matches the key.",
+    "accuracy_why": "It covers only unverified CI and the checklist, and misses the screenshots, the styling change and the design-thread context.",
+    "reply_why": "It asks for checklist completion and CI rather than precise screenshots and a design discussion."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Asserts the click-behavior commit fixes a bug introduced by the first commit, which the input doesn't establish."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" for more feedback, which matches the key.",
+    "accuracy_why": "It mentions unverified CI and Karl's advice, but its squash demand rests on an unsupported claim and it misses the screenshots and the styling change.",
+    "reply_why": "Its main ask, squashing the commits, rests on a guess and misses the key's screenshot and design asks."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the click fix addresses a bug the first commit introduced, which isn't supported."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\", which matches the key.",
+    "accuracy_why": "It rests its main point on an unsupported squash claim and misses the screenshots, the styling change and the design context.",
+    "reply_why": "It asks for a squash based on a guess and doesn't ask for screenshots or a design discussion."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the click-behavior commit fixes the first commit's own work, which isn't established."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps \"not ready\" for more feedback, which matches the key.",
+    "accuracy_why": "It has the same unsupported squash claim, adds a filler point about claiming the issue, and misses the screenshots and design issues.",
+    "reply_why": "It asks for a squash and the checklist instead of precise screenshots and a design discussion."
+   }
+  },
+  "ranking": [
+   "H",
+   "U",
+   "A",
+   "J",
+   "Z",
+   "D"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" for more feedback, which matches the key.\",\n \"accuracy_why\": \"It covers unverified CI, Karl's flexbox advice and the open #39694, but it misses the decisive missing precise before/after screenshots and the small-caps styling change.\",\n \"reply_why\": \"Pointing to Karl's #design advice is useful, but the reply doesn't ask for precise before/after screenshots or a design discussion of the text styling.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 8, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" but says to hand off once CI and the checklist are done, which leans toward hand_off too early.\",\n \"accuracy_why\": \"It notes unverified CI and the open #39694, but it misses the screenshots, the small-caps change and Karl's advice.\",\n \"reply_why\": \"It asks only for CI confirmation and checklist items, missing the screenshot and design asks.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and leaves the PR with laurynmm, which matches the key.\",\n \"accuracy_why\": \"It covers only unverified CI and the checklist, and misses the screenshots, the styling change and the design-thread context.\",\n \"reply_why\": \"It asks for checklist completion and CI rather than precise screenshots and a design discussion.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [\"Asserts the click-behavior commit fixes a bug introduced by the first commit, which the input doesn't establish.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" for more feedback, which matches the key.\",\n \"accuracy_why\": \"It mentions unverified CI and Karl's advice, but its squash demand rests on an unsupported claim and it misses the screenshots and the styling change.\",\n \"reply_why\": \"Its main ask, squashing the commits, rests on a guess and misses the key's screenshot and design asks.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Asserts the click fix addresses a bug the first commit introduced, which isn't supported.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\", which matches the key.\",\n \"accuracy_why\": \"It rests its main point on an unsupported squash claim and misses the screenshots, the styling change and the design context.\",\n \"reply_why\": \"It asks for a squash based on a guess and doesn't ask for screenshots or a design discussion.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the click-behavior commit fixes the first commit's own work, which isn't established.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" for more feedback, which matches the key.\",\n \"accuracy_why\": \"It has the same unsupported squash claim, adds a filler point about claiming the issue, and misses the screenshots and design issues.\",\n \"reply_why\": \"It asks for a squash and the checklist instead of precise screenshots and a design discussion.\"}\n},\n\"ranking\": [\"H\", \"U\", \"A\", \"J\", \"Z\", \"D\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.26348
+}

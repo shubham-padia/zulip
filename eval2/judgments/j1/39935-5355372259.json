@@ -1,0 +1,159 @@
+{
+ "case": "39935-5355372259",
+ "repeat": 1,
+ "map": {
+  "G": [
+   "v1-r2"
+  ],
+  "X": [
+   "v3-r2"
+  ],
+  "T": [
+   "v2-r1"
+  ],
+  "D": [
+   "v3-r1"
+  ],
+  "K": [
+   "v2-r2"
+  ],
+  "H": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key.",
+    "accuracy_why": "It covers the CZO clearance, no new push, the CI-retry commits and the description problems, with no wrong facts.",
+    "reply_why": "The reply thanks the author, asks for the description and commit cleanup, and links both guides, so it is pasteable as is."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and routes back to Karl matches the key.",
+    "accuracy_why": "It is compact and complete on the design clearance, no push, the malformed Fixes line and the commit discipline problems.",
+    "reply_why": "The right ask, but \"squash the ci: retry commits into proper, coherent commits\" and the opening clause are slightly awkward."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" with no reviewer matches the key.",
+    "accuracy_why": "All must-haves are present, though the first row oddly opens by saying the description follows the guide.",
+    "reply_why": "A good ask on the Fixes line, the checklist and the commits, but it drops the link to the PR guide that Karl's feedback rested on."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and adds no reviewer matches the key.",
+    "accuracy_why": "It concisely names the design clearance, no new push, the Fixes line problems and the CI-retry commits.",
+    "reply_why": "A clean, pasteable reply that links both guides, though it doesn't mention splitting the large commit."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "A NOTE that keeps \"not ready\" matches the key.",
+    "accuracy_why": "It is complete and correct on what changed and what is missing.",
+    "reply_why": "The reply is pasteable, with both guides linked and the right asks."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" and defers review matches the key.",
+    "accuracy_why": "All must-haves are present, plus a reasonable observation that the contenteditable change is a separate concern.",
+    "reply_why": "A clear, pasteable ask with a follow-up promise, though it lacks the PR guide link."
+   }
+  },
+  "ranking": [
+   "D",
+   "X",
+   "G",
+   "H",
+   "T",
+   "K"
+  ]
+ },
+ "text": "{\"outputs\": {\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 7, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key.\", \"accuracy_why\": \"It covers the CZO clearance, no new push, the CI-retry commits and the description problems, with no wrong facts.\", \"reply_why\": \"The reply thanks the author, asks for the description and commit cleanup, and links both guides, so it is pasteable as is.\"}, \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and routes back to Karl matches the key.\", \"accuracy_why\": \"It is compact and complete on the design clearance, no push, the malformed Fixes line and the commit discipline problems.\", \"reply_why\": \"The right ask, but \\\"squash the ci: retry commits into proper, coherent commits\\\" and the opening clause are slightly awkward.\"}, \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" with no reviewer matches the key.\", \"accuracy_why\": \"All must-haves are present, though the first row oddly opens by saying the description follows the guide.\", \"reply_why\": \"A good ask on the Fixes line, the checklist and the commits, but it drops the link to the PR guide that Karl's feedback rested on.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and adds no reviewer matches the key.\", \"accuracy_why\": \"It concisely names the design clearance, no new push, the Fixes line problems and the CI-retry commits.\", \"reply_why\": \"A clean, pasteable reply that links both guides, though it doesn't mention splitting the large commit.\"}, \"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 6, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" matches the key.\", \"accuracy_why\": \"It is complete and correct on what changed and what is missing.\", \"reply_why\": \"The reply is pasteable, with both guides linked and the right asks.\"}, \"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 7, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and defers review matches the key.\", \"accuracy_why\": \"All must-haves are present, plus a reasonable observation that the contenteditable change is a separate concern.\", \"reply_why\": \"A clear, pasteable ask with a follow-up promise, though it lacks the PR guide link.\"}}, \"ranking\": [\"D\", \"X\", \"G\", \"H\", \"T\", \"K\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.223448
+}

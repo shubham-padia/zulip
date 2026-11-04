@@ -1,0 +1,176 @@
+{
+ "case": "39863-5344084962",
+ "repeat": 1,
+ "map": {
+  "P": [
+   "v1-r2"
+  ],
+  "U": [
+   "v1-r1"
+  ],
+  "X": [
+   "v3-r2"
+  ],
+  "B": [
+   "v3-r1"
+  ],
+  "C": [
+   "v2-r1"
+  ],
+  "J": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commit subject now follows Zulip style because it ends with a period; the trailing period is the remaining style problem."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "It covers the unchanged code, the broken Fixes line and the overlapping #39959, but it gets the decisive commit-period issue backwards.",
+    "reply_why": "The reply asks for the Fixes fix but praises the commit message instead of asking the author to drop the trailing period."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit subject follows the style guide because it ends with a period; it is the trailing period that breaks Zulip style."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" pending more feedback, which matches the key.",
+    "accuracy_why": "It gets the decisive commit-period issue wrong and leaves out the overlapping PR #39959.",
+    "reply_why": "The reply rightly asks for the Fixes line in the description and the commit, but it says the subject looks good and misses the period."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commit subject now looks fine; it still ends with a period."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\", which matches the key's more_feedback.",
+    "accuracy_why": "It covers the unchanged code, the Fixes line and #39959, but it gets the decisive commit-period issue wrong.",
+    "reply_why": "The reply misses the trailing-period ask and re-asks for a key-press screencast that the author appears to have already provided."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commit message matches Zulip style; the subject still ends with a period."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 6,
+    "decision_why": "It recommends handing off for review, but the key says more feedback is needed.",
+    "accuracy_why": "The handoff rests on the wrong claim that the commit style is fixed, though it does note the Fixes line and #39959.",
+    "reply_why": "The reply pings a reviewer for a PR that still needs author changes and never mentions the period."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commit title matches Zulip style because of the final period; the period violates the style."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends a handoff where the key says more_feedback.",
+    "accuracy_why": "The handoff rests on the wrong commit-style claim, though it does note the Fixes line and #39959.",
+    "reply_why": "The reply pings a reviewer prematurely and misses the period fix."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the new commit title follows the commit style.",
+     "Says nothing blocking is missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends a handoff although the commit message still needs fixing.",
+    "accuracy_why": "It claims nothing is blocking, gets the period wrong, and omits both the unchanged code and the overlapping PR.",
+    "reply_why": "The reply only pings a reviewer, which is the wrong next step for this PR."
+   }
+  },
+  "ranking": [
+   "P",
+   "U",
+   "B",
+   "C",
+   "J",
+   "X"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commit subject now follows Zulip style because it ends with a period; the trailing period is the remaining style problem.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"It covers the unchanged code, the broken Fixes line and the overlapping #39959, but it gets the decisive commit-period issue backwards.\",\n \"reply_why\": \"The reply asks for the Fixes fix but praises the commit message instead of asking the author to drop the trailing period.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the commit subject follows the style guide because it ends with a period; it is the trailing period that breaks Zulip style.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" pending more feedback, which matches the key.\",\n \"accuracy_why\": \"It gets the decisive commit-period issue wrong and leaves out the overlapping PR #39959.\",\n \"reply_why\": \"The reply rightly asks for the Fixes line in the description and the commit, but it says the subject looks good and misses the period.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commit subject now looks fine; it still ends with a period.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\", which matches the key's more_feedback.\",\n \"accuracy_why\": \"It covers the unchanged code, the Fixes line and #39959, but it gets the decisive commit-period issue wrong.\",\n \"reply_why\": \"The reply misses the trailing-period ask and re-asks for a key-press screencast that the author appears to have already provided.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commit message matches Zulip style; the subject still ends with a period.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 6,\n \"decision_why\": \"It recommends handing off for review, but the key says more feedback is needed.\",\n \"accuracy_why\": \"The handoff rests on the wrong claim that the commit style is fixed, though it does note the Fixes line and #39959.\",\n \"reply_why\": \"The reply pings a reviewer for a PR that still needs author changes and never mentions the period.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commit title matches Zulip style because of the final period; the period violates the style.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It recommends a handoff where the key says more_feedback.\",\n \"accuracy_why\": \"The handoff rests on the wrong commit-style claim, though it does note the Fixes line and #39959.\",\n \"reply_why\": \"The reply pings a reviewer prematurely and misses the period fix.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the new commit title follows the commit style.\", \"Says nothing blocking is missing.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"It recommends a handoff although the commit message still needs fixing.\",\n \"accuracy_why\": \"It claims nothing is blocking, gets the period wrong, and omits both the unchanged code and the overlapping PR.\",\n \"reply_why\": \"The reply only pings a reviewer, which is the wrong next step for this PR.\"}\n},\n\"ranking\": [\"P\", \"U\", \"B\", \"C\", \"J\", \"X\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.149928
+}

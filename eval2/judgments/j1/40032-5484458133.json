@@ -1,0 +1,182 @@
+{
+ "case": "40032-5484458133",
+ "repeat": 1,
+ "map": {
+  "P": [
+   "v1-r1"
+  ],
+  "Y": [
+   "v2-r1"
+  ],
+  "A": [
+   "v3-r2"
+  ],
+  "F": [
+   "v1-r2"
+  ],
+  "T": [
+   "v2-r2"
+  ],
+  "Z": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the commit has no body explaining the change, which the inputs don't show and the later maintainer review doesn't support.",
+     "Says the PR can go to review once the commit message is fixed, though precise screenshots are still missing."
+    ],
+    "rule_failures": [
+     "asks_for_unverified_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It correctly writes a NOTE that keeps 'not ready' and asks for more feedback, though it undercuts this by implying the PR is review-ready apart from the commit message.",
+    "accuracy_why": "It covers the commit-message problems and confirms the code is unchanged, but it misses the screenshot gap and adds two unsupported claims.",
+    "reply_why": "The commit-message ask is right, but the reply also demands a body that may not be needed and never asks for screenshots."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims there is no commit body explaining why, which the inputs don't support."
+    ],
+    "rule_failures": [
+     "filler_point",
+     "asks_for_unverified_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "It correctly writes a NOTE that keeps 'not ready' and asks for more feedback.",
+    "accuracy_why": "It gets the commit-message problems right, but never says the code is unchanged, misses the screenshots, and makes an unsupported claim about the commit body.",
+    "reply_why": "It asks the right thing about the subject line, but adds a body requirement and does not mention screenshots."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims a commit body explaining why is missing, which the inputs don't support."
+    ],
+    "rule_failures": [
+     "asks_for_unverified_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It correctly writes a NOTE that keeps 'not ready' and asks for more feedback.",
+    "accuracy_why": "It is concise and right about the subject-line problems, but never states the code is unchanged, misses the screenshots, and assumes there is no body.",
+    "reply_why": "The ask about the subject format is solid, but it also asks for a body and does not mention screenshots."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says the PR is otherwise complete with description, testing notes and videos, but precise before/after screenshots are still missing.",
+     "Claims the commit has no message body, which the inputs don't support."
+    ],
+    "rule_failures": [
+     "asks_for_unverified_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It correctly writes a NOTE that keeps 'not ready' and asks for more feedback.",
+    "accuracy_why": "It wrongly calls the PR otherwise complete, which contradicts the screenshot gap, and it also makes an unsupported claim about the commit body.",
+    "reply_why": "It asks the right thing about the subject line, but adds a body demand and does not mention screenshots."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It correctly writes a NOTE that keeps 'not ready' and asks for more feedback.",
+    "accuracy_why": "It has no wrong facts and names the commit-message problems, but never says the code is unchanged and misses the screenshots.",
+    "reply_why": "The reply points to the right areas but only hints at spacing, capitalization and punctuation, and it omits screenshots."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It correctly writes a NOTE that keeps 'not ready' and leaves the PR with laurynmm for more feedback.",
+    "accuracy_why": "It is accurate on what changed and on every commit-message problem, and its only gap is the screenshots.",
+    "reply_why": "The reply gives a specific, pasteable commit-message ask, though it does not request screenshots."
+   }
+  },
+  "ranking": [
+   "Z",
+   "T",
+   "A",
+   "Y",
+   "P",
+   "F"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the commit has no body explaining the change, which the inputs don't show and the later maintainer review doesn't support.\", \"Says the PR can go to review once the commit message is fixed, though precise screenshots are still missing.\"],\n \"rule_failures\": [\"asks_for_unverified_work\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"It correctly writes a NOTE that keeps 'not ready' and asks for more feedback, though it undercuts this by implying the PR is review-ready apart from the commit message.\",\n \"accuracy_why\": \"It covers the commit-message problems and confirms the code is unchanged, but it misses the screenshot gap and adds two unsupported claims.\",\n \"reply_why\": \"The commit-message ask is right, but the reply also demands a body that may not be needed and never asks for screenshots.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims there is no commit body explaining why, which the inputs don't support.\"],\n \"rule_failures\": [\"filler_point\", \"asks_for_unverified_work\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 6,\n \"decision_why\": \"It correctly writes a NOTE that keeps 'not ready' and asks for more feedback.\",\n \"accuracy_why\": \"It gets the commit-message problems right, but never says the code is unchanged, misses the screenshots, and makes an unsupported claim about the commit body.\",\n \"reply_why\": \"It asks the right thing about the subject line, but adds a body requirement and does not mention screenshots.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims a commit body explaining why is missing, which the inputs don't support.\"],\n \"rule_failures\": [\"asks_for_unverified_work\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 9,\n \"decision_why\": \"It correctly writes a NOTE that keeps 'not ready' and asks for more feedback.\",\n \"accuracy_why\": \"It is concise and right about the subject-line problems, but never states the code is unchanged, misses the screenshots, and assumes there is no body.\",\n \"reply_why\": \"The ask about the subject format is solid, but it also asks for a body and does not mention screenshots.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Says the PR is otherwise complete with description, testing notes and videos, but precise before/after screenshots are still missing.\", \"Claims the commit has no message body, which the inputs don't support.\"],\n \"rule_failures\": [\"asks_for_unverified_work\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"It correctly writes a NOTE that keeps 'not ready' and asks for more feedback.\",\n \"accuracy_why\": \"It wrongly calls the PR otherwise complete, which contradicts the screenshot gap, and it also makes an unsupported claim about the commit body.\",\n \"reply_why\": \"It asks the right thing about the subject line, but adds a body demand and does not mention screenshots.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"It correctly writes a NOTE that keeps 'not ready' and asks for more feedback.\",\n \"accuracy_why\": \"It has no wrong facts and names the commit-message problems, but never says the code is unchanged and misses the screenshots.\",\n \"reply_why\": \"The reply points to the right areas but only hints at spacing, capitalization and punctuation, and it omits screenshots.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"It correctly writes a NOTE that keeps 'not ready' and leaves the PR with laurynmm for more feedback.\",\n \"accuracy_why\": \"It is accurate on what changed and on every commit-message problem, and its only gap is the screenshots.\",\n \"reply_why\": \"The reply gives a specific, pasteable commit-message ask, though it does not request screenshots.\"}\n},\n\"ranking\": [\"Z\", \"T\", \"A\", \"Y\", \"P\", \"F\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.24442799999999998
+}

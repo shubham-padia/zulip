@@ -1,0 +1,176 @@
+{
+ "case": "39987-5365589747",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "v2-r1"
+  ],
+  "L": [
+   "v3-r1"
+  ],
+  "K": [
+   "v3-r2"
+  ],
+  "Z": [
+   "v2-r2"
+  ],
+  "A": [
+   "v1-r1"
+  ],
+  "P": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "misses_reply_ask"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It correctly keeps 'not ready' in a NOTE and asks for more work, which matches the key.",
+    "accuracy_why": "It credits the avatar fix, the squash and the unverified CI, but misses the decisive gap: the documentation screenshots are missing and the exemption doesn't cover them.",
+    "reply_why": "The reply asks for the self-review checklist instead of documentation screenshots, so it misses the key's ask."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "misses_reply_ask"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It correctly keeps 'not ready' in a NOTE and asks for more work.",
+    "accuracy_why": "It gets the changes and the CI caveat right but never mentions the missing documentation screenshots or the misapplied exemption.",
+    "reply_why": "It asks for the checklist instead of screenshots and promises a hand-off afterward, which would mislead the author."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review although the documentation screenshots are still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends a hand-off where the key says the PR needs more feedback.",
+    "accuracy_why": "It reports the changes correctly, but its 'ready' verdict rests on missing the absent documentation screenshots.",
+    "reply_why": "A reviewer ping is the wrong ask, since the author still needs to add screenshots."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review although the documentation screenshots are still missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends a hand-off where the key says more feedback.",
+    "accuracy_why": "The changes and the CI caveat are right, but it misses the decisive screenshot gap.",
+    "reply_why": "A reviewer ping is the wrong ask for a PR still missing documentation screenshots."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review although the documentation screenshots are still missing."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It recommends a hand-off where the key says more feedback.",
+    "accuracy_why": "The changes are reported correctly, but it misses the missing screenshots that its verdict depends on.",
+    "reply_why": "Pinging a reviewer is the wrong ask while screenshots are still missing."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States 'Missing: nothing blocking' although the documentation screenshots are missing.",
+     "Calls the PR ready for review."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "It recommends a hand-off where the key says more feedback.",
+    "accuracy_why": "It says outright that nothing blocking is missing, which is false and is what its hand-off rests on.",
+    "reply_why": "A bare reviewer ping is the wrong ask for this PR."
+   }
+  },
+  "ranking": [
+   "Z",
+   "D",
+   "K",
+   "P",
+   "A",
+   "L"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"misses_reply_ask\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"It correctly keeps 'not ready' in a NOTE and asks for more work, which matches the key.\",\n \"accuracy_why\": \"It credits the avatar fix, the squash and the unverified CI, but misses the decisive gap: the documentation screenshots are missing and the exemption doesn't cover them.\",\n \"reply_why\": \"The reply asks for the self-review checklist instead of documentation screenshots, so it misses the key's ask.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"misses_reply_ask\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It correctly keeps 'not ready' in a NOTE and asks for more work.\",\n \"accuracy_why\": \"It gets the changes and the CI caveat right but never mentions the missing documentation screenshots or the misapplied exemption.\",\n \"reply_why\": \"It asks for the checklist instead of screenshots and promises a hand-off afterward, which would mislead the author.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review although the documentation screenshots are still missing.\"], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It recommends a hand-off where the key says the PR needs more feedback.\",\n \"accuracy_why\": \"It reports the changes correctly, but its 'ready' verdict rests on missing the absent documentation screenshots.\",\n \"reply_why\": \"A reviewer ping is the wrong ask, since the author still needs to add screenshots.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review although the documentation screenshots are still missing.\"], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It recommends a hand-off where the key says more feedback.\",\n \"accuracy_why\": \"The changes and the CI caveat are right, but it misses the decisive screenshot gap.\",\n \"reply_why\": \"A reviewer ping is the wrong ask for a PR still missing documentation screenshots.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review although the documentation screenshots are still missing.\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It recommends a hand-off where the key says more feedback.\",\n \"accuracy_why\": \"The changes are reported correctly, but it misses the missing screenshots that its verdict depends on.\",\n \"reply_why\": \"Pinging a reviewer is the wrong ask while screenshots are still missing.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"States 'Missing: nothing blocking' although the documentation screenshots are missing.\", \"Calls the PR ready for review.\"], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"It recommends a hand-off where the key says more feedback.\",\n \"accuracy_why\": \"It says outright that nothing blocking is missing, which is false and is what its hand-off rests on.\",\n \"reply_why\": \"A bare reviewer ping is the wrong ask for this PR.\"}\n},\n\"ranking\": [\"Z\", \"D\", \"K\", \"P\", \"A\", \"L\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.134932
+}
