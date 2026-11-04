@@ -1,0 +1,11 @@
+{
+ "case": "40234-5937541838",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the fixture was written by hand, not captured from Jira**\n\nNew: The author changed the PR description to \"Part of #16189\" and added a screenshot. Missing: The description says the fixture was \"constructed following Atlassian's specification\", but Zulip's guidelines require a payload captured from a real Jira instance. There was also no new push, so the commit message was not changed, even though the author says it was.\n\n###### Next step\n\nKeep \"not ready\" and have the author replace the fixture with a real captured payload, since Niloth-p has already rejected constructed fixtures on the related PR #39998.\n\n###### Reply\n\n```quote\nThanks for updating the description and adding the screenshot! The fixture still needs to be a real payload captured from a Jira instance (for example via webhook.site) rather than one built from the API spec; see the [fixture guidelines](https://zulip.readthedocs.io/en/latest/webhooks/incoming-webhooks-walkthrough.html#fixture-guidelines). Please also push the commit message update, since no new push has landed yet.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.032599699999999995
+}

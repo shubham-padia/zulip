@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author posted two screenshots in a comment and said they \"solved this one\". There was no new push, so the code is unchanged since the feedback.\n\n|     |         |\n| --- | ------- |\n| ❌  | The AI-policy feedback is not addressed: the comment doesn't say the author understands and tested the change, and nothing changed in the code or description. |\n| ⚠️  | The screenshots are only in a comment. The PR description still has the \"[Upload your screenshot or video here]\" placeholder. |\n| ℹ️  | Open PR #39758 touches the same two files for the same issue and is waiting on review, so a triager may want to decide which one to pursue. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to address the AI policy and move the screenshots into the description (optionally mention #39758).\n\n###### Reply\n\n```quote\nThanks for the screenshots! Please read our [AI policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines), then explain in your own words what the change does and how you tested it. Also put the screenshots in the PR description, replacing the placeholder text. Note that #39758 is an open PR for the same issue touching the same files.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010015600000000001
+}

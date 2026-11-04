@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nThis PR is meant to stop a scheduled message that was already delivered from also being marked failed when a later notification step raises. It was +46/-11 in 2 files before the squash. It is now +4994/-5409 in 123 files, covering web, corporate, puppet, scripts and docs files that have nothing to do with scheduled messages. The squash and merge appear to have pulled in unrelated changes from main.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | The author squashed 6 commits into 1 and updated the description. The diff grew from 2 files to 123. |\n| ✅  | Commit discipline: there is now one commit, with a clear message and a description that explains the fix. |\n| ❌  | The diff is full of unrelated files (`web/src/*`, `pnpm-lock.yaml`, `version.py`, `CODE_OF_CONDUCT.md`, ...), so it can't be reviewed as it stands. |\n| ⚠️  | The PR links no issue, so there is no \"help wanted\" issue behind it. The author also never ran the tests locally and relied on CI. |\n\n**Reviewer:** None yet. laurynmm gave the feedback and can recheck once the diff is clean.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to rebase so that only the scheduled-messages fix and its test remain.\n\n###### Reply\n\n```quote\nThanks for squashing! The diff now includes about 120 unrelated files, which looks like a bad rebase or merge from main. Could you rebase onto the latest main so the PR only contains your scheduled-messages fix and its test? Please also check that you have a local development environment set up so you can run the tests yourself.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0131875
+}

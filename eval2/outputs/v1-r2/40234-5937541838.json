@@ -1,0 +1,11 @@
+{
+ "case": "40234-5937541838",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author edited the PR description (now \"Part of #16189\", with a fixture explanation and a screenshot) but pushed no new commits.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description now says \"Part of #16189\" instead of closing the issue, and a screenshot is included. |\n| ⚠️  | The author says the commit message was updated, but the head commit is unchanged, so the commit itself may still say \"Fixes\". |\n| ❌  | The fixture is still not captured from a real Jira instance. The description says it was \"constructed following Atlassian's API specification\", which the fixture guidelines don't allow. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to replace the fixture with a payload captured from a real Jira instance.\n\n###### Reply\n\n```quote\nThanks for the updates, @huriazahra! The fixture still needs to be a payload captured from a real Jira instance (for example with webhook.site), not one built from the API docs. See the [fixture guidelines](https://zulip.readthedocs.io/en/latest/webhooks/incoming-webhooks-walkthrough.html#fixture-guidelines), and please also push the commit message change, since the commit looks unchanged.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.009169
+}

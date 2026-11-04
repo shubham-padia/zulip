@@ -1,0 +1,11 @@
+{
+ "case": "40257-6023845324",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed one new commit that adds an error banner (like the network-error one) next to the `blueslip.error` log, and updated the screenshots in the description.\n\n|     |         |\n| --- | ------- |\n| ✅  | Error banner added in `popup_banners.ts`, shown alongside the logged error, as laurynmm asked |\n| ✅  | Description screenshots updated (I can't check the Before/After labels from the text) |\n| ⚠️  | Commit message is unchanged and still only mentions logging, not the new banner |\n| ✅  | CI passes, and the linked issue #6296 has \"help wanted\" and is assigned to the author |\n\n**Reviewer:** laurynmm. They gave the feedback and know what banner behavior they expect.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look? The banner is added now. @Sarvesh-ml, please also update the commit message to mention the banner.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0094806
+}

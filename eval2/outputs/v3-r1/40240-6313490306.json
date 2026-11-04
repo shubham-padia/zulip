@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — no new push, and the AI-policy feedback wasn't answered**\n\nNew: The author added two screenshots in a comment and said it's solved, but the code is unchanged since the feedback. Missing: a reply showing they understand and tested the change themselves (per the AI policy), and the screenshots put in the PR description, which still has the placeholder.\n\n###### Next step\n\n\"not ready\" stays; no reviewer to assign yet. Note that the older open PR #39758 covers the same two files for the same issue, so the triager may want to decide between them.\n\n###### Reply\n\n```quote\nThanks for the screenshots! Please add them to the PR description, and tell us in your own words how the change works and how you tested it, as our [AI use policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines) asks. Once that's done, we can take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0406737
+}

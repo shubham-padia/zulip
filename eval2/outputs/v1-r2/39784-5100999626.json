@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author says they reworked the PR description to discuss the completion candidate (#33086) and added a whitespace fix with a test. The description does now cover #33086, but the screenshots are still laid out the same way.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description now explains how this PR relates to completion candidate #33086, with the differences and the reason for a fresh implementation. |\n| ❌  | Screenshots are still not easy to compare: unlabeled images in separate \"Before\" and \"After\" lists, with different counts (4 vs 2) and no table pairing the same input before and after. |\n| ⚠️  | The whitespace fix (`](` followed by a space) and its test are claimed in the comment, but the bot couldn't find the head commit, so it's unconfirmed that anything was pushed. |\n\n###### Next step\n\nKeep \"not ready\" and ask for precise, paired before/after screenshots; a maintainer can separately decide whether a fresh rewrite is acceptable given the completion candidate.\n\n###### Reply\n\n```quote\nThanks for adding the discussion of #33086, @PrinceXDev, that part looks good. The screenshots still need to be reworked following the [guidelines on precise before/after screenshots](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots): please show the same input before and after side by side, e.g. in a table with labeled rows, so the change can be compared directly.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014926799999999999
+}

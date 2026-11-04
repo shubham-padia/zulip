@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author didn't push new code. They replaced the screenshots in the PR description with a Before/After table, as the feedback asked.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description now has a Before/After table for ascending and descending Author sort. It says all four captures use the same data set, user and viewport. |\n| ✅  | The issue has \"help wanted\", the author is its assignee, and the description, tests and checklist are filled in. CI passed. |\n| ℹ️  | PR #40134 is an open PR for the same issue from 2026-09-15, so the triager may want to decide between the two. |\n\n**Reviewer:** laurynmm — gave the screenshot feedback and can confirm the new screenshots meet the guidelines.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\" and assign laurynmm, after a quick check of how this relates to #40134.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots! @laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0093871
+}

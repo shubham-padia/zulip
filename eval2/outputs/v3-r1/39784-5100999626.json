@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the screenshots still can't be compared before and after**\n\nNew: The author added a section on how this PR relates to #33086 and added support for a space after `](` with a test. Code changes since the feedback couldn't be checked. Missing: Matching before/after screenshots. There are still 4 unlabeled \"before\" images against 2 \"after\" images, and no side-by-side pairs for the same cases.\n\n###### Next step\n\nKeep \"not ready\"; laurynmm already gave the feedback, so no new assignment is needed.\n\n###### Reply\n\n```quote\nThanks for adding the comparison with #33086. The screenshots still need work: please show the same cases side by side, with one labeled \"before\" and one labeled \"after\" for each, as described in [the guide on precise before/after screenshots](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0636217
+}

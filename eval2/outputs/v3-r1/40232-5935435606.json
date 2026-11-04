@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the before/after screenshots now use the same data**\n\nNew: The PR description now has a before/after table with the same data set, user and viewport for ascending and descending sorts, which is what the feedback asked for. No new push was needed, since only the screenshots were requested. Missing: nothing; CI passes and the issue has \"help wanted\".\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the screenshot feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at the updated screenshots and review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0301937
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — no \"help wanted\" issue, and the squash broke the diff**\n\nNew: The author squashed to one commit and updated the description, but the squash pulled in about 120 unrelated files (2 files before, now 123 and +4994/-5409). Missing: a linked issue labeled \"help wanted\" (the description says there is none), and a diff limited to the scheduled-message fix.\n\n###### Next step\n\nClose it, since a first-time contributor opened it without a \"help wanted\" issue: `gh pr close 40211`.\n\n###### Reply\n\n```quote\nThanks for the work here, but we're closing this PR because Zulip only accepts contributions for issues labeled \"help wanted\", and this one isn't tied to such an issue. The branch also now includes many unrelated changes (123 files) from the squash.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0264597
+}

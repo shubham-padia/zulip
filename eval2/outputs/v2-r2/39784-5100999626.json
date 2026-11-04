@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Completion candidate PR #33086: the description now has a \"Relationship to prior work\" section, but the PR is a fresh implementation, not a continuation of #33086 as the continuing-unfinished-work guide asks. |\n| ❌  | Before/after screenshots: still two unpaired bullet lists (4 \"before\" images vs 2 \"after\" images, plus videos). The author's latest comment doesn't mention changing them. |\n| ℹ️  | The author says whitespace after `](` is now handled and tested, but the input couldn't confirm a new push. CI passed. |\n| ℹ️  | The self-review item \"Calls out remaining decisions and concerns\" is still unchecked. |\n\n###### Next step\n\n\"not ready\" stays; ask the author to follow the continuing-unfinished-work guide and to present matching before/after screenshots.\n\n###### Reply\n\n```quote\nThanks for adding the write-up on #33086, @PrinceXDev. The [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html) asks you to build on the existing PR's work (keeping its commits and credit) rather than replace it, so please follow that or explain why that isn't possible. The screenshots also still need to be [precise before/after pairs](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots), e.g. one table row per scenario with the same message before and after.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0175092
+}

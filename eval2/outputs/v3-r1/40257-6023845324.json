@@ -1,0 +1,11 @@
+{
+ "case": "40257-6023845324",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested error banner was added and CI passes**\n\nNew: The author pushed once, adding an error banner like the network-error one alongside the logged error, and updated the screenshot. Missing: nothing blocking; the new banner has no test of its own, which the reviewer can raise.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, the error banner you asked for is now added alongside the logged error. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0236537
+}

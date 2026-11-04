@@ -1,0 +1,11 @@
+{
+ "case": "39728-5012922258",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed one new commit that adds a regression test case. The description, checklist and commit structure are unchanged, and the comment says only that the PR was compared against the guide using an LLM.\n\n|     |         |\n| --- | ------- |\n| ✅  | A regression test case was added in `markdown_test_cases.json`, which also answers the author's own question about test location. |\n| ❌  | The self-review checklist is a custom list, not the PR template's checklist (motivation/approach, CI, edge cases, commit discipline, impact). The closed PR #38363 was criticized for this same problem. |\n| ❌  | Commits aren't organized per the commit discipline guide: \"fixed linting error to pass CI\" and \"Fixes #17419\" are separate fixup-style commits, the test sits in its own commit, and none of the messages use the `area: summary.` format. |\n| ⚠️  | Before/after screenshots are in a comment, not in the PR description. The description also has a typo (\"methon\") and the test commit says \"17418\". |\n\n###### Next step\n\nKeep \"not ready\" and give more feedback.\n\n###### Reply\n\n```quote\nThanks for adding the test! Two things are still needed before review: please replace the self-review checklist with the one from the PR template, and squash your commits so each one is a complete change with a message in the `markdown: Preserve tabs in code blocks.` style, per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). Please also move the screenshots into the PR description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0138532
+}

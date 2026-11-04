@@ -1,0 +1,11 @@
+{
+ "case": "39722-4961693879",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed once and says the requested changes are made. The push left the size, the files and the commit messages unchanged, and the description still has the same screenshots.\n\n|     |         |\n| --- | ------- |\n| ❌  | Commit messages are unchanged, so \"Fixes a part of…\" is not removed and the last commit has no \"Fixes: #16094\" |\n| ❌  | The description still says \"Fixes part of: #16094\" and still shows the wide screenshots with unchanged UI around the change, not precise before/after crops |\n| ✅  | Commits were already split into three, which was the earlier ask |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to make the commit-message and screenshot changes.\n\n###### Reply\n\n```quote\nThanks for the update! It looks like the commit messages haven't changed yet (please remove \"Fixes a part of…\" and put \"Fixes: #16094\" after the description in the last commit), and the screenshots still show a lot of unchanged UI. Please crop them to just the changed area, following the [precise before/after screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0098035
+}

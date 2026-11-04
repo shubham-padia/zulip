@@ -1,0 +1,11 @@
+{
+ "case": "39722-4961693879",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ❌ | Remove \"Fixes a part of ..\" from all commits: commit messages are unchanged since the feedback |\n| ❌ | Put \"Fixes: #16094\" in the last commit: commit messages are unchanged |\n| ❌ | Put \"Fixes\" after the description, not before: the PR description still says \"Fixes part of: #16094\" above the testing section |\n| ❌ | Precise before/after screenshots: the description still shows the same wide screenshots, with a lot of unchanged UI |\n| ℹ️ | There was one new push, but the size (+27/-31) and files are the same, so it likely did not address this feedback. CI status is unknown. |\n\n###### Next step\n\nKeep \"not ready\" and tell the author which requests are still open.\n\n###### Reply\n\n```quote\nThanks for the update! I don't see the changes yet: the commit messages still need the \"Fixes a part of\" lines removed and \"Fixes: #16094\" added to the last commit (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages)). The screenshots also still need to be cropped to just the changed text, per the [guide on precise before/after screenshots](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012095900000000001
+}

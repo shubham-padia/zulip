@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots with the same dataset (the description now has a Before/After table, with one dataset, user and viewport) |\n| ℹ️  | CI passed, no merge conflicts |\n| ℹ️  | Open PR #40134 does the same thing and was opened earlier (2026-09-15). This author claimed the issue on 2026-09-23. |\n\n**Reviewer:** @laurynmm — gave the screenshot feedback and can check that the new screenshots meet it.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm. Decide what to do with the overlapping PR #40134.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look? The before/after screenshots now use the same dataset.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0076895
+}
