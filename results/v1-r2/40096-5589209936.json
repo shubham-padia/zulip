@@ -1,0 +1,6 @@
+{
+ "case": "40096-5589209936",
+ "answer": "no",
+ "text": "no\n\nThe author explains why CI failed and describes the fixes they made, but never asks for a re-review or says the PR is ready for another look.",
+ "cost_usd": 0.0005338
+}
