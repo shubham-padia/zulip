@@ -1,0 +1,1624 @@
+[
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "Toddthegod1",
+  "created_at": "2026-10-30T15:21:42Z",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 40541
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "sakshammittal77",
+  "created_at": "2026-10-20T08:41:00Z",
+  "labels": [
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 40442
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "ishan-one8",
+  "created_at": "2026-10-17T07:25:30Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 40418
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "prabhushreyas",
+  "created_at": "2026-10-16T12:25:15Z",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 40417
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "ishan-one8",
+  "created_at": "2026-10-16T06:54:16Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 40416
+ },
+ {
+  "assignees": [
+   "benprew"
+  ],
+  "author": "Tanaya-2007",
+  "created_at": "2026-10-14T16:13:09Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 40398
+ },
+ {
+  "assignees": [
+   "benprew"
+  ],
+  "author": "Sarvesh-ml",
+  "created_at": "2026-10-12T17:26:36Z",
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "number": 40376
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-10-09T22:12:36Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 40352
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-10-08T15:20:20Z",
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "number": 40336
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "oceankumar",
+  "created_at": "2026-10-06T16:13:36Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 40320
+ },
+ {
+  "assignees": [
+   "PieterCK"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-10-05T20:42:39Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "area: integrations (video calls)",
+   "changes requested"
+  ],
+  "number": 40311
+ },
+ {
+  "assignees": [
+   "andersk"
+  ],
+  "author": "samchinmaya",
+  "created_at": "2026-10-03T10:24:12Z",
+  "labels": [
+   "size: S",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40296
+ },
+ {
+  "assignees": [
+   "mateuszmandera"
+  ],
+  "author": "sdivyanshu90",
+  "created_at": "2026-09-29T13:50:47Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 40241
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "huriazahra",
+  "created_at": "2026-09-29T04:01:27Z",
+  "labels": [
+   "size: L",
+   "maintainer review",
+   "area: integrations (incoming webhooks)",
+   "priority: low"
+  ],
+  "number": 40234
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "prabhakarrai17",
+  "created_at": "2026-09-28T22:08:21Z",
+  "labels": [
+   "size: L",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40232
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "fadiroot",
+  "created_at": "2026-09-26T17:44:28Z",
+  "labels": [
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 40215
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "Asteriskkkk",
+  "created_at": "2026-09-25T17:41:57Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 40208
+ },
+ {
+  "assignees": [
+   "andersk"
+  ],
+  "author": "nishant-devv",
+  "created_at": "2026-09-25T08:26:56Z",
+  "labels": [
+   "size: S",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40205
+ },
+ {
+  "assignees": [
+   "amanagr"
+  ],
+  "author": "Ali-Razahaider",
+  "created_at": "2026-09-23T12:36:32Z",
+  "labels": [
+   "size: S",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40196
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "Aditya-XR",
+  "created_at": "2026-09-23T04:47:37Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40191
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "Indra55",
+  "created_at": "2026-09-22T19:39:35Z",
+  "labels": [
+   "size: L",
+   "has conflicts",
+   "maintainer review",
+   "api docs review",
+   "priority: low"
+  ],
+  "number": 40187
+ },
+ {
+  "assignees": [
+   "prakhar1144"
+  ],
+  "author": "Soul-Ninja",
+  "created_at": "2026-09-20T14:17:04Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40177
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "tmvalijib24",
+  "created_at": "2026-09-20T07:06:47Z",
+  "labels": [
+   "size: M",
+   "maintainer review",
+   "area: documentation (integrations)"
+  ],
+  "number": 40176
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "tmvalijib24",
+  "created_at": "2026-09-19T16:29:40Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 40171
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "abhay5-6",
+  "created_at": "2026-09-18T06:34:28Z",
+  "labels": [
+   "area: settings (admin/org)",
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 40162
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "YEFF190",
+  "created_at": "2026-09-16T06:49:33Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40148
+ },
+ {
+  "assignees": [
+   "PieterCK"
+  ],
+  "author": "Hahashul",
+  "created_at": "2026-09-15T20:38:11Z",
+  "labels": [
+   "area: markdown",
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 40143
+ },
+ {
+  "assignees": [
+   "PieterCK"
+  ],
+  "author": "Rithika016",
+  "created_at": "2026-09-15T11:48:20Z",
+  "labels": [
+   "area: data import/export",
+   "size: XL",
+   "maintainer review",
+   "changes requested"
+  ],
+  "number": 40137
+ },
+ {
+  "assignees": [
+   "apoorvapendse"
+  ],
+  "author": "VijaySreekar",
+  "created_at": "2026-09-12T14:23:59Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40124
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "mayannkkk19",
+  "created_at": "2026-09-09T22:49:54Z",
+  "labels": [
+   "size: S",
+   "area: message feed (UI)",
+   "maintainer review",
+   "design review",
+   "priority: low"
+  ],
+  "number": 40113
+ },
+ {
+  "assignees": [
+   "apoorvapendse"
+  ],
+  "author": "diptomistry",
+  "created_at": "2026-09-08T08:11:49Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "priority: low"
+  ],
+  "number": 40105
+ },
+ {
+  "assignees": [
+   "0xthedance"
+  ],
+  "author": "Alexis211",
+  "created_at": "2026-09-07T08:47:19Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 40097
+ },
+ {
+  "assignees": [
+   "0xthedance"
+  ],
+  "author": "Alexis211",
+  "created_at": "2026-09-07T08:06:30Z",
+  "labels": [
+   "size: M",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "number": 40096
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "Adarsh-Me",
+  "created_at": "2026-09-01T19:33:32Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 40065
+ },
+ {
+  "assignees": [
+   "mateuszmandera"
+  ],
+  "author": "abdelrahman725",
+  "created_at": "2026-08-29T21:41:33Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 40050
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "Siddhesh200419",
+  "created_at": "2026-08-27T07:41:25Z",
+  "labels": [
+   "area: channel settings",
+   "needs more work",
+   "size: S",
+   "needs discussion",
+   "maintainer review"
+  ],
+  "number": 40031
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "bhuvan-somisetty",
+  "created_at": "2026-08-22T21:47:44Z",
+  "labels": [
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 40012
+ },
+ {
+  "assignees": [
+   "andersk"
+  ],
+  "author": "kp-krish",
+  "created_at": "2026-08-22T02:05:11Z",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 40009
+ },
+ {
+  "assignees": [
+   "andersk"
+  ],
+  "author": "it-dieuanh",
+  "created_at": "2026-08-20T23:06:36Z",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 39993
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "sinhSlumbering",
+  "created_at": "2026-08-20T15:24:27Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39989
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "YO-WHATS-UP2",
+  "created_at": "2026-08-19T15:30:01Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39976
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "somaia02",
+  "created_at": "2026-08-19T10:49:42Z",
+  "labels": [
+   "area: documentation (developer)",
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39975
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "abhay5-6",
+  "created_at": "2026-08-18T17:30:54Z",
+  "labels": [
+   "size: XL",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "number": 39964
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "sathwikshetty33",
+  "created_at": "2026-08-17T05:47:25Z",
+  "labels": [
+   "size: XL",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "number": 39950
+ },
+ {
+  "assignees": [
+   "apoorvapendse"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-08-13T11:16:19Z",
+  "labels": [
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 39941
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "Baluduvamsi2006",
+  "created_at": "2026-08-12T10:27:48Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39929
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "sonua11y",
+  "created_at": "2026-08-12T10:17:48Z",
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "number": 39927
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-08-10T19:06:42Z",
+  "labels": [
+   "area: documentation (api)",
+   "size: XL",
+   "post release",
+   "maintainer review"
+  ],
+  "number": 39916
+ },
+ {
+  "assignees": [
+   "amanagr"
+  ],
+  "author": "abdelrahman725",
+  "created_at": "2026-08-07T21:32:53Z",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 39901
+ },
+ {
+  "assignees": [
+   "mateuszmandera"
+  ],
+  "author": "sankhyanreyansh",
+  "created_at": "2026-08-07T18:39:21Z",
+  "labels": [
+   "size: L",
+   "has conflicts",
+   "area: markdown (embeds/previews)",
+   "maintainer review",
+   "area: message feed (embeds)"
+  ],
+  "number": 39899
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "hk2166",
+  "created_at": "2026-08-07T07:50:58Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39894
+ },
+ {
+  "assignees": [
+   "Niloth-p",
+   "PieterCK"
+  ],
+  "author": "sathwikshetty33",
+  "created_at": "2026-08-07T06:37:03Z",
+  "labels": [
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 39893
+ },
+ {
+  "assignees": [
+   "PieterCK"
+  ],
+  "author": "Ar1es-XD",
+  "created_at": "2026-08-05T20:25:34Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39883
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-08-04T04:24:36Z",
+  "labels": [
+   "area: documentation (api)",
+   "size: XL",
+   "post release",
+   "maintainer review"
+  ],
+  "number": 39878
+ },
+ {
+  "assignees": [
+   "apoorvapendse"
+  ],
+  "author": "lfaraone",
+  "created_at": "2026-08-03T22:15:18Z",
+  "labels": [
+   "size: S",
+   "maintainer review",
+   "changes requested"
+  ],
+  "number": 39877
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "Pritesh-30",
+  "created_at": "2026-08-02T18:34:39Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39867
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "abhay5-6",
+  "created_at": "2026-08-02T06:50:22Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39865
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "sathwikshetty33",
+  "created_at": "2026-07-31T17:35:55Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39857
+ },
+ {
+  "assignees": [
+   "PieterCK"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-07-31T09:48:33Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "changes requested"
+  ],
+  "number": 39855
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-07-30T09:28:35Z",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 39849
+ },
+ {
+  "assignees": [
+   "apoorvapendse"
+  ],
+  "author": "sinhSlumbering",
+  "created_at": "2026-07-29T16:31:19Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39844
+ },
+ {
+  "assignees": [
+   "mateuszmandera"
+  ],
+  "author": "ahmadjafari86",
+  "created_at": "2026-07-27T09:53:59Z",
+  "labels": [
+   "area: production",
+   "size: XL",
+   "needs discussion",
+   "maintainer review"
+  ],
+  "number": 39830
+ },
+ {
+  "assignees": [
+   "mateuszmandera"
+  ],
+  "author": "grayguava",
+  "created_at": "2026-07-26T12:08:26Z",
+  "labels": [
+   "area: production",
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 39828
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "ujjwalv01",
+  "created_at": "2026-07-25T18:28:07Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39826
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "rxkshit04",
+  "created_at": "2026-07-25T11:29:00Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "changes requested"
+  ],
+  "number": 39823
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "FAzabmpc",
+  "created_at": "2026-07-25T05:40:19Z",
+  "labels": [
+   "size: S",
+   "has conflicts",
+   "area: message feed (display)",
+   "maintainer review",
+   "changes requested"
+  ],
+  "number": 39819
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-07-24T17:18:56Z",
+  "labels": [
+   "area: documentation (api)",
+   "size: XL",
+   "has conflicts",
+   "post release",
+   "maintainer review"
+  ],
+  "number": 39815
+ },
+ {
+  "assignees": [
+   "PieterCK"
+  ],
+  "author": "Srinandha-Murugesan",
+  "created_at": "2026-07-23T02:35:14Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "changes requested"
+  ],
+  "number": 39804
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "Yashisinghal285",
+  "created_at": "2026-07-22T11:48:03Z",
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "number": 39799
+ },
+ {
+  "assignees": [
+   "PieterCK"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-07-21T14:49:25Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "area: integrations (video calls)",
+   "changes requested"
+  ],
+  "number": 39792
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "YO-WHATS-UP2",
+  "created_at": "2026-07-20T17:48:16Z",
+  "labels": [
+   "size: XL",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "number": 39781
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "whilstsomebody",
+  "created_at": "2026-07-20T17:33:45Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39780
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "RohitYandigeri",
+  "created_at": "2026-07-19T14:28:26Z",
+  "labels": [
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 39770
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "vighneshbhat9945",
+  "created_at": "2026-07-19T10:33:03Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39768
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-07-18T20:37:56Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39765
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-07-16T18:34:52Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39759
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "tazmeenahhmed",
+  "created_at": "2026-07-16T17:09:20Z",
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "number": 39758
+ },
+ {
+  "assignees": [
+   "karlstolley",
+   "dnlklmn"
+  ],
+  "author": "dnlklmn",
+  "created_at": "2026-07-14T19:20:08Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39747
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-07-14T17:03:55Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39744
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-07-14T13:48:15Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39742
+ },
+ {
+  "assignees": [
+   "prakhar1144"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-07-13T11:02:53Z",
+  "labels": [
+   "area: documentation (api)",
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39734
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "tushardev-365",
+  "created_at": "2026-07-13T07:07:22Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39731
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "sathwikshetty33",
+  "created_at": "2026-07-12T09:41:53Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39727
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "whilstsomebody",
+  "created_at": "2026-07-10T15:29:10Z",
+  "labels": [
+   "size: XL",
+   "has conflicts",
+   "maintainer review",
+   "completion candidate",
+   "changes requested"
+  ],
+  "number": 39720
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "DhruvShetty22",
+  "created_at": "2026-07-08T12:28:22Z",
+  "labels": [
+   "size: XL",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "number": 39699
+ },
+ {
+  "assignees": [
+   "prakhar1144"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-07-08T12:00:33Z",
+  "labels": [
+   "area: documentation (api)",
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 39698
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-07-03T07:27:50Z",
+  "labels": [
+   "area: documentation (api)",
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39670
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-06-30T19:19:19Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39652
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-06-30T15:50:39Z",
+  "labels": [
+   "size: XL",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "number": 39651
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "gt12889",
+  "created_at": "2026-06-25T18:09:01Z",
+  "labels": [
+   "area: documentation (api)",
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39623
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "GeniusNirmit",
+  "created_at": "2026-06-25T17:45:54Z",
+  "labels": [
+   "size: XL",
+   "area: popovers and tooltips",
+   "maintainer review"
+  ],
+  "number": 39622
+ },
+ {
+  "assignees": [
+   "benprew"
+  ],
+  "author": "abdelrahman725",
+  "created_at": "2026-06-25T06:31:15Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39619
+ },
+ {
+  "assignees": [
+   "amanagr"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-06-24T16:45:39Z",
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "number": 39614
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "YO-WHATS-UP2",
+  "created_at": "2026-06-21T15:00:46Z",
+  "labels": [
+   "size: XL",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "number": 39589
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-06-21T11:12:50Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39587
+ },
+ {
+  "assignees": [
+   "prakhar1144"
+  ],
+  "author": "Ayush-0217",
+  "created_at": "2026-06-19T02:40:50Z",
+  "labels": [
+   "size: M",
+   "maintainer review",
+   "changes requested",
+   "area: lightbox"
+  ],
+  "number": 39575
+ },
+ {
+  "assignees": [
+   "apoorvapendse"
+  ],
+  "author": "vijetanarwal",
+  "created_at": "2026-06-13T12:33:38Z",
+  "labels": [
+   "size: S",
+   "maintainer review",
+   "completion candidate",
+   "changes requested"
+  ],
+  "number": 39542
+ },
+ {
+  "assignees": [
+   "amanagr"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-06-13T09:10:43Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39541
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "Ayush-0217",
+  "created_at": "2026-06-13T04:55:43Z",
+  "labels": [
+   "bug",
+   "area: right sidebar",
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39540
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-06-12T21:00:50Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39537
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "DhruvShetty22",
+  "created_at": "2026-06-12T20:48:41Z",
+  "labels": [
+   "priority: high",
+   "size: XL",
+   "maintainer review",
+   "area: left sidebar (logic & sorting)"
+  ],
+  "number": 39536
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "abdelrahman725",
+  "created_at": "2026-06-10T16:32:29Z",
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "number": 39518
+ },
+ {
+  "assignees": [
+   "PIG208",
+   "PieterCK"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-06-09T15:37:39Z",
+  "labels": [
+   "priority: high",
+   "size: XL",
+   "has conflicts",
+   "new feature",
+   "maintainer review",
+   "area: integrations (video calls)"
+  ],
+  "number": 39504
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "TasfinMahmud",
+  "created_at": "2026-06-06T17:42:26Z",
+  "labels": [
+   "area: integrations",
+   "good first issue",
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39481
+ },
+ {
+  "assignees": [
+   "chrisbobbe"
+  ],
+  "author": "Ruhdee",
+  "created_at": "2026-06-05T17:49:48Z",
+  "labels": [
+   "size: M",
+   "maintainer review"
+  ],
+  "number": 39474
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "prithvi927",
+  "created_at": "2026-06-05T17:18:32Z",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 39473
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "xchel-rico",
+  "created_at": "2026-06-03T23:07:11Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "area: modals and overlays"
+  ],
+  "number": 39459
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-06-03T11:53:44Z",
+  "labels": [
+   "size: XL",
+   "post release",
+   "blocked",
+   "maintainer review"
+  ],
+  "number": 39454
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "sathwikshetty33",
+  "created_at": "2026-06-01T05:55:51Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "changes requested",
+   "area: integrations (incoming webhooks)"
+  ],
+  "number": 39438
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "bijanmurmu",
+  "created_at": "2026-05-30T01:23:20Z",
+  "labels": [
+   "size: M",
+   "post release",
+   "area: message-editing (topics)",
+   "maintainer review",
+   "changes requested"
+  ],
+  "number": 39436
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-05-27T22:51:56Z",
+  "labels": [
+   "size: XL",
+   "blocked",
+   "maintainer review"
+  ],
+  "number": 39426
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "0xthedance",
+  "created_at": "2026-05-27T16:17:27Z",
+  "labels": [
+   "size: XL",
+   "maintainer review",
+   "changes requested"
+  ],
+  "number": 39424
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "Pritesh-30",
+  "created_at": "2026-05-27T06:11:30Z",
+  "labels": [
+   "bug",
+   "area: message-editing",
+   "priority: high",
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39417
+ },
+ {
+  "assignees": [
+   "mateuszmandera"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-05-23T10:53:13Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39393
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "Aadyot1",
+  "created_at": "2026-05-22T22:18:26Z",
+  "labels": [
+   "area: channel settings",
+   "size: XL",
+   "has conflicts",
+   "area: settings (user groups)",
+   "maintainer review",
+   "completion candidate"
+  ],
+  "number": 39388
+ },
+ {
+  "assignees": [
+   "shubham-padia"
+  ],
+  "author": "whilstsomebody",
+  "created_at": "2026-05-19T16:35:56Z",
+  "labels": [
+   "area: testing-coverage",
+   "size: XL",
+   "area: settings (user groups)",
+   "maintainer review"
+  ],
+  "number": 39337
+ },
+ {
+  "assignees": [
+   "pratik-pc"
+  ],
+  "author": "ArdaUsta13",
+  "created_at": "2026-05-18T12:00:21Z",
+  "labels": [
+   "bug",
+   "area: keyboard UI",
+   "size: XL",
+   "maintainer review",
+   "area: modals and overlays"
+  ],
+  "number": 39332
+ },
+ {
+  "assignees": [
+   "karlstolley"
+  ],
+  "author": "enkhemm",
+  "created_at": "2026-05-18T09:59:37Z",
+  "labels": [
+   "bug",
+   "size: S",
+   "area: message feed (UI)",
+   "maintainer review"
+  ],
+  "number": 39331
+ },
+ {
+  "assignees": [
+   "prakhar1144"
+  ],
+  "author": "xchel-rico",
+  "created_at": "2026-05-17T21:00:55Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39326
+ },
+ {
+  "assignees": [
+   "Niloth-p"
+  ],
+  "author": "hanyucrocks",
+  "created_at": "2026-05-16T07:30:15Z",
+  "labels": [
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 39320
+ },
+ {
+  "assignees": [
+   "sahil839"
+  ],
+  "author": "Yogesh-Shivaji365",
+  "created_at": "2026-05-15T07:40:24Z",
+  "labels": [
+   "size: XL",
+   "maintainer review"
+  ],
+  "number": 39311
+ },
+ {
+  "assignees": [
+   "prakhar1144"
+  ],
+  "author": "xchel-rico",
+  "created_at": "2026-05-12T19:37:28Z",
+  "labels": [
+   "area: refactoring",
+   "size: XL",
+   "has conflicts",
+   "maintainer review"
+  ],
+  "number": 39285
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "thzgajendra",
+  "created_at": "2026-05-07T18:48:35Z",
+  "labels": [
+   "size: S",
+   "maintainer review"
+  ],
+  "number": 39252
+ },
+ {
+  "assignees": [
+   "andersk"
+  ],
+  "author": "grayguava",
+  "created_at": "2026-05-07T16:20:10Z",
+  "labels": [
+   "size: XS",
+   "maintainer review"
+  ],
+  "number": 39250
+ },
+ {
+  "assignees": [
+   "laurynmm"
+  ],
+  "author": "sathwikshetty33",
+  "created_at": "2026-05-07T14:24:15Z",
+  "labels": [
+   "area: integrations (bots)",
+   "size: L",
+   "maintainer review"
+  ],
+  "number": 39247
+ },
+ {
+  "assignees": [
+   "evykassirer"
+  ],
+  "author": "joaohdib",
+  "created_at": "2026-05-05T19:05:09Z",
+  "labels": [
+   "size: L",
+   "area: recent-conversations",
+   "maintainer review"
+  ],
+  "number": 39225
+ }
+]
