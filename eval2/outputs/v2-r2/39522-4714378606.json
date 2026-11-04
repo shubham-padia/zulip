@@ -1,0 +1,11 @@
+{
+ "case": "39522-4714378606",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Restore the accidentally deleted CSS and comments (diff is now +35/-0) |\n| ⚠️  | Remove the out-of-scope \"View all users\" focus block: the PR is smaller, but on 06-15 the author said it was added back, so it's unclear whether it's gone |\n| ⚠️  | Match the left sidebar link's focus style (dark-theme color, border radius): code was pushed, but the description doesn't say how this was handled |\n| ⚠️  | Precise before/after screenshots: the dark-theme images differ in size (before 370×60, after 367×62), so they aren't the same region |\n| ⚠️  | Commit discipline: squashed to one commit, but it uses a `style:` prefix instead of an area prefix like `right_sidebar:` |\n| ℹ️  | CI status is unknown. The author says it's passing |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the screenshots and confirm the left-sidebar match. Don't assign a reviewer yet.\n\n###### Reply\n\n```quote\nThanks for the updates, @Ayush-0217! Please retake the dark-theme before/after screenshots of the exact same region, following the [precise screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Also say how the focus color and border radius now match the left sidebar link, and confirm the \"View all users\" styles are not in this PR.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0246952
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39522-4714378606",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the earlier open questions aren't answered**\n\nNew: The author squashed 15 pushes into one commit (+35/-0, down from +56/-0) and says everything is fixed. Missing: The comment doesn't say whether the unrelated \"View all users\" focus styles were removed, or how the dark-theme focus color and border radius were fixed to match the left-sidebar link. The PR description also still reads as it did before, so there is no new evidence that the precise before/after screenshots match.\n\n###### Next step\n\n\"not ready\" stays; Yogesh-Shivaji365 can keep giving feedback, and no reviewer should be assigned until the author confirms the scope and appearance questions.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit history! Please confirm that this PR now only touches the \"Invite to organization\" link (the \"View all users\" styles belong in #39540), and update the screenshots so the dark-theme focus ring color and border radius visibly match the left-sidebar link, per the [precise screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.012840200000000001
+}

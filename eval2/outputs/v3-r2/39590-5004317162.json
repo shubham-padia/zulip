@@ -1,0 +1,11 @@
+{
+ "case": "39590-5004317162",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the PR template is incomplete and an open PR already covers the same issue**\n\nNew: The author rebased (size unchanged) and says it addresses #37647, so the earlier \"open an issue first\" feedback is moot because that issue exists. Missing: \"Fixes: #37647\" and any testing notes or before/after screenshots for this UI change (the description says only \"code analysis\"). Open PR #39267 also targets the same issue, and nothing here says whether #37647 has \"help wanted\".\n\n###### Next step\n\nKeep \"not ready\"; once the template is filled in and the duplicate with #39267 is sorted out, hand it to apoorvapendse for review.\n\n###### Reply\n\n```quote\nThanks for the rebase! The issue exists, so no need to file a new one, but please keep \"not ready\" for now: add \"Fixes: #37647\" and include how you tested this with before/after screenshots, as described in the [reviewable PR guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html). Please also check how this differs from the open PR #39267 on the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.009389699999999999
+}
