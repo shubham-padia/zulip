@@ -1,0 +1,6 @@
+{
+ "case": "39622-5217587805",
+ "answer": "yes",
+ "text": "yes\nThe author states \"PR is ready for review!\", which is the signal the maintainer asked for, even though they didn't explicitly remove the label or mention a maintainer.",
+ "cost_usd": 0.00379
+}

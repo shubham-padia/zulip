@@ -1,0 +1,6 @@
+{
+ "case": "39590-5004317162",
+ "answer": "yes",
+ "text": "yes\nThe author says CI is passing, recaps the changes, asks the maintainer to take another look, and offers to drop the \"not ready\" label, which signals they consider the PR ready for re-review.",
+ "cost_usd": 0.005266
+}
