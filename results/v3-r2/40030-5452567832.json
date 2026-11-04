@@ -1,0 +1,6 @@
+{
+ "case": "40030-5452567832",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked the author to follow the PR guide and not remove labels, and the author reports having reviewed the guide, squashed to a clean commit, updated the description and checklist, and verified tests pass, which signals the PR is ready for another look.",
+ "cost_usd": 0.0009413
+}

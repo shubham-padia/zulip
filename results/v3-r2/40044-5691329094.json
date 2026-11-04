@@ -1,0 +1,6 @@
+{
+ "case": "40044-5691329094",
+ "answer": "no",
+ "text": "no\n\nThe author says the changelog docs and screenshot are done, but the API design approval the maintainer required is still pending, so they are not declaring the PR ready for review.",
+ "cost_usd": 0.0006613999999999999
+}
