@@ -1,0 +1,11 @@
+{
+ "case": "39862-5398202815",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots: the description has them for three cases, and the wrong top-left image was fixed |\n| ✅  | Original self-review checklist restored in the description |\n| ✅  | Visual direction: posted in #design, and Daniel K approved the text-only card on 08-24, including the extra title-only and narrow-window screenshots he asked for |\n| ℹ️  | CI status isn't available here; the author says checks pass, so confirm it's green |\n| ℹ️  | Issue #39831 has no \"help wanted\" label, but Emily Sutherlin assigned it to the author, so this is fine |\n\n**Reviewer:** @laurynmm — gave the earlier feedback and has recently changed these files (Karl Stolley, who commented in #design and has changed these files most often, is an alternative)\n\n###### Next step\n\nRemove \"not ready\" (and \"design review\", since it's approved), add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, the screenshots and checklist are updated and the design direction was approved in #design, so could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0467747
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39862-5398202815",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed one update (+8 lines), put precise before/after screenshots in the description, restored the standard self-review checklist, and got design approval in the #design thread.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after screenshots are in the description for the image-less, image, and no-metadata cases. |\n| ✅  | The self-review checklist now matches the PR template. |\n| ✅  | Daniel K approved the text-only card direction in #design, including the title-only and narrow-window cases. |\n| ℹ️  | CI status isn't visible to the bot; the author says checks pass. |\n\n**Reviewer:** laurynmm — gave the original feedback and has changed these files before.\n\n###### Next step\n\nRemove \"not ready\" and \"design review\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, the screenshots and checklist are fixed and design approved this in #design. Could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0424723
+}

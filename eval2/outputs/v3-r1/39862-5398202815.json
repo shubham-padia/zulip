@@ -1,0 +1,11 @@
+{
+ "case": "39862-5398202815",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — design approved and the earlier feedback is addressed**\n\nNew: The author updated the screenshots and restored the PR template checklist. Daniel K approved the visual direction in the #design thread after seeing the title-only and narrow-window cases, and there is one new push (+8 lines). Missing: nothing blocking, though CI status isn't visible here.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for the updates and for getting design sign-off, @paul-raja-dev. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0375997
+}

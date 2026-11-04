@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close**\n\nThe author replaced the screenshot links with public URLs and updated the description. There was no new push, and none was asked for.\n\n|     |         |\n| --- | ------- |\n| ❌  | Issue #37030 lost its \"help wanted\" label on 2026-09-04 (\"requires discussion\"), the same day this PR was opened. |\n| ℹ️  | The author has no merged PRs, and this PR doesn't continue a \"completion candidate\" PR. |\n| ✅  | Before/after screenshots were re-added with public URLs. We haven't confirmed they load for reviewers. |\n\n###### Next step\n\nClose the PR, since the issue isn't open for contributors: `gh pr close 40085 --repo zulip/zulip`\n\n###### Reply\n\n```quote\nThanks for the work and for fixing the screenshots, @pinankshah8-Aa. We're closing this PR because #37030 no longer has the \"help wanted\" label (it was removed for needing discussion), so it isn't open for contributor PRs right now.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0486203
+}

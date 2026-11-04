@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close**\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Linked issue #37030 has no \"help wanted\" label: apoorvapendse dropped it on 2026-09-04 (\"requires discussion\"). The author has no merged PRs. |\n| ✅  | Precise before/after screenshots are now in the description, with two pairs: avatar rows and slash-command rows. I could not check that the links open. |\n| ⚠️  | Screenshots documenting the other manual testing (12px and 20px font sizes) were not added, only described as spot checks. |\n| ℹ️  | No new push since the feedback. The author says no code changes were needed. |\n\n###### Next step\n\nClose the PR, since it targets an issue that is not open to contributors right now: `gh pr close 40085`\n\n###### Reply\n\n```quote\nClosing this PR because #37030 no longer has the \"help wanted\" label (it needs discussion first), and we only accept contributor PRs for issues that have it. Thanks for the detailed screenshots and testing notes.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0516027
+}

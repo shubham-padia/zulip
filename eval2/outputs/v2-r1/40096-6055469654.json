@@ -1,0 +1,11 @@
+{
+ "case": "40096-6055469654",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "CARD",
+ "text": "CARD\n**Ready for review**\n\nPull request events from Gogs, Gitea and Forgejo now show the real PR number in the topic name instead of the server's internal ID. The change also fixes the wrong PR numbers in the tests and restores one Gitea test fixture to its original content.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the \"not ready\" label (no written feedback), the PR grew from 1 line in 1 file to +18/-18 in 4 files and from 1 to 3 commits. It now includes a fixture revert and test fixes. |\n| ✅  | Description, \"Fixes\", testing notes, before/after screenshots and the self-review checklist are all filled in, and CI passed. |\n| ℹ️  | Tested only on Forgejo; the author says Gogs and Gitea were checked against the repo fixtures but not run. |\n| ℹ️  | The test fixes are in separate commits from the `view.py` change they go with. Reviewers may ask to squash them so each commit passes tests. |\n\n**Reviewer:** @laurynmm — added the \"not ready\" label and was pinged by the author.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The author has fixed the tests and CI is green.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0243287
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — the linked issue isn't \"help wanted\"**\n\nNew: The author swapped in public screenshot links and described the two layouts shown, with no new code. Missing: #37030 lost its \"help wanted\" label on 2026-09-04 (\"requires discussion\"), and the author has no merged PRs.\n\n###### Next step\n\nClose it, since the issue isn't open to contributors: `gh pr close 40085`.\n\n###### Reply\n\n```quote\nThanks for the work and the screenshots, but we're closing this PR because #37030 is no longer labeled \"help wanted\" (a maintainer marked it as needing discussion), and we only accept contributor PRs for issues with that label.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0455877
+}

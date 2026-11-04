@@ -1,0 +1,11 @@
+{
+ "case": "39865-5194201765",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author edited the PR description to add before/after screenshots and apologized. There was no new push, so the code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after screenshots were added for the hint, the typeahead and the validation error. |\n| ⚠️  | The pairs look mismatched: the before images are 1918×903 and the after images are 1916×885, with different capture dates. Precise pairs should show the same window and state. I can't view the images, so please check them. |\n| ❌  | The approach isn't settled on CZO. Sahil Batra wants the API to accept any casing and canonicalize it. The PR rejects uppercase, and the author said they'd follow whichever approach is chosen. |\n| ℹ️  | #24044 has \"help wanted\" and is assigned to the author. #39847 has no \"help wanted\" label, but it is part of the same CZO discussion. |\n\n###### Next step\n\nKeep \"not ready\" until the screenshots are precise and the approach is agreed on CZO.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots! Please make each before/after pair precise (same window size and state, only the change differs), as described in the [guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Please also settle with Sahil on CZO whether the API should reject uppercase or accept any casing and normalize it, then update the PR to match.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0762683
+}

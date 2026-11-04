@@ -1,0 +1,11 @@
+{
+ "case": "39865-5194201765",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots added, but the approach is still undecided**\n\nNew: The author added before/after screenshots to the PR description, which covers laurynmm's request, but did not push any new code. Missing: agreement on the approach. Sahil Batra said on CZO that strict lowercase isn't a complete fix because the API should accept any casing and normalize it, and that question is still open.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet; ask the author to settle the approach with Sahil Batra on CZO first.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots, @abhay5-6. Before this goes to review, please settle the approach with Sahil in the CZO thread (strict lowercase vs. normalizing case in the API, as he suggested), then update the PR to match.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0711457
+}

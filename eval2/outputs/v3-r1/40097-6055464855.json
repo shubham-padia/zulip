@@ -1,0 +1,11 @@
+{
+ "case": "40097-6055464855",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the author pushed fixes and CI passes**\n\nNew: The author pushed 12 times since the label was added, fixed the issue-vs-PR comment detection, and updated the Gitea test for PR comments. CI passes, and the PR template and testing notes are filled in.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign laurynmm, who added the label and was pinged.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.017629699999999998
+}

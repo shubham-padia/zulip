@@ -1,0 +1,11 @@
+{
+ "case": "40096-6055469654",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed 3 commits since the label: the topic fix, a revert of a fixture change, and corrected tests. CI now passes. They then pinged for review.\n\n|     |         |\n| --- | ------- |\n| ✅  | CI passes after the author fixed the tests with inconsistent PR numbers. |\n| ✅  | The PR template is filled in, with before/after screenshots and a note on how it was tested. |\n| ⚠️  | The test fixes are in separate commits from the view fix, so the first commit probably fails tests on its own. The reviewer may ask to squash them. |\n| ⚠️  | The change was tested on Forgejo only. Existing Gogs/Gitea fixtures agree that `number` is the right field. |\n\n**Reviewer:** @laurynmm — added the \"not ready\" label and was pinged by the author.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0221463
+}

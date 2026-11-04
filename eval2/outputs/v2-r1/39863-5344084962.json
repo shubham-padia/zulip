@@ -1,0 +1,11 @@
+{
+ "case": "39863-5344084962",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit message matches Zulip style: new push, subject is now \"drafts: Preserve focus on draft action controls.\" |\n| ✅  | Screencast is in the main PR description, and the other comments' videos were dropped |\n| ℹ️  | The description says \"Fixes: issue-#39005\", so GitHub doesn't link the issue. The input doesn't show whether the issue has \"help wanted\". |\n| ℹ️  | Only the commit subject is visible here, so the body wasn't checked. |\n| ℹ️  | Open PR #39959 (message overlays: row action buttons) looks similar. CI passed. |\n\n**Reviewer:** @laurynmm — gave the earlier feedback and is already following this PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm. Check the commit body and the \"Fixes:\" line while reviewing.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? @spacesyntaxwho, please also change the description to \"Fixes: #39005\" so the issue links properly.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0290807
+}

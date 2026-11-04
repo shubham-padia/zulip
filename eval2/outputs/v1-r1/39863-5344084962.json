@@ -1,0 +1,11 @@
+{
+ "case": "39863-5344084962",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed one new commit that renames the commit to \"drafts: Preserve focus on draft action controls.\" The code is unchanged. The subject line now follows Zulip style, which was the only open ask.\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit subject now follows the style guide: area prefix, capitalized, ends with a period |\n| ❌  | The description says `Fixes: issue-#39005`, which isn't the `Fixes: #39005` format, so GitHub doesn't link the issue |\n| ⚠️  | The linked-issues list is empty, so I can't confirm the issue has \"help wanted\" (the author has no merged PRs) |\n| ℹ️  | The commit message body isn't visible in the input, so I couldn't check it beyond the subject |\n\n###### Next step\n\n\"not ready\" stays until the `Fixes:` line is corrected; once the issue is confirmed \"help wanted\", remove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for updating the commit message, the subject looks good now. Could you change the description's `Fixes: issue-#39005` to `Fixes: #39005` (and make sure the commit message has the same line) so the issue links properly? After that this should be ready for review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0269683
+}

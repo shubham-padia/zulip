@@ -1,0 +1,11 @@
+{
+ "case": "40097-6055464855",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nComments on pull requests from Gogs, Gitea and Forgejo were shown as if they were comments on issues, with the wrong topic and text. This change detects pull request comments so they get the right topic and message. A test for Gitea was also updated.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | The earlier feedback was only the \"not ready\" label. Since then there have been 12 pushes: the logic was reworked, a second commit was added, and `zerver/webhooks/gitea/tests.py` was added to the PR. |\n| ❌  | The test fix is in its own commit (\"fix test for PR comment\"). It belongs in the commit that changes the behavior, so each commit passes tests on its own. |\n| ✅  | The description, how it was tested, before/after screenshots and the self-review checklist are filled in. CI passes. |\n| ℹ️  | The author says the check may not work if the Gogs or Gitea payload format has changed, and that Gogs has no `is_pull` field. |\n| ℹ️  | There is no \"Fixes: #N\" link to an issue, and PR #40096 by the same author also changes the Gogs PR topic, so the two may overlap. |\n\n**Reviewer:** @laurynmm — added the \"not ready\" label, and the author asked for their review. Niloth P is the core contributor who has changed these files most recently.\n\n###### Next step\n\nKeep \"not ready\" until the test fix is squashed into the first commit, then move to \"integration review\" and assign @laurynmm.\n\n###### Reply\n\n```quote\nThanks for the updates, @Alexis211! Could you squash the \"fix test for PR comment\" commit into the first commit, so each commit is coherent and passes tests on its own? See the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). Once that's done, we'll get it reviewed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0294747
+}

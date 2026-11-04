@@ -1,0 +1,11 @@
+{
+ "case": "39865-5194201765",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️ | Precise before/after screenshots: they are now in the description, but each before/after pair has different image sizes (1918x903 vs 1916x885). The two sets were also taken a day apart (08-05 vs 08-04), so the pairs may not be comparable. |\n| ℹ️ | The design is not settled on chat.zulip.org. Sahil Batra's last comment prefers the API accepting any case and normalizing it. This PR rejects uppercase instead, and the author asked which one to follow without getting an answer. |\n| ℹ️ | The PR adds a migration (`0807_alter_realmplayground_pygments_language.py`) that the description doesn't mention. CI status is unknown. |\n\n###### Next step\n\nKeep \"not ready\" and ask for properly matched screenshots. A maintainer such as Sahil Batra may want to settle the design on CZO before a full review.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots, @abhay5-6! The before/after pairs look like they were taken at different window sizes and on different days, so could you retake each pair in the same viewport and state, following the precise before/after guidelines? Please also note on the PR that the design is still being discussed on CZO.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0728807
+}

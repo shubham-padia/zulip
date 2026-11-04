@@ -1,0 +1,11 @@
+{
+ "case": "39863-5344084962",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed one new commit with a reworded subject, \"drafts: Preserve focus on draft action controls.\", which fixes the style problem karlstolley raised. The code and the PR description are unchanged.\n\n|     |         |\n| --- | ------- |\n| ✅  | The commit subject now follows Zulip style (area prefix, capitalized, ends with a period). |\n| ✅  | The screencast is in the main PR description, as laurynmm asked. I can't tell from the input whether it shows the keys pressed. |\n| ❌  | The description says `Fixes: issue-#39005` instead of `Fixes: #39005`, so GitHub shows no linked issue and \"help wanted\" can't be checked. The author has no merged PRs. |\n| ℹ️  | Open PR #39959 (\"message overlays: Enable keyboard navigation for row action buttons\") may overlap with this one. |\n\n###### Next step\n\nKeep \"not ready\" until the `Fixes:` line is corrected and the linked issue is confirmed to have \"help wanted\". After that, remove \"not ready\", add \"maintainer review\", and assign laurynmm, who has been reviewing.\n\n###### Reply\n\n```quote\nThanks for updating the commit message, that looks much better now. Could you change `Fixes: issue-#39005` in the PR description to `Fixes: #39005` so the issue gets linked properly? Then we can move this on to review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0140224
+}

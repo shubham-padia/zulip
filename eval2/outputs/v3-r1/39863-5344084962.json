@@ -1,0 +1,11 @@
+{
+ "case": "39863-5344084962",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the commit subject now looks fine, but the issue isn't properly linked**\n\nNew: The author pushed one commit and renamed it to \"drafts: Preserve focus on draft action controls.\" The code is unchanged and CI passes. Missing: the description says \"Fixes: issue-#39005\", which GitHub doesn't link (no linked issues show up), so it needs to be \"Fixes: #39005\". It's also unclear whether the screencast now shows the keys being pressed, which laurynmm asked for.\n\n###### Next step\n\nKeep \"not ready\" for now. Once the Fixes line is corrected and the screencast is confirmed, hand it to laurynmm (who gave the earlier feedback) for \"maintainer review\", and check that it doesn't overlap with open PR #39959.\n\n###### Reply\n\n```quote\nThanks for updating the commit message! Please change the description to use `Fixes: #39005` so the issue gets linked, and make sure the screencast in the main PR comment shows the keys you press (see the [guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html)).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0250057
+}
