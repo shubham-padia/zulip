@@ -1,0 +1,6 @@
+{
+ "case": "39943-5331423912",
+ "answer": "yes",
+ "text": "yes\nAsking zulipbot to remove the \"not ready\" label signals that the author considers the PR ready for another review.",
+ "cost_usd": 0.009304
+}
