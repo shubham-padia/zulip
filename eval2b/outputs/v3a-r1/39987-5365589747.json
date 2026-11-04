@@ -1,0 +1,11 @@
+{
+ "case": "39987-5365589747",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the failing test is fixed and the commits are squashed**\n\nNew: The author added the missing generated bot avatar that caused the failure and squashed three commits into one with a proper `integrations:` message. Missing: CI status can't be confirmed from here, so check that the checks are green.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign apoorvapendse (who gave the feedback) or Niloth P (who has changed these files most).\n\n###### Reply\n\n```quote\nThanks for the fixes! @apoorvapendse, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.020395500000000004
+}

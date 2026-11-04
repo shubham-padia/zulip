@@ -1,0 +1,11 @@
+{
+ "case": "39929-5293011728",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — commit cleanup done, no open maintainer questions**\n\nNew: Squashed everything into one commit with a proper Zulip-style summary line, and the merge and lint-fix commits are gone. Missing: a screenshot of the now-editable email field in the Manage User panel (a reviewer can ask for it).\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Sahil Batra, who has made the most recent changes to these settings files.\n\n###### Reply\n\n```quote\nNo reply needed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0297555
+}

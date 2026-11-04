@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the precise before/after screenshots that were asked for are now in the description**\n\nNew: The author replaced the screenshots in the PR description with a before/after pair of the same size (1861×102). There is no new code push, but none was needed because the feedback was only about screenshots. Missing: the pair shows only one search bar state, so the reviewer may want pills, wrapped pills and other zoom levels checked, since earlier maintainers raised side effects on those.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, the screenshots are updated, could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0573815
+}

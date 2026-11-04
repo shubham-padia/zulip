@@ -1,0 +1,11 @@
+{
+ "case": "39785-5037857009",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots now show the before and after in dark mode**\n\nNew: The author posted a before/after dark-mode screenshot with the arrow colors explained, which is what was asked for, but there was no new push. Missing: the PR doesn't link the open issue #38931 (\"Emoji and global time popover arrows should match background\") with \"Fixes: #38931\".\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for the screenshots! @laurynmm, could you review this? @cms19859230182-lang, please also add \"Fixes: #38931\" to the PR description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.022561499999999998
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39722-4961693879",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — requested commit message fixes haven't been made**\n\nNew: One push since the feedback, but the commit messages are unchanged and the PR description still says \"Fixes part of: #16094\". Missing: the \"Fixes a part of\" lines still need removing, with \"Fixes: #16094\" added after the description in the last commit. The screenshots are also unverified against the precise before/after guidelines.\n\n###### Next step\n\nKeep \"not ready\"; @whilstsomebody said they'd review once the commits are fixed.\n\n###### Reply\n\n```quote\nThanks for the update! The commit messages still look unchanged: please remove the \"Fixes a part of\" lines and put \"Fixes: #16094\" after the description in the last commit, per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages). Please also make sure the screenshots follow the [precise before/after guidelines](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.051095999999999996
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39731-5006493904",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the reachability question is answered, but the issue's required before/after screenshots are missing**\n\nNew: The author removed the two unreachable selectors (`.alert-box .stacktrace` and `.alert.alert-danger`), merged the remaining two rules, and explained why each removed selector can't be reached in the web app. They also measured computed styles on the real `#home-error` and `generic_embed_error` elements, on `main` and on the branch, in both themes, and the values match. Missing: the before/after screenshots in light and dark theme that #39354 requires for every cleanup except removing minor adjustments. The description says none are needed and offers to add them.\n\n###### Next step\n\nKeep \"not ready\" and ask for screenshots of the real surfaces. If they match, remove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks, the reachability analysis and the real-element measurements look good. As #39354 asks for every cleanup like this, please add precise before/after screenshots in light and dark theme of the real surfaces (the `generic_embed_error` banner and `#home-error`), following the [presenting visual changes guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.066582
+}

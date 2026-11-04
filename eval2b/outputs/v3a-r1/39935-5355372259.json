@@ -1,0 +1,11 @@
+{
+ "case": "39935-5355372259",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — design question answered, description fixed up**\n\nNew: Since the feedback the author joined the design discussion, and Daniel K said this extends the filters settled in #24200, so it isn't blocked on the new design work. The description now has a CZO link, a summary, testing notes and screenshots, but there is no new code push. Missing: the two \"ci:\" retry commits should be squashed away, as they aren't part of the change.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for joining the design discussion and updating the description. @karlstolley, could you review this? @OakPoem, please also squash the two \"ci:\" retry commits out of the branch.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.040431499999999995
+}

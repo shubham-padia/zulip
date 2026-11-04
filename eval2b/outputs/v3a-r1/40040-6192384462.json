@@ -1,0 +1,11 @@
+{
+ "case": "40040-6192384462",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — a maintainer's question about whether this change is needed is unanswered**\n\nNew: The author squashed the history to one commit and cleaned up the commit message. Missing: an answer to laurynmm's question in the chat thread about how this was found and whether stale previews are a real problem, since this community doesn't have link previews turned on.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet. Wait for the author to answer laurynmm in the chat thread.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit. Before review, please answer Lauryn's question in the [chat thread](https://chat.zulip.org/#narrow/channel/3-backend/topic/cache.3A.20Open.20Graph.20description.20key.20content.20hashing): how did you find this, and have you seen a real stale preview? Please follow the [guidelines on using AI for communication](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#using-ai-for-communication) when you reply.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.025983500000000003
+}

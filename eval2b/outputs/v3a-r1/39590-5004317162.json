@@ -1,0 +1,11 @@
+{
+ "case": "39590-5004317162",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: no before/after screenshots and the PR isn't linked to its issue**\n\nNew: The author rebased onto main (CI is green) and says the PR addresses #37647, but the diff is the same size and nothing was added for the earlier feedback. Missing: before/after screenshots showing the spacing problem and the fix, and a \"Fixes: #37647\" line with how it was tested (the description says the fix came from code analysis only).\n\n###### Next step\n\n\"not ready\" stays. Nobody needs to be assigned yet. It would also help to ask how this differs from the older open PR #39267 for the same issue.\n\n###### Reply\n\n```quote\nThanks for the rebase, @Shinu-Cherian. Before we can review this, please add \"Fixes: #37647\" to the description, along with before/after screenshots from testing the dropdown. Please also say how this differs from #39267, which targets the same issue. See the [review process guide](https://zulip.readthedocs.io/en/latest/contributing/review-process.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.032538
+}

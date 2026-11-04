@@ -1,0 +1,11 @@
+{
+ "case": "39929-5275974270",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — UI change has no screenshots**\n\nNew: Squashed the history into one commit with a proper summary line, which was the only thing asked for. Missing: before/after screenshots of the Manage User form with the editable email field, and of the new notification email, since the PR description says none are needed.\n\n###### Next step\n\nKeep \"not ready\" until screenshots are added; then remove it, add \"maintainer review\", and assign Sahil Batra, who has changed these files often.\n\n###### Reply\n\n```quote\nThanks for cleaning up the history, that looks good now. Since this makes the email field editable in the Manage User panel, could you add before/after screenshots of that form (and of the new notification email)? See the [guide to making reviewable PRs](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0316875
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40021-5448685369",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — competes with #39768, which is already in maintainer review**\n\nNew: Pushed two more commits (the max width is now `15em`), updated the screenshots, and added a comparison with #39049, #39829 and #39768. The only reasons given for this approach are that it is simpler and uses `em` instead of pixels. That doesn't answer the design concern that every reactor's name should stay at least partly visible. A similar CSS-only attempt (#38612) was closed as not on track.\n\n###### Next step\n\nClose it, since #39768 is assigned to evykassirer and is further along: `gh pr close 40021`.\n\n###### Reply\n\n```quote\nWe're closing this because #39768 is already in review for the same issue, and using `em` instead of pixels doesn't give enough reason to maintain a competing PR. Truncating the whole text also doesn't keep every reactor's name visible, which is what the design discussion asked for.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.057347499999999996
+}

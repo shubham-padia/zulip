@@ -1,0 +1,11 @@
+{
+ "case": "39820-5103626520",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — competes with open PRs #38098 and #39481 for the same issue, with no explanation of why this one is needed**\n\nNew: The author squashed to one commit, filled in the checklist, and fixed multi-line text handling, but did not run the new test locally. Missing: any explanation of how this PR relates to #38098 and #39481, which are both open and already pinged for maintainer review.\n\n###### Next step\n\nClose it as a duplicate of the PRs already in review, since squashing commits doesn't answer the competing-PR problem: `gh pr close 39820 --repo zulip/zulip`\n\n###### Reply\n\n```quote\nThanks for the PR! We're closing it because #38098 and #39481 are already in review for the same issue, and there's no explanation of how this one differs (see our [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html)).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0728955
+}

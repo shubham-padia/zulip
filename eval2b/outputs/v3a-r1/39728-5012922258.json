@@ -1,0 +1,11 @@
+{
+ "case": "39728-5012922258",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — description, testing notes, screenshots and a regression test are now in place**\n\nNew: The author pushed a regression test in the markdown test cases file. The description already has the \"Fixes: #17419\" line, testing steps and a checked self-review checklist, and a comment has before/after screenshots. Missing: the four commits still include a lint fix and a separate test commit (whose message names issue 17418, not 17419), so they should be squashed into clean commits.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback; the commit cleanup can come up in review.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.072004
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39784-5042031450",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the question about the other open PR is still unanswered**\n\nNew: The author says the description now explains how this PR relates to the other open PRs, and that it has precise before/after screenshots. The description does show before/after images and a video. Missing: it never mentions #33086, an older open PR for the same issue that changes the same two files, and the author doesn't say why this PR is needed instead.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to explain, in the description, how this PR differs from #33086, following the continuing-unfinished-work guide.\n\n###### Reply\n\n```quote\nThanks for the update! I don't see anything in the PR description about #33086, which is an open PR for the same issue touching the same files. Could you add a short explanation of how this PR relates to it (and why you're not building on it), following the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html)?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.060176
+}

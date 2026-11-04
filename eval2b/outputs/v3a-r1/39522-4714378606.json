@@ -1,0 +1,11 @@
+{
+ "case": "39522-4714378606",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: screenshots don't show a match with the left sidebar link**\n\nNew: The author cleaned up the code (+35/-0, no accidental deletions, extra \"View all users\" styles removed) and squashed it into one commit. Missing: dark theme before/after screenshots are different sizes (370x60 vs 367x62), so they aren't precise. Nothing shows that the focus ring's color and border radius now match the left sidebar link, which was raised and not answered.\n\n###### Next step\n\nKeep \"not ready\" and let the author fix the screenshots; no reviewer yet.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit. Please retake the before/after screenshots from the exact same region (the dark theme pair is currently different sizes), following [the guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots), and show that the focus ring's color and border radius match the \"Browse more channels\" link in the left sidebar.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.055854
+}

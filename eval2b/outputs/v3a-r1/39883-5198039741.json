@@ -1,0 +1,11 @@
+{
+ "case": "39883-5198039741",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — competes with #39598, which is already in maintainer review for the same issue**\n\nNew: The author pushed twice (+1 line), says tests pass, and points to the fixture tests for nested lists and code-block tabs. Missing: any reason this PR should exist alongside #39598 (in maintainer review) and #39280, both open for #38436, and the comment doesn't mention them.\n\n###### Next step\n\nClose it; the issue stays with the in-review PR #39598. `gh pr close 39883 --repo zulip/zulip`\n\n###### Reply\n\n```quote\nClosing this because #39598 is already in maintainer review for the same issue (#38436), and we can't review competing PRs for it in parallel.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.041365500000000006
+}

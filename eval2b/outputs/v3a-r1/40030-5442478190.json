@@ -1,0 +1,11 @@
+{
+ "case": "40030-5442478190",
+ "variant": "v3a",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the fix is squashed into one commit, tests are added, and CI passes**\n\nNew: The author pushed 5 times and squashed the separate test-fix commit into the main commit. The PR is now +38/-4 in 2 files, with a new test for the malformed `field_data` case. Missing: no linked issue explaining the 500 error, but a reviewer can just ask for that.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who set the label.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0174115
+}
