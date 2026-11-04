@@ -1,0 +1,11 @@
+{
+ "case": "39622-5419621157",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: Yogesh hasn't said his initial review is done**\n\nNew: One push since the feedback, which only renumbered the migration (0807 to 0810) and trimmed about 28 lines. Missing: Yogesh's sign-off. His last review (Jul 25, with one major issue) has no reply from him since, so the push isn't clearly an answer to it.\n\n###### Next step\n\nKeep \"not ready\" and ask Yogesh-Shivaji365 to confirm his initial pass is finished; hand off to evykassirer for maintainer review only after that.\n\n###### Reply\n\n```quote\nThanks for the update! Per Evy's note, we're waiting for @Yogesh-Shivaji365 to finish the initial review. Please make sure his earlier comments are all addressed, then ask him to take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011399000000000001
+}

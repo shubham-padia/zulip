@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots still don't match as a before/after pair**\n\nNew: The author replaced the \"After\" screenshot in the description; there was no new push. Missing: the \"Before\" image is 1110x144, the same size as the screenshot in the issue, while the \"After\" is 703x63. They aren't the same view and crop, so the pair isn't precise yet.\n\n###### Next step\n\nKeep \"not ready\" and leave it with laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for updating the screenshot! The \"Before\" and \"After\" images still aren't a matching pair: they're different sizes and don't show the same view. Please capture both from the same message with the same crop, as described in [the guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0127749
+}

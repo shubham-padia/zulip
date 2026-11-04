@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the guide's steps aren't finished, and the maintainer on #37289 hasn't weighed in**\n\nNew: The author updated the description with a prior-work section and credit, but pushed no code since the feedback. Missing: the work is still one new commit with a co-author line rather than building on #37289's commits as the guide describes, and there is no sign that @prakhar1144, who said on 2026-09-04 he plans to finish #37289 this cycle, agrees to this replacing it.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet.\n\n###### Reply\n\n```quote\nThanks for the update! Before this can move forward, please follow the [guide on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html) fully: build on the original commits from #37289 instead of squashing them into one new commit, and check with @prakhar1144 (who is planning to finish #37289) whether he wants this PR to replace it.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0618374
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the PR description now follows the template and the commits are squashed**\n\nNew: The author rewrote the description with \"Fixes #19589\", testing notes and the self-review checklist, and squashed the work into one commit. Missing: no explanation of how this compares to open PR #38098 for the same issue, which is already in review.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.015236200000000002
+}

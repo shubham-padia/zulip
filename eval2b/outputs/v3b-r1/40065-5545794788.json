@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both follow-up requests are now in the PR description**\n\nNew: The PR description now has before/after screenshots for long topic names, plain and with emoji, and for the 20px app font size. Missing: the screenshots are at DPR 1, where the clipping doesn't reproduce, so none show it fixed on a high-DPI display.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for adding the long-topic and font-size screenshots. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0542374
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40240-6313490306",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — no new push, and a competing PR for this issue is already open**\n\nNew: The author posted two screenshots in a comment and said it's fixed, but the code is unchanged since the feedback. Missing: the PR description still has the \"[Upload your screenshot or video here]\" placeholder, and there is no explanation of how this compares to open PR #39758, which touches the same two files for the same issue.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet.\n\n###### Reply\n\n```quote\nThanks for the screenshots! Please move them into the PR description, and note that #39758 is already open for the same issue, so could you explain how your approach differs? Please also make sure you've read and followed our [AI use policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0459894
+}

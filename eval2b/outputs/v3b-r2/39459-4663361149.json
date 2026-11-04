@@ -1,0 +1,11 @@
+{
+ "case": "39459-4663361149",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the question about #38251 is answered in the description**\n\nNew: The author updated the PR description to compare this PR with #38251 (a completion candidate that has conflicts): the tab-to-URL map lives only in `hash_util.ts`, and tab changes call `browser_history.update()` directly. The description also says the settings-overlay URL issue that sahil839 raised is handled. There was no new push. Missing: the \"automated tests\" checkbox is unticked and the diff has no test changes.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign sahil839, who reviewed the same approach on #38251 and has changed these files the most.\n\n###### Reply\n\n```quote\nThanks for the comparison with #38251, that answers my question. @sahil839, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0119037
+}

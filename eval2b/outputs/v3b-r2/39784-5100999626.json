@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots still can't be compared**\n\nNew: The description now has a \"Relationship to prior work\" section that compares this PR with #33086, and the author says the whitespace-after-`](` case is fixed and tested. Missing: the screenshots are still two unlabeled lists (4 before, 2 after, plus videos), so each \"before\" can't be matched to an \"after\" for the same input.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm repeat the screenshot request; the completion-candidate discussion is now covered.\n\n###### Reply\n\n```quote\nThanks @PrinceXDev, the comparison with #33086 is much clearer now. The screenshots still need work: please show before and after for each input side by side (for example, a table with one row per case), following the [precise before/after screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0147548
+}

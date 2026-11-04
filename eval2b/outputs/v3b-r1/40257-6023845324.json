@@ -1,0 +1,11 @@
+{
+ "case": "40257-6023845324",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the banner and screenshot feedback are both addressed**\n\nNew: One new push adds an error banner for non-JSON 5xx responses, shown next to the existing blueslip error, as laurynmm asked. The description now has a new \"After\" screenshot dated after the push.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at this? The error banner for non-JSON 5xx responses has been added.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.028017399999999998
+}

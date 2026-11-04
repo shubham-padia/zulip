@@ -1,0 +1,11 @@
+{
+ "case": "39728-5051202036",
+ "variant": "v3b",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots still missing**\n\nNew: Squashed the fixup commits into two and added a regression test, but did not add the before/after screenshots and asked what to do instead. Missing: precise before/after screenshots (or a short screen recording) of the rendered code block, and commit titles that follow the guide (they are still \"fix for issue 17419\" and \"added test case for issue 17418\", with the wrong issue number).\n\n###### Next step\n\nKeep \"not ready\" and have the maintainer who gave the feedback (laurynmm) reply; no reviewer yet.\n\n###### Reply\n\n```quote\nThe change does affect how messages render, so please add a precise before/after (or a short screen recording) of the same `time`-style tab-separated output, following [our guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html). Please also rewrite the commit titles and messages to match the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html), including the correct issue number.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0142786
+}
