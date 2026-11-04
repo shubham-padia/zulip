@@ -1,0 +1,60 @@
+{
+ "case": "39862-5398202815",
+ "cutoff": "2026-08-24T16:28:01Z",
+ "pushes": [
+  [
+   "2026-08-01T08:40:05Z",
+   "a91ed1244f",
+   "ci run"
+  ],
+  [
+   "2026-08-21T03:20:21Z",
+   "f1d7539ebb",
+   "force push"
+  ],
+  [
+   "2026-08-21T03:20:26Z",
+   "f1d7539ebb",
+   "ci run"
+  ],
+  [
+   "2026-09-19T13:37:55Z",
+   "4fb7b43e2d",
+   "force push"
+  ],
+  [
+   "2026-09-19T13:38:00Z",
+   "4fb7b43e2d",
+   "ci run"
+  ],
+  [
+   "2026-09-29T06:36:17Z",
+   "01c922297e",
+   "force push"
+  ],
+  [
+   "2026-09-29T06:36:23Z",
+   "01c922297e",
+   "ci run"
+  ]
+ ],
+ "head_now": "01c922297e103c726db83fcaa85031741cb6b90a",
+ "body_edits": 5,
+ "body_edits_after_cutoff": 0,
+ "title_now": "url previews: Render text-only preview when no image is available.",
+ "title_at_cutoff": "url previews: Render text-only preview when no image is available.",
+ "labels_now": [
+  "size: XL",
+  "integration review"
+ ],
+ "assignees_now": [
+  "evykassirer"
+ ],
+ "head_at_cutoff": "f1d7539ebb9f3e6c8a8954590a6ee78b493867ea",
+ "pr_shape": "from compare main...f1d7539ebb",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-08-07T10:18:33Z",
+ "head_at_feedback": "a91ed1244f734444920771560a2fc9d0b711fcc6",
+ "comments_total": 18,
+ "comments_at_cutoff": 7
+}

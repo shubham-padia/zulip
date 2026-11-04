@@ -1,0 +1,11 @@
+{
+ "case": "40171-5795222359",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Screenshots confirming channels that require a topic behave the same: the description now has before/after for `#development help`, plus one with a topic entered |\n| ✅  | Precise before/after screenshots: a Before/After table with same-size images per scenario |\n| ℹ️  | No new push since the feedback, but both requests were about the description, so none was needed |\n| ℹ️  | CI status is unknown in the input |\n\n**Reviewer:** @Niloth-p — invited this PR in the CZO thread, was tagged by the author, and has the most recent commits to this file (9).\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @Niloth-p.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots, @tmvalijib24! @Niloth-p, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0082246
+}

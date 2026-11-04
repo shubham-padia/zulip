@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots now follow the requested before/after format**\n\nNew: The author replaced the screenshots with a same-size before/after pair (no code change was needed, since the feedback was only about screenshots). The pair is a single state, so the reviewer should check whether it shows the caret and wrapped pills.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at the updated screenshots and review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0096563
+}

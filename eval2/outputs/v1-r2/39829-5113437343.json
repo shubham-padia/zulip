@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author edited the screenshots in the PR description and asked for another look. There was no new push, so the code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Before and after screenshots are different sizes (1110×144 vs 703×63), so they look like different crops or window widths rather than a precise pair. |\n| ⚠️  | The \"before\" image has the same 1110×144 size as the image in the issue, so it may be reused rather than taken from this branch. |\n| ℹ️  | The #design thread says pills with a few reactors should show part of every name; the description doesn't say whether this change covers that. |\n| ✅  | The rest of the template is filled in, CI passes, and the linked issue has \"help wanted\". |\n\n###### Next step\n\nKeep \"not ready\" and ask for matching before/after screenshots; if the images turn out to be a proper pair when you open them, remove \"not ready\" and add \"maintainer review\".\n\n###### Reply\n\n```quote\nThanks for updating the screenshots! The before and after images still don't match in size or crop, and the \"before\" looks like the one from the issue. Could you take both from your own branch, using the same message and the same window width, as described in the [guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots)? Please also say how this behaves for pills with several reactors.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.015236900000000001
+}

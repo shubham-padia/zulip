@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author swapped the screenshots in the PR description and asked for another look. There was no new push, which is fine because the feedback was only about screenshots.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after images are now the same size (1861×102), so they can be flipped between |\n| ❌  | Only one pair, and it doesn't cover the states the description claims: pills wrapping (vertical centering) and long text (the new ellipsis) |\n| ❌  | No zoomed-out comparison, which is where the overlap shows up and what the issue asks to be tested |\n| ℹ️  | Linked issue has \"help wanted\" and CI passed, so nothing else blocks this |\n\n###### Next step\n\nKeep \"not ready\" and ask for a fuller set of precise screenshots. This is a layout change from `flex` to `block`, so it needs to show the search bar's other states are unaffected.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots, @JoeJoeflyn! Could you add before/after pairs of the same size for the other states this change touches: pills that wrap onto multiple lines, long text that now gets an ellipsis, and a zoomed-out view where the caret overlap shows? See the [precise screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots) for what to cover.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013498900000000001
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the before/after screenshots still don't match**\n\nNew: The author replaced the \"After\" screenshot in the description, but pushed no code changes. Missing: The \"Before\" image has the same dimensions as the one in the issue, so it looks copied rather than taken by the author, and the two images differ in size and crop. They need to show the same message and viewport with and without the change.\n\n###### Next step\n\nKeep \"not ready\" and let laurynmm, who gave the feedback, follow up.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots! The \"Before\" looks like the one from the issue, and the two images have different sizes. Please take both yourself with the same message and window size, as described in the [precise before/after screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.008914300000000002
+}

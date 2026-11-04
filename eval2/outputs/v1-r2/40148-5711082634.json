@@ -1,0 +1,11 @@
+{
+ "case": "40148-5711082634",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author split the single commit into three focused commits (drag-and-drop fix, auto-fill, multi-file upload). They also added screenshots and videos for each UI change and tests for the auto-fill behavior.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description now covers what changed, testing, \"Fixes #20316\" and screenshots/videos for each feature. |\n| ✅  | The commits are now separate and each does one thing, as the PR guide asks. |\n| ✅  | The linked issue has \"help wanted\" and is assigned to the author. |\n| ℹ️  | CI status isn't visible to the bot. The author says all checks pass, so confirm before merging. The description also doesn't show the self-review checklist, and the author left the batch-vs-per-file upload approach open for maintainers to decide. |\n\n**Reviewer:** laurynmm — gave the earlier feedback and can weigh in on the open question about the multi-file approach.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0115199
+}

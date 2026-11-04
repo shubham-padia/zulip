@@ -1,0 +1,11 @@
+{
+ "case": "40148-5711082634",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nThis PR changes the custom emoji upload in organization settings. Dropping a file anywhere in the upload area now works. The emoji name fills in from the file name when the name box is empty. Admins can also pick or drop several files at once, and the upload reports which ones failed, for example because of a duplicate name.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the feedback, the single commit was replaced by three focused commits, and a test helper file was added. The description now has screenshots and videos plus testing notes. |\n| ✅  | The description explains the change, has \"Fixes #20316\", and describes manual and automated testing. The linked issue has \"help wanted\". |\n| ❌  | The self-review checklist from the PR template is not in the description or the comments. |\n| ℹ️  | CI status is unknown from the input. The author says all checks pass, but this can't be confirmed. |\n| ℹ️  | The description asks whether maintainers prefer a batch endpoint over one request per file. A reviewer will need to answer that. |\n\n**Reviewer:** laurynmm — gave the first feedback and can hand the PR to a reviewer once it's complete.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to add the self-review checklist, then re-check CI before moving it to \"maintainer review\".\n\n###### Reply\n\n```quote\nThanks for splitting the commits and adding the videos, that helps a lot! Please add the self-review checklist from the PR template to the description, as described in our [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html), and we'll take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0159923
+}

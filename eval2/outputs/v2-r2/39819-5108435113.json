@@ -1,0 +1,11 @@
+{
+ "case": "39819-5108435113",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Precise before/after screenshots: the description has Before/After pairs per test, but there was no new push, and it's unclear whether they follow the guide (same state, one change per pair, clear captions) |\n| ℹ️  | No new commits since the feedback, so the code is unchanged |\n| ℹ️  | The author's own Test 2 (collapse, then mute, then reveal) says the message is still shown expanded, which is the issue's case 2, so the fix looks incomplete |\n| ℹ️  | The checklist claims automated tests, but only `condense.ts` and `message_list_view.ts` changed. Several manual-testing boxes are unchecked. CI status is unknown |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the screenshots and the Test 2 case.\n\n###### Reply\n\n```quote\nThanks for the update, @FAzabmpc! Please make the before/after screenshots precise as described in [the guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots), showing the same state in each pair. Your Test 2 notes say a collapsed message that is then muted still shows expanded after reveal, so please fix that case, and add a test if you've checked that box.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0127852
+}

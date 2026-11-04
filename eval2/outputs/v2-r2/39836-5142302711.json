@@ -1,0 +1,11 @@
+{
+ "case": "39836-5142302711",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots: the description now has a new Before/After pair, both 1861×102, so they can be compared 1:1. |\n| ℹ️  | Only one pair is shown. Earlier reviewers on #35672 also wanted pills, wrapping and zoom-out checked, so the reviewer should look at the images. |\n| ℹ️  | No new push since the feedback (the change was only to the screenshots). CI passed and there are no conflicts. |\n\n**Reviewer:** @laurynmm. They gave the screenshot feedback and are already following this PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\" and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you take another look at the updated screenshots?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0101113
+}

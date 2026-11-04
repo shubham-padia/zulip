@@ -1,0 +1,11 @@
+{
+ "case": "39819-5108435113",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — known bug left unfixed and no new push**\n\nNew: No new code since the feedback, and the comment only says \"ready\" without explaining what changed. The PR's own test notes admit that collapsing a message and then muting the sender still fails: \"Show more\" appears but the message stays hidden. Missing: a fix or clear plan for that case (the issue wants collapsed state tracked even when hidden), and precise before/after screenshots as the guide describes.\n\n###### Next step\n\nKeep \"not ready\"; laurynmm, who gave the first feedback, can follow up, and no reviewer is assigned yet.\n\n###### Reply\n\n```quote\nThanks for the update! I don't see a new push, and your own Test 2 notes say that collapsing then muting still doesn't work, so please fix that case and make sure the before/after screenshots follow [the guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots), one clear pair per scenario.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011410199999999999
+}

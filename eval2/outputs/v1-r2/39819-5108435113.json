@@ -1,0 +1,11 @@
+{
+ "case": "39819-5108435113",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThere is no new push: the head commit is unchanged, so the code is the same as when the feedback was given. The author says the PR is updated, but the screenshots still don't show the behavior the issue asks for.\n\n|     |         |\n| --- | ------- |\n| ❌  | No new commits since the feedback, so no code changes were made. |\n| ⚠️  | The before/after screenshots now carry captions, but they don't clearly show the issue's second case working. |\n| ❌  | The description's own Test 2 says the muted, expanded, then collapsed case still shows the full message. That is the second required behavior in #24109. |\n| ❌  | The checklist says \"Automated tests verify logic\", but only `condense.ts` and `message_list_view.ts` changed, with no test files. The corner-case and end-to-end boxes are unchecked. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the expanded-then-collapsed case, add tests, and then present matching before/after screenshots.\n\n###### Reply\n\n```quote\nThanks for the update, @FAzabmpc! There are no new commits yet, and your Test 2 notes say a muted message that is expanded and then collapsed still doesn't show as collapsed, which is required by #24109. Please fix that case, add tests, and then post precise before/after screenshots following [the guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0136328
+}

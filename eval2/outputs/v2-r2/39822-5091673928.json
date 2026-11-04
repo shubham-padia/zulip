@@ -1,0 +1,11 @@
+{
+ "case": "39822-5091673928",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Screenshots with a link to the current docs: before/after images and the zulip.com page link are now in the description. |\n| ✅  | Self-review checklist: the template checklist is back in the description. |\n| ℹ️  | The images are the parameter block rendered with the docs generator, not screenshots of a running docs server. The author offered to redo them on a dev server if wanted. |\n| ℹ️  | \"Fixes:\" says no issue, so the \"help wanted\" rule doesn't apply. CI status is unknown. |\n\n**Reviewer:** @laurynmm — gave the feedback and has 28 commits on these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\nThanks for the updates, @LuShadowX! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.009101800000000002
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40168-5775859018",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author added two screenshots in a comment and said the description was updated, but there was no new push. The PR description in the input still has the \"Screenshots to be added by author in comments\" placeholder.\n\n|     |         |\n| --- | ------- |\n| ❌  | Description still shows the screenshots placeholder, so the claimed update isn't visible |\n| ❌  | Screenshots show only the result: no before/after pairs, and only one narrow size is described (the issue asks for before/after at different sizes) |\n| ⚠️  | Self-review checklist still has \"Strings and tooltips\" and \"Corner cases\" unchecked |\n| ℹ️  | Open PR #40052 by another contributor touches the same file for this issue, but its claim was dropped on 2026-09-13 |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the description and screenshots.\n\n###### Reply\n\n```quote\nThanks for adding screenshots, @abhijeetnardele24-hash! The PR description still has the \"screenshots to be added\" placeholder, so please move them into the description. They should be before/after pairs at a few different widths, as described in our [guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0089426
+}

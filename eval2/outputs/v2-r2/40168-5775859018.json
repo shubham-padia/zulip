@@ -1,0 +1,11 @@
+{
+ "case": "40168-5775859018",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️ | Screenshots: two images were added in a comment, but the description still says \"Screenshots to be added by author in comments\", and none clearly show \"before\". The issue asks for before/after at different sizes. |\n| ✅ | Testing notes: the description says how it was tested (dev server, width under 500px). |\n| ✅ | Description and \"Fixes #40051\": both are present, and the issue has \"help wanted\". |\n| ⚠️ | Self-review checklist: it is filled in, but \"Strings and tooltips\" and \"Corner cases, error conditions, and easily imagined bugs\" are unchecked, and the author gave no note on them. |\n| ℹ️ | There was no new push, so the commit is unchanged. CI is passing. |\n| ℹ️ | Competing PR #40052 (PrachiiiiisHere) touches the same file for the same issue. That author was unassigned from the issue on 2026-09-13, but #40052 is still open. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to fix the description and screenshots. Decide separately what to do with #40052.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots! Could you put before/after screenshots at a few different widths in the PR description, and replace the \"Screenshots to be added\" placeholder? Please also finish the self-review checklist, or note why the unchecked items don't apply. The [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) and [presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html) cover this.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.014655000000000001
+}

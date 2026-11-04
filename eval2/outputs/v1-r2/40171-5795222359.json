@@ -1,0 +1,11 @@
+{
+ "case": "40171-5795222359",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author didn't push new code. They updated the before/after screenshots in the PR description, which was the only thing the feedback asked for.\n\n|     |         |\n| --- | ------- |\n| ✅  | The description now has a before/after table for both the DM option and a channel that requires a topic (`#development help`). |\n| ✅  | It also has a screenshot showing the button becoming active once a topic is entered for that channel. |\n| ℹ️  | The description says `#development help` is left for a follow-up. This matches the chat thread, where Niloth said that case needs user feedback. |\n| ℹ️  | No linked issue, but Niloth invited the author to open this PR in the chat thread. The CI status is unknown. |\n\n**Reviewer:** @Niloth-p — the author tagged them, they diagnosed the bug in the chat thread, and they have the most recent commits on `integration_url_modal.ts`.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign @Niloth-p.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots, they cover the behavior for channels that require topics. @Niloth-p, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0098822
+}

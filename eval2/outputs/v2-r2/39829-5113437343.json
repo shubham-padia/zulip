@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Precise before/after screenshots are now in the description (the \"After\" image was replaced) |\n| ℹ️  | The \"Before\" image is 1110×144, the same size as an image in the issue, while \"After\" is 703×63. Worth a quick look that both show the same scenario. |\n| ℹ️  | Other open PRs target the same issue and CSS file: #39768 (opened 2026-07-19) and #39049. |\n| ℹ️  | CI passed and there are no conflicts. |\n\n**Reviewer:** @laurynmm — gave the feedback and has been triaging the earlier attempts at this issue.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0119393
+}

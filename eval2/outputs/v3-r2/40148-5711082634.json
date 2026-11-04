@@ -1,0 +1,11 @@
+{
+ "case": "40148-5711082634",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the PR is now presented as the guide asks**\n\nNew: The author split the work into three focused commits, added screenshots and videos for each UI change, and added tests for the auto-fill. The linked issue has \"help wanted\" and is assigned to the author. Missing: the self-review checklist isn't in the description, and the bot can't see CI status, so the author's \"all checks pass\" is unconfirmed.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The author has restructured the commits and added screenshots and tests.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.009477300000000001
+}
