@@ -1,0 +1,162 @@
+{
+ "case": "39622-5419621157",
+ "repeat": 1,
+ "map": {
+  "U": [
+   "v3-r2"
+  ],
+  "D": [
+   "v3-r1"
+  ],
+  "C": [
+   "v1-r2"
+  ],
+  "B": [
+   "v2-r1"
+  ],
+  "Y": [
+   "v1-r1"
+  ],
+  "Z": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE and keeps \"not ready\" until Yogesh signs off, which matches the key.",
+    "accuracy_why": "It covers the migration-only push and the missing sign-off, but it leaves out CI and the unaddressed 'major issue' comment.",
+    "reply_why": "The ask is right, but \"rather than re-posting 'ready for review'\" is a little sharp and a maintainer might soften it."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE, keeps \"not ready\" and leaves the PR with Yogesh, which matches the key.",
+    "accuracy_why": "It names the renumbering push and the missing sign-off, and it says nothing shows his open comments were addressed; only CI is left out.",
+    "reply_why": "The reply is clean and pasteable, and it points the author to Yogesh for confirmation."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE and keeps the PR with Yogesh under \"not ready\", which matches the key.",
+    "accuracy_why": "It is accurate on the push, the 'major issue' and the missing sign-off, though it does not mention CI.",
+    "reply_why": "The reply is good and specific, citing the major comment from 7/25 and Yogesh's sign-off."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE and keeps \"not ready\" until Yogesh confirms, which matches the key.",
+    "accuracy_why": "It covers the sign-off, the renumbering push, the unclear status of Yogesh's comments and unknown CI.",
+    "reply_why": "The ask is right, but the added CI line is generic and might get trimmed."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE and keeps \"not ready\" pending Yogesh, which matches the key.",
+    "accuracy_why": "It is accurate on the push and the missing sign-off, but it leaves out CI and spends a row on the repeated 'ready' comments.",
+    "reply_why": "The reply is pasteable, asks for point-by-point answers to Yogesh's comments and leaves sign-off to him."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point",
+     "code_details"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 5,
+    "decision_why": "It writes a NOTE and keeps \"not ready\" until Yogesh finishes, which matches the key.",
+    "accuracy_why": "The facts are correct, but it is padded with ✅ rows the triager doesn't need and a migration-numbering detail.",
+    "reply_why": "The ask is right, but the self-review reminder adds a slightly scolding sentence."
+   }
+  },
+  "ranking": [
+   "D",
+   "U",
+   "B",
+   "C",
+   "Y",
+   "Z"
+  ]
+ },
+ "text": "{\"outputs\": {\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"It writes a NOTE and keeps \\\"not ready\\\" until Yogesh signs off, which matches the key.\", \"accuracy_why\": \"It covers the migration-only push and the missing sign-off, but it leaves out CI and the unaddressed 'major issue' comment.\", \"reply_why\": \"The ask is right, but \\\"rather than re-posting 'ready for review'\\\" is a little sharp and a maintainer might soften it.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It writes a NOTE, keeps \\\"not ready\\\" and leaves the PR with Yogesh, which matches the key.\", \"accuracy_why\": \"It names the renumbering push and the missing sign-off, and it says nothing shows his open comments were addressed; only CI is left out.\", \"reply_why\": \"The reply is clean and pasteable, and it points the author to Yogesh for confirmation.\"}, \"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 7, \"decision_why\": \"It writes a NOTE and keeps the PR with Yogesh under \\\"not ready\\\", which matches the key.\", \"accuracy_why\": \"It is accurate on the push, the 'major issue' and the missing sign-off, though it does not mention CI.\", \"reply_why\": \"The reply is good and specific, citing the major comment from 7/25 and Yogesh's sign-off.\"}, \"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 8, \"decision_why\": \"It writes a NOTE and keeps \\\"not ready\\\" until Yogesh confirms, which matches the key.\", \"accuracy_why\": \"It covers the sign-off, the renumbering push, the unclear status of Yogesh's comments and unknown CI.\", \"reply_why\": \"The ask is right, but the added CI line is generic and might get trimmed.\"}, \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7, \"decision_why\": \"It writes a NOTE and keeps \\\"not ready\\\" pending Yogesh, which matches the key.\", \"accuracy_why\": \"It is accurate on the push and the missing sign-off, but it leaves out CI and spends a row on the repeated 'ready' comments.\", \"reply_why\": \"The reply is pasteable, asks for point-by-point answers to Yogesh's comments and leaves sign-off to him.\"}, \"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\", \"code_details\"], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 5, \"decision_why\": \"It writes a NOTE and keeps \\\"not ready\\\" until Yogesh finishes, which matches the key.\", \"accuracy_why\": \"The facts are correct, but it is padded with ✅ rows the triager doesn't need and a migration-numbering detail.\", \"reply_why\": \"The ask is right, but the self-review reminder adds a slightly scolding sentence.\"}}, \"ranking\": [\"D\", \"U\", \"B\", \"C\", \"Y\", \"Z\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.31640399999999996
+}

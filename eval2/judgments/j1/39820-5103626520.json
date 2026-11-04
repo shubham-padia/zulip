@@ -1,0 +1,167 @@
+{
+ "case": "39820-5103626520",
+ "repeat": 1,
+ "map": {
+  "C": [
+   "v2-r1"
+  ],
+  "U": [
+   "v3-r1"
+  ],
+  "M": [
+   "v3-r2"
+  ],
+  "Y": [
+   "v1-r1"
+  ],
+  "F": [
+   "v2-r2"
+  ],
+  "N": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" and asks for more work matches the key.",
+    "accuracy_why": "It catches the missing comparison to other PRs, but flags only one unchecked box instead of the trimmed template, and omits the python-zulip-api question.",
+    "reply_why": "It asks for the comparison but narrows the checklist ask to one box instead of restoring the full template."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "NOTE with \"not ready\" kept matches the key.",
+    "accuracy_why": "It is accurate on commits and the comparison gap, but reads the checklist problem as one unchecked box and skips the compatibility question.",
+    "reply_why": "The reply is pasteable and asks for the comparison, but its checklist ask misses the removed template items."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "NOTE keeping \"not ready\" matches the key.",
+    "accuracy_why": "It rightly leads with the missing comparison, but describes the checklist gap as a single box and omits the python-zulip-api concern.",
+    "reply_why": "It asks clearly for the comparison, but its checklist ask is limited to one box rather than restoring the template."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more_feedback matches the key.",
+    "accuracy_why": "It covers commits and the comparison, but the checklist point names only one unchecked box and the compatibility question is missing.",
+    "reply_why": "It asks for both things, but the checklist ask misses the trimmed template items."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" as a NOTE, but treats the comparison to other PRs as a separate decision instead of asking the author for it.",
+    "accuracy_why": "It notes the other open PRs but downplays them, describes the checklist gap as one box, and omits the compatibility question.",
+    "reply_why": "The reply asks only to tick one checkbox and leaves out the decisive request to explain how this PR compares to the other PRs."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "NOTE keeping \"not ready\" matches the key.",
+    "accuracy_why": "It is the most complete, including the python-zulip-api question, though it still reads the checklist gap as one unchecked box rather than the trimmed template.",
+    "reply_why": "It asks for the comparison and to complete the checklist, but the checklist ask names only one box instead of restoring the full template."
+   }
+  },
+  "ranking": [
+   "N",
+   "M",
+   "U",
+   "C",
+   "Y",
+   "F"
+  ]
+ },
+ "text": "{\"outputs\": {\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 8, \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and asks for more work matches the key.\", \"accuracy_why\": \"It catches the missing comparison to other PRs, but flags only one unchecked box instead of the trimmed template, and omits the python-zulip-api question.\", \"reply_why\": \"It asks for the comparison but narrows the checklist ask to one box instead of restoring the full template.\"}, \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 9, \"decision_why\": \"NOTE with \\\"not ready\\\" kept matches the key.\", \"accuracy_why\": \"It is accurate on commits and the comparison gap, but reads the checklist problem as one unchecked box and skips the compatibility question.\", \"reply_why\": \"The reply is pasteable and asks for the comparison, but its checklist ask misses the removed template items.\"}, \"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 9, \"decision_why\": \"NOTE keeping \\\"not ready\\\" matches the key.\", \"accuracy_why\": \"It rightly leads with the missing comparison, but describes the checklist gap as a single box and omits the python-zulip-api concern.\", \"reply_why\": \"It asks clearly for the comparison, but its checklist ask is limited to one box rather than restoring the template.\"}, \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 7, \"decision_why\": \"NOTE with more_feedback matches the key.\", \"accuracy_why\": \"It covers commits and the comparison, but the checklist point names only one unchecked box and the compatibility question is missing.\", \"reply_why\": \"It asks for both things, but the checklist ask misses the trimmed template items.\"}, \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_verdict\"], \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"It keeps \\\"not ready\\\" as a NOTE, but treats the comparison to other PRs as a separate decision instead of asking the author for it.\", \"accuracy_why\": \"It notes the other open PRs but downplays them, describes the checklist gap as one box, and omits the compatibility question.\", \"reply_why\": \"The reply asks only to tick one checkbox and leaves out the decisive request to explain how this PR compares to the other PRs.\"}, \"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 6, \"brevity_score\": 7, \"decision_why\": \"NOTE keeping \\\"not ready\\\" matches the key.\", \"accuracy_why\": \"It is the most complete, including the python-zulip-api question, though it still reads the checklist gap as one unchecked box rather than the trimmed template.\", \"reply_why\": \"It asks for the comparison and to complete the checklist, but the checklist ask names only one box instead of restoring the full template.\"}}, \"ranking\": [\"N\", \"M\", \"U\", \"C\", \"Y\", \"F\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.35586399999999996
+}

@@ -1,0 +1,169 @@
+{
+ "case": "39784-5042031450",
+ "repeat": 1,
+ "map": {
+  "V": [
+   "v2-r1"
+  ],
+  "U": [
+   "v3-r2"
+  ],
+  "T": [
+   "v2-r2"
+  ],
+  "E": [
+   "v3-r1"
+  ],
+  "Y": [
+   "v1-r2"
+  ],
+  "Z": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" and sends more feedback matches the key.",
+    "accuracy_why": "It flags the missing #33086 discussion, the unpaired screenshots and the unverifiable code change, but never mentions the complexity deferral of #33086.",
+    "reply_why": "It covers both the #33086 relationship and one-to-one screenshots with the right links, though it doesn't raise the complexity concern."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "It keeps \"not ready\" in a NOTE, which matches the key, though the next step is vague about who gives feedback.",
+    "accuracy_why": "It treats the screenshots as done, missing the decisive screenshot problem, and doesn't note that the code update can't be confirmed.",
+    "reply_why": "The reply asks only about #33086 and the checklist, dropping the screenshot half of the ask."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key.",
+    "accuracy_why": "It covers the missing #33086 explanation, the unpaired screenshots and the unknown code changes, but not the complexity concern behind #33086's deferral.",
+    "reply_why": "A concise reply that asks for both the #33086 comparison and precise screenshot pairs, with the right guideline links."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "The reply thanks the author for updating the screenshots, implying the screenshot request was met when it is still missing."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind and the keep-\"not ready\" action match, though \"wait for the author\" is a weaker next step.",
+    "accuracy_why": "It implicitly accepts the screenshots as fixed, which is wrong on a decisive point, and it omits that the code change couldn't be confirmed.",
+    "reply_why": "The reply praises the screenshots instead of asking for paired comparisons, so it misses half of the required ask."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key.",
+    "accuracy_why": "The #33086 gap is clear, but it only calls the screenshot quality \"unclear\", and its \"no new commits\" claim overstates what could be checked.",
+    "reply_why": "The reply asks for the #33086 explanation and the checklist but leaves out the screenshot request."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key.",
+    "accuracy_why": "It covers #33086 and the unknown code change, but only says the screenshots \"may not match\" and adds a minor point about a Fixes line.",
+    "reply_why": "The reply covers #33086 and adds a Fixes-line request, but it omits the screenshot ask."
+   }
+  },
+  "ranking": [
+   "T",
+   "V",
+   "Z",
+   "Y",
+   "U",
+   "E"
+  ]
+ },
+ "text": "{\"outputs\": {\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and sends more feedback matches the key.\",\n   \"accuracy_why\": \"It flags the missing #33086 discussion, the unpaired screenshots and the unverifiable code change, but never mentions the complexity deferral of #33086.\",\n   \"reply_why\": \"It covers both the #33086 relationship and one-to-one screenshots with the right links, though it doesn't raise the complexity concern.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It keeps \\\"not ready\\\" in a NOTE, which matches the key, though the next step is vague about who gives feedback.\",\n   \"accuracy_why\": \"It treats the screenshots as done, missing the decisive screenshot problem, and doesn't note that the code update can't be confirmed.\",\n   \"reply_why\": \"The reply asks only about #33086 and the checklist, dropping the screenshot half of the ask.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key.\",\n   \"accuracy_why\": \"It covers the missing #33086 explanation, the unpaired screenshots and the unknown code changes, but not the complexity concern behind #33086's deferral.\",\n   \"reply_why\": \"A concise reply that asks for both the #33086 comparison and precise screenshot pairs, with the right guideline links.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"The reply thanks the author for updating the screenshots, implying the screenshot request was met when it is still missing.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind and the keep-\\\"not ready\\\" action match, though \\\"wait for the author\\\" is a weaker next step.\",\n   \"accuracy_why\": \"It implicitly accepts the screenshots as fixed, which is wrong on a decisive point, and it omits that the code change couldn't be confirmed.\",\n   \"reply_why\": \"The reply praises the screenshots instead of asking for paired comparisons, so it misses half of the required ask.\"},\n  \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 5,\n   \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key.\",\n   \"accuracy_why\": \"The #33086 gap is clear, but it only calls the screenshot quality \\\"unclear\\\", and its \\\"no new commits\\\" claim overstates what could be checked.\",\n   \"reply_why\": \"The reply asks for the #33086 explanation and the checklist but leaves out the screenshot request.\"},\n  \"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key.\",\n   \"accuracy_why\": \"It covers #33086 and the unknown code change, but only says the screenshots \\\"may not match\\\" and adds a minor point about a Fixes line.\",\n   \"reply_why\": \"The reply covers #33086 and adds a Fixes-line request, but it omits the screenshot ask.\"}},\n \"ranking\": [\"T\", \"V\", \"Z\", \"Y\", \"U\", \"E\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.306212
+}

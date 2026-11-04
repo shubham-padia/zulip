@@ -1,0 +1,169 @@
+{
+ "case": "39691-5277811900",
+ "repeat": 1,
+ "map": {
+  "R": [
+   "v1-r1"
+  ],
+  "F": [
+   "v1-r2"
+  ],
+  "A": [
+   "v3-r2"
+  ],
+  "U": [
+   "v2-r2"
+  ],
+  "W": [
+   "v3-r1"
+  ],
+  "T": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks the author for more work, so the action is more feedback; the key's observed action is a hand-off.",
+    "accuracy_why": "It covers the missing push and the needed confirmation from prakhar1144, but it never weighs the kept helpers against karlstolley's duplication worry, and it omits PIG208's nits and a reviewer like apoorvapendse.",
+    "reply_why": "The reply asks the author for the checklist and a description note, not for PIG208's nits, so most of it is the wrong ask."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It recommends a hand-off, which matches the key.",
+    "accuracy_why": "It notes that nothing was pushed and that the helpers were kept for Galène, but it hands off before prakhar1144 confirms, skips PIG208's open nits, and adds a checklist point of little use.",
+    "reply_why": "The ping to prakhar1144 is right, but the extra checklist request to the author keeps it from being a single reviewer ping."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It recommends a hand-off, which matches the key.",
+    "accuracy_why": "Its headline says the author confirmed the changes when he only claims them, and it omits PIG208's nits and karlstolley's duplication concern.",
+    "reply_why": "The reply is a short, pasteable ping asking prakhar1144 to confirm."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "It recommends a hand-off, which matches the key.",
+    "accuracy_why": "It ticks the requested changes as done on the author's word, never mentions the kept helpers or Galène, misses PIG208's nits, and pads the table with CI and checklist rows.",
+    "reply_why": "The ping to prakhar1144 is right, but the added checklist ask to the author makes the reply longer than a hand-off needs."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It recommends a hand-off, which matches the key.",
+    "accuracy_why": "It correctly says there was no new push and that this is the version PIG208 reviewed, and it explains why the helpers stay, but it misses the open nits and karlstolley's duplication worry.",
+    "reply_why": "The reply is essentially a single ping to prakhar1144, though \"that clears it up\" slightly prejudges his answer."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" and asks the author for a checklist and more explanation, so the action is more feedback instead of a hand-off.",
+    "accuracy_why": "It flags the missing push and confirmation and questions whether the helper was dropped, but it misses PIG208's nits, Galène, and karlstolley's concern, and adds CI and checklist filler.",
+    "reply_why": "The reply asks the author for three things, including restating where the code lives, rather than just pinging prakhar1144 or asking about PIG208's nits."
+   }
+  },
+  "ranking": [
+   "W",
+   "A",
+   "F",
+   "U",
+   "R",
+   "T"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks the author for more work, so the action is more feedback; the key's observed action is a hand-off.\",\n \"accuracy_why\": \"It covers the missing push and the needed confirmation from prakhar1144, but it never weighs the kept helpers against karlstolley's duplication worry, and it omits PIG208's nits and a reviewer like apoorvapendse.\",\n \"reply_why\": \"The reply asks the author for the checklist and a description note, not for PIG208's nits, so most of it is the wrong ask.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"It recommends a hand-off, which matches the key.\",\n \"accuracy_why\": \"It notes that nothing was pushed and that the helpers were kept for Galène, but it hands off before prakhar1144 confirms, skips PIG208's open nits, and adds a checklist point of little use.\",\n \"reply_why\": \"The ping to prakhar1144 is right, but the extra checklist request to the author keeps it from being a single reviewer ping.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It recommends a hand-off, which matches the key.\",\n \"accuracy_why\": \"Its headline says the author confirmed the changes when he only claims them, and it omits PIG208's nits and karlstolley's duplication concern.\",\n \"reply_why\": \"The reply is a short, pasteable ping asking prakhar1144 to confirm.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 6, \"brevity_score\": 6,\n \"decision_why\": \"It recommends a hand-off, which matches the key.\",\n \"accuracy_why\": \"It ticks the requested changes as done on the author's word, never mentions the kept helpers or Galène, misses PIG208's nits, and pads the table with CI and checklist rows.\",\n \"reply_why\": \"The ping to prakhar1144 is right, but the added checklist ask to the author makes the reply longer than a hand-off needs.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It recommends a hand-off, which matches the key.\",\n \"accuracy_why\": \"It correctly says there was no new push and that this is the version PIG208 reviewed, and it explains why the helpers stay, but it misses the open nits and karlstolley's duplication worry.\",\n \"reply_why\": \"The reply is essentially a single ping to prakhar1144, though \\\"that clears it up\\\" slightly prejudges his answer.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks the author for a checklist and more explanation, so the action is more feedback instead of a hand-off.\",\n \"accuracy_why\": \"It flags the missing push and confirmation and questions whether the helper was dropped, but it misses PIG208's nits, Galène, and karlstolley's concern, and adds CI and checklist filler.\",\n \"reply_why\": \"The reply asks the author for three things, including restating where the code lives, rather than just pinging prakhar1144 or asking about PIG208's nits.\"}\n},\n\"ranking\": [\"W\", \"A\", \"F\", \"U\", \"R\", \"T\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.269
+}

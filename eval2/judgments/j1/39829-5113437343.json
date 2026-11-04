@@ -1,0 +1,170 @@
+{
+ "case": "39829-5113437343",
+ "repeat": 1,
+ "map": {
+  "O": [
+   "v3-r2"
+  ],
+  "N": [
+   "v3-r1"
+  ],
+  "C": [
+   "v1-r2"
+  ],
+  "L": [
+   "v2-r1"
+  ],
+  "S": [
+   "v1-r1"
+  ],
+  "F": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE that keeps \"not ready\" and asks for more changes matches the key.",
+    "accuracy_why": "It covers the copied, mismatched screenshots, the unchanged code and the missing multi-reactor case, but not the other open PRs.",
+    "reply_why": "It makes the right screenshot ask with the guide link, but it doesn't ask about the multi-reactor case."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point",
+     "hedged_next_step"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It recommends more feedback but adds an alternative hand-off path, which dilutes the call slightly.",
+    "accuracy_why": "Four must-haves are present and there are no wrong facts, but the other open PRs go unmentioned.",
+    "reply_why": "It asks for matching screenshots from the author's own branch and covers multi-reactor pills, so it is paste-ready."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" with no reviewer assigned matches the key.",
+    "accuracy_why": "The screenshot problem and unchanged code are clear, but the multi-reactor case is missing and #39768 is noted only for its similar feedback.",
+    "reply_why": "It makes a clear, correct screenshot ask with the guide link but leaves out the multi-reactor case."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with more feedback matches the key.",
+    "accuracy_why": "It gets the decisive screenshot issue right but misses both the multi-reactor case and the other open PRs.",
+    "reply_why": "It gives a concise, correct screenshot ask with the guide link but no multi-reactor ask."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks the author for a matching Before screenshot, which matches the key.",
+    "accuracy_why": "The screenshot mismatch is right, but it doesn't say the code is unchanged, omits the multi-reactor case, and lists the other PRs without saying this PR doesn't explain how it differs.",
+    "reply_why": "It asks correctly for a matching Before screenshot with the guide link but leaves out the multi-reactor case."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Says precise before/after screenshots are now in the description, when the key says they are still missing."
+    ],
+    "rule_failures": [
+     "reply_pings_reviewer_for_unready_pr"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends hand-off where the key says more feedback.",
+    "accuracy_why": "Its verdict rests on the false claim that the screenshot request was met, though it does flag the size mismatch.",
+    "reply_why": "Pinging a reviewer pushes forward a PR that still needs changes."
+   }
+  },
+  "ranking": [
+   "N",
+   "C",
+   "S",
+   "O",
+   "L",
+   "F"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and asks for more changes matches the key.\",\n \"accuracy_why\": \"It covers the copied, mismatched screenshots, the unchanged code and the missing multi-reactor case, but not the other open PRs.\",\n \"reply_why\": \"It makes the right screenshot ask with the guide link, but it doesn't ask about the multi-reactor case.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\", \"hedged_next_step\"],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It recommends more feedback but adds an alternative hand-off path, which dilutes the call slightly.\",\n \"accuracy_why\": \"Four must-haves are present and there are no wrong facts, but the other open PRs go unmentioned.\",\n \"reply_why\": \"It asks for matching screenshots from the author's own branch and covers multi-reactor pills, so it is paste-ready.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" with no reviewer assigned matches the key.\",\n \"accuracy_why\": \"The screenshot problem and unchanged code are clear, but the multi-reactor case is missing and #39768 is noted only for its similar feedback.\",\n \"reply_why\": \"It makes a clear, correct screenshot ask with the guide link but leaves out the multi-reactor case.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It gets the decisive screenshot issue right but misses both the multi-reactor case and the other open PRs.\",\n \"reply_why\": \"It gives a concise, correct screenshot ask with the guide link but no multi-reactor ask.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks the author for a matching Before screenshot, which matches the key.\",\n \"accuracy_why\": \"The screenshot mismatch is right, but it doesn't say the code is unchanged, omits the multi-reactor case, and lists the other PRs without saying this PR doesn't explain how it differs.\",\n \"reply_why\": \"It asks correctly for a matching Before screenshot with the guide link but leaves out the multi-reactor case.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [\"Says precise before/after screenshots are now in the description, when the key says they are still missing.\"], \"rule_failures\": [\"reply_pings_reviewer_for_unready_pr\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It recommends hand-off where the key says more feedback.\",\n \"accuracy_why\": \"Its verdict rests on the false claim that the screenshot request was met, though it does flag the size mismatch.\",\n \"reply_why\": \"Pinging a reviewer pushes forward a PR that still needs changes.\"}\n},\n\"ranking\": [\"N\", \"C\", \"S\", \"O\", \"L\", \"F\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.20126
+}

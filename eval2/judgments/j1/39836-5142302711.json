@@ -1,0 +1,167 @@
+{
+ "case": "39836-5142302711",
+ "repeat": 1,
+ "map": {
+  "Y": [
+   "v3-r1"
+  ],
+  "A": [
+   "v1-r1"
+  ],
+  "B": [
+   "v3-r2"
+  ],
+  "C": [
+   "v2-r1"
+  ],
+  "I": [
+   "v2-r2"
+  ],
+  "E": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing the PR off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the same-size screenshot pair, the lack of a code push, and the missing wrapped-pill and zoomed-out states, but it names laurynmm as reviewer instead of karlstolley.",
+    "reply_why": "The single-line ping is the right shape for a hand-off, but it pings laurynmm rather than the CSS reviewer karlstolley."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends a hand-off, which matches the key.",
+    "accuracy_why": "It notes the matched pair and that nothing was pushed, and it ties the missing pills, wrapping and zoom-out checks to #35672, but its reviewer is laurynmm, not karlstolley.",
+    "reply_why": "The one-line ping is fine as a hand-off reply, but it goes to the wrong reviewer."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends a hand-off, which matches the key.",
+    "accuracy_why": "It says the reviewer should check 'whether' the pair shows the caret and wrapped pills, which hedges on gaps the key says are definite, and it names laurynmm instead of karlstolley.",
+    "reply_why": "It is a short reviewer ping, but to laurynmm rather than karlstolley."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that recommends a hand-off, which matches the key.",
+    "accuracy_why": "It implies the single pair might already show zoom-out and wrapping, when the key says it does not, and it names laurynmm instead of karlstolley.",
+    "reply_why": "It is a single ping line, but to the wrong reviewer."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that recommends a hand-off, which matches the key.",
+    "accuracy_why": "It flags the missing wrapped-pill case but leaves out zoom-out and the fact that nothing was pushed, and it names laurynmm as reviewer.",
+    "reply_why": "It is a short ping, but to laurynmm rather than karlstolley."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps 'not ready' and asks for more feedback, but the key's action is a hand-off.",
+    "accuracy_why": "It describes the changes and gaps correctly but treats them as blocking, which contradicts the decisive hand-off fact.",
+    "reply_why": "It asks the author for more screenshots instead of moving the PR to review."
+   }
+  },
+  "ranking": [
+   "Y",
+   "I",
+   "B",
+   "A",
+   "C",
+   "E"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 6, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that recommends handing the PR off to maintainer review, which matches the key.\",\n \"accuracy_why\": \"It covers the same-size screenshot pair, the lack of a code push, and the missing wrapped-pill and zoomed-out states, but it names laurynmm as reviewer instead of karlstolley.\",\n \"reply_why\": \"The single-line ping is the right shape for a hand-off, but it pings laurynmm rather than the CSS reviewer karlstolley.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that recommends a hand-off, which matches the key.\",\n \"accuracy_why\": \"It notes the matched pair and that nothing was pushed, and it ties the missing pills, wrapping and zoom-out checks to #35672, but its reviewer is laurynmm, not karlstolley.\",\n \"reply_why\": \"The one-line ping is fine as a hand-off reply, but it goes to the wrong reviewer.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that recommends a hand-off, which matches the key.\",\n \"accuracy_why\": \"It says the reviewer should check 'whether' the pair shows the caret and wrapped pills, which hedges on gaps the key says are definite, and it names laurynmm instead of karlstolley.\",\n \"reply_why\": \"It is a short reviewer ping, but to laurynmm rather than karlstolley.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that recommends a hand-off, which matches the key.\",\n \"accuracy_why\": \"It implies the single pair might already show zoom-out and wrapping, when the key says it does not, and it names laurynmm instead of karlstolley.\",\n \"reply_why\": \"It is a single ping line, but to the wrong reviewer.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that recommends a hand-off, which matches the key.\",\n \"accuracy_why\": \"It flags the missing wrapped-pill case but leaves out zoom-out and the fact that nothing was pushed, and it names laurynmm as reviewer.\",\n \"reply_why\": \"It is a short ping, but to laurynmm rather than karlstolley.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps 'not ready' and asks for more feedback, but the key's action is a hand-off.\",\n \"accuracy_why\": \"It describes the changes and gaps correctly but treats them as blocking, which contradicts the decisive hand-off fact.\",\n \"reply_why\": \"It asks the author for more screenshots instead of moving the PR to review.\"}\n},\n\"ranking\": [\"Y\", \"I\", \"B\", \"A\", \"C\", \"E\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.278916
+}

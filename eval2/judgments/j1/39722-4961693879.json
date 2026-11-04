@@ -1,0 +1,187 @@
+{
+ "case": "39722-4961693879",
+ "repeat": 1,
+ "map": {
+  "A": [
+   "v2-r1"
+  ],
+  "V": [
+   "v3-r2"
+  ],
+  "D": [
+   "v2-r2"
+  ],
+  "U": [
+   "v1-r2"
+  ],
+  "N": [
+   "v1-r1"
+  ],
+  "X": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit messages are unchanged since the feedback, but only the titles were unchanged and the body fixes were likely made."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key's kind and more_feedback action, though it doesn't name whilstsomebody's review as the next step.",
+    "accuracy_why": "It rightly hedges on whether the screenshots changed, but it says the commit messages are unchanged and misses the partial #16094 scope and the duplicate German before image.",
+    "reply_why": "The reply rests on the commit messages being unchanged, so it likely asks for work already done, and it skips the review step, the issue scope and the duplicate screenshot."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit messages are unchanged, though the body fixes were likely made.",
+     "Says the screenshots are still the full-width ones, which it can't confirm."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key, but it says no reviewer yet instead of pointing to whilstsomebody's pending review.",
+    "accuracy_why": "It states as fact that the commits and screenshots are unchanged and misses the issue scope and the duplicate German image.",
+    "reply_why": "Its tone is concise, but it asks for commit fixes that were likely done and leaves out the reply_ask items."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit messages are unchanged, though the body fixes were likely made.",
+     "Says the description still has the old screenshots, which it can't verify."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "Kind and action match, but the next step is the author rather than whilstsomebody's review.",
+    "accuracy_why": "It turns uncertain points into definite claims that nothing changed and misses f3 and f4.",
+    "reply_why": "It asks for commit-message fixes that were likely already made and leaves out the scope and duplicate-image asks."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit messages are unchanged, though the body fixes were likely made.",
+     "Says the screenshots are still the wide unchanged ones, which it can't confirm."
+    ],
+    "rule_failures": [
+     "asks_for_done_work",
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more_feedback matches the key, though it skips whilstsomebody's pending review.",
+    "accuracy_why": "It makes definite claims that nothing changed, adds a filler ✅ row about the old split, and misses f3 and f4.",
+    "reply_why": "It asks for commit fixes that were likely done and misses the reply_ask points."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit messages are unchanged, though the body fixes were likely made.",
+     "Applies the commit-only \"Fixes after the description\" feedback to the PR description.",
+     "Says the screenshots are the same wide ones, which it can't verify."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 2,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "Kind and action match the key, but it doesn't point to whilstsomebody's review.",
+    "accuracy_why": "It has several wrong or unverifiable claims, including misapplying the commit feedback to the description, and misses f3 and f4.",
+    "reply_why": "\"I don't see the changes yet\" asks for work that was likely done and leaves out the reply_ask points."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit messages are unchanged, though the body fixes were likely made.",
+     "Treats \"Fixes part of\" in the PR description as an unaddressed request, but the feedback was about commits.",
+     "Says the screenshots look unchanged, which it can't confirm."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more_feedback matches the key, but the next step skips whilstsomebody's review.",
+    "accuracy_why": "It misapplies the feedback to the PR description, claims nothing changed, and misses f3 and f4.",
+    "reply_why": "It asks the author to redo commit and description changes that were likely done or never requested, and it misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "A",
+   "X",
+   "V",
+   "U",
+   "D",
+   "N"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says the commit messages are unchanged since the feedback, but only the titles were unchanged and the body fixes were likely made.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key's kind and more_feedback action, though it doesn't name whilstsomebody's review as the next step.\",\n \"accuracy_why\": \"It rightly hedges on whether the screenshots changed, but it says the commit messages are unchanged and misses the partial #16094 scope and the duplicate German before image.\",\n \"reply_why\": \"The reply rests on the commit messages being unchanged, so it likely asks for work already done, and it skips the review step, the issue scope and the duplicate screenshot.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says the commit messages are unchanged, though the body fixes were likely made.\", \"Says the screenshots are still the full-width ones, which it can't confirm.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key, but it says no reviewer yet instead of pointing to whilstsomebody's pending review.\",\n \"accuracy_why\": \"It states as fact that the commits and screenshots are unchanged and misses the issue scope and the duplicate German image.\",\n \"reply_why\": \"Its tone is concise, but it asks for commit fixes that were likely done and leaves out the reply_ask items.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says the commit messages are unchanged, though the body fixes were likely made.\", \"Says the description still has the old screenshots, which it can't verify.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"Kind and action match, but the next step is the author rather than whilstsomebody's review.\",\n \"accuracy_why\": \"It turns uncertain points into definite claims that nothing changed and misses f3 and f4.\",\n \"reply_why\": \"It asks for commit-message fixes that were likely already made and leaves out the scope and duplicate-image asks.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says the commit messages are unchanged, though the body fixes were likely made.\", \"Says the screenshots are still the wide unchanged ones, which it can't confirm.\"],\n \"rule_failures\": [\"asks_for_done_work\", \"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with more_feedback matches the key, though it skips whilstsomebody's pending review.\",\n \"accuracy_why\": \"It makes definite claims that nothing changed, adds a filler ✅ row about the old split, and misses f3 and f4.\",\n \"reply_why\": \"It asks for commit fixes that were likely done and misses the reply_ask points.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says the commit messages are unchanged, though the body fixes were likely made.\", \"Applies the commit-only \\\"Fixes after the description\\\" feedback to the PR description.\", \"Says the screenshots are the same wide ones, which it can't verify.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 2, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"Kind and action match the key, but it doesn't point to whilstsomebody's review.\",\n \"accuracy_why\": \"It has several wrong or unverifiable claims, including misapplying the commit feedback to the description, and misses f3 and f4.\",\n \"reply_why\": \"\\\"I don't see the changes yet\\\" asks for work that was likely done and leaves out the reply_ask points.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says the commit messages are unchanged, though the body fixes were likely made.\", \"Treats \\\"Fixes part of\\\" in the PR description as an unaddressed request, but the feedback was about commits.\", \"Says the screenshots look unchanged, which it can't confirm.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with more_feedback matches the key, but the next step skips whilstsomebody's review.\",\n \"accuracy_why\": \"It misapplies the feedback to the PR description, claims nothing changed, and misses f3 and f4.\",\n \"reply_why\": \"It asks the author to redo commit and description changes that were likely done or never requested, and it misses the reply_ask.\"}\n},\n\"ranking\": [\"A\", \"X\", \"V\", \"U\", \"D\", \"N\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.265432
+}

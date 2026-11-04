@@ -1,0 +1,173 @@
+{
+ "case": "39694-4914523135",
+ "repeat": 1,
+ "map": {
+  "Y": [
+   "v3-r2"
+  ],
+  "D": [
+   "v1-r1"
+  ],
+  "F": [
+   "v1-r2"
+  ],
+  "C": [
+   "v2-r2"
+  ],
+  "K": [
+   "v3-r1"
+  ],
+  "S": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more work matches the key.",
+    "accuracy_why": "It covers the squash and the CSS-plus-screenshot changes, but it says the alignment was 'fixed' without flagging the hand-tuned offsets, and it omits #38860.",
+    "reply_why": "It is a clean, focused squash request with the commit-discipline link and the promise of a re-check, which matches the reply_ask exactly."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending that \"not ready\" stay, with a squash request, matches the key.",
+    "accuracy_why": "It names the fixup commits and flags the open #38860, but it never notes that the pixel-offset alignment still needs a design check.",
+    "reply_why": "The squash ask is right, but the extra checklist request goes beyond the reply_ask and the reply never says a maintainer will re-check."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" for more work matches the key.",
+    "accuracy_why": "It has the squash and the changes, but it only hints that laurynmm will check the screenshots and omits #38860.",
+    "reply_why": "It makes the right squash ask and points to laurynmm for the re-check, though the added checklist request is extra."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" until the squash is done, which matches the key.",
+    "accuracy_why": "It gets the squash and the changes right, but the claim-is-fine row is filler and it neither flags the hand-tuned offsets nor mentions #38860.",
+    "reply_why": "The squash ask is correct, but the extra checklist request adds a sentence beyond the reply_ask."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for a squash matches the key.",
+    "accuracy_why": "It files the decisive squash issue as a mere ℹ️ note, restates earlier screenshot feedback as filler, and misses both the offset concern and #38860.",
+    "reply_why": "The squash ask is right, but the added checklist request and the missing re-check promise mean light edits are needed."
+   },
+   "C": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the first commit's size went from +2 to +9 lines; that was the whole PR's size, not the first commit's.",
+     "Calls web/styles/message_row.css a new CSS file; it is an existing file newly added to the PR."
+    ],
+    "rule_failures": [
+     "filler_point",
+     "repeats_first_card"
+    ],
+    "decision_score": 7,
+    "accuracy_score": 4,
+    "reply_score": 6,
+    "brevity_score": 5,
+    "decision_why": "The action of keeping \"not ready\" is right, but a full CARD is unwarranted when the PR's scope is unchanged.",
+    "accuracy_why": "Two wrong facts about the size and the file, the CI-unknown filler, and the missing offset concern and #38860 pull it down.",
+    "reply_why": "The squash ask is right, but the vague 'finish unchecked items' sentence needs rewriting."
+   }
+  },
+  "ranking": [
+   "Y",
+   "F",
+   "K",
+   "D",
+   "S",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more work matches the key.\",\n \"accuracy_why\": \"It covers the squash and the CSS-plus-screenshot changes, but it says the alignment was 'fixed' without flagging the hand-tuned offsets, and it omits #38860.\",\n \"reply_why\": \"It is a clean, focused squash request with the commit-discipline link and the promise of a re-check, which matches the reply_ask exactly.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending that \\\"not ready\\\" stay, with a squash request, matches the key.\",\n \"accuracy_why\": \"It names the fixup commits and flags the open #38860, but it never notes that the pixel-offset alignment still needs a design check.\",\n \"reply_why\": \"The squash ask is right, but the extra checklist request goes beyond the reply_ask and the reply never says a maintainer will re-check.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" for more work matches the key.\",\n \"accuracy_why\": \"It has the squash and the changes, but it only hints that laurynmm will check the screenshots and omits #38860.\",\n \"reply_why\": \"It makes the right squash ask and points to laurynmm for the re-check, though the added checklist request is extra.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" until the squash is done, which matches the key.\",\n \"accuracy_why\": \"It gets the squash and the changes right, but the claim-is-fine row is filler and it neither flags the hand-tuned offsets nor mentions #38860.\",\n \"reply_why\": \"The squash ask is correct, but the extra checklist request adds a sentence beyond the reply_ask.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for a squash matches the key.\",\n \"accuracy_why\": \"It files the decisive squash issue as a mere ℹ️ note, restates earlier screenshot feedback as filler, and misses both the offset concern and #38860.\",\n \"reply_why\": \"The squash ask is right, but the added checklist request and the missing re-check promise mean light edits are needed.\"},\n\"C\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the first commit's size went from +2 to +9 lines; that was the whole PR's size, not the first commit's.\", \"Calls web/styles/message_row.css a new CSS file; it is an existing file newly added to the PR.\"],\n \"rule_failures\": [\"filler_point\", \"repeats_first_card\"],\n \"decision_score\": 7, \"accuracy_score\": 4, \"reply_score\": 6, \"brevity_score\": 5,\n \"decision_why\": \"The action of keeping \\\"not ready\\\" is right, but a full CARD is unwarranted when the PR's scope is unchanged.\",\n \"accuracy_why\": \"Two wrong facts about the size and the file, the CI-unknown filler, and the missing offset concern and #38860 pull it down.\",\n \"reply_why\": \"The squash ask is right, but the vague 'finish unchecked items' sentence needs rewriting.\"}\n},\n\"ranking\": [\"Y\", \"F\", \"K\", \"D\", \"S\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.269036
+}

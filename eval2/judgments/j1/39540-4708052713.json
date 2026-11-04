@@ -1,0 +1,167 @@
+{
+ "case": "39540-4708052713",
+ "repeat": 1,
+ "map": {
+  "B": [
+   "v1-r2"
+  ],
+  "D": [
+   "v3-r2"
+  ],
+  "T": [
+   "v2-r2"
+  ],
+  "S": [
+   "v2-r1"
+  ],
+  "C": [
+   "v1-r1"
+  ],
+  "E": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the remaining commit has 'a clear message', but the key says the commit message still doesn't follow commit discipline."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "The kind is NOTE as in the key, but it recommends keeping 'not ready' when the observed action was a hand-off to a maintainer.",
+    "accuracy_why": "It correctly flags the leftover merge commit and the unchanged messages, but it doesn't name karlstolley, skips the screenshots, and wrongly praises the commit message.",
+    "reply_why": "It asks for the merge commit to be removed but not for the message rewrite, and a multi-sentence reply to the author caps the score under hand_off."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "It advises keeping 'not ready' and leaving the PR unassigned, the opposite of the observed hand-off to karlstolley.",
+    "accuracy_why": "The merge commit and unchanged messages are right, but the decisive reviewer fact is missing and the screenshot issue is absent.",
+    "reply_why": "It covers merge-commit removal per the guide but not the message rewrite, and it is a multi-sentence reply where a hand-off was the call."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It says to give more feedback and assign no reviewer, which contradicts the observed hand-off.",
+    "accuracy_why": "It has the merge-commit and unchanged-message facts, but it misses karlstolley and the screenshot problem.",
+    "reply_why": "It has the right ask for removing the merge commit but omits the commit-message rewrite, and it is too long for a hand-off."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It keeps 'not ready' with no reviewer, which misses the observed hand-off.",
+    "accuracy_why": "The core cleanup facts are right, but there is no reviewer named and no screenshot issue, plus two marginal info rows.",
+    "reply_why": "It asks for a rebase to drop the merge commit but not for the message rewrite, and it is a multi-sentence reply under a hand-off."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Presents the before/after screenshots for both themes as fine, but the dark-theme ones are mismatched and need redoing."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It keeps 'not ready' instead of handing off to a maintainer.",
+    "accuracy_why": "It notes the merge commit and the unassigned state but never names karlstolley, and it wrongly treats the screenshots as complete.",
+    "reply_why": "It asks for merge-commit removal per the guide but skips the message rewrite, and it is a multi-sentence reply under a hand-off."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "It keeps the PR unassigned with laurynmm re-checking, which contradicts the hand-off to karlstolley.",
+    "accuracy_why": "The merge-commit and unchanged-message facts are right, but the reviewer and the screenshot issue are missing.",
+    "reply_why": "It has the right merge-commit ask but no commit-message rewrite, and it is too long for a hand-off."
+   }
+  },
+  "ranking": [
+   "D",
+   "E",
+   "T",
+   "S",
+   "C",
+   "B"
+  ]
+ },
+ "text": "{\"outputs\": {\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Claims the remaining commit has 'a clear message', but the key says the commit message still doesn't follow commit discipline.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 5, \"brevity_score\": 7,\n   \"decision_why\": \"The kind is NOTE as in the key, but it recommends keeping 'not ready' when the observed action was a hand-off to a maintainer.\",\n   \"accuracy_why\": \"It correctly flags the leftover merge commit and the unchanged messages, but it doesn't name karlstolley, skips the screenshots, and wrongly praises the commit message.\",\n   \"reply_why\": \"It asks for the merge commit to be removed but not for the message rewrite, and a multi-sentence reply to the author caps the score under hand_off.\"},\n  \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 9,\n   \"decision_why\": \"It advises keeping 'not ready' and leaving the PR unassigned, the opposite of the observed hand-off to karlstolley.\",\n   \"accuracy_why\": \"The merge commit and unchanged messages are right, but the decisive reviewer fact is missing and the screenshot issue is absent.\",\n   \"reply_why\": \"It covers merge-commit removal per the guide but not the message rewrite, and it is a multi-sentence reply where a hand-off was the call.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 7,\n   \"decision_why\": \"It says to give more feedback and assign no reviewer, which contradicts the observed hand-off.\",\n   \"accuracy_why\": \"It has the merge-commit and unchanged-message facts, but it misses karlstolley and the screenshot problem.\",\n   \"reply_why\": \"It has the right ask for removing the merge commit but omits the commit-message rewrite, and it is too long for a hand-off.\"},\n  \"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 7,\n   \"decision_why\": \"It keeps 'not ready' with no reviewer, which misses the observed hand-off.\",\n   \"accuracy_why\": \"The core cleanup facts are right, but there is no reviewer named and no screenshot issue, plus two marginal info rows.\",\n   \"reply_why\": \"It asks for a rebase to drop the merge commit but not for the message rewrite, and it is a multi-sentence reply under a hand-off.\"},\n  \"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Presents the before/after screenshots for both themes as fine, but the dark-theme ones are mismatched and need redoing.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 5, \"brevity_score\": 7,\n   \"decision_why\": \"It keeps 'not ready' instead of handing off to a maintainer.\",\n   \"accuracy_why\": \"It notes the merge commit and the unassigned state but never names karlstolley, and it wrongly treats the screenshots as complete.\",\n   \"reply_why\": \"It asks for merge-commit removal per the guide but skips the message rewrite, and it is a multi-sentence reply under a hand-off.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 9,\n   \"decision_why\": \"It keeps the PR unassigned with laurynmm re-checking, which contradicts the hand-off to karlstolley.\",\n   \"accuracy_why\": \"The merge-commit and unchanged-message facts are right, but the reviewer and the screenshot issue are missing.\",\n   \"reply_why\": \"It has the right merge-commit ask but no commit-message rewrite, and it is too long for a hand-off.\"}},\n \"ranking\": [\"D\", \"E\", \"T\", \"S\", \"C\", \"B\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.17382
+}

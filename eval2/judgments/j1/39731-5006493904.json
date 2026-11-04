@@ -1,0 +1,159 @@
+{
+ "case": "39731-5006493904",
+ "repeat": 1,
+ "map": {
+  "M": [
+   "v3-r2"
+  ],
+  "Y": [
+   "v3-r1"
+  ],
+  "T": [
+   "v1-r1"
+  ],
+  "Q": [
+   "v2-r1"
+  ],
+  "O": [
+   "v1-r2"
+  ],
+  "N": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A note recommending hand-off matches the key exactly.",
+    "accuracy_why": "It covers the changes and the screenshot gap, but it names laurynmm instead of karlstolley and calls the remaining gaps 'nothing blocking'.",
+    "reply_why": "It is a short reviewer ping that could be pasted, though it pings laurynmm rather than the CSS maintainer."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says 'Nothing is missing', but the precise before/after screenshots the issue requires are still absent."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A note recommending hand-off matches the key.",
+    "accuracy_why": "It omits the screenshot gap, falsely says nothing is missing, and names the wrong reviewer.",
+    "reply_why": "The reply mixes thanks to the author with a laurynmm ping, so it needs a small edit."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A note recommending hand-off matches the key.",
+    "accuracy_why": "It covers the answer, the removals, the measurements and the screenshot gap, but it names laurynmm instead of karlstolley.",
+    "reply_why": "It is a clean one-line reviewer ping, aimed at laurynmm rather than karlstolley."
+   },
+   "Q": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "The action is right, but a full card is more than the note the key calls for.",
+    "accuracy_why": "It is thorough and accurate, including the screenshot gap, but it names the wrong reviewer.",
+    "reply_why": "It is a pasteable reviewer ping, aimed at laurynmm."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A note recommending hand-off matches the key.",
+    "accuracy_why": "It is accurate on the changes and flags the screenshot gap with a sensible next step, but it names laurynmm instead of karlstolley.",
+    "reply_why": "It is a concise reviewer ping that could be pasted, aimed at laurynmm."
+   },
+   "N": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "The action is right, but it is a card where a note would do.",
+    "accuracy_why": "It is accurate, including the kept selector and the screenshot gap, but it names the wrong reviewer.",
+    "reply_why": "The minimal single-line ping is pasteable as is."
+   }
+  },
+  "ranking": [
+   "O",
+   "T",
+   "M",
+   "N",
+   "Q",
+   "Y"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"A note recommending hand-off matches the key exactly.\",\n \"accuracy_why\": \"It covers the changes and the screenshot gap, but it names laurynmm instead of karlstolley and calls the remaining gaps 'nothing blocking'.\",\n \"reply_why\": \"It is a short reviewer ping that could be pasted, though it pings laurynmm rather than the CSS maintainer.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Says 'Nothing is missing', but the precise before/after screenshots the issue requires are still absent.\"], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"A note recommending hand-off matches the key.\",\n \"accuracy_why\": \"It omits the screenshot gap, falsely says nothing is missing, and names the wrong reviewer.\",\n \"reply_why\": \"The reply mixes thanks to the author with a laurynmm ping, so it needs a small edit.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"A note recommending hand-off matches the key.\",\n \"accuracy_why\": \"It covers the answer, the removals, the measurements and the screenshot gap, but it names laurynmm instead of karlstolley.\",\n \"reply_why\": \"It is a clean one-line reviewer ping, aimed at laurynmm rather than karlstolley.\"},\n\"Q\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 8, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 6,\n \"decision_why\": \"The action is right, but a full card is more than the note the key calls for.\",\n \"accuracy_why\": \"It is thorough and accurate, including the screenshot gap, but it names the wrong reviewer.\",\n \"reply_why\": \"It is a pasteable reviewer ping, aimed at laurynmm.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"A note recommending hand-off matches the key.\",\n \"accuracy_why\": \"It is accurate on the changes and flags the screenshot gap with a sensible next step, but it names laurynmm instead of karlstolley.\",\n \"reply_why\": \"It is a concise reviewer ping that could be pasted, aimed at laurynmm.\"},\n\"N\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 8, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"The action is right, but it is a card where a note would do.\",\n \"accuracy_why\": \"It is accurate, including the kept selector and the screenshot gap, but it names the wrong reviewer.\",\n \"reply_why\": \"The minimal single-line ping is pasteable as is.\"}\n},\n\"ranking\": [\"O\", \"T\", \"M\", \"N\", \"Q\", \"Y\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.293704
+}

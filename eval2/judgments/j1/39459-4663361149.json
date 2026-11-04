@@ -1,0 +1,163 @@
+{
+ "case": "39459-4663361149",
+ "repeat": 1,
+ "map": {
+  "Q": [
+   "v3-r1"
+  ],
+  "A": [
+   "v3-r2"
+  ],
+  "Z": [
+   "v2-r2"
+  ],
+  "W": [
+   "v1-r1"
+  ],
+  "X": [
+   "v1-r2"
+  ],
+  "U": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 10,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands the PR off with the labels and reviewer the key specifies.",
+    "accuracy_why": "It correctly says only the description changed and notes missing tests, but it doesn't flag that sahil839's #38251 feedback about minimal changes may not be addressed.",
+    "reply_why": "The reply is a single thank-and-ping line that a maintainer would paste as is."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 10,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands off to sahil839 and swaps the labels, matching the key.",
+    "accuracy_why": "Its facts are accurate, including the description-only update and #38251's status, but it misses the open question about sahil839's minimal-change feedback.",
+    "reply_why": "The reply is a single reviewer-ping line, ready to paste."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 10,
+    "brevity_score": 7,
+    "decision_why": "It correctly recommends handing off to sahil839 with maintainer review.",
+    "accuracy_why": "It accurately reports the description update and the settings-overlay claim, but it doesn't flag whether sahil839's main feedback was applied.",
+    "reply_why": "The reply is a single ping line that can be pasted directly."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the PR already takes the smaller approach sahil839 suggested on #38251, when the key says it is unclear whether that feedback was applied."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 10,
+    "brevity_score": 6,
+    "decision_why": "Its hand-off to sahil839 matches the key.",
+    "accuracy_why": "It asserts that sahil839's feedback was addressed, which is exactly the open concern the key says remains.",
+    "reply_why": "The reply is a single ping line, ready to paste."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" and asks for more feedback, when the key action is hand_off.",
+    "accuracy_why": "It notes there was no push and touches on sahil839's feedback in the reply, but it gets the readiness call wrong and names no reviewer.",
+    "reply_why": "The reply is a multi-sentence request for more work when the PR should go to review."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps the PR not ready instead of handing it off as the key says.",
+    "accuracy_why": "It notes there was no push but misses the hand-off, the reviewer, and the concern about sahil839's feedback.",
+    "reply_why": "The reply asks the author to rebuild on #38251's commits and add tests, which is the wrong ask for a hand-off."
+   }
+  },
+  "ranking": [
+   "A",
+   "Q",
+   "X",
+   "W",
+   "Z",
+   "U"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 10, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands the PR off with the labels and reviewer the key specifies.\",\n \"accuracy_why\": \"It correctly says only the description changed and notes missing tests, but it doesn't flag that sahil839's #38251 feedback about minimal changes may not be addressed.\",\n \"reply_why\": \"The reply is a single thank-and-ping line that a maintainer would paste as is.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 10, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that hands off to sahil839 and swaps the labels, matching the key.\",\n \"accuracy_why\": \"Its facts are accurate, including the description-only update and #38251's status, but it misses the open question about sahil839's minimal-change feedback.\",\n \"reply_why\": \"The reply is a single reviewer-ping line, ready to paste.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 10, \"brevity_score\": 7,\n \"decision_why\": \"It correctly recommends handing off to sahil839 with maintainer review.\",\n \"accuracy_why\": \"It accurately reports the description update and the settings-overlay claim, but it doesn't flag whether sahil839's main feedback was applied.\",\n \"reply_why\": \"The reply is a single ping line that can be pasted directly.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\"},\n \"wrong_facts\": [\"Claims the PR already takes the smaller approach sahil839 suggested on #38251, when the key says it is unclear whether that feedback was applied.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 10, \"brevity_score\": 6,\n \"decision_why\": \"Its hand-off to sahil839 matches the key.\",\n \"accuracy_why\": \"It asserts that sahil839's feedback was addressed, which is exactly the open concern the key says remains.\",\n \"reply_why\": \"The reply is a single ping line, ready to paste.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more feedback, when the key action is hand_off.\",\n \"accuracy_why\": \"It notes there was no push and touches on sahil839's feedback in the reply, but it gets the readiness call wrong and names no reviewer.\",\n \"reply_why\": \"The reply is a multi-sentence request for more work when the PR should go to review.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps the PR not ready instead of handing it off as the key says.\",\n \"accuracy_why\": \"It notes there was no push but misses the hand-off, the reviewer, and the concern about sahil839's feedback.\",\n \"reply_why\": \"The reply asks the author to rebuild on #38251's commits and add tests, which is the wrong ask for a hand-off.\"}\n},\n\"ranking\": [\"A\", \"Q\", \"X\", \"W\", \"Z\", \"U\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.230888
+}

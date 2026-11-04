@@ -1,0 +1,175 @@
+{
+ "case": "39819-5108435113",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "v1-r1"
+  ],
+  "B": [
+   "v3-r2"
+  ],
+  "S": [
+   "v3-r1"
+  ],
+  "J": [
+   "v2-r1"
+  ],
+  "R": [
+   "v1-r2"
+  ],
+  "A": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more work, which matches the key.",
+    "accuracy_why": "It correctly notes there was no push, describes Test 2's \"Show more\"-but-still-hidden behavior accurately, and flags the screenshots, but it misses the commit-summary format.",
+    "reply_why": "It asks for one clear pair per scenario, which is close to the key's ask, but it never mentions tables and leads with the Test 2 fix rather than the screenshot formatting."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, as the key does.",
+    "accuracy_why": "It gets the missing push and the unclear screenshots right, but its Test 2 description is muddled and it misses the commit summary.",
+    "reply_why": "It makes a code fix the main ask and treats the screenshots as a later step, with no mention of tables or one per test."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the description still has the same screenshot sets, though the description was edited to add Before/After groups per test."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks the author for more work, matching the key.",
+    "accuracy_why": "It correctly notes the missing push and the screenshots not following the guide, but it wrongly implies the description is unchanged, describes Test 2 only vaguely, and misses the commit summary.",
+    "reply_why": "It is a reasonable request, but it leads with a code fix and tests instead of asking for side-by-side screenshot tables."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says Test 2's message still shows expanded after reveal, when the description says it stays hidden after clicking \"Show more\"."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for fixes, which matches the key.",
+    "accuracy_why": "It hedges on whether the screenshots meet the guide and misstates the Test 2 result, and part of the reply rests on that error.",
+    "reply_why": "It puts the screenshot request first, which helps, but it has no tables and asks the author to fix a misdescribed Test 2 behavior."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says Test 2's message still shows in full after clicking \"show more\", when the description says it stays hidden."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps \"not ready\", which matches the key's more_feedback action.",
+    "accuracy_why": "It treats the screenshots as roughly fine and builds its main ask on a misstated Test 2 result.",
+    "reply_why": "Its primary ask rests on the wrong Test 2 claim, and it does not ask for screenshot tables."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says Test 2's case still shows the full message, when the description says the message stays hidden."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 5,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more work, matching the key.",
+    "accuracy_why": "It misstates the Test 2 result that the action rests on, hedges on the screenshots, and repeats the no-push point twice.",
+    "reply_why": "It asks for a fix based on a wrong claim plus tests, and it does not mention screenshot tables."
+   }
+  },
+  "ranking": [
+   "B",
+   "S",
+   "D",
+   "A",
+   "J",
+   "R"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 6, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more work, which matches the key.\",\n \"accuracy_why\": \"It correctly notes there was no push, describes Test 2's \\\"Show more\\\"-but-still-hidden behavior accurately, and flags the screenshots, but it misses the commit-summary format.\",\n \"reply_why\": \"It asks for one clear pair per scenario, which is close to the key's ask, but it never mentions tables and leads with the Test 2 fix rather than the screenshot formatting.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 5, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, as the key does.\",\n \"accuracy_why\": \"It gets the missing push and the unclear screenshots right, but its Test 2 description is muddled and it misses the commit summary.\",\n \"reply_why\": \"It makes a code fix the main ask and treats the screenshots as a later step, with no mention of tables or one per test.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the description still has the same screenshot sets, though the description was edited to add Before/After groups per test.\"], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks the author for more work, matching the key.\",\n \"accuracy_why\": \"It correctly notes the missing push and the screenshots not following the guide, but it wrongly implies the description is unchanged, describes Test 2 only vaguely, and misses the commit summary.\",\n \"reply_why\": \"It is a reasonable request, but it leads with a code fix and tests instead of asking for side-by-side screenshot tables.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says Test 2's message still shows expanded after reveal, when the description says it stays hidden after clicking \\\"Show more\\\".\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for fixes, which matches the key.\",\n \"accuracy_why\": \"It hedges on whether the screenshots meet the guide and misstates the Test 2 result, and part of the reply rests on that error.\",\n \"reply_why\": \"It puts the screenshot request first, which helps, but it has no tables and asks the author to fix a misdescribed Test 2 behavior.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says Test 2's message still shows in full after clicking \\\"show more\\\", when the description says it stays hidden.\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\", which matches the key's more_feedback action.\",\n \"accuracy_why\": \"It treats the screenshots as roughly fine and builds its main ask on a misstated Test 2 result.\",\n \"reply_why\": \"Its primary ask rests on the wrong Test 2 claim, and it does not ask for screenshot tables.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says Test 2's case still shows the full message, when the description says the message stays hidden.\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 5,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more work, matching the key.\",\n \"accuracy_why\": \"It misstates the Test 2 result that the action rests on, hedges on the screenshots, and repeats the no-push point twice.\",\n \"reply_why\": \"It asks for a fix based on a wrong claim plus tests, and it does not mention screenshot tables.\"}\n},\n\"ranking\": [\"B\", \"S\", \"D\", \"A\", \"J\", \"R\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.276732
+}

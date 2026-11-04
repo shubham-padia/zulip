@@ -1,0 +1,168 @@
+{
+ "case": "39784-5100999626",
+ "repeat": 1,
+ "map": {
+  "S": [
+   "v1-r2"
+  ],
+  "I": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v1-r1"
+  ],
+  "G": [
+   "v2-r2"
+  ],
+  "L": [
+   "v3-r1"
+  ],
+  "V": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key.",
+    "accuracy_why": "It covers the #33086 discussion, the unpaired screenshots and the unverified whitespace fix, but omits the left-out marked.cjs comment.",
+    "reply_why": "The reply thanks the author for the #33086 write-up and asks for paired screenshots with the guide link, so it is pasteable as is."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending more feedback, matching the key.",
+    "accuracy_why": "The changed and missing items are correct and concise, but it omits the marked.cjs comment.",
+    "reply_why": "The screenshot ask is right, but \"please also push the whitespace fix\" asks for work the author says is already done."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" with more feedback, matching the key.",
+    "accuracy_why": "Its core facts are right, but it omits marked.cjs and adds a fresh-reimplementation point that the description already addresses.",
+    "reply_why": "The reply asks the author to explain why they didn't build on #33086, which the description already explains."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point",
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending more feedback, matching the key.",
+    "accuracy_why": "It treats the #33086 ask as not addressed, adds a filler point about an unchecked self-review item, and omits marked.cjs.",
+    "reply_why": "The reply leads with a demand to build on #33086's commits or explain why, which is already explained, and pushes the key's screenshot ask to second place."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE with more feedback matches the key.",
+    "accuracy_why": "It is accurate on what changed and what is missing, but omits the marked.cjs comment.",
+    "reply_why": "The reply is short, makes the right screenshot ask and links the guide, so it is pasteable as is."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and holds off the hand-off, matching the key.",
+    "accuracy_why": "It maps each of laurynmm's asks to its status and flags the unverified fix, but omits marked.cjs.",
+    "reply_why": "The reply makes the right screenshot ask, gives a concrete scenario example and links the guide."
+   }
+  },
+  "ranking": [
+   "L",
+   "V",
+   "S",
+   "I",
+   "Q",
+   "G"
+  ]
+ },
+ "text": "{\"outputs\": {\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key.\",\n   \"accuracy_why\": \"It covers the #33086 discussion, the unpaired screenshots and the unverified whitespace fix, but omits the left-out marked.cjs comment.\",\n   \"reply_why\": \"The reply thanks the author for the #33086 write-up and asks for paired screenshots with the guide link, so it is pasteable as is.\"},\n  \"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE recommending more feedback, matching the key.\",\n   \"accuracy_why\": \"The changed and missing items are correct and concise, but it omits the marked.cjs comment.\",\n   \"reply_why\": \"The screenshot ask is right, but \\\"please also push the whitespace fix\\\" asks for work the author says is already done.\"},\n  \"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 5,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" with more feedback, matching the key.\",\n   \"accuracy_why\": \"Its core facts are right, but it omits marked.cjs and adds a fresh-reimplementation point that the description already addresses.\",\n   \"reply_why\": \"The reply asks the author to explain why they didn't build on #33086, which the description already explains.\"},\n  \"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\", \"asks_for_done_work\"],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 4,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE recommending more feedback, matching the key.\",\n   \"accuracy_why\": \"It treats the #33086 ask as not addressed, adds a filler point about an unchecked self-review item, and omits marked.cjs.\",\n   \"reply_why\": \"The reply leads with a demand to build on #33086's commits or explain why, which is already explained, and pushes the key's screenshot ask to second place.\"},\n  \"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE with more feedback matches the key.\",\n   \"accuracy_why\": \"It is accurate on what changed and what is missing, but omits the marked.cjs comment.\",\n   \"reply_why\": \"The reply is short, makes the right screenshot ask and links the guide, so it is pasteable as is.\"},\n  \"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and holds off the hand-off, matching the key.\",\n   \"accuracy_why\": \"It maps each of laurynmm's asks to its status and flags the unverified fix, but omits marked.cjs.\",\n   \"reply_why\": \"The reply makes the right screenshot ask, gives a concrete scenario example and links the guide.\"}},\n \"ranking\": [\"L\", \"V\", \"S\", \"I\", \"Q\", \"G\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.32044
+}

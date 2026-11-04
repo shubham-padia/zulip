@@ -1,0 +1,173 @@
+{
+ "case": "39728-5012922258",
+ "repeat": 1,
+ "map": {
+  "Q": [
+   "v1-r2"
+  ],
+  "C": [
+   "v2-r1"
+  ],
+  "N": [
+   "v3-r1"
+  ],
+  "A": [
+   "v2-r2"
+  ],
+  "D": [
+   "v3-r2"
+  ],
+  "B": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "It describes the PR template's checklist as motivation/approach, CI, edge cases, commit discipline and impact. That is the rejected checklist from #38363, not the actual template."
+    ],
+    "rule_failures": [
+     "asks_for_unrequested_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending more feedback, which matches the key.",
+    "accuracy_why": "It covers the commits (including #17418), the checklist and the new test, but it misstates the template's contents and frames screenshots as a location problem instead of a precision problem.",
+    "reply_why": "The commit and checklist asks are right, but it adds an unfounded request to move the screenshots and omits the wrong issue number."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "It marks the before/after screenshots ✅ as done, but they have not been checked against the precise-screenshot guidelines."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending more feedback, which matches the key.",
+    "accuracy_why": "The commit problems, the #17418 error, the checklist and CI unknown are all right, but it wrongly gives the screenshots a pass.",
+    "reply_why": "It is a clear, pasteable ask on commits, the issue number and the checklist, and it only misses the screenshot point."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps 'not ready' with more feedback, which matches the key.",
+    "accuracy_why": "Every decisive item is right and concise, and only the screenshot-precision flag is missing.",
+    "reply_why": "It gives specific commit-discipline instructions (area: Summary format, the issue number) plus the checklist ask, but it misses the screenshots."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "It marks the before/after screenshots ✅ as added and fine, but they have not been checked against the precise-screenshot guidelines."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending more feedback, which matches the key.",
+    "accuracy_why": "It is nearly identical to C, with commits, #17418, the checklist, the typo and CI right, but the screenshots wrongly get a pass.",
+    "reply_why": "It is a good pasteable ask on commits and the checklist that misses the screenshots."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps 'not ready' with more feedback, which matches the key.",
+    "accuracy_why": "The commits, #17418, the checklist and the new test are all right, and only the screenshot-precision flag is missing.",
+    "reply_why": "It asks for squashing and the template checklist, but it is less explicit than N about rewriting the commit messages and skips the screenshots."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "It says the PR description follows the template, including the self-review checklist, but the checklist is a custom one rather than the template's."
+    ],
+    "rule_failures": [
+     "premature_handoff_promise"
+    ],
+    "decision_score": 7,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It recommends more feedback but promises maintainer review once only the commits are fixed, which ignores the other outstanding asks.",
+    "accuracy_why": "Wrongly passing the checklist is a decisive error that the next step rests on, and the screenshot flag is also missing.",
+    "reply_why": "It omits the decisive checklist ask, so the author would miss a required fix."
+   }
+  },
+  "ranking": [
+   "N",
+   "D",
+   "C",
+   "A",
+   "Q",
+   "B"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"It describes the PR template's checklist as motivation/approach, CI, edge cases, commit discipline and impact. That is the rejected checklist from #38363, not the actual template.\"],\n \"rule_failures\": [\"asks_for_unrequested_work\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE recommending more feedback, which matches the key.\",\n \"accuracy_why\": \"It covers the commits (including #17418), the checklist and the new test, but it misstates the template's contents and frames screenshots as a location problem instead of a precision problem.\",\n \"reply_why\": \"The commit and checklist asks are right, but it adds an unfounded request to move the screenshots and omits the wrong issue number.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"It marks the before/after screenshots ✅ as done, but they have not been checked against the precise-screenshot guidelines.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE recommending more feedback, which matches the key.\",\n \"accuracy_why\": \"The commit problems, the #17418 error, the checklist and CI unknown are all right, but it wrongly gives the screenshots a pass.\",\n \"reply_why\": \"It is a clear, pasteable ask on commits, the issue number and the checklist, and it only misses the screenshot point.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' with more feedback, which matches the key.\",\n \"accuracy_why\": \"Every decisive item is right and concise, and only the screenshot-precision flag is missing.\",\n \"reply_why\": \"It gives specific commit-discipline instructions (area: Summary format, the issue number) plus the checklist ask, but it misses the screenshots.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"It marks the before/after screenshots ✅ as added and fine, but they have not been checked against the precise-screenshot guidelines.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE recommending more feedback, which matches the key.\",\n \"accuracy_why\": \"It is nearly identical to C, with commits, #17418, the checklist, the typo and CI right, but the screenshots wrongly get a pass.\",\n \"reply_why\": \"It is a good pasteable ask on commits and the checklist that misses the screenshots.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' with more feedback, which matches the key.\",\n \"accuracy_why\": \"The commits, #17418, the checklist and the new test are all right, and only the screenshot-precision flag is missing.\",\n \"reply_why\": \"It asks for squashing and the template checklist, but it is less explicit than N about rewriting the commit messages and skips the screenshots.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"It says the PR description follows the template, including the self-review checklist, but the checklist is a custom one rather than the template's.\"],\n \"rule_failures\": [\"premature_handoff_promise\"],\n \"decision_score\": 7, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It recommends more feedback but promises maintainer review once only the commits are fixed, which ignores the other outstanding asks.\",\n \"accuracy_why\": \"Wrongly passing the checklist is a decisive error that the next step rests on, and the screenshot flag is also missing.\",\n \"reply_why\": \"It omits the decisive checklist ask, so the author would miss a required fix.\"}},\n \"ranking\": [\"N\", \"D\", \"C\", \"A\", \"Q\", \"B\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.351188
+}

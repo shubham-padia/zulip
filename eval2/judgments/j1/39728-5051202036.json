@@ -1,0 +1,173 @@
+{
+ "case": "39728-5051202036",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "v1-r2"
+  ],
+  "B": [
+   "v2-r1"
+  ],
+  "M": [
+   "v1-r1"
+  ],
+  "V": [
+   "v3-r2"
+  ],
+  "L": [
+   "v2-r2"
+  ],
+  "F": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE as the key says, but it recommends keeping \"not ready\" with more feedback where the key's observed action is close.",
+    "accuracy_why": "It covers the screenshot pushback, the unchanged commit titles with the wrong issue number, and the unchanged code, with no wrong facts; it omits #38363 and the CodeDay group.",
+    "reply_why": "It asks for commit-style titles and precise screenshots, explains why the change is visible, and is nearly pasteable."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the self-review checklist now matches the PR template, which the key lists as still unproven."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 4,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE but recommends more feedback where the key says close.",
+    "accuracy_why": "It wrongly marks the checklist as fixed, never says the diff is unchanged, and omits the related-work context.",
+    "reply_why": "It covers the area prefix, the issue number and precise screenshots, with a concrete suggestion, and is pasteable."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE but recommends more feedback where the key says close.",
+    "accuracy_why": "It rebuts the screenshot pushback, lists the commit problems, and notes the CodeDay claim, but it doesn't say the diff is unchanged or mention #38363.",
+    "reply_why": "The ask is right, but the text says only \"before/after screenshots\" without \"precise\" and relies on the link for that."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE but recommends more feedback where the key says close.",
+    "accuracy_why": "The commit and screenshot gaps are correct, but it omits the unchanged diff and the related-work context.",
+    "reply_why": "The ask is correct, but it is packed into one long run-on sentence that a maintainer would likely split."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Claims the self-review checklist now matches the PR template, which the key lists as still unproven."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE but recommends more feedback where the key says close.",
+    "accuracy_why": "It notes the competing claim, but it wrongly says the checklist is fixed and never says the diff is unchanged.",
+    "reply_why": "It gives a good concrete ask on commits and precise screenshots, with slightly awkward \"two things\" framing."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the author added a regression test in this round, though the test commit existed before the feedback."
+    ],
+    "rule_failures": [
+     "reply_wrong_ask"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE but recommends more feedback where the key says close.",
+    "accuracy_why": "It says the code is unchanged and gets the commit issues right, but it misstates the test as new and doesn't capture the author's pushback on screenshots.",
+    "reply_why": "It tells the author a screen recording is acceptable, which contradicts the key's ask that precise screenshots are still required."
+   }
+  },
+  "ranking": [
+   "E",
+   "M",
+   "V",
+   "L",
+   "B",
+   "F"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE as the key says, but it recommends keeping \\\"not ready\\\" with more feedback where the key's observed action is close.\",\n \"accuracy_why\": \"It covers the screenshot pushback, the unchanged commit titles with the wrong issue number, and the unchanged code, with no wrong facts; it omits #38363 and the CodeDay group.\",\n \"reply_why\": \"It asks for commit-style titles and precise screenshots, explains why the change is visible, and is nearly pasteable.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the self-review checklist now matches the PR template, which the key lists as still unproven.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 2, \"accuracy_score\": 4, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE but recommends more feedback where the key says close.\",\n \"accuracy_why\": \"It wrongly marks the checklist as fixed, never says the diff is unchanged, and omits the related-work context.\",\n \"reply_why\": \"It covers the area prefix, the issue number and precise screenshots, with a concrete suggestion, and is pasteable.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE but recommends more feedback where the key says close.\",\n \"accuracy_why\": \"It rebuts the screenshot pushback, lists the commit problems, and notes the CodeDay claim, but it doesn't say the diff is unchanged or mention #38363.\",\n \"reply_why\": \"The ask is right, but the text says only \\\"before/after screenshots\\\" without \\\"precise\\\" and relies on the link for that.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE but recommends more feedback where the key says close.\",\n \"accuracy_why\": \"The commit and screenshot gaps are correct, but it omits the unchanged diff and the related-work context.\",\n \"reply_why\": \"The ask is correct, but it is packed into one long run-on sentence that a maintainer would likely split.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [\"Claims the self-review checklist now matches the PR template, which the key lists as still unproven.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE but recommends more feedback where the key says close.\",\n \"accuracy_why\": \"It notes the competing claim, but it wrongly says the checklist is fixed and never says the diff is unchanged.\",\n \"reply_why\": \"It gives a good concrete ask on commits and precise screenshots, with slightly awkward \\\"two things\\\" framing.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the author added a regression test in this round, though the test commit existed before the feedback.\"],\n \"rule_failures\": [\"reply_wrong_ask\"],\n \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE but recommends more feedback where the key says close.\",\n \"accuracy_why\": \"It says the code is unchanged and gets the commit issues right, but it misstates the test as new and doesn't capture the author's pushback on screenshots.\",\n \"reply_why\": \"It tells the author a screen recording is acceptable, which contradicts the key's ask that precise screenshots are still required.\"}\n},\n\"ranking\": [\"E\", \"M\", \"V\", \"L\", \"B\", \"F\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.368644
+}

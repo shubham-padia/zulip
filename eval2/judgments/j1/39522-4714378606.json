@@ -1,0 +1,164 @@
+{
+ "case": "39522-4714378606",
+ "repeat": 1,
+ "map": {
+  "A": [
+   "v3-r2"
+  ],
+  "X": [
+   "v3-r1"
+  ],
+  "P": [
+   "v2-r2"
+  ],
+  "N": [
+   "v1-r1"
+  ],
+  "V": [
+   "v1-r2"
+  ],
+  "B": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and lets Yogesh keep reviewing, which is close to the key's sign-off-then-hand-off path but never states the hand-off.",
+    "accuracy_why": "It covers the squash, the shrunk diff and all of Yogesh's open points, but it never says the label came without a maintainer comment or gives the hand-off next step.",
+    "reply_why": "The ask is the right content, but it goes to the author instead of asking Yogesh to confirm and does not say the PR then moves to maintainer review."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the earlier review questions are answered, although the key says Yogesh's points on dark-theme color, border radius, screenshots and scope are unconfirmed.",
+     "Names laurynmm as the reviewer to assign instead of karlstolley after Yogesh signs off."
+    ],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "Its action is hand_off as in the key, but it skips the condition that Yogesh signs off first.",
+    "accuracy_why": "Its verdict rests on a false claim that the open points are resolved, and it names the wrong reviewer.",
+    "reply_why": "The one-line reviewer ping has the right shape, but it pings the wrong person on a false premise."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" and asks the author for more work, where the key's action is hand_off once Yogesh confirms.",
+    "accuracy_why": "It lists every open point and the diff change, but it adds a commit-prefix nitpick, omits the no-maintainer-comment context and gives no hand-off step.",
+    "reply_why": "The asks are sensible, but they go to the author rather than to Yogesh for confirmation."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It recommends more feedback where the key's action is hand_off after Yogesh signs off.",
+    "accuracy_why": "It covers border radius and buddy-list scope but drops the dark-theme color and screenshot points, and it raises a commit-prefix issue no reviewer asked about.",
+    "reply_why": "It asks the author for a commit rename and misses the dark-theme color and screenshots, rather than asking Yogesh to confirm."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 5,
+    "decision_why": "It recommends more feedback where the key's action is hand_off after Yogesh signs off.",
+    "accuracy_why": "All of Yogesh's open points are there, but the commit-prefix item is filler and the hand-off step and no-comment context are missing.",
+    "reply_why": "It is a long multi-ask reply to the author that includes the prefix nitpick instead of asking Yogesh to confirm."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 5,
+    "decision_why": "It recommends more feedback where the key's action is hand_off after Yogesh signs off.",
+    "accuracy_why": "It covers the squash, the diff and the open points, though it hedges on the dark-theme color and lacks the hand-off step.",
+    "reply_why": "The reply asks only about screenshots and border radius, dropping the scope check and Yogesh's confirmation."
+   }
+  },
+  "ranking": [
+   "A",
+   "X",
+   "P",
+   "V",
+   "B",
+   "N"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" and lets Yogesh keep reviewing, which is close to the key's sign-off-then-hand-off path but never states the hand-off.\",\n \"accuracy_why\": \"It covers the squash, the shrunk diff and all of Yogesh's open points, but it never says the label came without a maintainer comment or gives the hand-off next step.\",\n \"reply_why\": \"The ask is the right content, but it goes to the author instead of asking Yogesh to confirm and does not say the PR then moves to maintainer review.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"wrong\"},\n \"wrong_facts\": [\"Claims the earlier review questions are answered, although the key says Yogesh's points on dark-theme color, border radius, screenshots and scope are unconfirmed.\", \"Names laurynmm as the reviewer to assign instead of karlstolley after Yogesh signs off.\"],\n \"rule_failures\": [],\n \"decision_score\": 8, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"Its action is hand_off as in the key, but it skips the condition that Yogesh signs off first.\",\n \"accuracy_why\": \"Its verdict rests on a false claim that the open points are resolved, and it names the wrong reviewer.\",\n \"reply_why\": \"The one-line reviewer ping has the right shape, but it pings the wrong person on a false premise.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks the author for more work, where the key's action is hand_off once Yogesh confirms.\",\n \"accuracy_why\": \"It lists every open point and the diff change, but it adds a commit-prefix nitpick, omits the no-maintainer-comment context and gives no hand-off step.\",\n \"reply_why\": \"The asks are sensible, but they go to the author rather than to Yogesh for confirmation.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It recommends more feedback where the key's action is hand_off after Yogesh signs off.\",\n \"accuracy_why\": \"It covers border radius and buddy-list scope but drops the dark-theme color and screenshot points, and it raises a commit-prefix issue no reviewer asked about.\",\n \"reply_why\": \"It asks the author for a commit rename and misses the dark-theme color and screenshots, rather than asking Yogesh to confirm.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 5,\n \"decision_why\": \"It recommends more feedback where the key's action is hand_off after Yogesh signs off.\",\n \"accuracy_why\": \"All of Yogesh's open points are there, but the commit-prefix item is filler and the hand-off step and no-comment context are missing.\",\n \"reply_why\": \"It is a long multi-ask reply to the author that includes the prefix nitpick instead of asking Yogesh to confirm.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 5,\n \"decision_why\": \"It recommends more feedback where the key's action is hand_off after Yogesh signs off.\",\n \"accuracy_why\": \"It covers the squash, the diff and the open points, though it hedges on the dark-theme color and lacks the hand-off step.\",\n \"reply_why\": \"The reply asks only about screenshots and border radius, dropping the scope check and Yogesh's confirmation.\"}\n},\n\"ranking\": [\"A\", \"X\", \"P\", \"V\", \"B\", \"N\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.283088
+}

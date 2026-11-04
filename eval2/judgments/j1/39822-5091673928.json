@@ -1,0 +1,171 @@
+{
+ "case": "39822-5091673928",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "v3-r1"
+  ],
+  "O": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v2-r1"
+  ],
+  "D": [
+   "v2-r2"
+  ],
+  "E": [
+   "v1-r2"
+  ],
+  "R": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "acceptable_item_framed_as_missing"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off to laurynmm, which matches the key.",
+    "accuracy_why": "It lists the generator-rendered images under 'Missing' instead of treating them as acceptable, and it never says there was no new push.",
+    "reply_why": "The thank-you plus reviewer ping fits the reply_ask, though it is slightly longer than a bare ping."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE with a clean hand-off to laurynmm, as the key expects.",
+    "accuracy_why": "It covers both answered asks, says there was no new push, and calls the generator images non-blocking, all in a compact form.",
+    "reply_why": "A single reviewer ping line is ideal for a hand-off."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands off to laurynmm, which is correct.",
+    "accuracy_why": "Both asks are marked done and the image caveat is noted, but it omits that there was no new push.",
+    "reply_why": "A single reviewer ping is appropriate for a hand-off."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands off to laurynmm, which is correct.",
+    "accuracy_why": "It is accurate on both asks and the image caveat, but it omits the no-new-push fact.",
+    "reply_why": "A short thanks plus ping is fine and pasteable, though slightly more than a bare ping."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE with a hand-off to laurynmm, matching the key.",
+    "accuracy_why": "It flags the generator images and the missing linked issue as ⚠️ concerns, which hedges on whether they are acceptable.",
+    "reply_why": "A short thanks plus ping is pasteable."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE with a hand-off to laurynmm, matching the key.",
+    "accuracy_why": "It covers every must-have, including the no-new-push fact and the disclosed image provenance.",
+    "reply_why": "A short thanks plus ping is pasteable, slightly more than a bare ping."
+   }
+  },
+  "ranking": [
+   "O",
+   "R",
+   "Q",
+   "D",
+   "E",
+   "K"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"acceptable_item_framed_as_missing\"], \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that recommends handing off to laurynmm, which matches the key.\", \"accuracy_why\": \"It lists the generator-rendered images under 'Missing' instead of treating them as acceptable, and it never says there was no new push.\", \"reply_why\": \"The thank-you plus reviewer ping fits the reply_ask, though it is slightly longer than a bare ping.\"}, \"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE with a clean hand-off to laurynmm, as the key expects.\", \"accuracy_why\": \"It covers both answered asks, says there was no new push, and calls the generator images non-blocking, all in a compact form.\", \"reply_why\": \"A single reviewer ping line is ideal for a hand-off.\"}, \"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7, \"decision_why\": \"It is a NOTE that hands off to laurynmm, which is correct.\", \"accuracy_why\": \"Both asks are marked done and the image caveat is noted, but it omits that there was no new push.\", \"reply_why\": \"A single reviewer ping is appropriate for a hand-off.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"It is a NOTE that hands off to laurynmm, which is correct.\", \"accuracy_why\": \"It is accurate on both asks and the image caveat, but it omits the no-new-push fact.\", \"reply_why\": \"A short thanks plus ping is fine and pasteable, though slightly more than a bare ping.\"}, \"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 6, \"decision_why\": \"It is a NOTE with a hand-off to laurynmm, matching the key.\", \"accuracy_why\": \"It flags the generator images and the missing linked issue as ⚠️ concerns, which hedges on whether they are acceptable.\", \"reply_why\": \"A short thanks plus ping is pasteable.\"}, \"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"It is a NOTE with a hand-off to laurynmm, matching the key.\", \"accuracy_why\": \"It covers every must-have, including the no-new-push fact and the disclosed image provenance.\", \"reply_why\": \"A short thanks plus ping is pasteable, slightly more than a bare ping.\"}}, \"ranking\": [\"O\", \"R\", \"Q\", \"D\", \"E\", \"K\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.139492
+}

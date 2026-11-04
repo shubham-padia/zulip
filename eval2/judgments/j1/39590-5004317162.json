@@ -1,0 +1,163 @@
+{
+ "case": "39590-5004317162",
+ "repeat": 1,
+ "map": {
+  "P": [
+   "v3-r1"
+  ],
+  "D": [
+   "v1-r2"
+  ],
+  "A": [
+   "v3-r2"
+  ],
+  "M": [
+   "v2-r2"
+  ],
+  "H": [
+   "v2-r1"
+  ],
+  "G": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more work matches the key.",
+    "accuracy_why": "It covers the rebase-only push, the unlinked #37647, the missing screenshots, testing notes and checklist, and the open #39267.",
+    "reply_why": "The ask is right, but the reply covers the checklist only through \"rest of the PR template\", oddly tells the author to keep the label, and links a general guide instead of the screenshots guide."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key.",
+    "accuracy_why": "It is accurate on the rebase, #37647, the screenshots and #39267, but never says the self-review checklist is missing.",
+    "reply_why": "The reply asks for Fixes, screenshots and testing but leaves out the self-review checklist."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE with more_feedback, though its next step already promises a hand-off to apoorvapendse.",
+    "accuracy_why": "It covers screenshots, testing, the link and #39267, but omits the missing self-review checklist.",
+    "reply_why": "The ask is reasonable, but it does not request the self-review checklist."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 9,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" with more feedback, with close as a reasonable fallback.",
+    "accuracy_why": "All must-haves are present and correct, including the earlier closed attempts.",
+    "reply_why": "The reply asks for Fixes, screenshots and testing but omits the self-review checklist."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks for more work, with close as a contingency.",
+    "accuracy_why": "Every must-have is covered: screenshots, checklist, the rebase-only push, the unlinked issue and #39267.",
+    "reply_why": "It asks for screenshots, testing, the checklist and the link, though asking the author to check the help wanted label is a little odd."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 9,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" with more feedback and offers closing as an option.",
+    "accuracy_why": "All must-haves are present and accurate.",
+    "reply_why": "The reply asks for Fixes, the template, testing and dropdown screenshots, but does not name the checklist or link a guide."
+   }
+  },
+  "ranking": [
+   "H",
+   "P",
+   "M",
+   "G",
+   "D",
+   "A"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more work matches the key.\",\n \"accuracy_why\": \"It covers the rebase-only push, the unlinked #37647, the missing screenshots, testing notes and checklist, and the open #39267.\",\n \"reply_why\": \"The ask is right, but the reply covers the checklist only through \\\"rest of the PR template\\\", oddly tells the author to keep the label, and links a general guide instead of the screenshots guide.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key.\",\n \"accuracy_why\": \"It is accurate on the rebase, #37647, the screenshots and #39267, but never says the self-review checklist is missing.\",\n \"reply_why\": \"The reply asks for Fixes, screenshots and testing but leaves out the self-review checklist.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE with more_feedback, though its next step already promises a hand-off to apoorvapendse.\",\n \"accuracy_why\": \"It covers screenshots, testing, the link and #39267, but omits the missing self-review checklist.\",\n \"reply_why\": \"The ask is reasonable, but it does not request the self-review checklist.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 9, \"reply_score\": 7, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" with more feedback, with close as a reasonable fallback.\",\n \"accuracy_why\": \"All must-haves are present and correct, including the earlier closed attempts.\",\n \"reply_why\": \"The reply asks for Fixes, screenshots and testing but omits the self-review checklist.\"},\n\"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, with close as a contingency.\",\n \"accuracy_why\": \"Every must-have is covered: screenshots, checklist, the rebase-only push, the unlinked issue and #39267.\",\n \"reply_why\": \"It asks for screenshots, testing, the checklist and the link, though asking the author to check the help wanted label is a little odd.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 9, \"reply_score\": 7, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" with more feedback and offers closing as an option.\",\n \"accuracy_why\": \"All must-haves are present and accurate.\",\n \"reply_why\": \"The reply asks for Fixes, the template, testing and dropdown screenshots, but does not name the checklist or link a guide.\"}\n},\n\"ranking\": [\"H\", \"P\", \"M\", \"G\", \"D\", \"A\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.149084
+}
