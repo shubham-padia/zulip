@@ -1,0 +1,145 @@
+{
+ "case": "40097-6055464855",
+ "cutoff": "2026-10-08T07:59:40Z",
+ "pushes": [
+  [
+   "2026-09-07T08:47:24Z",
+   "6642d12b26",
+   "ci run"
+  ],
+  [
+   "2026-09-08T17:39:10Z",
+   "a2762aafdd",
+   "force push"
+  ],
+  [
+   "2026-09-08T17:39:14Z",
+   "a2762aafdd",
+   "ci run"
+  ],
+  [
+   "2026-09-10T12:12:45Z",
+   "c3804e7a49",
+   "force push"
+  ],
+  [
+   "2026-09-10T12:12:52Z",
+   "c3804e7a49",
+   "ci run"
+  ],
+  [
+   "2026-09-10T12:33:02Z",
+   "4816174b56",
+   "force push"
+  ],
+  [
+   "2026-09-10T12:33:07Z",
+   "4816174b56",
+   "ci run"
+  ],
+  [
+   "2026-09-10T12:36:52Z",
+   "d0a114b400",
+   "force push"
+  ],
+  [
+   "2026-09-10T12:36:57Z",
+   "d0a114b400",
+   "ci run"
+  ],
+  [
+   "2026-09-10T15:15:28Z",
+   "903ee066cf",
+   "force push"
+  ],
+  [
+   "2026-09-10T15:15:37Z",
+   "903ee066cf",
+   "ci run"
+  ],
+  [
+   "2026-09-10T15:33:41Z",
+   "7c0f63f977",
+   "force push"
+  ],
+  [
+   "2026-09-10T15:33:46Z",
+   "7c0f63f977",
+   "ci run"
+  ],
+  [
+   "2026-09-11T09:29:13Z",
+   "3c986242ef",
+   "force push"
+  ],
+  [
+   "2026-09-11T09:29:17Z",
+   "3c986242ef",
+   "ci run"
+  ],
+  [
+   "2026-09-12T14:00:04Z",
+   "1ac854ae9e",
+   "force push"
+  ],
+  [
+   "2026-09-12T14:00:09Z",
+   "1ac854ae9e",
+   "ci run"
+  ],
+  [
+   "2026-09-13T16:50:27Z",
+   "6cde477820",
+   "ci run"
+  ],
+  [
+   "2026-09-13T17:24:13Z",
+   "f1022bb9b8",
+   "force push"
+  ],
+  [
+   "2026-09-13T17:24:17Z",
+   "f1022bb9b8",
+   "ci run"
+  ],
+  [
+   "2026-09-14T15:17:46Z",
+   "d42e83be0c",
+   "force push"
+  ],
+  [
+   "2026-09-14T15:17:57Z",
+   "d42e83be0c",
+   "ci run"
+  ],
+  [
+   "2026-09-14T15:36:35Z",
+   "315a2d7388",
+   "force push"
+  ],
+  [
+   "2026-09-14T15:36:41Z",
+   "315a2d7388",
+   "ci run"
+  ]
+ ],
+ "head_now": "315a2d73880fd5b9736487b0d2883bdc6f0a20be",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "webhooks/gogs: fix PR comments identified as issue comments",
+ "title_at_cutoff": "webhooks/gogs: fix PR comments identified as issue comments",
+ "labels_now": [
+  "size: S",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "0xthedance"
+ ],
+ "head_at_cutoff": "315a2d73880fd5b9736487b0d2883bdc6f0a20be",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": null,
+ "head_at_feedback": "6642d12b266343821ad5a9de4beceae5e14b96ef",
+ "comments_total": 3,
+ "comments_at_cutoff": 3
+}

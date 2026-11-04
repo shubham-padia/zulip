@@ -1,0 +1,58 @@
+{
+ "case": "39819-5108435113",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author is answering a triager's screenshot request on a PR with no assigned reviewer, so the triager needs a short note on whether the screenshot ask is met; the PR's code and approach did not change.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "The next day laurynmm asked the authors to put the before/after screenshots in tables per the guidelines, with descriptions above each, and kept \"not ready\" until that was done.",
+  "changed": [
+   "The author says the PR was updated, but there was no new push; only the description changed.",
+   "The description now labels each of the three tests with separate Before and After screenshot groups."
+  ],
+  "still_missing": [
+   "The before/after screenshots are still stacked in a list, not shown side by side in tables as the visual-changes guidelines recommend.",
+   "Each test still lacks a clear heading saying what scenario is being shown, so the screenshots remain hard to follow.",
+   "Test 2's After screenshots show the bug is not fixed: the muted message still shows \"Show more\", and clicking it leaves the message hidden.",
+   "The commit summary \"Change collapsed messages for muted users\" does not follow the commit-discipline format, which needs an area prefix and a period."
+  ],
+  "reply_ask": "Thank them, then ask them to put the before/after screenshots side by side in tables, one per test, with a short description of each scenario above it, so review can start.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says there was no new code push since the feedback; only the PR description was edited.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the screenshots are still not presented as precise side-by-side before/after comparisons (for example tables) per the guidelines, so the ask is only partly met.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping \"not ready\" and asking for clearer screenshot formatting rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the author's own Test 2 shows a muted user's collapsed message still displays \"Show more\", which the issue says should look like any other muted message.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that the commit summary does not follow Zulip's commit-discipline format.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author is answering a triager's screenshot request on a PR with no assigned reviewer, so the triager needs a short note on whether the screenshot ask is met; the PR's code and approach did not change.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"The next day laurynmm asked the authors to put the before/after screenshots in tables per the guidelines, with descriptions above each, and kept \\\"not ready\\\" until that was done.\",\n \"changed\": [\"The author says the PR was updated, but there was no new push; only the description changed.\", \"The description now labels each of the three tests with separate Before and After screenshot groups.\"],\n \"still_missing\": [\"The before/after screenshots are still stacked in a list, not shown side by side in tables as the visual-changes guidelines recommend.\", \"Each test still lacks a clear heading saying what scenario is being shown, so the screenshots remain hard to follow.\", \"Test 2's After screenshots show the bug is not fixed: the muted message still shows \\\"Show more\\\", and clicking it leaves the message hidden.\", \"The commit summary \\\"Change collapsed messages for muted users\\\" does not follow the commit-discipline format, which needs an area prefix and a period.\"],\n \"reply_ask\": \"Thank them, then ask them to put the before/after screenshots side by side in tables, one per test, with a short description of each scenario above it, so review can start.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says there was no new code push since the feedback; only the PR description was edited.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the screenshots are still not presented as precise side-by-side before/after comparisons (for example tables) per the guidelines, so the ask is only partly met.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping \\\"not ready\\\" and asking for clearer screenshot formatting rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the author's own Test 2 shows a muted user's collapsed message still displays \\\"Show more\\\", which the issue says should look like any other muted message.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions that the commit summary does not follow Zulip's commit-discipline format.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.19226000000000001
+}

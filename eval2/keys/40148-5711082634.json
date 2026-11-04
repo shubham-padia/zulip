@@ -1,0 +1,59 @@
+{
+ "case": "40148-5711082634",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the 'not ready' feedback by restructuring and documenting the same PR, so a maintainer needs to know it may be ready for hand-off; the approach and files are unchanged, so a full new card isn't warranted.",
+  "triager_action": "hand_off",
+  "action_source": "inferred",
+  "action_why": "The feedback was only to follow the reviewable-PR guide, and the author did that with focused commits, screenshots/videos, tests and an explained open question, so a careful triager should move it to maintainer review; laurynmm did exactly this later, on 2026-10-12, assigning sahil839 at low priority.",
+  "changed": [
+   "Split the single commit into three focused commits: drag-and-drop fix, auto-fill emoji name, and multi-file upload.",
+   "Added screenshots/videos for each UI change, including before/after drag-and-drop and partial-failure handling.",
+   "Added automated tests for the auto-fill behavior, plus a new test helper file (web/tests/lib/zjquery_element.cjs).",
+   "Expanded the description to explain the drag-and-drop bug, testing done, and the open question of one request per file versus a batch endpoint."
+  ],
+  "still_missing": [
+   "The PR template's self-review checklist is not in the description.",
+   "The multi-file upload UI and the one-request-per-file versus batch-endpoint choice were never agreed on in the CZO thread, so design input is still needed.",
+   "CI status can't be confirmed (check runs unavailable); only the author's claim that CI passes."
+  ],
+  "reply_ask": "Thank the author for restructuring the PR per the guide and say it is moving to maintainer review, noting that the multi-file upload design (per-file requests vs. batch, UI) may need discussion on CZO first.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author addressed the reviewable-PR feedback by splitting the work into three focused commits and adding screenshots/videos and tests.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends handing off: remove 'not ready', add 'maintainer review', and assign a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Flags that the multi-file upload UI/approach (per-file requests vs. a batch endpoint) was never settled on CZO, so design discussion may be needed before code review.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Suggests Sahil Batra (sahil839), a core contributor who recently changed these files, as the reviewer.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes the PR description still lacks the self-review checklist and that CI passing is only the author's claim.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the 'not ready' feedback by restructuring and documenting the same PR, so a maintainer needs to know it may be ready for hand-off; the approach and files are unchanged, so a full new card isn't warranted.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"inferred\",\n \"action_why\": \"The feedback was only to follow the reviewable-PR guide, and the author did that with focused commits, screenshots/videos, tests and an explained open question, so a careful triager should move it to maintainer review; laurynmm did exactly this later, on 2026-10-12, assigning sahil839 at low priority.\"\n ,\n \"changed\": [\n  \"Split the single commit into three focused commits: drag-and-drop fix, auto-fill emoji name, and multi-file upload.\",\n  \"Added screenshots/videos for each UI change, including before/after drag-and-drop and partial-failure handling.\",\n  \"Added automated tests for the auto-fill behavior, plus a new test helper file (web/tests/lib/zjquery_element.cjs).\",\n  \"Expanded the description to explain the drag-and-drop bug, testing done, and the open question of one request per file versus a batch endpoint.\"\n ],\n \"still_missing\": [\n  \"The PR template's self-review checklist is not in the description.\",\n  \"The multi-file upload UI and the one-request-per-file versus batch-endpoint choice were never agreed on in the CZO thread, so design input is still needed.\",\n  \"CI status can't be confirmed (check runs unavailable); only the author's claim that CI passes.\"\n ],\n \"reply_ask\": \"Thank the author for restructuring the PR per the guide and say it is moving to maintainer review, noting that the multi-file upload design (per-file requests vs. batch, UI) may need discussion on CZO first.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author addressed the reviewable-PR feedback by splitting the work into three focused commits and adding screenshots/videos and tests.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends handing off: remove 'not ready', add 'maintainer review', and assign a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Flags that the multi-file upload UI/approach (per-file requests vs. a batch endpoint) was never settled on CZO, so design discussion may be needed before code review.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Suggests Sahil Batra (sahil839), a core contributor who recently changed these files, as the reviewer.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes the PR description still lacks the self-review checklist and that CI passing is only the author's claim.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.16800400000000001
+}

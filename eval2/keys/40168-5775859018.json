@@ -1,0 +1,59 @@
+{
+ "case": "40168-5775859018",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the triager's feedback by posting screenshots and asking for another look, so the triager needs a short update. The PR's approach, file and commit are unchanged, so a new card is not warranted.",
+  "triager_action": "close",
+  "action_source": "observed",
+  "action_why": "laurynmm reviewed the screenshots, judged the PR not on track to solve the issue, and closed it unmerged on 2026-10-06.",
+  "changed": [
+   "The author posted two screenshots (a desktop-width one and a narrow one) in a PR comment.",
+   "The author says the 375px mobile view now keeps the email input and Change button inside the viewport.",
+   "No code was pushed: the head commit is the same as when the feedback was given."
+  ],
+  "still_missing": [
+   "The PR description was not actually updated: it still says \"Screenshots to be added by author in comments\".",
+   "The screenshots are unlabeled 'after' images, not the precise before/after comparisons at several screen sizes that the issue requires.",
+   "Nothing shows the fix was checked against the reviewable-PR guide, and two self-review checklist items (strings/tooltips, corner cases) are still unchecked.",
+   "Another contributor's PR (#40052) for the same issue and the same file is still open, and this author never claimed the issue."
+  ],
+  "reply_ask": "Ask the author to put labeled before/after screenshots at several narrow widths into the PR description, clearly showing the edit button fully visible and not overlapping the email input.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says there was no new push since the feedback: the code is unchanged and only screenshots were added in a comment.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the screenshots are not the labeled before/after comparisons at multiple screen sizes that issue #40051 requires, and that the description still has the screenshot placeholder.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the triager needs to inspect the screenshots to check that the edit button is really visible and doesn't overlap the input, before handing the PR off.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Mentions that PR #40052 by PrachiiiiisHere is another open attempt at the same issue touching web/styles/settings.css.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Does not recommend handing off to maintainer review: the next step is more feedback or closing.",
+    "decisive": true,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the triager's feedback by posting screenshots and asking for another look, so the triager needs a short update. The PR's approach, file and commit are unchanged, so a new card is not warranted.\",\n \"triager_action\": \"close\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm reviewed the screenshots, judged the PR not on track to solve the issue, and closed it unmerged on 2026-10-06.\",\n \"changed\": [\n  \"The author posted two screenshots (a desktop-width one and a narrow one) in a PR comment.\",\n  \"The author says the 375px mobile view now keeps the email input and Change button inside the viewport.\",\n  \"No code was pushed: the head commit is the same as when the feedback was given.\"\n ],\n \"still_missing\": [\n  \"The PR description was not actually updated: it still says \\\"Screenshots to be added by author in comments\\\".\",\n  \"The screenshots are unlabeled 'after' images, not the precise before/after comparisons at several screen sizes that the issue requires.\",\n  \"Nothing shows the fix was checked against the reviewable-PR guide, and two self-review checklist items (strings/tooltips, corner cases) are still unchecked.\",\n  \"Another contributor's PR (#40052) for the same issue and the same file is still open, and this author never claimed the issue.\"\n ],\n \"reply_ask\": \"Ask the author to put labeled before/after screenshots at several narrow widths into the PR description, clearly showing the edit button fully visible and not overlapping the email input.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says there was no new push since the feedback: the code is unchanged and only screenshots were added in a comment.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the screenshots are not the labeled before/after comparisons at multiple screen sizes that issue #40051 requires, and that the description still has the screenshot placeholder.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the triager needs to inspect the screenshots to check that the edit button is really visible and doesn't overlap the input, before handing the PR off.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Mentions that PR #40052 by PrachiiiiisHere is another open attempt at the same issue touching web/styles/settings.css.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Does not recommend handing off to maintainer review: the next step is more feedback or closing.\", \"decisive\": true, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.136956
+}

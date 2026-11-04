@@ -1,0 +1,53 @@
+{
+ "case": "39829-5113437343",
+ "cutoff": "2026-07-29T05:00:19Z",
+ "pushes": [
+  [
+   "2026-07-27T06:54:56Z",
+   "2bf45b1d0b",
+   "ci run"
+  ],
+  [
+   "2026-07-27T07:03:21Z",
+   "d741192e68",
+   "force push"
+  ],
+  [
+   "2026-07-27T07:03:26Z",
+   "d741192e68",
+   "ci run"
+  ],
+  [
+   "2026-07-27T07:03:57Z",
+   "d64384f136",
+   "ci run"
+  ],
+  [
+   "2026-07-27T15:20:43Z",
+   "1b916d2a4f",
+   "force push"
+  ],
+  [
+   "2026-07-27T15:20:51Z",
+   "1b916d2a4f",
+   "ci run"
+  ]
+ ],
+ "head_now": "1b916d2a4fa2857131e60a9807365438c116ffec",
+ "body_edits": 3,
+ "body_edits_after_cutoff": 0,
+ "title_now": "Abbreviate long user names in reaction pills",
+ "title_at_cutoff": "Abbreviate long user names in reaction pills",
+ "labels_now": [
+  "size: S",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "1b916d2a4fa2857131e60a9807365438c116ffec",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-07-27T16:49:07Z",
+ "head_at_feedback": "1b916d2a4fa2857131e60a9807365438c116ffec",
+ "comments_total": 5,
+ "comments_at_cutoff": 4
+}

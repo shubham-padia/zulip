@@ -1,0 +1,41 @@
+{
+ "case": "39822-5091673928",
+ "cutoff": "2026-07-27T13:06:46Z",
+ "pushes": [
+  [
+   "2026-07-25T10:28:18Z",
+   "369acb8512",
+   "ci run"
+  ],
+  [
+   "2026-07-27T15:20:27Z",
+   "7b6f37a089",
+   "force push"
+  ],
+  [
+   "2026-07-27T15:20:33Z",
+   "7b6f37a089",
+   "ci run"
+  ]
+ ],
+ "head_now": "7b6f37a089a48e23fb85a71ba8ba3ad8eb4104fc",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "openapi: Document required parameters for the reminders endpoint.",
+ "title_at_cutoff": "openapi: Document required parameters for the reminders endpoint.",
+ "labels_now": [
+  "area: documentation (api)",
+  "size: M",
+  "integration review"
+ ],
+ "assignees_now": [
+  "sahil839"
+ ],
+ "head_at_cutoff": "369acb8512052c2ce15a22fa8d1158c2923c7dac",
+ "pr_shape": "from compare main...369acb8512",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-07-27T11:27:52Z",
+ "head_at_feedback": "369acb8512052c2ce15a22fa8d1158c2923c7dac",
+ "comments_total": 4,
+ "comments_at_cutoff": 2
+}

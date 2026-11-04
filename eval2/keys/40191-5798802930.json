@@ -1,0 +1,55 @@
+{
+ "case": "40191-5798802930",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author did both things laurynmm asked for and the PR has no assigned maintainer, so a triager needs a short note to move it out of \"not ready\". The PR only shrank by dropping the docs commit, so the first card still describes it correctly.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-10-05 laurynmm removed \"not ready\", added \"priority: low\" and requested a review from Vector73, the last person to work on this area.",
+  "changed": [
+   "The author force-pushed rewritten commit messages for both rename commits, aiming to follow the commit message guidelines.",
+   "The Home Assistant docs commit and zerver/webhooks/homeassistant/doc.md were removed from this PR.",
+   "The docs fix was moved to a separate PR, #40197, which the author says has before/after screenshots.",
+   "The PR now holds only the DEFAULT_AVATAR_URI and DEFAULT_LOGO_URI renames, and the author says the code is unchanged."
+  ],
+  "still_missing": [],
+  "reply_ask": "Thank the author for splitting out the docs fix and rewriting the commits, and say the PR is going to a reviewer for the settings renames, which may take a while.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says both asks from laurynmm are done: the commit messages were rewritten in a new push, and the Home Assistant docs change was moved out to #40197 with screenshots.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Gives the next step as handing off for review: remove \"not ready\", add a review label and request a reviewer, rather than asking for more changes.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Suggests Vector73 as the reviewer, since they wrote the earlier merged URI→URL PRs (#29959, #30367) for #23380.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the code itself is unchanged since the first look: the same two rename commits, with old-name fallbacks in computed_settings.py and tests.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that renaming server settings is an admin-facing change where backward compatibility for existing /etc/zulip/settings.py files matters, so it needs a careful reviewer.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author did both things laurynmm asked for and the PR has no assigned maintainer, so a triager needs a short note to move it out of \\\"not ready\\\". The PR only shrank by dropping the docs commit, so the first card still describes it correctly.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-10-05 laurynmm removed \\\"not ready\\\", added \\\"priority: low\\\" and requested a review from Vector73, the last person to work on this area.\",\n \"changed\": [\"The author force-pushed rewritten commit messages for both rename commits, aiming to follow the commit message guidelines.\",\n             \"The Home Assistant docs commit and zerver/webhooks/homeassistant/doc.md were removed from this PR.\",\n             \"The docs fix was moved to a separate PR, #40197, which the author says has before/after screenshots.\",\n             \"The PR now holds only the DEFAULT_AVATAR_URI and DEFAULT_LOGO_URI renames, and the author says the code is unchanged.\"],\n \"still_missing\": [],\n \"reply_ask\": \"Thank the author for splitting out the docs fix and rewriting the commits, and say the PR is going to a reviewer for the settings renames, which may take a while.\",\n \"must_have\": [\n   {\"id\": \"f1\", \"fact\": \"Says both asks from laurynmm are done: the commit messages were rewritten in a new push, and the Home Assistant docs change was moved out to #40197 with screenshots.\", \"decisive\": true, \"at_cutoff\": true},\n   {\"id\": \"f2\", \"fact\": \"Gives the next step as handing off for review: remove \\\"not ready\\\", add a review label and request a reviewer, rather than asking for more changes.\", \"decisive\": true, \"at_cutoff\": true},\n   {\"id\": \"f3\", \"fact\": \"Suggests Vector73 as the reviewer, since they wrote the earlier merged URI→URL PRs (#29959, #30367) for #23380.\", \"decisive\": false, \"at_cutoff\": true},\n   {\"id\": \"f4\", \"fact\": \"Notes that the code itself is unchanged since the first look: the same two rename commits, with old-name fallbacks in computed_settings.py and tests.\", \"decisive\": false, \"at_cutoff\": true},\n   {\"id\": \"f5\", \"fact\": \"Notes that renaming server settings is an admin-facing change where backward compatibility for existing /etc/zulip/settings.py files matters, so it needs a careful reviewer.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.249192
+}

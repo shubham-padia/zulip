@@ -1,0 +1,215 @@
+{
+ "case": "39865-5194201765",
+ "cutoff": "2026-08-05T16:04:12Z",
+ "pushes": [
+  [
+   "2026-08-02T06:50:27Z",
+   "6a4d594a10",
+   "ci run"
+  ],
+  [
+   "2026-08-02T07:35:17Z",
+   "8bb17024a4",
+   "force push"
+  ],
+  [
+   "2026-08-02T07:36:58Z",
+   "8bb17024a4",
+   "ci run"
+  ],
+  [
+   "2026-08-02T08:09:58Z",
+   "7607624a04",
+   "force push"
+  ],
+  [
+   "2026-08-02T08:10:01Z",
+   "7607624a04",
+   "ci run"
+  ],
+  [
+   "2026-08-02T08:52:48Z",
+   "ee9b77f177",
+   "force push"
+  ],
+  [
+   "2026-08-02T08:52:52Z",
+   "ee9b77f177",
+   "ci run"
+  ],
+  [
+   "2026-08-02T09:04:27Z",
+   "a57cb5203a",
+   "force push"
+  ],
+  [
+   "2026-08-02T09:04:31Z",
+   "a57cb5203a",
+   "ci run"
+  ],
+  [
+   "2026-08-04T15:33:30Z",
+   "da9858168a",
+   "force push"
+  ],
+  [
+   "2026-08-04T15:33:39Z",
+   "da9858168a",
+   "ci run"
+  ],
+  [
+   "2026-08-04T16:53:18Z",
+   "928be0916f",
+   "ci run"
+  ],
+  [
+   "2026-08-04T19:52:08Z",
+   "da9858168a",
+   "force push"
+  ],
+  [
+   "2026-08-04T19:52:13Z",
+   "da9858168a",
+   "ci run"
+  ],
+  [
+   "2026-08-10T16:43:53Z",
+   "ef0fc09461",
+   "force push"
+  ],
+  [
+   "2026-08-10T16:43:58Z",
+   "ef0fc09461",
+   "ci run"
+  ],
+  [
+   "2026-08-12T06:04:57Z",
+   "0d3f782902",
+   "force push"
+  ],
+  [
+   "2026-08-12T06:05:00Z",
+   "0d3f782902",
+   "ci run"
+  ],
+  [
+   "2026-08-12T10:33:37Z",
+   "951aa715cc",
+   "force push"
+  ],
+  [
+   "2026-08-12T10:33:41Z",
+   "951aa715cc",
+   "ci run"
+  ],
+  [
+   "2026-08-12T10:55:10Z",
+   "4a55e7e783",
+   "force push"
+  ],
+  [
+   "2026-08-12T10:55:16Z",
+   "4a55e7e783",
+   "ci run"
+  ],
+  [
+   "2026-08-12T11:04:53Z",
+   "e94a4360b6",
+   "ci run"
+  ],
+  [
+   "2026-08-12T11:10:28Z",
+   "87e1e2feb2",
+   "force push"
+  ],
+  [
+   "2026-08-12T11:10:34Z",
+   "87e1e2feb2",
+   "ci run"
+  ],
+  [
+   "2026-08-12T11:15:55Z",
+   "9cbaeae6a4",
+   "force push"
+  ],
+  [
+   "2026-08-12T11:15:59Z",
+   "9cbaeae6a4",
+   "ci run"
+  ],
+  [
+   "2026-08-12T11:22:06Z",
+   "7dd249ce16",
+   "force push"
+  ],
+  [
+   "2026-08-12T11:22:11Z",
+   "7dd249ce16",
+   "ci run"
+  ],
+  [
+   "2026-08-12T11:24:17Z",
+   "1f4b3e5d95",
+   "force push"
+  ],
+  [
+   "2026-08-12T11:24:21Z",
+   "1f4b3e5d95",
+   "ci run"
+  ],
+  [
+   "2026-08-17T16:31:44Z",
+   "027c61e9ea",
+   "force push"
+  ],
+  [
+   "2026-08-17T16:31:48Z",
+   "027c61e9ea",
+   "ci run"
+  ],
+  [
+   "2026-08-17T17:51:17Z",
+   "79076aac2d",
+   "ci run"
+  ],
+  [
+   "2026-08-17T18:02:38Z",
+   "bab0e2ff7b",
+   "force push"
+  ],
+  [
+   "2026-08-17T18:02:43Z",
+   "bab0e2ff7b",
+   "ci run"
+  ],
+  [
+   "2026-08-20T07:51:02Z",
+   "43320952b8",
+   "force push"
+  ],
+  [
+   "2026-08-20T07:51:07Z",
+   "43320952b8",
+   "ci run"
+  ]
+ ],
+ "head_now": "43320952b847b1a71441a4cd08a1c00380e91452",
+ "body_edits": 7,
+ "body_edits_after_cutoff": 4,
+ "title_now": "playgrounds: Validate language input for spaces and lowercase.",
+ "title_at_cutoff": "playgrounds: Validate language input for spaces and lowercase.",
+ "labels_now": [
+  "size: XL",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "sahil839"
+ ],
+ "head_at_cutoff": "da9858168a28c5751b26ee2d2749536e3c1afa68",
+ "pr_shape": "from compare main...da9858168a",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-08-05T14:29:48Z",
+ "head_at_feedback": "da9858168a28c5751b26ee2d2749536e3c1afa68",
+ "comments_total": 13,
+ "comments_at_cutoff": 2
+}

@@ -1,0 +1,55 @@
+{
+ "case": "39836-5142302711",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the screenshot request with updated before/after images, so the triager needs to know this PR may be ready to hand off; the approach is unchanged, so no new card is needed.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "laurynmm removed \"not ready\", added \"maintainer review\" and assigned karlstolley, who approved and passed it to evykassirer for integration review; she merged it.",
+  "changed": [
+   "The author replaced the before/after screenshots in the PR description with a same-size (1861x102) pair taken in the same frame.",
+   "No code was pushed; the head commit is unchanged."
+  ],
+  "still_missing": [
+   "The screenshots show only one search-bar state: no zoomed-out view where the caret bug is visible, and no wrapped pills, which is the regression that sank #35672."
+  ],
+  "reply_ask": "Thank the author for the updated, comparable screenshots and say the PR is moving to maintainer review (CSS reviewer karlstolley).",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author updated the before/after screenshots to a matched, same-size pair, which answers laurynmm's only request.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends removing \"not ready\" and moving the PR to maintainer review rather than asking for more work.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Names karlstolley as the reviewer, since he managed this issue and reviewed the earlier #35672 attempt.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that there was no new code push, so the one-commit, +2/-2 display:block CSS change is the same as at the first look.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Flags that the reviewer should check the wrapped-pill and vertical-centering side effects, because the screenshots don't cover that state.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the screenshot request with updated before/after images, so the triager needs to know this PR may be ready to hand off; the approach is unchanged, so no new card is needed.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned karlstolley, who approved and passed it to evykassirer for integration review; she merged it.\",\n \"changed\": [\"The author replaced the before/after screenshots in the PR description with a same-size (1861x102) pair taken in the same frame.\", \"No code was pushed; the head commit is unchanged.\"],\n \"still_missing\": [\"The screenshots show only one search-bar state: no zoomed-out view where the caret bug is visible, and no wrapped pills, which is the regression that sank #35672.\"],\n \"reply_ask\": \"Thank the author for the updated, comparable screenshots and say the PR is moving to maintainer review (CSS reviewer karlstolley).\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author updated the before/after screenshots to a matched, same-size pair, which answers laurynmm's only request.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends removing \\\"not ready\\\" and moving the PR to maintainer review rather than asking for more work.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Names karlstolley as the reviewer, since he managed this issue and reviewed the earlier #35672 attempt.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that there was no new code push, so the one-commit, +2/-2 display:block CSS change is the same as at the first look.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Flags that the reviewer should check the wrapped-pill and vertical-centering side effects, because the screenshots don't cover that state.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.220652
+}

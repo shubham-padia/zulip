@@ -1,0 +1,49 @@
+{
+ "case": "40171-5795222359",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the screenshot feedback in the description without changing the approach or code, so a short note under the existing card is enough.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "Within 14 days laurynmm thanked the author for the screenshots, removed \"not ready\", added \"maintainer review\" and assigned Niloth-p.",
+  "changed": [
+   "The description now has a before/after screenshot table for the \"Direct message to me\" option.",
+   "The table also covers a channel that requires topics (#development help), showing Copy URL still disabled there before and after the change.",
+   "A screenshot shows the button becomes active once a topic is entered for that channel.",
+   "No code was pushed; the head commit is the same as when the feedback was given."
+  ],
+  "still_missing": [],
+  "reply_ask": "Thank the author for the updated screenshots and say the PR is moving to maintainer review with Niloth-p.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says both feedback asks are met: the screenshots now show the topic-required channel (#development help) behaves the same, and they follow the before/after format.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends handing off: remove \"not ready\" and add \"maintainer review\".",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Names Niloth-p (Niloth P) as the reviewer, as the main recent contributor to integration_url_modal.ts and the person who diagnosed the bug on CZO.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that there was no new code push since the feedback, only description and screenshot updates, which is fine because the feedback asked only for screenshots.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the screenshot feedback in the description without changing the approach or code, so a short note under the existing card is enough.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"Within 14 days laurynmm thanked the author for the screenshots, removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned Niloth-p.\",\n \"changed\": [\n  \"The description now has a before/after screenshot table for the \\\"Direct message to me\\\" option.\",\n  \"The table also covers a channel that requires topics (#development help), showing Copy URL still disabled there before and after the change.\",\n  \"A screenshot shows the button becomes active once a topic is entered for that channel.\",\n  \"No code was pushed; the head commit is the same as when the feedback was given.\"\n ],\n \"still_missing\": [],\n \"reply_ask\": \"Thank the author for the updated screenshots and say the PR is moving to maintainer review with Niloth-p.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says both feedback asks are met: the screenshots now show the topic-required channel (#development help) behaves the same, and they follow the before/after format.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends handing off: remove \\\"not ready\\\" and add \\\"maintainer review\\\".\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Names Niloth-p (Niloth P) as the reviewer, as the main recent contributor to integration_url_modal.ts and the person who diagnosed the bug on CZO.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that there was no new code push since the feedback, only description and screenshot updates, which is fine because the feedback asked only for screenshots.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.116636
+}
