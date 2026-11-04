@@ -1,0 +1,6 @@
+{
+ "case": "39901-5276620327",
+ "answer": "yes",
+ "text": "yes\nAsking zulipbot to remove the \"not ready\" label tells maintainers the author considers the PR ready for another look, presumably after adding the missing PR description elements.",
+ "cost_usd": 0.010096
+}
