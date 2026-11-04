@@ -1,0 +1,174 @@
+{
+ "case": "40097-6055464855",
+ "repeat": 2,
+ "map": {
+  "M": [
+   "v1-r2"
+  ],
+  "T": [
+   "v3-r2"
+  ],
+  "A": [
+   "v2-r2"
+  ],
+  "K": [
+   "v3-r1"
+  ],
+  "J": [
+   "v2-r1"
+  ],
+  "P": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_extra_author_ask",
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 5,
+    "brevity_score": 6,
+    "decision_why": "A NOTE recommending a hand-off matches the key.",
+    "accuracy_why": "It has every must-have, but it never flags the missing Gogs tests or fixtures for the disambiguation.",
+    "reply_why": "The reply adds a second sentence asking the author to explain #40096, which is more than the single ping a hand-off needs."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_extra_author_ask"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending a hand-off matches the key.",
+    "accuracy_why": "It clearly names the reverse-bug fix and the Gitea test, but it omits that the label came with no written feedback and misses the Gogs test gap.",
+    "reply_why": "The two-sentence reply adds an unneeded ask to the author about #40096."
+   },
+   "A": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "repeats_first_card"
+    ],
+    "decision_score": 7,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 5,
+    "decision_why": "The hand-off is right, but a full CARD is more than the unchanged approach needs.",
+    "accuracy_why": "It has all the must-haves but does not mention that Gogs tests or fixtures are missing.",
+    "reply_why": "The single reviewer ping can be pasted as is."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending a hand-off matches the key.",
+    "accuracy_why": "It describes the fix only vaguely and misses the no-written-feedback point, #40096, and the Gogs test gap.",
+    "reply_why": "The single reviewer ping can be pasted as is."
+   },
+   "J": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Treats squashing the Gitea test commit as a blocking requirement, which the key does not list as missing."
+    ],
+    "rule_failures": [
+     "repeats_first_card"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 5,
+    "decision_why": "It keeps the PR \"not ready\" when the key's action is a hand-off, and it uses a CARD when a NOTE is enough.",
+    "accuracy_why": "The blocking claim its action rests on is unsupported, and it does not clearly state the reverse-bug fix.",
+    "reply_why": "It asks for a squash instead of handing off the PR, which delays a PR that should go to review."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Asserts that the first commit broke a test and that it must be squashed as a blocker, which the key does not support."
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind matches, but it recommends more feedback where the key says hand-off.",
+    "accuracy_why": "It omits the reverse-bug fix and rests its verdict on an unsupported squash requirement.",
+    "reply_why": "It asks for a squash and an explanation of #40096 instead of moving the PR to review."
+   }
+  },
+  "ranking": [
+   "K",
+   "A",
+   "M",
+   "T",
+   "P",
+   "J"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"reply_extra_author_ask\", \"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 5, \"brevity_score\": 6,\n \"decision_why\": \"A NOTE recommending a hand-off matches the key.\",\n \"accuracy_why\": \"It has every must-have, but it never flags the missing Gogs tests or fixtures for the disambiguation.\",\n \"reply_why\": \"The reply adds a second sentence asking the author to explain #40096, which is more than the single ping a hand-off needs.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"reply_extra_author_ask\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending a hand-off matches the key.\",\n \"accuracy_why\": \"It clearly names the reverse-bug fix and the Gitea test, but it omits that the label came with no written feedback and misses the Gogs test gap.\",\n \"reply_why\": \"The two-sentence reply adds an unneeded ask to the author about #40096.\"},\n\"A\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"repeats_first_card\"],\n \"decision_score\": 7, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 5,\n \"decision_why\": \"The hand-off is right, but a full CARD is more than the unchanged approach needs.\",\n \"accuracy_why\": \"It has all the must-haves but does not mention that Gogs tests or fixtures are missing.\",\n \"reply_why\": \"The single reviewer ping can be pasted as is.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending a hand-off matches the key.\",\n \"accuracy_why\": \"It describes the fix only vaguely and misses the no-written-feedback point, #40096, and the Gogs test gap.\",\n \"reply_why\": \"The single reviewer ping can be pasted as is.\"},\n\"J\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Treats squashing the Gitea test commit as a blocking requirement, which the key does not list as missing.\"],\n \"rule_failures\": [\"repeats_first_card\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 5,\n \"decision_why\": \"It keeps the PR \\\"not ready\\\" when the key's action is a hand-off, and it uses a CARD when a NOTE is enough.\",\n \"accuracy_why\": \"The blocking claim its action rests on is unsupported, and it does not clearly state the reverse-bug fix.\",\n \"reply_why\": \"It asks for a squash instead of handing off the PR, which delays a PR that should go to review.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Asserts that the first commit broke a test and that it must be squashed as a blocker, which the key does not support.\"],\n \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"The kind matches, but it recommends more feedback where the key says hand-off.\",\n \"accuracy_why\": \"It omits the reverse-bug fix and rests its verdict on an unsupported squash requirement.\",\n \"reply_why\": \"It asks for a squash and an explanation of #40096 instead of moving the PR to review.\"}\n},\n\"ranking\": [\"K\", \"A\", \"M\", \"T\", \"P\", \"J\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.16230799999999998
+}

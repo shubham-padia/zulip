@@ -1,0 +1,167 @@
+{
+ "case": "40168-5775859018",
+ "repeat": 2,
+ "map": {
+  "C": [
+   "v2-r1"
+  ],
+  "Y": [
+   "v2-r2"
+  ],
+  "M": [
+   "v3-r1"
+  ],
+  "J": [
+   "v1-r1"
+  ],
+  "D": [
+   "v1-r2"
+  ],
+  "L": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 5,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback is a defensible near miss, since the key's f5 allows more feedback, but the observed action was close.",
+    "accuracy_why": "It covers no push, the placeholder, missing before/after shots at several sizes, and #40052, but never tells the triager to check the screenshots for overlap or visibility.",
+    "reply_why": "The ask for labeled before/after shots in the description is right and pasteable, but it doesn't mention showing the edit button fully visible and not overlapping the input."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 5,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" for more feedback, which is defensible but is not the observed close.",
+    "accuracy_why": "Its facts are accurate (no push, placeholder, no before/after pairs, #40052), but the decisive point about inspecting the screenshots for overlap is missing.",
+    "reply_why": "It is a clear, polite ask for before/after pairs in the description with a guide link, but it leaves out the overlap and visibility point."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 5,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks for screenshots, which is a near miss of the observed close.",
+    "accuracy_why": "It is accurate on no push, the placeholder, the missing before/after shots, unchecked checklist items, and #40052, but it lacks the decisive point about checking for overlap.",
+    "reply_why": "The ask matches reply_ask in substance and is pasteable, but it omits the visibility and overlap check."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 5,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" for more feedback, which is defensible but is not the observed close.",
+    "accuracy_why": "It is thorough and accurate, but it is missing the decisive point that the triager should inspect the screenshots for the edit button overlapping the input.",
+    "reply_why": "It is a good, pasteable ask with both guide links, but it is a bit long and doesn't mention the overlap or visibility."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says nothing is blocking, when the screenshots don't meet the issue's before/after requirement."
+    ],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to review, but the PR was closed as not on track.",
+    "accuracy_why": "It notes no push and the placeholder, but it dismisses the missing before/after screenshots as non-blocking and misses the overlap check.",
+    "reply_why": "Pinging a reviewer is the wrong decision for a PR that should get feedback or be closed."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Treats the PR as ready for review even though the required before/after screenshots and the description update are missing."
+    ],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off to review, but the PR was closed as not on track.",
+    "accuracy_why": "It omits the no-push fact, only hedges on the before/after gap, never mentions the placeholder, and misses the overlap check.",
+    "reply_why": "Its reviewer ping is the wrong decision, and it presents the testing notes as new when they were already in the description."
+   }
+  },
+  "ranking": [
+   "M",
+   "D",
+   "J",
+   "Y",
+   "L",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 5, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback is a defensible near miss, since the key's f5 allows more feedback, but the observed action was close.\",\n \"accuracy_why\": \"It covers no push, the placeholder, missing before/after shots at several sizes, and #40052, but never tells the triager to check the screenshots for overlap or visibility.\",\n \"reply_why\": \"The ask for labeled before/after shots in the description is right and pasteable, but it doesn't mention showing the edit button fully visible and not overlapping the input.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 5, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" for more feedback, which is defensible but is not the observed close.\",\n \"accuracy_why\": \"Its facts are accurate (no push, placeholder, no before/after pairs, #40052), but the decisive point about inspecting the screenshots for overlap is missing.\",\n \"reply_why\": \"It is a clear, polite ask for before/after pairs in the description with a guide link, but it leaves out the overlap and visibility point.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 5, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for screenshots, which is a near miss of the observed close.\",\n \"accuracy_why\": \"It is accurate on no push, the placeholder, the missing before/after shots, unchecked checklist items, and #40052, but it lacks the decisive point about checking for overlap.\",\n \"reply_why\": \"The ask matches reply_ask in substance and is pasteable, but it omits the visibility and overlap check.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 5, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" for more feedback, which is defensible but is not the observed close.\",\n \"accuracy_why\": \"It is thorough and accurate, but it is missing the decisive point that the triager should inspect the screenshots for the edit button overlapping the input.\",\n \"reply_why\": \"It is a good, pasteable ask with both guide links, but it is a bit long and doesn't mention the overlap or visibility.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Says nothing is blocking, when the screenshots don't meet the issue's before/after requirement.\"], \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 1, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off to review, but the PR was closed as not on track.\",\n \"accuracy_why\": \"It notes no push and the placeholder, but it dismisses the missing before/after screenshots as non-blocking and misses the overlap check.\",\n \"reply_why\": \"Pinging a reviewer is the wrong decision for a PR that should get feedback or be closed.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n \"wrong_facts\": [\"Treats the PR as ready for review even though the required before/after screenshots and the description update are missing.\"], \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 1, \"brevity_score\": 7,\n \"decision_why\": \"It recommends handing off to review, but the PR was closed as not on track.\",\n \"accuracy_why\": \"It omits the no-push fact, only hedges on the before/after gap, never mentions the placeholder, and misses the overlap check.\",\n \"reply_why\": \"Its reviewer ping is the wrong decision, and it presents the testing notes as new when they were already in the description.\"}\n},\n\"ranking\": [\"M\", \"D\", \"J\", \"Y\", \"L\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.214304
+}

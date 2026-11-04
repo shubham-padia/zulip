@@ -1,0 +1,169 @@
+{
+ "case": "40065-5545794788",
+ "repeat": 2,
+ "map": {
+  "O": [
+   "v2-r2"
+  ],
+  "C": [
+   "v1-r1"
+  ],
+  "V": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v2-r1"
+  ],
+  "G": [
+   "v1-r2"
+  ],
+  "D": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It recommends a NOTE with a hand-off and names Karl Stolley, a left-sidebar CSS maintainer, as the second reviewer option.",
+    "accuracy_why": "It covers both follow-up asks and the DPR 1 caveat, but never says there was no new push and omits the failed reproductions on main.",
+    "reply_why": "A short thanks plus a reviewer ping is pasteable, though the ping goes to laurynmm rather than a CSS reviewer."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key, but it assigns laurynmm instead of a left-sidebar CSS reviewer.",
+    "accuracy_why": "It captures the changes, the lack of a push and the clipping caveat, but omits that others could not reproduce the bug.",
+    "reply_why": "A clear two-line ping to laurynmm citing the new screenshots, with the reviewer choice not ideal."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key, but the assignee is laurynmm rather than a CSS reviewer.",
+    "accuracy_why": "It is accurate and concise on what changed and the DPR caveat, though it overstates 'only' high-DPI and omits the failed reproductions.",
+    "reply_why": "A single reviewer ping is pasteable, but it names a non-ideal reviewer."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off is right, but it assigns laurynmm rather than a left-sidebar CSS reviewer.",
+    "accuracy_why": "It covers the changes, the lack of a push and the DPR caveat well, and only the failed reproductions on main are missing.",
+    "reply_why": "A single reviewer ping is pasteable, with a non-ideal reviewer."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off matches the key, but it routes the review to laurynmm instead of a CSS reviewer.",
+    "accuracy_why": "Its facts are correct and include the DPR caveat, but it restates earlier feedback and omits the failed reproductions on main.",
+    "reply_why": "A two-sentence ping to laurynmm that cites the screenshots is fine, with a non-ideal reviewer."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off is right, but it assigns laurynmm rather than a left-sidebar CSS reviewer.",
+    "accuracy_why": "It repeats first-round items, never says there was no new push, and omits the failed reproductions.",
+    "reply_why": "A single reviewer ping is pasteable, with a non-ideal reviewer."
+   }
+  },
+  "ranking": [
+   "Q",
+   "D",
+   "V",
+   "G",
+   "C",
+   "O"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It recommends a NOTE with a hand-off and names Karl Stolley, a left-sidebar CSS maintainer, as the second reviewer option.\",\n \"accuracy_why\": \"It covers both follow-up asks and the DPR 1 caveat, but never says there was no new push and omits the failed reproductions on main.\",\n \"reply_why\": \"A short thanks plus a reviewer ping is pasteable, though the ping goes to laurynmm rather than a CSS reviewer.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off matches the key, but it assigns laurynmm instead of a left-sidebar CSS reviewer.\",\n \"accuracy_why\": \"It captures the changes, the lack of a push and the clipping caveat, but omits that others could not reproduce the bug.\",\n \"reply_why\": \"A clear two-line ping to laurynmm citing the new screenshots, with the reviewer choice not ideal.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off matches the key, but the assignee is laurynmm rather than a CSS reviewer.\",\n \"accuracy_why\": \"It is accurate and concise on what changed and the DPR caveat, though it overstates 'only' high-DPI and omits the failed reproductions.\",\n \"reply_why\": \"A single reviewer ping is pasteable, but it names a non-ideal reviewer.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE with a hand-off is right, but it assigns laurynmm rather than a left-sidebar CSS reviewer.\",\n \"accuracy_why\": \"It covers the changes, the lack of a push and the DPR caveat well, and only the failed reproductions on main are missing.\",\n \"reply_why\": \"A single reviewer ping is pasteable, with a non-ideal reviewer.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off matches the key, but it routes the review to laurynmm instead of a CSS reviewer.\",\n \"accuracy_why\": \"Its facts are correct and include the DPR caveat, but it restates earlier feedback and omits the failed reproductions on main.\",\n \"reply_why\": \"A two-sentence ping to laurynmm that cites the screenshots is fine, with a non-ideal reviewer.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off is right, but it assigns laurynmm rather than a left-sidebar CSS reviewer.\",\n \"accuracy_why\": \"It repeats first-round items, never says there was no new push, and omits the failed reproductions.\",\n \"reply_why\": \"A single reviewer ping is pasteable, with a non-ideal reviewer.\"}\n},\n\"ranking\": [\"Q\", \"D\", \"V\", \"G\", \"C\", \"O\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.302048
+}

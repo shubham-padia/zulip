@@ -1,0 +1,175 @@
+{
+ "case": "40234-5937541838",
+ "repeat": 2,
+ "map": {
+  "Z": [
+   "v1-r2"
+  ],
+  "K": [
+   "v3-r1"
+  ],
+  "C": [
+   "v2-r2"
+  ],
+  "E": [
+   "v1-r1"
+  ],
+  "A": [
+   "v2-r1"
+  ],
+  "Q": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind is right, but it says keep \"not ready\" where the key's action is to hand off.",
+    "accuracy_why": "It covers the changes, the hand-built fixture and the #39998 precedent, but misses the handoff, Niloth-p as reviewer, and the missing documentation link.",
+    "reply_why": "It asks for a real payload and a push instead of the documentation link and a review notice."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind is right, but it recommends more feedback instead of a handoff.",
+    "accuracy_why": "Its table shows the status of each ask plus the #39998 precedent, but it misses the handoff, reviewer and documentation link.",
+    "reply_why": "It asks the author to replace the fixture and push, not to add the documentation link before review."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind is right, but it says keep \"not ready\" instead of handing off.",
+    "accuracy_why": "It reports the ask statuses and the precedent accurately but omits the handoff, reviewer and documentation link.",
+    "reply_why": "Its ask is a real capture and a push, which differs from the key's documentation link plus review notice."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action",
+     "vague_next_step"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind is right, but it keeps \"not ready\", and its next step (\"have laurynmm follow up\") is vague.",
+    "accuracy_why": "It names the changes, the constructed fixture and #39998, but misses the handoff, reviewer and documentation link.",
+    "reply_why": "It asks for a captured payload and a push instead of the documentation link and a review notice."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action",
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "The kind is right, but it recommends more feedback where the key's action is a handoff.",
+    "accuracy_why": "It lists the changes and the precedent correctly but misses the handoff, reviewer and documentation link.",
+    "reply_why": "It asks for a new capture, test update and regenerated screenshot, which redoes work and goes against the handoff."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind is right, but it says keep \"not ready\" instead of handing off.",
+    "accuracy_why": "It flags the constructed fixture but not the #39998 precedent, and it misses the handoff, reviewer and documentation link.",
+    "reply_why": "It asks for a real payload and a push instead of the documentation link and a review notice."
+   }
+  },
+  "ranking": [
+   "K",
+   "C",
+   "A",
+   "Q",
+   "E",
+   "Z"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"The kind is right, but it says keep \\\"not ready\\\" where the key's action is to hand off.\",\n \"accuracy_why\": \"It covers the changes, the hand-built fixture and the #39998 precedent, but misses the handoff, Niloth-p as reviewer, and the missing documentation link.\",\n \"reply_why\": \"It asks for a real payload and a push instead of the documentation link and a review notice.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"The kind is right, but it recommends more feedback instead of a handoff.\",\n \"accuracy_why\": \"Its table shows the status of each ask plus the #39998 precedent, but it misses the handoff, reviewer and documentation link.\",\n \"reply_why\": \"It asks the author to replace the fixture and push, not to add the documentation link before review.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"The kind is right, but it says keep \\\"not ready\\\" instead of handing off.\",\n \"accuracy_why\": \"It reports the ask statuses and the precedent accurately but omits the handoff, reviewer and documentation link.\",\n \"reply_why\": \"Its ask is a real capture and a push, which differs from the key's documentation link plus review notice.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\", \"vague_next_step\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"The kind is right, but it keeps \\\"not ready\\\", and its next step (\\\"have laurynmm follow up\\\") is vague.\",\n \"accuracy_why\": \"It names the changes, the constructed fixture and #39998, but misses the handoff, reviewer and documentation link.\",\n \"reply_why\": \"It asks for a captured payload and a push instead of the documentation link and a review notice.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\", \"asks_for_done_work\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"The kind is right, but it recommends more feedback where the key's action is a handoff.\",\n \"accuracy_why\": \"It lists the changes and the precedent correctly but misses the handoff, reviewer and documentation link.\",\n \"reply_why\": \"It asks for a new capture, test update and regenerated screenshot, which redoes work and goes against the handoff.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"reply_contradicts_key_action\"],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"The kind is right, but it says keep \\\"not ready\\\" instead of handing off.\",\n \"accuracy_why\": \"It flags the constructed fixture but not the #39998 precedent, and it misses the handoff, reviewer and documentation link.\",\n \"reply_why\": \"It asks for a real payload and a push instead of the documentation link and a review notice.\"}\n},\n\"ranking\": [\"K\", \"C\", \"A\", \"Q\", \"E\", \"Z\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.201708
+}

@@ -1,0 +1,167 @@
+{
+ "case": "40177-5954127181",
+ "repeat": 2,
+ "map": {
+  "Q": [
+   "v3-r1"
+  ],
+  "U": [
+   "v2-r2"
+  ],
+  "S": [
+   "v3-r2"
+  ],
+  "X": [
+   "v1-r2"
+  ],
+  "T": [
+   "v2-r1"
+  ],
+  "R": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_done_work_not_applicable_but_extra_author_ask_in_handoff_reply"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It is the only output that matches the key: a NOTE recommending hand-off to maintainer review with prakhar1144.",
+    "accuracy_why": "It covers the changes and the dark-theme gap, but saying 'only' a dark screenshot is missing skips the missing before screenshot and the color-mixing comment, and it notes prakhar's plan without calling out the PR overlap.",
+    "reply_why": "The reviewer ping fits, but it runs to three sentences and adds an author ask, which caps it at 6, and it leaves out the note that the issue is not a release priority."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps 'not ready' and asks for more feedback, but the key action is hand-off.",
+    "accuracy_why": "Its facts on the prior-work changes, the dark screenshot and the #37289 overlap are right, but it gets the decisive hand-off recommendation wrong.",
+    "reply_why": "It blocks review on a screenshot and on coordination instead of moving the PR to maintainer review."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' and even floats closing as duplicate work, when the key says hand off.",
+    "accuracy_why": "It omits the cross-reference and the dark-theme screenshot gap, and its recommendation contradicts the key.",
+    "reply_why": "It tells the author to coordinate before review, which is the wrong ask."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps 'not ready' and suggests closing as an alternative, when the key says hand off.",
+    "accuracy_why": "It lists the changes and the missing screenshots, including the before screenshot, accurately, but it gets the hand-off wrong.",
+    "reply_why": "It asks for coordination and screenshots before review instead of handing off."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It holds off on assigning a reviewer, when the key says hand off.",
+    "accuracy_why": "It needlessly doubts the Co-authored-by credit and gets the hand-off wrong, though it correctly flags the overlap and the missing dark screenshot.",
+    "reply_why": "It requires the author to get agreement on the takeover before review, which is the wrong ask."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says there's no sign the original author was asked, but the author left a cross-reference comment on #37289 tagging CerealNotFound."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps 'not ready' and suggests closing, when the key says hand off.",
+    "accuracy_why": "It overstates the lack of contact with the original author, adds a filler point about the [ai] prefix, and gets the hand-off wrong.",
+    "reply_why": "It blocks review on a takeover agreement and screenshots, which is the wrong ask."
+   }
+  },
+  "ranking": [
+   "Q",
+   "X",
+   "U",
+   "T",
+   "S",
+   "R"
+  ]
+ },
+ "text": "{\"outputs\": {\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"asks_for_done_work_not_applicable_but_extra_author_ask_in_handoff_reply\"],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 6,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is the only output that matches the key: a NOTE recommending hand-off to maintainer review with prakhar1144.\",\n   \"accuracy_why\": \"It covers the changes and the dark-theme gap, but saying 'only' a dark screenshot is missing skips the missing before screenshot and the color-mixing comment, and it notes prakhar's plan without calling out the PR overlap.\",\n   \"reply_why\": \"The reviewer ping fits, but it runs to three sentences and adds an author ask, which caps it at 6, and it leaves out the note that the issue is not a release priority.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It keeps 'not ready' and asks for more feedback, but the key action is hand-off.\",\n   \"accuracy_why\": \"Its facts on the prior-work changes, the dark screenshot and the #37289 overlap are right, but it gets the decisive hand-off recommendation wrong.\",\n   \"reply_why\": \"It blocks review on a screenshot and on coordination instead of moving the PR to maintainer review.\"},\n  \"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps 'not ready' and even floats closing as duplicate work, when the key says hand off.\",\n   \"accuracy_why\": \"It omits the cross-reference and the dark-theme screenshot gap, and its recommendation contradicts the key.\",\n   \"reply_why\": \"It tells the author to coordinate before review, which is the wrong ask.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It keeps 'not ready' and suggests closing as an alternative, when the key says hand off.\",\n   \"accuracy_why\": \"It lists the changes and the missing screenshots, including the before screenshot, accurately, but it gets the hand-off wrong.\",\n   \"reply_why\": \"It asks for coordination and screenshots before review instead of handing off.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It holds off on assigning a reviewer, when the key says hand off.\",\n   \"accuracy_why\": \"It needlessly doubts the Co-authored-by credit and gets the hand-off wrong, though it correctly flags the overlap and the missing dark screenshot.\",\n   \"reply_why\": \"It requires the author to get agreement on the takeover before review, which is the wrong ask.\"},\n  \"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"Says there's no sign the original author was asked, but the author left a cross-reference comment on #37289 tagging CerealNotFound.\"], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 6,\n   \"decision_why\": \"It keeps 'not ready' and suggests closing, when the key says hand off.\",\n   \"accuracy_why\": \"It overstates the lack of contact with the original author, adds a filler point about the [ai] prefix, and gets the hand-off wrong.\",\n   \"reply_why\": \"It blocks review on a takeover agreement and screenshots, which is the wrong ask.\"}},\n \"ranking\": [\"Q\", \"X\", \"U\", \"T\", \"S\", \"R\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.287004
+}

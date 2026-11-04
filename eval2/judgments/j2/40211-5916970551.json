@@ -1,0 +1,159 @@
+{
+ "case": "40211-5916970551",
+ "repeat": 2,
+ "map": {
+  "K": [
+   "v2-r2"
+  ],
+  "D": [
+   "v2-r1"
+  ],
+  "O": [
+   "v1-r1"
+  ],
+  "I": [
+   "v3-r2"
+  ],
+  "G": [
+   "v1-r2"
+  ],
+  "A": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a CARD where the key says NOTE, and its primary step is keep 'not ready' and give more feedback, with close only as a fallback, while the triager actually closed the PR.",
+    "accuracy_why": "It captures the 2-to-123-file blowup, the missing linked issue, the first-time author and the lack of local testing; it only omits the open downstream-consumer question.",
+    "reply_why": "It closely matches reply_ask by asking the author to clean the branch down to the fix and test and to file or link an issue first, with the guide linked."
+   },
+   "D": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 9,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It is a CARD that recommends more feedback, where the key says NOTE and close.",
+    "accuracy_why": "It has the size jump with exact numbers, the unrelated files, no local testing, no linked issue and no merged PRs, with no wrong facts.",
+    "reply_why": "It gives a good clean-the-branch ask with guide links, but leaves out the point about discussing an unfiled bug first."
+   },
+   "O": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "suggests_reviewer_for_unready_pr"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 8,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "It is a CARD that recommends more feedback and even names a future reviewer, where the key says NOTE and close.",
+    "accuracy_why": "It covers the diff blowup, the missing issue, no local testing and the open question, but does not mention that the author is a first-time contributor.",
+    "reply_why": "It asks only for a rebase, with no guide link and no mention of the unfiled-bug or issue requirement."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that recommends close, which matches both the key's kind and the observed action.",
+    "accuracy_why": "It has the broken squash with numbers, the missing help-wanted issue and the first-time author, but omits the lack of local testing.",
+    "reply_why": "It is a clear closing reply that cites both the missing issue and the unrelated changes, though it adds no pointer to the contributing guide."
+   },
+   "G": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Marks commit discipline as satisfied (✅ one clean commit) when the squashed commit contains about 120 unrelated files and the guide is still not met."
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It is a CARD that recommends more feedback, where the key says NOTE and close.",
+    "accuracy_why": "It wrongly credits the author with meeting commit discipline, which contradicts the key's decisive point that the maintainer's request is still unmet.",
+    "reply_why": "It gives a reasonable rebase ask plus a nudge to set up a dev environment, but has no guide link and no issue or discussion requirement."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends close, which matches the key.",
+    "accuracy_why": "It has the 2-to-123-file blowup and the missing help-wanted issue, but omits the +46/-11 baseline, the local-testing gap and any explicit note about merged-PR history.",
+    "reply_why": "It is a usable closing reply, though 'only accepts contributions' overstates the policy and it gives no guide link."
+   }
+  },
+  "ranking": [
+   "I",
+   "A",
+   "K",
+   "D",
+   "O",
+   "G"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 9, \"reply_score\": 8,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a CARD where the key says NOTE, and its primary step is keep 'not ready' and give more feedback, with close only as a fallback, while the triager actually closed the PR.\",\n   \"accuracy_why\": \"It captures the 2-to-123-file blowup, the missing linked issue, the first-time author and the lack of local testing; it only omits the open downstream-consumer question.\",\n   \"reply_why\": \"It closely matches reply_ask by asking the author to clean the branch down to the fix and test and to file or link an issue first, with the guide linked.\"},\n  \"D\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 9, \"reply_score\": 7,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a CARD that recommends more feedback, where the key says NOTE and close.\",\n   \"accuracy_why\": \"It has the size jump with exact numbers, the unrelated files, no local testing, no linked issue and no merged PRs, with no wrong facts.\",\n   \"reply_why\": \"It gives a good clean-the-branch ask with guide links, but leaves out the point about discussing an unfiled bug first.\"},\n  \"O\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"suggests_reviewer_for_unready_pr\"],\n   \"decision_score\": 2, \"accuracy_score\": 8, \"reply_score\": 6,\n   \"brevity_score\": 6,\n   \"decision_why\": \"It is a CARD that recommends more feedback and even names a future reviewer, where the key says NOTE and close.\",\n   \"accuracy_why\": \"It covers the diff blowup, the missing issue, no local testing and the open question, but does not mention that the author is a first-time contributor.\",\n   \"reply_why\": \"It asks only for a rebase, with no guide link and no mention of the unfiled-bug or issue requirement.\"},\n  \"I\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that recommends close, which matches both the key's kind and the observed action.\",\n   \"accuracy_why\": \"It has the broken squash with numbers, the missing help-wanted issue and the first-time author, but omits the lack of local testing.\",\n   \"reply_why\": \"It is a clear closing reply that cites both the missing issue and the unrelated changes, though it adds no pointer to the contributing guide.\"},\n  \"G\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [\"Marks commit discipline as satisfied (✅ one clean commit) when the squashed commit contains about 120 unrelated files and the guide is still not met.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 6,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a CARD that recommends more feedback, where the key says NOTE and close.\",\n   \"accuracy_why\": \"It wrongly credits the author with meeting commit discipline, which contradicts the key's decisive point that the maintainer's request is still unmet.\",\n   \"reply_why\": \"It gives a reasonable rebase ask plus a nudge to set up a dev environment, but has no guide link and no issue or discussion requirement.\"},\n  \"A\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that recommends close, which matches the key.\",\n   \"accuracy_why\": \"It has the 2-to-123-file blowup and the missing help-wanted issue, but omits the +46/-11 baseline, the local-testing gap and any explicit note about merged-PR history.\",\n   \"reply_why\": \"It is a usable closing reply, though 'only accepts contributions' overstates the policy and it gives no guide link.\"}},\n \"ranking\": [\"I\", \"A\", \"K\", \"D\", \"O\", \"G\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.181476
+}

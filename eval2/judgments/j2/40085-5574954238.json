@@ -1,0 +1,161 @@
+{
+ "case": "40085-5574954238",
+ "repeat": 2,
+ "map": {
+  "A": [
+   "v1-r1"
+  ],
+  "K": [
+   "v1-r2"
+  ],
+  "R": [
+   "v2-r1"
+  ],
+  "T": [
+   "v3-r2"
+  ],
+  "D": [
+   "v3-r1"
+  ],
+  "X": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends closing, but the key's action is a hand-off to maintainer review.",
+    "accuracy_why": "It notes the public URLs and that there was no push, but omits the two layout shapes, omits the missing font-size screenshots, and gets the hand-off recommendation wrong.",
+    "reply_why": "The reply closes a PR that should go to maintainer review."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the plan on #37030 had no maintainer reply, but apoorvapendse responded that it requires discussion."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 2,
+    "reply_score": 1,
+    "brevity_score": 6,
+    "decision_why": "It recommends closing, but the key's action is a hand-off.",
+    "accuracy_why": "It covers the screenshot pairs and the lack of a push, but misses the font-size gap, adds a false claim about no maintainer reply, and gets the recommendation wrong.",
+    "reply_why": "The reply closes the PR instead of moving it to review."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 5,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing, but the key's action is a hand-off.",
+    "accuracy_why": "It correctly covers the screenshot pairs, the absent push, and the missing font-size screenshots, but the decisive reviewer recommendation is wrong.",
+    "reply_why": "The reply closes the PR instead of moving it to review."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends closing, but the key's action is a hand-off.",
+    "accuracy_why": "It mentions the replaced links only vaguely, dismisses the screenshots as moot, omits the font-size gap, and gets the hand-off wrong.",
+    "reply_why": "The reply closes the PR instead of moving it to review."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 1,
+    "brevity_score": 9,
+    "decision_why": "It recommends closing, but the key's action is a hand-off.",
+    "accuracy_why": "It states the public links, the two layouts, and that there was no code change, but omits the font-size gap and gets the recommendation wrong.",
+    "reply_why": "The reply closes the PR instead of moving it to review."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "bad_format"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 5,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing, but the key's action is a hand-off.",
+    "accuracy_why": "It covers the screenshots, the font-size gap, and the absent push, but the hand-off is wrong and the next step's 'Keep \"not ready\" off the table' is confusing.",
+    "reply_why": "The reply closes the PR instead of moving it to review."
+   }
+  },
+  "ranking": [
+   "R",
+   "X",
+   "D",
+   "A",
+   "T",
+   "K"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"A\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 1, \"brevity_score\": 8,\n \"decision_why\": \"It recommends closing, but the key's action is a hand-off to maintainer review.\",\n \"accuracy_why\": \"It notes the public URLs and that there was no push, but omits the two layout shapes, omits the missing font-size screenshots, and gets the hand-off recommendation wrong.\",\n \"reply_why\": \"The reply closes a PR that should go to maintainer review.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n \"wrong_facts\": [\"Claims the plan on #37030 had no maintainer reply, but apoorvapendse responded that it requires discussion.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 1, \"accuracy_score\": 2, \"reply_score\": 1, \"brevity_score\": 6,\n \"decision_why\": \"It recommends closing, but the key's action is a hand-off.\",\n \"accuracy_why\": \"It covers the screenshot pairs and the lack of a push, but misses the font-size gap, adds a false claim about no maintainer reply, and gets the recommendation wrong.\",\n \"reply_why\": \"The reply closes the PR instead of moving it to review.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 5, \"reply_score\": 1, \"brevity_score\": 7,\n \"decision_why\": \"It recommends closing, but the key's action is a hand-off.\",\n \"accuracy_why\": \"It correctly covers the screenshot pairs, the absent push, and the missing font-size screenshots, but the decisive reviewer recommendation is wrong.\",\n \"reply_why\": \"The reply closes the PR instead of moving it to review.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 1, \"brevity_score\": 8,\n \"decision_why\": \"It recommends closing, but the key's action is a hand-off.\",\n \"accuracy_why\": \"It mentions the replaced links only vaguely, dismisses the screenshots as moot, omits the font-size gap, and gets the hand-off wrong.\",\n \"reply_why\": \"The reply closes the PR instead of moving it to review.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 1, \"brevity_score\": 9,\n \"decision_why\": \"It recommends closing, but the key's action is a hand-off.\",\n \"accuracy_why\": \"It states the public links, the two layouts, and that there was no code change, but omits the font-size gap and gets the recommendation wrong.\",\n \"reply_why\": \"The reply closes the PR instead of moving it to review.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\"},\n \"wrong_facts\": [], \"rule_failures\": [\"bad_format\"],\n \"decision_score\": 1, \"accuracy_score\": 5, \"reply_score\": 1, \"brevity_score\": 7,\n \"decision_why\": \"It recommends closing, but the key's action is a hand-off.\",\n \"accuracy_why\": \"It covers the screenshots, the font-size gap, and the absent push, but the hand-off is wrong and the next step's 'Keep \\\"not ready\\\" off the table' is confusing.\",\n \"reply_why\": \"The reply closes the PR instead of moving it to review.\"}\n},\n\"ranking\": [\"R\", \"X\", \"D\", \"A\", \"T\", \"K\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.25272
+}

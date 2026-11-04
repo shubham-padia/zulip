@@ -1,0 +1,179 @@
+{
+ "case": "40257-6023845324",
+ "repeat": 2,
+ "map": {
+  "R": [
+   "v2-r2"
+  ],
+  "A": [
+   "v2-r1"
+  ],
+  "S": [
+   "v3-r2"
+  ],
+  "L": [
+   "v1-r1"
+  ],
+  "T": [
+   "v3-r1"
+  ],
+  "P": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the author pushed 'one new commit'; it was a force-push and the PR still has a single commit."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE that hands off to laurynmm, which matches the key.",
+    "accuracy_why": "It covers the banner, CI, the commit-message gap and the uncertain screenshot labels, but it misses the client-side-only scope and miscounts the push as a new commit.",
+    "reply_why": "It pings the reviewer and adds one line asking the author to update the commit message, which is close to the reply_ask."
+   },
+   "R": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Calls popup_banners.ts a 'new file'; it was an existing file that was changed."
+    ],
+    "rule_failures": [],
+    "decision_score": 7,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "The hand-off is right, but a full CARD is more than this change needs when a NOTE would do.",
+    "accuracy_why": "Every must-have is present, but it doesn't flag the unverified screenshot labels and wrongly calls popup_banners.ts a new file.",
+    "reply_why": "It is a single reviewer-ping line that can be pasted as is."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the author pushed 'one new commit'; it was a force-push and the PR still has a single commit."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It writes a NOTE that hands off to laurynmm, which matches the key.",
+    "accuracy_why": "It misses both still-missing items (the commit message and the screenshot labels) and miscounts the push as a new commit.",
+    "reply_why": "It is a single reviewer-ping line that can be pasted as is."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the push 'covers both things laurynmm asked for', though nothing shows the swapped screenshot labels were fixed."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE that hands off to laurynmm, which matches the key.",
+    "accuracy_why": "It omits the commit-message gap and the client-side scope, and it overclaims that the screenshot-label fix is done.",
+    "reply_why": "It is a single reviewer-ping line that can be pasted as is."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the new banner has no test of its own, which the inputs can't confirm."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It writes a NOTE that hands off to laurynmm, which matches the key.",
+    "accuracy_why": "It invents a missing-test gap and misses the commit-message gap, the label uncertainty and the client-side scope.",
+    "reply_why": "It is a single reviewer-ping line that can be pasted as is."
+   },
+   "A": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "States the before/after screenshots are 'now in the right order', though nothing shows the labels were fixed."
+    ],
+    "rule_failures": [],
+    "decision_score": 7,
+    "accuracy_score": 4,
+    "reply_score": 6,
+    "brevity_score": 5,
+    "decision_why": "The hand-off is right, but a full CARD is more than this change needs when a NOTE would do.",
+    "accuracy_why": "It claims the screenshot labels are fixed and misses the commit-message gap.",
+    "reply_why": "The reply thanks the author for 'fixing the screenshots', which repeats the unsupported claim, and it skips the commit-message ask."
+   }
+  },
+  "ranking": [
+   "P",
+   "R",
+   "L",
+   "S",
+   "T",
+   "A"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the author pushed 'one new commit'; it was a force-push and the PR still has a single commit.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It writes a NOTE that hands off to laurynmm, which matches the key.\",\n \"accuracy_why\": \"It covers the banner, CI, the commit-message gap and the uncertain screenshot labels, but it misses the client-side-only scope and miscounts the push as a new commit.\",\n \"reply_why\": \"It pings the reviewer and adds one line asking the author to update the commit message, which is close to the reply_ask.\"},\n\"R\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Calls popup_banners.ts a 'new file'; it was an existing file that was changed.\"],\n \"rule_failures\": [],\n \"decision_score\": 7, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"The hand-off is right, but a full CARD is more than this change needs when a NOTE would do.\",\n \"accuracy_why\": \"Every must-have is present, but it doesn't flag the unverified screenshot labels and wrongly calls popup_banners.ts a new file.\",\n \"reply_why\": \"It is a single reviewer-ping line that can be pasted as is.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the author pushed 'one new commit'; it was a force-push and the PR still has a single commit.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"It writes a NOTE that hands off to laurynmm, which matches the key.\",\n \"accuracy_why\": \"It misses both still-missing items (the commit message and the screenshot labels) and miscounts the push as a new commit.\",\n \"reply_why\": \"It is a single reviewer-ping line that can be pasted as is.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the push 'covers both things laurynmm asked for', though nothing shows the swapped screenshot labels were fixed.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It writes a NOTE that hands off to laurynmm, which matches the key.\",\n \"accuracy_why\": \"It omits the commit-message gap and the client-side scope, and it overclaims that the screenshot-label fix is done.\",\n \"reply_why\": \"It is a single reviewer-ping line that can be pasted as is.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Asserts the new banner has no test of its own, which the inputs can't confirm.\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It writes a NOTE that hands off to laurynmm, which matches the key.\",\n \"accuracy_why\": \"It invents a missing-test gap and misses the commit-message gap, the label uncertainty and the client-side scope.\",\n \"reply_why\": \"It is a single reviewer-ping line that can be pasted as is.\"},\n\"A\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"States the before/after screenshots are 'now in the right order', though nothing shows the labels were fixed.\"],\n \"rule_failures\": [],\n \"decision_score\": 7, \"accuracy_score\": 4, \"reply_score\": 6, \"brevity_score\": 5,\n \"decision_why\": \"The hand-off is right, but a full CARD is more than this change needs when a NOTE would do.\",\n \"accuracy_why\": \"It claims the screenshot labels are fixed and misses the commit-message gap.\",\n \"reply_why\": \"The reply thanks the author for 'fixing the screenshots', which repeats the unsupported claim, and it skips the commit-message ask.\"}\n},\n\"ranking\": [\"P\", \"R\", \"L\", \"S\", \"T\", \"A\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.22476000000000002
+}

@@ -1,0 +1,161 @@
+{
+ "case": "40201-6155498168",
+ "repeat": 2,
+ "map": {
+  "E": [
+   "v3-r2"
+  ],
+  "B": [
+   "v1-r1"
+  ],
+  "F": [
+   "v1-r2"
+  ],
+  "M": [
+   "v2-r1"
+  ],
+  "T": [
+   "v3-r1"
+  ],
+  "A": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands the PR off for review once CI passes, which matches the key, though it picks laurynmm over Niloth P as the main reviewer.",
+    "accuracy_why": "It covers CI, the AI-policy history and Niloth P as an option, but skips the formatting fix, the new fixture, the description update and that the author removed the label himself.",
+    "reply_why": "It thanks the author for the CI fix and pings the reviewer in one short line, which a maintainer could paste as is."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending hand_off, matching the key.",
+    "accuracy_why": "It has CI and the AI-policy flag but misses Niloth P, what changed in the pushes, and that the author removed the label himself.",
+    "reply_why": "A single reviewer ping, which fits a hand_off."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" over the missing linked issue even though the only feedback, CI, is addressed and the key says hand off.",
+    "accuracy_why": "It describes the changes well and flags the AI-policy history, but misses the reviewer suggestion and the self-removed label.",
+    "reply_why": "It asks for a linked issue instead of telling the author the PR is going to review, so it misses the reply_ask."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It holds the PR for a linked issue instead of handing it off, the wrong action.",
+    "accuracy_why": "It has CI and the AI-policy flag but doesn't say what the pushes changed and misses the reviewer and the self-removed label.",
+    "reply_why": "It asks for an issue and a testing confirmation instead of saying the PR is going to review."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and points toward closing, though the key says hand off.",
+    "accuracy_why": "It notes CI and the new fixture but omits the formatting fix, the AI-policy history, the reviewer and the self-removed label.",
+    "reply_why": "Its ask is to link a help-wanted issue, not the handoff the key calls for."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It says not to assign a reviewer and to close without a linked issue, the opposite of the key's hand_off.",
+    "accuracy_why": "It mentions CI and the second fixture but misses the formatting fix, the AI-policy flag, the reviewer and the self-removed label.",
+    "reply_why": "It asks for a linked issue instead of confirming the handoff."
+   }
+  },
+  "ranking": [
+   "M",
+   "A",
+   "F",
+   "B",
+   "E",
+   "T"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that hands the PR off for review once CI passes, which matches the key, though it picks laurynmm over Niloth P as the main reviewer.\",\n \"accuracy_why\": \"It covers CI, the AI-policy history and Niloth P as an option, but skips the formatting fix, the new fixture, the description update and that the author removed the label himself.\",\n \"reply_why\": \"It thanks the author for the CI fix and pings the reviewer in one short line, which a maintainer could paste as is.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE recommending hand_off, matching the key.\",\n \"accuracy_why\": \"It has CI and the AI-policy flag but misses Niloth P, what changed in the pushes, and that the author removed the label himself.\",\n \"reply_why\": \"A single reviewer ping, which fits a hand_off.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" over the missing linked issue even though the only feedback, CI, is addressed and the key says hand off.\",\n \"accuracy_why\": \"It describes the changes well and flags the AI-policy history, but misses the reviewer suggestion and the self-removed label.\",\n \"reply_why\": \"It asks for a linked issue instead of telling the author the PR is going to review, so it misses the reply_ask.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It holds the PR for a linked issue instead of handing it off, the wrong action.\",\n \"accuracy_why\": \"It has CI and the AI-policy flag but doesn't say what the pushes changed and misses the reviewer and the self-removed label.\",\n \"reply_why\": \"It asks for an issue and a testing confirmation instead of saying the PR is going to review.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It keeps \\\"not ready\\\" and points toward closing, though the key says hand off.\",\n \"accuracy_why\": \"It notes CI and the new fixture but omits the formatting fix, the AI-policy history, the reviewer and the self-removed label.\",\n \"reply_why\": \"Its ask is to link a help-wanted issue, not the handoff the key calls for.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"It says not to assign a reviewer and to close without a linked issue, the opposite of the key's hand_off.\",\n \"accuracy_why\": \"It mentions CI and the second fixture but misses the formatting fix, the AI-policy flag, the reviewer and the self-removed label.\",\n \"reply_why\": \"It asks for a linked issue instead of confirming the handoff.\"}},\n\"ranking\": [\"M\", \"A\", \"F\", \"B\", \"E\", \"T\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.139956
+}

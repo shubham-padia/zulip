@@ -1,0 +1,175 @@
+{
+ "case": "40065-5536187002",
+ "repeat": 2,
+ "map": {
+  "X": [
+   "v1-r2"
+  ],
+  "I": [
+   "v2-r2"
+  ],
+  "C": [
+   "v3-r1"
+  ],
+  "Q": [
+   "v1-r1"
+  ],
+  "O": [
+   "v2-r1"
+  ],
+  "F": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the precise before/after screenshot ask as met (✅), though the 'before' shot still doesn't show the bug"
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It recommends handing off for review, but the key says the triager should keep 'not ready' and give more feedback.",
+    "accuracy_why": "It notes the DPR 1 caveat but still calls the screenshot ask met, misses the long-topic and font-size gaps, and adds a filler help-wanted/CI line.",
+    "reply_why": "It pings laurynmm for review instead of asking the author for a 'before' that reproduces the bug and for broader screenshots."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the precise screenshot ask as done (✅), though it is still missing"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It mentions the DPR 1 caveat but checks off the screenshot ask and omits the long-topic and font-size gaps.",
+    "reply_why": "The reviewer ping is the wrong ask; the author should be asked for more screenshots."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing blocking is missing, though the screenshots still don't show the bug"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It flags that the clipping doesn't reproduce at normal density but calls this non-blocking and misses the long-topic and font-size gaps.",
+    "reply_why": "It at least asks laurynmm to judge whether the screenshots meet the guidelines, but it still doesn't ask the author for the missing shots."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the screenshots as retaken with a precise method that satisfies the ask (✅), though the ask is still unmet"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It confirms the code is unchanged and gives a clear ⚠️ on the DPR 1 caveat, but it checks off the screenshot ask and misses the long-topic and font-size gaps.",
+    "reply_why": "The reviewer ping is the wrong ask for a PR that needs more screenshots."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Marks the precise screenshot ask as done (✅), though it is still missing"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It notes the DPR 1 caveat but treats the screenshot ask as met and omits the long-topic and font-size gaps.",
+    "reply_why": "The reviewer ping misses the reply_ask entirely."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing blocking is missing, though the screenshots still don't show the bug"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "It recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It states clearly that the shots don't show a clipped emoji but calls this non-blocking and misses the long-topic and font-size gaps.",
+    "reply_why": "It thanks the author for the screenshots and pings for review, the opposite of asking for the missing shots."
+   }
+  },
+  "ranking": [
+   "C",
+   "Q",
+   "F",
+   "O",
+   "I",
+   "X"
+  ]
+ },
+ "text": "{\"outputs\": {\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Marks the precise before/after screenshot ask as met (✅), though the 'before' shot still doesn't show the bug\"], \"rule_failures\": [\"filler_point\"], \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6, \"decision_why\": \"It recommends handing off for review, but the key says the triager should keep 'not ready' and give more feedback.\", \"accuracy_why\": \"It notes the DPR 1 caveat but still calls the screenshot ask met, misses the long-topic and font-size gaps, and adds a filler help-wanted/CI line.\", \"reply_why\": \"It pings laurynmm for review instead of asking the author for a 'before' that reproduces the bug and for broader screenshots.\"}, \"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Marks the precise screenshot ask as done (✅), though it is still missing\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"It recommends hand_off where the key says more_feedback.\", \"accuracy_why\": \"It mentions the DPR 1 caveat but checks off the screenshot ask and omits the long-topic and font-size gaps.\", \"reply_why\": \"The reviewer ping is the wrong ask; the author should be asked for more screenshots.\"}, \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Says nothing blocking is missing, though the screenshots still don't show the bug\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 9, \"decision_why\": \"It recommends hand_off where the key says more_feedback.\", \"accuracy_why\": \"It flags that the clipping doesn't reproduce at normal density but calls this non-blocking and misses the long-topic and font-size gaps.\", \"reply_why\": \"It at least asks laurynmm to judge whether the screenshots meet the guidelines, but it still doesn't ask the author for the missing shots.\"}, \"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Marks the screenshots as retaken with a precise method that satisfies the ask (✅), though the ask is still unmet\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6, \"decision_why\": \"It recommends hand_off where the key says more_feedback.\", \"accuracy_why\": \"It confirms the code is unchanged and gives a clear ⚠️ on the DPR 1 caveat, but it checks off the screenshot ask and misses the long-topic and font-size gaps.\", \"reply_why\": \"The reviewer ping is the wrong ask for a PR that needs more screenshots.\"}, \"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Marks the precise screenshot ask as done (✅), though it is still missing\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8, \"decision_why\": \"It recommends hand_off where the key says more_feedback.\", \"accuracy_why\": \"It notes the DPR 1 caveat but treats the screenshot ask as met and omits the long-topic and font-size gaps.\", \"reply_why\": \"The reviewer ping misses the reply_ask entirely.\"}, \"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Says nothing blocking is missing, though the screenshots still don't show the bug\"], \"rule_failures\": [], \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 9, \"decision_why\": \"It recommends hand_off where the key says more_feedback.\", \"accuracy_why\": \"It states clearly that the shots don't show a clipped emoji but calls this non-blocking and misses the long-topic and font-size gaps.\", \"reply_why\": \"It thanks the author for the screenshots and pings for review, the opposite of asking for the missing shots.\"}}, \"ranking\": [\"C\", \"Q\", \"F\", \"O\", \"I\", \"X\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.281628
+}

@@ -1,0 +1,168 @@
+{
+ "case": "40171-5795222359",
+ "repeat": 2,
+ "map": {
+  "I": [
+   "v1-r1"
+  ],
+  "F": [
+   "v3-r2"
+  ],
+  "P": [
+   "v2-r1"
+  ],
+  "E": [
+   "v2-r2"
+  ],
+  "S": [
+   "v1-r2"
+  ],
+  "L": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE and recommends handing off, which matches the key.",
+    "accuracy_why": "It covers both feedback asks, the absence of a new push, and the right reviewer, with no wrong facts.",
+    "reply_why": "It thanks the author in one line and pings Niloth-p, so a maintainer could paste it as is."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 9,
+    "brevity_score": 10,
+    "decision_why": "It writes a NOTE and recommends handing off, which matches the key.",
+    "accuracy_why": "It covers all changed items and every must-have in a compact paragraph, with no wrong facts.",
+    "reply_why": "It gives a short thanks and a ping to Niloth-p, which is pasteable."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Recommends laurynmm as reviewer instead of Niloth-p, the main contributor to the file who diagnosed the bug"
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 7,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It hands off as a NOTE, but routes the PR to the wrong reviewer.",
+    "accuracy_why": "The feedback assessment is right, but the reviewer choice is wrong.",
+    "reply_why": "The reply pings laurynmm instead of Niloth-p, so it misses part of the reply ask."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE and recommends handing off, which matches the key.",
+    "accuracy_why": "It has all must-haves and the right reviewer rationale, with no wrong facts.",
+    "reply_why": "It gives a one-line thanks and pings Niloth-p, which is pasteable."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says to add an \"integration review\" label instead of \"maintainer review\""
+    ],
+    "rule_failures": [
+     "filler_point",
+     "filler_point"
+    ],
+    "decision_score": 6,
+    "accuracy_score": 4,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It hands off as a NOTE, but the next step names the wrong label, so a triager following it would mislabel the PR.",
+    "accuracy_why": "The wrong label sits in the step the hand-off rests on, which caps accuracy, and two info points are padding.",
+    "reply_why": "The reply thanks the author and pings Niloth-p, which is pasteable."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 10,
+    "decision_why": "It writes a NOTE and recommends handing off, which matches the key.",
+    "accuracy_why": "It covers all changed items and must-haves, though it states the guideline-format ask only implicitly through the table.",
+    "reply_why": "It gives a one-line thanks and pings Niloth-p, which is pasteable."
+   }
+  },
+  "ranking": [
+   "F",
+   "L",
+   "E",
+   "I",
+   "P",
+   "S"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"It writes a NOTE and recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It covers both feedback asks, the absence of a new push, and the right reviewer, with no wrong facts.\",\n \"reply_why\": \"It thanks the author in one line and pings Niloth-p, so a maintainer could paste it as is.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 9, \"brevity_score\": 10,\n \"decision_why\": \"It writes a NOTE and recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It covers all changed items and every must-have in a compact paragraph, with no wrong facts.\",\n \"reply_why\": \"It gives a short thanks and a ping to Niloth-p, which is pasteable.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Recommends laurynmm as reviewer instead of Niloth-p, the main contributor to the file who diagnosed the bug\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 8, \"accuracy_score\": 7, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"It hands off as a NOTE, but routes the PR to the wrong reviewer.\",\n \"accuracy_why\": \"The feedback assessment is right, but the reviewer choice is wrong.\",\n \"reply_why\": \"The reply pings laurynmm instead of Niloth-p, so it misses part of the reply ask.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It writes a NOTE and recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It has all must-haves and the right reviewer rationale, with no wrong facts.\",\n \"reply_why\": \"It gives a one-line thanks and pings Niloth-p, which is pasteable.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [\"Says to add an \\\"integration review\\\" label instead of \\\"maintainer review\\\"\"], \"rule_failures\": [\"filler_point\", \"filler_point\"],\n \"decision_score\": 6, \"accuracy_score\": 4, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"It hands off as a NOTE, but the next step names the wrong label, so a triager following it would mislabel the PR.\",\n \"accuracy_why\": \"The wrong label sits in the step the hand-off rests on, which caps accuracy, and two info points are padding.\",\n \"reply_why\": \"The reply thanks the author and pings Niloth-p, which is pasteable.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 10,\n \"decision_why\": \"It writes a NOTE and recommends handing off, which matches the key.\",\n \"accuracy_why\": \"It covers all changed items and must-haves, though it states the guideline-format ask only implicitly through the table.\",\n \"reply_why\": \"It gives a one-line thanks and pings Niloth-p, which is pasteable.\"}\n},\n\"ranking\": [\"F\", \"L\", \"E\", \"I\", \"P\", \"S\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.180168
+}

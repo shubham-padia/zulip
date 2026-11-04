@@ -1,0 +1,177 @@
+{
+ "case": "40048-5481098127",
+ "repeat": 2,
+ "map": {
+  "J": [
+   "v2-r1"
+  ],
+  "E": [
+   "v3-r2"
+  ],
+  "S": [
+   "v1-r2"
+  ],
+  "U": [
+   "v1-r1"
+  ],
+  "C": [
+   "v2-r2"
+  ],
+  "I": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "S": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "wrong_action",
+     "next_step_duplicates_reply"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing the PR, but the key says to keep \"not ready\" and give more feedback; flagging the missing changelog earns it slightly more credit than the others.",
+    "accuracy_why": "It is the only output to note the missing API changelog entry, and it also covers no new push, the unresolved api-design topic and the help-wanted issue, but its close recommendation contradicts f4.",
+    "reply_why": "The reply closes the PR instead of asking for a changelog entry and a link to the api-design topic."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "wrong_action",
+     "next_step_duplicates_reply"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 5,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing the PR where the key says to give more feedback.",
+    "accuracy_why": "It covers no new push, the undecided api-design discussion and the help-wanted problem, but misses the decisive gap: there is no API changelog entry.",
+    "reply_why": "The closing reply is the wrong decision and misses the changelog ask."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "wrong_action"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 5,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends closing the PR where the key says to give more feedback.",
+    "accuracy_why": "It notes no new push, the api-design discussion with no outcome and the help-wanted problem, but omits the missing changelog entry.",
+    "reply_why": "The closing reply is the wrong decision and does not ask for the changelog entry."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "wrong_action",
+     "filler_point"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 5,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing the PR where the key says to give more feedback.",
+    "accuracy_why": "It covers no new push, the api-design topic with no visible outcome and the help-wanted problem, but misses the changelog gap and adds a weak point about the AI guidelines.",
+    "reply_why": "The closing reply is the wrong decision and misses the key's ask."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "wrong_action"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends closing the PR where the key says to give more feedback.",
+    "accuracy_why": "It mentions no new push and the help-wanted problem, but misses both the changelog gap and the unresolved api-design discussion.",
+    "reply_why": "The closing reply is the wrong decision and does not make the key's ask."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "wrong_action",
+     "filler_point"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing the PR where the key says to give more feedback.",
+    "accuracy_why": "It marks the api-design discussion as done (✅) without noting it has no outcome, misses the changelog gap, and pads the note with a CI-unknown line.",
+    "reply_why": "The closing reply is the wrong decision and misses the key's ask."
+   }
+  },
+  "ranking": [
+   "S",
+   "U",
+   "I",
+   "J",
+   "E",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"S\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"wrong_action\", \"next_step_duplicates_reply\"],\n \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 1, \"brevity_score\": 7,\n \"decision_why\": \"It recommends closing the PR, but the key says to keep \\\"not ready\\\" and give more feedback; flagging the missing changelog earns it slightly more credit than the others.\",\n \"accuracy_why\": \"It is the only output to note the missing API changelog entry, and it also covers no new push, the unresolved api-design topic and the help-wanted issue, but its close recommendation contradicts f4.\",\n \"reply_why\": \"The reply closes the PR instead of asking for a changelog entry and a link to the api-design topic.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"wrong_action\", \"next_step_duplicates_reply\"],\n \"decision_score\": 1, \"accuracy_score\": 5, \"reply_score\": 1, \"brevity_score\": 7,\n \"decision_why\": \"It recommends closing the PR where the key says to give more feedback.\",\n \"accuracy_why\": \"It covers no new push, the undecided api-design discussion and the help-wanted problem, but misses the decisive gap: there is no API changelog entry.\",\n \"reply_why\": \"The closing reply is the wrong decision and misses the changelog ask.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"wrong_action\"],\n \"decision_score\": 1, \"accuracy_score\": 5, \"reply_score\": 1, \"brevity_score\": 8,\n \"decision_why\": \"It recommends closing the PR where the key says to give more feedback.\",\n \"accuracy_why\": \"It notes no new push, the api-design discussion with no outcome and the help-wanted problem, but omits the missing changelog entry.\",\n \"reply_why\": \"The closing reply is the wrong decision and does not ask for the changelog entry.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"wrong_action\", \"filler_point\"],\n \"decision_score\": 1, \"accuracy_score\": 5, \"reply_score\": 1, \"brevity_score\": 7,\n \"decision_why\": \"It recommends closing the PR where the key says to give more feedback.\",\n \"accuracy_why\": \"It covers no new push, the api-design topic with no visible outcome and the help-wanted problem, but misses the changelog gap and adds a weak point about the AI guidelines.\",\n \"reply_why\": \"The closing reply is the wrong decision and misses the key's ask.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"wrong_action\"],\n \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 1, \"brevity_score\": 8,\n \"decision_why\": \"It recommends closing the PR where the key says to give more feedback.\",\n \"accuracy_why\": \"It mentions no new push and the help-wanted problem, but misses both the changelog gap and the unresolved api-design discussion.\",\n \"reply_why\": \"The closing reply is the wrong decision and does not make the key's ask.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"close\",\n \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"wrong_action\", \"filler_point\"],\n \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 1, \"brevity_score\": 7,\n \"decision_why\": \"It recommends closing the PR where the key says to give more feedback.\",\n \"accuracy_why\": \"It marks the api-design discussion as done (✅) without noting it has no outcome, misses the changelog gap, and pads the note with a CI-unknown line.\",\n \"reply_why\": \"The closing reply is the wrong decision and misses the key's ask.\"}\n},\n\"ranking\": [\"S\", \"U\", \"I\", \"J\", \"E\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.15010400000000002
+}

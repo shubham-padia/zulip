@@ -1,0 +1,180 @@
+{
+ "case": "40096-6055469654",
+ "repeat": 2,
+ "map": {
+  "L": [
+   "v1-r1"
+  ],
+  "O": [
+   "v3-r2"
+  ],
+  "N": [
+   "v2-r1"
+  ],
+  "C": [
+   "v2-r2"
+  ],
+  "V": [
+   "v1-r2"
+  ],
+  "H": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off matches the key, though it names the 'integration review' label instead of 'maintainer review'.",
+    "accuracy_why": "It covers CI passing after the test fixes, but misses the lack of written feedback, the docs-screenshot impact of the fixture revert, and an integrations reviewer such as Niloth P.",
+    "reply_why": "A single reviewer-ping line is the right shape for a hand-off."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE with a hand-off matches the key, apart from naming the 'integration review' label.",
+    "accuracy_why": "It describes the two follow-up commits and the passing CI accurately, but misses the no-written-feedback point, the docs-screenshot flag and an integrations reviewer.",
+    "reply_why": "A single ping to the reviewer is pasteable as is."
+   },
+   "N": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "repeats_first_card"
+    ],
+    "decision_score": 7,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "The hand-off with the exact 'maintainer review' label matches the key, but a full CARD was not needed.",
+    "accuracy_why": "It notes CI passing, the correct labels and the missing written feedback, but omits the docs-screenshot flag and an integrations reviewer.",
+    "reply_why": "A short ping to the reviewer that also says CI is green is pasteable as is."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Treats squashing the commits as still-required author work, when the key says nothing is missing."
+    ],
+    "rule_failures": [
+     "reply_wrong_ask"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "Keeping 'not ready' and asking for more feedback contradicts the hand-off the key calls for.",
+    "accuracy_why": "The verdict rests on an invented outstanding requirement to restructure the commits.",
+    "reply_why": "It asks the author to rework commits instead of moving the PR to review."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Treats folding the test fixes into the commits as still-required work, when the key says nothing is missing."
+    ],
+    "rule_failures": [
+     "reply_wrong_ask"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' when the key says the PR should be handed off for review.",
+    "accuracy_why": "The action rests on a commit-structure requirement the key does not list as missing.",
+    "reply_why": "It asks for a commit rework instead of telling the author the PR is moving to review."
+   },
+   "C": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Treats folding the test fixes into the commits as still-required work, when the key says nothing is missing."
+    ],
+    "rule_failures": [
+     "reply_wrong_ask",
+     "repeats_first_card"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "Both the kind (an unneeded CARD) and the action (more feedback) are wrong.",
+    "accuracy_why": "It suggests Niloth P but rests its verdict on an invented outstanding requirement.",
+    "reply_why": "It asks the author for more work instead of handing the PR off."
+   }
+  },
+  "ranking": [
+   "N",
+   "V",
+   "L",
+   "H",
+   "O",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE recommending hand-off matches the key, though it names the 'integration review' label instead of 'maintainer review'.\",\n   \"accuracy_why\": \"It covers CI passing after the test fixes, but misses the lack of written feedback, the docs-screenshot impact of the fixture revert, and an integrations reviewer such as Niloth P.\",\n   \"reply_why\": \"A single reviewer-ping line is the right shape for a hand-off.\"},\n \"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE with a hand-off matches the key, apart from naming the 'integration review' label.\",\n   \"accuracy_why\": \"It describes the two follow-up commits and the passing CI accurately, but misses the no-written-feedback point, the docs-screenshot flag and an integrations reviewer.\",\n   \"reply_why\": \"A single ping to the reviewer is pasteable as is.\"},\n \"N\": {\"kind\": \"CARD\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"repeats_first_card\"],\n   \"decision_score\": 7, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 6,\n   \"decision_why\": \"The hand-off with the exact 'maintainer review' label matches the key, but a full CARD was not needed.\",\n   \"accuracy_why\": \"It notes CI passing, the correct labels and the missing written feedback, but omits the docs-screenshot flag and an integrations reviewer.\",\n   \"reply_why\": \"A short ping to the reviewer that also says CI is green is pasteable as is.\"},\n \"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Treats squashing the commits as still-required author work, when the key says nothing is missing.\"],\n   \"rule_failures\": [\"reply_wrong_ask\"],\n   \"decision_score\": 4, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"Keeping 'not ready' and asking for more feedback contradicts the hand-off the key calls for.\",\n   \"accuracy_why\": \"The verdict rests on an invented outstanding requirement to restructure the commits.\",\n   \"reply_why\": \"It asks the author to rework commits instead of moving the PR to review.\"},\n \"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Treats folding the test fixes into the commits as still-required work, when the key says nothing is missing.\"],\n   \"rule_failures\": [\"reply_wrong_ask\"],\n   \"decision_score\": 4, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n   \"decision_why\": \"It keeps 'not ready' when the key says the PR should be handed off for review.\",\n   \"accuracy_why\": \"The action rests on a commit-structure requirement the key does not list as missing.\",\n   \"reply_why\": \"It asks for a commit rework instead of telling the author the PR is moving to review.\"},\n \"C\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"Treats folding the test fixes into the commits as still-required work, when the key says nothing is missing.\"],\n   \"rule_failures\": [\"reply_wrong_ask\", \"repeats_first_card\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6,\n   \"decision_why\": \"Both the kind (an unneeded CARD) and the action (more feedback) are wrong.\",\n   \"accuracy_why\": \"It suggests Niloth P but rests its verdict on an invented outstanding requirement.\",\n   \"reply_why\": \"It asks the author for more work instead of handing the PR off.\"}\n},\n \"ranking\": [\"N\", \"V\", \"L\", \"H\", \"O\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.17018
+}

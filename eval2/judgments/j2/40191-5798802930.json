@@ -1,0 +1,169 @@
+{
+ "case": "40191-5798802930",
+ "repeat": 2,
+ "map": {
+  "W": [
+   "v1-r2"
+  ],
+  "A": [
+   "v3-r2"
+  ],
+  "U": [
+   "v3-r1"
+  ],
+  "E": [
+   "v2-r2"
+  ],
+  "K": [
+   "v2-r1"
+  ],
+  "V": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 5,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key, though it suggests laurynmm rather than Vector73.",
+    "accuracy_why": "It flags the settings-rename backward-compatibility concern, but it hedges on the commit-message rewrite and misses Vector73 as reviewer.",
+    "reply_why": "The single reviewer-ping line can be pasted as is."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands the PR off, as the key does, but it assigns laurynmm instead of Vector73.",
+    "accuracy_why": "It correctly states both asks are done and the code is unchanged, but it misses Vector73 and the admin-facing compatibility point.",
+    "reply_why": "A short thanks plus a reviewer ping can be pasted as is."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 10,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key, with laurynmm as reviewer.",
+    "accuracy_why": "It confirms both asks are done, but it omits that the code is unchanged, the Vector73 suggestion and the compatibility concern.",
+    "reply_why": "A short thanks plus a reviewer ping can be pasted as is."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 5,
+    "decision_why": "It is a NOTE that hands the PR off, as the key does, but it points to laurynmm rather than Vector73.",
+    "accuracy_why": "It covers both asks and the unchanged code, but it misses Vector73 and the compatibility-review point.",
+    "reply_why": "The two-sentence ping to laurynmm is fine but restates detail the reviewer can see."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key, with laurynmm as reviewer.",
+    "accuracy_why": "It clearly maps each ask to done and notes the code is unchanged, but it misses Vector73 and the compatibility concern.",
+    "reply_why": "It thanks the author and pings a reviewer, and is nearly pasteable."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that hands the PR off, as the key does, but it suggests laurynmm instead of Vector73.",
+    "accuracy_why": "It hedges on the commit-message rewrite and misses Vector73 and the compatibility point.",
+    "reply_why": "The single reviewer-ping line can be pasted as is."
+   }
+  },
+  "ranking": [
+   "A",
+   "U",
+   "K",
+   "E",
+   "W",
+   "V"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 5,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key, though it suggests laurynmm rather than Vector73.\",\n \"accuracy_why\": \"It flags the settings-rename backward-compatibility concern, but it hedges on the commit-message rewrite and misses Vector73 as reviewer.\",\n \"reply_why\": \"The single reviewer-ping line can be pasted as is.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands the PR off, as the key does, but it assigns laurynmm instead of Vector73.\",\n \"accuracy_why\": \"It correctly states both asks are done and the code is unchanged, but it misses Vector73 and the admin-facing compatibility point.\",\n \"reply_why\": \"A short thanks plus a reviewer ping can be pasted as is.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 10,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key, with laurynmm as reviewer.\",\n \"accuracy_why\": \"It confirms both asks are done, but it omits that the code is unchanged, the Vector73 suggestion and the compatibility concern.\",\n \"reply_why\": \"A short thanks plus a reviewer ping can be pasted as is.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 5,\n \"decision_why\": \"It is a NOTE that hands the PR off, as the key does, but it points to laurynmm rather than Vector73.\",\n \"accuracy_why\": \"It covers both asks and the unchanged code, but it misses Vector73 and the compatibility-review point.\",\n \"reply_why\": \"The two-sentence ping to laurynmm is fine but restates detail the reviewer can see.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key, with laurynmm as reviewer.\",\n \"accuracy_why\": \"It clearly maps each ask to done and notes the code is unchanged, but it misses Vector73 and the compatibility concern.\",\n \"reply_why\": \"It thanks the author and pings a reviewer, and is nearly pasteable.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that hands the PR off, as the key does, but it suggests laurynmm instead of Vector73.\",\n \"accuracy_why\": \"It hedges on the commit-message rewrite and misses Vector73 and the compatibility point.\",\n \"reply_why\": \"The single reviewer-ping line can be pasted as is.\"}\n},\n\"ranking\": [\"A\", \"U\", \"K\", \"E\", \"W\", \"V\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.317856
+}

@@ -1,0 +1,163 @@
+{
+ "case": "40148-5711082634",
+ "repeat": 2,
+ "map": {
+  "O": [
+   "v1-r2"
+  ],
+  "X": [
+   "v2-r2"
+  ],
+  "I": [
+   "v3-r1"
+  ],
+  "A": [
+   "v3-r2"
+  ],
+  "D": [
+   "v1-r1"
+  ],
+  "K": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key, though it assigns laurynmm rather than a code reviewer like sahil839.",
+    "accuracy_why": "It covers the changes, the missing checklist and the unconfirmed CI, but frames the batch question only as a maintainer's call without saying the design was never settled on CZO, and it doesn't suggest sahil839.",
+    "reply_why": "It thanks the author and pings a reviewer about the open question, which suits the ask, but it runs to two sentences where a single ping line would do."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "It is accurate on the changes, CI and checklist, but treats the batch question as a simple open choice rather than an unsettled CZO design discussion, and it names laurynmm instead of sahil839.",
+    "reply_why": "A single reviewer ping line is ideal for a hand-off."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "It is correct on the changes, CI and checklist, notes the batch question only as the author's open question, and names laurynmm instead of sahil839.",
+    "reply_why": "A single reviewer ping line is pasteable as is."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key.",
+    "accuracy_why": "It never mentions the unsettled multi-file design or batch question, and it doesn't suggest sahil839.",
+    "reply_why": "The reviewer ping is fine, with one extra explanatory sentence."
+   },
+   "X": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 5,
+    "decision_why": "It posts a full card and keeps 'not ready' over a missing checklist, when the key calls for a NOTE handing off.",
+    "accuracy_why": "Its facts are correct and it flags the batch question for a reviewer, but it misses the CZO design gap and sahil839.",
+    "reply_why": "The reply asks for more presentation work instead of moving the PR to review."
+   },
+   "K": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 5,
+    "decision_why": "A full card holding the PR at 'not ready' is the wrong kind and the wrong action.",
+    "accuracy_why": "It describes the changes correctly but omits the design question entirely and doesn't suggest sahil839.",
+    "reply_why": "It asks the author for a checklist and green CI instead of handing off."
+   }
+  },
+  "ranking": [
+   "I",
+   "O",
+   "D",
+   "A",
+   "X",
+   "K"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key, though it assigns laurynmm rather than a code reviewer like sahil839.\",\n \"accuracy_why\": \"It covers the changes, the missing checklist and the unconfirmed CI, but frames the batch question only as a maintainer's call without saying the design was never settled on CZO, and it doesn't suggest sahil839.\",\n \"reply_why\": \"It thanks the author and pings a reviewer about the open question, which suits the ask, but it runs to two sentences where a single ping line would do.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"It is accurate on the changes, CI and checklist, but treats the batch question as a simple open choice rather than an unsettled CZO design discussion, and it names laurynmm instead of sahil839.\",\n \"reply_why\": \"A single reviewer ping line is ideal for a hand-off.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"It is correct on the changes, CI and checklist, notes the batch question only as the author's open question, and names laurynmm instead of sahil839.\",\n \"reply_why\": \"A single reviewer ping line is pasteable as is.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off matches the key.\",\n \"accuracy_why\": \"It never mentions the unsettled multi-file design or batch question, and it doesn't suggest sahil839.\",\n \"reply_why\": \"The reviewer ping is fine, with one extra explanatory sentence.\"},\n\"X\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3, \"brevity_score\": 5,\n \"decision_why\": \"It posts a full card and keeps 'not ready' over a missing checklist, when the key calls for a NOTE handing off.\",\n \"accuracy_why\": \"Its facts are correct and it flags the batch question for a reviewer, but it misses the CZO design gap and sahil839.\",\n \"reply_why\": \"The reply asks for more presentation work instead of moving the PR to review.\"},\n\"K\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 5,\n \"decision_why\": \"A full card holding the PR at 'not ready' is the wrong kind and the wrong action.\",\n \"accuracy_why\": \"It describes the changes correctly but omits the design question entirely and doesn't suggest sahil839.\",\n \"reply_why\": \"It asks the author for a checklist and green CI instead of handing off.\"}\n},\n\"ranking\": [\"I\", \"O\", \"D\", \"A\", \"X\", \"K\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.22062800000000002
+}
