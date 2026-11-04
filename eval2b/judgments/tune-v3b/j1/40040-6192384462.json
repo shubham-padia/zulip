@@ -1,0 +1,68 @@
+{
+ "case": "40040-6192384462",
+ "repeat": 1,
+ "map": {
+  "G": [
+   "v3b-r1"
+  ],
+  "B": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but keeping the PR open for more feedback misses the key's close; at least it keeps \"not ready\" and does not hand off.",
+    "accuracy_why": "It correctly reports the done asks and the unanswered CZO question, but only hints that the problem may not be real: it never says no maintainer agreed or that Lauryn noted the feature is off in the community.",
+    "reply_why": "It asks for Lauryn's question to be answered before review, which matches part of the reply_ask, but it does not ask where the function is used and it invites the author to keep going on a PR that gets closed."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "verdict_contradicts_missing",
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 4,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends removing \"not ready\" and assigning sahil839, which is the opposite of the key's close.",
+    "accuracy_why": "It notes the open CZO question but omits that no maintainer agreed the problem is worth fixing, and its \"Ready for review\" verdict contradicts the gap it lists itself.",
+    "reply_why": "It pings sahil839 for review of a PR that should be closed, while also asking the author to answer an open question, so the reply both pushes the wrong decision and contradicts itself."
+   }
+  },
+  "ranking": [
+   "G",
+   "B"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 6,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE is the right kind, but keeping the PR open for more feedback misses the key's close; at least it keeps \\\"not ready\\\" and does not hand off.\",\n   \"accuracy_why\": \"It correctly reports the done asks and the unanswered CZO question, but only hints that the problem may not be real: it never says no maintainer agreed or that Lauryn noted the feature is off in the community.\",\n   \"reply_why\": \"It asks for Lauryn's question to be answered before review, which matches part of the reply_ask, but it does not ask where the function is used and it invites the author to keep going on a PR that gets closed.\"},\n  \"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"verdict_contradicts_missing\", \"reply_contradicts_verdict\"],\n   \"decision_score\": 1, \"accuracy_score\": 4, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends removing \\\"not ready\\\" and assigning sahil839, which is the opposite of the key's close.\",\n   \"accuracy_why\": \"It notes the open CZO question but omits that no maintainer agreed the problem is worth fixing, and its \\\"Ready for review\\\" verdict contradicts the gap it lists itself.\",\n   \"reply_why\": \"It pings sahil839 for review of a PR that should be closed, while also asking the author to answer an open question, so the reply both pushes the wrong decision and contradicts itself.\"}},\n \"ranking\": [\"G\", \"B\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.114592
+}

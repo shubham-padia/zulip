@@ -1,0 +1,71 @@
+{
+ "case": "40048-5481098127",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "eval2:v3-r1"
+  ],
+  "P": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Claims contributors can only work on issues labeled \"help wanted\", which overstates the policy and is the stated basis for closing."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 4,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It recommends closing the PR, while the key calls for keeping \"not ready\" and giving more feedback.",
+    "accuracy_why": "It correctly notes there was no new push, the discussion has no outcome, and the help-wanted flag, but it misses the decisive missing API changelog and rests the close on an overstated policy claim.",
+    "reply_why": "The reply closes a PR that should get more feedback and never asks for the changelog entry or the topic link."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "verdict_contradicts_missing"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "It hands the PR off for review even though the key says to keep \"not ready\" and give more feedback.",
+    "accuracy_why": "It correctly flags the missing API changelog and feature-level update, but it omits that no code was pushed and that the api-design discussion hasn't reached agreement, and its \"Ready for review\" headline contradicts its own missing item.",
+    "reply_why": "The reply pings the reviewer instead of asking the author for the changelog entry and the topic link, so it misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "P",
+   "E"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"E\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"Claims contributors can only work on issues labeled \\\"help wanted\\\", which overstates the policy and is the stated basis for closing.\"],\n   \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 2, \"accuracy_score\": 4, \"reply_score\": 1,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends closing the PR, while the key calls for keeping \\\"not ready\\\" and giving more feedback.\",\n   \"accuracy_why\": \"It correctly notes there was no new push, the discussion has no outcome, and the help-wanted flag, but it misses the decisive missing API changelog and rests the close on an overstated policy claim.\",\n   \"reply_why\": \"The reply closes a PR that should get more feedback and never asks for the changelog entry or the topic link.\"},\n  \"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"verdict_contradicts_missing\"],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It hands the PR off for review even though the key says to keep \\\"not ready\\\" and give more feedback.\",\n   \"accuracy_why\": \"It correctly flags the missing API changelog and feature-level update, but it omits that no code was pushed and that the api-design discussion hasn't reached agreement, and its \\\"Ready for review\\\" headline contradicts its own missing item.\",\n   \"reply_why\": \"The reply pings the reviewer instead of asking the author for the changelog entry and the topic link, so it misses the reply_ask.\"}},\n \"ranking\": [\"P\", \"E\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.122832
+}

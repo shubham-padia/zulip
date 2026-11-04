@@ -1,0 +1,67 @@
+{
+ "case": "40211-5916970551",
+ "repeat": 1,
+ "map": {
+  "H": [
+   "eval2:v3-r1"
+  ],
+  "G": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Claims Zulip only accepts contributions for issues labeled \"help wanted\"; Zulip's guidelines also allow self-found bugs once they are discussed first, so this overstates the rule."
+    ],
+    "rule_failures": [
+     "reply_missing_guide_link"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending close matches both the key's kind and the observed maintainer action.",
+    "accuracy_why": "It covers the broken squash (2 files grew to 123), the unmet guide request, close, no linked issue and first-time author, but it omits that the author did not test locally and overstates the help-wanted rule.",
+    "reply_why": "Closing is the right call, but the reply rests on an overstated \"only help wanted\" rule, does not link the contributing guide, and does not mention discussing self-found bugs first."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "The NOTE kind is right, but it recommends more feedback (keep \"not ready\" and ask for a rebase) where the key's observed action is close.",
+    "accuracy_why": "It states the broken diff, the requirement that the one commit hold only the fix, and not handing off, but it misses the absent issue or discussion, the first-time author and the lack of local testing.",
+    "reply_why": "It clearly asks for a branch with only the fix and links the reviewable-PR guide, but it invites the author to keep going on a PR that was closed and leaves out discussing self-found bugs first."
+   }
+  },
+  "ranking": [
+   "H",
+   "G"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"H\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [\"Claims Zulip only accepts contributions for issues labeled \\\"help wanted\\\"; Zulip's guidelines also allow self-found bugs once they are discussed first, so this overstates the rule.\"],\n   \"rule_failures\": [\"reply_missing_guide_link\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending close matches both the key's kind and the observed maintainer action.\",\n   \"accuracy_why\": \"It covers the broken squash (2 files grew to 123), the unmet guide request, close, no linked issue and first-time author, but it omits that the author did not test locally and overstates the help-wanted rule.\",\n   \"reply_why\": \"Closing is the right call, but the reply rests on an overstated \\\"only help wanted\\\" rule, does not link the contributing guide, and does not mention discussing self-found bugs first.\"},\n  \"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 5,\n   \"brevity_score\": 9,\n   \"decision_why\": \"The NOTE kind is right, but it recommends more feedback (keep \\\"not ready\\\" and ask for a rebase) where the key's observed action is close.\",\n   \"accuracy_why\": \"It states the broken diff, the requirement that the one commit hold only the fix, and not handing off, but it misses the absent issue or discussion, the first-time author and the lack of local testing.\",\n   \"reply_why\": \"It clearly asks for a branch with only the fix and links the reviewable-PR guide, but it invites the author to keep going on a PR that was closed and leaves out discussing self-found bugs first.\"}},\n \"ranking\": [\"H\", \"G\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.13955599999999999
+}

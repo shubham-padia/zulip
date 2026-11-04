@@ -1,0 +1,67 @@
+{
+ "case": "40148-5711082634",
+ "repeat": 1,
+ "map": {
+  "Q": [
+   "eval2:v3-r1"
+  ],
+  "V": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key's decision and action.",
+    "accuracy_why": "It covers the changes, the missing checklist and the unconfirmed CI, but it treats the multi-file question as a maintainer's call rather than unsettled CZO design work, and it suggests laurynmm instead of sahil839.",
+    "reply_why": "The thanks to the author plus a ping to laurynmm about the per-file question is a reasonable ask, but it names the less suitable reviewer and says nothing about CZO design discussion."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key's decision and action.",
+    "accuracy_why": "It gets the changes right, but it omits the unsettled multi-file design question and the CI caveat, and it suggests laurynmm rather than sahil839.",
+    "reply_why": "The short reviewer ping is the right kind of reply, but it targets laurynmm and drops the design-discussion note, so the triager would need to rewrite it."
+   }
+  },
+  "ranking": [
+   "Q",
+   "V"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key's decision and action.\",\n   \"accuracy_why\": \"It covers the changes, the missing checklist and the unconfirmed CI, but it treats the multi-file question as a maintainer's call rather than unsettled CZO design work, and it suggests laurynmm instead of sahil839.\",\n   \"reply_why\": \"The thanks to the author plus a ping to laurynmm about the per-file question is a reasonable ask, but it names the less suitable reviewer and says nothing about CZO design discussion.\"},\n  \"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key's decision and action.\",\n   \"accuracy_why\": \"It gets the changes right, but it omits the unsettled multi-file design question and the CI caveat, and it suggests laurynmm rather than sahil839.\",\n   \"reply_why\": \"The short reviewer ping is the right kind of reply, but it targets laurynmm and drops the design-discussion note, so the triager would need to rewrite it.\"}},\n \"ranking\": [\"Q\", \"V\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.177576
+}

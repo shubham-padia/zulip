@@ -1,0 +1,69 @@
+{
+ "case": "40234-5937541838",
+ "repeat": 1,
+ "map": {
+  "P": [
+   "v3b-r1"
+  ],
+  "E": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "hedged",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for more feedback, but the key says to hand the PR off to Niloth-p for review.",
+    "accuracy_why": "It notes the \"Part of\" change, the screenshot and the hand-built fixture, but frames the fixture details as unaddressed, omits Niloth-p's stance on constructed fixtures, and misses the absent documentation link and the unconfirmed commit-message change.",
+    "reply_why": "The reply asks the author to replace the fixture with a captured payload instead of asking for the documentation link and saying the PR is going to review, so it misses the reply_ask."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks the author to redo the fixture, but the key says to hand off for maintainer review.",
+    "accuracy_why": "It flags the hand-built fixture with Niloth-p's rejection on #39998 and catches the missing push behind the claimed commit-message change, but it misses the absent documentation link and does not name a reviewer.",
+    "reply_why": "The reply asks for a captured payload and a commit push instead of the documentation link and a hand-off notice, so it misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "E",
+   "P"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"hedged\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more feedback, but the key says to hand the PR off to Niloth-p for review.\",\n   \"accuracy_why\": \"It notes the \\\"Part of\\\" change, the screenshot and the hand-built fixture, but frames the fixture details as unaddressed, omits Niloth-p's stance on constructed fixtures, and misses the absent documentation link and the unconfirmed commit-message change.\",\n   \"reply_why\": \"The reply asks the author to replace the fixture with a captured payload instead of asking for the documentation link and saying the PR is going to review, so it misses the reply_ask.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks the author to redo the fixture, but the key says to hand off for maintainer review.\",\n   \"accuracy_why\": \"It flags the hand-built fixture with Niloth-p's rejection on #39998 and catches the missing push behind the claimed commit-message change, but it misses the absent documentation link and does not name a reviewer.\",\n   \"reply_why\": \"The reply asks for a captured payload and a commit push instead of the documentation link and a hand-off notice, so it misses the reply_ask.\"}},\n \"ranking\": [\"E\", \"P\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.166708
+}

@@ -1,0 +1,67 @@
+{
+ "case": "40085-5574954238",
+ "repeat": 1,
+ "map": {
+  "G": [
+   "eval2:v3-r1"
+  ],
+  "W": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "G": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Implies the PR must be closed under a help-wanted-only policy, even though #37030 is still assigned to the author and only marked as needing discussion."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_decision"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing a PR that the key says should be handed off to maintainer review, which is the reverse of the right call.",
+    "accuracy_why": "It notes the public screenshots and that no code changed, but it skips the remaining manual-only checks and rests the close on a misreading of the label removal.",
+    "reply_why": "The reply tells the author the PR is being closed, which is the wrong decision for an author who answered the feedback."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key's kind and action.",
+    "accuracy_why": "It covers the accessible two-layout screenshots and the unchanged code, but it omits the font-size and typeahead-type cases that remain manual-only and picks laurynmm rather than a CSS reviewer like karlstolley or evykassirer.",
+    "reply_why": "A single reviewer ping line fits a hand-off, though it pings the feedback-giver rather than the suggested frontend reviewer."
+   }
+  },
+  "ranking": [
+   "W",
+   "G"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"G\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Implies the PR must be closed under a help-wanted-only policy, even though #37030 is still assigned to the author and only marked as needing discussion.\"],\n   \"rule_failures\": [\"reply_contradicts_key_decision\"],\n   \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 1,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It recommends closing a PR that the key says should be handed off to maintainer review, which is the reverse of the right call.\",\n   \"accuracy_why\": \"It notes the public screenshots and that no code changed, but it skips the remaining manual-only checks and rests the close on a misreading of the label removal.\",\n   \"reply_why\": \"The reply tells the author the PR is being closed, which is the wrong decision for an author who answered the feedback.\"},\n  \"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key's kind and action.\",\n   \"accuracy_why\": \"It covers the accessible two-layout screenshots and the unchanged code, but it omits the font-size and typeahead-type cases that remain manual-only and picks laurynmm rather than a CSS reviewer like karlstolley or evykassirer.\",\n   \"reply_why\": \"A single reviewer ping line fits a hand-off, though it pings the feedback-giver rather than the suggested frontend reviewer.\"}},\n \"ranking\": [\"W\", \"G\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.225828
+}

@@ -1,0 +1,65 @@
+{
+ "case": "40191-5798802930",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "eval2:v3-r1"
+  ],
+  "A": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends hand-off, which matches the key's kind and action.",
+    "accuracy_why": "It covers both completed asks, including #40197 with screenshots, but omits Vector73 as reviewer, the unchanged code and the backward-compatibility concern.",
+    "reply_why": "It is a short thanks plus a reviewer ping that could be pasted as is, though it pings laurynmm rather than suggesting Vector73."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends hand-off, which matches the key's kind and action.",
+    "accuracy_why": "It says both asks are done but drops the screenshots on #40197, and it omits Vector73, the unchanged code and the backward-compatibility concern.",
+    "reply_why": "It is a one-line thanks and reviewer ping that could be pasted as is."
+   }
+  },
+  "ranking": [
+   "A",
+   "E"
+  ]
+ },
+ "text": "{\"outputs\": {\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that recommends hand-off, which matches the key's kind and action.\", \"accuracy_why\": \"It covers both completed asks, including #40197 with screenshots, but omits Vector73 as reviewer, the unchanged code and the backward-compatibility concern.\", \"reply_why\": \"It is a short thanks plus a reviewer ping that could be pasted as is, though it pings laurynmm rather than suggesting Vector73.\"}, \"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that recommends hand-off, which matches the key's kind and action.\", \"accuracy_why\": \"It says both asks are done but drops the screenshots on #40197, and it omits Vector73, the unchanged code and the backward-compatibility concern.\", \"reply_why\": \"It is a one-line thanks and reviewer ping that could be pasted as is.\"}}, \"ranking\": [\"A\", \"E\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.265056
+}

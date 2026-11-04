@@ -1,0 +1,73 @@
+{
+ "case": "40232-5935435606",
+ "repeat": 1,
+ "map": {
+  "R": [
+   "eval2:v3-r1"
+  ],
+  "N": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing is missing, though the author removed the maintainer label themselves and no maintainer has checked the new screenshots."
+    ],
+    "rule_failures": [
+     "reply_misses_ask"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key's kind, but it recommends handing off where the key's observed action is more feedback.",
+    "accuracy_why": "It covers the screenshot table and the absent push but misses the self-removed label, the need to check the images and the duplicate PR, and its 'nothing missing' claim is what the hand-off rests on.",
+    "reply_why": "It pings laurynmm for review instead of telling the author not to remove maintainer labels and to make sure the images load."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says nothing blocking is missing and that the screenshots look like what was asked for, though no maintainer has verified them and the author removed the maintainer label."
+    ],
+    "rule_failures": [
+     "reply_misses_ask"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key's kind, but it recommends handing off where the key's action is more feedback.",
+    "accuracy_why": "It notes the screenshot table, the absent code change and the duplicate PR #40134, but misses the self-removed label and the need to check the images, and wrongly says nothing blocking remains.",
+    "reply_why": "It endorses unverified screenshots and asks for review instead of telling the author not to remove labels and to make sure the images open."
+   }
+  },
+  "ranking": [
+   "N",
+   "R"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says nothing is missing, though the author removed the maintainer label themselves and no maintainer has checked the new screenshots.\"],\n   \"rule_failures\": [\"reply_misses_ask\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n   \"decision_why\": \"NOTE matches the key's kind, but it recommends handing off where the key's observed action is more feedback.\",\n   \"accuracy_why\": \"It covers the screenshot table and the absent push but misses the self-removed label, the need to check the images and the duplicate PR, and its 'nothing missing' claim is what the hand-off rests on.\",\n   \"reply_why\": \"It pings laurynmm for review instead of telling the author not to remove maintainer labels and to make sure the images load.\"},\n \"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"Says nothing blocking is missing and that the screenshots look like what was asked for, though no maintainer has verified them and the author removed the maintainer label.\"],\n   \"rule_failures\": [\"reply_misses_ask\"],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n   \"decision_why\": \"NOTE matches the key's kind, but it recommends handing off where the key's action is more feedback.\",\n   \"accuracy_why\": \"It notes the screenshot table, the absent code change and the duplicate PR #40134, but misses the self-removed label and the need to check the images, and wrongly says nothing blocking remains.\",\n   \"reply_why\": \"It endorses unverified screenshots and asks for review instead of telling the author not to remove labels and to make sure the images open.\"}},\n \"ranking\": [\"N\", \"R\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.1613
+}
