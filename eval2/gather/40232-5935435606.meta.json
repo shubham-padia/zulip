@@ -1,0 +1,41 @@
+{
+ "case": "40232-5935435606",
+ "cutoff": "2026-10-01T16:08:58Z",
+ "pushes": [
+  [
+   "2026-09-28T22:08:28Z",
+   "4e6e563a19",
+   "ci run"
+  ],
+  [
+   "2026-09-29T19:37:37Z",
+   "d3b616a4b2",
+   "force push"
+  ],
+  [
+   "2026-09-29T19:37:44Z",
+   "d3b616a4b2",
+   "ci run"
+  ]
+ ],
+ "head_now": "d3b616a4b222c267f6a36ebaa6c1ac1f2837b294",
+ "body_edits": 3,
+ "body_edits_after_cutoff": 1,
+ "title_now": "[ai] settings_emoji: Sort the current user's custom emoji first by author.",
+ "title_at_cutoff": "[ai] settings_emoji: Sort the current user's custom emoji first by author.",
+ "labels_now": [
+  "size: L",
+  "maintainer review",
+  "priority: low"
+ ],
+ "assignees_now": [
+  "pratik-pc"
+ ],
+ "head_at_cutoff": "d3b616a4b222c267f6a36ebaa6c1ac1f2837b294",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-10-01T14:32:14Z",
+ "head_at_feedback": "d3b616a4b222c267f6a36ebaa6c1ac1f2837b294",
+ "comments_total": 6,
+ "comments_at_cutoff": 3
+}

@@ -1,0 +1,40 @@
+{
+ "case": "39731-5006493904",
+ "cutoff": "2026-07-17T18:48:39Z",
+ "pushes": [
+  [
+   "2026-07-13T07:07:26Z",
+   "a12577c872",
+   "ci run"
+  ],
+  [
+   "2026-07-13T15:35:46Z",
+   "29aa285ecf",
+   "force push"
+  ],
+  [
+   "2026-07-13T15:35:56Z",
+   "29aa285ecf",
+   "ci run"
+  ]
+ ],
+ "head_now": "29aa285ecf8106c34ec8073f083c37dcfa87bbd4",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "[ai] css: Remove unreachable alert selectors and merge duplicate rules.",
+ "title_at_cutoff": "[ai] css: Remove unreachable alert selectors and merge duplicate rules.",
+ "labels_now": [
+  "size: S",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "karlstolley"
+ ],
+ "head_at_cutoff": "29aa285ecf8106c34ec8073f083c37dcfa87bbd4",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-07-13T15:15:26Z",
+ "head_at_feedback": "a12577c872aa4eb5d5e36fe918ee6dcbe7827b0a",
+ "comments_total": 12,
+ "comments_at_cutoff": 6
+}

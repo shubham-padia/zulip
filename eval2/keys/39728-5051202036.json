@@ -1,0 +1,57 @@
+{
+ "case": "39728-5051202036",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author pushed back on the screenshot request and squashed the commits without changing the approach or files, so a short note with a reply is right and a new card is not needed.",
+  "triager_action": "close",
+  "action_source": "observed",
+  "action_why": "laurynmm first pointed out that the screenshots were still imprecise and the commit messages didn't follow the style guide, then closed the PR unmerged on 2026-07-24 when the screenshots still didn't meet the guidelines.",
+  "changed": [
+   "The author squashed four commits into two, with no change to the code size or files.",
+   "The author argued that the change has no visible UI difference, so precise before/after screenshots are hard to make, and offered a screen recording instead."
+  ],
+  "still_missing": [
+   "Precise before/after screenshots, as laurynmm asked; none were updated.",
+   "Commit messages that follow Zulip's commit style; they still read \"fix for issue 17419\" and \"added test case for issue 17418\", with no area prefix, a wrong issue number, and no issue reference (zulipbot flagged this).",
+   "Proof that the PR template's self-review checklist was restored; the description still doesn't clearly match the template."
+  ],
+  "reply_ask": "Say that the screenshots are still required and must be precise, with nothing differing except the effect of the change, and that the commit messages must follow the commit style guidelines.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the precise before/after screenshots laurynmm asked for are still not provided, and that the author argued against them instead.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the commit messages still don't follow Zulip's commit style (e.g. \"fix for issue 17419\", \"added test case for issue 17418\" with the wrong issue number), even though the commits were squashed.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the only code activity was a squash, with no change to the diff (+19/-3 in the same 2 files).",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Recommends keeping \"not ready\" (or closing) rather than handing the PR off for maintainer review.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that a similar earlier PR on this issue (#38363) was closed for presentation problems, and that other contributors (jlnsmith2001's CodeDay group, now the issue's assignee) are working on the same issue.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author pushed back on the screenshot request and squashed the commits without changing the approach or files, so a short note with a reply is right and a new card is not needed.\",\n \"triager_action\": \"close\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm first pointed out that the screenshots were still imprecise and the commit messages didn't follow the style guide, then closed the PR unmerged on 2026-07-24 when the screenshots still didn't meet the guidelines.\",\n \"changed\": [\"The author squashed four commits into two, with no change to the code size or files.\", \"The author argued that the change has no visible UI difference, so precise before/after screenshots are hard to make, and offered a screen recording instead.\"],\n \"still_missing\": [\"Precise before/after screenshots, as laurynmm asked; none were updated.\", \"Commit messages that follow Zulip's commit style; they still read \\\"fix for issue 17419\\\" and \\\"added test case for issue 17418\\\", with no area prefix, a wrong issue number, and no issue reference (zulipbot flagged this).\", \"Proof that the PR template's self-review checklist was restored; the description still doesn't clearly match the template.\"],\n \"reply_ask\": \"Say that the screenshots are still required and must be precise, with nothing differing except the effect of the change, and that the commit messages must follow the commit style guidelines.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the precise before/after screenshots laurynmm asked for are still not provided, and that the author argued against them instead.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the commit messages still don't follow Zulip's commit style (e.g. \\\"fix for issue 17419\\\", \\\"added test case for issue 17418\\\" with the wrong issue number), even though the commits were squashed.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the only code activity was a squash, with no change to the diff (+19/-3 in the same 2 files).\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Recommends keeping \\\"not ready\\\" (or closing) rather than handing the PR off for maintainer review.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes that a similar earlier PR on this issue (#38363) was closed for presentation problems, and that other contributors (jlnsmith2001's CodeDay group, now the issue's assignee) are working on the same issue.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.28392
+}

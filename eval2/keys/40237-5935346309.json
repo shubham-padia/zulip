@@ -1,0 +1,57 @@
+{
+ "case": "40237-5935346309",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the screenshot request with a comment and pushed no code, so the first card is still accurate and a short note is enough.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied on 2026-10-06 with an earlier #design discussion and its proposed design (show status emoji as images in the organization's default emoji set, never as text), so the PR needed more work before review.",
+  "changed": [
+   "The author posted before/after screenshots of saving a status emoji with the plain-text theme, showing the stuck modal before and the saved status after.",
+   "There was no new push; the code is the same as when the feedback was given."
+  ],
+  "still_missing": [
+   "The screenshots show the saved status as `:grinning:` text in the buddy list, and the status modal also shows `:name:`, which the #design discussion flagged as inconsistent or unwanted.",
+   "How status emoji should look with the plain-text theme is still undecided, and this PR leaves that unchanged, so it doesn't settle what #34985 needs.",
+   "The fix overlaps with the still-open #37967, which takes the same approach to the same bug."
+  ],
+  "reply_ask": "Thank the author for the screenshots, and say the PR can't move to review until it follows the design for status emoji with the plain-text theme, since showing `:grinning:` as text is the result the design discussion wanted to avoid.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author added the requested before/after screenshots but pushed no code changes.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Points out that the screenshots show the status emoji as `:grinning:` text in the buddy list, which conflicts with the #design discussion about status emoji with the plain-text theme.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping \"not ready\" and asking the author to follow the design for status emoji display, rather than handing the PR off for review.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Mentions that the open PR #37967 fixes the same bug with a similar approach.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Says the intended design is to show status emoji as images in the organization's default emoji set (or the default for new organizations if the organization's default is plain text), not as text.",
+    "decisive": false,
+    "at_cutoff": false
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the screenshot request with a comment and pushed no code, so the first card is still accurate and a short note is enough.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied on 2026-10-06 with an earlier #design discussion and its proposed design (show status emoji as images in the organization's default emoji set, never as text), so the PR needed more work before review.\",\n \"changed\": [\n  \"The author posted before/after screenshots of saving a status emoji with the plain-text theme, showing the stuck modal before and the saved status after.\",\n  \"There was no new push; the code is the same as when the feedback was given.\"\n ],\n \"still_missing\": [\n  \"The screenshots show the saved status as `:grinning:` text in the buddy list, and the status modal also shows `:name:`, which the #design discussion flagged as inconsistent or unwanted.\",\n  \"How status emoji should look with the plain-text theme is still undecided, and this PR leaves that unchanged, so it doesn't settle what #34985 needs.\",\n  \"The fix overlaps with the still-open #37967, which takes the same approach to the same bug.\"\n ],\n \"reply_ask\": \"Thank the author for the screenshots, and say the PR can't move to review until it follows the design for status emoji with the plain-text theme, since showing `:grinning:` as text is the result the design discussion wanted to avoid.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author added the requested before/after screenshots but pushed no code changes.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Points out that the screenshots show the status emoji as `:grinning:` text in the buddy list, which conflicts with the #design discussion about status emoji with the plain-text theme.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping \\\"not ready\\\" and asking the author to follow the design for status emoji display, rather than handing the PR off for review.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Mentions that the open PR #37967 fixes the same bug with a similar approach.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Says the intended design is to show status emoji as images in the organization's default emoji set (or the default for new organizations if the organization's default is plain text), not as text.\", \"decisive\": false, \"at_cutoff\": false}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.215696
+}

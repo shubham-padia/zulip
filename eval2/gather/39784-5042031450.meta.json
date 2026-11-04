@@ -1,0 +1,28 @@
+{
+ "case": "39784-5042031450",
+ "cutoff": "2026-07-22T05:00:24Z",
+ "pushes": [
+  [
+   "2026-07-28T06:54:17Z",
+   "1403207255",
+   "ci run"
+  ]
+ ],
+ "head_now": "1403207255f9c8125776eb86ab1c7b77c67b1ce8",
+ "body_edits": 25,
+ "body_edits_after_cutoff": 13,
+ "title_now": "markdown: Fix channel links pasted into hyperlink URL placeholder.",
+ "title_at_cutoff": "markdown: Fix channel links pasted into hyperlink URL placeholder.",
+ "labels_now": [
+  "size: XL",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": null,
+ "pr_shape": "cutoff head unknown; current shape",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-07-21T17:03:37Z",
+ "head_at_feedback": null,
+ "comments_total": 7,
+ "comments_at_cutoff": 2
+}

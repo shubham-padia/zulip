@@ -1,0 +1,58 @@
+{
+ "case": "40240-6313490306",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author is asking for review of an unassigned, not-ready PR with no new code, and a triager has to decide what happens next; the PR has not changed enough to need a new card.",
+  "triager_action": "close",
+  "action_source": "inferred",
+  "action_why": "Maintainers did nothing; a careful triager would close this as a later duplicate of the open PR #39758, which uses the same approach on the same files and which laurynmm already handed to shubham-padia, especially since the author's reply adds nothing that answers the AI-policy concern.",
+  "changed": [
+   "The author apologized and posted two screenshots in a comment, apparently showing the test notification, which the description's empty screenshot section had lacked."
+  ],
+  "still_missing": [
+   "No new commits were pushed after laurynmm's AI-policy feedback, so nothing in the PR changed in response to it.",
+   "The comment does not show that the author reviewed or understood the AI-generated content, or followed the AI use policy.",
+   "The unit test updates the author promised in the claim comment are absent; no web/tests files are touched.",
+   "The change to web/src/ui_init.js is not explained in the description.",
+   "The PR duplicates the earlier open PR #39758, which has the same approach and files and is already with a maintainer."
+  ],
+  "reply_ask": "Thank the author, explain that the PR is being closed because the earlier open PR #39758 already implements this and is under maintainer review, and point them to the AI use policy and to other unclaimed issues.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says no new code was pushed since laurynmm's feedback and that the author's comment only adds an apology and screenshots.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Points out that the earlier open PR #39758 by tazmeenahhmed implements the same approach in the same files (navbar_alerts.ts, settings_notifications.ts) and that laurynmm asked shubham-padia to look at it.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that the AI-policy concern is not answered: the screenshots show the feature working but not that the author reviewed the AI-generated content.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the unit tests promised in the claim comment are missing and that the ui_init.js change is unexplained.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Recommends closing the PR (not handing it to a reviewer) in favor of #39758.",
+    "decisive": true,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author is asking for review of an unassigned, not-ready PR with no new code, and a triager has to decide what happens next; the PR has not changed enough to need a new card.\",\n \"triager_action\": \"close\",\n \"action_source\": \"inferred\",\n \"action_why\": \"Maintainers did nothing; a careful triager would close this as a later duplicate of the open PR #39758, which uses the same approach on the same files and which laurynmm already handed to shubham-padia, especially since the author's reply adds nothing that answers the AI-policy concern.\",\n \"changed\": [\"The author apologized and posted two screenshots in a comment, apparently showing the test notification, which the description's empty screenshot section had lacked.\"],\n \"still_missing\": [\"No new commits were pushed after laurynmm's AI-policy feedback, so nothing in the PR changed in response to it.\", \"The comment does not show that the author reviewed or understood the AI-generated content, or followed the AI use policy.\", \"The unit test updates the author promised in the claim comment are absent; no web/tests files are touched.\", \"The change to web/src/ui_init.js is not explained in the description.\", \"The PR duplicates the earlier open PR #39758, which has the same approach and files and is already with a maintainer.\"],\n \"reply_ask\": \"Thank the author, explain that the PR is being closed because the earlier open PR #39758 already implements this and is under maintainer review, and point them to the AI use policy and to other unclaimed issues.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says no new code was pushed since laurynmm's feedback and that the author's comment only adds an apology and screenshots.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Points out that the earlier open PR #39758 by tazmeenahhmed implements the same approach in the same files (navbar_alerts.ts, settings_notifications.ts) and that laurynmm asked shubham-padia to look at it.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that the AI-policy concern is not answered: the screenshots show the feature working but not that the author reviewed the AI-generated content.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the unit tests promised in the claim comment are missing and that the ui_init.js change is unexplained.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Recommends closing the PR (not handing it to a reviewer) in favor of #39758.\", \"decisive\": true, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.18016
+}

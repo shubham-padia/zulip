@@ -1,0 +1,51 @@
+{
+ "case": "39722-4961693879",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author says both rounds of feedback are addressed and pushed once, but no maintainer is assigned. A short note is enough to tell triagers what changed and what still needs checking, and the PR has not changed enough to need a new card.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "Within 14 days whilstsomebody posted a changes-requested review with inline comments. It also asked whether the PR fixes all three points of #16094, so the PR stayed \"not ready\" with more work requested.",
+  "changed": [
+   "The author force-pushed once after the feedback; the size (+27/-31), the files and the three commit titles stayed the same, so any change was likely only in the commit message bodies.",
+   "The author says the requested commit-message fixes and the precise before/after screenshots are done."
+  ],
+  "still_missing": [
+   "The cutoff facts can't confirm that the screenshots now meet the precise before/after guidelines; the German 12-hour and 24-hour \"before\" rows use the same image, and several images still have the generic alt text \"image\".",
+   "No one has reviewed the code yet; whilstsomebody said they would review it once the commits were fixed.",
+   "The PR fixes only part of #16094: Plotly x-axis labels are left untranslated, and the description doesn't say which checklist items of the issue are covered."
+  ],
+  "reply_ask": "Thank the author and say the next step is whilstsomebody's code review; ask them to make sure each before/after pair is precise and distinct (e.g., the German 12h and 24h \"before\" images are identical) and to state which parts of #16094 this PR fixes.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Recommends keeping \"not ready\" for now, with whilstsomebody's code review as the next step, rather than handing off to maintainer review.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the author pushed only once, with no change in size, files or commit titles, so the claimed fixes to commit messages and screenshots still need to be checked.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that the PR fixes only part of #16094 (Plotly x-axis labels are left out on purpose, following chat advice from shubham-padia and laurynmm).",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Points out that the German 12-hour and 24-hour \"before\" screenshots are the same image, so the screenshots may still not fully meet laurynmm's request.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author says both rounds of feedback are addressed and pushed once, but no maintainer is assigned. A short note is enough to tell triagers what changed and what still needs checking, and the PR has not changed enough to need a new card.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"Within 14 days whilstsomebody posted a changes-requested review with inline comments. It also asked whether the PR fixes all three points of #16094, so the PR stayed \\\"not ready\\\" with more work requested.\",\n \"changed\": [\n  \"The author force-pushed once after the feedback; the size (+27/-31), the files and the three commit titles stayed the same, so any change was likely only in the commit message bodies.\",\n  \"The author says the requested commit-message fixes and the precise before/after screenshots are done.\"\n ],\n \"still_missing\": [\n  \"The cutoff facts can't confirm that the screenshots now meet the precise before/after guidelines; the German 12-hour and 24-hour \\\"before\\\" rows use the same image, and several images still have the generic alt text \\\"image\\\".\",\n  \"No one has reviewed the code yet; whilstsomebody said they would review it once the commits were fixed.\",\n  \"The PR fixes only part of #16094: Plotly x-axis labels are left untranslated, and the description doesn't say which checklist items of the issue are covered.\"\n ],\n \"reply_ask\": \"Thank the author and say the next step is whilstsomebody's code review; ask them to make sure each before/after pair is precise and distinct (e.g., the German 12h and 24h \\\"before\\\" images are identical) and to state which parts of #16094 this PR fixes.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Recommends keeping \\\"not ready\\\" for now, with whilstsomebody's code review as the next step, rather than handing off to maintainer review.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the author pushed only once, with no change in size, files or commit titles, so the claimed fixes to commit messages and screenshots still need to be checked.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that the PR fixes only part of #16094 (Plotly x-axis labels are left out on purpose, following chat advice from shubham-padia and laurynmm).\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Points out that the German 12-hour and 24-hour \\\"before\\\" screenshots are the same image, so the screenshots may still not fully meet laurynmm's request.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.189724
+}

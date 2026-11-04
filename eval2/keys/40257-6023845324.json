@@ -1,0 +1,57 @@
+{
+ "case": "40257-6023845324",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author did the main thing laurynmm asked, adding the error banner alongside the blueslip error with one push and a new screenshot, so a maintainer needs a short note to act, but the approach and the issue are the same, so no new card is needed.",
+  "triager_action": "hand_off",
+  "action_source": "inferred",
+  "action_why": "The banner was the substantive ask, it is now in the code with CI passing and an updated after-screenshot, so a careful triager would remove \"not ready\", add \"maintainer review\" and assign laurynmm, who already knows the PR.",
+  "changed": [
+   "Added a user-facing error banner for non-JSON 5xx responses, like the network-error banner, by changing web/src/popup_banners.ts alongside the blueslip error.",
+   "Replaced the after screenshot in the description with a new one dated 2026-10-07.",
+   "Force-pushed one update, growing the PR from +42/-0 in 2 files to +72/-0 in 3 files, with CI still passing."
+  ],
+  "still_missing": [
+   "The commit message and PR title still only say \"Log non-JSON 5xx responses\" and don't mention the new banner.",
+   "The author's comment doesn't say whether the swapped before/after screenshot labels were fixed, and the description doesn't explain what each screenshot shows."
+  ],
+  "reply_ask": "Thank the author for adding the banner, say the PR is going to maintainer review, and ask them to update the commit message and title to mention the banner and to confirm the before/after labels are now correct.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the author answered laurynmm's main ask by adding an error banner like the network-error one (new changes in web/src/popup_banners.ts) alongside the blueslip error, with CI passing.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Gives the next step as removing \"not ready\", adding \"maintainer review\", and assigning a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Names laurynmm as the reviewer, since she gave the feedback on this PR.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the commit message and title still describe only logging and should mention the new user-facing banner.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes the PR is client-side only and only partially addresses #6296, so the issue should stay open for the server-side part.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author did the main thing laurynmm asked, adding the error banner alongside the blueslip error with one push and a new screenshot, so a maintainer needs a short note to act, but the approach and the issue are the same, so no new card is needed.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"inferred\",\n \"action_why\": \"The banner was the substantive ask, it is now in the code with CI passing and an updated after-screenshot, so a careful triager would remove \\\"not ready\\\", add \\\"maintainer review\\\" and assign laurynmm, who already knows the PR.\",\n \"changed\": [\n  \"Added a user-facing error banner for non-JSON 5xx responses, like the network-error banner, by changing web/src/popup_banners.ts alongside the blueslip error.\",\n  \"Replaced the after screenshot in the description with a new one dated 2026-10-07.\",\n  \"Force-pushed one update, growing the PR from +42/-0 in 2 files to +72/-0 in 3 files, with CI still passing.\"\n ],\n \"still_missing\": [\n  \"The commit message and PR title still only say \\\"Log non-JSON 5xx responses\\\" and don't mention the new banner.\",\n  \"The author's comment doesn't say whether the swapped before/after screenshot labels were fixed, and the description doesn't explain what each screenshot shows.\"\n ],\n \"reply_ask\": \"Thank the author for adding the banner, say the PR is going to maintainer review, and ask them to update the commit message and title to mention the banner and to confirm the before/after labels are now correct.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the author answered laurynmm's main ask by adding an error banner like the network-error one (new changes in web/src/popup_banners.ts) alongside the blueslip error, with CI passing.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Gives the next step as removing \\\"not ready\\\", adding \\\"maintainer review\\\", and assigning a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Names laurynmm as the reviewer, since she gave the feedback on this PR.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the commit message and title still describe only logging and should mention the new user-facing banner.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes the PR is client-side only and only partially addresses #6296, so the issue should stay open for the server-side part.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.14999200000000001
+}

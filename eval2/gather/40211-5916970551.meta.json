@@ -1,0 +1,73 @@
+{
+ "case": "40211-5916970551",
+ "cutoff": "2026-09-30T18:09:29Z",
+ "pushes": [
+  [
+   "2026-09-26T16:32:39Z",
+   "8b96970e02",
+   "ci run"
+  ],
+  [
+   "2026-09-26T17:16:46Z",
+   "e464c86633",
+   "ci run"
+  ],
+  [
+   "2026-09-26T18:17:43Z",
+   "d9ca58bdb6",
+   "ci run"
+  ],
+  [
+   "2026-09-27T10:07:49Z",
+   "52b3044aa9",
+   "ci run"
+  ],
+  [
+   "2026-09-27T11:21:58Z",
+   "427cdde1ec",
+   "ci run"
+  ],
+  [
+   "2026-09-27T18:57:02Z",
+   "a844ebab88",
+   "ci run"
+  ],
+  [
+   "2026-09-30T17:56:05Z",
+   "bfd0bfa2bb",
+   "force push"
+  ],
+  [
+   "2026-09-30T17:56:10Z",
+   "bfd0bfa2bb",
+   "ci run"
+  ],
+  [
+   "2026-09-30T18:04:30Z",
+   "428a755b79",
+   "force push"
+  ],
+  [
+   "2026-09-30T18:04:36Z",
+   "428a755b79",
+   "ci run"
+  ]
+ ],
+ "head_now": "428a755b79d25f65ccbd72e5d5601edd94ce1bf4",
+ "body_edits": 3,
+ "body_edits_after_cutoff": 0,
+ "title_now": "scheduled messages: Preserve delivered state on notification failure.",
+ "title_at_cutoff": "scheduled messages: Preserve delivered state on notification failure.",
+ "labels_now": [
+  "size: XL",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "428a755b79d25f65ccbd72e5d5601edd94ce1bf4",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-09-30T13:19:21Z",
+ "head_at_feedback": "a844ebab88f98d22ff4e75836aeb51764be411e7",
+ "comments_total": 3,
+ "comments_at_cutoff": 2
+}

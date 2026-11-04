@@ -1,0 +1,59 @@
+{
+ "case": "39728-5012922258",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author asked for another look after one small push, and no maintainer is assigned, so the triager needs a short note on what changed and what is still missing; the approach and issue are the same, so a new card is not warranted.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied on 2026-07-20 asking the author to fix the commit history, use the template's self-review checklist, and provide precise before/after screenshots; she closed the PR on 2026-07-24 only after several more rounds of unmet asks.",
+  "changed": [
+   "Added one commit, 'added test case for issue 17418', which adds a regression test case to zerver/tests/fixtures/markdown_test_cases.json.",
+   "Commented that they reread the reviewable-PRs guide and checked the PR against it with an LLM, and asked what is still missing."
+  ],
+  "still_missing": [
+   "The commits still don't follow commit discipline: there are fixup commits ('fixed linting error to pass CI'), no 'area: Summary.' style messages, and the new commit names the wrong issue (17418).",
+   "The self-review checklist in the description is a custom one, not the checklist from the PR template.",
+   "The before/after screenshots were not redone after the feedback, so they have not been checked against the precise before/after screenshot guidelines.",
+   "The description still has typos and unclear wording (e.g. 'to override a methon'), and the author's question about where the test should go is unanswered.",
+   "CI status is unknown."
+  ],
+  "reply_ask": "Tell the author specifically what is still wrong: squash the fixup commits and rewrite the messages per the commit discipline guide (fixing the wrong issue number), replace the custom checklist with the PR template's self-review checklist, and make sure the before/after screenshots follow the precise-screenshot guidelines.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR is not ready for hand-off and recommends more feedback, keeping 'not ready'.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the commit history still doesn't follow commit discipline (fixup/lint commits, non-standard messages, wrong issue number 17418 in the new commit).",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the self-review checklist in the description is not the one from the PR template.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the only code change since the feedback is an added regression test in markdown_test_cases.json.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Flags that the before/after screenshots should be checked against the precise before/after screenshot guidelines.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "```json\n{\"decision\": \"NOTE\",\n \"decision_why\": \"The author asked for another look after one small push, and no maintainer is assigned, so the triager needs a short note on what changed and what is still missing; the approach and issue are the same, so a new card is not warranted.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied on 2026-07-20 asking the author to fix the commit history, use the template's self-review checklist, and provide precise before/after screenshots; she closed the PR on 2026-07-24 only after several more rounds of unmet asks.\",\n \"changed\": [\n  \"Added one commit, 'added test case for issue 17418', which adds a regression test case to zerver/tests/fixtures/markdown_test_cases.json.\",\n  \"Commented that they reread the reviewable-PRs guide and checked the PR against it with an LLM, and asked what is still missing.\"\n ],\n \"still_missing\": [\n  \"The commits still don't follow commit discipline: there are fixup commits ('fixed linting error to pass CI'), no 'area: Summary.' style messages, and the new commit names the wrong issue (17418).\",\n  \"The self-review checklist in the description is a custom one, not the checklist from the PR template.\",\n  \"The before/after screenshots were not redone after the feedback, so they have not been checked against the precise before/after screenshot guidelines.\",\n  \"The description still has typos and unclear wording (e.g. 'to override a methon'), and the author's question about where the test should go is unanswered.\",\n  \"CI status is unknown.\"\n ],\n \"reply_ask\": \"Tell the author specifically what is still wrong: squash the fixup commits and rewrite the messages per the commit discipline guide (fixing the wrong issue number), replace the custom checklist with the PR template's self-review checklist, and make sure the before/after screenshots follow the precise-screenshot guidelines.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR is not ready for hand-off and recommends more feedback, keeping 'not ready'.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the commit history still doesn't follow commit discipline (fixup/lint commits, non-standard messages, wrong issue number 17418 in the new commit).\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the self-review checklist in the description is not the one from the PR template.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the only code change since the feedback is an added regression test in markdown_test_cases.json.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Flags that the before/after screenshots should be checked against the precise before/after screenshot guidelines.\", \"decisive\": false, \"at_cutoff\": true}\n ]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.277328
+}

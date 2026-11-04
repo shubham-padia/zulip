@@ -1,0 +1,59 @@
+{
+ "case": "39784-5100999626",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the maintainer's feedback with the same approach and the same files, so a short note under the existing card is the right size, and no maintainer is assigned who would otherwise handle it.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied that the screenshots still did not meet the guidelines and asked for concise communication instead of long AI-generated comments, which is a request for more work.",
+  "changed": [
+   "The description now has a \"Relationship to prior work\" section comparing this PR with the completion candidate #33086.",
+   "The section explains the difference: one shared helper instead of reworked regexes, framed as answering timabbott's complexity concern.",
+   "The author says the whitespace-after-`](` case is now handled and tested, but the code change since the feedback can't be verified.",
+   "The description flags the regex-alignment question from #33086 as out of scope and explains why `marked.cjs` was left alone."
+  ],
+  "still_missing": [
+   "The before/after screenshots are still separate lists of images rather than precise, paired before/after comparisons as the guidelines require.",
+   "The explanatory frontend comment that maintainers asked for on #33086 is still left out.",
+   "The image-syntax limitation the author says they flagged doesn't appear in the visible description."
+  ],
+  "reply_ask": "Thank the author for discussing #33086, and ask them to re-present the screenshots as precise, paired before/after comparisons following the presenting-visual-changes guidelines before review can continue.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the before/after screenshots are still not presented as paired, comparable before/after images per the guidelines, so laurynmm's second ask is not done.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping \"not ready\" and giving more feedback rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says the description now discusses the completion candidate PR #33086, so the first ask is addressed.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that code changes since the feedback couldn't be determined, so the claimed whitespace fix and test are unverified.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Mentions that the PR leaves out the frontend `marked.cjs` comment that maintainers asked for on #33086.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the maintainer's feedback with the same approach and the same files, so a short note under the existing card is the right size, and no maintainer is assigned who would otherwise handle it.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied that the screenshots still did not meet the guidelines and asked for concise communication instead of long AI-generated comments, which is a request for more work.\",\n \"changed\": [\n  \"The description now has a \\\"Relationship to prior work\\\" section comparing this PR with the completion candidate #33086.\",\n  \"The section explains the difference: one shared helper instead of reworked regexes, framed as answering timabbott's complexity concern.\",\n  \"The author says the whitespace-after-`](` case is now handled and tested, but the code change since the feedback can't be verified.\",\n  \"The description flags the regex-alignment question from #33086 as out of scope and explains why `marked.cjs` was left alone.\"\n ],\n \"still_missing\": [\n  \"The before/after screenshots are still separate lists of images rather than precise, paired before/after comparisons as the guidelines require.\",\n  \"The explanatory frontend comment that maintainers asked for on #33086 is still left out.\",\n  \"The image-syntax limitation the author says they flagged doesn't appear in the visible description.\"\n ],\n \"reply_ask\": \"Thank the author for discussing #33086, and ask them to re-present the screenshots as precise, paired before/after comparisons following the presenting-visual-changes guidelines before review can continue.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the before/after screenshots are still not presented as paired, comparable before/after images per the guidelines, so laurynmm's second ask is not done.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends keeping \\\"not ready\\\" and giving more feedback rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says the description now discusses the completion candidate PR #33086, so the first ask is addressed.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that code changes since the feedback couldn't be determined, so the claimed whitespace fix and test are unverified.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Mentions that the PR leaves out the frontend `marked.cjs` comment that maintainers asked for on #33086.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.254024
+}
