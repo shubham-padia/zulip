@@ -1,0 +1,65 @@
+{
+ "case": "39728-5012922258",
+ "repeat": 1,
+ "map": {
+  "X": [
+   "eval2:v3-r1"
+  ],
+  "V": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps 'not ready' and sends the PR back to laurynmm for more feedback matches the key.",
+    "accuracy_why": "It covers the new test commit and the commit-discipline problems in detail, including the lint fixup, the 'Fixes' commit, the 17418 issue number and the 'area: Summary.' format, plus the custom checklist, but it never mentions checking the screenshots against the precise before/after guidelines.",
+    "reply_why": "The reply is specific and pasteable on commits and the checklist, but it leaves out the screenshot-guidelines part of the ask."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps 'not ready' and leaves further feedback to laurynmm matches the key.",
+    "accuracy_why": "It correctly names the separate fixup commits, the wrong issue 17418 and the custom checklist, but it only touches screenshots by suggesting they move into the description, not that they be checked against the precise-screenshot guidelines.",
+    "reply_why": "The squash and checklist asks are right and linked, but the screenshot suggestion misses the actual guideline concern, and the reply doesn't mention the commit message format explicitly."
+   }
+  },
+  "ranking": [
+   "X",
+   "V"
+  ]
+ },
+ "text": "{\"outputs\": {\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps 'not ready' and sends the PR back to laurynmm for more feedback matches the key.\",\n   \"accuracy_why\": \"It covers the new test commit and the commit-discipline problems in detail, including the lint fixup, the 'Fixes' commit, the 17418 issue number and the 'area: Summary.' format, plus the custom checklist, but it never mentions checking the screenshots against the precise before/after guidelines.\",\n   \"reply_why\": \"The reply is specific and pasteable on commits and the checklist, but it leaves out the screenshot-guidelines part of the ask.\"},\n  \"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that keeps 'not ready' and leaves further feedback to laurynmm matches the key.\",\n   \"accuracy_why\": \"It correctly names the separate fixup commits, the wrong issue 17418 and the custom checklist, but it only touches screenshots by suggesting they move into the description, not that they be checked against the precise-screenshot guidelines.\",\n   \"reply_why\": \"The squash and checklist asks are right and linked, but the screenshot suggestion misses the actual guideline concern, and the reply doesn't mention the commit message format explicitly.\"}},\n \"ranking\": [\"X\", \"V\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.299972
+}

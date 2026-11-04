@@ -1,0 +1,65 @@
+{
+ "case": "39883-5198039741",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "eval2:v3-r1"
+  ],
+  "D": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key's kind and action.",
+    "accuracy_why": "It covers the one-line pushes, the tests-only comment, the unchecked AI-policy box and #39598, but it says 'before/after examples' where the key wants dev-environment screenshots, and it omits the unchecked visual-appearance box.",
+    "reply_why": "The reply asks for the checklist, before/after evidence and how the PR relates to #39598, but 'examples' should say dev-environment screenshots of the rendered messages, so a word or two needs changing."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key's kind and action.",
+    "accuracy_why": "It rightly notes that the fixture tests were already there, but it misses the decisive gap: there are no before/after screenshots of the rendered messages.",
+    "reply_why": "The reply never asks for before/after screenshots, which is the core of the key's reply_ask, so it would need a substantial rewrite."
+   }
+  },
+  "ranking": [
+   "K",
+   "D"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key's kind and action.\",\n   \"accuracy_why\": \"It covers the one-line pushes, the tests-only comment, the unchecked AI-policy box and #39598, but it says 'before/after examples' where the key wants dev-environment screenshots, and it omits the unchecked visual-appearance box.\",\n   \"reply_why\": \"The reply asks for the checklist, before/after evidence and how the PR relates to #39598, but 'examples' should say dev-environment screenshots of the rendered messages, so a word or two needs changing.\"},\n  \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 4,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key's kind and action.\",\n   \"accuracy_why\": \"It rightly notes that the fixture tests were already there, but it misses the decisive gap: there are no before/after screenshots of the rendered messages.\",\n   \"reply_why\": \"The reply never asks for before/after screenshots, which is the core of the key's reply_ask, so it would need a substantial rewrite.\"}},\n \"ranking\": [\"K\", \"D\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.213
+}

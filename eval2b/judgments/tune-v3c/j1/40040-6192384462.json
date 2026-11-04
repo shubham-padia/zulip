@@ -1,0 +1,67 @@
+{
+ "case": "40040-6192384462",
+ "repeat": 1,
+ "map": {
+  "Z": [
+   "eval2:v3-r1"
+  ],
+  "M": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It hands the PR to sahil839 for review, but the key's action is close.",
+    "accuracy_why": "It gets the completed asks and Lauryn's unanswered question right, but it never says no maintainer has agreed the problem is worth fixing or that the feature is off in the community.",
+    "reply_why": "It asks sahil839 to review a PR that should not go forward and tacks Lauryn's question on as an afterthought, which works against its own 'ready' verdict."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' and holds off on a reviewer, which is sound, but it asks for more feedback where the key's action is close.",
+    "accuracy_why": "It covers the completed asks and the unanswered CZO question, but it only hints that the change may not be wanted and leaves out that the feature isn't turned on in the community.",
+    "reply_why": "It rightly asks the author to answer Lauryn's question with a link to the thread, but it doesn't ask where open_graph_description_cache_key is actually used, and it invites the author to keep going on a PR that should close."
+   }
+  },
+  "ranking": [
+   "M",
+   "Z"
+  ]
+ },
+ "text": "{\"outputs\": {\"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 1, \"accuracy_score\": 5, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It hands the PR to sahil839 for review, but the key's action is close.\",\n   \"accuracy_why\": \"It gets the completed asks and Lauryn's unanswered question right, but it never says no maintainer has agreed the problem is worth fixing or that the feature is off in the community.\",\n   \"reply_why\": \"It asks sahil839 to review a PR that should not go forward and tacks Lauryn's question on as an afterthought, which works against its own 'ready' verdict.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 6,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps 'not ready' and holds off on a reviewer, which is sound, but it asks for more feedback where the key's action is close.\",\n   \"accuracy_why\": \"It covers the completed asks and the unanswered CZO question, but it only hints that the change may not be wanted and leaves out that the feature isn't turned on in the community.\",\n   \"reply_why\": \"It rightly asks the author to answer Lauryn's question with a link to the thread, but it doesn't ask where open_graph_description_cache_key is actually used, and it invites the author to keep going on a PR that should close.\"}},\n \"ranking\": [\"M\", \"Z\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.113008
+}

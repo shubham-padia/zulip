@@ -1,0 +1,67 @@
+{
+ "case": "39731-5006493904",
+ "repeat": 1,
+ "map": {
+  "A": [
+   "eval2:v3-r1"
+  ],
+  "C": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says \"Nothing is missing\", but the precise before/after screenshots in both themes that the issue asks for are still absent."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key, though it routes the review to laurynmm rather than karlstolley.",
+    "accuracy_why": "It reports the changes correctly but wrongly says nothing is missing, so it drops the screenshot gap and the reviewer is wrong.",
+    "reply_why": "It thanks the author and then pings the feedback-giver rather than the CSS maintainer, so it runs past a single ping line and targets the wrong reviewer."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Calls the before/after screenshots optional, but the issue requires them for cleanup PRs like this one."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key, but it assigns laurynmm instead of karlstolley.",
+    "accuracy_why": "It covers the changes and flags the missing screenshots, but wrongly calls them optional and misses the right reviewer.",
+    "reply_why": "It is a single reviewer ping with a useful summary, but it pings laurynmm instead of the CSS maintainer."
+   }
+  },
+  "ranking": [
+   "C",
+   "A"
+  ]
+ },
+ "text": "{\"outputs\": {\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\"}, \"wrong_facts\": [\"Says \\\"Nothing is missing\\\", but the precise before/after screenshots in both themes that the issue asks for are still absent.\"], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 8, \"decision_why\": \"NOTE with a hand-off matches the key, though it routes the review to laurynmm rather than karlstolley.\", \"accuracy_why\": \"It reports the changes correctly but wrongly says nothing is missing, so it drops the screenshot gap and the reviewer is wrong.\", \"reply_why\": \"It thanks the author and then pings the feedback-giver rather than the CSS maintainer, so it runs past a single ping line and targets the wrong reviewer.\"}, \"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"}, \"wrong_facts\": [\"Calls the before/after screenshots optional, but the issue requires them for cleanup PRs like this one.\"], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 8, \"decision_why\": \"NOTE with a hand-off matches the key, but it assigns laurynmm instead of karlstolley.\", \"accuracy_why\": \"It covers the changes and flags the missing screenshots, but wrongly calls them optional and misses the right reviewer.\", \"reply_why\": \"It is a single reviewer ping with a useful summary, but it pings laurynmm instead of the CSS maintainer.\"}}, \"ranking\": [\"C\", \"A\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.25106
+}

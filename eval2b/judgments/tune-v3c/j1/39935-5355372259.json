@@ -1,0 +1,65 @@
+{
+ "case": "39935-5355372259",
+ "repeat": 1,
+ "map": {
+  "J": [
+   "v3c-r1"
+  ],
+  "U": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the description still reads as before, but the author says they fixed up the description, which now links the CZO thread and lists the changes."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key's NOTE and more_feedback.",
+    "accuracy_why": "All four must-haves are present, including the CI-retry commits, the missing push and Daniel K's unblock, but it wrongly says the description is unchanged when the author had already revised it.",
+    "reply_why": "It thanks the author for the design check and asks for the description fix and the squashed CI commits with both guide links, though it doesn't ask for a proper message for the feature commit."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and holds off on \"maintainer review\" and a reviewer, which matches the key's NOTE and more_feedback.",
+    "accuracy_why": "All must-haves are present with no false claims, but it omits that the author had already reworked the description, and its headline overstates that the feedback hasn't been addressed.",
+    "reply_why": "It is a concise, pasteable ask to fix the Fixes line and drop the CI commits, with both guide links, though it doesn't address the feature commit's message."
+   }
+  },
+  "ranking": [
+   "U",
+   "J"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says the description still reads as before, but the author says they fixed up the description, which now links the CZO thread and lists the changes.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key's NOTE and more_feedback.\",\n   \"accuracy_why\": \"All four must-haves are present, including the CI-retry commits, the missing push and Daniel K's unblock, but it wrongly says the description is unchanged when the author had already revised it.\",\n   \"reply_why\": \"It thanks the author for the design check and asks for the description fix and the squashed CI commits with both guide links, though it doesn't ask for a proper message for the feature commit.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and holds off on \\\"maintainer review\\\" and a reviewer, which matches the key's NOTE and more_feedback.\",\n   \"accuracy_why\": \"All must-haves are present with no false claims, but it omits that the author had already reworked the description, and its headline overstates that the feedback hasn't been addressed.\",\n   \"reply_why\": \"It is a concise, pasteable ask to fix the Fixes line and drop the CI commits, with both guide links, though it doesn't address the feature commit's message.\"}},\n \"ranking\": [\"U\", \"J\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.187084
+}

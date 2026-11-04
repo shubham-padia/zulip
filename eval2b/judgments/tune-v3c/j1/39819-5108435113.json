@@ -1,0 +1,70 @@
+{
+ "case": "39819-5108435113",
+ "repeat": 1,
+ "map": {
+  "O": [
+   "v3c-r1"
+  ],
+  "E": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the description still has the same list of screenshots and the screenshots were not redone, but the description was edited to label each test with Before and After groups."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" with more feedback matches the key's kind and action.",
+    "accuracy_why": "It correctly says there was no new push, that the screenshots still fall short, and that Test 2 is broken, but it says the description is unchanged when it was relabeled, and it omits the commit summary problem.",
+    "reply_why": "The reply asks for precise screenshots and the Test 2 fix, but it never asks for side-by-side tables with a description per test, so a sentence needs rewriting."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the Test 2 failure the issue's second case, but the issue says Part 2 can no longer be reproduced; Test 2 relates to Part 1's display requirement.",
+     "Implies nothing changed, but the description was edited to label the before/after groups."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and leaves the PR unassigned matches the key's kind and action.",
+    "accuracy_why": "It notes there was no push, that the screenshots are unclear, and that Test 2 fails, but its headline wrongly ties Test 2 to the issue's resolved second case, it misses the description edit, and it omits the commit summary.",
+    "reply_why": "The reply puts a code push ahead of the screenshot fix, repeats the wrong \"case from the issue\" framing, and does not ask for tables with a description per test."
+   }
+  },
+  "ranking": [
+   "O",
+   "E"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says the description still has the same list of screenshots and the screenshots were not redone, but the description was edited to label each test with Before and After groups.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" with more feedback matches the key's kind and action.\",\n   \"accuracy_why\": \"It correctly says there was no new push, that the screenshots still fall short, and that Test 2 is broken, but it says the description is unchanged when it was relabeled, and it omits the commit summary problem.\",\n   \"reply_why\": \"The reply asks for precise screenshots and the Test 2 fix, but it never asks for side-by-side tables with a description per test, so a sentence needs rewriting.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Calls the Test 2 failure the issue's second case, but the issue says Part 2 can no longer be reproduced; Test 2 relates to Part 1's display requirement.\", \"Implies nothing changed, but the description was edited to label the before/after groups.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and leaves the PR unassigned matches the key's kind and action.\",\n   \"accuracy_why\": \"It notes there was no push, that the screenshots are unclear, and that Test 2 fails, but its headline wrongly ties Test 2 to the issue's resolved second case, it misses the description edit, and it omits the commit summary.\",\n   \"reply_why\": \"The reply puts a code push ahead of the screenshot fix, repeats the wrong \\\"case from the issue\\\" framing, and does not ask for tables with a description per test.\"}},\n \"ranking\": [\"O\", \"E\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.228828
+}

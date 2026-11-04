@@ -1,0 +1,70 @@
+{
+ "case": "39590-5004317162",
+ "repeat": 1,
+ "map": {
+  "X": [
+   "eval2:v3-r1"
+  ],
+  "F": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "mentions_input_meta",
+     "next_step_mismatch"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more work matches the key's NOTE and more_feedback.",
+    "accuracy_why": "It covers every cutoff must-have, including the missing checklist, but it says #37647's \"help wanted\" status \"isn't shown in the input\" and hands the next step to apoorvapendse instead of the author.",
+    "reply_why": "The ask for screenshots, testing and the template is right, but it doesn't thank the author for linking #37647 and covers the checklist only as \"the rest of the PR template.\""
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "names_contributor"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more work matches the key's NOTE and more_feedback.",
+    "accuracy_why": "It gets the rebase, the issue link, the missing screenshots and #39267 right, but it never names the self-review checklist and only points to the PR template.",
+    "reply_why": "The ask is mostly right, but it @-names the contributor, skips the checklist and doesn't thank them for linking #37647."
+   }
+  },
+  "ranking": [
+   "X",
+   "F"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"mentions_input_meta\", \"next_step_mismatch\"],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 7,\n   \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more work matches the key's NOTE and more_feedback.\",\n   \"accuracy_why\": \"It covers every cutoff must-have, including the missing checklist, but it says #37647's \\\"help wanted\\\" status \\\"isn't shown in the input\\\" and hands the next step to apoorvapendse instead of the author.\",\n   \"reply_why\": \"The ask for screenshots, testing and the template is right, but it doesn't thank the author for linking #37647 and covers the checklist only as \\\"the rest of the PR template.\\\"\"},\n  \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"names_contributor\"],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more work matches the key's NOTE and more_feedback.\",\n   \"accuracy_why\": \"It gets the rebase, the issue link, the missing screenshots and #39267 right, but it never names the self-review checklist and only points to the PR template.\",\n   \"reply_why\": \"The ask is mostly right, but it @-names the contributor, skips the checklist and doesn't thank them for linking #37647.\"}},\n \"ranking\": [\"X\", \"F\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.109996
+}

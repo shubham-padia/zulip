@@ -1,0 +1,69 @@
+{
+ "case": "39929-5293011728",
+ "repeat": 1,
+ "map": {
+  "O": [
+   "eval2:v3-r1"
+  ],
+  "Q": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 10,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off to maintainer review matches the key exactly.",
+    "accuracy_why": "It correctly reports the squash into one Zulip-style commit with fixes folded in and hedges the CI claim, but it misses the missing API changelog/feature-level entry and adds a filler sentence about issue labels and the template.",
+    "reply_why": "For a hand-off, \"No reply needed.\" is pasteable as is."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 10,
+    "brevity_score": 7,
+    "decision_why": "It is the right kind and action, though the \"Missing\" items it lists sit awkwardly with a ready-for-review verdict.",
+    "accuracy_why": "It confirms the cleanup, but it misses both the API changelog gap and the unverified CI claim, and it substitutes nitpicks about testing notes and screenshots that the author already addressed.",
+    "reply_why": "For a hand-off, \"No reply needed.\" is pasteable as is."
+   }
+  },
+  "ranking": [
+   "O",
+   "Q"
+  ]
+ },
+ "text": "{\"outputs\": {\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 10,\n   \"brevity_score\": 7,\n   \"decision_why\": \"A NOTE recommending hand-off to maintainer review matches the key exactly.\",\n   \"accuracy_why\": \"It correctly reports the squash into one Zulip-style commit with fixes folded in and hedges the CI claim, but it misses the missing API changelog/feature-level entry and adds a filler sentence about issue labels and the template.\",\n   \"reply_why\": \"For a hand-off, \\\"No reply needed.\\\" is pasteable as is.\"},\n  \"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 10,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is the right kind and action, though the \\\"Missing\\\" items it lists sit awkwardly with a ready-for-review verdict.\",\n   \"accuracy_why\": \"It confirms the cleanup, but it misses both the API changelog gap and the unverified CI claim, and it substitutes nitpicks about testing notes and screenshots that the author already addressed.\",\n   \"reply_why\": \"For a hand-off, \\\"No reply needed.\\\" is pasteable as is.\"}},\n \"ranking\": [\"O\", \"Q\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.13832
+}

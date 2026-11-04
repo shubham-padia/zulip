@@ -1,0 +1,65 @@
+{
+ "case": "39836-5142302711",
+ "repeat": 1,
+ "map": {
+  "L": [
+   "v3c-r1"
+  ],
+  "R": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing the PR off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the matched screenshot pair, the lack of a new push and the missing wrapped-pill view, but it assigns laurynmm instead of karlstolley and never tells the reviewer to check the pill and centering states.",
+    "reply_why": "A short thanks plus a ping is pasteable, but it pings laurynmm, who gave the feedback, instead of handing the PR to the CSS reviewer karlstolley."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing the PR off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the same-size screenshot pair and tells the reviewer to check the wrapped-pill and zoomed-out states, but it says only indirectly that no code was pushed and it assigns laurynmm instead of karlstolley.",
+    "reply_why": "The single reviewer-ping line fits a hand-off, though it pings laurynmm instead of karlstolley."
+   }
+  },
+  "ranking": [
+   "R",
+   "L"
+  ]
+ },
+ "text": "{\"outputs\": {\"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that recommends handing the PR off to maintainer review, which matches the key.\", \"accuracy_why\": \"It covers the matched screenshot pair, the lack of a new push and the missing wrapped-pill view, but it assigns laurynmm instead of karlstolley and never tells the reviewer to check the pill and centering states.\", \"reply_why\": \"A short thanks plus a ping is pasteable, but it pings laurynmm, who gave the feedback, instead of handing the PR to the CSS reviewer karlstolley.\"}, \"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that recommends handing the PR off to maintainer review, which matches the key.\", \"accuracy_why\": \"It covers the same-size screenshot pair and tells the reviewer to check the wrapped-pill and zoomed-out states, but it says only indirectly that no code was pushed and it assigns laurynmm instead of karlstolley.\", \"reply_why\": \"The single reviewer-ping line fits a hand-off, though it pings laurynmm instead of karlstolley.\"}}, \"ranking\": [\"R\", \"L\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.238984
+}

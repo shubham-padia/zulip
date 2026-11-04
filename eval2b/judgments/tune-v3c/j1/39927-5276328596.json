@@ -1,0 +1,65 @@
+{
+ "case": "39927-5276328596",
+ "repeat": 1,
+ "map": {
+  "M": [
+   "v3c-r1"
+  ],
+  "Y": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key's kind and the observed action.",
+    "accuracy_why": "It covers the commit rename, the CSS spacing fix and the mismatched screenshot sizes, but omits the missing self-review checklist and the \"Fixes #39794\" overreach.",
+    "reply_why": "A short reviewer ping fits a hand-off, though it doesn't ask the author to fix the screenshot sizes the note itself flags."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to karlstolley matches the key's kind and the observed action.",
+    "accuracy_why": "It catches the \"Fixes #39794\" issue but misses both the mismatched screenshot sizes and the missing checklist, and its \"Nothing blocking\" claim overstates readiness.",
+    "reply_why": "The reviewer ping is fine, but the author ask is about the Fixes line rather than the key's screenshot recapture, so it misses reply_ask."
+   }
+  },
+  "ranking": [
+   "M",
+   "Y"
+  ]
+ },
+ "text": "{\"outputs\": {\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key's kind and the observed action.\",\n   \"accuracy_why\": \"It covers the commit rename, the CSS spacing fix and the mismatched screenshot sizes, but omits the missing self-review checklist and the \\\"Fixes #39794\\\" overreach.\",\n   \"reply_why\": \"A short reviewer ping fits a hand-off, though it doesn't ask the author to fix the screenshot sizes the note itself flags.\"},\n  \"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand-off to karlstolley matches the key's kind and the observed action.\",\n   \"accuracy_why\": \"It catches the \\\"Fixes #39794\\\" issue but misses both the mismatched screenshot sizes and the missing checklist, and its \\\"Nothing blocking\\\" claim overstates readiness.\",\n   \"reply_why\": \"The reviewer ping is fine, but the author ask is about the Fixes line rather than the key's screenshot recapture, so it misses reply_ask.\"}},\n \"ranking\": [\"M\", \"Y\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.177888
+}

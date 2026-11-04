@@ -1,0 +1,70 @@
+{
+ "case": "39522-4714378606",
+ "repeat": 1,
+ "map": {
+  "X": [
+   "eval2:v3-r1"
+  ],
+  "J": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Declares the PR ready for review, implying Yogesh's open asks are resolved, when the dark-theme outline color, border radius, precise screenshots and removal of the buddy-list styles are all unconfirmed.",
+     "Names laurynmm as the reviewer to assign instead of karlstolley."
+    ],
+    "rule_failures": [
+     "wrong_reviewer"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand_off matches the key, though it skips the condition that Yogesh signs off first.",
+    "accuracy_why": "It reports the squash and the +56 to +35 shrink, but wrongly calls the PR ready and omits every still-missing item, including the decisive Yogesh asks.",
+    "reply_why": "A single ping line fits a hand_off, but it pings the wrong person and misses the key's ask to have Yogesh confirm his points."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_to_author_on_hand_off"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "The kind is right, but keeping \"not ready\" for more feedback contradicts the key's hand_off.",
+    "accuracy_why": "It correctly flags the unconfirmed color, radius and screenshot asks, but skips the buddy-list styles and the size numbers, and gets the decisive next step wrong.",
+    "reply_why": "It asks the author for more work rather than asking Yogesh to confirm and pointing to maintainer review, which misses the key's reply_ask."
+   }
+  },
+  "ranking": [
+   "X",
+   "J"
+  ]
+ },
+ "text": "{\"outputs\": {\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [\"Declares the PR ready for review, implying Yogesh's open asks are resolved, when the dark-theme outline color, border radius, precise screenshots and removal of the buddy-list styles are all unconfirmed.\", \"Names laurynmm as the reviewer to assign instead of karlstolley.\"],\n   \"rule_failures\": [\"wrong_reviewer\"],\n   \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 5,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending hand_off matches the key, though it skips the condition that Yogesh signs off first.\",\n   \"accuracy_why\": \"It reports the squash and the +56 to +35 shrink, but wrongly calls the PR ready and omits every still-missing item, including the decisive Yogesh asks.\",\n   \"reply_why\": \"A single ping line fits a hand_off, but it pings the wrong person and misses the key's ask to have Yogesh confirm his points.\"},\n  \"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_to_author_on_hand_off\"],\n   \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 4,\n   \"brevity_score\": 7,\n   \"decision_why\": \"The kind is right, but keeping \\\"not ready\\\" for more feedback contradicts the key's hand_off.\",\n   \"accuracy_why\": \"It correctly flags the unconfirmed color, radius and screenshot asks, but skips the buddy-list styles and the size numbers, and gets the decisive next step wrong.\",\n   \"reply_why\": \"It asks the author for more work rather than asking Yogesh to confirm and pointing to maintainer review, which misses the key's reply_ask.\"}},\n \"ranking\": [\"X\", \"J\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.238732
+}

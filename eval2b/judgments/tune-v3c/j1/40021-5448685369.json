@@ -1,0 +1,70 @@
+{
+ "case": "40021-5448685369",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "eval2:v3-r1"
+  ],
+  "J": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Implies the comparison with other PRs resolves that feedback point (the reply thanks the author for it), when the key says it does not justify the approach over #39768",
+     "Claims the +59/-29 diff is much bigger than the described CSS change, an unsupported guess"
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "NOTE with keep-not-ready matches the key's kind and its more_feedback action.",
+    "accuracy_why": "It covers the changes and the unrelated commit, but it misses both decisive problems: whole-string truncation hides other reactors, and the comparison doesn't justify the approach over #39768.",
+    "reply_why": "It asks only for commit cleanup and praises the comparison, so it misses the key ask about showing part of every reactor's name or justifying the approach over #39768."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the screenshots, width and comparison with other PRs were all addressed and the PR is ready for review, when the approach still hides other reactors and the comparison doesn't justify it over #39768"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to a reviewer, but the key says keep not ready and give more feedback.",
+    "accuracy_why": "It lists the surface changes correctly, but its ready-for-review verdict rests on the false claim that all feedback was addressed, and it misses the decisive approach problems.",
+    "reply_why": "Pinging a reviewer is the wrong decision for a PR that needs more feedback on its approach."
+   }
+  },
+  "ranking": [
+   "E",
+   "J"
+  ]
+ },
+ "text": "{\"outputs\": {\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [\"Implies the comparison with other PRs resolves that feedback point (the reply thanks the author for it), when the key says it does not justify the approach over #39768\", \"Claims the +59/-29 diff is much bigger than the described CSS change, an unsupported guess\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with keep-not-ready matches the key's kind and its more_feedback action.\",\n   \"accuracy_why\": \"It covers the changes and the unrelated commit, but it misses both decisive problems: whole-string truncation hides other reactors, and the comparison doesn't justify the approach over #39768.\",\n   \"reply_why\": \"It asks only for commit cleanup and praises the comparison, so it misses the key ask about showing part of every reactor's name or justifying the approach over #39768.\"},\n  \"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says the screenshots, width and comparison with other PRs were all addressed and the PR is ready for review, when the approach still hides other reactors and the comparison doesn't justify it over #39768\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to a reviewer, but the key says keep not ready and give more feedback.\",\n   \"accuracy_why\": \"It lists the surface changes correctly, but its ready-for-review verdict rests on the false claim that all feedback was addressed, and it misses the decisive approach problems.\",\n   \"reply_why\": \"Pinging a reviewer is the wrong decision for a PR that needs more feedback on its approach.\"}},\n \"ranking\": [\"E\", \"J\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.245924
+}

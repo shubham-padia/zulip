@@ -1,0 +1,67 @@
+{
+ "case": "39987-5365589747",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "eval2:v3-r1"
+  ],
+  "Z": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says 'Missing: nothing blocking' although screenshots of the new documentation page are still missing and the exemption does not cover docs screenshots."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) is right, but it recommends handing off for review when the key calls for keeping 'not ready' and asking for more work.",
+    "accuracy_why": "It gets the avatar fix, the squash and the unverified CI right, but it states nothing is blocking and misses the missing docs screenshots that the action depends on.",
+    "reply_why": "A reviewer ping is the wrong ask; the reply should have asked the author for documentation-page screenshots."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) is right, but it recommends handing off when the key says more feedback is needed.",
+    "accuracy_why": "It covers the changes and flags the unverified CI, but it omits the decisive missing docs screenshots, and its hand-off rests on that omission.",
+    "reply_why": "A reviewer ping is the wrong ask, since the author needs to be asked for documentation screenshots."
+   }
+  },
+  "ranking": [
+   "Z",
+   "E"
+  ]
+ },
+ "text": "{\"outputs\": {\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says 'Missing: nothing blocking' although screenshots of the new documentation page are still missing and the exemption does not cover docs screenshots.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) is right, but it recommends handing off for review when the key calls for keeping 'not ready' and asking for more work.\",\n   \"accuracy_why\": \"It gets the avatar fix, the squash and the unverified CI right, but it states nothing is blocking and misses the missing docs screenshots that the action depends on.\",\n   \"reply_why\": \"A reviewer ping is the wrong ask; the reply should have asked the author for documentation-page screenshots.\"},\n  \"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) is right, but it recommends handing off when the key says more feedback is needed.\",\n   \"accuracy_why\": \"It covers the changes and flags the unverified CI, but it omits the decisive missing docs screenshots, and its hand-off rests on that omission.\",\n   \"reply_why\": \"A reviewer ping is the wrong ask, since the author needs to be asked for documentation screenshots.\"}},\n \"ranking\": [\"Z\", \"E\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.08896400000000002
+}

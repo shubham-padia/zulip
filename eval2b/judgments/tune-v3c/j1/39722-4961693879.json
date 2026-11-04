@@ -1,0 +1,73 @@
+{
+ "case": "39722-4961693879",
+ "repeat": 1,
+ "map": {
+  "T": [
+   "eval2:v3-r1"
+  ],
+  "E": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit messages look unchanged and the requested fixes aren't there, but only the commit titles are visible and the bodies may have changed.",
+     "Says the screenshots are still the full-width ones when the cutoff facts can't confirm whether they were updated."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key's kind and its more_feedback action, though it frames the next step as author fixes rather than whilstsomebody's code review.",
+    "accuracy_why": "It notes the single push with unchanged size, but turns that into a firm claim that the commit-message and screenshot fixes weren't made, and it misses the partial-fix scope and the identical German before images.",
+    "reply_why": "The reply rests on the unverified claim that nothing changed, so it may ask for work already done; it also omits the code-review next step, the duplicate-image point, and which parts of #16094 are covered."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "States flatly that the commit messages are unchanged, though only the titles are visible.",
+     "States the same wide screenshots remain when the cutoff facts can't confirm this."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key's kind and its more_feedback action, but it leaves the PR unassigned pending author fixes instead of pointing to whilstsomebody's review.",
+    "accuracy_why": "It asserts more definitively than T that the fixes are missing, doesn't mention the unchanged size, and misses the partial-fix scope and the duplicate German before images.",
+    "reply_why": "Like T, it asks for possibly completed work on a false premise, and it lacks the commit discipline link and the key's asks."
+   }
+  },
+  "ranking": [
+   "T",
+   "E"
+  ]
+ },
+ "text": "{\"outputs\": {\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\"},\n   \"wrong_facts\": [\"Says the commit messages look unchanged and the requested fixes aren't there, but only the commit titles are visible and the bodies may have changed.\", \"Says the screenshots are still the full-width ones when the cutoff facts can't confirm whether they were updated.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key's kind and its more_feedback action, though it frames the next step as author fixes rather than whilstsomebody's code review.\",\n   \"accuracy_why\": \"It notes the single push with unchanged size, but turns that into a firm claim that the commit-message and screenshot fixes weren't made, and it misses the partial-fix scope and the identical German before images.\",\n   \"reply_why\": \"The reply rests on the unverified claim that nothing changed, so it may ask for work already done; it also omits the code-review next step, the duplicate-image point, and which parts of #16094 are covered.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n   \"wrong_facts\": [\"States flatly that the commit messages are unchanged, though only the titles are visible.\", \"States the same wide screenshots remain when the cutoff facts can't confirm this.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key's kind and its more_feedback action, but it leaves the PR unassigned pending author fixes instead of pointing to whilstsomebody's review.\",\n   \"accuracy_why\": \"It asserts more definitively than T that the fixes are missing, doesn't mention the unchanged size, and misses the partial-fix scope and the duplicate German before images.\",\n   \"reply_why\": \"Like T, it asks for possibly completed work on a false premise, and it lacks the commit discipline link and the key's asks.\"}},\n \"ranking\": [\"T\", \"E\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.208176
+}

@@ -1,0 +1,65 @@
+{
+ "case": "39820-5103626520",
+ "repeat": 1,
+ "map": {
+  "B": [
+   "v3c-r1"
+  ],
+  "P": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more work matches the key's kind and action.",
+    "accuracy_why": "It covers the squash, the parser fix, CI and the missing comparison to other PRs, but it treats the checklist gap as one unchecked box rather than template items that were removed, and it omits the python-zulip-api compatibility question.",
+    "reply_why": "The ask to compare with other open PRs is right, but the checklist ask targets checking a box instead of restoring the full template, and there is no guideline link or 'post again' prompt."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more work matches the key's kind and action.",
+    "accuracy_why": "It covers the squash, the parser fix, CI and the missing comparison, but it misreads the checklist problem as one unchecked box rather than a trimmed template, and it omits the compatibility question.",
+    "reply_why": "It gives a clear two-part ask with a link to the continuing-unfinished-work guide and asks the author to post again, but the checklist part still needs rewriting to ask for the full template."
+   }
+  },
+  "ranking": [
+   "P",
+   "B"
+  ]
+ },
+ "text": "{\"outputs\": {\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more work matches the key's kind and action.\",\n   \"accuracy_why\": \"It covers the squash, the parser fix, CI and the missing comparison to other PRs, but it treats the checklist gap as one unchecked box rather than template items that were removed, and it omits the python-zulip-api compatibility question.\",\n   \"reply_why\": \"The ask to compare with other open PRs is right, but the checklist ask targets checking a box instead of restoring the full template, and there is no guideline link or 'post again' prompt.\"},\n  \"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more work matches the key's kind and action.\",\n   \"accuracy_why\": \"It covers the squash, the parser fix, CI and the missing comparison, but it misreads the checklist problem as one unchecked box rather than a trimmed template, and it omits the compatibility question.\",\n   \"reply_why\": \"It gives a clear two-part ask with a link to the continuing-unfinished-work guide and asks the author to post again, but the checklist part still needs rewriting to ask for the full template.\"}},\n \"ranking\": [\"P\", \"B\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.313652
+}

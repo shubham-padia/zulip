@@ -1,0 +1,69 @@
+{
+ "case": "39929-5275974270",
+ "repeat": 1,
+ "map": {
+  "F": [
+   "v3c-r1"
+  ],
+  "M": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE recommending handoff to maintainer review with Sahil Batra assigned, which matches the key's kind and action.",
+    "accuracy_why": "It correctly describes the squash and says the code is unchanged, but it misses both still-missing items (unknown CI and the missing API changelog/feature-level entry) and adds an invented screenshot gap that the description explicitly says isn't needed.",
+    "reply_why": "For a handoff, \"No reply needed.\" is acceptable and could be pasted as is."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "Kind and action match the key, but it assigns karlstolley, the triager who gave the feedback, instead of a core contributor to these files like Sahil Batra.",
+    "accuracy_why": "It covers the squash, the unchanged code and the unknown CI, but it misses the API changelog gap and says nothing blocking is missing, so two key items are absent.",
+    "reply_why": "It thanks the author, but its ping asks karlstolley, likely the triager reading the note, to review, so the reviewer line must be rewritten before pasting."
+   }
+  },
+  "ranking": [
+   "F",
+   "M"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"F\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE recommending handoff to maintainer review with Sahil Batra assigned, which matches the key's kind and action.\",\n   \"accuracy_why\": \"It correctly describes the squash and says the code is unchanged, but it misses both still-missing items (unknown CI and the missing API changelog/feature-level entry) and adds an invented screenshot gap that the description explicitly says isn't needed.\",\n   \"reply_why\": \"For a handoff, \\\"No reply needed.\\\" is acceptable and could be pasted as is.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 8, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 9,\n   \"decision_why\": \"Kind and action match the key, but it assigns karlstolley, the triager who gave the feedback, instead of a core contributor to these files like Sahil Batra.\",\n   \"accuracy_why\": \"It covers the squash, the unchanged code and the unknown CI, but it misses the API changelog gap and says nothing blocking is missing, so two key items are absent.\",\n   \"reply_why\": \"It thanks the author, but its ping asks karlstolley, likely the triager reading the note, to review, so the reviewer line must be rewritten before pasting.\"}},\n \"ranking\": [\"F\", \"M\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.147652
+}

@@ -1,0 +1,69 @@
+{
+ "case": "39785-5037857009",
+ "repeat": 1,
+ "map": {
+  "A": [
+   "v3c-r1"
+  ],
+  "I": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the before/after image meets the screenshot request and the PR is ready for review, though the key says it is not shown to be a real screenshot from the dev environment."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to laurynmm, but the key's action is more feedback with \"not ready\" kept.",
+    "accuracy_why": "It treats the questionable image as satisfying the feedback, never questions whether it is genuine, and omits that no code was pushed; it only gets the missing #38931 link right.",
+    "reply_why": "The reply thanks the author for the screenshots and asks laurynmm to review, which is the wrong ask and skips questioning how the image was made."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the posted screenshot answers the screenshot feedback, though the key says it is not shown to be a real dev-environment screenshot."
+    ],
+    "rule_failures": [
+     "hedged_next_step"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" for more feedback, matching the key, though the next step hedges with a help-wanted check.",
+    "accuracy_why": "It correctly notes there was no new push, the unlinked #38931, and the uncovered right-placement case, but it accepts the image as answering the feedback and misses the decisive authenticity question.",
+    "reply_why": "The reply asks for the issue link and manual testing but thanks the author for the screenshots instead of asking how the image was made or requesting real dev-environment screenshots."
+   }
+  },
+  "ranking": [
+   "I",
+   "A"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"wrong\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says the before/after image meets the screenshot request and the PR is ready for review, though the key says it is not shown to be a real screenshot from the dev environment.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to laurynmm, but the key's action is more feedback with \\\"not ready\\\" kept.\",\n   \"accuracy_why\": \"It treats the questionable image as satisfying the feedback, never questions whether it is genuine, and omits that no code was pushed; it only gets the missing #38931 link right.\",\n   \"reply_why\": \"The reply thanks the author for the screenshots and asks laurynmm to review, which is the wrong ask and skips questioning how the image was made.\"},\n  \"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [\"Says the posted screenshot answers the screenshot feedback, though the key says it is not shown to be a real dev-environment screenshot.\"],\n   \"rule_failures\": [\"hedged_next_step\"],\n   \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" for more feedback, matching the key, though the next step hedges with a help-wanted check.\",\n   \"accuracy_why\": \"It correctly notes there was no new push, the unlinked #38931, and the uncovered right-placement case, but it accepts the image as answering the feedback and misses the decisive authenticity question.\",\n   \"reply_why\": \"The reply asks for the issue link and manual testing but thanks the author for the screenshots instead of asking how the image was made or requesting real dev-environment screenshots.\"}},\n \"ranking\": [\"I\", \"A\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.1023
+}
