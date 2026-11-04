@@ -1,0 +1,117 @@
+{
+ "case": "40257-6023845324",
+ "repeat": 1,
+ "map": {
+  "S": [
+   "v3-r2"
+  ],
+  "B": [
+   "v3-r1"
+  ],
+  "D": [
+   "v3b-r1"
+  ],
+  "C": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It recommends a NOTE with a hand off to laurynmm, which matches the key.",
+    "accuracy_why": "It covers the banner, the CI pass and the single push, and it partly flags the logging-only wording, but it says 'description' rather than the commit message and title, and it omits the unconfirmed screenshot labels and the #6296 scope.",
+    "reply_why": "A short thank-you and a reviewer ping can be pasted as is for a hand off."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 10,
+    "decision_why": "It recommends a NOTE with a hand off to laurynmm, which matches the key.",
+    "accuracy_why": "It reports the change correctly, but 'nothing blocking' skips both still-missing items: the commit message and title, and the screenshot labels.",
+    "reply_why": "'No reply needed.' is acceptable for a hand off."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the screenshot feedback is addressed, but the author never confirmed fixing the swapped before/after labels."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It recommends a NOTE with a hand off to laurynmm, which matches the key.",
+    "accuracy_why": "It reports the banner correctly, but it wrongly says the label fix was done and misses the commit-message point and the #6296 scope.",
+    "reply_why": "A single reviewer ping with a one-line summary can be pasted as is."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims both of laurynmm's requests are done, but the swapped screenshot labels were never confirmed fixed."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It recommends a NOTE with a hand off to laurynmm, which matches the key.",
+    "accuracy_why": "It names popup_banners.ts and the blueslip pairing accurately, but it wrongly says both requests are done and misses the commit-message point and the #6296 scope.",
+    "reply_why": "A single reviewer ping with a short summary can be pasted as is."
+   }
+  },
+  "ranking": [
+   "S",
+   "B",
+   "C",
+   "D"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It recommends a NOTE with a hand off to laurynmm, which matches the key.\",\n \"accuracy_why\": \"It covers the banner, the CI pass and the single push, and it partly flags the logging-only wording, but it says 'description' rather than the commit message and title, and it omits the unconfirmed screenshot labels and the #6296 scope.\",\n \"reply_why\": \"A short thank-you and a reviewer ping can be pasted as is for a hand off.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 10,\n \"decision_why\": \"It recommends a NOTE with a hand off to laurynmm, which matches the key.\",\n \"accuracy_why\": \"It reports the change correctly, but 'nothing blocking' skips both still-missing items: the commit message and title, and the screenshot labels.\",\n \"reply_why\": \"'No reply needed.' is acceptable for a hand off.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the screenshot feedback is addressed, but the author never confirmed fixing the swapped before/after labels.\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It recommends a NOTE with a hand off to laurynmm, which matches the key.\",\n \"accuracy_why\": \"It reports the banner correctly, but it wrongly says the label fix was done and misses the commit-message point and the #6296 scope.\",\n \"reply_why\": \"A single reviewer ping with a one-line summary can be pasted as is.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims both of laurynmm's requests are done, but the swapped screenshot labels were never confirmed fixed.\"],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It recommends a NOTE with a hand off to laurynmm, which matches the key.\",\n \"accuracy_why\": \"It names popup_banners.ts and the blueslip pairing accurately, but it wrongly says both requests are done and misses the commit-message point and the #6296 scope.\",\n \"reply_why\": \"A single reviewer ping with a short summary can be pasted as is.\"}\n},\n\"ranking\": [\"S\", \"B\", \"C\", \"D\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.178112
+}

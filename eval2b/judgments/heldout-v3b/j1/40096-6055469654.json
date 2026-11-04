@@ -1,0 +1,125 @@
+{
+ "case": "40096-6055469654",
+ "repeat": 1,
+ "map": {
+  "H": [
+   "v3b-r2"
+  ],
+  "N": [
+   "v3-r1"
+  ],
+  "R": [
+   "v3b-r1"
+  ],
+  "P": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It correctly picks a NOTE and a hand-off (remove \"not ready\", add a review label, assign a reviewer), which matches the key.",
+    "accuracy_why": "It covers the CI fix and the label-only feedback but misses the docs-screenshot fixture concern and the Niloth P suggestion, and it pads \"Missing\" with a no-issue-link and untested-Gogs/Gitea point that isn't outstanding work.",
+    "reply_why": "A short reviewer ping saying CI passes is nearly pasteable for a hand-off, though it skips the thanks to the author."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Lists squashing the test-fix commit as still missing, when the key says nothing is outstanding."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending a hand-off with laurynmm or Niloth P as reviewer, which matches the key.",
+    "accuracy_why": "It gets the CI fix and suggests Niloth P, but it invents a squash requirement, only implies the label-only feedback, and omits the docs-screenshot concern.",
+    "reply_why": "The reply mixes a reviewer ping with a multi-sentence squash request to the author, which rests on the wrong fact and undercuts the ready verdict."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Claims the PR is still not ready because test fixes must be squashed, when the key says nothing is outstanding."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" and asks for more work, where the key's action is a hand-off.",
+    "accuracy_why": "It describes the changes and CI correctly and names Niloth P, but its action rests on an invented squash requirement, which caps the score.",
+    "reply_why": "It asks the author to squash commits, which is the wrong ask for a PR that should go straight to review."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the PR is still not ready because test fixes must be squashed, when the key says nothing is outstanding."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks for more work, where the key's action is a hand-off.",
+    "accuracy_why": "It notes CI passes but rests its verdict on an invented squash requirement, misses the label-only feedback, the fixture/docs concern and the Niloth P suggestion, and adds a filler \"no reviewer is assigned yet\" line.",
+    "reply_why": "It asks the author to squash commits, which is the wrong ask when the PR should be handed off."
+   }
+  },
+  "ranking": [
+   "H",
+   "R",
+   "N",
+   "P"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It correctly picks a NOTE and a hand-off (remove \\\"not ready\\\", add a review label, assign a reviewer), which matches the key.\",\n \"accuracy_why\": \"It covers the CI fix and the label-only feedback but misses the docs-screenshot fixture concern and the Niloth P suggestion, and it pads \\\"Missing\\\" with a no-issue-link and untested-Gogs/Gitea point that isn't outstanding work.\",\n \"reply_why\": \"A short reviewer ping saying CI passes is nearly pasteable for a hand-off, though it skips the thanks to the author.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Lists squashing the test-fix commit as still missing, when the key says nothing is outstanding.\"],\n \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE recommending a hand-off with laurynmm or Niloth P as reviewer, which matches the key.\",\n \"accuracy_why\": \"It gets the CI fix and suggests Niloth P, but it invents a squash requirement, only implies the label-only feedback, and omits the docs-screenshot concern.\",\n \"reply_why\": \"The reply mixes a reviewer ping with a multi-sentence squash request to the author, which rests on the wrong fact and undercuts the ready verdict.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Claims the PR is still not ready because test fixes must be squashed, when the key says nothing is outstanding.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, where the key's action is a hand-off.\",\n \"accuracy_why\": \"It describes the changes and CI correctly and names Niloth P, but its action rests on an invented squash requirement, which caps the score.\",\n \"reply_why\": \"It asks the author to squash commits, which is the wrong ask for a PR that should go straight to review.\"},\n\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the PR is still not ready because test fixes must be squashed, when the key says nothing is outstanding.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, where the key's action is a hand-off.\",\n \"accuracy_why\": \"It notes CI passes but rests its verdict on an invented squash requirement, misses the label-only feedback, the fixture/docs concern and the Niloth P suggestion, and adds a filler \\\"no reviewer is assigned yet\\\" line.\",\n \"reply_why\": \"It asks the author to squash commits, which is the wrong ask when the PR should be handed off.\"}\n},\n\"ranking\": [\"H\", \"R\", \"N\", \"P\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.145476
+}

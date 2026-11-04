@@ -1,0 +1,113 @@
+{
+ "case": "40240-6313490306",
+ "repeat": 1,
+ "map": {
+  "C": [
+   "v3b-r2"
+  ],
+  "Y": [
+   "v3-r1"
+  ],
+  "K": [
+   "v3b-r1"
+  ],
+  "B": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "The kind is right, but it keeps the PR \"not ready\" for more feedback when the key says to close it as a duplicate of #39758.",
+    "accuracy_why": "It covers the lack of a new push and the earlier same-approach #39758 already with a maintainer, but it only hints at the AI concern through the reply, omits the tests and ui_init.js, and does not recommend closing.",
+    "reply_why": "The reply asks the author to keep working (move the screenshots, explain the difference) instead of telling them the PR is being closed in favor of #39758."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 1,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and leaves the PR unassigned, but it never recommends closing despite naming the duplicate that laurynmm handed to shubham-padia.",
+    "accuracy_why": "It covers the lack of a new push, the full #39758 context and the unanswered AI concern, but it misses the tests and ui_init.js and the decisive close recommendation.",
+    "reply_why": "The reply tells the author to keep going and does not mention #39758 at all, which is the opposite of the needed closing reply."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and holds off on a reviewer, when the key says to close the PR.",
+    "accuracy_why": "It notes the lack of a new push and that #39758 touches the same files, but not that #39758 is earlier or already with shubham-padia, and it misses the AI concern, the tests, ui_init.js and the close recommendation.",
+    "reply_why": "The reply invites the author to explain how their approach differs and continue, rather than closing the PR in favor of #39758."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks the author to coordinate with #39758, which comes close to closing but still lands on more feedback.",
+    "accuracy_why": "It covers the lack of a new push, the AI concern and the unexplained ui_init.js, but it omits the missing tests, does not say #39758 is with a maintainer, and does not recommend closing.",
+    "reply_why": "The reply asks for more explanation and work on this PR instead of telling the author it is being closed in favor of #39758."
+   }
+  },
+  "ranking": [
+   "B",
+   "Y",
+   "C",
+   "K"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind is right, but it keeps the PR \\\"not ready\\\" for more feedback when the key says to close it as a duplicate of #39758.\",\n   \"accuracy_why\": \"It covers the lack of a new push and the earlier same-approach #39758 already with a maintainer, but it only hints at the AI concern through the reply, omits the tests and ui_init.js, and does not recommend closing.\",\n   \"reply_why\": \"The reply asks the author to keep working (move the screenshots, explain the difference) instead of telling them the PR is being closed in favor of #39758.\"},\n  \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 1,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and leaves the PR unassigned, but it never recommends closing despite naming the duplicate that laurynmm handed to shubham-padia.\",\n   \"accuracy_why\": \"It covers the lack of a new push, the full #39758 context and the unanswered AI concern, but it misses the tests and ui_init.js and the decisive close recommendation.\",\n   \"reply_why\": \"The reply tells the author to keep going and does not mention #39758 at all, which is the opposite of the needed closing reply.\"},\n  \"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and holds off on a reviewer, when the key says to close the PR.\",\n   \"accuracy_why\": \"It notes the lack of a new push and that #39758 touches the same files, but not that #39758 is earlier or already with shubham-padia, and it misses the AI concern, the tests, ui_init.js and the close recommendation.\",\n   \"reply_why\": \"The reply invites the author to explain how their approach differs and continue, rather than closing the PR in favor of #39758.\"},\n  \"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks the author to coordinate with #39758, which comes close to closing but still lands on more feedback.\",\n   \"accuracy_why\": \"It covers the lack of a new push, the AI concern and the unexplained ui_init.js, but it omits the missing tests, does not say #39758 is with a maintainer, and does not recommend closing.\",\n   \"reply_why\": \"The reply asks for more explanation and work on this PR instead of telling the author it is being closed in favor of #39758.\"}},\n \"ranking\": [\"B\", \"Y\", \"C\", \"K\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.212424
+}

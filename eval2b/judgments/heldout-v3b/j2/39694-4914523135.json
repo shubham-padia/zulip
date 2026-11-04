@@ -1,0 +1,125 @@
+{
+ "case": "39694-4914523135",
+ "repeat": 2,
+ "map": {
+  "B": [
+   "v3b-r1"
+  ],
+  "A": [
+   "v3b-r2"
+  ],
+  "U": [
+   "v3-r2"
+  ],
+  "T": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more work, which matches the key.",
+    "accuracy_why": "It covers the CSS changes, updated screenshots and needed squash, and only hedges on the alignment still needing confirmation; it omits #38860 and adds a weak point about unchecked checklist items.",
+    "reply_why": "It makes the right squash ask and points to laurynmm re-checking, but it adds an unnecessary request to finish the unchecked self-review items and thanks the author for 'fixing' an alignment nobody has confirmed."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Headline states the alignment is fixed, though no maintainer has confirmed it."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" pending a commit cleanup, which matches the key.",
+    "accuracy_why": "It gets the squash requirement right, but describes the CSS change vaguely, treats the alignment as fixed, never flags the hand-tuned offset needing a check, and omits #38860.",
+    "reply_why": "It makes the right squash ask, but it adds the checklist request, asserts the alignment is fixed, and doesn't say a maintainer will re-check alignment."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It recommends removing \"not ready\" and handing off to laurynmm while fixup commits remain, but the key says more feedback.",
+    "accuracy_why": "It describes the changes and the needed squash correctly, but misses that the pixel-offset alignment is unconfirmed and omits #38860.",
+    "reply_why": "It includes the squash ask, but it pings for review at the same time, which conflicts with requiring the cleanup first."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Reply asserts the author has fixed the icon alignment, which no maintainer has confirmed."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off for review although the commit history still needs cleanup, contrary to the key's more_feedback.",
+    "accuracy_why": "It describes the pushes and the squash need, but it states the alignment is fixed as fact, misses the hand-tuned-offset concern and omits #38860.",
+    "reply_why": "It tells laurynmm the alignment is fixed and requests review while also asking for a squash, which is a mixed and partly wrong message."
+   }
+  },
+  "ranking": [
+   "U",
+   "T",
+   "B",
+   "A"
+  ]
+ },
+ "text": "{\"outputs\": {\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more work, which matches the key.\",\n   \"accuracy_why\": \"It covers the CSS changes, updated screenshots and needed squash, and only hedges on the alignment still needing confirmation; it omits #38860 and adds a weak point about unchecked checklist items.\",\n   \"reply_why\": \"It makes the right squash ask and points to laurynmm re-checking, but it adds an unnecessary request to finish the unchecked self-review items and thanks the author for 'fixing' an alignment nobody has confirmed.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Headline states the alignment is fixed, though no maintainer has confirmed it.\"],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 6,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" pending a commit cleanup, which matches the key.\",\n   \"accuracy_why\": \"It gets the squash requirement right, but describes the CSS change vaguely, treats the alignment as fixed, never flags the hand-tuned offset needing a check, and omits #38860.\",\n   \"reply_why\": \"It makes the right squash ask, but it adds the checklist request, asserts the alignment is fixed, and doesn't say a maintainer will re-check alignment.\"},\n  \"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends removing \\\"not ready\\\" and handing off to laurynmm while fixup commits remain, but the key says more feedback.\",\n   \"accuracy_why\": \"It describes the changes and the needed squash correctly, but misses that the pixel-offset alignment is unconfirmed and omits #38860.\",\n   \"reply_why\": \"It includes the squash ask, but it pings for review at the same time, which conflicts with requiring the cleanup first.\"},\n  \"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Reply asserts the author has fixed the icon alignment, which no maintainer has confirmed.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off for review although the commit history still needs cleanup, contrary to the key's more_feedback.\",\n   \"accuracy_why\": \"It describes the pushes and the squash need, but it states the alignment is fixed as fact, misses the hand-tuned-offset concern and omits #38860.\",\n   \"reply_why\": \"It tells laurynmm the alignment is fixed and requests review while also asking for a squash, which is a mixed and partly wrong message.\"}},\n \"ranking\": [\"U\", \"T\", \"B\", \"A\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.24352
+}

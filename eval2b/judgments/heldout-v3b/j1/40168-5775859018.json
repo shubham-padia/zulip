@@ -1,0 +1,121 @@
+{
+ "case": "40168-5775859018",
+ "repeat": 1,
+ "map": {
+  "W": [
+   "v3-r2"
+  ],
+  "G": [
+   "v3b-r2"
+  ],
+  "K": [
+   "v3b-r1"
+  ],
+  "X": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 5,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key, and keeping \"not ready\" with more feedback is a defensible near miss of the observed close, which f5 also allows.",
+    "accuracy_why": "It correctly reports no push, the leftover placeholder, the missing before/after comparisons and #40052, but it never tells the triager to check the screenshots for the button actually being visible and not overlapping the input.",
+    "reply_why": "It makes the right ask (screenshots in the description, before/after at several widths, with the guide linked) but does not say the edit button must be fully visible and clear of the input."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 5,
+    "accuracy_score": 5,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "NOTE matches the key, and keeping \"not ready\" is a defensible near miss of the observed close.",
+    "accuracy_why": "It is accurate on the lack of a push, the placeholder and the missing before/after shots, but it omits the screenshot-inspection point and the competing #40052.",
+    "reply_why": "It gives a concise, correct ask with the guide linked, though it does not mention that the button must not overlap the input."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the guide's items are covered and the PR is ready for review, when the key lists the presentation requirements as still missing."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off to review on a PR the maintainer closed as not on track.",
+    "accuracy_why": "It notes the placeholder and the missing before/after shots, but its verdict rests on the false claim that the guide's requirements are met.",
+    "reply_why": "It pings laurynmm for review on a PR that should get feedback or be closed, so the ask is wrong."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the requested PR presentation is now done, when the key says the description was not updated and the before/after screenshots are missing."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off to review on a PR the maintainer closed.",
+    "accuracy_why": "It treats the presentation as done, only hedges on the before/after requirement, and omits #40052 and the screenshot-inspection point.",
+    "reply_why": "It asks for a review the PR is not ready for, so the ask is wrong."
+   }
+  },
+  "ranking": [
+   "W",
+   "X",
+   "G",
+   "K"
+  ]
+ },
+ "text": "{\"outputs\": {\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 5, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE matches the key, and keeping \\\"not ready\\\" with more feedback is a defensible near miss of the observed close, which f5 also allows.\",\n   \"accuracy_why\": \"It correctly reports no push, the leftover placeholder, the missing before/after comparisons and #40052, but it never tells the triager to check the screenshots for the button actually being visible and not overlapping the input.\",\n   \"reply_why\": \"It makes the right ask (screenshots in the description, before/after at several widths, with the guide linked) but does not say the edit button must be fully visible and clear of the input.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 5, \"accuracy_score\": 5, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE matches the key, and keeping \\\"not ready\\\" is a defensible near miss of the observed close.\",\n   \"accuracy_why\": \"It is accurate on the lack of a push, the placeholder and the missing before/after shots, but it omits the screenshot-inspection point and the competing #40052.\",\n   \"reply_why\": \"It gives a concise, correct ask with the guide linked, though it does not mention that the button must not overlap the input.\"},\n  \"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Claims the guide's items are covered and the PR is ready for review, when the key lists the presentation requirements as still missing.\"], \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 2, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It recommends handing off to review on a PR the maintainer closed as not on track.\",\n   \"accuracy_why\": \"It notes the placeholder and the missing before/after shots, but its verdict rests on the false claim that the guide's requirements are met.\",\n   \"reply_why\": \"It pings laurynmm for review on a PR that should get feedback or be closed, so the ask is wrong.\"},\n  \"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Claims the requested PR presentation is now done, when the key says the description was not updated and the before/after screenshots are missing.\"], \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 2, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It recommends handing off to review on a PR the maintainer closed.\",\n   \"accuracy_why\": \"It treats the presentation as done, only hedges on the before/after requirement, and omits #40052 and the screenshot-inspection point.\",\n   \"reply_why\": \"It asks for a review the PR is not ready for, so the ask is wrong.\"}},\n \"ranking\": [\"W\", \"X\", \"G\", \"K\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.178288
+}

@@ -1,0 +1,124 @@
+{
+ "case": "39691-5277811900",
+ "repeat": 2,
+ "map": {
+  "V": [
+   "v3b-r1"
+  ],
+  "L": [
+   "v3b-r2"
+  ],
+  "Y": [
+   "v3-r1"
+  ],
+  "O": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the PR's commits and files confirm that prakhar1144's changes were made, but commit titles alone can't show that; the key says no one has checked."
+    ],
+    "rule_failures": [
+     "code_details",
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "NOTE with a hand-off matches the key, though it assigns prakhar1144 rather than a web video call reviewer.",
+    "accuracy_why": "It treats commit names as proof of the fix, misses PIG208's open nits and a suitable reviewer, and never raises karlstolley's duplicate-function worry.",
+    "reply_why": "The prakhar1144 ping is right, but the extra checklist request to the author makes it longer than a hand-off reply should be."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It covers the no-push claim and the kept helpers, but misses PIG208's nits, the duplicate-function tension and a suitable reviewer.",
+    "reply_why": "A single ping asking prakhar1144 to confirm is exactly what a hand-off needs."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It clearly states there was no push and that prakhar1144 hasn't confirmed, but misses PIG208's nits, the duplicate-function tension and a suitable reviewer.",
+    "reply_why": "A single ping asking prakhar1144 to confirm can be pasted as is."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It flags whether keeping the helpers is acceptable, but its headline states the push as fact rather than as the author's claim, and it misses PIG208's nits and a suitable reviewer.",
+    "reply_why": "It pings prakhar1144, but asks only about the helpers instead of asking him to confirm his whole review is addressed."
+   }
+  },
+  "ranking": [
+   "Y",
+   "L",
+   "O",
+   "V"
+  ]
+ },
+ "text": "{\"outputs\": {\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says the PR's commits and files confirm that prakhar1144's changes were made, but commit titles alone can't show that; the key says no one has checked.\"],\n   \"rule_failures\": [\"code_details\", \"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 6,\n   \"brevity_score\": 6,\n   \"decision_why\": \"NOTE with a hand-off matches the key, though it assigns prakhar1144 rather than a web video call reviewer.\",\n   \"accuracy_why\": \"It treats commit names as proof of the fix, misses PIG208's open nits and a suitable reviewer, and never raises karlstolley's duplicate-function worry.\",\n   \"reply_why\": \"The prakhar1144 ping is right, but the extra checklist request to the author makes it longer than a hand-off reply should be.\"},\n  \"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with a hand-off matches the key.\",\n   \"accuracy_why\": \"It covers the no-push claim and the kept helpers, but misses PIG208's nits, the duplicate-function tension and a suitable reviewer.\",\n   \"reply_why\": \"A single ping asking prakhar1144 to confirm is exactly what a hand-off needs.\"},\n  \"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE with a hand-off matches the key.\",\n   \"accuracy_why\": \"It clearly states there was no push and that prakhar1144 hasn't confirmed, but misses PIG208's nits, the duplicate-function tension and a suitable reviewer.\",\n   \"reply_why\": \"A single ping asking prakhar1144 to confirm can be pasted as is.\"},\n  \"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with a hand-off matches the key.\",\n   \"accuracy_why\": \"It flags whether keeping the helpers is acceptable, but its headline states the push as fact rather than as the author's claim, and it misses PIG208's nits and a suitable reviewer.\",\n   \"reply_why\": \"It pings prakhar1144, but asks only about the helpers instead of asking him to confirm his whole review is addressed.\"}},\n \"ranking\": [\"Y\", \"L\", \"O\", \"V\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.24318800000000002
+}

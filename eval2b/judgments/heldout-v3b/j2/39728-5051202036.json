@@ -1,0 +1,117 @@
+{
+ "case": "39728-5051202036",
+ "repeat": 2,
+ "map": {
+  "C": [
+   "v3-r1"
+  ],
+  "Q": [
+   "v3-r2"
+  ],
+  "Y": [
+   "v3b-r1"
+  ],
+  "A": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it recommends keeping \"not ready\" for more feedback, while the observed action was closing.",
+    "accuracy_why": "It correctly covers the unchanged commit titles, the wrong issue number, the modified checklist and the imprecise screenshots, but it doesn't say the diff was unchanged and omits #38363 and the CodeDay group.",
+    "reply_why": "The reply hits both key asks plus the checklist with the right links, though moving the test into the fix commit is an extra ask laurynmm never made."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it recommends more feedback where the key's action is close.",
+    "accuracy_why": "It gets the commit and screenshot gaps right but misses the unchanged diff, the template checklist, and the related PR and competing contributors.",
+    "reply_why": "The reply makes both key asks with links and a concrete `markdown:` title suggestion, but it drops the checklist."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit cleanup the earlier feedback asked for is done, when the commit messages still don't follow the style guide."
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE is the right kind, but it recommends more feedback where the key's action is close.",
+    "accuracy_why": "It wrongly treats the commit fix as done, which is a decisive error, and it misses the diff, checklist and related-work facts.",
+    "reply_why": "The reply asks only for screenshots, omits the commit-message requirement from reply_ask, and offers a screen recording the maintainer never accepted."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the author newly added a regression test, but the test commit already existed before the feedback."
+    ],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 4,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it recommends more feedback where the key's action is close.",
+    "accuracy_why": "It gets the screenshot and commit-title gaps right but wrongly credits a new test, and it misses the diff, checklist and related-work facts.",
+    "reply_why": "The reply covers screenshots and commits, including the correct issue number, but offering a screen recording as an alternative weakens the precise-screenshot ask."
+   }
+  },
+  "ranking": [
+   "C",
+   "Q",
+   "A",
+   "Y"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n   \"decision_why\": \"NOTE is the right kind, but it recommends keeping \\\"not ready\\\" for more feedback, while the observed action was closing.\",\n   \"accuracy_why\": \"It correctly covers the unchanged commit titles, the wrong issue number, the modified checklist and the imprecise screenshots, but it doesn't say the diff was unchanged and omits #38363 and the CodeDay group.\",\n   \"reply_why\": \"The reply hits both key asks plus the checklist with the right links, though moving the test into the fix commit is an extra ask laurynmm never made.\"},\n \"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 8,\n   \"decision_why\": \"NOTE is the right kind, but it recommends more feedback where the key's action is close.\",\n   \"accuracy_why\": \"It gets the commit and screenshot gaps right but misses the unchanged diff, the template checklist, and the related PR and competing contributors.\",\n   \"reply_why\": \"The reply makes both key asks with links and a concrete `markdown:` title suggestion, but it drops the checklist.\"},\n \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says the commit cleanup the earlier feedback asked for is done, when the commit messages still don't follow the style guide.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n   \"decision_why\": \"NOTE is the right kind, but it recommends more feedback where the key's action is close.\",\n   \"accuracy_why\": \"It wrongly treats the commit fix as done, which is a decisive error, and it misses the diff, checklist and related-work facts.\",\n   \"reply_why\": \"The reply asks only for screenshots, omits the commit-message requirement from reply_ask, and offers a screen recording the maintainer never accepted.\"},\n \"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says the author newly added a regression test, but the test commit already existed before the feedback.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 2, \"accuracy_score\": 4, \"reply_score\": 7, \"brevity_score\": 8,\n   \"decision_why\": \"NOTE is the right kind, but it recommends more feedback where the key's action is close.\",\n   \"accuracy_why\": \"It gets the screenshot and commit-title gaps right but wrongly credits a new test, and it misses the diff, checklist and related-work facts.\",\n   \"reply_why\": \"The reply covers screenshots and commits, including the correct issue number, but offering a screen recording as an alternative weakens the precise-screenshot ask.\"}\n},\n \"ranking\": [\"C\", \"Q\", \"A\", \"Y\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.3423
+}

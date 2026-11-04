@@ -1,0 +1,109 @@
+{
+ "case": "40171-5795222359",
+ "repeat": 1,
+ "map": {
+  "Y": [
+   "v3b-r1"
+  ],
+  "U": [
+   "v3-r2"
+  ],
+  "L": [
+   "v3-r1"
+  ],
+  "M": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending hand-off, which matches the key's decision and the observed action.",
+    "accuracy_why": "It describes the new screenshot table and the topic-required case correctly, but does not say that no code was pushed.",
+    "reply_why": "A short thanks plus a reviewer ping matches the reply_ask and could be pasted as is."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending hand-off, matching the key.",
+    "accuracy_why": "It covers all must-haves, though saying Niloth 'suggested this fix' is a loose way to describe diagnosing the bug.",
+    "reply_why": "The thanks and reviewer ping fit the ask, though the extra clause is slightly more than needed."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 9,
+    "brevity_score": 10,
+    "decision_why": "It is a NOTE recommending hand-off, matching the key.",
+    "accuracy_why": "All must-haves are present and accurate, including the right reasons for picking Niloth-p and the note about no code push.",
+    "reply_why": "A single reviewer-ping line scores high for hand-off, though it skips thanking the author."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 10,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending hand-off, matching the key.",
+    "accuracy_why": "It covers the DM case, the topic-required case, the topic-entered screenshot and the lack of a code push, all accurately.",
+    "reply_why": "A brief thanks plus a reviewer ping matches the reply_ask exactly."
+   }
+  },
+  "ranking": [
+   "M",
+   "L",
+   "U",
+   "Y"
+  ]
+ },
+ "text": "{\"outputs\": {\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE recommending hand-off, which matches the key's decision and the observed action.\",\n   \"accuracy_why\": \"It describes the new screenshot table and the topic-required case correctly, but does not say that no code was pushed.\",\n   \"reply_why\": \"A short thanks plus a reviewer ping matches the reply_ask and could be pasted as is.\"},\n  \"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE recommending hand-off, matching the key.\",\n   \"accuracy_why\": \"It covers all must-haves, though saying Niloth 'suggested this fix' is a loose way to describe diagnosing the bug.\",\n   \"reply_why\": \"The thanks and reviewer ping fit the ask, though the extra clause is slightly more than needed.\"},\n  \"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 9,\n   \"brevity_score\": 10,\n   \"decision_why\": \"It is a NOTE recommending hand-off, matching the key.\",\n   \"accuracy_why\": \"All must-haves are present and accurate, including the right reasons for picking Niloth-p and the note about no code push.\",\n   \"reply_why\": \"A single reviewer-ping line scores high for hand-off, though it skips thanking the author.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 10,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE recommending hand-off, matching the key.\",\n   \"accuracy_why\": \"It covers the DM case, the topic-required case, the topic-entered screenshot and the lack of a code push, all accurately.\",\n   \"reply_why\": \"A brief thanks plus a reviewer ping matches the reply_ask exactly.\"}},\n \"ranking\": [\"M\", \"L\", \"U\", \"Y\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.155412
+}

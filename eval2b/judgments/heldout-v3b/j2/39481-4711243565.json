@@ -1,0 +1,120 @@
+{
+ "case": "39481-4711243565",
+ "repeat": 2,
+ "map": {
+  "D": [
+   "v3-r1"
+  ],
+  "O": [
+   "v3b-r2"
+  ],
+  "Z": [
+   "v3-r2"
+  ],
+  "K": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "It catches both decisive gaps (the non-template checklist and no relationship to #38098), but it omits the #38902 precedent and the missing docs and testing.",
+    "reply_why": "It makes the right ask, though it lacks the continuing-unfinished-work link, and the next step oddly delays the follow-up until the author fails to fix things."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, as the key does.",
+    "accuracy_why": "It covers the #38098 gap, the missing docs and the thin testing, but it misses the decisive non-template checklist problem.",
+    "reply_why": "It asks about #38098 with the right guide link and requests docs and testing, but it leaves out the checklist half of the reply_ask."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the template and checklist were filled in properly, when the checklist is a custom one, not the one from the PR template."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, matching the key.",
+    "accuracy_why": "It flags #38098, the missing docs and the garbled formatting, but its headline wrongly says the template was filled in and so misses the checklist problem.",
+    "reply_why": "It handles the #38098 relationship well with the guide link, but it omits the checklist fix that the reply_ask requires."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the PR description now follows the template, when the checklist is not the template's.",
+     "Recommends the label \"integration review\" instead of \"maintainer review\"."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing the PR off for review, while the key says to keep \"not ready\" and give more feedback.",
+    "accuracy_why": "Its hand-off rests on the false claim that the template is now followed, and it even lists the unanswered #38098 question as missing.",
+    "reply_why": "Pinging laurynmm to review is the wrong decision when the author still owes an explanation and a fixed checklist."
+   }
+  },
+  "ranking": [
+   "K",
+   "D",
+   "Z",
+   "O"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8, \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\", \"accuracy_why\": \"It catches both decisive gaps (the non-template checklist and no relationship to #38098), but it omits the #38902 precedent and the missing docs and testing.\", \"reply_why\": \"It makes the right ask, though it lacks the continuing-unfinished-work link, and the next step oddly delays the follow-up until the author fails to fix things.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 8, \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, as the key does.\", \"accuracy_why\": \"It covers the #38098 gap, the missing docs and the thin testing, but it misses the decisive non-template checklist problem.\", \"reply_why\": \"It asks about #38098 with the right guide link and requests docs and testing, but it leaves out the checklist half of the reply_ask.\"}, \"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Says the template and checklist were filled in properly, when the checklist is a custom one, not the one from the PR template.\"], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 7, \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, matching the key.\", \"accuracy_why\": \"It flags #38098, the missing docs and the garbled formatting, but its headline wrongly says the template was filled in and so misses the checklist problem.\", \"reply_why\": \"It handles the #38098 relationship well with the guide link, but it omits the checklist fix that the reply_ask requires.\"}, \"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Says the PR description now follows the template, when the checklist is not the template's.\", \"Recommends the label \\\"integration review\\\" instead of \\\"maintainer review\\\".\"], \"rule_failures\": [\"reply_contradicts_verdict\"], \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 8, \"decision_why\": \"It recommends handing the PR off for review, while the key says to keep \\\"not ready\\\" and give more feedback.\", \"accuracy_why\": \"Its hand-off rests on the false claim that the template is now followed, and it even lists the unanswered #38098 question as missing.\", \"reply_why\": \"Pinging laurynmm to review is the wrong decision when the author still owes an explanation and a fixed checklist.\"}}, \"ranking\": [\"K\", \"D\", \"Z\", \"O\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.357576
+}

@@ -1,0 +1,124 @@
+{
+ "case": "40237-5935346309",
+ "repeat": 1,
+ "map": {
+  "Y": [
+   "v3-r2"
+  ],
+  "Z": [
+   "v3b-r1"
+  ],
+  "I": [
+   "v3b-r2"
+  ],
+  "W": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review, even though the screenshots show the status emoji as `:grinning:` text and the plain-text display question is unresolved",
+     "Says no push was needed because the feedback was only about screenshots"
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it recommends handing off when the key says more feedback; flagging the #37967 overlap softens this slightly.",
+    "accuracy_why": "It gets the screenshots, the lack of a push and the #37967 overlap right, but misses that the screenshots show text emoji, which conflicts with the design discussion, and its ready-for-review claim is wrong.",
+    "reply_why": "It thanks the author and asks for review instead of asking the author to follow the status emoji design."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review, even though the screenshots show the status emoji as `:grinning:` text and the plain-text display question is unresolved"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 9,
+    "decision_why": "NOTE is the right kind, but it hands off when the key says more feedback.",
+    "accuracy_why": "It never says there was no new push, misses the design conflict and #37967, and its only stated gap is a minor test point.",
+    "reply_why": "It pings laurynmm for review instead of telling the author the PR must follow the design."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review, even though the screenshots show the status emoji as `:grinning:` text and the plain-text display question is unresolved",
+     "Says no push was needed because the request was only for screenshots"
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it hands off when the key says more feedback.",
+    "accuracy_why": "It notes the screenshots and the lack of a push, but misses the text-emoji design conflict and #37967.",
+    "reply_why": "It asks for review instead of asking the author to follow the status emoji design."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the PR ready for review, even though the screenshots show the status emoji as `:grinning:` text and the plain-text display question is unresolved",
+     "Says no push was needed for this feedback"
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE is the right kind, but it hands off when the key says more feedback; it does at least leave the #37967 question to laurynmm.",
+    "accuracy_why": "It covers the screenshots, the lack of a push and the #37967 overlap, but misses the decisive text-emoji design conflict.",
+    "reply_why": "It pings for review instead of telling the author to follow the status emoji design."
+   }
+  },
+  "ranking": [
+   "Y",
+   "W",
+   "I",
+   "Z"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review, even though the screenshots show the status emoji as `:grinning:` text and the plain-text display question is unresolved\", \"Says no push was needed because the feedback was only about screenshots\"],\n \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"NOTE is the right kind, but it recommends handing off when the key says more feedback; flagging the #37967 overlap softens this slightly.\",\n \"accuracy_why\": \"It gets the screenshots, the lack of a push and the #37967 overlap right, but misses that the screenshots show text emoji, which conflicts with the design discussion, and its ready-for-review claim is wrong.\",\n \"reply_why\": \"It thanks the author and asks for review instead of asking the author to follow the status emoji design.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review, even though the screenshots show the status emoji as `:grinning:` text and the plain-text display question is unresolved\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 9,\n \"decision_why\": \"NOTE is the right kind, but it hands off when the key says more feedback.\",\n \"accuracy_why\": \"It never says there was no new push, misses the design conflict and #37967, and its only stated gap is a minor test point.\",\n \"reply_why\": \"It pings laurynmm for review instead of telling the author the PR must follow the design.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review, even though the screenshots show the status emoji as `:grinning:` text and the plain-text display question is unresolved\", \"Says no push was needed because the request was only for screenshots\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"NOTE is the right kind, but it hands off when the key says more feedback.\",\n \"accuracy_why\": \"It notes the screenshots and the lack of a push, but misses the text-emoji design conflict and #37967.\",\n \"reply_why\": \"It asks for review instead of asking the author to follow the status emoji design.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Calls the PR ready for review, even though the screenshots show the status emoji as `:grinning:` text and the plain-text display question is unresolved\", \"Says no push was needed for this feedback\"],\n \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"NOTE is the right kind, but it hands off when the key says more feedback; it does at least leave the #37967 question to laurynmm.\",\n \"accuracy_why\": \"It covers the screenshots, the lack of a push and the #37967 overlap, but misses the decisive text-emoji design conflict.\",\n \"reply_why\": \"It pings for review instead of telling the author to follow the status emoji design.\"}\n},\n\"ranking\": [\"Y\", \"W\", \"I\", \"Z\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.248868
+}

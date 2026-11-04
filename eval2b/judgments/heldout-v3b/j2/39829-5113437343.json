@@ -1,0 +1,113 @@
+{
+ "case": "39829-5113437343",
+ "repeat": 2,
+ "map": {
+  "F": [
+   "v3-r1"
+  ],
+  "X": [
+   "v3-r2"
+  ],
+  "W": [
+   "v3b-r1"
+  ],
+  "B": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" and asks for more changes matches the key.",
+    "accuracy_why": "It covers the copied, mismatched Before, the absence of new code, and the untested multi-reactor case, but omits the unexplained overlap with the other open PRs.",
+    "reply_why": "It asks for matching captures from their own build and covers several reactors, but lacks the pointer to example merged PRs."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" and leaves the PR unassigned matches the key.",
+    "accuracy_why": "It names the copied Before, the size mismatch, no new code and the multi-reactor gap, but skips the other open PRs.",
+    "reply_why": "It gives the right screenshot ask with a guide link but drops the multi-reactor case it raised in the note and the example PRs."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "NOTE recommending to keep \"not ready\" and wait for new screenshots matches the key.",
+    "accuracy_why": "The screenshot mismatch and lack of a new push are correct, but the multi-reactor case and the other open PRs are both missing.",
+    "reply_why": "The screenshot ask is clear and linked, but it leaves out the multi-reactor case and the example PRs."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "NOTE that keeps \"not ready\" with laurynmm matches the key.",
+    "accuracy_why": "It shows the size mismatch and no new push, but misses the multi-reactor case and the other open PRs.",
+    "reply_why": "It never tells the author the Before is copied from the issue or asks for captures from their own build, and it omits the multi-reactor case."
+   }
+  },
+  "ranking": [
+   "X",
+   "F",
+   "W",
+   "B"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n   \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and asks for more changes matches the key.\",\n   \"accuracy_why\": \"It covers the copied, mismatched Before, the absence of new code, and the untested multi-reactor case, but omits the unexplained overlap with the other open PRs.\",\n   \"reply_why\": \"It asks for matching captures from their own build and covers several reactors, but lacks the pointer to example merged PRs.\"},\n \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 6, \"brevity_score\": 8,\n   \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and leaves the PR unassigned matches the key.\",\n   \"accuracy_why\": \"It names the copied Before, the size mismatch, no new code and the multi-reactor gap, but skips the other open PRs.\",\n   \"reply_why\": \"It gives the right screenshot ask with a guide link but drops the multi-reactor case it raised in the note and the example PRs.\"},\n \"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 9,\n   \"decision_why\": \"NOTE recommending to keep \\\"not ready\\\" and wait for new screenshots matches the key.\",\n   \"accuracy_why\": \"The screenshot mismatch and lack of a new push are correct, but the multi-reactor case and the other open PRs are both missing.\",\n   \"reply_why\": \"The screenshot ask is clear and linked, but it leaves out the multi-reactor case and the example PRs.\"},\n \"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 9,\n   \"decision_why\": \"NOTE that keeps \\\"not ready\\\" with laurynmm matches the key.\",\n   \"accuracy_why\": \"It shows the size mismatch and no new push, but misses the multi-reactor case and the other open PRs.\",\n   \"reply_why\": \"It never tells the author the Before is copied from the issue or asks for captures from their own build, and it omits the multi-reactor case.\"}\n},\n \"ranking\": [\"X\", \"F\", \"W\", \"B\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.180668
+}

@@ -1,0 +1,110 @@
+{
+ "case": "39622-5419621157",
+ "repeat": 2,
+ "map": {
+  "L": [
+   "v3b-r2"
+  ],
+  "J": [
+   "v3-r2"
+  ],
+  "X": [
+   "v3-r1"
+  ],
+  "Z": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and waits for Yogesh's sign-off, which matches the key.",
+    "accuracy_why": "It correctly gives the 0807-to-0810 renumbering, the missing sign-off and the unanswered major issue, but leaves out that CI status is unknown.",
+    "reply_why": "The reply cites Evy's note, asks the author to address Yogesh's comments and points them to Yogesh, so it can be pasted as is."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" until Yogesh finishes his pass, which matches the key.",
+    "accuracy_why": "It has the push, the missing sign-off and the 07-25 major issue, but says only that the migration was renamed rather than giving the numbers, and leaves out CI status."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" with Yogesh as assignee, which matches the key.",
+    "accuracy_why": "It covers the renumbering and notes that Yogesh hasn't reviewed since 07-25, so nothing shows his comments were addressed, but it leaves out CI status.",
+    "reply_why": "The reply tells the author to wait and pings Yogesh, but it never asks the author to address Yogesh's outstanding comments, which is part of the key's reply_ask."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says Yogesh made no comment after his Jul 25 review, but he commented 'any update?' on Aug 4."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" pending Yogesh's sign-off, which matches the key.",
+    "accuracy_why": "The change summary is right, but it falsely says Yogesh never commented after Jul 25, asserts the description is unchanged without evidence, and leaves out CI status.",
+    "reply_why": "The reply correctly cites Evy and Lauryn, asks the author to answer each comment and points them to Yogesh, so it is ready to paste."
+   }
+  },
+  "ranking": [
+   "L",
+   "X",
+   "J",
+   "Z"
+  ]
+ },
+ "text": "{\"outputs\": {\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and waits for Yogesh's sign-off, which matches the key.\", \"accuracy_why\": \"It correctly gives the 0807-to-0810 renumbering, the missing sign-off and the unanswered major issue, but leaves out that CI status is unknown.\", \"reply_why\": \"The reply cites Evy's note, asks the author to address Yogesh's comments and points them to Yogesh, so it can be pasted as is.\"}, \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" until Yogesh finishes his pass, which matches the key.\", \"accuracy_why\": \"It has the push, the missing sign-off and the 07-25 major issue, but says only that the migration was renamed rather than giving the numbers, and leaves out CI status.\"}, \"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" with Yogesh as assignee, which matches the key.\", \"accuracy_why\": \"It covers the renumbering and notes that Yogesh hasn't reviewed since 07-25, so nothing shows his comments were addressed, but it leaves out CI status.\", \"reply_why\": \"The reply tells the author to wait and pings Yogesh, but it never asks the author to address Yogesh's outstanding comments, which is part of the key's reply_ask.\"}, \"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"}, \"wrong_facts\": [\"Says Yogesh made no comment after his Jul 25 review, but he commented 'any update?' on Aug 4.\"], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8, \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" pending Yogesh's sign-off, which matches the key.\", \"accuracy_why\": \"The change summary is right, but it falsely says Yogesh never commented after Jul 25, asserts the description is unchanged without evidence, and leaves out CI status.\", \"reply_why\": \"The reply correctly cites Evy and Lauryn, asks the author to answer each comment and points them to Yogesh, so it is ready to paste.\"}}, \"ranking\": [\"L\", \"X\", \"J\", \"Z\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.306544
+}

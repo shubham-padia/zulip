@@ -1,0 +1,115 @@
+{
+ "case": "39822-5091673928",
+ "repeat": 2,
+ "map": {
+  "U": [
+   "v3-r1"
+  ],
+  "P": [
+   "v3b-r2"
+  ],
+  "G": [
+   "v3-r2"
+  ],
+  "A": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It covers both answered asks and treats the generator-rendered images as non-blocking, but it doesn't mention that there was no new push.",
+    "reply_why": "It thanks the author and pings laurynmm in one short line, which fits the reply_ask; the aside about no linked issue in the body is filler."
+   },
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It lists the generator-rendered images under Missing as a 'leftover' though the key says nothing is missing, and it omits that there was no new push.",
+    "reply_why": "The reviewer ping is pasteable but doesn't thank the author as the reply_ask suggests."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It covers all three additions and frames the generator images as openly disclosed rather than missing, but it omits that there was no new push.",
+    "reply_why": "It's a short thanks plus a reviewer ping that could be pasted nearly as is, though it doesn't @-mention the author."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It puts the generator-rendered images under Missing, though it notes the author's offer to redo them, and it omits that there was no new push.",
+    "reply_why": "The reviewer ping with context is pasteable but doesn't thank the author."
+   }
+  },
+  "ranking": [
+   "G",
+   "U",
+   "A",
+   "P"
+  ]
+ },
+ "text": "{\"outputs\": {\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7, \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\", \"accuracy_why\": \"It covers both answered asks and treats the generator-rendered images as non-blocking, but it doesn't mention that there was no new push.\", \"reply_why\": \"It thanks the author and pings laurynmm in one short line, which fits the reply_ask; the aside about no linked issue in the body is filler.\"}, \"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\", \"accuracy_why\": \"It lists the generator-rendered images under Missing as a 'leftover' though the key says nothing is missing, and it omits that there was no new push.\", \"reply_why\": \"The reviewer ping is pasteable but doesn't thank the author as the reply_ask suggests.\"}, \"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\", \"accuracy_why\": \"It covers all three additions and frames the generator images as openly disclosed rather than missing, but it omits that there was no new push.\", \"reply_why\": \"It's a short thanks plus a reviewer ping that could be pasted nearly as is, though it doesn't @-mention the author.\"}, \"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\", \"accuracy_why\": \"It puts the generator-rendered images under Missing, though it notes the author's offer to redo them, and it omits that there was no new push.\", \"reply_why\": \"The reviewer ping with context is pasteable but doesn't thank the author.\"}}, \"ranking\": [\"G\", \"U\", \"A\", \"P\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.12664
+}

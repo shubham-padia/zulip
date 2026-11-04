@@ -1,0 +1,123 @@
+{
+ "case": "40097-6055464855",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "v3b-r1"
+  ],
+  "S": [
+   "v3-r1"
+  ],
+  "N": [
+   "v3b-r2"
+  ],
+  "T": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_adds_unneeded_ask",
+     "wrong_label_name"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending a hand-off, which matches the key, though it names \"integration review\" instead of \"maintainer review\".",
+    "accuracy_why": "It covers the reverse-bug fix, the Gitea test, the absence of written feedback, CI and #40096, but it lists the #40096 relationship as missing rather than noting the absent Gogs tests, and it names the wrong label.",
+    "reply_why": "For a hand-off it runs to several sentences and gives the author a new, unneeded description task, with no note on review timing or apology for the wait."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "wrong_label_name"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE recommending a hand-off, which matches the key, apart from the \"integration review\" label name.",
+    "accuracy_why": "The changes, CI, #40096 and the author's payload concern are all correct, but it never says the label came with no written feedback, which is decisive.",
+    "reply_why": "A single reviewer-ping line is the ideal reply for a hand-off and can be pasted as is."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_adds_unneeded_ask",
+     "wrong_label_name"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE recommending a hand-off, which matches the key, apart from the \"integration review\" label name.",
+    "accuracy_why": "Every cutoff must-have is present and #40096 is correctly framed as non-blocking, though it doesn't flag the missing Gogs tests and names the wrong label.",
+    "reply_why": "It runs to several sentences and adds a new ask about #40096 that a hand-off doesn't need, with no apology for the wait."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the first commit breaks the test on its own and must be squashed, which nothing in the inputs supports."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" and asks for more work, while the key's action is a hand-off.",
+    "accuracy_why": "Its verdict rests on an unsupported claim about commit discipline, and it omits both the absence of written feedback and #40096.",
+    "reply_why": "It asks for a squash instead of moving the PR to review, which misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "S",
+   "N",
+   "E",
+   "T"
+  ]
+ },
+ "text": "{\"outputs\": {\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_adds_unneeded_ask\", \"wrong_label_name\"],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 5,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE recommending a hand-off, which matches the key, though it names \\\"integration review\\\" instead of \\\"maintainer review\\\".\",\n   \"accuracy_why\": \"It covers the reverse-bug fix, the Gitea test, the absence of written feedback, CI and #40096, but it lists the #40096 relationship as missing rather than noting the absent Gogs tests, and it names the wrong label.\",\n   \"reply_why\": \"For a hand-off it runs to several sentences and gives the author a new, unneeded description task, with no note on review timing or apology for the wait.\"},\n  \"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"wrong_label_name\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE recommending a hand-off, which matches the key, apart from the \\\"integration review\\\" label name.\",\n   \"accuracy_why\": \"The changes, CI, #40096 and the author's payload concern are all correct, but it never says the label came with no written feedback, which is decisive.\",\n   \"reply_why\": \"A single reviewer-ping line is the ideal reply for a hand-off and can be pasted as is.\"},\n  \"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"reply_adds_unneeded_ask\", \"wrong_label_name\"],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 5,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE recommending a hand-off, which matches the key, apart from the \\\"integration review\\\" label name.\",\n   \"accuracy_why\": \"Every cutoff must-have is present and #40096 is correctly framed as non-blocking, though it doesn't flag the missing Gogs tests and names the wrong label.\",\n   \"reply_why\": \"It runs to several sentences and adds a new ask about #40096 that a hand-off doesn't need, with no apology for the wait.\"},\n  \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Asserts the first commit breaks the test on its own and must be squashed, which nothing in the inputs supports.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, while the key's action is a hand-off.\",\n   \"accuracy_why\": \"Its verdict rests on an unsupported claim about commit discipline, and it omits both the absence of written feedback and #40096.\",\n   \"reply_why\": \"It asks for a squash instead of moving the PR to review, which misses the reply_ask.\"}},\n \"ranking\": [\"S\", \"N\", \"E\", \"T\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.140656
+}

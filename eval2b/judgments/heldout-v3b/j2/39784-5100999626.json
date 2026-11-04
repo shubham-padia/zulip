@@ -1,0 +1,121 @@
+{
+ "case": "39784-5100999626",
+ "repeat": 2,
+ "map": {
+  "V": [
+   "v3b-r1"
+  ],
+  "C": [
+   "v3-r1"
+  ],
+  "L": [
+   "v3-r2"
+  ],
+  "N": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" for more feedback, matching the key.",
+    "accuracy_why": "It covers both decisive points, but it doesn't flag the whitespace fix as unverified and omits the marked.cjs comment and image-syntax gaps.",
+    "reply_why": "It is a concise, pasteable ask for paired before/after screenshots with the right guide link."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and repeats the screenshot request, matching the key.",
+    "accuracy_why": "It gets both decisive points right, but it takes the author's whitespace-fix claim at face value and omits the marked.cjs comment.",
+    "reply_why": "It is a clean, pasteable screenshot request with a concrete table suggestion and the guide link."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the PR doesn't explain whether the author considered continuing #33086, but the description explicitly gives the reason for a fresh implementation rather than rebasing #33086."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" for more feedback, matching the key.",
+    "accuracy_why": "It hedges the unverified fix correctly, but it invents a missing explanation the description already gives and omits the marked.cjs point.",
+    "reply_why": "The screenshot ask is right, but the second ask requests reasoning the author already wrote."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing explains why the PR reimplements rather than building on #33086, but the description states its reason for not rebasing #33086."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" so laurynmm can keep guiding, matching the key.",
+    "accuracy_why": "It notes the unverifiable diff, but it falsely claims the reimplementation is unexplained and omits the marked.cjs point.",
+    "reply_why": "The screenshot ask is right, but the second ask demands an explanation already in the description."
+   }
+  },
+  "ranking": [
+   "V",
+   "N",
+   "L",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" for more feedback, matching the key.\",\n \"accuracy_why\": \"It covers both decisive points, but it doesn't flag the whitespace fix as unverified and omits the marked.cjs comment and image-syntax gaps.\",\n \"reply_why\": \"It is a concise, pasteable ask for paired before/after screenshots with the right guide link.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and repeats the screenshot request, matching the key.\",\n \"accuracy_why\": \"It gets both decisive points right, but it takes the author's whitespace-fix claim at face value and omits the marked.cjs comment.\",\n \"reply_why\": \"It is a clean, pasteable screenshot request with a concrete table suggestion and the guide link.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the PR doesn't explain whether the author considered continuing #33086, but the description explicitly gives the reason for a fresh implementation rather than rebasing #33086.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" for more feedback, matching the key.\",\n \"accuracy_why\": \"It hedges the unverified fix correctly, but it invents a missing explanation the description already gives and omits the marked.cjs point.\",\n \"reply_why\": \"The screenshot ask is right, but the second ask requests reasoning the author already wrote.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says nothing explains why the PR reimplements rather than building on #33086, but the description states its reason for not rebasing #33086.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" so laurynmm can keep guiding, matching the key.\",\n \"accuracy_why\": \"It notes the unverifiable diff, but it falsely claims the reimplementation is unexplained and omits the marked.cjs point.\",\n \"reply_why\": \"The screenshot ask is right, but the second ask demands an explanation already in the description.\"}},\n\"ranking\": [\"V\", \"N\", \"L\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.306776
+}

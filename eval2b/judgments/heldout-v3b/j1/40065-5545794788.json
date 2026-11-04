@@ -1,0 +1,122 @@
+{
+ "case": "40065-5545794788",
+ "repeat": 1,
+ "map": {
+  "G": [
+   "v3b-r1"
+  ],
+  "T": [
+   "v3-r1"
+  ],
+  "N": [
+   "v3-r2"
+  ],
+  "B": [
+   "v3b-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "assigns_triager_not_css_reviewer"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers both asks and the DPR 1 gap, but it assigns laurynmm instead of a left-sidebar CSS reviewer and omits that there was no new push and that others could not reproduce the bug.",
+    "reply_why": "It pings the triager as reviewer instead of pratik-pc or Karl, and it leaves out the note asking for a before screenshot that reproduces the clipping."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "assigns_triager_not_css_reviewer",
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers both asks, the lack of a new push and the DPR 1 limitation, but the reviewer it names is the triager rather than a CSS reviewer, and it never mentions that others could not reproduce the bug.",
+    "reply_why": "This is a reviewer ping, but it goes to the wrong person, laurynmm, rather than a left-sidebar CSS reviewer."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "assigns_triager_not_css_reviewer"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers both asks, the lack of a new push and the point that the screenshots show added spacing rather than a fixed clip, but it names the wrong reviewer and skips the reproducibility doubts.",
+    "reply_why": "It thanks the author and pings laurynmm, which is the wrong reviewer, and it omits the request for a screenshot that reproduces the clipping."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "assigns_triager_not_css_reviewer"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It omits the key still-missing item, that no before screenshot shows the clipping, and it names the wrong reviewer.",
+    "reply_why": "It is a single ping, but to the triager rather than a CSS reviewer."
+   }
+  },
+  "ranking": [
+   "N",
+   "T",
+   "G",
+   "B"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"assigns_triager_not_css_reviewer\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n \"accuracy_why\": \"It covers both asks and the DPR 1 gap, but it assigns laurynmm instead of a left-sidebar CSS reviewer and omits that there was no new push and that others could not reproduce the bug.\",\n \"reply_why\": \"It pings the triager as reviewer instead of pratik-pc or Karl, and it leaves out the note asking for a before screenshot that reproduces the clipping.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"assigns_triager_not_css_reviewer\", \"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n \"accuracy_why\": \"It covers both asks, the lack of a new push and the DPR 1 limitation, but the reviewer it names is the triager rather than a CSS reviewer, and it never mentions that others could not reproduce the bug.\",\n \"reply_why\": \"This is a reviewer ping, but it goes to the wrong person, laurynmm, rather than a left-sidebar CSS reviewer.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"assigns_triager_not_css_reviewer\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n \"accuracy_why\": \"It covers both asks, the lack of a new push and the point that the screenshots show added spacing rather than a fixed clip, but it names the wrong reviewer and skips the reproducibility doubts.\",\n \"reply_why\": \"It thanks the author and pings laurynmm, which is the wrong reviewer, and it omits the request for a screenshot that reproduces the clipping.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"assigns_triager_not_css_reviewer\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n \"accuracy_why\": \"It omits the key still-missing item, that no before screenshot shows the clipping, and it names the wrong reviewer.\",\n \"reply_why\": \"It is a single ping, but to the triager rather than a CSS reviewer.\"}},\n \"ranking\": [\"N\", \"T\", \"G\", \"B\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.277148
+}

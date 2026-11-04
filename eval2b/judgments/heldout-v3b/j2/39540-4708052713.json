@@ -1,0 +1,115 @@
+{
+ "case": "39540-4708052713",
+ "repeat": 2,
+ "map": {
+  "X": [
+   "v3-r1"
+  ],
+  "Y": [
+   "v3b-r2"
+  ],
+  "D": [
+   "v3-r2"
+  ],
+  "K": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 9,
+    "decision_why": "The kind is right, but it keeps \"not ready\" with no reviewer, while the key's action is to hand off to karlstolley.",
+    "accuracy_why": "It correctly flags the leftover merge commit and the unchanged commits, but it misses the commit-message rewrite, the dark-theme screenshots and the reviewer (karlstolley).",
+    "reply_why": "It is a multi-sentence author reply where the key says hand off, and it asks only for the rebase, not the commit-message rewrite."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It withholds the hand-off the key calls for, though pointing to laurynmm as the re-checker matches who actually acted.",
+    "accuracy_why": "It names the merge commit and the unchanged commit messages, but it misses karlstolley as reviewer, the commit-message format and the screenshots.",
+    "reply_why": "It is a clear, pasteable rebase ask, but it is multi-sentence where the key says hand off, and it skips the commit-message rewrite."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "hedged_fact"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It explicitly says no reviewer should be assigned, which is the opposite of the key's hand-off.",
+    "accuracy_why": "It hedges that the merge commit only \"seems\" to be there, even though it is in the commit list, and it misses the reviewer, the commit-message format and the screenshots.",
+    "reply_why": "The reply hedges with \"seems to include\", is multi-sentence where the key says hand off, and omits the commit-message rewrite."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" instead of handing off, but it does point to laurynmm, who actually made the call.",
+    "accuracy_why": "It gives the exact merge-commit name from the commit list, the most precise status of the four, but it still misses karlstolley, the commit-message format and the screenshots.",
+    "reply_why": "It is a clean rebase ask, but it is multi-sentence where the key says hand off, and it skips the commit-message rewrite."
+   }
+  },
+  "ranking": [
+   "K",
+   "Y",
+   "X",
+   "D"
+  ]
+ },
+ "text": "{\"outputs\": {\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 9,\n   \"decision_why\": \"The kind is right, but it keeps \\\"not ready\\\" with no reviewer, while the key's action is to hand off to karlstolley.\",\n   \"accuracy_why\": \"It correctly flags the leftover merge commit and the unchanged commits, but it misses the commit-message rewrite, the dark-theme screenshots and the reviewer (karlstolley).\",\n   \"reply_why\": \"It is a multi-sentence author reply where the key says hand off, and it asks only for the rebase, not the commit-message rewrite.\"},\n  \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It withholds the hand-off the key calls for, though pointing to laurynmm as the re-checker matches who actually acted.\",\n   \"accuracy_why\": \"It names the merge commit and the unchanged commit messages, but it misses karlstolley as reviewer, the commit-message format and the screenshots.\",\n   \"reply_why\": \"It is a clear, pasteable rebase ask, but it is multi-sentence where the key says hand off, and it skips the commit-message rewrite.\"},\n  \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"hedged_fact\"],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It explicitly says no reviewer should be assigned, which is the opposite of the key's hand-off.\",\n   \"accuracy_why\": \"It hedges that the merge commit only \\\"seems\\\" to be there, even though it is in the commit list, and it misses the reviewer, the commit-message format and the screenshots.\",\n   \"reply_why\": \"The reply hedges with \\\"seems to include\\\", is multi-sentence where the key says hand off, and omits the commit-message rewrite.\"},\n  \"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 4, \"accuracy_score\": 6, \"reply_score\": 5,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" instead of handing off, but it does point to laurynmm, who actually made the call.\",\n   \"accuracy_why\": \"It gives the exact merge-commit name from the commit list, the most precise status of the four, but it still misses karlstolley, the commit-message format and the screenshots.\",\n   \"reply_why\": \"It is a clean rebase ask, but it is multi-sentence where the key says hand off, and it skips the commit-message rewrite.\"}},\n \"ranking\": [\"K\", \"Y\", \"X\", \"D\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.149784
+}

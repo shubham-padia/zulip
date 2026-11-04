@@ -1,0 +1,111 @@
+{
+ "case": "39459-4663361149",
+ "repeat": 2,
+ "map": {
+  "T": [
+   "v3-r2"
+  ],
+  "K": [
+   "v3-r1"
+  ],
+  "Y": [
+   "v3b-r2"
+  ],
+  "X": [
+   "v3b-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "T": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to sahil839 matches the key's kind and action.",
+    "accuracy_why": "It covers the description update, the settings-overlay claim, the missing tests and the lack of a new push, but it never flags that sahil839's #38251 feedback on keeping the changes minimal may not be addressed.",
+    "reply_why": "The short thanks plus reviewer ping is pasteable, but it doesn't ask the author to check sahil839's earlier feedback."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending hand-off to sahil839 matches the key's kind and action.",
+    "accuracy_why": "It correctly reports the description update, the settings-overlay handling, no new code and the missing tests, but it misses the open question of whether sahil839's minimal-change feedback was applied.",
+    "reply_why": "The short thanks plus reviewer ping is pasteable, but it doesn't reference sahil839's earlier feedback."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off to sahil839 matches the key's kind and action.",
+    "accuracy_why": "It captures every changed item in the key, including the hash_util.ts and toggler-callback points, plus the missing tests, but it omits the f4 concern about sahil839's feedback.",
+    "reply_why": "The thanks plus ping works as is, but it lacks the ask to confirm sahil839's #38251 feedback is addressed."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand-off to sahil839 matches the key's kind and action.",
+    "accuracy_why": "It covers the description update and the missing tests, but it misses f4 and says the feedback 'only asked for this explanation', which understates the request to follow the continuing-unfinished-work guidelines.",
+    "reply_why": "The thanks plus ping is pasteable, but it doesn't ask the author to address sahil839's earlier feedback."
+   }
+  },
+  "ranking": [
+   "Y",
+   "K",
+   "T",
+   "X"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"T\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off to sahil839 matches the key's kind and action.\",\n \"accuracy_why\": \"It covers the description update, the settings-overlay claim, the missing tests and the lack of a new push, but it never flags that sahil839's #38251 feedback on keeping the changes minimal may not be addressed.\",\n \"reply_why\": \"The short thanks plus reviewer ping is pasteable, but it doesn't ask the author to check sahil839's earlier feedback.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"A NOTE recommending hand-off to sahil839 matches the key's kind and action.\",\n \"accuracy_why\": \"It correctly reports the description update, the settings-overlay handling, no new code and the missing tests, but it misses the open question of whether sahil839's minimal-change feedback was applied.\",\n \"reply_why\": \"The short thanks plus reviewer ping is pasteable, but it doesn't reference sahil839's earlier feedback.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE recommending hand-off to sahil839 matches the key's kind and action.\",\n \"accuracy_why\": \"It captures every changed item in the key, including the hash_util.ts and toggler-callback points, plus the missing tests, but it omits the f4 concern about sahil839's feedback.\",\n \"reply_why\": \"The thanks plus ping works as is, but it lacks the ask to confirm sahil839's #38251 feedback is addressed.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE recommending hand-off to sahil839 matches the key's kind and action.\",\n \"accuracy_why\": \"It covers the description update and the missing tests, but it misses f4 and says the feedback 'only asked for this explanation', which understates the request to follow the continuing-unfinished-work guidelines.\",\n \"reply_why\": \"The thanks plus ping is pasteable, but it doesn't ask the author to address sahil839's earlier feedback.\"}\n},\n\"ranking\": [\"Y\", \"K\", \"T\", \"X\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.21028
+}

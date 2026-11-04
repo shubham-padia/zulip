@@ -1,0 +1,115 @@
+{
+ "case": "40201-6155498168",
+ "repeat": 1,
+ "map": {
+  "M": [
+   "v3b-r2"
+  ],
+  "V": [
+   "v3b-r1"
+  ],
+  "A": [
+   "v3-r1"
+  ],
+  "Y": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It correctly posts a NOTE and hands the PR off, because the only ask (CI) is now met.",
+    "accuracy_why": "It gets the CI fix and the new fixture right, but it misses the author's self-removal of the label, the Niloth P suggestion and the AI-policy flag from PR #40356, and it never mentions the ruff-format fixes.",
+    "reply_why": "A single reviewer-ping line fits a hand-off, though pinging laurynmm rather than a slack_incoming expert like Niloth P is a slightly weaker choice."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It correctly posts a NOTE that hands the PR off now that CI, the only ask, passes.",
+    "accuracy_why": "It covers the same ground as M, with the CI fix and new fixture right, but it misses the label self-removal, the reviewer suggestion and the AI-policy flag.",
+    "reply_why": "A one-line reviewer ping suits a hand-off, but it goes to laurynmm rather than someone who knows slack_incoming."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" over a missing linked issue, even though the only feedback was addressed and the key says hand off.",
+    "accuracy_why": "It describes the changes well and catches the fixture missing from the description, but it misses the label self-removal, the reviewer suggestion and the AI-policy flag.",
+    "reply_why": "The reply asks for a linked issue and description edits instead of telling the author the PR is going to review, so it misses the reply_ask."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It withholds review and even raises closing the PR over a missing issue, when the key calls for a hand-off.",
+    "accuracy_why": "It gets the changes right but misses the label self-removal, the reviewer suggestion, the AI-policy flag and the fixture missing from the description, and it adds a side point about the commit message.",
+    "reply_why": "The reply makes a gatekeeping ask about help-wanted issues instead of confirming CI and moving the PR to review."
+   }
+  },
+  "ranking": [
+   "V",
+   "M",
+   "A",
+   "Y"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It correctly posts a NOTE and hands the PR off, because the only ask (CI) is now met.\",\n \"accuracy_why\": \"It gets the CI fix and the new fixture right, but it misses the author's self-removal of the label, the Niloth P suggestion and the AI-policy flag from PR #40356, and it never mentions the ruff-format fixes.\",\n \"reply_why\": \"A single reviewer-ping line fits a hand-off, though pinging laurynmm rather than a slack_incoming expert like Niloth P is a slightly weaker choice.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It correctly posts a NOTE that hands the PR off now that CI, the only ask, passes.\",\n \"accuracy_why\": \"It covers the same ground as M, with the CI fix and new fixture right, but it misses the label self-removal, the reviewer suggestion and the AI-policy flag.\",\n \"reply_why\": \"A one-line reviewer ping suits a hand-off, but it goes to laurynmm rather than someone who knows slack_incoming.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" over a missing linked issue, even though the only feedback was addressed and the key says hand off.\",\n \"accuracy_why\": \"It describes the changes well and catches the fixture missing from the description, but it misses the label self-removal, the reviewer suggestion and the AI-policy flag.\",\n \"reply_why\": \"The reply asks for a linked issue and description edits instead of telling the author the PR is going to review, so it misses the reply_ask.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It withholds review and even raises closing the PR over a missing issue, when the key calls for a hand-off.\",\n \"accuracy_why\": \"It gets the changes right but misses the label self-removal, the reviewer suggestion, the AI-policy flag and the fixture missing from the description, and it adds a side point about the commit message.\",\n \"reply_why\": \"The reply makes a gatekeeping ask about help-wanted issues instead of confirming CI and moving the PR to review.\"}\n},\n\"ranking\": [\"V\", \"M\", \"A\", \"Y\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.127136
+}
