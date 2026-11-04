@@ -1,0 +1,6 @@
+{
+ "case": "40198-5918541457",
+ "answer": "no",
+ "text": "no\nThe author is closing the PR because they can't verify the fix without a Mac, so they are withdrawing it rather than requesting another review.",
+ "cost_usd": 0.005182000000000001
+}

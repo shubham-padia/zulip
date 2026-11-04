@@ -1,0 +1,6 @@
+{
+ "case": "40191-5953763720",
+ "answer": "no",
+ "text": "no\n\nThe author describes changes (rebase, code cleanup, PR template) but never says the commit message was fixed, the docs change was split out, or a screenshot added, and they don't ask for re-review, so it doesn't read as a signal that the PR is ready again.",
+ "cost_usd": 0.004568
+}

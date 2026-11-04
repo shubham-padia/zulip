@@ -1,0 +1,6 @@
+{
+ "case": "40177-5761311350",
+ "answer": "yes",
+ "text": "yes\nThe author says they addressed the maintainer's guidelines (updated description, credited original work, cross-referenced the prior PR) and explicitly asks for the \"not ready\" label to be removed, signaling they want another review.",
+ "cost_usd": 0.004672
+}

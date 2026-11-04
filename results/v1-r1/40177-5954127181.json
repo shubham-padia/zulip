@@ -1,0 +1,6 @@
+{
+ "case": "40177-5954127181",
+ "answer": "yes",
+ "text": "yes\nThe author says they've updated the PR description with prior work and credits, that CI is green, and explicitly asks the maintainer to remove the `not ready` label so the PR can enter the review queue.",
+ "cost_usd": 0.004376
+}

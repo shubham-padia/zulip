@@ -1,0 +1,6 @@
+{
+ "case": "40201-6155498168",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly says \"Ready for review,\" states CI is now passing, and issues the zulipbot command to remove the \"not ready\" label, directly signaling the PR is ready for another look.",
+ "cost_usd": 0.003922
+}
