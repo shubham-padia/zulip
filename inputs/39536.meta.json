@@ -1,0 +1,35 @@
+{
+ "pr": 39536,
+ "cutoff": "2026-07-17T17:11:15Z",
+ "head_at_cutoff": "86681af365b49ad2a16199032647499d183b5d2a",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Evy Kassirer",
+   86
+  ],
+  [
+   "Karl Stolley",
+   38
+  ],
+  [
+   "Aman Agrawal",
+   29
+  ],
+  [
+   "Anders Kaseorg",
+   15
+  ],
+  [
+   "Sayam Samal",
+   13
+  ]
+ ],
+ "files": [
+  "web/src/stream_list.ts",
+  "web/src/topic_list.ts",
+  "web/styles/left_sidebar.css",
+  "web/templates/stream_sidebar_row.hbs",
+  "web/tests/stream_list.test.cjs"
+ ]
+}

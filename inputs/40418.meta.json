@@ -1,0 +1,31 @@
+{
+ "pr": 40418,
+ "cutoff": "2026-10-19T21:15:37Z",
+ "head_at_cutoff": "a48f51770d09d3b22611886036a5e97850043ade",
+ "file_authors": [
+  [
+   "Aman Agrawal",
+   55
+  ],
+  [
+   "Anders Kaseorg",
+   19
+  ],
+  [
+   "Pratik Chanda",
+   3
+  ],
+  [
+   "Sayam Samal",
+   3
+  ],
+  [
+   "Alya Abbott",
+   2
+  ]
+ ],
+ "files": [
+  "web/src/recent_view_ui.ts",
+  "web/tests/recent_view.test.cjs"
+ ]
+}

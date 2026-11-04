@@ -1,0 +1,31 @@
+{
+ "pr": 40247,
+ "cutoff": "2026-10-01T14:38:36Z",
+ "head_at_cutoff": "ab9b5a422c46ac9bc5291c9b00b084294abd3759",
+ "file_authors": [
+  [
+   "Apoorva Pendse",
+   11
+  ],
+  [
+   "Sahil Batra",
+   8
+  ],
+  [
+   "Anders Kaseorg",
+   7
+  ],
+  [
+   "Evy Kassirer",
+   7
+  ],
+  [
+   "Pratik Chanda",
+   5
+  ]
+ ],
+ "files": [
+  "web/src/click_handlers.ts",
+  "web/src/tippyjs.ts"
+ ]
+}

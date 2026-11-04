@@ -1,0 +1,27 @@
+{
+ "pr": 40085,
+ "cutoff": "2026-09-17T20:06:30Z",
+ "head_at_cutoff": "9c313b048be7c8c9a30908918350bff248d91873",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Evy Kassirer",
+   1
+  ],
+  [
+   "Karl Stolley",
+   1
+  ],
+  [
+   "Pratik Chanda",
+   1
+  ],
+  [
+   "Sayam Samal",
+   1
+  ]
+ ],
+ "files": [
+  "web/styles/typeahead.css"
+ ]
+}

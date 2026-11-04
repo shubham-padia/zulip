@@ -1,0 +1,19 @@
+{
+ "pr": 40296,
+ "cutoff": "2026-10-08T17:23:55Z",
+ "head_at_cutoff": "70ff4f59f02f86f9e51496438948f79328be71ce",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   1
+  ],
+  [
+   "Prakhar Pratyush",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/lib/typed_endpoint_validators.py",
+  "zerver/tests/test_typed_endpoint_validators.py"
+ ]
+}

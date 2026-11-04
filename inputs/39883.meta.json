@@ -1,0 +1,32 @@
+{
+ "pr": 39883,
+ "cutoff": "2026-08-18T11:28:43Z",
+ "head_at_cutoff": "694fbb2844f35c2d2518d1383ef24a437172a8f4",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   7
+  ],
+  [
+   "Alex Vandiver",
+   6
+  ],
+  [
+   "PieterCK",
+   6
+  ],
+  [
+   "Lauryn Menard",
+   2
+  ],
+  [
+   "Aadyot Nandan",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/lib/markdown/__init__.py",
+  "zerver/tests/fixtures/markdown_test_cases.json"
+ ]
+}

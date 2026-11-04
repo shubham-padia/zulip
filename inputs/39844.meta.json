@@ -1,0 +1,36 @@
+{
+ "pr": 39844,
+ "cutoff": "2026-08-04T13:53:11Z",
+ "head_at_cutoff": "1e8ba5875b8431f3a018d29315c267e8dc43925c",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Aman Agrawal",
+   13
+  ],
+  [
+   "Pratik Chanda",
+   11
+  ],
+  [
+   "Anders Kaseorg",
+   10
+  ],
+  [
+   "Apoorva Pendse",
+   8
+  ],
+  [
+   "Pritesh Shetty",
+   3
+  ]
+ ],
+ "files": [
+  "web/src/bootstrap_typeahead.ts",
+  "web/src/hotkey.ts",
+  "web/src/keydown_util.ts",
+  "web/tests/bootstrap_typeahead.test.cjs",
+  "web/tests/hotkey.test.cjs",
+  "web/tests/keydown_util.test.cjs"
+ ]
+}

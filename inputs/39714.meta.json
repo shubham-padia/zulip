@@ -1,0 +1,41 @@
+{
+ "pr": 39714,
+ "cutoff": "2026-08-05T09:40:02Z",
+ "head_at_cutoff": "9b60ebe2eb422f7ae29bd0234d6fc1713d996869",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   46
+  ],
+  [
+   "Prakhar Pratyush",
+   31
+  ],
+  [
+   "Lauryn Menard",
+   29
+  ],
+  [
+   "Shubham Padia",
+   21
+  ],
+  [
+   "Alex Vandiver",
+   19
+  ]
+ ],
+ "files": [
+  "api_docs/unmerged.d/ZF-592330.md",
+  "web/src/server_event_types.ts",
+  "web/src/server_events_dispatch.js",
+  "web/src/state_data.ts",
+  "web/tests/dispatch.test.cjs",
+  "web/tests/lib/example_realm.cjs",
+  "zerver/lib/events.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_event_system.py",
+  "zerver/tests/test_events.py",
+  "zerver/tests/test_home.py"
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "pr": 39867,
+ "cutoff": "2026-08-10T18:26:03Z",
+ "head_at_cutoff": "efb8335c79a19a9263bd07c6e92b2643abcaf75d",
+ "file_authors": [
+  [
+   "Niloth P",
+   5
+  ],
+  [
+   "Pritesh Shetty",
+   5
+  ],
+  [
+   "Anders Kaseorg",
+   3
+  ],
+  [
+   "The Dance",
+   2
+  ],
+  [
+   "Alex Vandiver",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/webhooks/gitlab/fixtures/deployment_hook__approved.json",
+  "zerver/webhooks/gitlab/fixtures/deployment_hook__blocked.json",
+  "zerver/webhooks/gitlab/fixtures/deployment_hook__rejected.json",
+  "zerver/webhooks/gitlab/tests.py",
+  "zerver/webhooks/gitlab/view.py"
+ ]
+}

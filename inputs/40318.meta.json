@@ -1,0 +1,31 @@
+{
+ "pr": 40318,
+ "cutoff": "2026-10-09T17:15:10Z",
+ "head_at_cutoff": "68b78c192484fac3c43168ed7caa6f53cbc1db1b",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   8
+  ],
+  [
+   "Aman Agrawal",
+   7
+  ],
+  [
+   "Yogesh Shivaji",
+   6
+  ],
+  [
+   "Santhosh Kumar",
+   4
+  ],
+  [
+   "Shubham Padia",
+   4
+  ]
+ ],
+ "files": [
+  "web/src/compose_ui.ts"
+ ]
+}

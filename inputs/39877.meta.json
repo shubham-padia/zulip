@@ -1,0 +1,26 @@
+{
+ "pr": 39877,
+ "cutoff": "2026-08-05T14:26:34Z",
+ "head_at_cutoff": "fd19615ef8e72674a0d97c85089817e201f4483d",
+ "file_authors": [
+  [
+   "Apoorva Pendse",
+   4
+  ],
+  [
+   "Anders Kaseorg",
+   2
+  ],
+  [
+   "Alex Vandiver",
+   1
+  ],
+  [
+   "Evy Kassirer",
+   1
+  ]
+ ],
+ "files": [
+  "docs/development/setup-recommended.md"
+ ]
+}

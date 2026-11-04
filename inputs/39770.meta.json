@@ -1,0 +1,31 @@
+{
+ "pr": 39770,
+ "cutoff": "2026-07-20T18:22:38Z",
+ "head_at_cutoff": "c7549edbda60a5502b49175e65e495aae9d290b6",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   17
+  ],
+  [
+   "Anders Kaseorg",
+   13
+  ],
+  [
+   "Evy Kassirer",
+   8
+  ],
+  [
+   "Aman Agrawal",
+   2
+  ],
+  [
+   "Kislay Verma",
+   2
+  ]
+ ],
+ "files": [
+  "web/src/stream_settings_ui.ts",
+  "web/tests/stream_settings_ui.test.cjs"
+ ]
+}

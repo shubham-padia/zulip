@@ -1,0 +1,53 @@
+{
+ "pr": 39424,
+ "cutoff": "2026-09-16T16:15:56Z",
+ "head_at_cutoff": "976f79ed449ff6ae08cdecdd9a11007ad63c2373",
+ "file_authors": [
+  [
+   "Niloth P",
+   54
+  ],
+  [
+   "Sathwik Shetty",
+   11
+  ],
+  [
+   "Apoorva Pendse",
+   3
+  ],
+  [
+   "PieterCK",
+   2
+  ],
+  [
+   "Pritesh Shetty",
+   2
+  ]
+ ],
+ "files": [
+  "static/images/integrations/bot_avatars/confluence.png",
+  "static/images/integrations/confluence_cloud/001.png",
+  "static/images/integrations/logos/confluence.svg",
+  "zerver/lib/integrations.py",
+  "zerver/webhooks/confluence_cloud/__init__.py",
+  "zerver/webhooks/confluence_cloud/doc.md",
+  "zerver/webhooks/confluence_cloud/fixtures/blog_created.json",
+  "zerver/webhooks/confluence_cloud/fixtures/blog_removed.json",
+  "zerver/webhooks/confluence_cloud/fixtures/blog_restored.json",
+  "zerver/webhooks/confluence_cloud/fixtures/blog_trashed.json",
+  "zerver/webhooks/confluence_cloud/fixtures/blog_updated.json",
+  "zerver/webhooks/confluence_cloud/fixtures/comment_blog_created.json",
+  "zerver/webhooks/confluence_cloud/fixtures/comment_page_created.json",
+  "zerver/webhooks/confluence_cloud/fixtures/comment_page_removed.json",
+  "zerver/webhooks/confluence_cloud/fixtures/comment_page_updated.json",
+  "zerver/webhooks/confluence_cloud/fixtures/example_anomalous_payload.json",
+  "zerver/webhooks/confluence_cloud/fixtures/page_created.json",
+  "zerver/webhooks/confluence_cloud/fixtures/page_moved.json",
+  "zerver/webhooks/confluence_cloud/fixtures/page_removed.json",
+  "zerver/webhooks/confluence_cloud/fixtures/page_restored.json",
+  "zerver/webhooks/confluence_cloud/fixtures/page_trashed.json",
+  "zerver/webhooks/confluence_cloud/fixtures/page_updated.json",
+  "zerver/webhooks/confluence_cloud/tests.py",
+  "zerver/webhooks/confluence_cloud/view.py"
+ ]
+}

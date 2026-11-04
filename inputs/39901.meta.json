@@ -1,0 +1,30 @@
+{
+ "pr": 39901,
+ "cutoff": "2026-08-13T20:08:18Z",
+ "head_at_cutoff": "b1037976f0a10adae78eef4d1ab97d4377184f6d",
+ "file_authors": [
+  [
+   "Niloth P",
+   7
+  ],
+  [
+   "Alex Vandiver",
+   4
+  ],
+  [
+   "Lauryn Menard",
+   4
+  ],
+  [
+   "Sahil Batra",
+   4
+  ],
+  [
+   "The Dance",
+   4
+  ]
+ ],
+ "files": [
+  "zerver/lib/test_classes.py"
+ ]
+}

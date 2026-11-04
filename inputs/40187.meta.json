@@ -1,0 +1,35 @@
+{
+ "pr": 40187,
+ "cutoff": "2026-09-30T11:08:59Z",
+ "head_at_cutoff": "c2c650ef8a22779d8c5d2f05f4b118002a017a98",
+ "file_authors": [
+  [
+   "Prakhar Pratyush",
+   24
+  ],
+  [
+   "Sahil Batra",
+   22
+  ],
+  [
+   "Lauryn Menard",
+   21
+  ],
+  [
+   "Agnish Bauri",
+   20
+  ],
+  [
+   "Alex Vandiver",
+   15
+  ]
+ ],
+ "files": [
+  "api_docs/construct-narrow.md",
+  "api_docs/unmerged.d/ZF-f1840d.md",
+  "zerver/lib/narrow.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_message_fetch.py",
+  "zerver/tests/test_message_flags.py"
+ ]
+}

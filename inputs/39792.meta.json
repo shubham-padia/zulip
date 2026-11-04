@@ -1,0 +1,63 @@
+{
+ "pr": 39792,
+ "cutoff": "2026-09-11T05:32:05Z",
+ "head_at_cutoff": "91004a165322cd802aaa61c10429d824ae0831cd",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Niloth P",
+   58
+  ],
+  [
+   "Lauryn Menard",
+   47
+  ],
+  [
+   "Sahil Batra",
+   43
+  ],
+  [
+   "Alex Vandiver",
+   36
+  ],
+  [
+   "Apoorva Pendse",
+   29
+  ]
+ ],
+ "files": [
+  "api_docs/include/rest-endpoints.md",
+  "api_docs/unmerged.d/ZF-1b213a.md",
+  "docs/production/securing-your-zulip-server.md",
+  "docs/production/video-calls.md",
+  "starlight_help/src/content/docs/configure-call-provider.mdx",
+  "starlight_help/src/content/docs/start-a-call.mdx",
+  "static/images/integrations/bot_avatars/galene.png",
+  "static/images/integrations/logos/galene.svg",
+  "templates/zerver/integrations/big-blue-button.md",
+  "templates/zerver/integrations/constructor-groups.md",
+  "templates/zerver/integrations/galene.md",
+  "templates/zerver/integrations/jitsi.md",
+  "templates/zerver/integrations/nextcloud-talk.md",
+  "templates/zerver/integrations/zoom.md",
+  "tools/lib/capitalization.py",
+  "web/src/compose_call_ui.ts",
+  "web/src/compose_closed_ui.ts",
+  "web/src/state_data.ts",
+  "web/tests/compose_call.test.cjs",
+  "web/tests/compose_closed_ui.test.cjs",
+  "web/tests/settings_org.test.cjs",
+  "zerver/lib/integrations.py",
+  "zerver/models/realms.py",
+  "zerver/openapi/test_curl_examples.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_create_video_call.py",
+  "zerver/tests/test_realm.py",
+  "zerver/views/video_calls.py",
+  "zproject/computed_settings.py",
+  "zproject/default_settings.py",
+  "zproject/prod_settings_template.py",
+  "zproject/test_extra_settings.py",
+  "zproject/urls.py"
+ ]
+}

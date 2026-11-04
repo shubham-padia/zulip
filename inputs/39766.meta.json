@@ -1,0 +1,32 @@
+{
+ "pr": 39766,
+ "cutoff": "2026-07-27T10:27:51Z",
+ "head_at_cutoff": "b026adef3e7f00b2b05bc8dc1c62abbb4b90e235",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Alex Vandiver",
+   9
+  ],
+  [
+   "Anders Kaseorg",
+   3
+  ],
+  [
+   "Sahil Batra",
+   3
+  ],
+  [
+   "Mohammad Reza Kianifar",
+   1
+  ],
+  [
+   "PieterCK",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/lib/email_mirror.py",
+  "zerver/tests/test_email_mirror.py"
+ ]
+}

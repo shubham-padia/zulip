@@ -1,0 +1,31 @@
+{
+ "pr": 40398,
+ "cutoff": "2026-10-15T20:22:15Z",
+ "head_at_cutoff": "2e3dd1f25ef0971d6eed6c4b7eb301723ad688c2",
+ "file_authors": [
+  [
+   "Lauryn Menard",
+   16
+  ],
+  [
+   "Alex Vandiver",
+   12
+  ],
+  [
+   "Aman Agrawal",
+   12
+  ],
+  [
+   "Mateusz Mandera",
+   3
+  ],
+  [
+   "Bedo Khaled",
+   2
+  ]
+ ],
+ "files": [
+  "zerver/tests/test_signup.py",
+  "zerver/views/registration.py"
+ ]
+}

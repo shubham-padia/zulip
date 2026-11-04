@@ -1,0 +1,44 @@
+{
+ "pr": 39964,
+ "cutoff": "2026-08-20T18:06:20Z",
+ "head_at_cutoff": "ed8b3ebc3ef7b26b4a4c8369cf0e0bf57e712200",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Alex Vandiver",
+   28
+  ],
+  [
+   "Sahil Batra",
+   16
+  ],
+  [
+   "Niloth P",
+   15
+  ],
+  [
+   "The Dance",
+   12
+  ],
+  [
+   "Prakhar Pratyush",
+   11
+  ]
+ ],
+ "files": [
+  "zerver/actions/custom_profile_fields.py",
+  "zerver/lib/types.py",
+  "zerver/models/realm_audit_logs.py",
+  "zerver/tests/test_audit_log.py",
+  "zerver/tests/test_custom_profile_data.py",
+  "zerver/tests/test_event_system.py",
+  "zerver/tests/test_events.py",
+  "zerver/tests/test_import_export.py",
+  "zerver/tests/test_webhooks_common.py",
+  "zerver/views/custom_profile_fields.py",
+  "zerver/webhooks/bitbucket/tests.py",
+  "zerver/webhooks/gitlab/tests.py",
+  "zerver/webhooks/jira/tests.py",
+  "zilencer/management/commands/populate_db.py"
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "pr": 40175,
+ "cutoff": "2026-09-22T07:46:35Z",
+ "head_at_cutoff": "36b650d2ed10f134ce12463d729b3415915fa25c",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   2
+  ]
+ ],
+ "files": [
+  "scripts/lib/setup_venv.py"
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "pr": 39941,
+ "cutoff": "2026-09-16T16:22:17Z",
+ "head_at_cutoff": "94124291308d6fc8cbc92015fb1f2c6df4d1cc68",
+ "file_authors": [
+  [
+   "Apoorva Pendse",
+   35
+  ],
+  [
+   "Aman Agrawal",
+   9
+  ],
+  [
+   "Anders Kaseorg",
+   6
+  ],
+  [
+   "PieterCK",
+   4
+  ],
+  [
+   "Yogesh Shivaji",
+   2
+  ]
+ ],
+ "files": [
+  "web/src/compose_reply.ts",
+  "web/src/copy_messages.ts"
+ ]
+}

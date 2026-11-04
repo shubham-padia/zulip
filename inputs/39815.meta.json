@@ -1,0 +1,33 @@
+{
+ "pr": 39815,
+ "cutoff": "2026-09-14T18:13:24Z",
+ "head_at_cutoff": "b3c0746c75d5aa7931e950c34bad10c712301802",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   25
+  ],
+  [
+   "Lauryn Menard",
+   23
+  ],
+  [
+   "Prakhar Pratyush",
+   22
+  ],
+  [
+   "Agnish Bauri",
+   18
+  ],
+  [
+   "Shubham Padia",
+   13
+  ]
+ ],
+ "files": [
+  "zerver/lib/markdown/api_return_values_table_generator.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_markdown.py",
+  "zerver/tests/test_openapi.py"
+ ]
+}

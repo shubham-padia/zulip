@@ -1,0 +1,36 @@
+{
+ "pr": 40162,
+ "cutoff": "2026-09-18T12:55:55Z",
+ "head_at_cutoff": "b988de4b74db0355cec299c74002533e7da2a438",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   40
+  ],
+  [
+   "Shubham Padia",
+   10
+  ],
+  [
+   "Anders Kaseorg",
+   8
+  ],
+  [
+   "PieterCK",
+   8
+  ],
+  [
+   "Sayam Samal",
+   8
+  ]
+ ],
+ "files": [
+  "tools/linter_lib/custom_check.py",
+  "web/e2e-tests/realm-playground.test.ts",
+  "web/src/settings_playgrounds.ts",
+  "web/styles/settings.css",
+  "web/templates/settings/admin_playground_add_form.hbs",
+  "web/templates/settings/playground_settings_admin.hbs"
+ ]
+}

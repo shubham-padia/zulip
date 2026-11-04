@@ -1,0 +1,35 @@
+{
+ "pr": 40177,
+ "cutoff": "2026-10-05T13:08:29Z",
+ "head_at_cutoff": "4fefb56cb0e4a48edcfb10d063860266a0092b88",
+ "file_authors": [
+  [
+   "Prakhar Pratyush",
+   12
+  ],
+  [
+   "Anders Kaseorg",
+   4
+  ],
+  [
+   "Alex Vandiver",
+   2
+  ],
+  [
+   "Sairam Bisoyi",
+   2
+  ],
+  [
+   "Agnish Bauri",
+   1
+  ]
+ ],
+ "files": [
+  "templates/zerver/emails/digest.html",
+  "templates/zerver/emails/email.css",
+  "zerver/lib/digest.py",
+  "zerver/lib/email_notifications.py",
+  "zerver/tests/test_digest.py",
+  "zerver/tests/test_email_notifications.py"
+ ]
+}

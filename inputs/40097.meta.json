@@ -1,0 +1,19 @@
+{
+ "pr": 40097,
+ "cutoff": "2026-10-08T15:24:47Z",
+ "head_at_cutoff": "315a2d73880fd5b9736487b0d2883bdc6f0a20be",
+ "file_authors": [
+  [
+   "Niloth P",
+   5
+  ],
+  [
+   "Alex Vandiver",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/webhooks/gitea/tests.py",
+  "zerver/webhooks/gogs/view.py"
+ ]
+}

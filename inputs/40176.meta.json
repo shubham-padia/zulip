@@ -1,0 +1,10 @@
+{
+ "pr": 40176,
+ "cutoff": "2026-09-22T08:28:37Z",
+ "head_at_cutoff": "7c7e1a6f7bbc0f0d88abdf472a6b3a8b6774708f",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [],
+ "files": [
+  "zerver/webhooks/zabbix/doc.md"
+ ]
+}

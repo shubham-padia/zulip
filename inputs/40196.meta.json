@@ -1,0 +1,16 @@
+{
+ "pr": 40196,
+ "cutoff": "2026-09-30T11:12:47Z",
+ "head_at_cutoff": "16c10946480b3cecdca47ccf316ca2eb96a5c13d",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   22
+  ]
+ ],
+ "files": [
+  "scripts/lib/install-node",
+  "scripts/lib/install-uv"
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "pr": 40171,
+ "cutoff": "2026-10-05T13:01:37Z",
+ "head_at_cutoff": "a597057c5dfc66be8de3c14bd96880b5577fdc53",
+ "file_authors": [
+  [
+   "Niloth P",
+   9
+  ],
+  [
+   "Anders Kaseorg",
+   3
+  ],
+  [
+   "PieterCK",
+   3
+  ],
+  [
+   "Sayam Samal",
+   3
+  ]
+ ],
+ "files": [
+  "web/src/integration_url_modal.ts"
+ ]
+}

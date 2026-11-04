@@ -1,0 +1,50 @@
+{
+ "pr": 39804,
+ "cutoff": "2026-08-03T10:18:58Z",
+ "head_at_cutoff": "a3f9305c6b0cdb75473de30d8309965fc69aa24e",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   57
+  ],
+  [
+   "Sahil Batra",
+   29
+  ],
+  [
+   "Niloth P",
+   20
+  ],
+  [
+   "Pratik Chanda",
+   18
+  ],
+  [
+   "Shubham Padia",
+   16
+  ]
+ ],
+ "files": [
+  "package.json",
+  "pnpm-lock.yaml",
+  "templates/zerver/development/integrations_dev_panel.html",
+  "web/src/bot_type_values.ts",
+  "web/src/portico/integrations_dev_panel.ts",
+  "web/src/settings_bots.ts",
+  "web/src/user_profile.ts",
+  "web/styles/portico/integrations_dev_panel.css",
+  "web/templates/settings/add_new_bot_form.hbs",
+  "web/templates/settings/edit_bot_form.hbs",
+  "zerver/lib/test_classes.py",
+  "zerver/lib/webhooks/common.py",
+  "zerver/tests/test_bots.py",
+  "zerver/tests/test_integrations_dev_panel.py",
+  "zerver/tests/test_webhooks_common.py",
+  "zerver/views/development/integrations.py",
+  "zerver/views/documentation.py",
+  "zerver/webhooks/github/tests.py",
+  "zerver/webhooks/github/view.py",
+  "zproject/dev_urls.py"
+ ]
+}

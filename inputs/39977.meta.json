@@ -1,0 +1,19 @@
+{
+ "pr": 39977,
+ "cutoff": "2026-08-24T11:54:25Z",
+ "head_at_cutoff": "3dd1f4f4e7484cd9390e2f7730e2fa049f3fbad9",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   1
+  ],
+  [
+   "Shubham Padia",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/actions/message_summary.py"
+ ]
+}

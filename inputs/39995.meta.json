@@ -1,0 +1,21 @@
+{
+ "pr": 39995,
+ "cutoff": "2026-08-28T15:12:37Z",
+ "head_at_cutoff": "579c1a93591299ecc1901984957d24bea99c8b29",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Niloth P",
+   3
+  ],
+  [
+   "Alex Vandiver",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/webhooks/zabbix/doc.md",
+  "zerver/webhooks/zabbix/tests.py",
+  "zerver/webhooks/zabbix/view.py"
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "pr": 40192,
+ "cutoff": "2026-09-23T10:26:35Z",
+ "head_at_cutoff": "ddd1a00b0c4e4194e5bd627bc6f6d40424060a79",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   5
+  ],
+  [
+   "Prakhar Pratyush",
+   4
+  ],
+  [
+   "Aditya Kumar Kasaudhan",
+   1
+  ],
+  [
+   "Agnish Bauri",
+   1
+  ],
+  [
+   "Alex Vandiver",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/actions/user_settings.py",
+  "zerver/tests/test_presence.py"
+ ]
+}

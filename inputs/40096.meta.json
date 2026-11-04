@@ -1,0 +1,21 @@
+{
+ "pr": 40096,
+ "cutoff": "2026-10-08T15:24:15Z",
+ "head_at_cutoff": "39100b07b929be56e75e7203c386bb9add0059db",
+ "file_authors": [
+  [
+   "Niloth P",
+   5
+  ],
+  [
+   "Alex Vandiver",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/webhooks/gitea/fixtures/pull_request__merged.json",
+  "zerver/webhooks/gitea/tests.py",
+  "zerver/webhooks/gogs/tests.py",
+  "zerver/webhooks/gogs/view.py"
+ ]
+}

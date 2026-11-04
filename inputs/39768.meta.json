@@ -1,0 +1,35 @@
+{
+ "pr": 39768,
+ "cutoff": "2026-08-04T11:22:20Z",
+ "head_at_cutoff": "88bb6e9fdd98fe8f89e6da88685150452b174c05",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   24
+  ],
+  [
+   "Aman Agrawal",
+   20
+  ],
+  [
+   "Evy Kassirer",
+   9
+  ],
+  [
+   "Pratik Chanda",
+   8
+  ],
+  [
+   "Apoorva Pendse",
+   7
+  ]
+ ],
+ "files": [
+  "web/src/message_store.ts",
+  "web/src/reactions.ts",
+  "web/styles/reactions.css",
+  "web/templates/message_reaction.hbs",
+  "web/tests/filter.test.cjs",
+  "web/tests/reactions.test.cjs"
+ ]
+}

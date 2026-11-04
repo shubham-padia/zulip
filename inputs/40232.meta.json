@@ -1,0 +1,23 @@
+{
+ "pr": 40232,
+ "cutoff": "2026-10-06T14:34:26Z",
+ "head_at_cutoff": "d3b616a4b222c267f6a36ebaa6c1ac1f2837b294",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   3
+  ],
+  [
+   "Sayam Samal",
+   3
+  ],
+  [
+   "Shubham Padia",
+   1
+  ]
+ ],
+ "files": [
+  "web/src/settings_emoji.ts",
+  "web/tests/settings_emoji.test.cjs"
+ ]
+}

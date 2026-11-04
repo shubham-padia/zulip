@@ -1,0 +1,38 @@
+{
+ "pr": 39855,
+ "cutoff": "2026-08-20T04:07:50Z",
+ "head_at_cutoff": "2b3b33521ff050ce62faec134a2f41c56cdd508e",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Alex Vandiver",
+   9
+  ],
+  [
+   "Prakhar Pratyush",
+   9
+  ],
+  [
+   "Sahil Batra",
+   8
+  ],
+  [
+   "Anders Kaseorg",
+   5
+  ],
+  [
+   "Apoorva Pendse",
+   5
+  ]
+ ],
+ "files": [
+  "api_docs/unmerged.d/ZF-334371.md",
+  "api_docs/unmerged.d/ZF-3e042a.md",
+  "api_docs/unmerged.d/ZF-ca956b.md",
+  "zerver/actions/users.py",
+  "zerver/migrations/0808_delete_stale_bot_config_data.py",
+  "zerver/tests/test_bots.py",
+  "zerver/tests/test_events.py",
+  "zerver/views/users.py"
+ ]
+}

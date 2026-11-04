@@ -1,0 +1,36 @@
+{
+ "pr": 39670,
+ "cutoff": "2026-09-03T09:47:57Z",
+ "head_at_cutoff": "041fe801bb2d811a15fa28150a3938105b8e82a4",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Lauryn Menard",
+   26
+  ],
+  [
+   "Sahil Batra",
+   24
+  ],
+  [
+   "Prakhar Pratyush",
+   23
+  ],
+  [
+   "Agnish Bauri",
+   18
+  ],
+  [
+   "Shubham Padia",
+   13
+  ]
+ ],
+ "files": [
+  "api_docs/include/rest-endpoints.md",
+  "zerver/openapi/markdown_extension.py",
+  "zerver/openapi/openapi.py",
+  "zerver/openapi/test_curl_examples.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_openapi.py"
+ ]
+}

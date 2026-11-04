@@ -1,0 +1,36 @@
+{
+ "pr": 39909,
+ "cutoff": "2026-08-10T18:29:42Z",
+ "head_at_cutoff": "eb1cffa372733aa8743e287370934aa57a2b3f3f",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   19
+  ],
+  [
+   "Aman Agrawal",
+   17
+  ],
+  [
+   "Pratik Chanda",
+   11
+  ],
+  [
+   "Apoorva Pendse",
+   10
+  ],
+  [
+   "Shubham Padia",
+   7
+  ]
+ ],
+ "files": [
+  "web/src/compose_banner.ts",
+  "web/src/compose_validate.ts",
+  "web/src/message_edit.ts",
+  "web/src/message_list_view.ts",
+  "web/src/scheduled_messages_ui.ts",
+  "web/tests/lib/compose_banner.cjs",
+  "web/tests/message_list_view.test.cjs"
+ ]
+}

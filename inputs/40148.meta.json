@@ -1,0 +1,34 @@
+{
+ "pr": 40148,
+ "cutoff": "2026-10-12T10:23:32Z",
+ "head_at_cutoff": "d5c70ead68fdb02f26833aab52a12d004079371f",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   61
+  ],
+  [
+   "Sahil Batra",
+   8
+  ],
+  [
+   "Sayam Samal",
+   5
+  ],
+  [
+   "Apoorva Pendse",
+   1
+  ],
+  [
+   "Rohan Gudimetla",
+   1
+  ]
+ ],
+ "files": [
+  "web/src/settings_emoji.ts",
+  "web/src/upload_widget.ts",
+  "web/templates/settings/add_emoji.hbs",
+  "web/tests/lib/zjquery_element.cjs",
+  "web/tests/settings_emoji.test.cjs"
+ ]
+}

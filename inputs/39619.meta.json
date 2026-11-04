@@ -1,0 +1,35 @@
+{
+ "pr": 39619,
+ "cutoff": "2026-07-21T16:44:16Z",
+ "head_at_cutoff": "79826c6a42e3b41141a455e82d087191e011863c",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   6
+  ],
+  [
+   "Alex Vandiver",
+   5
+  ],
+  [
+   "Anders Kaseorg",
+   4
+  ],
+  [
+   "Mateusz Mandera",
+   4
+  ],
+  [
+   "The Dance",
+   3
+  ]
+ ],
+ "files": [
+  "zerver/actions/message_edit.py",
+  "zerver/actions/message_send.py",
+  "zerver/lib/user_topics.py",
+  "zerver/tests/test_message_move_stream.py",
+  "zerver/tests/test_message_move_topic.py"
+ ]
+}

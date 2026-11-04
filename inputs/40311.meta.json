@@ -1,0 +1,33 @@
+{
+ "pr": 40311,
+ "cutoff": "2026-10-07T11:54:02Z",
+ "head_at_cutoff": "e0f94e38c60de5853f900b72a9cf1169afd6e3b2",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Apoorva Pendse",
+   7
+  ],
+  [
+   "Agnish Bauri",
+   5
+  ],
+  [
+   "Anders Kaseorg",
+   4
+  ],
+  [
+   "Niloth P",
+   3
+  ],
+  [
+   "Lauryn Menard",
+   2
+  ]
+ ],
+ "files": [
+  "zerver/openapi/curl_param_value_generators.py",
+  "zerver/tests/test_create_video_call.py",
+  "zerver/views/video_calls.py"
+ ]
+}

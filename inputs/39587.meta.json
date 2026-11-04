@@ -1,0 +1,37 @@
+{
+ "pr": 39587,
+ "cutoff": "2026-08-10T17:59:24Z",
+ "head_at_cutoff": "af8513d54aa249b05c099272af610dc52cae0de9",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Aman Agrawal",
+   25
+  ],
+  [
+   "Pratik Chanda",
+   24
+  ],
+  [
+   "Sayam Samal",
+   24
+  ],
+  [
+   "Karl Stolley",
+   21
+  ],
+  [
+   "Sahil Batra",
+   20
+  ]
+ ],
+ "files": [
+  "web/src/stream_card_popover.ts",
+  "web/src/tippyjs.ts",
+  "web/src/user_group_popover.ts",
+  "web/styles/app_variables.css",
+  "web/styles/popovers.css",
+  "web/templates/popovers/stream_card_popover.hbs",
+  "web/templates/popovers/user_group_info_popover.hbs"
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "pr": 40124,
+ "cutoff": "2026-10-06T17:59:25Z",
+ "head_at_cutoff": "247ab77a14a1557fdd3544a2c14df6cf0958048b",
+ "file_authors": [
+  [
+   "Aman Agrawal",
+   24
+  ],
+  [
+   "Pratik Chanda",
+   18
+  ],
+  [
+   "Evy Kassirer",
+   16
+  ],
+  [
+   "Apoorva Pendse",
+   14
+  ],
+  [
+   "Sayam Samal",
+   13
+  ]
+ ],
+ "files": [
+  "web/src/emoji_picker.ts",
+  "web/styles/app_variables.css",
+  "web/styles/popovers.css",
+  "web/tests/emoji_picker.test.cjs"
+ ]
+}

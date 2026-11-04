@@ -1,0 +1,30 @@
+{
+ "pr": 39731,
+ "cutoff": "2026-07-20T18:10:54Z",
+ "head_at_cutoff": "29aa285ecf8106c34ec8073f083c37dcfa87bbd4",
+ "file_authors": [
+  [
+   "Sayam Samal",
+   11
+  ],
+  [
+   "Shubham Padia",
+   9
+  ],
+  [
+   "Aman Agrawal",
+   4
+  ],
+  [
+   "Sahil Batra",
+   4
+  ],
+  [
+   "Alya Abbott",
+   2
+  ]
+ ],
+ "files": [
+  "web/styles/dark_theme.css"
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "pr": 40376,
+ "cutoff": "2026-10-13T19:58:23Z",
+ "head_at_cutoff": "2b9561882e4c6b4fe3dc3063977ffa6591e6219e",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Alex Vandiver",
+   8
+  ],
+  [
+   "Shubham Padia",
+   3
+  ],
+  [
+   "Agnish Bauri",
+   2
+  ],
+  [
+   "Niloth P",
+   2
+  ],
+  [
+   "Prakhar Pratyush",
+   2
+  ]
+ ],
+ "files": [
+  "puppet/zulip/files/nginx/zulip-include-frontend/api_5xx.json",
+  "puppet/zulip/files/nginx/zulip-include-frontend/app",
+  "puppet/zulip/manifests/app_frontend_base.pp",
+  "zerver/tests/test_errors.py",
+  "zerver/views/errors.py",
+  "zproject/urls.py"
+ ]
+}

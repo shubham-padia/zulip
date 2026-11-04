@@ -1,0 +1,43 @@
+{
+ "pr": 39742,
+ "cutoff": "2026-09-16T16:21:35Z",
+ "head_at_cutoff": "0046ff80b97f82a2752b8b28b2e1715a726b618a",
+ "file_authors": [
+  [
+   "Aman Agrawal",
+   44
+  ],
+  [
+   "Sayam Samal",
+   33
+  ],
+  [
+   "Pratik Chanda",
+   31
+  ],
+  [
+   "Apoorva Pendse",
+   24
+  ],
+  [
+   "Evy Kassirer",
+   23
+  ]
+ ],
+ "files": [
+  "templates/zerver/app/index.html",
+  "web/src/hotkey.ts",
+  "web/src/message_actions_popover.ts",
+  "web/src/popover_menus.ts",
+  "web/src/read_receipts.ts",
+  "web/src/user_card_popover.ts",
+  "web/styles/app_variables.css",
+  "web/styles/modal.css",
+  "web/styles/popovers.css",
+  "web/templates/read_receipts.hbs",
+  "web/templates/read_receipts_modal.hbs",
+  "web/templates/read_receipts_popover.hbs",
+  "web/tests/hotkey.test.cjs",
+  "web/tests/read_receipts.test.cjs"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "pr": 39699,
+ "cutoff": "2026-08-03T10:34:46Z",
+ "head_at_cutoff": "d44ee0711a4c12abcfcff7bf1881cecd48c22d0a",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Mateusz Mandera",
+   18
+  ],
+  [
+   "Sahil Batra",
+   15
+  ],
+  [
+   "Alex Vandiver",
+   12
+  ],
+  [
+   "Anders Kaseorg",
+   7
+  ],
+  [
+   "PieterCK",
+   6
+  ]
+ ],
+ "files": [
+  "api_docs/roles-and-permissions.md",
+  "api_docs/unmerged.d/ZF-53d45e.md",
+  "starlight_help/src/content/docs/restrict-permissions-of-new-members.mdx",
+  "zerver/actions/bots.py",
+  "zerver/actions/create_user.py",
+  "zerver/actions/user_groups.py",
+  "zerver/actions/users.py",
+  "zerver/lib/import_realm.py",
+  "zerver/migrations/0806_backfill_bot_full_member_status_from_owner.py",
+  "zerver/models/users.py",
+  "zerver/tests/test_bots.py",
+  "zerver/tests/test_migrations.py",
+  "zerver/tests/test_user_groups.py"
+ ]
+}

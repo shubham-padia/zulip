@@ -1,0 +1,43 @@
+{
+ "pr": 39307,
+ "cutoff": "2026-07-21T16:42:00Z",
+ "head_at_cutoff": "ebc4f2a373811b45ff903e6c4f46514b63d1e78e",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Alex Vandiver",
+   24
+  ],
+  [
+   "Lauryn Menard",
+   13
+  ],
+  [
+   "Sahil Batra",
+   10
+  ],
+  [
+   "Anders Kaseorg",
+   6
+  ],
+  [
+   "Aman Agrawal",
+   5
+  ]
+ ],
+ "files": [
+  "zerver/actions/message_send.py",
+  "zerver/lib/narrow.py",
+  "zerver/lib/recipient_users.py",
+  "zerver/migrations/0801_alter_subscription_color_alter_subscription_is_muted_and_more.py",
+  "zerver/models/recipients.py",
+  "zerver/models/streams.py",
+  "zerver/tests/test_channel_fetch.py",
+  "zerver/tests/test_email_mirror.py",
+  "zerver/tests/test_example.py",
+  "zerver/tests/test_message_send.py",
+  "zerver/tests/test_signup.py",
+  "zerver/tests/test_users.py",
+  "zerver/views/typing.py"
+ ]
+}

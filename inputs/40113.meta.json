@@ -1,0 +1,32 @@
+{
+ "pr": 40113,
+ "cutoff": "2026-10-05T13:10:24Z",
+ "head_at_cutoff": "5db3bfe593f15b7fb5ea6b1736c2c69f8a9b9657",
+ "file_authors": [
+  [
+   "Apoorva Pendse",
+   15
+  ],
+  [
+   "Anders Kaseorg",
+   6
+  ],
+  [
+   "Sahil Batra",
+   6
+  ],
+  [
+   "Aman Agrawal",
+   5
+  ],
+  [
+   "Evy Kassirer",
+   4
+  ]
+ ],
+ "files": [
+  "web/src/click_handlers.ts",
+  "web/styles/message_row.css",
+  "web/templates/message_length_toggle.hbs"
+ ]
+}

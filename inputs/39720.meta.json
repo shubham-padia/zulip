@@ -1,0 +1,68 @@
+{
+ "pr": 39720,
+ "cutoff": "2026-08-05T09:36:35Z",
+ "head_at_cutoff": "bd48e19b7340d264b229289a5c6e09bdfd038c5a",
+ "file_authors": [
+  [
+   "Aman Agrawal",
+   90
+  ],
+  [
+   "Evy Kassirer",
+   71
+  ],
+  [
+   "Sahil Batra",
+   52
+  ],
+  [
+   "Anders Kaseorg",
+   46
+  ],
+  [
+   "Tim Abbott",
+   42
+  ]
+ ],
+ "files": [
+  "api_docs/unmerged.d/ZF-047e9d.md",
+  "docs/overview/changelog.md",
+  "starlight_help/src/content/docs/dm-mention-alert-notifications.mdx",
+  "starlight_help/src/content/docs/reading-strategies.mdx",
+  "starlight_help/src/content/include/_ViewAlertWords.mdx",
+  "web/e2e-tests/message-basics.test.ts",
+  "web/src/alert_words.ts",
+  "web/src/filter.ts",
+  "web/src/left_sidebar_navigation_area.ts",
+  "web/src/left_sidebar_navigation_area_popovers.ts",
+  "web/src/left_sidebar_tooltips.ts",
+  "web/src/message_events.ts",
+  "web/src/narrow_banner.ts",
+  "web/src/narrow_state.ts",
+  "web/src/navigation_views.ts",
+  "web/src/popover_menus.ts",
+  "web/src/server_event_types.ts",
+  "web/src/server_events_dispatch.js",
+  "web/src/sidebar_ui.ts",
+  "web/src/state_data.ts",
+  "web/src/ui_init.js",
+  "web/src/unread.ts",
+  "web/src/unread_ops.ts",
+  "web/styles/left_sidebar.css",
+  "web/templates/popovers/left_sidebar/left_sidebar_alert_words_popover.hbs",
+  "web/templates/tooltip_templates.hbs",
+  "web/tests/alert_words.test.cjs",
+  "web/tests/dispatch.test.cjs",
+  "web/tests/filter.test.cjs",
+  "web/tests/left_sidebar_navigation_area.test.cjs",
+  "web/tests/message_view.test.cjs",
+  "web/tests/narrow_unread.test.cjs",
+  "web/tests/navigation_views.test.cjs",
+  "web/tests/unread.test.cjs",
+  "zerver/lib/event_types.py",
+  "zerver/lib/message.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_events.py",
+  "zerver/tests/test_message_flags.py"
+ ]
+}

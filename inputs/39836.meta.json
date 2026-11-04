@@ -1,0 +1,22 @@
+{
+ "pr": 39836,
+ "cutoff": "2026-08-03T10:56:14Z",
+ "head_at_cutoff": "b1a0a9f84748c7fd3d841113896ffca5caf84f29",
+ "file_authors": [
+  [
+   "Evy Kassirer",
+   6
+  ],
+  [
+   "Sahil Batra",
+   2
+  ],
+  [
+   "Yogesh Shivaji",
+   2
+  ]
+ ],
+ "files": [
+  "web/styles/search.css"
+ ]
+}

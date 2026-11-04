@@ -1,0 +1,26 @@
+{
+ "pr": 40215,
+ "cutoff": "2026-09-30T14:57:06Z",
+ "head_at_cutoff": "9a37a825729a65f016c27bb67e64de734d0ea998",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Niloth P",
+   4
+  ],
+  [
+   "Alex Vandiver",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/webhooks/azuredevops/tests.py",
+  "zerver/webhooks/azuredevops/view.py",
+  "zerver/webhooks/linear/tests.py",
+  "zerver/webhooks/linear/view.py",
+  "zerver/webhooks/redmine/tests.py",
+  "zerver/webhooks/redmine/view.py",
+  "zerver/webhooks/rhodecode/tests.py",
+  "zerver/webhooks/rhodecode/view.py"
+ ]
+}

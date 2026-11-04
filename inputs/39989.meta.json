@@ -1,0 +1,38 @@
+{
+ "pr": 39989,
+ "cutoff": "2026-08-20T18:05:13Z",
+ "head_at_cutoff": "54bfb16befe64bb69873ecd4b2f2a055f57c1534",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   24
+  ],
+  [
+   "Karl Stolley",
+   14
+  ],
+  [
+   "Aman Agrawal",
+   6
+  ],
+  [
+   "Shubham Padia",
+   4
+  ],
+  [
+   "Alex Vandiver",
+   3
+  ]
+ ],
+ "files": [
+  "web/src/lightbox.ts",
+  "web/src/message_list_tooltips.ts",
+  "web/src/playground_links_popover.ts",
+  "web/styles/lightbox.css",
+  "web/styles/rendered_markdown.css",
+  "web/templates/code_buttons_container.hbs",
+  "web/templates/lightbox_overlay.hbs",
+  "web/tests/lightbox.test.cjs",
+  "web/tests/rendered_markdown.test.cjs"
+ ]
+}

@@ -1,0 +1,76 @@
+{
+ "pr": 39747,
+ "cutoff": "2026-10-22T16:49:09Z",
+ "head_at_cutoff": "3fc77143765b6d1012f9933185c53e2535f8878c",
+ "file_authors": [
+  [
+   "Karl Stolley",
+   35
+  ],
+  [
+   "Alya Abbott",
+   11
+  ],
+  [
+   "Lauryn Menard",
+   6
+  ],
+  [
+   "Niloth P",
+   6
+  ],
+  [
+   "Anders Kaseorg",
+   4
+  ]
+ ],
+ "files": [
+  "corporate/tests/test_remote_billing.py",
+  "static/images/errors/400art.svg",
+  "static/images/errors/500art.svg",
+  "static/images/errors/expired-dark.svg",
+  "static/images/errors/expired-light.svg",
+  "static/images/errors/no-access-dark.svg",
+  "static/images/errors/no-access-light.svg",
+  "static/images/errors/not-found-dark.svg",
+  "static/images/errors/not-found-light.svg",
+  "static/images/errors/rate-limit-dark.svg",
+  "static/images/errors/rate-limit-light.svg",
+  "static/images/errors/self-hosted-dark.svg",
+  "static/images/errors/self-hosted-light.svg",
+  "static/images/errors/server-error-dark.svg",
+  "static/images/errors/server-error-light.svg",
+  "static/images/errors/timeout_hourglass.png",
+  "static/images/errors/update-needed-dark.svg",
+  "static/images/errors/update-needed-light.svg",
+  "templates/404.html",
+  "templates/4xx.html",
+  "templates/500.html",
+  "templates/confirmation/link_does_not_exist.html",
+  "templates/confirmation/link_expired.html",
+  "templates/confirmation/link_malformed.html",
+  "templates/corporate/billing/remote_realm_login_error_for_server_on_active_plan.html",
+  "templates/corporate/billing/remote_server_login_error_for_any_realm_on_active_plan.html",
+  "templates/corporate/billing/remote_server_rate_limit_exceeded.html",
+  "templates/zerver/development/dev_tools.html",
+  "templates/zerver/development/error_pages.html",
+  "templates/zerver/portico_error_pages/auth_subdomain.html",
+  "templates/zerver/portico_error_pages/demo_creation_disabled.html",
+  "templates/zerver/portico_error_pages/insecure_desktop_app.html",
+  "templates/zerver/portico_error_pages/macros.html",
+  "templates/zerver/portico_error_pages/rate_limit_exceeded.html",
+  "templates/zerver/portico_error_pages/realm_creation_disabled.html",
+  "templates/zerver/portico_error_pages/realm_creation_link_invalid.html",
+  "templates/zerver/portico_error_pages/remote_realm_server_mismatch_error.html",
+  "templates/zerver/portico_error_pages/unsupported_browser.html",
+  "templates/zerver/portico_error_pages/user_deactivated.html",
+  "web/html/5xx-cloud.html",
+  "web/html/5xx.html",
+  "web/styles/portico/error_pages.css",
+  "web/styles/portico/legacy_portico.css",
+  "web/styles/portico/legacy_portico_styles_bundle.css",
+  "web/styles/portico/marketing_page.css",
+  "zerver/tests/test_docs.py",
+  "zproject/dev_urls.py"
+ ]
+}

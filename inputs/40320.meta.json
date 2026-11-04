@@ -1,0 +1,35 @@
+{
+ "pr": 40320,
+ "cutoff": "2026-10-09T17:13:47Z",
+ "head_at_cutoff": "2db19459054a71ba0aa33845f2fcb7a978d5e7db",
+ "file_authors": [
+  [
+   "Aman Agrawal",
+   17
+  ],
+  [
+   "Anders Kaseorg",
+   15
+  ],
+  [
+   "Sayam Samal",
+   11
+  ],
+  [
+   "Apoorva Pendse",
+   4
+  ],
+  [
+   "Evy Kassirer",
+   4
+  ]
+ ],
+ "files": [
+  "web/src/email_pill.ts",
+  "web/src/input_pill.ts",
+  "web/src/invite.ts",
+  "web/src/search_pill.ts",
+  "web/tests/email_pill.test.cjs",
+  "web/tests/input_pill.test.cjs"
+ ]
+}

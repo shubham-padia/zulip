@@ -1,0 +1,43 @@
+{
+ "pr": 39929,
+ "cutoff": "2026-08-26T20:31:34Z",
+ "head_at_cutoff": "7c7e5535b36184e21cf6f01afb22bf9b129b09b9",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   44
+  ],
+  [
+   "Prakhar Pratyush",
+   34
+  ],
+  [
+   "Alex Vandiver",
+   26
+  ],
+  [
+   "Lauryn Menard",
+   26
+  ],
+  [
+   "Agnish Bauri",
+   20
+  ]
+ ],
+ "files": [
+  "templates/zerver/emails/notify_change_in_email_by_admin.html",
+  "templates/zerver/emails/notify_change_in_email_by_admin.subject.txt",
+  "templates/zerver/emails/notify_change_in_email_by_admin.txt",
+  "web/src/state_data.ts",
+  "web/src/user_profile.ts",
+  "web/templates/settings/admin_human_form.hbs",
+  "zerver/actions/user_settings.py",
+  "zerver/lib/events.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_home.py",
+  "zerver/tests/test_users.py",
+  "zerver/views/users.py",
+  "zproject/default_settings.py"
+ ]
+}

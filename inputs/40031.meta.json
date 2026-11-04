@@ -1,0 +1,30 @@
+{
+ "pr": 40031,
+ "cutoff": "2026-08-28T10:51:18Z",
+ "head_at_cutoff": "3f87452b4139572466e75dd8bf81751f42ebec63",
+ "file_authors": [
+  [
+   "Pratik Chanda",
+   9
+  ],
+  [
+   "Aman Agrawal",
+   3
+  ],
+  [
+   "Apoorva Pendse",
+   2
+  ],
+  [
+   "Anders Kaseorg",
+   1
+  ],
+  [
+   "Shubham Padia",
+   1
+  ]
+ ],
+ "files": [
+  "web/src/bootstrap_typeahead.ts"
+ ]
+}

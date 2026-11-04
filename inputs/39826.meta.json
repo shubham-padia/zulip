@@ -1,0 +1,32 @@
+{
+ "pr": 39826,
+ "cutoff": "2026-07-29T15:03:21Z",
+ "head_at_cutoff": "078e115f53f21b0a6d55069d230f27c474d0becc",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Sayam Samal",
+   23
+  ],
+  [
+   "Aman Agrawal",
+   20
+  ],
+  [
+   "Karl Stolley",
+   20
+  ],
+  [
+   "Shubham Padia",
+   15
+  ],
+  [
+   "Alya Abbott",
+   12
+  ]
+ ],
+ "files": [
+  "web/styles/app_variables.css",
+  "web/styles/dark_theme.css"
+ ]
+}

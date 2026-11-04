@@ -1,0 +1,31 @@
+{
+ "pr": 39767,
+ "cutoff": "2026-08-14T21:25:03Z",
+ "head_at_cutoff": "69ff16f96e612fca9459965f685259d90c48000e",
+ "file_authors": [
+  [
+   "Alex Vandiver",
+   8
+  ],
+  [
+   "PieterCK",
+   6
+  ],
+  [
+   "Anders Kaseorg",
+   5
+  ],
+  [
+   "Lauryn Menard",
+   3
+  ],
+  [
+   "Shubham Padia",
+   3
+  ]
+ ],
+ "files": [
+  "zerver/lib/markdown/__init__.py",
+  "zerver/tests/test_markdown.py"
+ ]
+}

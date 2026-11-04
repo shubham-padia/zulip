@@ -1,0 +1,32 @@
+{
+ "pr": 39856,
+ "cutoff": "2026-08-04T13:51:11Z",
+ "head_at_cutoff": "a4fc2c573132094fda28f70f587e26d179dbdae6",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   17
+  ],
+  [
+   "Karl Stolley",
+   15
+  ],
+  [
+   "Sayam Samal",
+   10
+  ],
+  [
+   "Shubham Padia",
+   7
+  ],
+  [
+   "Pratik Chanda",
+   6
+  ]
+ ],
+ "files": [
+  "web/src/overlay_util.ts",
+  "web/styles/zulip.css"
+ ]
+}

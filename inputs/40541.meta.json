@@ -1,0 +1,26 @@
+{
+ "pr": 40541,
+ "cutoff": "2026-10-30T18:35:17Z",
+ "head_at_cutoff": "3eb094530fed0f265641f5ff84ca5f5dcaccf25a",
+ "file_authors": [
+  [
+   "Evy Kassirer",
+   13
+  ],
+  [
+   "Aman Agrawal",
+   1
+  ],
+  [
+   "Anders Kaseorg",
+   1
+  ],
+  [
+   "Pratik Chanda",
+   1
+  ]
+ ],
+ "files": [
+  "web/templates/left_sidebar.hbs"
+ ]
+}

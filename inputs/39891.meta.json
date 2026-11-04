@@ -1,0 +1,33 @@
+{
+ "pr": 39891,
+ "cutoff": "2026-08-07T12:48:24Z",
+ "head_at_cutoff": "5f271b59124a5385e47049b07e3b426104389721",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Alex Vandiver",
+   4
+  ],
+  [
+   "Niloth P",
+   4
+  ],
+  [
+   "Sahil Batra",
+   3
+  ],
+  [
+   "Sairam Bisoyi",
+   3
+  ],
+  [
+   "Amit Patil",
+   2
+  ]
+ ],
+ "files": [
+  "zerver/actions/custom_profile_fields.py",
+  "zerver/lib/users.py",
+  "zerver/tests/test_custom_profile_data.py"
+ ]
+}

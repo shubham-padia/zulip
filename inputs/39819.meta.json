@@ -1,0 +1,32 @@
+{
+ "pr": 39819,
+ "cutoff": "2026-07-30T11:54:26Z",
+ "head_at_cutoff": "fd24d248c5b08389bf7ece90f4268cef7e58073a",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Pratik Chanda",
+   10
+  ],
+  [
+   "Anders Kaseorg",
+   8
+  ],
+  [
+   "Shubham Padia",
+   5
+  ],
+  [
+   "Aman Agrawal",
+   3
+  ],
+  [
+   "Amit Patil",
+   2
+  ]
+ ],
+ "files": [
+  "web/src/condense.ts",
+  "web/src/message_list_view.ts"
+ ]
+}

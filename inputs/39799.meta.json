@@ -1,0 +1,31 @@
+{
+ "pr": 39799,
+ "cutoff": "2026-07-22T13:35:38Z",
+ "head_at_cutoff": "5337bd5cfd90a26fd3aa83bd12ad6db3848f1aa9",
+ "file_authors": [
+  [
+   "Prakhar Pratyush",
+   9
+  ],
+  [
+   "Alex Vandiver",
+   4
+  ],
+  [
+   "Sahil Batra",
+   3
+  ],
+  [
+   "Tim Abbott",
+   3
+  ],
+  [
+   "Anders Kaseorg",
+   2
+  ]
+ ],
+ "files": [
+  "zerver/actions/user_groups.py",
+  "zerver/tornado/event_queue.py"
+ ]
+}

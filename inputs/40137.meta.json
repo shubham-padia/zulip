@@ -1,0 +1,32 @@
+{
+ "pr": 40137,
+ "cutoff": "2026-09-16T11:30:01Z",
+ "head_at_cutoff": "9e90ca8b4efb48b24400755e03b6e20490677742",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "PieterCK",
+   28
+  ],
+  [
+   "Alex Vandiver",
+   8
+  ],
+  [
+   "Mateusz Mandera",
+   4
+  ],
+  [
+   "Prakhar Pratyush",
+   2
+  ],
+  [
+   "Mohammad Reza Kianifar",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/data_import/mattermost.py",
+  "zerver/tests/test_mattermost_importer.py"
+ ]
+}

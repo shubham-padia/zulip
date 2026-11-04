@@ -1,0 +1,31 @@
+{
+ "pr": 39830,
+ "cutoff": "2026-08-04T14:00:48Z",
+ "head_at_cutoff": "aa581feed7aead5c9a85fd98a1ba9db41001babb",
+ "file_authors": [
+  [
+   "Lauryn Menard",
+   18
+  ],
+  [
+   "Aman Agrawal",
+   14
+  ],
+  [
+   "Alex Vandiver",
+   10
+  ],
+  [
+   "Mateusz Mandera",
+   4
+  ],
+  [
+   "The Dance",
+   2
+  ]
+ ],
+ "files": [
+  "zerver/tests/test_signup.py",
+  "zerver/views/registration.py"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "pr": 40065,
+ "cutoff": "2026-09-07T10:25:05Z",
+ "head_at_cutoff": "b2d66df1a24afa38e151dbb56e81c4aef5f51b06",
+ "file_authors": [
+  [
+   "Evy Kassirer",
+   23
+  ],
+  [
+   "Karl Stolley",
+   12
+  ],
+  [
+   "Sahil Batra",
+   5
+  ],
+  [
+   "Shubham Padia",
+   4
+  ],
+  [
+   "Pratik Chanda",
+   3
+  ]
+ ],
+ "files": [
+  "web/styles/left_sidebar.css"
+ ]
+}

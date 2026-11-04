@@ -1,0 +1,35 @@
+{
+ "pr": 40208,
+ "cutoff": "2026-09-30T13:14:58Z",
+ "head_at_cutoff": "88cfa9d4cd7b2363e86f6b21592c1a833e45de12",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   24
+  ],
+  [
+   "Alex Vandiver",
+   6
+  ],
+  [
+   "PieterCK",
+   6
+  ],
+  [
+   "Aadyot Nandan",
+   3
+  ],
+  [
+   "Sayam Samal",
+   3
+  ]
+ ],
+ "files": [
+  "web/src/rendered_markdown.ts",
+  "web/templates/channel_message_link.hbs",
+  "web/templates/decorated_channel_name.hbs",
+  "web/templates/topic_link.hbs",
+  "web/tests/rendered_markdown.test.cjs",
+  "zerver/lib/markdown/__init__.py"
+ ]
+}

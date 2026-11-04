@@ -1,0 +1,34 @@
+{
+ "pr": 39862,
+ "cutoff": "2026-08-25T12:52:55Z",
+ "head_at_cutoff": "f1d7539ebb9f3e6c8a8954590a6ee78b493867ea",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Karl Stolley",
+   11
+  ],
+  [
+   "Alex Vandiver",
+   9
+  ],
+  [
+   "PieterCK",
+   6
+  ],
+  [
+   "Anders Kaseorg",
+   5
+  ],
+  [
+   "Lauryn Menard",
+   3
+  ]
+ ],
+ "files": [
+  "web/styles/rendered_markdown.css",
+  "zerver/lib/markdown/__init__.py",
+  "zerver/tests/test_link_embed.py",
+  "zerver/tests/test_markdown.py"
+ ]
+}

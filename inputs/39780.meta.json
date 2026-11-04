@@ -1,0 +1,35 @@
+{
+ "pr": 39780,
+ "cutoff": "2026-08-10T18:17:58Z",
+ "head_at_cutoff": "b55f907fc136bb606263f36adfd70c606177317a",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   10
+  ],
+  [
+   "Aman Agrawal",
+   9
+  ],
+  [
+   "Sayam Samal",
+   7
+  ],
+  [
+   "Evy Kassirer",
+   5
+  ],
+  [
+   "Pratik Chanda",
+   5
+  ]
+ ],
+ "files": [
+  "web/src/message_view_header.ts",
+  "web/src/tippyjs.ts",
+  "web/src/user_card_popover.ts",
+  "web/styles/message_view_header.css",
+  "web/templates/navbar_icon_and_title.hbs",
+  "web/tests/message_view_header.test.cjs"
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "pr": 39870,
+ "cutoff": "2026-08-04T15:11:25Z",
+ "head_at_cutoff": "45badf6f7e9c986a11294328df250c4b0a42b970",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   5
+  ],
+  [
+   "Shubham Padia",
+   5
+  ],
+  [
+   "Lauryn Menard",
+   4
+  ],
+  [
+   "Mateusz Mandera",
+   4
+  ],
+  [
+   "Tim Abbott",
+   3
+  ]
+ ],
+ "files": [
+  "tools/linter_lib/custom_check.py",
+  "zerver/lib/scim.py",
+  "zerver/tests/test_scim.py"
+ ]
+}

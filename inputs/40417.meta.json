@@ -1,0 +1,30 @@
+{
+ "pr": 40417,
+ "cutoff": "2026-10-19T21:08:19Z",
+ "head_at_cutoff": "e5650e82aa95d79654abd099e0260ef7d8386a97",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   40
+  ],
+  [
+   "PieterCK",
+   6
+  ],
+  [
+   "Shubham Padia",
+   6
+  ],
+  [
+   "Maneesh Shukla",
+   5
+  ],
+  [
+   "Sayam Samal",
+   4
+  ]
+ ],
+ "files": [
+  "web/styles/settings.css"
+ ]
+}

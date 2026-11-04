@@ -1,0 +1,80 @@
+{
+ "pr": 39504,
+ "cutoff": "2026-09-16T16:16:28Z",
+ "head_at_cutoff": "5d7e1a90a0e7a82980e06da7b873bd92a529483e",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Niloth P",
+   60
+  ],
+  [
+   "Lauryn Menard",
+   44
+  ],
+  [
+   "Sahil Batra",
+   43
+  ],
+  [
+   "Alex Vandiver",
+   42
+  ],
+  [
+   "Anders Kaseorg",
+   40
+  ]
+ ],
+ "files": [
+  "api_docs/include/rest-endpoints.md",
+  "api_docs/unmerged.d/ZF-a43758.md",
+  "docs/THIRDPARTY",
+  "docs/production/video-calls.md",
+  "package.json",
+  "patches/livekit-client@2.19.1.patch",
+  "pnpm-lock.yaml",
+  "pnpm-workspace.yaml",
+  "puppet/zulip/manifests/common.pp",
+  "puppet/zulip/manifests/profile/livekit.pp",
+  "puppet/zulip/templates/livekit-server.service.template.erb",
+  "puppet/zulip/templates/livekit.yaml.template.erb",
+  "starlight_help/src/content/docs/configure-call-provider.mdx",
+  "starlight_help/src/content/docs/start-a-call.mdx",
+  "static/images/integrations/bot_avatars/livekit.png",
+  "static/images/integrations/logos/livekit.svg",
+  "templates/zerver/integrations/big-blue-button.md",
+  "templates/zerver/integrations/constructor-groups.md",
+  "templates/zerver/integrations/jitsi.md",
+  "templates/zerver/integrations/livekit.md",
+  "templates/zerver/integrations/nextcloud-talk.md",
+  "templates/zerver/integrations/webex.md",
+  "templates/zerver/integrations/zoom.md",
+  "templates/zerver/livekit_call.html",
+  "tools/lib/capitalization.py",
+  "tools/test-js-with-node",
+  "web/icons/mic.svg",
+  "web/src/base_page_params.ts",
+  "web/src/compose_call.ts",
+  "web/src/compose_call_ui.ts",
+  "web/src/livekit_call.ts",
+  "web/src/livekit_call_prejoin.ts",
+  "web/src/livekit_call_room.ts",
+  "web/src/state_data.ts",
+  "web/src/types/non-shared-uint8array.d.ts",
+  "web/styles/livekit_call.css",
+  "web/tests/compose_call.test.cjs",
+  "web/webpack.assets.json",
+  "zerver/lib/integrations.py",
+  "zerver/models/realms.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_create_video_call.py",
+  "zerver/tests/test_openapi.py",
+  "zerver/tests/test_realm.py",
+  "zerver/views/video_calls.py",
+  "zproject/computed_settings.py",
+  "zproject/default_settings.py",
+  "zproject/prod_settings_template.py",
+  "zproject/test_extra_settings.py",
+  "zproject/urls.py"
+ ]
+}

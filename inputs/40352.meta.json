@@ -1,0 +1,35 @@
+{
+ "pr": 40352,
+ "cutoff": "2026-10-12T10:10:50Z",
+ "head_at_cutoff": "b9b344b8b9dba930df21d91dfad8a755b53a1b7c",
+ "file_authors": [
+  [
+   "Niloth P",
+   15
+  ],
+  [
+   "Pritesh Shetty",
+   7
+  ],
+  [
+   "Anders Kaseorg",
+   2
+  ],
+  [
+   "The Dance",
+   2
+  ],
+  [
+   "Alex Vandiver",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/lib/webhooks/git.py",
+  "zerver/webhooks/gitea/tests.py",
+  "zerver/webhooks/github/view.py",
+  "zerver/webhooks/gogs/fixtures/issue_comment__in_pr.json",
+  "zerver/webhooks/gogs/tests.py",
+  "zerver/webhooks/gogs/view.py"
+ ]
+}

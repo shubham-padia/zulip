@@ -1,0 +1,38 @@
+{
+ "pr": 40191,
+ "cutoff": "2026-10-19T17:53:58Z",
+ "head_at_cutoff": "3b14c153a71602fae8cd624ccc925afd51bb42ee",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Alex Vandiver",
+   21
+  ],
+  [
+   "Prakhar Pratyush",
+   9
+  ],
+  [
+   "Mateusz Mandera",
+   8
+  ],
+  [
+   "Anders Kaseorg",
+   4
+  ],
+  [
+   "Apoorva Pendse",
+   4
+  ]
+ ],
+ "files": [
+  "zerver/lib/avatar.py",
+  "zerver/lib/realm_icon.py",
+  "zerver/lib/realm_logo.py",
+  "zerver/tests/test_server_settings.py",
+  "zerver/tests/test_upload.py",
+  "zproject/computed_settings.py",
+  "zproject/default_settings.py",
+  "zproject/prod_settings_template.py"
+ ]
+}

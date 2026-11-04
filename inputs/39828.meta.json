@@ -1,0 +1,14 @@
+{
+ "pr": 39828,
+ "cutoff": "2026-07-29T17:30:29Z",
+ "head_at_cutoff": "466790acdcfeb50fc8820371799fc8a72791aac3",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   1
+  ]
+ ],
+ "files": [
+  "scripts/zulip-puppet-apply"
+ ]
+}

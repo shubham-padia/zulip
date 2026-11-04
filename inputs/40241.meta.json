@@ -1,0 +1,32 @@
+{
+ "pr": 40241,
+ "cutoff": "2026-10-01T18:29:56Z",
+ "head_at_cutoff": "49a799d5afc0e34586f6ed70051b94152b6ce63f",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Prakhar Pratyush",
+   4
+  ],
+  [
+   "Anders Kaseorg",
+   3
+  ],
+  [
+   "Alex Vandiver",
+   2
+  ],
+  [
+   "Agnish Bauri",
+   1
+  ],
+  [
+   "Aman Agrawal",
+   1
+  ]
+ ],
+ "files": [
+  "zerver/tests/test_upload.py",
+  "zerver/views/upload.py"
+ ]
+}

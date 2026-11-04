@@ -1,0 +1,31 @@
+{
+ "pr": 40218,
+ "cutoff": "2026-10-01T12:05:04Z",
+ "head_at_cutoff": "498c7f97e9ba147897223c8cd69c2ccb78803422",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   18
+  ],
+  [
+   "Pratik Chanda",
+   17
+  ],
+  [
+   "Aman Agrawal",
+   10
+  ],
+  [
+   "Shubham Padia",
+   7
+  ],
+  [
+   "Tim Abbott",
+   3
+  ]
+ ],
+ "files": [
+  "web/src/composebox_typeahead.ts",
+  "web/tests/composebox_typeahead.test.cjs"
+ ]
+}

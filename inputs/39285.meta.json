@@ -1,0 +1,40 @@
+{
+ "pr": 39285,
+ "cutoff": "2026-09-14T13:59:04Z",
+ "head_at_cutoff": "52055cee04dddc8568e8506b8bbd2c57a6ea65d1",
+ "file_authors": [
+  [
+   "PieterCK",
+   21
+  ],
+  [
+   "Prakhar Pratyush",
+   14
+  ],
+  [
+   "Aman Agrawal",
+   11
+  ],
+  [
+   "Alex Vandiver",
+   10
+  ],
+  [
+   "Sahil Batra",
+   6
+  ]
+ ],
+ "files": [
+  "zerver/actions/message_edit.py",
+  "zerver/lib/email_notifications.py",
+  "zerver/lib/message_report.py",
+  "zerver/lib/outgoing_webhook.py",
+  "zerver/lib/reminders.py",
+  "zerver/lib/url_encoding.py",
+  "zerver/tests/test_message_fetch.py",
+  "zerver/tests/test_message_move_stream.py",
+  "zerver/tests/test_message_report.py",
+  "zerver/tests/test_outgoing_webhook_system.py",
+  "zerver/tests/test_url_encoding.py"
+ ]
+}

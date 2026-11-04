@@ -1,0 +1,32 @@
+{
+ "pr": 39948,
+ "cutoff": "2026-08-17T21:42:16Z",
+ "head_at_cutoff": "4ddeddb966fecdf73e4c40adc75a729f153fea2b",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Evy Kassirer",
+   8
+  ],
+  [
+   "Anders Kaseorg",
+   7
+  ],
+  [
+   "Pratik Chanda",
+   5
+  ],
+  [
+   "Santhosh Kumar",
+   2
+  ],
+  [
+   "Tim Abbott",
+   2
+  ]
+ ],
+ "files": [
+  "web/src/compose.ts",
+  "web/tests/compose.test.cjs"
+ ]
+}

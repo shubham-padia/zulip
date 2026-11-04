@@ -1,0 +1,49 @@
+{
+ "pr": 39622,
+ "cutoff": "2026-08-14T21:24:00Z",
+ "head_at_cutoff": "cb1c5d6c15a0ab26a85aa1dde6773ac32c4fda8c",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Sahil Batra",
+   41
+  ],
+  [
+   "Prakhar Pratyush",
+   31
+  ],
+  [
+   "Lauryn Menard",
+   28
+  ],
+  [
+   "Apoorva Pendse",
+   26
+  ],
+  [
+   "Aman Agrawal",
+   25
+  ]
+ ],
+ "files": [
+  "api_docs/unmerged.d/ZF-dd215b.md",
+  "starlight_help/src/content/docs/custom-profile-fields.mdx",
+  "web/src/settings_profile_fields.ts",
+  "web/src/state_data.ts",
+  "web/src/tippyjs.ts",
+  "web/src/user_card_popover.ts",
+  "web/styles/popovers.css",
+  "web/templates/popovers/user_card/user_card_popover.hbs",
+  "web/templates/settings/admin_profile_field_list.hbs",
+  "web/tests/settings_profile_fields.test.cjs",
+  "zerver/actions/custom_profile_fields.py",
+  "zerver/lib/events.py",
+  "zerver/migrations/0807_set_display_in_profile_summary_for_first_pronoun_field.py",
+  "zerver/models/custom_profile_fields.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_custom_profile_data.py",
+  "zerver/tests/test_home.py",
+  "zerver/views/custom_profile_fields.py",
+  "zilencer/management/commands/populate_db.py"
+ ]
+}

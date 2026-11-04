@@ -1,0 +1,30 @@
+{
+ "pr": 40012,
+ "cutoff": "2026-09-08T14:06:42Z",
+ "head_at_cutoff": "59888977730020eb41a6470795ef70db471ddce5",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   3
+  ],
+  [
+   "Apoorva Pendse",
+   3
+  ],
+  [
+   "Aman Agrawal",
+   1
+  ],
+  [
+   "Prakhar Pratyush",
+   1
+  ]
+ ],
+ "files": [
+  "templates/zerver/emails/notify_new_login.html",
+  "templates/zerver/emails/notify_new_login.txt",
+  "zerver/signals.py",
+  "zerver/tests/test_new_users.py"
+ ]
+}

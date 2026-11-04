@@ -1,0 +1,32 @@
+{
+ "pr": 39758,
+ "cutoff": "2026-07-28T11:03:54Z",
+ "head_at_cutoff": "ca26a3f2c0daf812a6c10684e586f820df92be11",
+ "file_authors": [
+  [
+   "Sayam Samal",
+   7
+  ],
+  [
+   "Anders Kaseorg",
+   4
+  ],
+  [
+   "Lauryn Menard",
+   3
+  ],
+  [
+   "Maneesh Shukla",
+   2
+  ],
+  [
+   "Shubham Padia",
+   2
+  ]
+ ],
+ "files": [
+  "web/src/desktop_notifications.ts",
+  "web/src/navbar_alerts.ts",
+  "web/src/settings_notifications.ts"
+ ]
+}

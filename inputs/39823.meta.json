@@ -1,0 +1,36 @@
+{
+ "pr": 39823,
+ "cutoff": "2026-08-10T18:13:16Z",
+ "head_at_cutoff": "5125226e23ac73299cf76e602167cefbf8909ef7",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Anders Kaseorg",
+   10
+  ],
+  [
+   "Pratik Chanda",
+   7
+  ],
+  [
+   "Sahil Batra",
+   4
+  ],
+  [
+   "Evy Kassirer",
+   2
+  ],
+  [
+   "Sayam Samal",
+   2
+  ]
+ ],
+ "files": [
+  "web/src/todo_data.ts",
+  "web/src/todo_widget.ts",
+  "web/styles/widgets.css",
+  "web/templates/widgets/todo_widget_tasks.hbs",
+  "zerver/lib/validator.py",
+  "zerver/tests/test_validators.py"
+ ]
+}

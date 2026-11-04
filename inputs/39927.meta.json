@@ -1,0 +1,33 @@
+{
+ "pr": 39927,
+ "cutoff": "2026-08-14T21:32:12Z",
+ "head_at_cutoff": "e97707e5f399a680cc09a3cfdcd59fba7833e1c4",
+ "file_authors": [
+  [
+   "Karl Stolley",
+   15
+  ],
+  [
+   "Sahil Batra",
+   11
+  ],
+  [
+   "Aman Agrawal",
+   6
+  ],
+  [
+   "Pratik Chanda",
+   5
+  ],
+  [
+   "Shubham Padia",
+   5
+  ]
+ ],
+ "files": [
+  "web/src/compose_banner.ts",
+  "web/styles/compose.css",
+  "web/templates/compose_banner/stream_does_not_exist_error.hbs",
+  "web/templates/stream_does_not_exist_error_message.hbs"
+ ]
+}

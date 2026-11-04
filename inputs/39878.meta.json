@@ -1,0 +1,34 @@
+{
+ "pr": 39878,
+ "cutoff": "2026-08-10T18:26:54Z",
+ "head_at_cutoff": "f2b56e88c79074d97a03ad2ba43f35f05abc88fc",
+ "file_authors": [
+  [
+   "Lauryn Menard",
+   32
+  ],
+  [
+   "Prakhar Pratyush",
+   28
+  ],
+  [
+   "Sahil Batra",
+   25
+  ],
+  [
+   "Shubham Padia",
+   13
+  ],
+  [
+   "Tim Abbott",
+   13
+  ]
+ ],
+ "files": [
+  "api_docs/include/rest-endpoints.md",
+  "zerver/openapi/markdown_extension.py",
+  "zerver/openapi/test_curl_examples.py",
+  "zerver/openapi/zulip.yaml",
+  "zerver/tests/test_openapi.py"
+ ]
+}

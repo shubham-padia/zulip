@@ -1,0 +1,33 @@
+{
+ "pr": 39691,
+ "cutoff": "2026-08-27T16:22:19Z",
+ "head_at_cutoff": "385819e533a5e0a3e99ff51826e6810e400c19a4",
+ "pr_shape": "compare at cutoff head",
+ "file_authors": [
+  [
+   "Apoorva Pendse",
+   11
+  ],
+  [
+   "Pratik Chanda",
+   6
+  ],
+  [
+   "Lauryn Menard",
+   4
+  ],
+  [
+   "Anders Kaseorg",
+   2
+  ],
+  [
+   "The Dance",
+   2
+  ]
+ ],
+ "files": [
+  "web/src/compose_call_ui.ts",
+  "web/src/compose_closed_ui.ts",
+  "web/tests/compose_call.test.cjs"
+ ]
+}
