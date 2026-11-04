@@ -1,0 +1,11 @@
+{
+ "case": "40232-5935435606",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the before/after screenshots now use the same data**\n\nNew: The author replaced the screenshots with a Before/After table for Author ascending and descending. All four use the same user, the same six emoji from three authors, and the same viewport size. Missing: nothing the feedback asked for. The reviewer should look at the author's open question on whether reversing the sort should move the current user's emoji to the bottom.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the screenshot feedback.\n\n###### Reply\n\n```quote\n@laurynmm, the screenshots now use the same data set before and after. Could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0350331
+}

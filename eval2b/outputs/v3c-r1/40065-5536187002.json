@@ -1,0 +1,11 @@
+{
+ "case": "40065-5536187002",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the commits are cleaned up, but the screenshots don't show the clipping or the fix**\n\nNew: The author squashed the history into a single commit and retook the before/after shots in one tab with the same scroll position. Missing: by the PR's own note, the clipping doesn't reproduce at the DPR 1 used for the shots, so the pair only shows a 2px spacing change, not an emoji cut off before and fully visible after.\n\n###### Next step\n\nKeep \"not ready\" and leave the PR unassigned until the screenshots show the problem and the fix.\n\n###### Reply\n\n```quote\nThanks for squashing the commits! The screenshots still don't show the bug: at DPR 1 the emoji aren't clipped in the \"before\" shot, so we can't see that the change fixes anything. Please capture a setup where the clipping reproduces (e.g. the DPR 1.5 you mentioned) and show it before and after, following the [precise before/after screenshots guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0526011
+}

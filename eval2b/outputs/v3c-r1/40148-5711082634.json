@@ -1,0 +1,11 @@
+{
+ "case": "40148-5711082634",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — self-review checklist is still missing from the PR description**\n\nNew: The author split the work into three focused commits, added videos for each UI change, added a test file and auto-fill tests, and filled in the description, testing notes and \"Fixes #20316\". Missing: the PR template's self-review checklist isn't in the description, and CI status can't be confirmed from here, so the \"all checks pass\" claim is unverified.\n\n###### Next step\n\nKeep \"not ready\" on the PR, and have laurynmm confirm once the checklist is added; then remove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\nThanks for splitting up the commits and adding the videos, that helps a lot. The PR description is still missing the self-review checklist from the [PR template](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html), so please add it and go through each item before we review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.039499099999999995
+}

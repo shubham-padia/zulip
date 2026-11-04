@@ -1,0 +1,11 @@
+{
+ "case": "39995-5728364177",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the review questions are still unanswered**\n\nNew: The author pushed once, dropping the six per-severity fixture files, so the PR is back to only `view.py` and `tests.py`, and then tagged the reviewer with no explanation. Missing: answers to the review questions (which existing emoji integrations and PRs they studied, what those did about `doc.md`, what the docs say about LLM-generated fixtures), and the PR description still says the feature depends on `include_emoji_indicators` even though the author said that option was removed.\n\n###### Next step\n\nKeep \"not ready\" and have Niloth-p, who gave the feedback, confirm the new tests match the single-fixture loop approach from commit `e4097a00` once the author has replied.\n\n###### Reply\n\n```quote\nThanks for the update! Before another look, please reply to the questions in the earlier review: which existing emoji integrations and PRs you followed, and what they did for `doc.md`. Please also update the PR description so it matches the code (for example, the `include_emoji_indicators` option).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0616611
+}

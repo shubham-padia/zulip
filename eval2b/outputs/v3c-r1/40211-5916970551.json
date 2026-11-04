@@ -1,0 +1,11 @@
+{
+ "case": "40211-5916970551",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the squash pulled 123 unrelated files into the PR**\n\nNew: The author squashed the branch into one commit and updated the description. Missing: the diff is now +4994/-5409 across 123 files (docs, web, scripts, lockfiles), though the fix was about 2 files. The history looks mangled by the merge or rebase. The PR also has no local test run and no linked issue.\n\n###### Next step\n\nKeep \"not ready\" and assign no one.\n\n###### Reply\n\n```quote\nThanks for squashing. The PR now shows changes to 123 unrelated files, probably from the rebase or merge with main. Could you rebase onto current `main` so only the scheduled-message fix and its test remain? The [reviewable PRs guide](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) and [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) explain how.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.028023100000000002
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40085-5574954238",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the manual-testing screenshots the feedback asked for are still missing**\n\nNew: The author swapped in publicly hosted before/after screenshots for two layouts (rows with an avatar or icon, and slash-command rows without one), but pushed no code. Missing: screenshots documenting the other manual checks (12px, default, and 20px font sizes), which they chose to leave as unshown spot checks, and the self-review boxes for responsiveness and for remaining concerns are still unchecked.\n\n###### Next step\n\nKeep \"not ready\" and leave it with laurynmm; no reviewer yet.\n\n###### Reply\n\n```quote\nThanks for the public screenshots, they're much easier to compare. You mentioned testing at several font sizes (and your plan on #37030 called for it), so please add precise before/after screenshots for those too, per the [guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0598451
+}

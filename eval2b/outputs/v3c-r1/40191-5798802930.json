@@ -1,0 +1,11 @@
+{
+ "case": "40191-5798802930",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both items from the feedback are done**\n\nNew: Rewrote both commit messages, and moved the Home Assistant docs change out to #40197, which the author says has before/after screenshots. The PR now only renames the avatar and logo settings.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for the updates! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0565531
+}

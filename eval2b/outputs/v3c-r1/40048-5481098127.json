@@ -1,0 +1,11 @@
+{
+ "case": "40048-5481098127",
+ "variant": "v3c",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Close — linked issue isn't labeled \"help wanted\"**\n\nNew: The author updated the description with a docs screenshot and says they started an #api design topic, but there is no new push and no sign of any agreement there. Missing: the issue #20229 has no \"help wanted\" label, the author has no merged PRs, and the maintainer comment only pointed to guides, which doesn't count as engagement.\n\n###### Next step\n\nClose the PR under the \"help wanted\" rule: `gh pr close 40048 --repo zulip/zulip`\n\n###### Reply\n\n```quote\nThanks for the work here, but we're closing this PR because issue #20229 isn't labeled \"help wanted\", and contributors can only work on issues with that label. Please see the guide on [picking up issues](https://zulip.readthedocs.io/en/latest/contributing/contributing.html) for how to find ones that are open for contributions.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0286191
+}
