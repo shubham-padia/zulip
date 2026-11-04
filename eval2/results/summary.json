@@ -1,97 +1,1409 @@
 {
  "cases_total": 60,
- "cases_with_keys": 5,
- "cases_judged_twice": 1,
+ "cases_with_keys": 60,
+ "cases_judged_twice": 60,
  "variants": {
   "v1": {
-   "decision_accuracy": 1,
+   "decision_accuracy": 0.98,
    "decision_accuracy_by_group": {
+    "closed": 0.9,
+    "no_action": 1,
+    "removed": 1,
     "replied": 1
    },
    "decision_confusion": {
-    "key NOTE -> NOTE": 2
+    "key NOTE -> CARD": 2,
+    "key NOTE -> NOTE": 118
    },
-   "action_accuracy": 1,
+   "action_accuracy": 0.64,
    "scores": {
-    "decision_score": 9.75,
-    "accuracy_score": 6.5,
-    "reply_score": 6.75,
-    "brevity_score": 7.25
+    "decision_score": 7.02,
+    "accuracy_score": 5.77,
+    "reply_score": 5.67,
+    "brevity_score": 6.8
    },
-   "overall": 7.56,
-   "overall_judge_repeat_1": 7.5,
-   "overall_judge_repeat_2": 7.62,
-   "overall_bot_run_1": 6.25,
-   "overall_bot_run_2": 8.88,
-   "wrong_facts_per_output": 0.5,
-   "top_rule_failures": []
+   "overall": 6.31,
+   "overall_judge_repeat_1": 6.31,
+   "overall_judge_repeat_2": 6.32,
+   "overall_bot_run_1": 6.29,
+   "overall_bot_run_2": 6.34,
+   "wrong_facts_per_output": 0.31,
+   "top_rule_failures": [
+    [
+     "filler_point",
+     95
+    ],
+    [
+     "asks_for_done_work",
+     8
+    ],
+    [
+     "reply_contradicts_key_action",
+     7
+    ],
+    [
+     "reply_contradicts_verdict",
+     3
+    ],
+    [
+     "reply_to_author_when_hand_off",
+     2
+    ],
+    [
+     "extra_ask_tests",
+     2
+    ]
+   ]
   },
   "v2": {
-   "decision_accuracy": 1,
+   "decision_accuracy": 0.89,
    "decision_accuracy_by_group": {
-    "replied": 1
+    "closed": 0.9,
+    "no_action": 0.8,
+    "removed": 0.83,
+    "replied": 0.95
    },
    "decision_confusion": {
-    "key NOTE -> NOTE": 2
+    "key NOTE -> CARD": 13,
+    "key NOTE -> NOTE": 107
    },
-   "action_accuracy": 1,
+   "action_accuracy": 0.61,
    "scores": {
-    "decision_score": 9.75,
-    "accuracy_score": 8.25,
-    "reply_score": 8.5,
-    "brevity_score": 7.75
+    "decision_score": 6.65,
+    "accuracy_score": 5.7,
+    "reply_score": 5.68,
+    "brevity_score": 6.9
    },
-   "overall": 8.56,
-   "overall_judge_repeat_1": 8.5,
-   "overall_judge_repeat_2": 8.62,
-   "overall_bot_run_1": 8.75,
-   "overall_bot_run_2": 8.38,
-   "wrong_facts_per_output": 0,
-   "top_rule_failures": []
+   "overall": 6.23,
+   "overall_judge_repeat_1": 6.2,
+   "overall_judge_repeat_2": 6.27,
+   "overall_bot_run_1": 6.32,
+   "overall_bot_run_2": 6.15,
+   "wrong_facts_per_output": 0.37,
+   "top_rule_failures": [
+    [
+     "filler_point",
+     87
+    ],
+    [
+     "asks_for_done_work",
+     14
+    ],
+    [
+     "repeats_first_card",
+     9
+    ],
+    [
+     "reply_contradicts_key_action",
+     6
+    ],
+    [
+     "reply_contradicts_verdict",
+     5
+    ],
+    [
+     "reply_to_author_when_hand_off",
+     2
+    ]
+   ]
   },
   "v3": {
    "decision_accuracy": 1,
    "decision_accuracy_by_group": {
+    "closed": 1,
+    "no_action": 1,
+    "removed": 1,
     "replied": 1
    },
    "decision_confusion": {
-    "key NOTE -> NOTE": 2
+    "key NOTE -> NOTE": 120
    },
-   "action_accuracy": 1,
+   "action_accuracy": 0.67,
    "scores": {
-    "decision_score": 10,
-    "accuracy_score": 3.75,
-    "reply_score": 5,
-    "brevity_score": 8
+    "decision_score": 7.2,
+    "accuracy_score": 5.6,
+    "reply_score": 5.75,
+    "brevity_score": 8.45
    },
-   "overall": 6.69,
-   "overall_judge_repeat_1": 6.62,
-   "overall_judge_repeat_2": 6.75,
-   "overall_bot_run_1": 6.75,
-   "overall_bot_run_2": 6.62,
-   "wrong_facts_per_output": 1,
-   "top_rule_failures": []
+   "overall": 6.75,
+   "overall_judge_repeat_1": 6.74,
+   "overall_judge_repeat_2": 6.76,
+   "overall_bot_run_1": 6.78,
+   "overall_bot_run_2": 6.73,
+   "wrong_facts_per_output": 0.37,
+   "top_rule_failures": [
+    [
+     "filler_point",
+     9
+    ],
+    [
+     "asks_for_done_work",
+     8
+    ],
+    [
+     "reply_contradicts_key_action",
+     6
+    ],
+    [
+     "reply_wrong_ask",
+     3
+    ],
+    [
+     "reply_contradicts_verdict",
+     3
+    ],
+    [
+     "wrong_action",
+     2
+    ]
+   ]
   }
  },
  "key_decisions": {
-  "NOTE": 5
+  "NOTE": 60
  },
  "key_actions": {
-  "hand_off": 3,
-  "more_feedback": 2
+  "hand_off": 28,
+  "more_feedback": 26,
+  "close": 6
  },
  "paired_overall_differences": {
-  "v1 - v2": "n/a",
-  "v1 - v3": "n/a",
-  "v2 - v3": "n/a"
+  "v1 - v2": "+0.08 \u00b1 0.18",
+  "v1 - v3": "-0.44 \u00b1 0.13",
+  "v2 - v3": "-0.52 \u00b1 0.18"
  },
  "outputs_ranked": [
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40085-5574954238",
+   "kind": "NOTE",
+   "overall": 2.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40168-5775859018",
+   "kind": "NOTE",
+   "overall": 2.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40085-5574954238",
+   "kind": "NOTE",
+   "overall": 3.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40085-5574954238",
+   "kind": "NOTE",
+   "overall": 3.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40085-5574954238",
+   "kind": "NOTE",
+   "overall": 3.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40085-5574954238",
+   "kind": "NOTE",
+   "overall": 3.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39945-5415679206",
+   "kind": "NOTE",
+   "overall": 3.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40013-5589724033",
+   "kind": "NOTE",
+   "overall": 3.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40048-5481098127",
+   "kind": "NOTE",
+   "overall": 3.38
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40168-5775859018",
+   "kind": "NOTE",
+   "overall": 3.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39995-5728364177",
+   "kind": "NOTE",
+   "overall": 3.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39865-5194201765",
+   "kind": "NOTE",
+   "overall": 3.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40085-5574954238",
+   "kind": "NOTE",
+   "overall": 3.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39785-5037857009",
+   "kind": "NOTE",
+   "overall": 3.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39863-5344084962",
+   "kind": "NOTE",
+   "overall": 3.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40048-5481098127",
+   "kind": "NOTE",
+   "overall": 3.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40097-6055464855",
+   "kind": "CARD",
+   "overall": 3.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39995-5728364177",
+   "kind": "NOTE",
+   "overall": 3.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40240-6313490306",
+   "kind": "NOTE",
+   "overall": 3.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40030-5442478190",
+   "kind": "NOTE",
+   "overall": 3.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39945-5415679206",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40040-6192384462",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40048-5481098127",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40040-6192384462",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40065-5536187002",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39945-5415679206",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39785-5037857009",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39829-5113437343",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40096-6055469654",
+   "kind": "CARD",
+   "overall": 3.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39863-5344084962",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40048-5481098127",
+   "kind": "NOTE",
+   "overall": 3.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39995-5728364177",
+   "kind": "NOTE",
+   "overall": 3.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39863-5344084962",
+   "kind": "NOTE",
+   "overall": 3.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39945-5415679206",
+   "kind": "NOTE",
+   "overall": 3.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39987-5365589747",
+   "kind": "NOTE",
+   "overall": 4.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40013-5589724033",
+   "kind": "NOTE",
+   "overall": 4.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40240-6313490306",
+   "kind": "NOTE",
+   "overall": 4.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40240-6313490306",
+   "kind": "NOTE",
+   "overall": 4.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40013-5589724033",
+   "kind": "NOTE",
+   "overall": 4.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40148-5711082634",
+   "kind": "CARD",
+   "overall": 4.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40237-5935346309",
+   "kind": "NOTE",
+   "overall": 4.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40048-5481098127",
+   "kind": "NOTE",
+   "overall": 4.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40240-6313490306",
+   "kind": "NOTE",
+   "overall": 4.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39995-5728364177",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39945-5415679206",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39987-5365589747",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40237-5935346309",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39459-4663361149",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40232-5935435606",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40237-5935346309",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40013-5589724033",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39945-5415679206",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40040-6192384462",
+   "kind": "NOTE",
+   "overall": 4.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39836-5142302711",
+   "kind": "NOTE",
+   "overall": 4.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40048-5481098127",
+   "kind": "NOTE",
+   "overall": 4.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40148-5711082634",
+   "kind": "CARD",
+   "overall": 4.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39987-5365589747",
+   "kind": "NOTE",
+   "overall": 4.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39995-5728364177",
+   "kind": "NOTE",
+   "overall": 4.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40232-5935435606",
+   "kind": "NOTE",
+   "overall": 4.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40240-6313490306",
+   "kind": "NOTE",
+   "overall": 4.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40065-5536187002",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40097-6055464855",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40177-5954127181",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40232-5935435606",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40237-5935346309",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39540-4708052713",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39522-4714378606",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40240-6313490306",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39459-4663361149",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40232-5935435606",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40013-5589724033",
+   "kind": "NOTE",
+   "overall": 4.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39522-4714378606",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40041-5479840283",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39522-4714378606",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40211-5916970551",
+   "kind": "CARD",
+   "overall": 4.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40232-5935435606",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40065-5536187002",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40234-5937541838",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40065-5536187002",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40234-5937541838",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39987-5365589747",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39995-5728364177",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40013-5589724033",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40096-6055469654",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40232-5935435606",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40237-5935346309",
+   "kind": "NOTE",
+   "overall": 4.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40201-6155498168",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40234-5937541838",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40041-5479840283",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40234-5937541838",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39691-5277811900",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40177-5954127181",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40041-5479840283",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40096-6055469654",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40201-6155498168",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40237-5935346309",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40065-5536187002",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40201-6155498168",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40234-5937541838",
+   "kind": "NOTE",
+   "overall": 4.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39540-4708052713",
+   "kind": "NOTE",
+   "overall": 4.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39691-5277811900",
+   "kind": "NOTE",
+   "overall": 4.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39540-4708052713",
+   "kind": "NOTE",
+   "overall": 4.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39728-5051202036",
+   "kind": "NOTE",
+   "overall": 4.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40234-5937541838",
+   "kind": "NOTE",
+   "overall": 4.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40177-5954127181",
+   "kind": "NOTE",
+   "overall": 4.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40177-5954127181",
+   "kind": "NOTE",
+   "overall": 4.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40201-6155498168",
+   "kind": "NOTE",
+   "overall": 4.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39540-4708052713",
+   "kind": "NOTE",
+   "overall": 4.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40177-5954127181",
+   "kind": "NOTE",
+   "overall": 4.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40065-5536187002",
+   "kind": "NOTE",
+   "overall": 4.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40041-5479840283",
+   "kind": "NOTE",
+   "overall": 4.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39722-4961693879",
+   "kind": "NOTE",
+   "overall": 5.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40211-5916970551",
+   "kind": "CARD",
+   "overall": 5.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39522-4714378606",
+   "kind": "NOTE",
+   "overall": 5.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39722-4961693879",
+   "kind": "NOTE",
+   "overall": 5.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39819-5108435113",
+   "kind": "NOTE",
+   "overall": 5.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40257-6023845324",
+   "kind": "CARD",
+   "overall": 5.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39540-4708052713",
+   "kind": "NOTE",
+   "overall": 5.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39540-4708052713",
+   "kind": "NOTE",
+   "overall": 5.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39728-5012922258",
+   "kind": "NOTE",
+   "overall": 5.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39728-5051202036",
+   "kind": "NOTE",
+   "overall": 5.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39883-5198039741",
+   "kind": "NOTE",
+   "overall": 5.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39722-4961693879",
+   "kind": "NOTE",
+   "overall": 5.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39868-5175066393",
+   "kind": "NOTE",
+   "overall": 5.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39819-5108435113",
+   "kind": "NOTE",
+   "overall": 5.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39728-5051202036",
+   "kind": "NOTE",
+   "overall": 5.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40211-5916970551",
+   "kind": "CARD",
+   "overall": 5.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39694-4914523135",
+   "kind": "CARD",
+   "overall": 5.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40168-5775859018",
+   "kind": "NOTE",
+   "overall": 5.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39522-4714378606",
+   "kind": "NOTE",
+   "overall": 5.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39522-4714378606",
+   "kind": "NOTE",
+   "overall": 5.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39863-5344084962",
+   "kind": "NOTE",
+   "overall": 5.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39785-5037857009",
+   "kind": "NOTE",
+   "overall": 5.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39819-5108435113",
+   "kind": "NOTE",
+   "overall": 5.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40040-6192384462",
+   "kind": "NOTE",
+   "overall": 5.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39722-4961693879",
+   "kind": "NOTE",
+   "overall": 5.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39785-5037857009",
+   "kind": "NOTE",
+   "overall": 5.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39863-5344084962",
+   "kind": "NOTE",
+   "overall": 5.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39722-4961693879",
+   "kind": "NOTE",
+   "overall": 5.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39863-5344084962",
+   "kind": "NOTE",
+   "overall": 5.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39868-5175066393",
+   "kind": "NOTE",
+   "overall": 5.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39865-5194201765",
+   "kind": "NOTE",
+   "overall": 5.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39865-5194201765",
+   "kind": "NOTE",
+   "overall": 5.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39785-5037857009",
+   "kind": "NOTE",
+   "overall": 6.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39868-5175066393",
+   "kind": "NOTE",
+   "overall": 6.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40168-5775859018",
+   "kind": "NOTE",
+   "overall": 6.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39722-4961693879",
+   "kind": "NOTE",
+   "overall": 6.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40211-5916970551",
+   "kind": "CARD",
+   "overall": 6.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39785-5037857009",
+   "kind": "NOTE",
+   "overall": 6.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39868-5175066393",
+   "kind": "NOTE",
+   "overall": 6.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39865-5194201765",
+   "kind": "NOTE",
+   "overall": 6.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40168-5775859018",
+   "kind": "NOTE",
+   "overall": 6.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39883-5198039741",
+   "kind": "NOTE",
+   "overall": 6.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40040-6192384462",
+   "kind": "NOTE",
+   "overall": 6.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39784-5042031450",
+   "kind": "NOTE",
+   "overall": 6.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39868-5175066393",
+   "kind": "NOTE",
+   "overall": 6.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39728-5051202036",
+   "kind": "NOTE",
+   "overall": 6.12
+  },
   {
    "variant": "v1",
    "repeat": 1,
    "case": "39481-4711243565",
    "kind": "NOTE",
    "overall": 6.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39728-5051202036",
+   "kind": "NOTE",
+   "overall": 6.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40021-5448685369",
+   "kind": "NOTE",
+   "overall": 6.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40030-5442478190",
+   "kind": "NOTE",
+   "overall": 6.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40021-5448685369",
+   "kind": "NOTE",
+   "overall": 6.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40040-6192384462",
+   "kind": "NOTE",
+   "overall": 6.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40021-5448685369",
+   "kind": "NOTE",
+   "overall": 6.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39868-5175066393",
+   "kind": "NOTE",
+   "overall": 6.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39987-5365589747",
+   "kind": "NOTE",
+   "overall": 6.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39691-5277811900",
+   "kind": "NOTE",
+   "overall": 6.38
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40021-5448685369",
+   "kind": "NOTE",
+   "overall": 6.38
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40168-5775859018",
+   "kind": "NOTE",
+   "overall": 6.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39728-5051202036",
+   "kind": "NOTE",
+   "overall": 6.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39883-5198039741",
+   "kind": "NOTE",
+   "overall": 6.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39820-5103626520",
+   "kind": "NOTE",
+   "overall": 6.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39987-5365589747",
+   "kind": "NOTE",
+   "overall": 6.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40030-5442478190",
+   "kind": "NOTE",
+   "overall": 6.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40032-5484458133",
+   "kind": "NOTE",
+   "overall": 6.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40030-5442478190",
+   "kind": "NOTE",
+   "overall": 6.62
   },
   {
    "variant": "v3",
@@ -101,11 +1413,900 @@
    "overall": 6.62
   },
   {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39819-5108435113",
+   "kind": "NOTE",
+   "overall": 6.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40171-5795222359",
+   "kind": "NOTE",
+   "overall": 6.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40032-5484458133",
+   "kind": "NOTE",
+   "overall": 6.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39784-5100999626",
+   "kind": "NOTE",
+   "overall": 6.75
+  },
+  {
    "variant": "v3",
    "repeat": 1,
    "case": "39481-4711243565",
    "kind": "NOTE",
    "overall": 6.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40030-5442478190",
+   "kind": "NOTE",
+   "overall": 6.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39784-5042031450",
+   "kind": "NOTE",
+   "overall": 6.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39883-5198039741",
+   "kind": "NOTE",
+   "overall": 6.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40032-5484458133",
+   "kind": "NOTE",
+   "overall": 6.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39691-5277811900",
+   "kind": "NOTE",
+   "overall": 6.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40030-5442478190",
+   "kind": "NOTE",
+   "overall": 6.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40171-5795222359",
+   "kind": "NOTE",
+   "overall": 6.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39784-5042031450",
+   "kind": "NOTE",
+   "overall": 6.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39694-4914523135",
+   "kind": "NOTE",
+   "overall": 7.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39728-5012922258",
+   "kind": "NOTE",
+   "overall": 7.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39784-5042031450",
+   "kind": "NOTE",
+   "overall": 7.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39862-5398202815",
+   "kind": "NOTE",
+   "overall": 7.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40021-5448685369",
+   "kind": "NOTE",
+   "overall": 7.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40191-5798802930",
+   "kind": "NOTE",
+   "overall": 7.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39929-5293011728",
+   "kind": "NOTE",
+   "overall": 7.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39820-5103626520",
+   "kind": "NOTE",
+   "overall": 7.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39929-5293011728",
+   "kind": "NOTE",
+   "overall": 7.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40097-6055464855",
+   "kind": "NOTE",
+   "overall": 7.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39731-5006493904",
+   "kind": "CARD",
+   "overall": 7.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39836-5142302711",
+   "kind": "NOTE",
+   "overall": 7.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40096-6055469654",
+   "kind": "CARD",
+   "overall": 7.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40257-6023845324",
+   "kind": "CARD",
+   "overall": 7.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40097-6055464855",
+   "kind": "NOTE",
+   "overall": 7.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39784-5100999626",
+   "kind": "NOTE",
+   "overall": 7.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39927-5276328596",
+   "kind": "NOTE",
+   "overall": 7.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39929-5275974270",
+   "kind": "NOTE",
+   "overall": 7.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40191-5798802930",
+   "kind": "NOTE",
+   "overall": 7.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39694-4914523135",
+   "kind": "NOTE",
+   "overall": 7.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40065-5545794788",
+   "kind": "NOTE",
+   "overall": 7.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39731-5006493904",
+   "kind": "NOTE",
+   "overall": 7.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40021-5448685369",
+   "kind": "NOTE",
+   "overall": 7.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40191-5798802930",
+   "kind": "NOTE",
+   "overall": 7.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39820-5103626520",
+   "kind": "NOTE",
+   "overall": 7.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39829-5113437343",
+   "kind": "NOTE",
+   "overall": 7.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40012-5570902524",
+   "kind": "NOTE",
+   "overall": 7.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40032-5484458133",
+   "kind": "NOTE",
+   "overall": 7.38
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39819-5108435113",
+   "kind": "NOTE",
+   "overall": 7.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39836-5142302711",
+   "kind": "NOTE",
+   "overall": 7.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39929-5275974270",
+   "kind": "NOTE",
+   "overall": 7.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40065-5545794788",
+   "kind": "NOTE",
+   "overall": 7.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40257-6023845324",
+   "kind": "NOTE",
+   "overall": 7.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40097-6055464855",
+   "kind": "CARD",
+   "overall": 7.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39820-5103626520",
+   "kind": "NOTE",
+   "overall": 7.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39883-5198039741",
+   "kind": "NOTE",
+   "overall": 7.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39929-5293011728",
+   "kind": "NOTE",
+   "overall": 7.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40191-5798802930",
+   "kind": "NOTE",
+   "overall": 7.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39731-5006493904",
+   "kind": "CARD",
+   "overall": 7.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39459-4663361149",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40096-6055469654",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40148-5711082634",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39694-4914523135",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39820-5103626520",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40012-5570902524",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40065-5545794788",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40065-5545794788",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39728-5012922258",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39820-5103626520",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39927-5276328596",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40148-5711082634",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39819-5108435113",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40032-5484458133",
+   "kind": "NOTE",
+   "overall": 7.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39927-5276328596",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40096-6055469654",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40148-5711082634",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40257-6023845324",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39728-5012922258",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39894-5278594007",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40201-6155498168",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39622-5419621157",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39836-5142302711",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40201-6155498168",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39883-5198039741",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39927-5276328596",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40148-5711082634",
+   "kind": "NOTE",
+   "overall": 7.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39731-5006493904",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39829-5113437343",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39894-5278594007",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40042-6183881101",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39590-5004317162",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39829-5113437343",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39865-5194201765",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39929-5275974270",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40041-5479840283",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39691-5277811900",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39694-4914523135",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39929-5275974270",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40097-6055464855",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40257-6023845324",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39691-5277811900",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40065-5545794788",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40257-6023845324",
+   "kind": "NOTE",
+   "overall": 8.0
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39590-5004317162",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39731-5006493904",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39822-5091673928",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40042-6183881101",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39822-5091673928",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39927-5276328596",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39929-5293011728",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39822-5091673928",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40065-5545794788",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40177-5954127181",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39590-5004317162",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39728-5012922258",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39829-5113437343",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39836-5142302711",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40211-5916970551",
+   "kind": "NOTE",
+   "overall": 8.12
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39894-5278594007",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39784-5042031450",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39822-5091673928",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39590-5004317162",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39836-5142302711",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40191-5798802930",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40211-5916970551",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39731-5006493904",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39929-5275974270",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40191-5798802930",
+   "kind": "NOTE",
+   "overall": 8.25
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39822-5091673928",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40042-6183102956",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "40042-6183102956",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39590-5004317162",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40012-5570902524",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40041-5479840283",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40042-6183881101",
+   "kind": "NOTE",
+   "overall": 8.38
   },
   {
    "variant": "v2",
@@ -116,8 +2317,218 @@
   },
   {
    "variant": "v2",
+   "repeat": 2,
+   "case": "39894-5278594007",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40042-6183881101",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39862-5398202815",
+   "kind": "NOTE",
+   "overall": 8.38
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39865-5194201765",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39862-5398202815",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39784-5042031450",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "39935-5355372259",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39728-5012922258",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39829-5113437343",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39862-5398202815",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39694-4914523135",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39784-5100999626",
+   "kind": "NOTE",
+   "overall": 8.5
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39862-5398202815",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40012-5570902524",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39459-4663361149",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39784-5100999626",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39862-5398202815",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39935-5355372259",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39927-5276328596",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39935-5355372259",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40042-6183102956",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39929-5293011728",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40032-5484458133",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40042-6183102956",
+   "kind": "NOTE",
+   "overall": 8.62
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39622-5419621157",
+   "kind": "NOTE",
+   "overall": 8.75
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "39935-5355372259",
+   "kind": "NOTE",
+   "overall": 8.75
+  },
+  {
+   "variant": "v2",
    "repeat": 1,
    "case": "39481-4711243565",
+   "kind": "NOTE",
+   "overall": 8.75
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39784-5100999626",
+   "kind": "NOTE",
+   "overall": 8.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39894-5278594007",
+   "kind": "NOTE",
+   "overall": 8.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40012-5570902524",
+   "kind": "NOTE",
+   "overall": 8.75
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40042-6183881101",
    "kind": "NOTE",
    "overall": 8.75
   },
@@ -127,6 +2538,160 @@
    "case": "39481-4711243565",
    "kind": "NOTE",
    "overall": 8.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 2,
+   "case": "39622-5419621157",
+   "kind": "NOTE",
+   "overall": 8.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39622-5419621157",
+   "kind": "NOTE",
+   "overall": 8.88
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39929-5275974270",
+   "kind": "NOTE",
+   "overall": 8.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39459-4663361149",
+   "kind": "NOTE",
+   "overall": 8.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39590-5004317162",
+   "kind": "NOTE",
+   "overall": 8.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39784-5100999626",
+   "kind": "NOTE",
+   "overall": 8.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40042-6183881101",
+   "kind": "NOTE",
+   "overall": 8.88
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39894-5278594007",
+   "kind": "NOTE",
+   "overall": 8.88
+  },
+  {
+   "variant": "v1",
+   "repeat": 1,
+   "case": "40171-5795222359",
+   "kind": "NOTE",
+   "overall": 9.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "40042-6183102956",
+   "kind": "NOTE",
+   "overall": 9.0
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39622-5419621157",
+   "kind": "NOTE",
+   "overall": 9.0
+  },
+  {
+   "variant": "v2",
+   "repeat": 1,
+   "case": "39929-5293011728",
+   "kind": "NOTE",
+   "overall": 9.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39935-5355372259",
+   "kind": "NOTE",
+   "overall": 9.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40012-5570902524",
+   "kind": "NOTE",
+   "overall": 9.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39459-4663361149",
+   "kind": "NOTE",
+   "overall": 9.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39935-5355372259",
+   "kind": "NOTE",
+   "overall": 9.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40042-6183102956",
+   "kind": "NOTE",
+   "overall": 9.12
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "39622-5419621157",
+   "kind": "NOTE",
+   "overall": 9.25
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "39822-5091673928",
+   "kind": "NOTE",
+   "overall": 9.25
+  },
+  {
+   "variant": "v2",
+   "repeat": 2,
+   "case": "40171-5795222359",
+   "kind": "NOTE",
+   "overall": 9.38
+  },
+  {
+   "variant": "v3",
+   "repeat": 1,
+   "case": "40171-5795222359",
+   "kind": "NOTE",
+   "overall": 9.38
+  },
+  {
+   "variant": "v3",
+   "repeat": 2,
+   "case": "40171-5795222359",
+   "kind": "NOTE",
+   "overall": 9.5
   }
  ]
 }
