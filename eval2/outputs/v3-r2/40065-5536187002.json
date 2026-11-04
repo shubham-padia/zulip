@@ -1,0 +1,11 @@
+{
+ "case": "40065-5536187002",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — commits squashed and screenshots retaken**\n\nNew: The author squashed the PR into one commit and retook the before/after screenshots in the same tab with the same scroll state and viewport. Missing: nothing blocking, but the author says the clipping doesn't show at their 1x display, so the screenshots only show the added spacing, not a clipped emoji becoming whole.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit and retaking the screenshots. @laurynmm, could you take another look at this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010650600000000001
+}

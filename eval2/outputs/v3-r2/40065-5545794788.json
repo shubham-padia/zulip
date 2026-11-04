@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the maintainer's two requests are answered in the PR body**\n\nNew: The author added before/after screenshots for long topic names, with and without emoji, plus a pair at a 20px app font size. The code didn't change, but the feedback only asked for screenshots and font-size testing. Missing: nothing blocking. The author says the clipping only reproduces on high-DPI displays, so the screenshots show the added spacing rather than the clipping being fixed.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0080594
+}
