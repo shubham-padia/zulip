@@ -1,0 +1,76 @@
+{
+ "case": "40232-5935435606",
+ "repeat": 1,
+ "map": {
+  "P": [
+   "v3c-r1"
+  ],
+  "E": [
+   "eval2:v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "missing",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Treats the PR as ready for review even though the author removed the maintainer-assigned label and no one has checked the screenshots",
+     "Next step says to remove \"not ready\", but zulipbot already removed it at the author's request"
+    ],
+    "rule_failures": [
+     "reply_misses_ask"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) matches, but it recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It flags the open reverse-sort question, but it misses the author's self-removal of the label and the need to check the screenshots, and its readiness verdict is wrong.",
+    "reply_why": "It is a review ping to laurynmm, not the needed reply telling the author not to remove maintainer labels and to make sure the images load."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "\"Missing: nothing\", but the label self-removal, the unverified screenshots and the reverse-sort question are all still open",
+     "Next step says to remove \"not ready\", but zulipbot already removed it at the author's request"
+    ],
+    "rule_failures": [
+     "filler_point",
+     "reply_misses_ask"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "The kind (NOTE) matches, but it recommends hand_off where the key says more_feedback.",
+    "accuracy_why": "It notes there was no new push, but it flatly says nothing is missing, ignores the label removal and the reverse-sort question, and adds filler about CI and help wanted.",
+    "reply_why": "Asking laurynmm to look at the updated screenshots touches the check, but it still misses the reply to the author about labels and image links."
+   }
+  },
+  "ranking": [
+   "P",
+   "E"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"P\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"missing\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Treats the PR as ready for review even though the author removed the maintainer-assigned label and no one has checked the screenshots\", \"Next step says to remove \\\"not ready\\\", but zulipbot already removed it at the author's request\"],\n   \"rule_failures\": [\"reply_misses_ask\"],\n   \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) matches, but it recommends hand_off where the key says more_feedback.\",\n   \"accuracy_why\": \"It flags the open reverse-sort question, but it misses the author's self-removal of the label and the need to check the screenshots, and its readiness verdict is wrong.\",\n   \"reply_why\": \"It is a review ping to laurynmm, not the needed reply telling the author not to remove maintainer labels and to make sure the images load.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"\\\"Missing: nothing\\\", but the label self-removal, the unverified screenshots and the reverse-sort question are all still open\", \"Next step says to remove \\\"not ready\\\", but zulipbot already removed it at the author's request\"],\n   \"rule_failures\": [\"filler_point\", \"reply_misses_ask\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 4,\n   \"brevity_score\": 7,\n   \"decision_why\": \"The kind (NOTE) matches, but it recommends hand_off where the key says more_feedback.\",\n   \"accuracy_why\": \"It notes there was no new push, but it flatly says nothing is missing, ignores the label removal and the reverse-sort question, and adds filler about CI and help wanted.\",\n   \"reply_why\": \"Asking laurynmm to look at the updated screenshots touches the check, but it still misses the reply to the author about labels and image links.\"}},\n \"ranking\": [\"P\", \"E\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.163528
+}

@@ -1,0 +1,69 @@
+{
+ "case": "40234-5937541838",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "eval2:v3-r1"
+  ],
+  "F": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "States as certain that the commit message was not changed, when the key says this cannot be confirmed from the head commit."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "The kind (NOTE) matches, but it recommends keeping \"not ready\", while the key's action is to hand off to a maintainer.",
+    "accuracy_why": "It flags the constructed fixture and the earlier #39998 rejection, but it only half-credits the three addressed asks, overclaims the commit-message point, and misses the doc link and the reviewer.",
+    "reply_why": "It asks for a re-captured fixture and a commit push instead of the doc link and a hand-off, and the push request may be for work already done."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "The kind (NOTE) matches, but it explicitly holds off on assigning a reviewer, while the key says to hand off to Niloth-p.",
+    "accuracy_why": "It correctly lists all three changes, the missing push and the hand-built fixture, but its decisive hand-off recommendation is wrong and it misses the doc link and the reviewer.",
+    "reply_why": "It is polite and accurate, but it asks for a re-captured fixture rather than the doc link and a note that review is coming, so it misses reply_ask."
+   }
+  },
+  "ranking": [
+   "F",
+   "E"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"States as certain that the commit message was not changed, when the key says this cannot be confirmed from the head commit.\"],\n   \"rule_failures\": [\"asks_for_done_work\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind (NOTE) matches, but it recommends keeping \\\"not ready\\\", while the key's action is to hand off to a maintainer.\",\n   \"accuracy_why\": \"It flags the constructed fixture and the earlier #39998 rejection, but it only half-credits the three addressed asks, overclaims the commit-message point, and misses the doc link and the reviewer.\",\n   \"reply_why\": \"It asks for a re-captured fixture and a commit push instead of the doc link and a hand-off, and the push request may be for work already done.\"},\n  \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"The kind (NOTE) matches, but it explicitly holds off on assigning a reviewer, while the key says to hand off to Niloth-p.\",\n   \"accuracy_why\": \"It correctly lists all three changes, the missing push and the hand-built fixture, but its decisive hand-off recommendation is wrong and it misses the doc link and the reviewer.\",\n   \"reply_why\": \"It is polite and accurate, but it asks for a re-captured fixture rather than the doc link and a note that review is coming, so it misses reply_ask.\"}},\n \"ranking\": [\"F\", \"E\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.172524
+}

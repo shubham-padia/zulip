@@ -1,0 +1,65 @@
+{
+ "case": "40211-5916970551",
+ "repeat": 1,
+ "map": {
+  "F": [
+   "eval2:v3-r1"
+  ],
+  "B": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Overstates Zulip policy: it says Zulip only accepts contributions for issues labeled \"help wanted\", but the guide asks that unfiled bugs be discussed first, not that they are never accepted."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 9,
+    "decision_why": "A NOTE recommending close matches both the key's kind and the observed action.",
+    "accuracy_why": "It correctly reports the jump from 2 files to 123 files and +4994/-5409, but only implies the reviewable-PR guide is unmet, omits the missing local testing, and bases the close on an overstated help-wanted-only policy.",
+    "reply_why": "A close reply suits the verdict and mentions the broken diff, but its main reason misstates the policy and it does not point to the contributing guide, so a sentence needs rewriting."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 8,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "The kind is right and keeping \"not ready\" avoids a hand-off, but the action is more feedback where the key says close.",
+    "accuracy_why": "It accurately covers the 123-file broken squash, the unmet guide, the missing local test run and the missing linked issue, but leaves out that the author is a first-time contributor.",
+    "reply_why": "Its ask to reset the branch to just the fix and test matches the key's reply_ask, but it invites the author to continue on a PR that was closed and skips discussing unfiled bugs first."
+   }
+  },
+  "ranking": [
+   "F",
+   "B"
+  ]
+ },
+ "text": "{\"outputs\": {\"F\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [\"Overstates Zulip policy: it says Zulip only accepts contributions for issues labeled \\\"help wanted\\\", but the guide asks that unfiled bugs be discussed first, not that they are never accepted.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE recommending close matches both the key's kind and the observed action.\",\n   \"accuracy_why\": \"It correctly reports the jump from 2 files to 123 files and +4994/-5409, but only implies the reviewable-PR guide is unmet, omits the missing local testing, and bases the close on an overstated help-wanted-only policy.\",\n   \"reply_why\": \"A close reply suits the verdict and mentions the broken diff, but its main reason misstates the policy and it does not point to the contributing guide, so a sentence needs rewriting.\"},\n  \"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 8, \"reply_score\": 5, \"brevity_score\": 8,\n   \"decision_why\": \"The kind is right and keeping \\\"not ready\\\" avoids a hand-off, but the action is more feedback where the key says close.\",\n   \"accuracy_why\": \"It accurately covers the 123-file broken squash, the unmet guide, the missing local test run and the missing linked issue, but leaves out that the author is a first-time contributor.\",\n   \"reply_why\": \"Its ask to reset the branch to just the fix and test matches the key's reply_ask, but it invites the author to continue on a PR that was closed and skips discussing unfiled bugs first.\"}},\n \"ranking\": [\"F\", \"B\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.148836
+}

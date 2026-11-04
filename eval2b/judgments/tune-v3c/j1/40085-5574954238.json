@@ -1,0 +1,69 @@
+{
+ "case": "40085-5574954238",
+ "repeat": 1,
+ "map": {
+  "D": [
+   "eval2:v3-r1"
+  ],
+  "I": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "D": {
+    "kind": "NOTE",
+    "action": "close",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims #37030 isn't open to contributors and the PR must be closed, though zulipbot had assigned the author to the issue and the screenshot feedback was answered."
+    ],
+    "rule_failures": [
+     "reply_contradicts_key_action"
+    ],
+    "decision_score": 1,
+    "accuracy_score": 3,
+    "reply_score": 1,
+    "brevity_score": 7,
+    "decision_why": "It recommends closing where the key says hand off, which is the opposite call.",
+    "accuracy_why": "It vaguely notes the public screenshots and the lack of code changes, but it omits the spot-check gap, skips the hand-off, and rests its action on a wrong reading of the dropped label.",
+    "reply_why": "The reply closes a PR that should go to maintainer review, so it is the wrong decision."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "wrong"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks for more work where the key says to hand off to maintainer review.",
+    "accuracy_why": "It correctly reports the public screenshots for both layouts and the lack of code, but it treats the missing font-size screenshots as blocking and recommends no reviewer.",
+    "reply_why": "It asks for more font-size screenshots instead of thanking the author and moving the PR to review, so the ask is wrong."
+   }
+  },
+  "ranking": [
+   "I",
+   "D"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"D\": {\"kind\": \"NOTE\", \"action\": \"close\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Claims #37030 isn't open to contributors and the PR must be closed, though zulipbot had assigned the author to the issue and the screenshot feedback was answered.\"],\n   \"rule_failures\": [\"reply_contradicts_key_action\"],\n   \"decision_score\": 1, \"accuracy_score\": 3, \"reply_score\": 1,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It recommends closing where the key says hand off, which is the opposite call.\",\n   \"accuracy_why\": \"It vaguely notes the public screenshots and the lack of code changes, but it omits the spot-check gap, skips the hand-off, and rests its action on a wrong reading of the dropped label.\",\n   \"reply_why\": \"The reply closes a PR that should go to maintainer review, so it is the wrong decision.\"},\n  \"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work where the key says to hand off to maintainer review.\",\n   \"accuracy_why\": \"It correctly reports the public screenshots for both layouts and the lack of code, but it treats the missing font-size screenshots as blocking and recommends no reviewer.\",\n   \"reply_why\": \"It asks for more font-size screenshots instead of thanking the author and moving the PR to review, so the ask is wrong.\"}},\n \"ranking\": [\"I\", \"D\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.228008
+}

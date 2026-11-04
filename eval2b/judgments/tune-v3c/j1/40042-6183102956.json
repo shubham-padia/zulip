@@ -1,0 +1,69 @@
+{
+ "case": "40042-6183102956",
+ "repeat": 1,
+ "map": {
+  "K": [
+   "eval2:v3-r1"
+  ],
+  "R": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand_off matches both the key's kind and action.",
+    "accuracy_why": "It covers the rewritten commits on unchanged code, Sahil's CZO approval, the hand-off and the reviewer, but it misses companion PR #40041 and adds non-blocking 'Missing' items the key doesn't list.",
+    "reply_why": "A short thanks plus a ping to sahil839 matches the reply_ask and could be pasted as is."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE recommending hand_off matches both the key's kind and action.",
+    "accuracy_why": "It covers the single push, the unchanged code, sahil839's CZO approval, the hand-off and the reviewer, but it misses #40041, implies the title format changed when the old titles already followed it, and adds a non-blocking 'Fixes:' point.",
+    "reply_why": "A single reviewer ping works for a hand-off, but it leaves out the thanks to the author that the reply_ask includes."
+   }
+  },
+  "ranking": [
+   "K",
+   "R"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7, \"decision_why\": \"A NOTE recommending hand_off matches both the key's kind and action.\", \"accuracy_why\": \"It covers the rewritten commits on unchanged code, Sahil's CZO approval, the hand-off and the reviewer, but it misses companion PR #40041 and adds non-blocking 'Missing' items the key doesn't list.\", \"reply_why\": \"A short thanks plus a ping to sahil839 matches the reply_ask and could be pasted as is.\"}, \"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"A NOTE recommending hand_off matches both the key's kind and action.\", \"accuracy_why\": \"It covers the single push, the unchanged code, sahil839's CZO approval, the hand-off and the reviewer, but it misses #40041, implies the title format changed when the old titles already followed it, and adds a non-blocking 'Fixes:' point.\", \"reply_why\": \"A single reviewer ping works for a hand-off, but it leaves out the thanks to the author that the reply_ask includes.\"}}, \"ranking\": [\"K\", \"R\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.115928
+}

@@ -1,0 +1,67 @@
+{
+ "case": "40148-5711082634",
+ "repeat": 1,
+ "map": {
+  "R": [
+   "eval2:v3-r1"
+  ],
+  "G": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches both the key's kind and its action.",
+    "accuracy_why": "It covers the changes, the missing checklist and the unverified CI, but it only frames the per-file versus batch choice as an open question rather than an unsettled CZO design issue, and it suggests laurynmm instead of sahil839.",
+    "reply_why": "The reply thanks the author and pings a reviewer about the open question, but it runs to two sentences, targets the triager rather than a fresh reviewer, and doesn't mention CZO design discussion."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It keeps 'not ready' and asks for more feedback over a missing checklist, but the key calls for handing the PR off to maintainer review.",
+    "accuracy_why": "It reports the changes and the missing checklist and CI correctly, but it treats the checklist as blocking, misses the decisive hand-off, and omits the unsettled multi-file design question.",
+    "reply_why": "The reply asks the author to add the checklist instead of saying the PR is moving to maintainer review, which misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "R",
+   "G"
+  ]
+ },
+ "text": "{\"outputs\": {\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6,\n   \"brevity_score\": 8,\n   \"decision_why\": \"A NOTE recommending hand-off matches both the key's kind and its action.\",\n   \"accuracy_why\": \"It covers the changes, the missing checklist and the unverified CI, but it only frames the per-file versus batch choice as an open question rather than an unsettled CZO design issue, and it suggests laurynmm instead of sahil839.\",\n   \"reply_why\": \"The reply thanks the author and pings a reviewer about the open question, but it runs to two sentences, targets the triager rather than a fresh reviewer, and doesn't mention CZO design discussion.\"},\n  \"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It keeps 'not ready' and asks for more feedback over a missing checklist, but the key calls for handing the PR off to maintainer review.\",\n   \"accuracy_why\": \"It reports the changes and the missing checklist and CI correctly, but it treats the checklist as blocking, misses the decisive hand-off, and omits the unsettled multi-file design question.\",\n   \"reply_why\": \"The reply asks the author to add the checklist instead of saying the PR is moving to maintainer review, which misses the reply_ask.\"}},\n \"ranking\": [\"R\", \"G\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.17672000000000002
+}

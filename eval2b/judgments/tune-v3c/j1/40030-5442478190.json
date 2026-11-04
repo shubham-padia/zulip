@@ -1,0 +1,72 @@
+{
+ "case": "40030-5442478190",
+ "repeat": 1,
+ "map": {
+  "E": [
+   "eval2:v3-r1"
+  ],
+  "V": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "wrong"
+    },
+    "wrong_facts": [
+     "Says the template is filled in, but the key says the self-review checklist does not match Zulip's PR template.",
+     "Calls the PR ready for review although the 'not ready' issues remain unaddressed."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict_key"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "The kind matches, but it recommends handing off where the key says to keep 'not ready' and give more feedback.",
+    "accuracy_why": "It misses that the author removed the maintainer's label through zulipbot, falsely says the template is filled in, and plays down the missing context, and its readiness verdict rests on these errors.",
+    "reply_why": "The reply tells the author the PR looks ready and pings a reviewer, which is the opposite of the needed ask about labels, the PR guide, and context."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "hedged",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Calls the missing issue or context a 'small leftover', though it is a decisive blocker."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "The kind matches, but it recommends a hand-off to Niloth P instead of more feedback.",
+    "accuracy_why": "It misses the label removal and the checklist mismatch, and reduces the missing context to a minor leftover that its hand-off depends on.",
+    "reply_why": "A lone reviewer ping misses the whole reply_ask and advances a PR that should stay 'not ready'."
+   }
+  },
+  "ranking": [
+   "V",
+   "E"
+  ]
+ },
+ "text": "{\"outputs\": {\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"wrong\"},\n   \"wrong_facts\": [\"Says the template is filled in, but the key says the self-review checklist does not match Zulip's PR template.\", \"Calls the PR ready for review although the 'not ready' issues remain unaddressed.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict_key\"],\n   \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind matches, but it recommends handing off where the key says to keep 'not ready' and give more feedback.\",\n   \"accuracy_why\": \"It misses that the author removed the maintainer's label through zulipbot, falsely says the template is filled in, and plays down the missing context, and its readiness verdict rests on these errors.\",\n   \"reply_why\": \"The reply tells the author the PR looks ready and pings a reviewer, which is the opposite of the needed ask about labels, the PR guide, and context.\"},\n  \"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"hedged\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Calls the missing issue or context a 'small leftover', though it is a decisive blocker.\"],\n   \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2,\n   \"brevity_score\": 8,\n   \"decision_why\": \"The kind matches, but it recommends a hand-off to Niloth P instead of more feedback.\",\n   \"accuracy_why\": \"It misses the label removal and the checklist mismatch, and reduces the missing context to a minor leftover that its hand-off depends on.\",\n   \"reply_why\": \"A lone reviewer ping misses the whole reply_ask and advances a PR that should stay 'not ready'.\"}},\n \"ranking\": [\"V\", \"E\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.10092
+}

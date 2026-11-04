@@ -1,0 +1,70 @@
+{
+ "case": "40065-5536187002",
+ "repeat": 1,
+ "map": {
+  "H": [
+   "eval2:v3-r1"
+  ],
+  "F": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says nothing blocking is missing, but the key says the before shot doesn't show the bug and long-topic and font-size screenshots are still missing.",
+     "Titles the PR 'Ready for review' when it still needs more screenshots."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off to a reviewer, but the key's action is more feedback on the screenshots.",
+    "accuracy_why": "It notices the clipping doesn't reproduce at normal density but dismisses this as not blocking, and it omits the long-topic and font-size gaps, so the hand-off rests on a wrong fact.",
+    "reply_why": "The reply pings laurynmm for review instead of asking the author for a before shot that reproduces the bug plus long-topic and font-size examples, and it hedges on the screenshot question the note already raised."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps 'not ready' and asks for better screenshots matches the key's kind and action.",
+    "accuracy_why": "Both decisive points are correct, but it omits the long-topic and font-size screenshots and the fact that others could not reproduce the bug.",
+    "reply_why": "The reply makes the core ask well, cites the DPR 1.5 setup and links the guide, but it leaves out the long-topic and font-size examples in reply_ask."
+   }
+  },
+  "ranking": [
+   "F",
+   "H"
+  ]
+ },
+ "text": "{\"outputs\": {\"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says nothing blocking is missing, but the key says the before shot doesn't show the bug and long-topic and font-size screenshots are still missing.\", \"Titles the PR 'Ready for review' when it still needs more screenshots.\"],\n   \"rule_failures\": [\"reply_contradicts_verdict\"],\n   \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It recommends handing off to a reviewer, but the key's action is more feedback on the screenshots.\",\n   \"accuracy_why\": \"It notices the clipping doesn't reproduce at normal density but dismisses this as not blocking, and it omits the long-topic and font-size gaps, so the hand-off rests on a wrong fact.\",\n   \"reply_why\": \"The reply pings laurynmm for review instead of asking the author for a before shot that reproduces the bug plus long-topic and font-size examples, and it hedges on the screenshot question the note already raised.\"},\n  \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"missing\"},\n   \"wrong_facts\": [],\n   \"rule_failures\": [],\n   \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that keeps 'not ready' and asks for better screenshots matches the key's kind and action.\",\n   \"accuracy_why\": \"Both decisive points are correct, but it omits the long-topic and font-size screenshots and the fact that others could not reproduce the bug.\",\n   \"reply_why\": \"The reply makes the core ask well, cites the DPR 1.5 setup and links the guide, but it leaves out the long-topic and font-size examples in reply_ask.\"}},\n \"ranking\": [\"F\", \"H\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.24718
+}

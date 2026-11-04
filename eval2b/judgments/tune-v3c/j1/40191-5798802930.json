@@ -1,0 +1,65 @@
+{
+ "case": "40191-5798802930",
+ "repeat": 1,
+ "map": {
+  "V": [
+   "eval2:v3-r1"
+  ],
+  "N": [
+   "v3c-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that hands the PR off matches the key, though it assigns laurynmm instead of suggesting Vector73.",
+    "accuracy_why": "It reports the commit-message rewrite and the docs split to #40197 correctly, but leaves out the screenshots, that the code is unchanged, the backward-compatibility review concern and Vector73 as reviewer.",
+    "reply_why": "A single reviewer-ping line fits a hand-off and could be pasted as is."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that hands the PR off matches the key, though it assigns laurynmm instead of suggesting Vector73.",
+    "accuracy_why": "It covers both completed asks, including the before/after screenshots in #40197, but misses that the code is unchanged, the backward-compatibility concern and the Vector73 suggestion.",
+    "reply_why": "A single reviewer-ping line fits a hand-off and could be pasted as is."
+   }
+  },
+  "ranking": [
+   "N",
+   "V"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that hands the PR off matches the key, though it assigns laurynmm instead of suggesting Vector73.\",\n   \"accuracy_why\": \"It reports the commit-message rewrite and the docs split to #40197 correctly, but leaves out the screenshots, that the code is unchanged, the backward-compatibility review concern and Vector73 as reviewer.\",\n   \"reply_why\": \"A single reviewer-ping line fits a hand-off and could be pasted as is.\"},\n  \"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"A NOTE that hands the PR off matches the key, though it assigns laurynmm instead of suggesting Vector73.\",\n   \"accuracy_why\": \"It covers both completed asks, including the before/after screenshots in #40197, but misses that the code is unchanged, the backward-compatibility concern and the Vector73 suggestion.\",\n   \"reply_why\": \"A single reviewer-ping line fits a hand-off and could be pasted as is.\"}},\n \"ranking\": [\"N\", \"V\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.266592
+}
