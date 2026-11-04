@@ -1,0 +1,11 @@
+{
+ "case": "39540-4708052713",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the merge commit is still in the history**\n\nNew: Two pushes since the feedback, but the commits and the diff look the same, and the \"Merge branch 'main'\" commit is still there. Missing: Rebase onto main and remove the merge commit, leaving one clean commit.\n\n###### Next step\n\n\"not ready\" stays, with no reviewer assigned yet.\n\n###### Reply\n\n```quote\nThanks for the update! The history still contains a \"Merge branch 'main'\" commit. Please rebase onto main instead of merging, so only the coherent commit remains (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)), then ask for review again.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0243837
+}

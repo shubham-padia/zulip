@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots still aren't a matching before/after pair**\n\nNew: The author replaced the \"After\" screenshot, with no new code pushed. Missing: the \"Before\" image is still the one from the issue (identical file, 1110px wide), while the new \"After\" is a different size (703px wide), so the two don't show the same message and window. The author also hasn't said how the pill behaves when several people react, which the #design thread asked to be clear.\n\n###### Next step\n\nKeep \"not ready\" and leave the PR unassigned.\n\n###### Reply\n\n```quote\nThanks for updating! The \"Before\" screenshot is still the one from the issue, and it's a different size from your \"After\". Please take both from your own dev server, with the same message, reactions and window size, as described in the [precise before/after guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0330857
+}

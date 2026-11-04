@@ -1,0 +1,11 @@
+{
+ "case": "40065-5545794788",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the extra screenshots and font-size check laurynmm asked for are now in the PR description**\n\nNew: The author added before/after screenshots of long topic names, with and without emoji, plus a pair at a 20px app font size. The description was edited, so no new push was needed. The commit history is already one commit and CI passed. The author says the clipping doesn't reproduce at DPR 1, so the screenshots only show the added spacing.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, the longer-topic and font-size screenshots are now in the PR description. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0552017
+}

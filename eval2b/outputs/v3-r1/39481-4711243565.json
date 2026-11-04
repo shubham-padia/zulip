@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — PR only reformatted, and it overlaps an open PR on the same issue**\n\nNew: The author squashed to one commit and rewrote the description, but the code is the same size and touches the same two files. Missing: any note on how this relates to the open PR #38098 for the same issue, which is also claimed by pranjal499. The API docs page for the payload format isn't updated, and the manual testing is only described, with no evidence.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm, who gave the first feedback, send the reply below.\n\n###### Reply\n\n```quote\nThanks for updating the description! Before this can be reviewed, please explain how it relates to the open PR #38098 for the same issue (see our [guide on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html)). Please also update `outgoing-webhook-payload.md` to match the code change and show how you tested it end to end.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0657977
+}

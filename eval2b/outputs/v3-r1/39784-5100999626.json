@@ -1,0 +1,11 @@
+{
+ "case": "39784-5100999626",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the write-up of #33086 is done, but the screenshots still can't be compared**\n\nNew: The description now has a \"Relationship to prior work\" section on #33086 (what differs, plus the whitespace case). The author says they fixed the `](` + space case and added a test, but the diff since the feedback couldn't be checked. Missing: Matched before/after screenshots of the same input, since there are 4 \"before\" images and 2 \"after\" images with no side-by-side pairing. The PR also reimplements #33086 rather than building on its commits, and nothing explains why.\n\n###### Next step\n\n\"not ready\" stays, and laurynmm can keep guiding the author.\n\n###### Reply\n\n```quote\nThanks, the comparison with #33086 helps. The screenshots still can't be compared directly, so please show each input as a matched before/after pair (a table works well), following [the guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). Please also explain why you're reimplementing instead of building on #33086's commits, per [the guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0670337
+}

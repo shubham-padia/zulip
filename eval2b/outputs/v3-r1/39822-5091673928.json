@@ -1,0 +1,11 @@
+{
+ "case": "39822-5091673928",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots, current-docs link and checklist are now in the description**\n\nNew: The author filled in the self-review checklist and added before/after images with a link to the current docs page, which covers both asks in the feedback. The images are rendered from the API docs generator rather than captured from a running docs server, and the PR links no issue (it says \"no issue\"). Missing: nothing blocking.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots and checklist, @LuShadowX! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0233757
+}

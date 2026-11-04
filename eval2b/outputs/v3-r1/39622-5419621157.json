@@ -1,0 +1,11 @@
+{
+ "case": "39622-5419621157",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — Yogesh's initial review isn't finished yet**\n\nNew: One push since the feedback that renames the migration and trims about 28 lines, with commits unchanged. Missing: Yogesh hasn't signed off, and the author hasn't said which of his review comments (including the \"major issue\" from 07-25) this push addresses.\n\n###### Next step\n\nKeep \"not ready\"; Yogesh-Shivaji365 (assigned) finishes the initial pass and removes the label himself when he's satisfied, then it goes to maintainer review.\n\n###### Reply\n\n```quote\nThanks for the update! Please reply on each of Yogesh's open review comments to say what you changed, and wait for @Yogesh-Shivaji365 to confirm his initial review is done before asking for maintainer review again.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0675357
+}

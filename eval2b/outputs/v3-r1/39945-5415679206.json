@@ -1,0 +1,11 @@
+{
+ "case": "39945-5415679206",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the description doesn't compare this PR with the ones already in review**\n\nNew: The author updated the description, with no new push. It now has a \"Relationship to other work\" section and a self-review checklist that matches the template. Missing: that section only says the code was written independently. It doesn't say how this PR differs from #38098 and #39481 (both already in maintainer review with Niloth-p) or why another PR is needed, which is what the continuing-unfinished-work guide asks for.\n\n###### Next step\n\nKeep \"not ready\" and leave it unassigned until the author explains how this differs from the PRs already in review.\n\n###### Reply\n\n```quote\nThanks for updating the description and fixing the checklist, @HeetRanpura. The new section says you worked independently, but not how this PR compares to #38098 and #39481 (both already in review) or why it should proceed instead of them. Please add that comparison, following the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.10473569999999999
+}

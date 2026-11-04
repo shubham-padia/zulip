@@ -1,0 +1,11 @@
+{
+ "case": "40013-5589724033",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — four new pushes with tests updated, and the author's ask is clear**\n\nNew: The author pushed 4 times since the label, growing the PR from 11 to 14 files, and added test updates in three more test files. Missing: a few self-review boxes are unchecked (corner cases, strings and tooltips), and the tooltip question in the design thread is still open. Neither blocks review.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who added the label and was pinged.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0931217
+}

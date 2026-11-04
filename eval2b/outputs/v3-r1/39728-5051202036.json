@@ -1,0 +1,11 @@
+{
+ "case": "39728-5051202036",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — commits, checklist and screenshots still don't meet the feedback**\n\nNew: Squashed the fixup commits down to two. Missing: the commit titles are unchanged (\"fix for issue 17419\", \"added test case for issue 17418\" with the wrong issue number), the test is still a separate commit from the fix, and the description still has the modified self-review checklist. The before/after screenshots also still aren't precise, and the author argues they aren't needed.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm, who gave the feedback, follow up.\n\n###### Reply\n\n```quote\nThanks for squashing! The commit messages still read \"fix for issue 17419\" and \"added test case for issue 17418\", so please rewrite them per the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) (area prefix, clear summary, explanation of why) and put the test in the same commit as the fix. Please also restore the template's self-review checklist, and show a precise before/after of the same input with tabs visible (as in your editor view), following the [screenshot guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.07470170000000001
+}

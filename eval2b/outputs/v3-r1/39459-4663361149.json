@@ -1,0 +1,11 @@
+{
+ "case": "39459-4663361149",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the relation to #38251 is now explained**\n\nNew: The author updated the description to say how this PR relates to #38251 (a more focused approach that also keeps the URL unchanged when opening from settings). There is no new code. Missing: no automated tests are included, and the tests checklist box is still unchecked, which a reviewer can ask for.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign sahil839, who reviewed #38251 and last gave feedback on this approach.\n\n###### Reply\n\n```quote\nThanks for explaining how this relates to #38251. @sahil839, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0464937
+}
