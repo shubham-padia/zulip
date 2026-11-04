@@ -1,0 +1,54 @@
+{
+ "case": "39522-4714378606",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author squashed the work into one commit and trimmed the diff, but it is the same single-file CSS fix with the same approach, so a short note under the first card is enough and no new card is needed.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "After collaborator Yogesh-Shivaji365 supplied a working diff and gave LGTM, laurynmm removed \"not ready\", added \"maintainer review\" and assigned karlstolley on 2026-06-17; the PR was later merged.",
+  "changed": [
+   "Squashed the two earlier commits into a single commit, \"style: Fix focus styling for invite organization link\".",
+   "Cut the diff from +56 to +35 lines in right_sidebar.css, which suggests the out-of-scope and restored code was dropped.",
+   "Said all requested changes are made and the commit history is clean, after 15 force-pushes since the label."
+  ],
+  "still_missing": [
+   "laurynmm added \"not ready\" without a written comment, so the open asks are collaborator Yogesh-Shivaji365's review points, and he has not yet confirmed they are fixed.",
+   "There is no evidence the dark-theme focus outline is now blue rather than white, or that the border radius matches the left sidebar link, as Yogesh asked.",
+   "The screenshots in the description are not shown to be refreshed or precise for the current code.",
+   "It is not confirmed that the out-of-scope .buddy-list-user-link focus styles (belonging to #39540) were removed.",
+   "CI status is unknown."
+  ],
+  "reply_ask": "Ask Yogesh-Shivaji365 to confirm his points are resolved (dark-theme outline color, border radius, no out-of-scope buddy-list styles, precise screenshots), and tell the author that once he does, the PR moves to maintainer review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the \"not ready\" label came with no maintainer comment, so the open asks are collaborator Yogesh-Shivaji365's review points.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says it is not yet confirmed that Yogesh's asks are done: blue dark-theme focus outline and matching border radius like the left sidebar link, precise before/after screenshots, and removal of the out-of-scope .buddy-list-user-link styles.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes the author squashed to a single commit and shrank the diff from +56 to +35 in right_sidebar.css.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Gives the next step: once Yogesh signs off, remove \"not ready\", add \"maintainer review\" and assign karlstolley.",
+    "decisive": true,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author squashed the work into one commit and trimmed the diff, but it is the same single-file CSS fix with the same approach, so a short note under the first card is enough and no new card is needed.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"After collaborator Yogesh-Shivaji365 supplied a working diff and gave LGTM, laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned karlstolley on 2026-06-17; the PR was later merged.\",\n \"changed\": [\n  \"Squashed the two earlier commits into a single commit, \\\"style: Fix focus styling for invite organization link\\\".\",\n  \"Cut the diff from +56 to +35 lines in right_sidebar.css, which suggests the out-of-scope and restored code was dropped.\",\n  \"Said all requested changes are made and the commit history is clean, after 15 force-pushes since the label.\"\n ],\n \"still_missing\": [\n  \"laurynmm added \\\"not ready\\\" without a written comment, so the open asks are collaborator Yogesh-Shivaji365's review points, and he has not yet confirmed they are fixed.\",\n  \"There is no evidence the dark-theme focus outline is now blue rather than white, or that the border radius matches the left sidebar link, as Yogesh asked.\",\n  \"The screenshots in the description are not shown to be refreshed or precise for the current code.\",\n  \"It is not confirmed that the out-of-scope .buddy-list-user-link focus styles (belonging to #39540) were removed.\",\n  \"CI status is unknown.\"\n ],\n \"reply_ask\": \"Ask Yogesh-Shivaji365 to confirm his points are resolved (dark-theme outline color, border radius, no out-of-scope buddy-list styles, precise screenshots), and tell the author that once he does, the PR moves to maintainer review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the \\\"not ready\\\" label came with no maintainer comment, so the open asks are collaborator Yogesh-Shivaji365's review points.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says it is not yet confirmed that Yogesh's asks are done: blue dark-theme focus outline and matching border radius like the left sidebar link, precise before/after screenshots, and removal of the out-of-scope .buddy-list-user-link styles.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes the author squashed to a single commit and shrank the diff from +56 to +35 in right_sidebar.css.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Gives the next step: once Yogesh signs off, remove \\\"not ready\\\", add \\\"maintainer review\\\" and assign karlstolley.\", \"decisive\": true, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.215024
+}

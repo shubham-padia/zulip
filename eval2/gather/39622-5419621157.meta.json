@@ -1,0 +1,196 @@
+{
+ "case": "39622-5419621157",
+ "cutoff": "2026-08-26T02:09:53Z",
+ "pushes": [
+  [
+   "2026-06-25T17:52:31Z",
+   "1f552d5b2b",
+   "ci run"
+  ],
+  [
+   "2026-06-26T06:19:56Z",
+   "e4268d546d",
+   "force push"
+  ],
+  [
+   "2026-06-26T06:20:01Z",
+   "e4268d546d",
+   "ci run"
+  ],
+  [
+   "2026-06-26T19:15:59Z",
+   "02b1d9634d",
+   "force push"
+  ],
+  [
+   "2026-06-26T19:16:03Z",
+   "02b1d9634d",
+   "ci run"
+  ],
+  [
+   "2026-07-11T05:47:36Z",
+   "54235e8610",
+   "ci run"
+  ],
+  [
+   "2026-07-11T06:33:53Z",
+   "f5e9280cf5",
+   "force push"
+  ],
+  [
+   "2026-07-11T06:33:57Z",
+   "f5e9280cf5",
+   "ci run"
+  ],
+  [
+   "2026-07-18T04:36:47Z",
+   "98149b7123",
+   "ci run"
+  ],
+  [
+   "2026-07-18T11:46:14Z",
+   "12b3c18820",
+   "force push"
+  ],
+  [
+   "2026-07-18T11:46:19Z",
+   "12b3c18820",
+   "ci run"
+  ],
+  [
+   "2026-07-18T12:13:52Z",
+   "281ccab768",
+   "force push"
+  ],
+  [
+   "2026-07-18T12:13:56Z",
+   "281ccab768",
+   "ci run"
+  ],
+  [
+   "2026-07-18T13:04:56Z",
+   "798f0ec5a9",
+   "ci run"
+  ],
+  [
+   "2026-07-18T14:14:29Z",
+   "6b6ca0488d",
+   "ci run"
+  ],
+  [
+   "2026-07-24T13:34:52Z",
+   "534fc98d14",
+   "force push"
+  ],
+  [
+   "2026-07-24T13:34:57Z",
+   "534fc98d14",
+   "ci run"
+  ],
+  [
+   "2026-07-25T10:06:44Z",
+   "3ad158b07b",
+   "force push"
+  ],
+  [
+   "2026-07-25T10:06:49Z",
+   "3ad158b07b",
+   "ci run"
+  ],
+  [
+   "2026-07-25T10:37:00Z",
+   "b3fdc84e54",
+   "force push"
+  ],
+  [
+   "2026-07-25T10:37:04Z",
+   "b3fdc84e54",
+   "ci run"
+  ],
+  [
+   "2026-07-25T17:35:45Z",
+   "23606fac99",
+   "force push"
+  ],
+  [
+   "2026-07-25T17:35:48Z",
+   "23606fac99",
+   "ci run"
+  ],
+  [
+   "2026-08-07T11:26:15Z",
+   "666f60fcf5",
+   "force push"
+  ],
+  [
+   "2026-08-07T11:26:20Z",
+   "666f60fcf5",
+   "ci run"
+  ],
+  [
+   "2026-08-07T11:34:40Z",
+   "cb1c5d6c15",
+   "force push"
+  ],
+  [
+   "2026-08-07T11:34:44Z",
+   "cb1c5d6c15",
+   "ci run"
+  ],
+  [
+   "2026-08-07T12:27:46Z",
+   "adcb088150",
+   "ci run"
+  ],
+  [
+   "2026-08-07T12:45:30Z",
+   "cb1c5d6c15",
+   "force push"
+  ],
+  [
+   "2026-08-07T12:45:34Z",
+   "cb1c5d6c15",
+   "ci run"
+  ],
+  [
+   "2026-08-25T17:44:49Z",
+   "269598acad",
+   "force push"
+  ],
+  [
+   "2026-08-25T17:44:53Z",
+   "269598acad",
+   "ci run"
+  ],
+  [
+   "2026-10-03T16:40:21Z",
+   "990c0fa0eb",
+   "force push"
+  ],
+  [
+   "2026-10-03T16:40:25Z",
+   "990c0fa0eb",
+   "ci run"
+  ]
+ ],
+ "head_now": "990c0fa0eba5833438873fa5131d513cb7b53886",
+ "body_edits": 2,
+ "body_edits_after_cutoff": 0,
+ "title_now": "user card: Display pronouns in header area.",
+ "title_at_cutoff": "user card: Display pronouns in header area.",
+ "labels_now": [
+  "size: XL",
+  "area: popovers and tooltips",
+  "maintainer review"
+ ],
+ "assignees_now": [
+  "evykassirer"
+ ],
+ "head_at_cutoff": "269598acad7e1ccebf51234fdf5be92bd3d4f0fc",
+ "pr_shape": "from compare main...269598acad",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "evykassirer 2026-08-22T21:03:29Z",
+ "head_at_feedback": "cb1c5d6c15a0ab26a85aa1dde6773ac32c4fda8c",
+ "comments_total": 36,
+ "comments_at_cutoff": 32
+}

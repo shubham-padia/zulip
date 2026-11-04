@@ -1,0 +1,52 @@
+{
+ "case": "39459-4663361149",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the triager's question and asked for review on a PR no maintainer was assigned to, so the triager needs a short note to decide on a hand-off; the approach and files are unchanged, so a new card isn't warranted.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "The next day laurynmm removed \"not ready\", added \"maintainer review\" and assigned sahil839, while noting she wasn't sure his feedback on #38251 had been taken into account.",
+  "changed": [
+   "The author updated the PR description to explain how this PR relates to #38251, which has merge conflicts and pending change requests.",
+   "The description now says the PR handles sahil839's concern from #38251 that the URL must not change when the modal is opened from the settings overlay.",
+   "The description says the approach is more focused: the tab-to-URL map lives only in hash_util.ts, and tab changes call browser_history.update() in the toggler callback.",
+   "No new code was pushed; the head commit is the same as when the feedback was given."
+  ],
+  "still_missing": [
+   "It isn't shown whether sahil839's main feedback on #38251 has been applied: he wanted fewer changes, with the hash_util.ts additions reduced through preparatory refactors.",
+   "There are no automated tests; that checklist item is unchecked."
+  ],
+  "reply_ask": "Thank the author for explaining the relationship to #38251, say the PR is moving to maintainer review with sahil839, and ask them to check that sahil839's feedback on #38251 about keeping the hash_util.ts changes small through a preparatory refactor is addressed.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Recommends handing off: remove \"not ready\" and add \"maintainer review\", because the author answered the question about how the PR relates to #38251.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Names sahil839 as the reviewer, because he reviewed the earlier #38251 for this issue and is the top recent contributor to these files.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Says there was no new push since the feedback; the author only updated the PR description.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Flags that it's unclear whether sahil839's feedback on #38251 has been taken into account: keep the code changes minimal and shrink the hash_util.ts additions with preparatory refactors.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the triager's question and asked for review on a PR no maintainer was assigned to, so the triager needs a short note to decide on a hand-off; the approach and files are unchanged, so a new card isn't warranted.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"The next day laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned sahil839, while noting she wasn't sure his feedback on #38251 had been taken into account.\",\n \"changed\": [\"The author updated the PR description to explain how this PR relates to #38251, which has merge conflicts and pending change requests.\", \"The description now says the PR handles sahil839's concern from #38251 that the URL must not change when the modal is opened from the settings overlay.\", \"The description says the approach is more focused: the tab-to-URL map lives only in hash_util.ts, and tab changes call browser_history.update() in the toggler callback.\", \"No new code was pushed; the head commit is the same as when the feedback was given.\"],\n \"still_missing\": [\"It isn't shown whether sahil839's main feedback on #38251 has been applied: he wanted fewer changes, with the hash_util.ts additions reduced through preparatory refactors.\", \"There are no automated tests; that checklist item is unchecked.\"],\n \"reply_ask\": \"Thank the author for explaining the relationship to #38251, say the PR is moving to maintainer review with sahil839, and ask them to check that sahil839's feedback on #38251 about keeping the hash_util.ts changes small through a preparatory refactor is addressed.\",\n \"must_have\": [{\"id\": \"f1\", \"fact\": \"Recommends handing off: remove \\\"not ready\\\" and add \\\"maintainer review\\\", because the author answered the question about how the PR relates to #38251.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Names sahil839 as the reviewer, because he reviewed the earlier #38251 for this issue and is the top recent contributor to these files.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Says there was no new push since the feedback; the author only updated the PR description.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Flags that it's unclear whether sahil839's feedback on #38251 has been taken into account: keep the code changes minimal and shrink the hash_util.ts additions with preparatory refactors.\", \"decisive\": false, \"at_cutoff\": true}]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.177892
+}

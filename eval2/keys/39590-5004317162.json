@@ -1,0 +1,58 @@
+{
+ "case": "39590-5004317162",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author answered the feedback by tying the PR to existing issue #37647 and rebased, which a maintainer should see. The code is the same size, files and commit, so the first card is not misleading.",
+  "triager_action": "more_feedback",
+  "action_source": "observed",
+  "action_why": "laurynmm replied asking for precise before/after screenshots and the completed self-review checklist before the PR can be reviewed, keeping \"not ready\".",
+  "changed": [
+   "The author said the PR addresses the existing issue #37647, which answers the ask to discuss the change before opening a PR.",
+   "The author rebased on main (one force-push with no change in size, files or commit), and CI now passes.",
+   "The author recapped the three CSS changes: balanced left padding, a 34px row height for \"None\", and fit-content sizing with a max-width fallback."
+  ],
+  "still_missing": [
+   "The PR has no before/after screenshots of the channel-folder and saved-snippets dropdowns, which visual changes need.",
+   "The PR description does not include the self-review checklist from the template.",
+   "The description does not formally link #37647 (for example with \"Fixes #37647\"), so the PR shows no linked issue."
+  ],
+  "reply_ask": "Thank the author for linking #37647, and ask them to add precise before/after screenshots following the presenting-visual-changes guide and to complete the self-review checklist before review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR still has no before/after screenshots of the dropdown changes, which a visual CSS change needs before review.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Recommends keeping \"not ready\" and asking for more work rather than handing off to a reviewer.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that the author now points to existing issue #37647 and that the only push since the feedback was a rebase with no code change.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Notes that the self-review checklist is missing from the PR description.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Flags that another open PR, #39267, targets the same channel-folder selector spacing issue.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author answered the feedback by tying the PR to existing issue #37647 and rebased, which a maintainer should see. The code is the same size, files and commit, so the first card is not misleading.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"observed\",\n \"action_why\": \"laurynmm replied asking for precise before/after screenshots and the completed self-review checklist before the PR can be reviewed, keeping \\\"not ready\\\".\",\n \"changed\": [\"The author said the PR addresses the existing issue #37647, which answers the ask to discuss the change before opening a PR.\", \"The author rebased on main (one force-push with no change in size, files or commit), and CI now passes.\", \"The author recapped the three CSS changes: balanced left padding, a 34px row height for \\\"None\\\", and fit-content sizing with a max-width fallback.\"],\n \"still_missing\": [\"The PR has no before/after screenshots of the channel-folder and saved-snippets dropdowns, which visual changes need.\", \"The PR description does not include the self-review checklist from the template.\", \"The description does not formally link #37647 (for example with \\\"Fixes #37647\\\"), so the PR shows no linked issue.\"],\n \"reply_ask\": \"Thank the author for linking #37647, and ask them to add precise before/after screenshots following the presenting-visual-changes guide and to complete the self-review checklist before review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR still has no before/after screenshots of the dropdown changes, which a visual CSS change needs before review.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Recommends keeping \\\"not ready\\\" and asking for more work rather than handing off to a reviewer.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that the author now points to existing issue #37647 and that the only push since the feedback was a rebase with no code change.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Notes that the self-review checklist is missing from the PR description.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Flags that another open PR, #39267, targets the same channel-folder selector spacing issue.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.08204
+}

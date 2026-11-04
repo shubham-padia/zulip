@@ -1,0 +1,57 @@
+{
+ "case": "39540-4708052713",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The author asked for another look, but the asked-for commit cleanup isn't done, and no maintainer is assigned, so triagers need a short status note rather than silence or a new card.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "On 2026-06-16 laurynmm removed \"not ready\", added \"maintainer review\" and assigned karlstolley, while still asking for a fixed commit description and precise dark-theme screenshots.",
+  "changed": [
+   "The author force-pushed twice since the feedback, but the size, files and commit messages are unchanged.",
+   "The author asked a collaborator (Asteriskkkk) for review instead of saying what was cleaned up."
+  ],
+  "still_missing": [
+   "The commit history is not cleaned up: a \"Merge branch 'main' into fix-view-all-users-focus\" commit is still in the PR.",
+   "The commit message hasn't been rewritten to follow commit discipline (a summary line plus a description of motivation, not a list of changes).",
+   "The dark-theme before/after screenshots are different sizes, so they aren't a precise before/after comparison."
+  ],
+  "reply_ask": "Ask the author to squash away the merge commit and rewrite the commit message per the commit-discipline guide, then post again to request review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the commit history is still not cleaned up because the \"Merge branch 'main'\" commit is still in the PR.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the commit messages are unchanged despite the two new pushes, so the feedback's ask is not done.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Names karlstolley as the reviewer, since he approved the fix in the #design thread and has changed right_sidebar.css.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "The suggested reply asks the author to squash the merge commit and rewrite the commit message per commit discipline (a summary plus a description of motivation).",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Notes that the dark-theme before/after screenshots don't match in size and should be redone as precise before/after shots.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The author asked for another look, but the asked-for commit cleanup isn't done, and no maintainer is assigned, so triagers need a short status note rather than silence or a new card.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"On 2026-06-16 laurynmm removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned karlstolley, while still asking for a fixed commit description and precise dark-theme screenshots.\",\n \"changed\": [\"The author force-pushed twice since the feedback, but the size, files and commit messages are unchanged.\", \"The author asked a collaborator (Asteriskkkk) for review instead of saying what was cleaned up.\"],\n \"still_missing\": [\"The commit history is not cleaned up: a \\\"Merge branch 'main' into fix-view-all-users-focus\\\" commit is still in the PR.\", \"The commit message hasn't been rewritten to follow commit discipline (a summary line plus a description of motivation, not a list of changes).\", \"The dark-theme before/after screenshots are different sizes, so they aren't a precise before/after comparison.\"],\n \"reply_ask\": \"Ask the author to squash away the merge commit and rewrite the commit message per the commit-discipline guide, then post again to request review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the commit history is still not cleaned up because the \\\"Merge branch 'main'\\\" commit is still in the PR.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the commit messages are unchanged despite the two new pushes, so the feedback's ask is not done.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Names karlstolley as the reviewer, since he approved the fix in the #design thread and has changed right_sidebar.css.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"The suggested reply asks the author to squash the merge commit and rewrite the commit message per commit discipline (a summary plus a description of motivation).\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Notes that the dark-theme before/after screenshots don't match in size and should be redone as precise before/after shots.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.12178800000000001
+}
