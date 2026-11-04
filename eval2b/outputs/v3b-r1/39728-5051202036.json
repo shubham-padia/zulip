@@ -1,0 +1,11 @@
+{
+ "case": "39728-5051202036",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — precise before/after screenshots still missing**\n\nNew: The author squashed the fixup commits into two commits, and the commit cleanup the earlier feedback asked for is done. They did not add new screenshots and argue that the change has no visible UI difference. Missing: precise before/after screenshots of the rendered code block (the tab change is visible in the rendered message), and an answer to the author's question about where the regression test belongs.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm, who gave the feedback, point the author to the screenshot guide.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commits! The change is visible in the rendered code block, so please add precise before/after screenshots (same message, same window size, only the tab behavior differs) following [our guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots). A short screen recording that shows the same comparison would also work.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0693054
+}

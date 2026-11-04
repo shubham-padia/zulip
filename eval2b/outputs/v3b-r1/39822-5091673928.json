@@ -1,0 +1,11 @@
+{
+ "case": "39822-5091673928",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — screenshots, current-docs link, and checklist are all now in the description**\n\nNew: The author restored the self-review checklist, added before/after images, and linked the current docs page. Missing: the images are rendered from the doc generator rather than screenshots of a running docs server, which the author offered to redo.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, could you take a look at this? The author has added the before/after images, the link to the current docs, and the self-review checklist.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.021237399999999997
+}

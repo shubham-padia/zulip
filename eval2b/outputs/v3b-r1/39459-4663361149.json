@@ -1,0 +1,11 @@
+{
+ "case": "39459-4663361149",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the relationship to #38251 is now explained**\n\nNew: The author updated the PR description to explain how it relates to #38251, the earlier completion-candidate PR. They say it is more focused and also fixes the settings-overlay URL problem that was raised on that PR. There was no new push, but the feedback only asked for this explanation. Missing: automated tests are unchecked in the self-review checklist, and no test files changed. A reviewer can raise that.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign sahil839, who reviewed #38251 and has made many commits to these files.\n\n###### Reply\n\n```quote\nThanks, that explains how this relates to #38251. @sahil839, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0430714
+}

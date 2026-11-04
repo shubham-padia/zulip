@@ -1,0 +1,11 @@
+{
+ "case": "39894-5278594007",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested before/after screenshots are now in the PR description**\n\nNew: The description now has a light and dark before/after table, and says a pixel diff shows light theme unchanged. Missing: the dark-theme shadow blur changed from 5px to 6px, so it isn't strictly \"no visual change\"; the reviewer can decide whether it needs a #design discussion.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@laurynmm, the before/after screenshots are now in the PR description. Could you take another look?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0520674
+}

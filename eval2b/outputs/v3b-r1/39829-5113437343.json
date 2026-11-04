@@ -1,0 +1,11 @@
+{
+ "case": "39829-5113437343",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — before/after screenshots still don't match**\n\nNew: The author replaced the \"After\" screenshot in the description, but there was no new push. Missing: The \"Before\" image looks like the one from the issue (same 1110×144 size), and the \"After\" is a different crop (703×63), so the two don't show the same message and view side by side.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm wait for new screenshots.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots! The \"Before\" looks like the image from the issue, and it's cropped differently than the \"After\". Could you take both from your own build, showing the same message with the same crop, as described in [the guide on precise before/after screenshots](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots)?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0320014
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40032-5484458133",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — commit message still doesn't follow the style guide**\n\nNew: Pushed twice and shortened the commit subject, and said the other open PR for this issue is unrelated. Missing: the subject is still not in the required format (no space after \"web:\", not capitalized, no final period, and it should start with the area, e.g. `message_list_view:`), and there is no explanation in the body. Both PRs fix the same issue, so \"unrelated\" doesn't answer how this one compares to #40027.\n\n###### Next step\n\nKeep \"not ready\" and leave it with laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\n@adityas27, the commit message still doesn't match the [commit message guidelines](https://zulip.readthedocs.io/en/latest/contributing/version-control.html#commit-messages): it should read like `message_list_view: Suppress redundant ... tooltips.`, with a capitalized summary, a final period, and a body explaining why. Also, #40027 fixes the same issue, so please explain how your approach differs from theirs.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0386094
+}

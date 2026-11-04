@@ -1,0 +1,11 @@
+{
+ "case": "39691-5277811900",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the author says prakhar1144's changes are done, and the PR's commits and files fit that**\n\nNew: The author confirmed that prakhar1144's requested changes were made and explained why the reply-button helpers stay (the Galène PR #39792 will reuse them). The commits and files fit: the last commit is the compose-state change, and there is a separate \"Export recipient label helpers\" commit. Prakhar's review offered either reuse of those helpers or building the label afresh. There is no new push, but the feedback only questioned whether the changes were done. Missing: the self-review checklist in the description is still unchecked.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign prakhar1144, who requested the changes and can confirm they're resolved.\n\n###### Reply\n\n```quote\nThanks for clarifying! @prakhar1144, could you take another look and confirm your requested changes are addressed? Also, please tick the self-review checklist in the PR description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.048493400000000006
+}

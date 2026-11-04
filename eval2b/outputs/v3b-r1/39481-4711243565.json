@@ -1,0 +1,11 @@
+{
+ "case": "39481-4711243565",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — the description still doesn't follow the PR template**\n\nNew: The author squashed the work into one commit and rewrote the description with \"Fixes #19589\", a testing section and a checklist. Missing: the checklist isn't the one from Zulip's PR template, and the description still has broken formatting (stray backslashes around field names). It also doesn't mention open PR #38098 for the same issue, which is already in review.\n\n###### Next step\n\nKeep \"not ready\" and have laurynmm, who gave the feedback, follow up if the author doesn't fix this.\n\n###### Reply\n\n```quote\nThanks for the update! Please use the self-review checklist from the [PR template](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html), fix the description formatting, and explain how this compares to the open PR #38098 for the same issue.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0681794
+}

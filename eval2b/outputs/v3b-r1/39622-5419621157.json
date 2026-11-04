@@ -1,0 +1,11 @@
+{
+ "case": "39622-5419621157",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — Yogesh hasn't signed off on his initial review**\n\nNew: One push, which only renumbered the migration (0807 to 0810) and slightly shrank the diff; commits and description are unchanged. Missing: Yogesh's sign-off on his initial review, since his last review (Jul 25) and no comment from him after that.\n\n###### Next step\n\nKeep \"not ready\" and ask @Yogesh-Shivaji365 to check whether his earlier review comments are resolved; once he confirms, swap to \"maintainer review\" and assign evykassirer.\n\n###### Reply\n\n```quote\nThanks for the update! As Evy and Lauryn mentioned, this should wait until @Yogesh-Shivaji365 has finished his initial review, so please go through his earlier comments, reply on each one, and ask him to take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0647374
+}

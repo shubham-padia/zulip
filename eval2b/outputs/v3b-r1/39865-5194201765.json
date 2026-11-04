@@ -1,0 +1,11 @@
+{
+ "case": "39865-5194201765",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshots added, but the API approach is still undecided**\n\nNew: The author added before/after screenshots to the PR description, which covers the requested feedback. There is no new push. Missing: Sahil Batra's CZO question is still open, on whether the API should reject uppercase input (this PR) or accept any casing and normalize it to the canonical language name.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to settle the API approach with Sahil Batra on the CZO thread, then update the PR to match.\n\n###### Reply\n\n```quote\nThanks for adding the screenshots, they look good. Before we can move this to review, please settle the open question with Sahil on the CZO thread: should the API reject uppercase, or accept any casing and normalize it? Then update the PR to match.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0751334
+}

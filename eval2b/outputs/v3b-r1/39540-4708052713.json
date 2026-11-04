@@ -1,0 +1,11 @@
+{
+ "case": "39540-4708052713",
+ "variant": "v3b",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — merge commit still in the history**\n\nNew: The author pushed twice and asked for review, but the commit list is unchanged and still includes \"Merge branch 'main' into fix-view-all-users-focus\". Missing: rebase onto main to remove the merge commit, leaving one coherent commit.\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet; laurynmm gave the original feedback and can check again once the history is clean.\n\n###### Reply\n\n```quote\nThanks for the update! The history still has a \"Merge branch 'main'\" commit, so please rebase onto main instead of merging and force-push so it's a single clean commit (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)). Then request review again.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0249094
+}
