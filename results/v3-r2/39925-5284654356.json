@@ -1,0 +1,6 @@
+{
+ "case": "39925-5284654356",
+ "answer": "no",
+ "text": "no\n\nThe maintainer asked for case-insensitive restricted-keyword checking (or offered to add it), but the author only gives context about why the issues are combined and offers to split commits, without saying the fix is done or the PR is ready for review.",
+ "cost_usd": 0.0008990000000000001
+}

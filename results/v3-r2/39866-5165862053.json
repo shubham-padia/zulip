@@ -1,0 +1,6 @@
+{
+ "case": "39866-5165862053",
+ "answer": "no",
+ "text": "no\n\nThe author answered the question but has not updated the commit message and is asking the maintainer for help doing so, so the requested work is not done and the PR is not being handed back as ready.",
+ "cost_usd": 0.0006833999999999999
+}
