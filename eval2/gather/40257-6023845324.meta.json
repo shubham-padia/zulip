@@ -1,0 +1,38 @@
+{
+ "case": "40257-6023845324",
+ "cutoff": "2026-10-06T19:26:13Z",
+ "pushes": [
+  [
+   "2026-09-30T15:33:50Z",
+   "598d05927f",
+   "ci run"
+  ],
+  [
+   "2026-10-06T19:21:54Z",
+   "eee4653937",
+   "force push"
+  ],
+  [
+   "2026-10-06T19:23:17Z",
+   "eee4653937",
+   "ci run"
+  ]
+ ],
+ "head_now": "eee4653937609ca7409621071c41f750cdf99786",
+ "body_edits": 22,
+ "body_edits_after_cutoff": 3,
+ "title_now": "channel: Log non-JSON 5xx responses from the server.",
+ "title_at_cutoff": "channel: Log non-JSON 5xx responses from the server.",
+ "labels_now": [
+  "size: L",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "eee4653937609ca7409621071c41f750cdf99786",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-10-06T12:47:09Z",
+ "head_at_feedback": "598d05927fb0b31e05d610aabcf87b4c9f3792d8",
+ "comments_total": 5,
+ "comments_at_cutoff": 4
+}

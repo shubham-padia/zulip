@@ -1,0 +1,51 @@
+{
+ "case": "39622-5419621157",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "The PR is not with an active maintainer: evykassirer unassigned herself and handed it back to Yogesh. The author's re-ping needs a short triager note, but the PR has not changed enough to need a new card.",
+  "triager_action": "more_feedback",
+  "action_source": "inferred",
+  "action_why": "Evy's only ask was to wait for Yogesh to finish the initial review. Nothing shows Yogesh has signed off, so a careful triager keeps \"not ready\" and points the author to Yogesh.",
+  "changed": [
+   "Pushed once more, renumbering the migration from 0807 to 0810, which looks like a rebase.",
+   "Trimmed the diff slightly, from +542/-43 to +514/-43, with the same 19 files and unchanged commit messages."
+  ],
+  "still_missing": [
+   "Yogesh, the assigned initial reviewer, has not said his review is done or that the PR is ready for maintainer review.",
+   "Nothing shows that Yogesh's last review comments were addressed, including the 'major issue' and the duplicated first-pronoun-field lookup.",
+   "CI status is unknown."
+  ],
+  "reply_ask": "Tell the author that maintainer review waits until Yogesh finishes his initial review, so they should address his outstanding comments and get his sign-off before asking for maintainer review again.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says the PR is waiting on Yogesh-Shivaji365 to finish the initial review and that he has not yet approved it or said it is ready for maintainer review.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the only change since the feedback is one push that renumbered the migration (0807 to 0810), with no new work answering review comments.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Recommends keeping the \"not ready\" label rather than handing off to maintainer review now.",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Says the reply should point the author to Yogesh for sign-off instead of re-pinging maintainers.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"The PR is not with an active maintainer: evykassirer unassigned herself and handed it back to Yogesh. The author's re-ping needs a short triager note, but the PR has not changed enough to need a new card.\",\n \"triager_action\": \"more_feedback\",\n \"action_source\": \"inferred\",\n \"action_why\": \"Evy's only ask was to wait for Yogesh to finish the initial review. Nothing shows Yogesh has signed off, so a careful triager keeps \\\"not ready\\\" and points the author to Yogesh.\",\n \"changed\": [\n  \"Pushed once more, renumbering the migration from 0807 to 0810, which looks like a rebase.\",\n  \"Trimmed the diff slightly, from +542/-43 to +514/-43, with the same 19 files and unchanged commit messages.\"\n ],\n \"still_missing\": [\n  \"Yogesh, the assigned initial reviewer, has not said his review is done or that the PR is ready for maintainer review.\",\n  \"Nothing shows that Yogesh's last review comments were addressed, including the 'major issue' and the duplicated first-pronoun-field lookup.\",\n  \"CI status is unknown.\"\n ],\n \"reply_ask\": \"Tell the author that maintainer review waits until Yogesh finishes his initial review, so they should address his outstanding comments and get his sign-off before asking for maintainer review again.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says the PR is waiting on Yogesh-Shivaji365 to finish the initial review and that he has not yet approved it or said it is ready for maintainer review.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the only change since the feedback is one push that renumbered the migration (0807 to 0810), with no new work answering review comments.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Recommends keeping the \\\"not ready\\\" label rather than handing off to maintainer review now.\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Says the reply should point the author to Yogesh for sign-off instead of re-pinging maintainers.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.263328
+}

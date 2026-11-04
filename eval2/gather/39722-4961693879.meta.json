@@ -1,0 +1,68 @@
+{
+ "case": "39722-4961693879",
+ "cutoff": "2026-07-13T19:17:35Z",
+ "pushes": [
+  [
+   "2026-07-10T21:34:45Z",
+   "53c82efbd2",
+   "ci run"
+  ],
+  [
+   "2026-07-10T23:26:17Z",
+   "3d7757ff69",
+   "force push"
+  ],
+  [
+   "2026-07-10T23:26:21Z",
+   "3d7757ff69",
+   "ci run"
+  ],
+  [
+   "2026-07-11T16:08:41Z",
+   "1885be9663",
+   "force push"
+  ],
+  [
+   "2026-07-11T16:08:44Z",
+   "1885be9663",
+   "ci run"
+  ],
+  [
+   "2026-07-13T17:20:04Z",
+   "15979f9938",
+   "force push"
+  ],
+  [
+   "2026-07-13T17:20:09Z",
+   "15979f9938",
+   "ci run"
+  ],
+  [
+   "2026-07-17T18:45:00Z",
+   "e5f5a218cb",
+   "force push"
+  ],
+  [
+   "2026-07-17T18:45:07Z",
+   "e5f5a218cb",
+   "ci run"
+  ]
+ ],
+ "head_now": "e5f5a218cbf9437d722730ff8f52f8327929cd71",
+ "body_edits": 7,
+ "body_edits_after_cutoff": 1,
+ "title_now": "i18n: Add date localization and match user clock preference in analytics page",
+ "title_at_cutoff": "i18n: Add date localization and match user clock preference in analytics page",
+ "labels_now": [
+  "size: L",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "15979f9938a1d31986c7c74afb7ddeb6d4472f11",
+ "pr_shape": "from compare main...15979f9938",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-07-13T14:29:39Z",
+ "head_at_feedback": "1885be9663a0c3d469913de20dc98d6988f28807",
+ "comments_total": 12,
+ "comments_at_cutoff": 5
+}

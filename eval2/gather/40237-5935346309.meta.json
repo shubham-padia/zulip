@@ -1,0 +1,38 @@
+{
+ "case": "40237-5935346309",
+ "cutoff": "2026-10-01T16:03:46Z",
+ "pushes": [
+  [
+   "2026-09-29T06:24:57Z",
+   "fbf4ce78ad",
+   "ci run"
+  ],
+  [
+   "2026-10-06T13:10:27Z",
+   "054abcadd4",
+   "force push"
+  ],
+  [
+   "2026-10-06T13:10:32Z",
+   "054abcadd4",
+   "ci run"
+  ]
+ ],
+ "head_now": "054abcadd44e368265416ffc2dd64450c7e2ad1e",
+ "body_edits": 7,
+ "body_edits_after_cutoff": 3,
+ "title_now": "[ai] user_status: Always show status emoji as images.",
+ "title_at_cutoff": "[ai] emoji_picker: Fix saving status emoji with the plain-text emoji theme.",
+ "labels_now": [
+  "size: XL",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "fbf4ce78ad933d16262ab0166d0adb9063d81263",
+ "pr_shape": "from compare main...fbf4ce78ad",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-10-01T14:52:15Z",
+ "head_at_feedback": "fbf4ce78ad933d16262ab0166d0adb9063d81263",
+ "comments_total": 5,
+ "comments_at_cutoff": 2
+}

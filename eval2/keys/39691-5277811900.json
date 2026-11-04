@@ -1,0 +1,57 @@
+{
+ "case": "39691-5277811900",
+ "key": {
+  "decision": "NOTE",
+  "decision_why": "No maintainer was assigned and karlstolley had pulled the PR back, so the triager needs to know that the author says prakhar1144's asks were already done and that only his confirmation is missing.",
+  "triager_action": "hand_off",
+  "action_source": "observed",
+  "action_why": "prakhar1144 confirmed the same day that the change addresses his concern; laurynmm then removed \"not ready\", added \"maintainer review\" and assigned apoorvapendse, with no request for more work.",
+  "changed": [
+   "No new push: the author says prakhar1144's requested changes were already in the earlier push and that he told prakhar1144 directly but never confirmed it on GitHub.",
+   "The author explains he kept the reply-button label helpers exported so callers such as the Galène PR #39792 can read stream, topic and user_ids from RecipientLabel."
+  ],
+  "still_missing": [
+   "prakhar1144 has not yet confirmed on GitHub that his review comments are addressed.",
+   "PIG208's nits from his 2026-08-12 review have no new push addressing them yet.",
+   "Nobody has checked that keeping the shared helpers doesn't create the two near-duplicate functions karlstolley warned about."
+  ],
+  "reply_ask": "Ask @prakhar1144 to confirm on GitHub that the current version addresses his review (call-label helper moved into compose_call_ui, get_stream_or_dm_recipient_label dropped), and ask the author to also push fixes for PIG208's nits so the PR can go back to maintainer review.",
+  "must_have": [
+   {
+    "id": "f1",
+    "fact": "Says there was no new push since karlstolley's feedback and that the author only claims prakhar1144's requested changes were addressed in an earlier push.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f2",
+    "fact": "Says the next step is for prakhar1144 to confirm on GitHub that his concerns are addressed, after which \"not ready\" can be swapped for \"maintainer review\".",
+    "decisive": true,
+    "at_cutoff": true
+   },
+   {
+    "id": "f3",
+    "fact": "Notes that the author kept the compose_closed_ui recipient label helpers exported (citing Galène #39792), which the reviewer should weigh against karlstolley's worry about maintaining two similar functions.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f4",
+    "fact": "Mentions that PIG208's 2026-08-12 nits are still open, since nothing has been pushed since then.",
+    "decisive": false,
+    "at_cutoff": true
+   },
+   {
+    "id": "f5",
+    "fact": "Suggests a maintainer reviewer familiar with the web video call code, such as apoorvapendse.",
+    "decisive": false,
+    "at_cutoff": true
+   }
+  ]
+ },
+ "text": "{\"decision\": \"NOTE\",\n \"decision_why\": \"No maintainer was assigned and karlstolley had pulled the PR back, so the triager needs to know that the author says prakhar1144's asks were already done and that only his confirmation is missing.\",\n \"triager_action\": \"hand_off\",\n \"action_source\": \"observed\",\n \"action_why\": \"prakhar1144 confirmed the same day that the change addresses his concern; laurynmm then removed \\\"not ready\\\", added \\\"maintainer review\\\" and assigned apoorvapendse, with no request for more work.\",\n \"changed\": [\n  \"No new push: the author says prakhar1144's requested changes were already in the earlier push and that he told prakhar1144 directly but never confirmed it on GitHub.\",\n  \"The author explains he kept the reply-button label helpers exported so callers such as the Galène PR #39792 can read stream, topic and user_ids from RecipientLabel.\"\n ],\n \"still_missing\": [\n  \"prakhar1144 has not yet confirmed on GitHub that his review comments are addressed.\",\n  \"PIG208's nits from his 2026-08-12 review have no new push addressing them yet.\",\n  \"Nobody has checked that keeping the shared helpers doesn't create the two near-duplicate functions karlstolley warned about.\"\n ],\n \"reply_ask\": \"Ask @prakhar1144 to confirm on GitHub that the current version addresses his review (call-label helper moved into compose_call_ui, get_stream_or_dm_recipient_label dropped), and ask the author to also push fixes for PIG208's nits so the PR can go back to maintainer review.\",\n \"must_have\": [\n  {\"id\": \"f1\", \"fact\": \"Says there was no new push since karlstolley's feedback and that the author only claims prakhar1144's requested changes were addressed in an earlier push.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f2\", \"fact\": \"Says the next step is for prakhar1144 to confirm on GitHub that his concerns are addressed, after which \\\"not ready\\\" can be swapped for \\\"maintainer review\\\".\", \"decisive\": true, \"at_cutoff\": true},\n  {\"id\": \"f3\", \"fact\": \"Notes that the author kept the compose_closed_ui recipient label helpers exported (citing Galène #39792), which the reviewer should weigh against karlstolley's worry about maintaining two similar functions.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f4\", \"fact\": \"Mentions that PIG208's 2026-08-12 nits are still open, since nothing has been pushed since then.\", \"decisive\": false, \"at_cutoff\": true},\n  {\"id\": \"f5\", \"fact\": \"Suggests a maintainer reviewer familiar with the web video call code, such as apoorvapendse.\", \"decisive\": false, \"at_cutoff\": true}\n ]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.195024
+}

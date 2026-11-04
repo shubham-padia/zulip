@@ -1,0 +1,48 @@
+{
+ "case": "40240-6313490306",
+ "cutoff": "2026-10-21T10:13:20Z",
+ "pushes": [
+  [
+   "2026-09-29T13:47:55Z",
+   "8da6677a86",
+   "ci run"
+  ],
+  [
+   "2026-10-05T16:30:12Z",
+   "754d0abac4",
+   "force push"
+  ],
+  [
+   "2026-10-05T16:30:18Z",
+   "754d0abac4",
+   "ci run"
+  ],
+  [
+   "2026-10-07T11:04:07Z",
+   "9392e21cf8",
+   "force push"
+  ],
+  [
+   "2026-10-07T11:04:12Z",
+   "9392e21cf8",
+   "ci run"
+  ]
+ ],
+ "head_now": "9392e21cf894efd55b531821e35dfbea849459ad",
+ "body_edits": 0,
+ "body_edits_after_cutoff": 0,
+ "title_now": "desktop_notifications: Send test notification when permission is granted.",
+ "title_at_cutoff": "desktop_notifications: Send test notification when permission is granted.",
+ "labels_now": [
+  "size: S",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "9392e21cf894efd55b531821e35dfbea849459ad",
+ "pr_shape": "current head = cutoff head",
+ "ci": "head unchanged since cutoff; current check runs",
+ "feedback": "laurynmm 2026-10-15T13:44:25Z",
+ "head_at_feedback": "9392e21cf894efd55b531821e35dfbea849459ad",
+ "comments_total": 2,
+ "comments_at_cutoff": 2
+}
