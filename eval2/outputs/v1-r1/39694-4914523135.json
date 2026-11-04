@@ -1,0 +1,11 @@
+{
+ "case": "39694-4914523135",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed three more commits that add vertical alignment, fix prettier formatting, and nudge the icon 1px. They say the screenshots are updated. The commits were added on top of the original rather than squashed into it.\n\n|     |         |\n| --- | ------- |\n| ✅  | Alignment question from the feedback was acted on: CSS added in `message_row.css` and screenshots refreshed |\n| ❌  | Fixes are separate commits (\"Fix formatting via prettier\", \"Nudge icon alignment by 1px\", \"Align…\") instead of being squashed into the commit they belong to |\n| ⚠️  | Self-review boxes for responsiveness, strings and tooltips, and corner cases are still unchecked |\n| ℹ️  | Issue #38844 has \"help wanted\" and is assigned to the author, so the claim is fine |\n\n###### Next step\n\nKeep \"not ready\" until the commits are squashed into one coherent commit; then it can go to maintainer review, with laurynmm as the natural reviewer since she raised the alignment question.\n\n###### Reply\n\n```quote\nThanks for fixing the alignment! Before this can be reviewed, please squash the follow-up commits (the alignment, prettier, and 1px nudge fixes) into the original commit so the history is one coherent change; see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). Please also go through the remaining self-review checklist items (responsiveness, strings and tooltips, corner cases) and check them off once you've verified them.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0359923
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39694-4914523135",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "CARD",
+ "text": "CARD\n**Still not ready**\n\nThe \"show more\" and \"show less\" buttons on long messages get a small icon before the text: an expand icon on \"show more\" and a collapse icon on \"show less\". Since the last feedback, the author changed the icon spacing and alignment in a new CSS file.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Three new commits and `web/styles/message_row.css` were added to fix the icon alignment. The first commit's size went from +2 to +9 lines. |\n| ✅  | The alignment question was answered with a code push, and the author says the screenshots were updated. |\n| ❌  | The alignment, formatting and \"nudge by 1px\" fixes are separate commits. They belong in the first commit, so the history should be one clean commit. |\n| ⚠️  | Several self-review boxes are still unchecked: responsiveness and i18n, corner cases, and automated tests. |\n| ℹ️  | CI status is unknown. |\n\n**Reviewer:** @laurynmm — asked the alignment question and can confirm the screenshots once the commits are cleaned up.\n\n###### Next step\n\nKeep \"not ready\" until the commits are squashed; then remove it, add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\nThanks for the alignment fixes! Please squash the \"Align\", \"Fix formatting via prettier\" and \"Nudge\" commits into the first commit, following the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html). Also finish the unchecked self-review items, or note why they don't apply.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.016028399999999998
+}

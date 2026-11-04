@@ -1,0 +1,11 @@
+{
+ "case": "39691-5277811900",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author replied that the requested changes were made and that they messaged the reviewer directly. There is no new push since the feedback.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | The head commit is unchanged, so nothing here shows the move of `get_recipient_label_for_call` into `compose_call_ui` was made. |\n| ❌  | The reviewer who asked for the changes has not confirmed on the PR, and his review is dismissed rather than approved. |\n| ⚠️  | The reason for keeping the reply-button label helpers (for the Galène PR) is only in a direct message, not in the PR description. |\n| ❌  | The self-review checklist in the description is still entirely unchecked. |\n\n###### Next step\n\nKeep \"not ready\" until prakhar1144 confirms on the PR that his requested changes are addressed. Then move it to \"maintainer review\" and assign him.\n\n###### Reply\n\n```quote\nThanks for clarifying! Could you complete the self-review checklist in the PR description, and add a short note there about why you kept the reply-button label helpers? @prakhar1144, could you confirm here whether your requested changes are addressed?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.048904300000000005
+}

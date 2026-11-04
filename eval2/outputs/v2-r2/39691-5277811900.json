@@ -1,0 +1,11 @@
+{
+ "case": "39691-5277811900",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Move `get_recipient_label_for_call` into `compose_call_ui` (the author says this is addressed; the commit list fits, and PIG208 reviewed the updates on 08-12) |\n| ✅  | Drop `get_stream_or_dm_recipient_label` (the author says it is addressed) |\n| ⚠️  | Confirmation from prakhar1144: the author explained in a comment, but prakhar1144 has not replied and his earlier review is dismissed |\n| ℹ️  | No new push since the feedback; the author says the changes were made before it |\n| ℹ️  | The self-review checklist in the description is still unchecked |\n| ℹ️  | CI status is unknown |\n\n**Reviewer:** prakhar1144 — he asked for these changes and reviewed the dependency PR #39565.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign prakhar1144 so he can confirm his requested changes are addressed.\n\n###### Reply\n\n```quote\nThanks for clarifying, @0xthedance. @prakhar1144, could you take another look and confirm your requested changes are addressed? @0xthedance, please also tick the self-review checklist in the description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0172497
+}

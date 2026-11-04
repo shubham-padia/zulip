@@ -1,0 +1,11 @@
+{
+ "case": "39728-5051202036",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author squashed the fixup commits (4 down to 2) and replied that a screenshot isn't needed because the change has no visible UI difference. They offered a screen recording instead, and no new screenshots were added.\n\n|     |         |\n| --- | ------- |\n| ❌  | Before/after screenshots still don't meet the precise-screenshot guidelines. The change does affect how code blocks render and copy, so the author's \"no visible difference\" argument doesn't hold. |\n| ⚠️  | Commits were squashed, but the two subjects (\"fix for issue 17419\", \"added test case for issue 17418\") still lack the `area: Imperative.` format. The test is also a separate commit from the fix, and the second subject names the wrong issue number. |\n| ℹ️  | The issue is also claimed by jlnsmith2001, who is working on it as part of a CodeDay internship with two others. |\n\n###### Next step\n\nKeep \"not ready\" and ask for properly formatted commits and precise before/after screenshots.\n\n###### Reply\n\n```quote\nThanks for squashing the commits! The commit titles still need to follow our [commit discipline](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html) (e.g. \"markdown: Preserve tabs in fenced code blocks.\"), and the test should go in the same commit as the fix. This change does affect how code blocks render, so please add before/after screenshots following [this guide](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0732763
+}

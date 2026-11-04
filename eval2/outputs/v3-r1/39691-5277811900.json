@@ -1,0 +1,11 @@
+{
+ "case": "39691-5277811900",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review: the changes prakhar1144 asked for look done, and only his confirmation is open**\n\nNew: The author says the requested changes were already made and explains why the reply-button label helpers stay exported (a future Galène caller wants them). There's no new push, but the code is the same version PIG208 reviewed after the updates. Missing: prakhar1144 hasn't confirmed that his concern is resolved.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign prakhar1144, who requested the changes.\n\n###### Reply\n\n```quote\nThanks for explaining, that clears it up. @prakhar1144, could you take another look and confirm your earlier concern is resolved?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0452317
+}

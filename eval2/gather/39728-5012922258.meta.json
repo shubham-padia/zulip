@@ -1,0 +1,73 @@
+{
+ "case": "39728-5012922258",
+ "cutoff": "2026-07-18T21:05:28Z",
+ "pushes": [
+  [
+   "2026-07-12T22:27:46Z",
+   "ccdfdd2b87",
+   "ci run"
+  ],
+  [
+   "2026-07-13T16:53:15Z",
+   "2d01f6d57d",
+   "ci run"
+  ],
+  [
+   "2026-07-13T19:36:35Z",
+   "6f41edb79d",
+   "ci run"
+  ],
+  [
+   "2026-07-18T19:24:15Z",
+   "595598427a",
+   "ci run"
+  ],
+  [
+   "2026-07-22T19:32:20Z",
+   "1a899b42f1",
+   "force push"
+  ],
+  [
+   "2026-07-22T19:32:26Z",
+   "1a899b42f1",
+   "ci run"
+  ],
+  [
+   "2026-07-23T19:27:11Z",
+   "2f737f43b6",
+   "force push"
+  ],
+  [
+   "2026-07-23T19:28:19Z",
+   "2f737f43b6",
+   "ci run"
+  ],
+  [
+   "2026-07-23T19:40:28Z",
+   "fca5583cd9",
+   "force push"
+  ],
+  [
+   "2026-07-23T19:40:32Z",
+   "fca5583cd9",
+   "ci run"
+  ]
+ ],
+ "head_now": "fca5583cd90c8134797693217153c41f8f06db29",
+ "body_edits": 19,
+ "body_edits_after_cutoff": 13,
+ "title_now": "fix for issue 17419: preventing tabspace getting converted to normal space in fenced code in markdown",
+ "title_at_cutoff": "fix for issue 17419: preventing tabspace getting converted to normal space in fenced code in markdown",
+ "labels_now": [
+  "size: S",
+  "not ready"
+ ],
+ "assignees_now": [],
+ "head_at_cutoff": "595598427a8375dc6e863de884076390a3cdef31",
+ "pr_shape": "from compare main...595598427a",
+ "ci": "head changed since cutoff (or unknown); CI unknown",
+ "feedback": "laurynmm 2026-07-14T17:47:17Z",
+ "head_at_feedback": "6f41edb79d5a8905fd2be5d8a666b2c18a856b34",
+ "comments_total": 17,
+ "comments_at_cutoff": 3
+}

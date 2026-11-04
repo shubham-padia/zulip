@@ -1,0 +1,11 @@
+{
+ "case": "39694-4914523135",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Fix the icon and text alignment (new pushes add CSS; author says the screenshots are updated) |\n| ✅  | Add before/after screenshots |\n| ⚠️  | Fill out the self-review checklist (filled in, but several boxes are still unchecked) |\n| ℹ️  | The alignment fixes are in three separate commits (\"Align…\", \"Fix formatting via prettier\", \"Nudge… by 1px\") instead of being squashed into the original commit |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to squash the follow-up commits into the first one.\n\n###### Reply\n\n```quote\nThanks for the update, @yashhh911! Please squash the three follow-up commits (alignment, prettier, 1px nudge) into the original commit, following the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html), so each commit is one coherent change. Please also check off the remaining self-review items that apply.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.038414699999999996
+}

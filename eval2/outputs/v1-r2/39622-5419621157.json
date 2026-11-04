@@ -1,0 +1,11 @@
+{
+ "case": "39622-5419621157",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed once since the feedback. The visible change is that the migration was renumbered from 0807 to 0810, and the PR shrank by about 28 lines. They then commented that it's ready for review.\n\n|     |         |\n| --- | ------- |\n| ❌ | The feedback asked to wait until Yogesh-Shivaji365 finishes the initial pass. His last review (2026-07-25) flagged a major issue, and he has not commented since the new push. |\n| ⚠️ | Nothing in the input shows his earlier comments were addressed. The only file change is the migration rename. |\n| ℹ️ | \"Ready for review\" has been posted several times before without a sign-off from Yogesh. Commit messages are unchanged. |\n\n###### Next step\n\nKeep \"not ready\" and leave the PR with Yogesh-Shivaji365. He or laurynmm can swap in \"maintainer review\" once the initial pass is done.\n\n###### Reply\n\n```quote\nThanks for the update! We're waiting for @Yogesh-Shivaji365 to finish the initial review, so please make sure all of his open comments are addressed, including the major one from 7/25, and ask him to take another look. Once he's happy with it, he'll move it on to maintainer review.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.010589
+}

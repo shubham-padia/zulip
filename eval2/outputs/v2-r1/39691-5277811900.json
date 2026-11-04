@@ -1,0 +1,11 @@
+{
+ "case": "39691-5277811900",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ⚠️  | Move `get_recipient_label_for_call` into `compose_call_ui` (@prakhar1144): the author says it's done, but there's no new push since the feedback, and @prakhar1144 hasn't confirmed |\n| ⚠️  | Drop `get_stream_or_dm_recipient_label` (@prakhar1144): the author only says the reply-button helpers are kept on purpose, so it's unclear whether this one is gone |\n| ❌  | Self-review checklist in the description is still entirely unchecked |\n| ℹ️  | No re-review from @prakhar1144 since his review was dismissed; the author asked him again in this comment |\n| ℹ️  | CI status is unknown |\n\n###### Next step\n\nKeep \"not ready\" for now; once @prakhar1144 confirms his changes are addressed and the checklist is filled in, remove \"not ready\", add \"maintainer review\" and assign him.\n\n###### Reply\n\n```quote\nThanks for the explanation, @0xthedance! Could you tick the items in the self-review checklist in the PR description, and leave a short comment here saying where `get_recipient_label_for_call` now lives and whether `get_stream_or_dm_recipient_label` was removed? @prakhar1144, could you confirm your requested changes are addressed?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0554467
+}

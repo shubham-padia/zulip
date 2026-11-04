@@ -1,0 +1,11 @@
+{
+ "case": "39691-5277811900",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThere is no new push since the \"not ready\" feedback. The author says they addressed @prakhar1144's requested changes and explains why they kept the reply-button label helpers.\n\n|     |         |\n| --- | ------- |\n| ⚠️ | The author says the changes are done, but there is no new push to confirm it. The head commit is the one PIG208 reviewed on 08-12, and the commit list includes \"Export recipient label helpers\". |\n| ℹ️ | The author kept the reply-button label helpers for a future Galène PR (#39792). Prakhar asked to drop only `get_stream_or_dm_recipient_label`, so he should decide whether keeping these is fine. |\n| ❌ | The self-review checklist in the PR description is still fully unchecked. |\n\n**Reviewer:** @prakhar1144 — he requested the changes, so he can confirm they were addressed.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign prakhar1144.\n\n###### Reply\n\n```quote\n@prakhar1144, could you take another look and confirm your requested changes are addressed? @0xthedance, please also tick the self-review checklist in the PR description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0146373
+}

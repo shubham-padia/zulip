@@ -1,0 +1,11 @@
+{
+ "case": "39622-5419621157",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed once since the feedback. It renames the migration from 0807 to 0810 and trims about 28 lines. The comment only says \"ready for review\".\n\n|     |         |\n| --- | ------- |\n| ❌  | Yogesh-Shivaji365 (assigned) has not signed off. His last review was on 07-25, and there are no comments from him since. |\n| ⚠️  | The new push looks like a migration renumbering plus a small trim, so it's unclear whether his 07-25 comments (one called \"major\") were addressed. |\n| ℹ️  | The same \"ready for review\" comment has been posted several times without saying what changed. |\n\n###### Next step\n\n\"not ready\" stays; no reviewer should be assigned until Yogesh-Shivaji365 confirms that his initial pass is finished.\n\n###### Reply\n\n```quote\nThanks for the update! Please reply to each of @Yogesh-Shivaji365's open review comments (especially the major one from 07-25) saying how you addressed it, and ask him to take another look. We'll move this to maintainer review once he has finished his pass.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0649323
+}

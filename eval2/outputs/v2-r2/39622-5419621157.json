@@ -1,0 +1,11 @@
+{
+ "case": "39622-5419621157",
+ "variant": "v2",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ❌ | Yogesh's initial review pass finished: he has not said he is done since his 07-25 review, and he asked \"any update?\" on 08-04 |\n| ⚠️ | Yogesh's 07-25 review comments, including the one he called major: one push since, but nothing in the thread shows they were answered |\n| ✅ | Commit discipline (Yogesh asked about 9 commits): the PR now has 3 commits |\n| ✅ | Description, testing notes, precise before/after screenshots and self-review checklist are filled in |\n| ℹ️ | The migration was renamed from 0807 to 0810 in the latest push, which suggests a rebase. Check that the numbering is still correct |\n| ℹ️ | CI status is unknown (check runs aren't available) |\n\n###### Next step\n\nKeep \"not ready\" and let Yogesh-Shivaji365 finish his pass. He or a triager can remove the label and request maintainer review (evykassirer was asked earlier) once he confirms.\n\n###### Reply\n\n```quote\nThanks for the update, @GeniusNirmit! Please reply to the open review comments from @Yogesh-Shivaji365 and wait for him to say his initial review is done before asking for maintainer review. Please also self-review the diff carefully first, as he suggested.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.013381400000000002
+}

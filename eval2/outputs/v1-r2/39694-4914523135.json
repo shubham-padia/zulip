@@ -1,0 +1,11 @@
+{
+ "case": "39694-4914523135",
+ "variant": "v1",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed 3 new commits that add a CSS file to fix the icon alignment laurynmm asked about, and says the screenshots are updated. The fixes were added as separate commits instead of being folded into the original one.\n\n|     |         |\n| --- | ------- |\n| ✅  | The alignment question was acted on: icon and text alignment CSS was added in `message_row.css`. |\n| ❌  | The PR has 4 commits, and 3 of them (\"Align…\", \"Fix formatting via prettier\", \"Nudge icon alignment by 1px\") are fixups that belong in the first commit. |\n| ❌  | Several self-review checklist items are still unchecked, including responsiveness, strings and tooltips, and corner cases. |\n| ℹ️  | Issue #38844 has \"help wanted\" and is assigned to the author. Another PR (#38860) is still open for the same issue. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to squash the fixup commits into the first commit.\n\n###### Reply\n\n```quote\nThanks for the update! Please squash the alignment, prettier and 1px-nudge fixes into the first commit, so each commit is a coherent change (see the [commit discipline guide](https://zulip.readthedocs.io/en/latest/contributing/commit-discipline.html)). Please also go through the remaining self-review checklist items and check them off once you've verified them.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.011475999999999998
+}
