@@ -1,0 +1,11 @@
+{
+ "case": "40040-6192384462",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the open question in the CZO thread is unanswered**\n\nNew: The author linked the CZO discussion, squashed to one commit, and reworded the commit message. Missing: a reply to Lauryn's 2026-10-08 question in that thread (is this a real stale-preview problem or only found by reading code?), so no maintainer has agreed the change is needed. The \"Fixes:\" line in the description is still empty.\n\n###### Next step\n\nKeep \"not ready\" and don't assign anyone yet. Let laurynmm decide after the author answers in the thread.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commits and linking the discussion. Before we review, please answer Lauryn's question in the CZO thread (did you hit stale previews in practice, or find this from reading the code?) and tidy up the empty \"Fixes:\" line in the description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.008924200000000002
+}

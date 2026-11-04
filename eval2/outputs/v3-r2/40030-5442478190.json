@@ -1,0 +1,11 @@
+{
+ "case": "40030-5442478190",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: no linked issue, so we can't tell the work was approved**\n\nNew: The author squashed five pushes into one commit, kept the new test, and CI passes. Missing: a real \"Fixes: #N\" line (the description has only a sentence after \"Fixes:\"), and an issue labeled \"help wanted\" that shows the work was approved.\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link the issue this fixes; if there is none or it lacks \"help wanted\", this becomes a close candidate.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commits and adding a test! Please link the issue this fixes with \"Fixes: #N\" in the description, and make sure it's labeled \"help wanted\" (see the [PR guide](https://zulip.readthedocs.io/en/latest/contributing/review-process.html)); then we can take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0089414
+}

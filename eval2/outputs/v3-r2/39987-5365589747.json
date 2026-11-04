@@ -1,0 +1,11 @@
+{
+ "case": "39987-5365589747",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the requested fixes are done and the commit is clean**\n\nNew: The author added the missing bot avatar, which they say fixed the failing test, and squashed everything into one commit titled \"integrations: Add Asyntai integration.\" They then asked for review. The CI status isn't visible to the bot, so \"green\" is the author's word.\n\n###### Next step\n\nRemove \"not ready\", add \"integration review\", and assign apoorvapendse (who gave the feedback), or Niloth P, who has changed these files the most.\n\n###### Reply\n\n```quote\nThanks for the fixes, @asyntai! @apoorvapendse, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0079203
+}

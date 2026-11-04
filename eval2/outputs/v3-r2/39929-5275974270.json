@@ -1,0 +1,11 @@
+{
+ "case": "39929-5275974270",
+ "variant": "v3",
+ "repeat": 2,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — history is now one commit with a proper summary line**\n\nNew: Squashed the earlier commits (including the merge commit and the CI fix-up) into one commit, with no change to the code or its size. Missing: nothing that blocks review, but CI status isn't visible here, so check it before merging.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley, who gave the feedback (Sahil Batra is another option, since he often changes these files).\n\n###### Reply\n\n```quote\nThanks for cleaning up the history! @karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0066513
+}
