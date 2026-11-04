@@ -1,0 +1,6 @@
+{
+ "case": "39767-5275856339",
+ "answer": "no",
+ "text": "no\nThe author only asks for CI to be re-triggered after a transient failure and doesn't say they've squashed commits, fixed the commit message, or otherwise addressed the maintainer's feedback, so it isn't a request for another review.",
+ "cost_usd": 0.005324
+}
