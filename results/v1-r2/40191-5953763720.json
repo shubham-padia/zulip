@@ -1,0 +1,6 @@
+{
+ "case": "40191-5953763720",
+ "answer": "no",
+ "text": "no\n\nThe author describes changes (rebase, removing fallbacks, moving the description to the PR template) but never says the PR is ready for another look, and doesn't address the maintainer's requests about the commit message or splitting out the documentation change.",
+ "cost_usd": 0.0008571000000000001
+}
