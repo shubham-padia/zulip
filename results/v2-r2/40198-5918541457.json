@@ -1,0 +1,6 @@
+{
+ "case": "40198-5918541457",
+ "answer": "no",
+ "text": "no\n\nThe author is closing the PR because they can't demonstrate the fix, which is giving up rather than saying it's ready or that the requested changes are done.",
+ "cost_usd": 0.0006219
+}
