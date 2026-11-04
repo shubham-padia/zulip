@@ -1,0 +1,6 @@
+{
+ "case": "39453-4628415002",
+ "answer": "no",
+ "text": "no\n\nThe author supplied screenshots and explained the fixture, but did not say the commit message was cleaned up, and they asked the maintainer a question about obtaining a real payload, so the PR is not clearly handed back as ready.",
+ "cost_usd": 0.0069500000000000004
+}
