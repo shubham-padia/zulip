@@ -1,0 +1,6 @@
+{
+ "case": "39823-5225799846",
+ "answer": "yes",
+ "text": "yes\n\nThe maintainer asked the author to check whether to credit the prior author, and the author answered that they aren't reusing any prior code so will skip the co-authored-by line, then said they pushed changes and updated the PR description, which signals the work is done and the PR is ready for another look.",
+ "cost_usd": 0.0048920000000000005
+}

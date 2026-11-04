@@ -1,0 +1,6 @@
+{
+ "case": "39767-5275856339",
+ "answer": "no",
+ "text": "no\n\nThe maintainer asked for the commits to be squashed and the commit message reformatted, and the author's comment says nothing about doing that; it only reports a transient CI failure and asks for a re-run, so it doesn't hand the PR back as ready.",
+ "cost_usd": 0.0057020000000000005
+}

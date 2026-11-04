@@ -1,0 +1,6 @@
+{
+ "case": "39776-5213945367",
+ "answer": "no",
+ "text": "no\n\nThe maintainer asked the author to follow the guide for presenting the PR for review, and the author is instead closing the PR as superseded by an upstream fix, which is giving up rather than handing it back.",
+ "cost_usd": 0.004614
+}
