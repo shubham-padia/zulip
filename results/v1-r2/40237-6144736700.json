@@ -1,0 +1,6 @@
+{
+ "case": "40237-6144736700",
+ "answer": "yes",
+ "text": "yes\nThe author says CI is passing and the PR now follows the maintainer's design, then explicitly asks for another look and for guidance on getting the \"not ready\" label removed.",
+ "cost_usd": 0.0006601999999999999
+}

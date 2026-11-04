@@ -1,0 +1,6 @@
+{
+ "case": "40222-6022674003",
+ "answer": "yes",
+ "text": "yes\nThe author says they've updated the PR description per the maintainer's guide (screenshots, completed checklist), which implicitly signals the PR is now ready for re-review.",
+ "cost_usd": 0.0006523
+}
