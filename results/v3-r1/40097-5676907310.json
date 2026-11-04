@@ -1,0 +1,6 @@
+{
+ "case": "40097-5676907310",
+ "answer": "yes",
+ "text": "yes\nThe author explicitly says \"Ready for review,\" directly handing the PR back to the maintainer, even though no prior maintainer comment is shown.",
+ "cost_usd": 0.003742
+}

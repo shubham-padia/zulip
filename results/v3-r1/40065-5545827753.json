@@ -1,0 +1,6 @@
+{
+ "case": "40065-5545827753",
+ "answer": "yes",
+ "text": "yes\nThe maintainer asked for before/after screenshots of longer topic names and a test at different font sizes, and the author supplied both (default 16px and 20px) with the comparison method, so the requested work is done and the PR is effectively handed back.",
+ "cost_usd": 0.007057999999999999
+}

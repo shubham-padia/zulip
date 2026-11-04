@@ -1,0 +1,6 @@
+{
+ "case": "40097-6055464855",
+ "answer": "yes",
+ "text": "yes\nThe author is explicitly pinging a maintainer to review the PR, which signals they consider it ready for review, even though there is no prior maintainer comment to show what work was requested.",
+ "cost_usd": 0.003866
+}

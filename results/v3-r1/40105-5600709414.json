@@ -1,0 +1,6 @@
+{
+ "case": "40105-5600709414",
+ "answer": "yes",
+ "text": "yes\n\nThe author says they squashed the history into one commit and attached a before/after demo, which covers both of the maintainer's requests, and they also added a test for the fix.",
+ "cost_usd": 0.005062
+}
