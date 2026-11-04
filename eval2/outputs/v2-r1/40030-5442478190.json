@@ -1,0 +1,11 @@
+{
+ "case": "40030-5442478190",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ℹ️  | The \"not ready\" label had no written feedback, so the checks below come from the PR template and Zulip's rules. |\n| ✅  | Description, testing notes and self-review checklist are filled in. |\n| ✅  | The follow-up fixup commit was squashed, so there is now one clean commit. |\n| ✅  | CI passed. |\n| ❌  | No \"Fixes: #N\" line. The description says \"Fixes: 500 Internal Server Error…\" and no issue is linked. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link the issue this fixes (or say there isn't one). If the maintainers are fine with a bug fix that has no issue, hand it off for maintainer review.\n\n###### Reply\n\n```quote\nThanks for the update, @Prajvalkumar24! The PR description is missing a proper \"Fixes: #N\" line. Could you link the issue this fixes, or tell us if there isn't one? Please leave the \"not ready\" label for now; we'll take care of it once that's sorted.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0201447
+}

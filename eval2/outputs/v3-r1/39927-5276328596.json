@@ -1,0 +1,11 @@
+{
+ "case": "39927-5276328596",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — both requested fixes were pushed**\n\nNew: The author pushed once. The commit message now follows Zulip style, a CSS change fixes the spacing between the banner and recipient row, and the After screenshot was updated. Missing: Nothing blocking, but the PR says \"Fixes #39794\" though it migrates only the first banner, so merging would close the whole issue.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley, who gave the feedback and can check the spacing fix.\n\n###### Reply\n\n```quote\n@karlstolley, could you take another look? @sonua11y, since this only covers the first banner, please change \"Fixes #39794\" to \"Part of #39794\" so the issue stays open.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0282357
+}

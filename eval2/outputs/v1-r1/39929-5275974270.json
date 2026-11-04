@@ -1,0 +1,11 @@
+{
+ "case": "39929-5275974270",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed once, squashing three commits (including a merge commit and a CI-fix commit) into a single commit. The new commit has a proper summary line. The code is unchanged: same +131/-31 across the same 13 files.\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit history cleaned up: one commit, with no merge commit and no separate fix-up commit. |\n| ✅  | Summary line follows Zulip style (\"settings: Let admins change user email addresses.\"). |\n| ✅  | The linked issue #12203 is \"help wanted\" and assigned to the author, and the PR template is filled in. |\n| ℹ️  | CI status is unknown, and only the commit summary line is visible, not the message body. |\n\n**Reviewer:** karlstolley — gave the feedback and already knows the PR's history.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley.\n\n###### Reply\n\n```quote\n@karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.027878299999999998
+}

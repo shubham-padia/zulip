@@ -1,0 +1,11 @@
+{
+ "case": "39929-5293011728",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author squashed the history into one commit, dropping the merge commit and the lint-fix commit. The summary line is now \"settings: Let admins change user email addresses.\" The change grew slightly, from +131 to +139 lines, in the same 13 files.\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit history is now a single commit with no merge commit. |\n| ✅  | Summary line follows Zulip style (area prefix, capital letter, trailing period). |\n| ✅  | Linked issue #12203 has \"help wanted\" and is assigned to the author. |\n| ℹ️  | The author says all 26 checks pass, but CI status isn't available here to confirm. |\n\n**Reviewer:** karlstolley. He gave the feedback and is already following the PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley.\n\n###### Reply\n\n```quote\nThanks for cleaning up the history! @karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0271903
+}

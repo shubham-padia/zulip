@@ -1,0 +1,11 @@
+{
+ "case": "39927-5276328596",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Commit message follows Zulip style (now `compose: Migrate stream missing compose banner.`, pushed after the feedback) |\n| ✅  | Spacing regression between banner and recipient row fixed (new push touches `compose.css`) |\n| ✅  | \"After\" screenshot updated in the description |\n| ℹ️  | The Before and After screenshots have different sizes (1261×629 vs 2520×1274), so they are not precise before/after shots. The description also doesn't mention the `compose.css` change. CI passed. |\n\n**Reviewer:** @karlstolley — gave the feedback and has the most recent commits in these files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @karlstolley.\n\n###### Reply\n\n```quote\n@karlstolley, could you take another look at this? The commit message and spacing are updated.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0290907
+}

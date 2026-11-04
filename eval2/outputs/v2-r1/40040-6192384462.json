@@ -1,0 +1,11 @@
+{
+ "case": "40040-6192384462",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Link the discussion this PR addresses: the CZO topic is now at the top of the description |\n| ✅  | Clean up the commit history: one commit remains, and the \"Trigger CI\" commit is gone |\n| ❌  | Open question from @laurynmm in the CZO thread (2026-10-08): how was this found, and has anyone seen stale previews in practice? The author hasn't answered, and Open Graph previews are off on chat.zulip.org |\n| ℹ️  | The description still has an empty \"Fixes:\" line. The author pinged @sahil839, who isn't assigned. CI passed |\n\n###### Next step\n\nKeep \"not ready\" and wait for the author to answer the question in the CZO thread before assigning anyone.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit and linking the discussion. Could you reply to Lauryn's question in the CZO thread about how you found this and whether you've seen stale previews in practice? Please also fill in or remove the empty \"Fixes:\" line in the description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0237167
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40030-5442478190",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author squashed the extra \"Fix patch reference in new unit tests\" commit into the main commit, so the PR is now one commit (+38/-4). They then asked again to remove \"not ready\". The label came with no written feedback, so there are no specific asks to check against.\n\n|     |         |\n| --- | ------- |\n| ✅  | The fixup commit is squashed into the main commit, and CI passes. |\n| ❌  | No linked issue: the description says \"Fixes: 500 Internal Server Error…\" instead of \"Fixes: #N\". We can't tell whether this work is cleared with \"help wanted\". |\n| ❌  | The description doesn't say which malformed `field_data` triggers the 500 or what the endpoint returns now. A reviewer can't tell what behavior changed. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link an issue (or explain the bug) and expand the description. Hand off for maintainer review once that's done.\n\n###### Reply\n\n```quote\nThanks for tidying up the commits! Could you link the issue this fixes with \"Fixes: #N\" (or open one if none exists), and describe in the PR which malformed `field_data` caused the 500 and what error is returned now? Once that's in, we'll take another look.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0175423
+}

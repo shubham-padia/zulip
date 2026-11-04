@@ -1,0 +1,11 @@
+{
+ "case": "39929-5275974270",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — history is now one clean commit**\n\nNew: The author squashed the three commits (including the merge commit) into one commit with a Zulip-style summary line. The code is unchanged (+131/-31, same 13 files). Missing: nothing that blocks review. CI status isn't available, so check it before merging.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign karlstolley, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for cleaning up the history. @karlstolley, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.024975699999999997
+}

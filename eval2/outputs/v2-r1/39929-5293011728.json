@@ -1,0 +1,11 @@
+{
+ "case": "39929-5293011728",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Clean up commit history: the merge commit and the CI-fix commit are gone, leaving one commit |\n| ✅  | Match Zulip commit style: the summary line now reads \"settings: Let admins change user email addresses.\" |\n| ℹ️  | The input has no CI data. The author says all 26 checks pass, but this isn't confirmed. |\n\n**Reviewer:** Sahil Batra — made the most recent commits (44) to these settings and user files.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign Sahil Batra.\n\n###### Reply\n\n```quote\nNo reply needed.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.026992699999999998
+}
