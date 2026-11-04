@@ -1,0 +1,160 @@
+{
+ "case": "39731-5006493904",
+ "repeat": 2,
+ "map": {
+  "G": [
+   "v2-r2"
+  ],
+  "A": [
+   "v3-r1"
+  ],
+  "E": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v2-r1"
+  ],
+  "W": [
+   "v1-r1"
+  ],
+  "D": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "E": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE recommending hand-off matches the key's kind and action.",
+    "accuracy_why": "It covers the removals, the real-element verification and the stacktrace check, and notes the missing screenshots, but it names laurynmm rather than karlstolley and omits that no maintainer has confirmed the removals.",
+    "reply_why": "A reviewer ping with one summary sentence is pasteable, though it pings laurynmm instead of the CSS maintainer."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE with hand-off matches the key.",
+    "accuracy_why": "The changes and the screenshot gap are stated correctly, with screenshots sensibly deferred to review, but the reviewer named is laurynmm rather than karlstolley.",
+    "reply_why": "A short reviewer ping that works nearly as is."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "A NOTE with hand-off matches the key.",
+    "accuracy_why": "It is accurate on the changes and on the missing screenshots, but it names laurynmm as reviewer and does not mention that the dead-selector claims are still unconfirmed.",
+    "reply_why": "A concise reviewer ping that is pasteable with minor tweaks."
+   },
+   "G": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 7,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "The action matches, but it posts a full CARD where a NOTE was enough.",
+    "accuracy_why": "It is accurate and flags the screenshot gap for the triager, but it names laurynmm instead of karlstolley.",
+    "reply_why": "A single reviewer-ping line is exactly what a hand-off needs."
+   },
+   "Q": {
+    "kind": "CARD",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 7,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 5,
+    "decision_why": "The action matches, but it is a CARD where a NOTE fits.",
+    "accuracy_why": "It is accurate on the changes and the screenshot gap, but it names laurynmm as reviewer and adds a filler row about the 'help wanted' label.",
+    "reply_why": "A reviewer ping with a summary that is pasteable."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims 'Nothing is missing' even though the before/after screenshots the issue asks for are absent and the removals are unconfirmed.",
+     "Calls the computed-style numbers 'before/after measurements' answering the question, which glosses over the missing screenshots."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "A NOTE with hand-off matches the key.",
+    "accuracy_why": "It covers the removals, but it wrongly says nothing is missing, hides the screenshot gap, and names laurynmm as reviewer.",
+    "reply_why": "It mixes a thank-you to the author with the reviewer ping, so a sentence needs rewriting."
+   }
+  },
+  "ranking": [
+   "E",
+   "D",
+   "W",
+   "G",
+   "Q",
+   "A"
+  ]
+ },
+ "text": "{\"outputs\": {\"E\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8, \"decision_why\": \"A NOTE recommending hand-off matches the key's kind and action.\", \"accuracy_why\": \"It covers the removals, the real-element verification and the stacktrace check, and notes the missing screenshots, but it names laurynmm rather than karlstolley and omits that no maintainer has confirmed the removals.\", \"reply_why\": \"A reviewer ping with one summary sentence is pasteable, though it pings laurynmm instead of the CSS maintainer.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"A NOTE with hand-off matches the key.\", \"accuracy_why\": \"The changes and the screenshot gap are stated correctly, with screenshots sensibly deferred to review, but the reviewer named is laurynmm rather than karlstolley.\", \"reply_why\": \"A short reviewer ping that works nearly as is.\"}, \"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 6, \"decision_why\": \"A NOTE with hand-off matches the key.\", \"accuracy_why\": \"It is accurate on the changes and on the missing screenshots, but it names laurynmm as reviewer and does not mention that the dead-selector claims are still unconfirmed.\", \"reply_why\": \"A concise reviewer ping that is pasteable with minor tweaks.\"}, \"G\": {\"kind\": \"CARD\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 7, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 6, \"decision_why\": \"The action matches, but it posts a full CARD where a NOTE was enough.\", \"accuracy_why\": \"It is accurate and flags the screenshot gap for the triager, but it names laurynmm instead of karlstolley.\", \"reply_why\": \"A single reviewer-ping line is exactly what a hand-off needs.\"}, \"Q\": {\"kind\": \"CARD\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 7, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 5, \"decision_why\": \"The action matches, but it is a CARD where a NOTE fits.\", \"accuracy_why\": \"It is accurate on the changes and the screenshot gap, but it names laurynmm as reviewer and adds a filler row about the 'help wanted' label.\", \"reply_why\": \"A reviewer ping with a summary that is pasteable.\"}, \"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"wrong\"}, \"wrong_facts\": [\"Claims 'Nothing is missing' even though the before/after screenshots the issue asks for are absent and the removals are unconfirmed.\", \"Calls the computed-style numbers 'before/after measurements' answering the question, which glosses over the missing screenshots.\"], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 8, \"decision_why\": \"A NOTE with hand-off matches the key.\", \"accuracy_why\": \"It covers the removals, but it wrongly says nothing is missing, hides the screenshot gap, and names laurynmm as reviewer.\", \"reply_why\": \"It mixes a thank-you to the author with the reviewer ping, so a sentence needs rewriting.\"}}, \"ranking\": [\"E\", \"D\", \"W\", \"G\", \"Q\", \"A\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.291596
+}

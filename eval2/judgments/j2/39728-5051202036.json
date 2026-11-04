@@ -1,0 +1,173 @@
+{
+ "case": "39728-5051202036",
+ "repeat": 2,
+ "map": {
+  "M": [
+   "v3-r2"
+  ],
+  "C": [
+   "v3-r1"
+  ],
+  "T": [
+   "v2-r1"
+  ],
+  "N": [
+   "v1-r2"
+  ],
+  "E": [
+   "v2-r2"
+  ],
+  "J": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key, but it recommends keeping \"not ready\" with more feedback where the key's observed action is close.",
+    "accuracy_why": "It covers the screenshot pushback, the bad commit titles with the wrong issue number, and the unchanged code, and omits only the #38363 and CodeDay context.",
+    "reply_why": "It is a clear, linked ask for compliant commits and precise screenshots that a maintainer could paste with minimal tweaking."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key, but the action is more_feedback where the key's observed action is close.",
+    "accuracy_why": "It correctly rebuts the no-visible-difference argument, flags the commit titles and wrong issue number, and notes the CodeDay claim, but it does not say the diff is unchanged.",
+    "reply_why": "It makes the right ask with both links and is nearly pasteable."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 2,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key, but the action is more_feedback where the key's observed action is close.",
+    "accuracy_why": "Both decisive gaps are correct, but it does not state that the diff is unchanged and lacks the competing-work context.",
+    "reply_why": "It gives the right ask with both links, though the phrase \"a `markdown:` style subject\" is slightly awkward."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the self-review checklist now matches the PR template, but the key lists it as still missing."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE matches the key, but the action is more_feedback where the key's observed action is close.",
+    "accuracy_why": "It gets the commit and screenshot gaps right, but wrongly marks the checklist as fixed and adds a CI-unknown filler line.",
+    "reply_why": "It is a solid, specific ask with both links and a concrete screenshot suggestion."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Claims the self-review checklist now matches the PR template, but the key lists it as still missing."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 5,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE matches the key, but the action is more_feedback where the key's observed action is close.",
+    "accuracy_why": "It flags the commit and screenshot gaps and the competing claim, but wrongly marks the checklist as done and includes a CI filler line.",
+    "reply_why": "It makes the right ask with links and an example title, and is nearly pasteable."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the author added a regression test since the feedback, but the test commit already existed before the feedback."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 2,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "NOTE matches the key, but the action is more_feedback where the key's observed action is close.",
+    "accuracy_why": "It does not convey that the author argued against screenshots, and it wrongly presents the test as newly added.",
+    "reply_why": "Saying a screen recording works undercuts the key's ask that precise screenshots are still required."
+   }
+  },
+  "ranking": [
+   "N",
+   "J",
+   "M",
+   "T",
+   "E",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE matches the key, but it recommends keeping \\\"not ready\\\" with more feedback where the key's observed action is close.\",\n \"accuracy_why\": \"It covers the screenshot pushback, the bad commit titles with the wrong issue number, and the unchanged code, and omits only the #38363 and CodeDay context.\",\n \"reply_why\": \"It is a clear, linked ask for compliant commits and precise screenshots that a maintainer could paste with minimal tweaking.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE matches the key, but the action is more_feedback where the key's observed action is close.\",\n \"accuracy_why\": \"It correctly rebuts the no-visible-difference argument, flags the commit titles and wrong issue number, and notes the CodeDay claim, but it does not say the diff is unchanged.\",\n \"reply_why\": \"It makes the right ask with both links and is nearly pasteable.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 2, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"NOTE matches the key, but the action is more_feedback where the key's observed action is close.\",\n \"accuracy_why\": \"Both decisive gaps are correct, but it does not state that the diff is unchanged and lacks the competing-work context.\",\n \"reply_why\": \"It gives the right ask with both links, though the phrase \\\"a `markdown:` style subject\\\" is slightly awkward.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the self-review checklist now matches the PR template, but the key lists it as still missing.\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"NOTE matches the key, but the action is more_feedback where the key's observed action is close.\",\n \"accuracy_why\": \"It gets the commit and screenshot gaps right, but wrongly marks the checklist as fixed and adds a CI-unknown filler line.\",\n \"reply_why\": \"It is a solid, specific ask with both links and a concrete screenshot suggestion.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [\"Claims the self-review checklist now matches the PR template, but the key lists it as still missing.\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 2, \"accuracy_score\": 5, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"NOTE matches the key, but the action is more_feedback where the key's observed action is close.\",\n \"accuracy_why\": \"It flags the commit and screenshot gaps and the competing claim, but wrongly marks the checklist as done and includes a CI filler line.\",\n \"reply_why\": \"It makes the right ask with links and an example title, and is nearly pasteable.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the author added a regression test since the feedback, but the test commit already existed before the feedback.\"], \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 2, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"NOTE matches the key, but the action is more_feedback where the key's observed action is close.\",\n \"accuracy_why\": \"It does not convey that the author argued against screenshots, and it wrongly presents the test as newly added.\",\n \"reply_why\": \"Saying a screen recording works undercuts the key's ask that precise screenshots are still required.\"}\n},\n\"ranking\": [\"N\", \"J\", \"M\", \"T\", \"E\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.37886400000000003
+}

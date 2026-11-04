@@ -1,0 +1,166 @@
+{
+ "case": "39694-4914523135",
+ "repeat": 2,
+ "map": {
+  "Z": [
+   "v2-r1"
+  ],
+  "G": [
+   "v1-r1"
+  ],
+  "W": [
+   "v1-r2"
+  ],
+  "J": [
+   "v3-r2"
+  ],
+  "F": [
+   "v2-r2"
+  ],
+  "A": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 7,
+    "decision_why": "NOTE that keeps \"not ready\" and asks for more work matches the key.",
+    "accuracy_why": "It gets the squash ask right, but it describes the CSS change only vaguely and misses both the hand-tuned offset concern and the open PR #38860.",
+    "reply_why": "The squash request is clear and pasteable, but it never says a maintainer will re-check the alignment."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 5,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" for now, but it promises a hand-off right after the squash without any alignment re-check.",
+    "accuracy_why": "It treats the alignment as resolved and misses both the pixel-offset concern and #38860, and the claim-status point is filler.",
+    "reply_why": "The squash ask is right, but \"Thanks for fixing the alignment\" asserts something no maintainer has confirmed."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more_feedback matches the key.",
+    "accuracy_why": "It covers the squash, the CSS fix and the open #38860, and misses only the need for a maintainer or design check of the hand-tuned offset.",
+    "reply_why": "The squash ask is clear and correctly referenced, but it lacks a line saying the alignment will be re-checked."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "NOTE that keeps \"not ready\" and asks for cleanup matches the key.",
+    "accuracy_why": "Its changed and missing items are right, and it notes laurynmm should check the screenshots, but it doesn't flag the pixel offset or #38860.",
+    "reply_why": "The reply is concise, matches reply_ask including \"we'll take another look\", and can be pasted as is."
+   },
+   "F": {
+    "kind": "CARD",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the CSS changes are in a new CSS file, but message_row.css is an existing file that was newly added to the PR.",
+     "Says the first commit's size went from +2 to +9 lines, but that is the size of the whole PR, not the first commit."
+    ],
+    "rule_failures": [],
+    "decision_score": 7,
+    "accuracy_score": 4,
+    "reply_score": 7,
+    "brevity_score": 5,
+    "decision_why": "Its action matches, but a CARD is unwarranted because the PR's scope and approach are unchanged.",
+    "accuracy_why": "It states two wrong facts about the file and the commit size and misses #38860 and the offset concern.",
+    "reply_why": "The squash ask is right, but it never says the alignment will be re-checked."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "NOTE with more_feedback matches the key.",
+    "accuracy_why": "It covers the changes and the squash need and notes laurynmm should check the screenshots, but it misses the pixel-offset concern and #38860.",
+    "reply_why": "The reply asks for the squash and then a ping to laurynmm, which is close to reply_ask with an extra checklist ask."
+   }
+  },
+  "ranking": [
+   "J",
+   "A",
+   "W",
+   "Z",
+   "G",
+   "F"
+  ]
+ },
+ "text": "{\"outputs\": {\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 7,\n   \"brevity_score\": 7,\n   \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and asks for more work matches the key.\",\n   \"accuracy_why\": \"It gets the squash ask right, but it describes the CSS change only vaguely and misses both the hand-tuned offset concern and the open PR #38860.\",\n   \"reply_why\": \"The squash request is clear and pasteable, but it never says a maintainer will re-check the alignment.\"},\n  \"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 8, \"accuracy_score\": 5, \"reply_score\": 7,\n   \"brevity_score\": 6,\n   \"decision_why\": \"It keeps \\\"not ready\\\" for now, but it promises a hand-off right after the squash without any alignment re-check.\",\n   \"accuracy_why\": \"It treats the alignment as resolved and misses both the pixel-offset concern and #38860, and the claim-status point is filler.\",\n   \"reply_why\": \"The squash ask is right, but \\\"Thanks for fixing the alignment\\\" asserts something no maintainer has confirmed.\"},\n  \"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8,\n   \"brevity_score\": 7,\n   \"decision_why\": \"NOTE with more_feedback matches the key.\",\n   \"accuracy_why\": \"It covers the squash, the CSS fix and the open #38860, and misses only the need for a maintainer or design check of the hand-tuned offset.\",\n   \"reply_why\": \"The squash ask is clear and correctly referenced, but it lacks a line saying the alignment will be re-checked.\"},\n  \"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 9,\n   \"brevity_score\": 9,\n   \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and asks for cleanup matches the key.\",\n   \"accuracy_why\": \"Its changed and missing items are right, and it notes laurynmm should check the screenshots, but it doesn't flag the pixel offset or #38860.\",\n   \"reply_why\": \"The reply is concise, matches reply_ask including \\\"we'll take another look\\\", and can be pasted as is.\"},\n  \"F\": {\"kind\": \"CARD\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [\"Says the CSS changes are in a new CSS file, but message_row.css is an existing file that was newly added to the PR.\", \"Says the first commit's size went from +2 to +9 lines, but that is the size of the whole PR, not the first commit.\"], \"rule_failures\": [],\n   \"decision_score\": 7, \"accuracy_score\": 4, \"reply_score\": 7,\n   \"brevity_score\": 5,\n   \"decision_why\": \"Its action matches, but a CARD is unwarranted because the PR's scope and approach are unchanged.\",\n   \"accuracy_why\": \"It states two wrong facts about the file and the commit size and misses #38860 and the offset concern.\",\n   \"reply_why\": \"The squash ask is right, but it never says the alignment will be re-checked.\"},\n  \"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"NOTE with more_feedback matches the key.\",\n   \"accuracy_why\": \"It covers the changes and the squash need and notes laurynmm should check the screenshots, but it misses the pixel-offset concern and #38860.\",\n   \"reply_why\": \"The reply asks for the squash and then a ping to laurynmm, which is close to reply_ask with an extra checklist ask.\"}},\n \"ranking\": [\"J\", \"A\", \"W\", \"Z\", \"G\", \"F\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.27083599999999997
+}

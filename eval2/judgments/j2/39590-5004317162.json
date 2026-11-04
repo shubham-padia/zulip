@@ -1,0 +1,165 @@
+{
+ "case": "39590-5004317162",
+ "repeat": 2,
+ "map": {
+  "Z": [
+   "v2-r2"
+  ],
+  "Y": [
+   "v1-r1"
+  ],
+  "L": [
+   "v1-r2"
+  ],
+  "S": [
+   "v3-r2"
+  ],
+  "C": [
+   "v2-r1"
+  ],
+  "O": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more work matches the key.",
+    "accuracy_why": "It covers the rebase-only push, the unlinked #37647, the missing screenshots and testing, the missing checklist and the overlap with #39267, with no errors.",
+    "reply_why": "It asks for Fixes, screenshots, testing and the template, but it folds the checklist into \"rest of the PR template\" and doesn't thank the author for pointing to #37647."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for the template fields matches the key.",
+    "accuracy_why": "Every must-have is present and correct, including the checklist and the open PR #39267.",
+    "reply_why": "The reply leaves out the self-review checklist that the reply_ask needs, so the triager has to add it."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 10,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "A NOTE that keeps \"not ready\" matches the key's more_feedback.",
+    "accuracy_why": "All must-haves are present and correct.",
+    "reply_why": "It asks for Fixes, the template, testing and screenshots, and the checklist is implied by \"complete the PR template\"."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Claims there is no discussion with maintainers, which the input can't show, since issue #37647 exists."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for the template matches the key.",
+    "accuracy_why": "Every must-have is present, but it adds an unsupported claim that there was no maintainer discussion.",
+    "reply_why": "It is the most complete ask, including the checklist, but asking the author to check the \"help wanted\" label is an odd job to hand them."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It keeps \"not ready\" and asks for more work, which matches the key.",
+    "accuracy_why": "It never mentions the missing self-review checklist.",
+    "reply_why": "The reply asks for Fixes, testing and screenshots but leaves out the checklist."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" matches the key.",
+    "accuracy_why": "It is accurate otherwise, but it leaves out the missing self-review checklist.",
+    "reply_why": "The reply asks for Fixes, screenshots and testing but not the checklist."
+   }
+  },
+  "ranking": [
+   "O",
+   "Z",
+   "Y",
+   "C",
+   "S",
+   "L"
+  ]
+ },
+ "text": "{\"outputs\": {\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 8, \"brevity_score\": 9, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more work matches the key.\", \"accuracy_why\": \"It covers the rebase-only push, the unlinked #37647, the missing screenshots and testing, the missing checklist and the overlap with #39267, with no errors.\", \"reply_why\": \"It asks for Fixes, screenshots, testing and the template, but it folds the checklist into \\\"rest of the PR template\\\" and doesn't thank the author for pointing to #37647.\"}, \"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 7, \"brevity_score\": 8, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for the template fields matches the key.\", \"accuracy_why\": \"Every must-have is present and correct, including the checklist and the open PR #39267.\", \"reply_why\": \"The reply leaves out the self-review checklist that the reply_ask needs, so the triager has to add it.\"}, \"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"], \"decision_score\": 10, \"accuracy_score\": 10, \"reply_score\": 8, \"brevity_score\": 6, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" matches the key's more_feedback.\", \"accuracy_why\": \"All must-haves are present and correct.\", \"reply_why\": \"It asks for Fixes, the template, testing and screenshots, and the checklist is implied by \\\"complete the PR template\\\".\"}, \"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [\"Claims there is no discussion with maintainers, which the input can't show, since issue #37647 exists.\"], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 8, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for the template matches the key.\", \"accuracy_why\": \"Every must-have is present, but it adds an unsupported claim that there was no maintainer discussion.\", \"reply_why\": \"It is the most complete ask, including the checklist, but asking the author to check the \\\"help wanted\\\" label is an odd job to hand them.\"}, \"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 9, \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more work, which matches the key.\", \"accuracy_why\": \"It never mentions the missing self-review checklist.\", \"reply_why\": \"The reply asks for Fixes, testing and screenshots but leaves out the checklist.\"}, \"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 8, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" matches the key.\", \"accuracy_why\": \"It is accurate otherwise, but it leaves out the missing self-review checklist.\", \"reply_why\": \"The reply asks for Fixes, screenshots and testing but not the checklist.\"}}, \"ranking\": [\"O\", \"Z\", \"Y\", \"C\", \"S\", \"L\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.1493
+}

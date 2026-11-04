@@ -1,0 +1,165 @@
+{
+ "case": "39784-5042031450",
+ "repeat": 2,
+ "map": {
+  "V": [
+   "v3-r2"
+  ],
+  "A": [
+   "v2-r1"
+  ],
+  "S": [
+   "v1-r1"
+  ],
+  "Y": [
+   "v2-r2"
+  ],
+  "X": [
+   "v3-r1"
+  ],
+  "G": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more feedback matches the key.",
+    "accuracy_why": "It flags the missing #33086 discussion, the unpaired screenshots and the unverifiable code changes, but omits the complexity concern behind #33086's deferral.",
+    "reply_why": "The reply covers both asks with the right guideline links and can be pasted as is."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" with more feedback is the right call.",
+    "accuracy_why": "It covers the missing #33086 discussion, the unpaired screenshots and the unconfirmed code changes, but omits the complexity concern, and its next step drops the screenshot ask.",
+    "reply_why": "The reply makes both asks with links and is nearly paste-ready."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "A NOTE with more feedback matches the key.",
+    "accuracy_why": "It flags the #33086 gap well, but only hedges on the screenshots and overstates certainty by saying no new commits were found.",
+    "reply_why": "The reply asks about #33086 but leaves out the screenshot fix, which is half of the reply ask."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "A NOTE with more feedback is correct.",
+    "accuracy_why": "It flags #33086 but only hedges on the screenshots and adds an unrequested \"Fixes:\" point.",
+    "reply_why": "The reply omits the screenshot ask and adds an extra request for a \"Fixes\" line."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" for more feedback matches the key.",
+    "accuracy_why": "It catches the missing #33086 discussion but never says the screenshots still fall short, which is a decisive must-have.",
+    "reply_why": "The reply asks about #33086 but misses the screenshot fix entirely."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "The reply thanks the author for updating the screenshots, implying they now meet the guidelines when they still don't."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" is the right call.",
+    "accuracy_why": "It catches #33086 but treats the screenshots as fixed, contradicting a decisive still-missing item.",
+    "reply_why": "The reply praises the screenshots instead of asking for paired comparisons, so it misses half the ask."
+   }
+  },
+  "ranking": [
+   "Y",
+   "A",
+   "G",
+   "V",
+   "S",
+   "X"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more feedback matches the key.\",\n \"accuracy_why\": \"It flags the missing #33086 discussion, the unpaired screenshots and the unverifiable code changes, but omits the complexity concern behind #33086's deferral.\",\n \"reply_why\": \"The reply covers both asks with the right guideline links and can be pasted as is.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" with more feedback is the right call.\",\n \"accuracy_why\": \"It covers the missing #33086 discussion, the unpaired screenshots and the unconfirmed code changes, but omits the complexity concern, and its next step drops the screenshot ask.\",\n \"reply_why\": \"The reply makes both asks with links and is nearly paste-ready.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE with more feedback matches the key.\",\n \"accuracy_why\": \"It flags the #33086 gap well, but only hedges on the screenshots and overstates certainty by saying no new commits were found.\",\n \"reply_why\": \"The reply asks about #33086 but leaves out the screenshot fix, which is half of the reply ask.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"A NOTE with more feedback is correct.\",\n \"accuracy_why\": \"It flags #33086 but only hedges on the screenshots and adds an unrequested \\\"Fixes:\\\" point.\",\n \"reply_why\": \"The reply omits the screenshot ask and adds an extra request for a \\\"Fixes\\\" line.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" for more feedback matches the key.\",\n \"accuracy_why\": \"It catches the missing #33086 discussion but never says the screenshots still fall short, which is a decisive must-have.\",\n \"reply_why\": \"The reply asks about #33086 but misses the screenshot fix entirely.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"The reply thanks the author for updating the screenshots, implying they now meet the guidelines when they still don't.\"], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" is the right call.\",\n \"accuracy_why\": \"It catches #33086 but treats the screenshots as fixed, contradicting a decisive still-missing item.\",\n \"reply_why\": \"The reply praises the screenshots instead of asking for paired comparisons, so it misses half the ask.\"}\n},\n\"ranking\": [\"Y\", \"A\", \"G\", \"V\", \"S\", \"X\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.298744
+}

@@ -1,0 +1,157 @@
+{
+ "case": "39622-5419621157",
+ "repeat": 2,
+ "map": {
+  "F": [
+   "v2-r2"
+  ],
+  "W": [
+   "v3-r2"
+  ],
+  "G": [
+   "v1-r2"
+  ],
+  "E": [
+   "v2-r1"
+  ],
+  "S": [
+   "v3-r1"
+  ],
+  "V": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and waits for Yogesh, which matches the key.",
+    "accuracy_why": "Every must-have is present and CI is noted, but two ✅ rows about commit count and description restate settled things.",
+    "reply_why": "It points the author to Yogesh's comments and sign-off, and the extra self-review nudge is fine but slightly redundant."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" pending Yogesh's sign-off, as the key says.",
+    "accuracy_why": "It gives the migration renumbering, the small trim and Yogesh's missing sign-off concisely, omitting only the minor CI-unknown point.",
+    "reply_why": "It asks the author to address Yogesh's comments and let him decide on readiness, and is pasteable as is."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and leaves the PR with Yogesh, which matches the key.",
+    "accuracy_why": "It covers the push, the unaddressed major issue and the missing sign-off correctly, omitting only CI.",
+    "reply_why": "It references the major 7/25 comment and routes the author to Yogesh, so it is ready to paste."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" until Yogesh confirms, as the key says.",
+    "accuracy_why": "It covers all changed and still-missing items, including CI being unknown.",
+    "reply_why": "The ask is right, though the added CI line is a small extra a maintainer might trim."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks Yogesh to confirm, which matches the key.",
+    "accuracy_why": "It states the push, the trim and the missing Yogesh sign-off accurately, omitting only CI.",
+    "reply_why": "The reply is concise, pasteable and points the author to Yogesh before re-pinging."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and assigns no maintainer until Yogesh confirms, as the key says.",
+    "accuracy_why": "It gets the push, the major issue and the missing sign-off right, omitting only CI.",
+    "reply_why": "It asks the author to answer each of Yogesh's comments and get his sign-off, which is good to paste."
+   }
+  },
+  "ranking": [
+   "W",
+   "S",
+   "E",
+   "G",
+   "V",
+   "F"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and waits for Yogesh, which matches the key.\",\n \"accuracy_why\": \"Every must-have is present and CI is noted, but two ✅ rows about commit count and description restate settled things.\",\n \"reply_why\": \"It points the author to Yogesh's comments and sign-off, and the extra self-review nudge is fine but slightly redundant.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" pending Yogesh's sign-off, as the key says.\",\n \"accuracy_why\": \"It gives the migration renumbering, the small trim and Yogesh's missing sign-off concisely, omitting only the minor CI-unknown point.\",\n \"reply_why\": \"It asks the author to address Yogesh's comments and let him decide on readiness, and is pasteable as is.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and leaves the PR with Yogesh, which matches the key.\",\n \"accuracy_why\": \"It covers the push, the unaddressed major issue and the missing sign-off correctly, omitting only CI.\",\n \"reply_why\": \"It references the major 7/25 comment and routes the author to Yogesh, so it is ready to paste.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" until Yogesh confirms, as the key says.\",\n \"accuracy_why\": \"It covers all changed and still-missing items, including CI being unknown.\",\n \"reply_why\": \"The ask is right, though the added CI line is a small extra a maintainer might trim.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks Yogesh to confirm, which matches the key.\",\n \"accuracy_why\": \"It states the push, the trim and the missing Yogesh sign-off accurately, omitting only CI.\",\n \"reply_why\": \"The reply is concise, pasteable and points the author to Yogesh before re-pinging.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and assigns no maintainer until Yogesh confirms, as the key says.\",\n \"accuracy_why\": \"It gets the push, the major issue and the missing sign-off right, omitting only CI.\",\n \"reply_why\": \"It asks the author to answer each of Yogesh's comments and get his sign-off, which is good to paste.\"}\n},\n\"ranking\": [\"W\", \"S\", \"E\", \"G\", \"V\", \"F\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.328368
+}

@@ -1,0 +1,187 @@
+{
+ "case": "39722-4961693879",
+ "repeat": 2,
+ "map": {
+  "K": [
+   "v2-r2"
+  ],
+  "T": [
+   "v1-r2"
+  ],
+  "D": [
+   "v2-r1"
+  ],
+  "B": [
+   "v3-r1"
+  ],
+  "N": [
+   "v3-r2"
+  ],
+  "E": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "States as fact that the commit messages are unchanged and the fixes were not made, when the key says this can't be confirmed and needs checking"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key's kind and its more_feedback action.",
+    "accuracy_why": "It rightly hedges on the screenshots but asserts the commit fixes weren't made, and it misses the partial scope of #16094 and the duplicate German before image.",
+    "reply_why": "It asks the author to redo commit messages and screenshots they say are done, instead of pointing to whilstsomebody's review, distinct before/after pairs and the #16094 scope."
+   },
+   "N": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the commit messages are unchanged and the fixes were not made",
+     "Asserts the description still has the old screenshots, which the bot cannot know"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key.",
+    "accuracy_why": "It turns the single push with no size change into a firm claim that nothing was fixed, and it misses the scope and duplicate-image points.",
+    "reply_why": "It asks for work the author says is done and misses the key's ask."
+   },
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the commit messages and PR description are unchanged",
+     "Asserts the screenshots are still the full-width ones, although the current ones already look cropped"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key.",
+    "accuracy_why": "It asserts as fact that the commit and screenshot fixes are absent, which the key says can't be confirmed, and it misses the scope and duplicate-image points.",
+    "reply_why": "It re-asks for work the author says is done instead of giving the key's next step."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the commit messages are unchanged and the fixes were not made",
+     "Asserts the screenshots are still wide with unchanged UI and not precise crops"
+    ],
+    "rule_failures": [
+     "asks_for_done_work",
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key.",
+    "accuracy_why": "It asserts the commit and screenshot fixes are missing without support, and it adds a filler ✅ row about the earlier commit split.",
+    "reply_why": "It asks for done work and misses the review, distinct-pairs and scope asks."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the commit messages are unchanged and the fixes were not made",
+     "Applies the commit-message 'Fixes after the description' feedback to the PR description",
+     "Asserts the screenshots are the same wide ones"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key.",
+    "accuracy_why": "On top of the unsupported 'not fixed' claims, it misreads the commit feedback as being about the PR description.",
+    "reply_why": "It re-asks for done work and misses the key's ask entirely."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "missing"
+    },
+    "wrong_facts": [
+     "Asserts the commit messages are unchanged and the fixes were not made",
+     "Treats the PR description's 'Fixes part of' placement as a requested fix",
+     "Asserts the screenshots are unchanged and wide"
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "NOTE that keeps \"not ready\" matches the key.",
+    "accuracy_why": "It confidently lists three unconfirmed or wrong failures, including a misreading of the description feedback.",
+    "reply_why": "It asks the author to change the description and redo done work, and misses the key's ask."
+   }
+  },
+  "ranking": [
+   "D",
+   "N",
+   "B",
+   "T",
+   "K",
+   "E"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"States as fact that the commit messages are unchanged and the fixes were not made, when the key says this can't be confirmed and needs checking\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key's kind and its more_feedback action.\",\n \"accuracy_why\": \"It rightly hedges on the screenshots but asserts the commit fixes weren't made, and it misses the partial scope of #16094 and the duplicate German before image.\",\n \"reply_why\": \"It asks the author to redo commit messages and screenshots they say are done, instead of pointing to whilstsomebody's review, distinct before/after pairs and the #16094 scope.\"},\n\"N\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Asserts the commit messages are unchanged and the fixes were not made\", \"Asserts the description still has the old screenshots, which the bot cannot know\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key.\",\n \"accuracy_why\": \"It turns the single push with no size change into a firm claim that nothing was fixed, and it misses the scope and duplicate-image points.\",\n \"reply_why\": \"It asks for work the author says is done and misses the key's ask.\"},\n\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Asserts the commit messages and PR description are unchanged\", \"Asserts the screenshots are still the full-width ones, although the current ones already look cropped\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key.\",\n \"accuracy_why\": \"It asserts as fact that the commit and screenshot fixes are absent, which the key says can't be confirmed, and it misses the scope and duplicate-image points.\",\n \"reply_why\": \"It re-asks for work the author says is done instead of giving the key's next step.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Asserts the commit messages are unchanged and the fixes were not made\", \"Asserts the screenshots are still wide with unchanged UI and not precise crops\"],\n \"rule_failures\": [\"asks_for_done_work\", \"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key.\",\n \"accuracy_why\": \"It asserts the commit and screenshot fixes are missing without support, and it adds a filler ✅ row about the earlier commit split.\",\n \"reply_why\": \"It asks for done work and misses the review, distinct-pairs and scope asks.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Asserts the commit messages are unchanged and the fixes were not made\", \"Applies the commit-message 'Fixes after the description' feedback to the PR description\", \"Asserts the screenshots are the same wide ones\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key.\",\n \"accuracy_why\": \"On top of the unsupported 'not fixed' claims, it misreads the commit feedback as being about the PR description.\",\n \"reply_why\": \"It re-asks for done work and misses the key's ask entirely.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"missing\"},\n \"wrong_facts\": [\"Asserts the commit messages are unchanged and the fixes were not made\", \"Treats the PR description's 'Fixes part of' placement as a requested fix\", \"Asserts the screenshots are unchanged and wide\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" matches the key.\",\n \"accuracy_why\": \"It confidently lists three unconfirmed or wrong failures, including a misreading of the description feedback.\",\n \"reply_why\": \"It asks the author to change the description and redo done work, and misses the key's ask.\"}\n},\n\"ranking\": [\"D\", \"N\", \"B\", \"T\", \"K\", \"E\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.251952
+}

@@ -1,0 +1,171 @@
+{
+ "case": "39728-5012922258",
+ "repeat": 2,
+ "map": {
+  "V": [
+   "v1-r1"
+  ],
+  "L": [
+   "v3-r1"
+  ],
+  "F": [
+   "v3-r2"
+  ],
+  "X": [
+   "v2-r1"
+  ],
+  "E": [
+   "v1-r2"
+  ],
+  "J": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the PR description follows the template, including the self-review checklist, when the checklist is a custom one."
+    ],
+    "rule_failures": [
+     "filler_point",
+     "reply_misses_checklist_ask"
+    ],
+    "decision_score": 8,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps 'not ready', but it wrongly implies the PR can go to maintainer review once the commits are cleaned up.",
+    "accuracy_why": "It marks the custom checklist as matching the template, which is decisive and wrong, and it never flags the screenshots.",
+    "reply_why": "The reply covers commits but drops the checklist ask and thanks the author for a description that still isn't right."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps 'not ready' and leaves the PR with laurynmm for more feedback.",
+    "accuracy_why": "It covers the fixup commits, the message format, the wrong 17418 and the custom checklist accurately, missing only the screenshot check.",
+    "reply_why": "The reply gives a clear, specific ask on commits, area: Summary format, issue number and checklist, and only lacks the screenshot point."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps 'not ready' and routes the PR back to laurynmm.",
+    "accuracy_why": "It is accurate on commits and the checklist but leaves the screenshots unflagged and only calls the messages 'vague'.",
+    "reply_why": "The ask is right, but thanking the author for the screenshots implies they are fine, and it never names the message format."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps 'not ready' and asks for commit and checklist fixes.",
+    "accuracy_why": "It covers commits, the checklist and unknown CI, but it ticks the screenshots without flagging the precision guidelines.",
+    "reply_why": "The reply is pasteable and covers commits, the issue number and the checklist, without a screenshot point."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Describes the template checklist using the items from #38363's non-template checklist, which a maintainer had already rejected."
+    ],
+    "rule_failures": [
+     "reply_misses_issue_number",
+     "unrequested_ask"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps 'not ready' and calls for more feedback.",
+    "accuracy_why": "It gets the main gaps right but misstates what the template checklist contains, and it raises screenshot placement instead of precision.",
+    "reply_why": "The reply asks to move the screenshots into the description, which nobody requested, and drops the wrong issue number."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps 'not ready' and sends feedback.",
+    "accuracy_why": "It covers commits, the checklist, CI and the typo, but it ticks the screenshots without flagging the guidelines.",
+    "reply_why": "The ask is right, but thanking the author for the screenshots implies they are acceptable."
+   }
+  },
+  "ranking": [
+   "L",
+   "X",
+   "J",
+   "F",
+   "E",
+   "V"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the PR description follows the template, including the self-review checklist, when the checklist is a custom one.\"],\n \"rule_failures\": [\"filler_point\", \"reply_misses_checklist_ask\"],\n \"decision_score\": 8, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps 'not ready', but it wrongly implies the PR can go to maintainer review once the commits are cleaned up.\",\n \"accuracy_why\": \"It marks the custom checklist as matching the template, which is decisive and wrong, and it never flags the screenshots.\",\n \"reply_why\": \"The reply covers commits but drops the checklist ask and thanks the author for a description that still isn't right.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' and leaves the PR with laurynmm for more feedback.\",\n \"accuracy_why\": \"It covers the fixup commits, the message format, the wrong 17418 and the custom checklist accurately, missing only the screenshot check.\",\n \"reply_why\": \"The reply gives a clear, specific ask on commits, area: Summary format, issue number and checklist, and only lacks the screenshot point.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' and routes the PR back to laurynmm.\",\n \"accuracy_why\": \"It is accurate on commits and the checklist but leaves the screenshots unflagged and only calls the messages 'vague'.\",\n \"reply_why\": \"The ask is right, but thanking the author for the screenshots implies they are fine, and it never names the message format.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' and asks for commit and checklist fixes.\",\n \"accuracy_why\": \"It covers commits, the checklist and unknown CI, but it ticks the screenshots without flagging the precision guidelines.\",\n \"reply_why\": \"The reply is pasteable and covers commits, the issue number and the checklist, without a screenshot point.\"},\n\"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"},\n \"wrong_facts\": [\"Describes the template checklist using the items from #38363's non-template checklist, which a maintainer had already rejected.\"],\n \"rule_failures\": [\"reply_misses_issue_number\", \"unrequested_ask\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' and calls for more feedback.\",\n \"accuracy_why\": \"It gets the main gaps right but misstates what the template checklist contains, and it raises screenshot placement instead of precision.\",\n \"reply_why\": \"The reply asks to move the screenshots into the description, which nobody requested, and drops the wrong issue number.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps 'not ready' and sends feedback.\",\n \"accuracy_why\": \"It covers commits, the checklist, CI and the typo, but it ticks the screenshots without flagging the guidelines.\",\n \"reply_why\": \"The ask is right, but thanking the author for the screenshots implies they are acceptable.\"}\n},\n\"ranking\": [\"L\", \"X\", \"J\", \"F\", \"E\", \"V\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.34697999999999996
+}

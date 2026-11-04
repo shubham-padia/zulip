@@ -1,0 +1,165 @@
+{
+ "case": "39836-5142302711",
+ "repeat": 2,
+ "map": {
+  "G": [
+   "v2-r1"
+  ],
+  "H": [
+   "v2-r2"
+  ],
+  "L": [
+   "v3-r2"
+  ],
+  "M": [
+   "v1-r1"
+  ],
+  "V": [
+   "v3-r1"
+  ],
+  "D": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the matched screenshot pair and the missing wrapped-pill case, but it omits the no-new-push point, names laurynmm instead of karlstolley, and includes a CI/help-wanted filler row.",
+    "reply_why": "The single reviewer-ping line is acceptable for a hand-off, but it pings laurynmm rather than the CSS reviewer."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the 1:1 pair, the lack of a new push, and the pills, wrapping and zoom checks, and only misses karlstolley as reviewer.",
+    "reply_why": "The ping line is pasteable, though it pings laurynmm rather than karlstolley."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It is concise and covers the same-size pair, no code change, and the caret and wrapped-pill check, but it names laurynmm instead of karlstolley.",
+    "reply_why": "The ping line is pasteable, though it is aimed at laurynmm rather than karlstolley."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It covers the pair, no push, and the zoom and pill-wrap check, but it misses karlstolley as reviewer.",
+    "reply_why": "The ping line is pasteable, though it pings laurynmm rather than karlstolley."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that recommends handing off to maintainer review, which matches the key.",
+    "accuracy_why": "It is tight and complete on what changed and what is missing (the wrapped-pill and zoomed-out cases), and only misses karlstolley.",
+    "reply_why": "The ping line is pasteable, though it is aimed at laurynmm rather than karlstolley."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" and asks for more screenshots, but the key's action is a hand-off.",
+    "accuracy_why": "Its facts are right, but it treats the coverage gap as a blocker and so gets the decisive recommendation wrong.",
+    "reply_why": "It asks the author for more work instead of moving the PR to review, which misses the reply_ask."
+   }
+  },
+  "ranking": [
+   "V",
+   "L",
+   "H",
+   "M",
+   "G",
+   "D"
+  ]
+ },
+ "text": "{\"outputs\": {\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n   \"accuracy_why\": \"It covers the matched screenshot pair and the missing wrapped-pill case, but it omits the no-new-push point, names laurynmm instead of karlstolley, and includes a CI/help-wanted filler row.\",\n   \"reply_why\": \"The single reviewer-ping line is acceptable for a hand-off, but it pings laurynmm rather than the CSS reviewer.\"},\n  \"H\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 8,\n   \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n   \"accuracy_why\": \"It covers the 1:1 pair, the lack of a new push, and the pills, wrapping and zoom checks, and only misses karlstolley as reviewer.\",\n   \"reply_why\": \"The ping line is pasteable, though it pings laurynmm rather than karlstolley.\"},\n  \"L\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n   \"accuracy_why\": \"It is concise and covers the same-size pair, no code change, and the caret and wrapped-pill check, but it names laurynmm instead of karlstolley.\",\n   \"reply_why\": \"The ping line is pasteable, though it is aimed at laurynmm rather than karlstolley.\"},\n  \"M\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 7,\n   \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n   \"accuracy_why\": \"It covers the pair, no push, and the zoom and pill-wrap check, but it misses karlstolley as reviewer.\",\n   \"reply_why\": \"The ping line is pasteable, though it pings laurynmm rather than karlstolley.\"},\n  \"V\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8,\n   \"brevity_score\": 9,\n   \"decision_why\": \"It is a NOTE that recommends handing off to maintainer review, which matches the key.\",\n   \"accuracy_why\": \"It is tight and complete on what changed and what is missing (the wrapped-pill and zoomed-out cases), and only misses karlstolley.\",\n   \"reply_why\": \"The ping line is pasteable, though it is aimed at laurynmm rather than karlstolley.\"},\n  \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n   \"wrong_facts\": [], \"rule_failures\": [],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 3,\n   \"brevity_score\": 6,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for more screenshots, but the key's action is a hand-off.\",\n   \"accuracy_why\": \"Its facts are right, but it treats the coverage gap as a blocker and so gets the decisive recommendation wrong.\",\n   \"reply_why\": \"It asks the author for more work instead of moving the PR to review, which misses the reply_ask.\"}},\n \"ranking\": [\"V\", \"L\", \"H\", \"M\", \"G\", \"D\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.273028
+}

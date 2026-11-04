@@ -1,0 +1,178 @@
+{
+ "case": "39819-5108435113",
+ "repeat": 2,
+ "map": {
+  "U": [
+   "v1-r1"
+  ],
+  "Z": [
+   "v2-r2"
+  ],
+  "K": [
+   "v2-r1"
+  ],
+  "D": [
+   "v3-r1"
+  ],
+  "Y": [
+   "v1-r2"
+  ],
+  "L": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "U": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the description still has the same screenshot sets, but the description was edited to add Before/After labels per test."
+    ],
+    "rule_failures": [
+     "extra_ask_tests"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "NOTE that keeps \"not ready\" and asks for more work matches the key.",
+    "accuracy_why": "It flags the missing push, the screenshot problem and a vague Test 2 failure, but wrongly says the description is unchanged and omits the commit summary.",
+    "reply_why": "It asks for screenshots per the guide but never mentions tables, and it adds a fix and a tests demand ahead of review."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says Test 2 shows the message still expanded after reveal, but the author reports it stays hidden with a \"Show more\" button."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "NOTE that keeps \"not ready\" for more feedback matches the key.",
+    "accuracy_why": "It misreads Test 2, the reply's fix ask rests on that misreading, and it is only unsure whether the screenshots meet the guide.",
+    "reply_why": "It asks for precise screenshots without tables, then asks for a fix based on the wrong Test 2 behavior."
+   },
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says Test 2 shows the collapsed muted message in full after clicking \"show more\", but the author reports it stays hidden."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "NOTE with more_feedback matches the key.",
+    "accuracy_why": "It correctly notes that only the description changed, but it misdescribes Test 2 and treats the screenshot problem as a content issue rather than a formatting one.",
+    "reply_why": "It leads with a code fix based on a misread Test 2 and leaves the screenshot formatting secondary, which misses the key's ask."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" and leaves the PR unassigned matches the key.",
+    "accuracy_why": "It covers the missing push, the unclear screenshots and Test 2, but it loosely maps Test 2 onto the issue's second case and omits the commit summary.",
+    "reply_why": "The ask is reasonable, but it puts a code fix before the screenshots, never mentions tables, and lacks an @mention."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "wrong",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says Test 2 is the muted, expanded, then collapsed case still showing the full message, but Test 2 is collapse-then-mute and the message stays hidden."
+    ],
+    "rule_failures": [
+     "extra_ask_tests",
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "NOTE with more_feedback matches the key.",
+    "accuracy_why": "Its central Test 2 claim is wrong, the reply rests on it, and it says the missing push twice.",
+    "reply_why": "It asks for a fix based on the wrong case and for tests before screenshots, which misses the key's screenshot-table ask."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 8,
+    "decision_why": "NOTE that keeps \"not ready\" with no reviewer matches the key.",
+    "accuracy_why": "It describes Test 2 accurately (\"Show more\" appears but the message stays hidden) and notes there was no push, but it is vague on the screenshot format and omits the commit summary.",
+    "reply_why": "It asks for one clear pair per scenario, which is close to the table ask, but it leads with a code fix and lacks an @mention."
+   }
+  },
+  "ranking": [
+   "L",
+   "D",
+   "U",
+   "Z",
+   "K",
+   "Y"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"U\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the description still has the same screenshot sets, but the description was edited to add Before/After labels per test.\"],\n \"rule_failures\": [\"extra_ask_tests\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and asks for more work matches the key.\",\n \"accuracy_why\": \"It flags the missing push, the screenshot problem and a vague Test 2 failure, but wrongly says the description is unchanged and omits the commit summary.\",\n \"reply_why\": \"It asks for screenshots per the guide but never mentions tables, and it adds a fix and a tests demand ahead of review.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says Test 2 shows the message still expanded after reveal, but the author reports it stays hidden with a \\\"Show more\\\" button.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" for more feedback matches the key.\",\n \"accuracy_why\": \"It misreads Test 2, the reply's fix ask rests on that misreading, and it is only unsure whether the screenshots meet the guide.\",\n \"reply_why\": \"It asks for precise screenshots without tables, then asks for a fix based on the wrong Test 2 behavior.\"},\n\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says Test 2 shows the collapsed muted message in full after clicking \\\"show more\\\", but the author reports it stays hidden.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with more_feedback matches the key.\",\n \"accuracy_why\": \"It correctly notes that only the description changed, but it misdescribes Test 2 and treats the screenshot problem as a content issue rather than a formatting one.\",\n \"reply_why\": \"It leads with a code fix based on a misread Test 2 and leaves the screenshot formatting secondary, which misses the key's ask.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" and leaves the PR unassigned matches the key.\",\n \"accuracy_why\": \"It covers the missing push, the unclear screenshots and Test 2, but it loosely maps Test 2 onto the issue's second case and omits the commit summary.\",\n \"reply_why\": \"The ask is reasonable, but it puts a code fix before the screenshots, never mentions tables, and lacks an @mention.\"},\n\"Y\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"wrong\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says Test 2 is the muted, expanded, then collapsed case still showing the full message, but Test 2 is collapse-then-mute and the message stays hidden.\"],\n \"rule_failures\": [\"extra_ask_tests\", \"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"NOTE with more_feedback matches the key.\",\n \"accuracy_why\": \"Its central Test 2 claim is wrong, the reply rests on it, and it says the missing push twice.\",\n \"reply_why\": \"It asks for a fix based on the wrong case and for tests before screenshots, which misses the key's screenshot-table ask.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 7, \"reply_score\": 6, \"brevity_score\": 8,\n \"decision_why\": \"NOTE that keeps \\\"not ready\\\" with no reviewer matches the key.\",\n \"accuracy_why\": \"It describes Test 2 accurately (\\\"Show more\\\" appears but the message stays hidden) and notes there was no push, but it is vague on the screenshot format and omits the commit summary.\",\n \"reply_why\": \"It asks for one clear pair per scenario, which is close to the table ask, but it leads with a code fix and lacks an @mention.\"}\n},\n\"ranking\": [\"L\", \"D\", \"U\", \"Z\", \"K\", \"Y\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.283328
+}

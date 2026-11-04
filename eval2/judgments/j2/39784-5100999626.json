@@ -1,0 +1,168 @@
+{
+ "case": "39784-5100999626",
+ "repeat": 2,
+ "map": {
+  "B": [
+   "v3-r1"
+  ],
+  "W": [
+   "v2-r2"
+  ],
+  "C": [
+   "v1-r1"
+  ],
+  "Z": [
+   "v3-r2"
+  ],
+  "Q": [
+   "v2-r1"
+  ],
+  "I": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "B": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "It covers the decisive screenshot gap, the #33086 discussion and the unverified code, but it omits the left-out marked.cjs comment.",
+    "reply_why": "The reply is concise, thanks the author for the #33086 work, and asks for paired screenshots with the guideline link, so it can be pasted as is."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Treats the completion-candidate ask as not addressed even though the key says the first ask is done."
+    ],
+    "rule_failures": [
+     "asks_for_done_work",
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "It marks the #33086 discussion as unaddressed, adds a filler point about the self-review checklist, and omits marked.cjs.",
+    "reply_why": "Its main ask is to rebuild on #33086's commits or explain why, but the author already explained, which pushes the screenshot ask into second place."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "Its points are correct and include the unverified code, but it omits marked.cjs and its intro paragraph repeats the table.",
+    "reply_why": "The screenshot ask is right, but it also asks the author to say why they did not build on #33086, which the description already explains."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "It covers the screenshot gap, the #33086 discussion and the unconfirmed push, but it omits marked.cjs.",
+    "reply_why": "The screenshot ask is good, but the added \"push the whitespace fix if you haven't yet\" line is presumptuous and should be cut."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "Its table is accurate and flags the unverified code change, but it omits the marked.cjs comment.",
+    "reply_why": "The reply is concise, asks for paired before/after screenshots including the whitespace case, and links the guide, so it can be pasted as is."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "Its points are accurate, including the unconfirmed push, but it omits marked.cjs.",
+    "reply_why": "The reply is a clean, pasteable ask for side-by-side screenshots with the guideline link."
+   }
+  },
+  "ranking": [
+   "B",
+   "Q",
+   "I",
+   "Z",
+   "C",
+   "W"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"B\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"It covers the decisive screenshot gap, the #33086 discussion and the unverified code, but it omits the left-out marked.cjs comment.\",\n \"reply_why\": \"The reply is concise, thanks the author for the #33086 work, and asks for paired screenshots with the guideline link, so it can be pasted as is.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Treats the completion-candidate ask as not addressed even though the key says the first ask is done.\"],\n \"rule_failures\": [\"asks_for_done_work\", \"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 5, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"It marks the #33086 discussion as unaddressed, adds a filler point about the self-review checklist, and omits marked.cjs.\",\n \"reply_why\": \"Its main ask is to rebuild on #33086's commits or explain why, but the author already explained, which pushes the screenshot ask into second place.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 6, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"Its points are correct and include the unverified code, but it omits marked.cjs and its intro paragraph repeats the table.\",\n \"reply_why\": \"The screenshot ask is right, but it also asks the author to say why they did not build on #33086, which the description already explains.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"It covers the screenshot gap, the #33086 discussion and the unconfirmed push, but it omits marked.cjs.\",\n \"reply_why\": \"The screenshot ask is good, but the added \\\"push the whitespace fix if you haven't yet\\\" line is presumptuous and should be cut.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"Its table is accurate and flags the unverified code change, but it omits the marked.cjs comment.\",\n \"reply_why\": \"The reply is concise, asks for paired before/after screenshots including the whitespace case, and links the guide, so it can be pasted as is.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\",\n \"accuracy_why\": \"Its points are accurate, including the unconfirmed push, but it omits marked.cjs.\",\n \"reply_why\": \"The reply is a clean, pasteable ask for side-by-side screenshots with the guideline link.\"}},\n \"ranking\": [\"B\", \"Q\", \"I\", \"Z\", \"C\", \"W\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.318608
+}

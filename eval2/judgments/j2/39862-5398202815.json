@@ -1,0 +1,167 @@
+{
+ "case": "39862-5398202815",
+ "repeat": 2,
+ "map": {
+  "W": [
+   "v3-r1"
+  ],
+  "K": [
+   "v1-r2"
+  ],
+  "Z": [
+   "v1-r1"
+  ],
+  "U": [
+   "v2-r1"
+  ],
+  "J": [
+   "v3-r2"
+  ],
+  "I": [
+   "v2-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands the PR off for maintainer review, which matches the key.",
+    "accuracy_why": "It covers the design approval, including the choice of text-only over a placeholder, the requested title-only and narrow-window screenshots, and the removal of both 'not ready' and 'design review'.",
+    "reply_why": "It is a short thanks plus a reviewer ping, and the thanks to the author could be dropped."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "All the cutoff must-haves are present, including removing 'design review', though it doesn't mention that the placeholder approach was rejected.",
+    "reply_why": "It is a reviewer ping with context, but the phrase 'design approved this' needs a small wording fix."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "It is complete and correct, including dropping 'design review' and noting that Daniel K's requested screenshots were posted.",
+    "reply_why": "It is a single reviewer ping with the right context and could be pasted as is."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "It misses that the 'design review' label should also come off, and it doesn't mention the text-only versus placeholder choice.",
+    "reply_why": "It is a brief thanks plus a reviewer ping, and only needs a light trim."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "It leaves out removing the 'design review' label, which the key lists as still missing.",
+    "reply_why": "It is a brief thanks plus a reviewer ping, and only needs a light trim."
+   },
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims nobody asked for the new push, but it followed Daniel K's design feedback about the narrow-screen layout."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 9,
+    "brevity_score": 5,
+    "decision_why": "It is a NOTE that hands the PR off, which matches the key.",
+    "accuracy_why": "It only suggests that 'design review' could be dropped, doesn't name the specific screenshots Daniel K requested, and mischaracterizes the push as unrequested.",
+    "reply_why": "It is a clean reviewer ping with context and could be pasted as is."
+   }
+  },
+  "ranking": [
+   "K",
+   "Z",
+   "U",
+   "W",
+   "J",
+   "I"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"K\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that hands the PR off for maintainer review, which matches the key.\",\n \"accuracy_why\": \"It covers the design approval, including the choice of text-only over a placeholder, the requested title-only and narrow-window screenshots, and the removal of both 'not ready' and 'design review'.\",\n \"reply_why\": \"It is a short thanks plus a reviewer ping, and the thanks to the author could be dropped.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"All the cutoff must-haves are present, including removing 'design review', though it doesn't mention that the placeholder approach was rejected.\",\n \"reply_why\": \"It is a reviewer ping with context, but the phrase 'design approved this' needs a small wording fix.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"It is complete and correct, including dropping 'design review' and noting that Daniel K's requested screenshots were posted.\",\n \"reply_why\": \"It is a single reviewer ping with the right context and could be pasted as is.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"It misses that the 'design review' label should also come off, and it doesn't mention the text-only versus placeholder choice.\",\n \"reply_why\": \"It is a brief thanks plus a reviewer ping, and only needs a light trim.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"It leaves out removing the 'design review' label, which the key lists as still missing.\",\n \"reply_why\": \"It is a brief thanks plus a reviewer ping, and only needs a light trim.\"},\n\"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims nobody asked for the new push, but it followed Daniel K's design feedback about the narrow-screen layout.\"], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 9, \"brevity_score\": 5,\n \"decision_why\": \"It is a NOTE that hands the PR off, which matches the key.\",\n \"accuracy_why\": \"It only suggests that 'design review' could be dropped, doesn't name the specific screenshots Daniel K requested, and mischaracterizes the push as unrequested.\",\n \"reply_why\": \"It is a clean reviewer ping with context and could be pasted as is.\"}\n},\n\"ranking\": [\"K\", \"Z\", \"U\", \"W\", \"J\", \"I\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.23653200000000002
+}

@@ -1,0 +1,167 @@
+{
+ "case": "39540-4708052713",
+ "repeat": 2,
+ "map": {
+  "C": [
+   "v1-r1"
+  ],
+  "Q": [
+   "v3-r2"
+  ],
+  "T": [
+   "v2-r2"
+  ],
+  "O": [
+   "v1-r2"
+  ],
+  "X": [
+   "v2-r1"
+  ],
+  "L": [
+   "v3-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "C": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "The kind matches, but keeping \"not ready\" is the wrong action, since the key's observed action is a hand-off to karlstolley; it at least notes that nobody is assigned instead of ruling out a reviewer.",
+    "accuracy_why": "It correctly flags the merge commit and the unchanged messages, but it never names karlstolley, omits the dark-theme screenshot problem, and its screenshot line glosses over that problem.",
+    "reply_why": "The reply asks only to remove the merge commit, not to rewrite the message per commit discipline, and it is a multi-sentence author reply where the key wants a hand-off."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "It explicitly says to keep \"not ready\" and leave the PR unassigned, which is the opposite of the key's hand-off.",
+    "accuracy_why": "The merge commit and unchanged messages are right, but it says to leave the PR unassigned instead of naming karlstolley, and it misses the screenshot issue.",
+    "reply_why": "It asks for the rebase but not the commit message rewrite, and it is a multi-sentence author reply where the key wants a hand-off."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 8,
+    "decision_why": "It says no reviewer should be assigned yet, which contradicts the key's hand-off to karlstolley.",
+    "accuracy_why": "The core cleanup failure is right, but it rules out a reviewer, misses the screenshot issue, and adds a filler CI line.",
+    "reply_why": "It covers only the merge commit, not the message rewrite, and it is a multi-sentence author reply where the key wants a hand-off."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the remaining commit has a clear message, though the key says the commit message still needs rewriting per commit discipline."
+    ],
+    "rule_failures": [],
+    "decision_score": 4,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "The kind matches, but keeping \"not ready\" misses the key's hand-off.",
+    "accuracy_why": "Its check mark praising the commit message is a wrong fact, and it also misses the reviewer and the screenshot issue.",
+    "reply_why": "It asks only for the rebase and leaves out the message rewrite, as a multi-sentence author reply where the key wants a hand-off."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It says to leave no reviewer assigned, which contradicts the key's hand-off.",
+    "accuracy_why": "The merge commit and unchanged messages are right, but it gives no karlstolley, misses the screenshot issue, and its CI line adds little.",
+    "reply_why": "It asks for the rebase but not the message rewrite, and it is a multi-sentence author reply where the key wants a hand-off."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "wrong",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "It keeps the PR \"not ready\" and unassigned, while the key hands it to karlstolley.",
+    "accuracy_why": "It is accurate on the merge commit and unchanged messages, but it misses karlstolley and the screenshot issue.",
+    "reply_why": "It asks only for the rebase, not the message rewrite, as a multi-sentence author reply where the key wants a hand-off."
+   }
+  },
+  "ranking": [
+   "C",
+   "Q",
+   "L",
+   "X",
+   "T",
+   "O"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"C\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"The kind matches, but keeping \\\"not ready\\\" is the wrong action, since the key's observed action is a hand-off to karlstolley; it at least notes that nobody is assigned instead of ruling out a reviewer.\",\n \"accuracy_why\": \"It correctly flags the merge commit and the unchanged messages, but it never names karlstolley, omits the dark-theme screenshot problem, and its screenshot line glosses over that problem.\",\n \"reply_why\": \"The reply asks only to remove the merge commit, not to rewrite the message per commit discipline, and it is a multi-sentence author reply where the key wants a hand-off.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 9,\n \"decision_why\": \"It explicitly says to keep \\\"not ready\\\" and leave the PR unassigned, which is the opposite of the key's hand-off.\",\n \"accuracy_why\": \"The merge commit and unchanged messages are right, but it says to leave the PR unassigned instead of naming karlstolley, and it misses the screenshot issue.\",\n \"reply_why\": \"It asks for the rebase but not the commit message rewrite, and it is a multi-sentence author reply where the key wants a hand-off.\"},\n\"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 8,\n \"decision_why\": \"It says no reviewer should be assigned yet, which contradicts the key's hand-off to karlstolley.\",\n \"accuracy_why\": \"The core cleanup failure is right, but it rules out a reviewer, misses the screenshot issue, and adds a filler CI line.\",\n \"reply_why\": \"It covers only the merge commit, not the message rewrite, and it is a multi-sentence author reply where the key wants a hand-off.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the remaining commit has a clear message, though the key says the commit message still needs rewriting per commit discipline.\"], \"rule_failures\": [],\n \"decision_score\": 4, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"The kind matches, but keeping \\\"not ready\\\" misses the key's hand-off.\",\n \"accuracy_why\": \"Its check mark praising the commit message is a wrong fact, and it also misses the reviewer and the screenshot issue.\",\n \"reply_why\": \"It asks only for the rebase and leaves out the message rewrite, as a multi-sentence author reply where the key wants a hand-off.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It says to leave no reviewer assigned, which contradicts the key's hand-off.\",\n \"accuracy_why\": \"The merge commit and unchanged messages are right, but it gives no karlstolley, misses the screenshot issue, and its CI line adds little.\",\n \"reply_why\": \"It asks for the rebase but not the message rewrite, and it is a multi-sentence author reply where the key wants a hand-off.\"},\n\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"wrong\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 9,\n \"decision_why\": \"It keeps the PR \\\"not ready\\\" and unassigned, while the key hands it to karlstolley.\",\n \"accuracy_why\": \"It is accurate on the merge commit and unchanged messages, but it misses karlstolley and the screenshot issue.\",\n \"reply_why\": \"It asks only for the rebase, not the message rewrite, as a multi-sentence author reply where the key wants a hand-off.\"}\n},\n\"ranking\": [\"C\", \"Q\", \"L\", \"X\", \"T\", \"O\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.172148
+}

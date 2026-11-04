@@ -1,0 +1,172 @@
+{
+ "case": "39691-5277811900",
+ "repeat": 2,
+ "map": {
+  "G": [
+   "v2-r1"
+  ],
+  "W": [
+   "v1-r2"
+  ],
+  "C": [
+   "v2-r2"
+  ],
+  "X": [
+   "v3-r1"
+  ],
+  "D": [
+   "v3-r2"
+  ],
+  "Z": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "asks_for_done_work",
+     "filler_point"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 5,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" and adds checklist and explanation demands for the author, where the key hands off once prakhar1144 confirms.",
+    "accuracy_why": "No-push and the confirmation gate are right, but it omits the Galène rationale, PIG208's open nits and a reviewer like apoorvapendse.",
+    "reply_why": "It asks the author to re-explain work he says is done and to tick the checklist, and it never asks for PIG208's nits."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 6,
+    "brevity_score": 7,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It covers the no-push claim and leaves the Galène helpers for prakhar1144 to judge, but misses PIG208's nits and the reviewer suggestion, and the checklist point is filler.",
+    "reply_why": "The prakhar1144 ping is right, but it adds a checklist ask to the author instead of PIG208's nits."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 5,
+    "reply_score": 6,
+    "brevity_score": 6,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It ticks both asks as done on the author's word alone, skips the kept-helpers/Galène tension and PIG208's nits, and pads with CI and checklist rows.",
+    "reply_why": "The prakhar1144 ping is right, but it adds a checklist ask and omits PIG208's nits."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It is concise and correct on the no-push claim, the Galène helpers and the missing confirmation, but omits PIG208's nits and the reviewer suggestion.",
+    "reply_why": "It is essentially a single prakhar1144 ping, though it doesn't mention PIG208's nits."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "hedged",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "NOTE with a hand-off matches the key.",
+    "accuracy_why": "It is correct on the no-push claim, the Galène helpers and the missing confirmation, but the headline \"author confirmed\" slightly overstates, and it omits PIG208's nits and the reviewer suggestion.",
+    "reply_why": "A short prakhar1144 ping that is pasteable, but it misses PIG208's nits."
+   },
+   "Z": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Claims the reason for keeping the helpers is only in a direct message, but the author quoted it in his GitHub comment."
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 5,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" pending prakhar1144's confirmation, a near miss of the key's hand-off.",
+    "accuracy_why": "It contains a wrong fact about where the rationale lives and misses PIG208's nits and the reviewer suggestion.",
+    "reply_why": "It asks the author for a description note based on the wrong fact plus checklist busywork, and omits PIG208's nits."
+   }
+  },
+  "ranking": [
+   "X",
+   "D",
+   "W",
+   "C",
+   "G",
+   "Z"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"asks_for_done_work\", \"filler_point\"],\n \"decision_score\": 4, \"accuracy_score\": 5, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" and adds checklist and explanation demands for the author, where the key hands off once prakhar1144 confirms.\",\n \"accuracy_why\": \"No-push and the confirmation gate are right, but it omits the Galène rationale, PIG208's open nits and a reviewer like apoorvapendse.\",\n \"reply_why\": \"It asks the author to re-explain work he says is done and to tick the checklist, and it never asks for PIG208's nits.\"},\n\"W\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 6, \"brevity_score\": 7,\n \"decision_why\": \"NOTE with a hand-off matches the key.\",\n \"accuracy_why\": \"It covers the no-push claim and leaves the Galène helpers for prakhar1144 to judge, but misses PIG208's nits and the reviewer suggestion, and the checklist point is filler.\",\n \"reply_why\": \"The prakhar1144 ping is right, but it adds a checklist ask to the author instead of PIG208's nits.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 5, \"reply_score\": 6, \"brevity_score\": 6,\n \"decision_why\": \"NOTE with a hand-off matches the key.\",\n \"accuracy_why\": \"It ticks both asks as done on the author's word alone, skips the kept-helpers/Galène tension and PIG208's nits, and pads with CI and checklist rows.\",\n \"reply_why\": \"The prakhar1144 ping is right, but it adds a checklist ask and omits PIG208's nits.\"},\n\"X\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off matches the key.\",\n \"accuracy_why\": \"It is concise and correct on the no-push claim, the Galène helpers and the missing confirmation, but omits PIG208's nits and the reviewer suggestion.\",\n \"reply_why\": \"It is essentially a single prakhar1144 ping, though it doesn't mention PIG208's nits.\"},\n\"D\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"hedged\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"NOTE with a hand-off matches the key.\",\n \"accuracy_why\": \"It is correct on the no-push claim, the Galène helpers and the missing confirmation, but the headline \\\"author confirmed\\\" slightly overstates, and it omits PIG208's nits and the reviewer suggestion.\",\n \"reply_why\": \"A short prakhar1144 ping that is pasteable, but it misses PIG208's nits.\"},\n\"Z\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Claims the reason for keeping the helpers is only in a direct message, but the author quoted it in his GitHub comment.\"],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 5, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" pending prakhar1144's confirmation, a near miss of the key's hand-off.\",\n \"accuracy_why\": \"It contains a wrong fact about where the rationale lives and misses PIG208's nits and the reviewer suggestion.\",\n \"reply_why\": \"It asks the author for a description note based on the wrong fact plus checklist busywork, and omits PIG208's nits.\"}\n},\n\"ranking\": [\"X\", \"D\", \"W\", \"C\", \"G\", \"Z\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.268688
+}

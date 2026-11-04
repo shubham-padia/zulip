@@ -1,0 +1,175 @@
+{
+ "case": "39785-5037857009",
+ "repeat": 2,
+ "map": {
+  "I": [
+   "v2-r2"
+  ],
+  "M": [
+   "v3-r1"
+  ],
+  "E": [
+   "v1-r2"
+  ],
+  "X": [
+   "v1-r1"
+  ],
+  "D": [
+   "v3-r2"
+  ],
+  "A": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "I": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Marks the screenshot request as met, but the key says there is no sign the image is a real dev-environment screenshot",
+     "Calls the PR ready for review"
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict",
+     "bad_format"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off to laurynmm, but the key's action is more feedback with \"not ready\" kept.",
+    "accuracy_why": "It treats the generated-looking image as a valid screenshot, a wrong fact the hand-off rests on, and it omits that no code was pushed.",
+    "reply_why": "The reply thanks laurynmm for adding the screenshots and pings her to review, which misaddresses the thanks and misses the ask about how the image was made."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Marks the screenshot request as met, but the key says there is no sign the image is a real dev-environment screenshot",
+     "Calls the PR ready for review"
+    ],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 6,
+    "decision_why": "It recommends handing off for review when the key says to keep \"not ready\" and give more feedback.",
+    "accuracy_why": "It notes there was no new push and that #38931 is unlinked, but it accepts the image as satisfying the screenshot request, and the hand-off rests on that.",
+    "reply_why": "The reply asks laurynmm to review instead of questioning the image's origin or asking for real dev-environment screenshots."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshot answers the screenshot feedback, though its authenticity is the open problem"
+    ],
+    "rule_failures": [],
+    "decision_score": 8,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\", but the next step hedges between giving feedback and checking #38931 before deciding.",
+    "accuracy_why": "It covers the lack of a push, the missing #38931 link and the unshown right-placement rule, but it accepts the image as a valid screenshot.",
+    "reply_why": "It asks for the issue link and manual testing details, but never asks how the image was made or for real dev-environment screenshots."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Marks the screenshot ask as satisfied (✅), though its authenticity is the open problem"
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "NOTE with \"not ready\" kept and more feedback matches the key.",
+    "accuracy_why": "It covers the lack of a push, #38931 and the right-placement gap, but it accepts the image as genuine.",
+    "reply_why": "It asks to move the questionable image into the description and never questions how it was made, so it misses the core of the reply_ask."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshot answers the screenshot ask, though its authenticity is the open problem"
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "NOTE with \"not ready\" kept matches the key's decision and action.",
+    "accuracy_why": "It notes there was no push, that #38931 is unlinked and that the right-placement rule is unshown, but it treats the image as a valid screenshot.",
+    "reply_why": "It asks for the issue link and manual testing but not for real dev-environment screenshots or how the image was made."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present"
+    },
+    "wrong_facts": [
+     "Says the screenshot answers the screenshot feedback, though its authenticity is the open problem",
+     "Refers to a \"How changes were tested\" section, but the description's section is titled \"Testing\""
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" with more feedback and no reviewer, which matches the key.",
+    "accuracy_why": "It covers the lack of a push, #38931 and the right-placement gap, but it accepts the image as genuine and misnames the Testing section.",
+    "reply_why": "It asks for the issue link and browser testing but misses questioning the image's origin, which is the reply_ask."
+   }
+  },
+  "ranking": [
+   "X",
+   "E",
+   "D",
+   "M",
+   "A",
+   "I"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n \"I\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n  \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\"},\n  \"wrong_facts\": [\"Marks the screenshot request as met, but the key says there is no sign the image is a real dev-environment screenshot\", \"Calls the PR ready for review\"],\n  \"rule_failures\": [\"reply_contradicts_verdict\", \"bad_format\"],\n  \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 7,\n  \"decision_why\": \"It recommends handing off to laurynmm, but the key's action is more feedback with \\\"not ready\\\" kept.\",\n  \"accuracy_why\": \"It treats the generated-looking image as a valid screenshot, a wrong fact the hand-off rests on, and it omits that no code was pushed.\",\n  \"reply_why\": \"The reply thanks laurynmm for adding the screenshots and pings her to review, which misaddresses the thanks and misses the ask about how the image was made.\"},\n \"A\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n  \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n  \"wrong_facts\": [\"Marks the screenshot request as met, but the key says there is no sign the image is a real dev-environment screenshot\", \"Calls the PR ready for review\"],\n  \"rule_failures\": [\"filler_point\"],\n  \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 6,\n  \"decision_why\": \"It recommends handing off for review when the key says to keep \\\"not ready\\\" and give more feedback.\",\n  \"accuracy_why\": \"It notes there was no new push and that #38931 is unlinked, but it accepts the image as satisfying the screenshot request, and the hand-off rests on that.\",\n  \"reply_why\": \"The reply asks laurynmm to review instead of questioning the image's origin or asking for real dev-environment screenshots.\"},\n \"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n  \"facts\": {\"f1\": \"hedged\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n  \"wrong_facts\": [\"Says the screenshot answers the screenshot feedback, though its authenticity is the open problem\"],\n  \"rule_failures\": [],\n  \"decision_score\": 8, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 7,\n  \"decision_why\": \"It keeps \\\"not ready\\\", but the next step hedges between giving feedback and checking #38931 before deciding.\",\n  \"accuracy_why\": \"It covers the lack of a push, the missing #38931 link and the unshown right-placement rule, but it accepts the image as a valid screenshot.\",\n  \"reply_why\": \"It asks for the issue link and manual testing details, but never asks how the image was made or for real dev-environment screenshots.\"},\n \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n  \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n  \"wrong_facts\": [\"Marks the screenshot ask as satisfied (✅), though its authenticity is the open problem\"],\n  \"rule_failures\": [],\n  \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 6,\n  \"decision_why\": \"NOTE with \\\"not ready\\\" kept and more feedback matches the key.\",\n  \"accuracy_why\": \"It covers the lack of a push, #38931 and the right-placement gap, but it accepts the image as genuine.\",\n  \"reply_why\": \"It asks to move the questionable image into the description and never questions how it was made, so it misses the core of the reply_ask.\"},\n \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n  \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n  \"wrong_facts\": [\"Says the screenshot answers the screenshot ask, though its authenticity is the open problem\"],\n  \"rule_failures\": [],\n  \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 7,\n  \"decision_why\": \"NOTE with \\\"not ready\\\" kept matches the key's decision and action.\",\n  \"accuracy_why\": \"It notes there was no push, that #38931 is unlinked and that the right-placement rule is unshown, but it treats the image as a valid screenshot.\",\n  \"reply_why\": \"It asks for the issue link and manual testing but not for real dev-environment screenshots or how the image was made.\"},\n \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n  \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\"},\n  \"wrong_facts\": [\"Says the screenshot answers the screenshot feedback, though its authenticity is the open problem\", \"Refers to a \\\"How changes were tested\\\" section, but the description's section is titled \\\"Testing\\\"\"],\n  \"rule_failures\": [],\n  \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 7,\n  \"decision_why\": \"It keeps \\\"not ready\\\" with more feedback and no reviewer, which matches the key.\",\n  \"accuracy_why\": \"It covers the lack of a push, #38931 and the right-placement gap, but it accepts the image as genuine and misnames the Testing section.\",\n  \"reply_why\": \"It asks for the issue link and browser testing but misses questioning the image's origin, which is the reply_ask.\"}\n},\n\"ranking\": [\"X\", \"E\", \"D\", \"M\", \"A\", \"I\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.1486
+}

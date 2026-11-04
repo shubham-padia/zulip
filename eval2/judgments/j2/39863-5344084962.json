@@ -1,0 +1,176 @@
+{
+ "case": "39863-5344084962",
+ "repeat": 2,
+ "map": {
+  "G": [
+   "v2-r1"
+  ],
+  "V": [
+   "v3-r1"
+  ],
+  "W": [
+   "v1-r2"
+  ],
+  "M": [
+   "v1-r1"
+  ],
+  "S": [
+   "v2-r2"
+  ],
+  "R": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commit subject now follows Zulip style, and counts its trailing period as correct; Zulip style forbids that period."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" in a NOTE, which matches the key's kind and more_feedback action.",
+    "accuracy_why": "It gets the unchanged code, the broken Fixes link and the overlapping PR right, but it praises the trailing period, which is the decisive remaining problem.",
+    "reply_why": "It asks for the Fixes link fix but thanks the author for the commit message instead of asking them to remove the trailing period."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the commit subject follows the style guide because it ends with a period; Zulip style forbids that period."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 3,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" in a NOTE, which matches the key.",
+    "accuracy_why": "It counts the trailing period as correct, which is the decisive miss, and it leaves out the overlapping PR #39959.",
+    "reply_why": "It asks for the Fixes link, including in the commit message, but misses the trailing-period ask and praises the subject line."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "wrong",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commit subject now looks fine, but it still ends with a forbidden period."
+    ],
+    "rule_failures": [
+     "asks_for_done_work"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" in a NOTE, which matches the key.",
+    "accuracy_why": "It covers the unchanged code, the Fixes link and PR #39959, but it calls the subject fine and doubts a screencast laurynmm had already moved past.",
+    "reply_why": "It misses the trailing-period ask and asks again for the screencast keys, which the author already addressed."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commit message matches Zulip style, but the subject still ends with a period."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 6,
+    "decision_why": "It recommends handing off to a reviewer, but the key says to give more feedback.",
+    "accuracy_why": "The hand-off rests on a false claim that the commit style is fixed, though it does flag the Fixes link and the overlapping PR.",
+    "reply_why": "It pings a reviewer and asks only for the Fixes link, missing the trailing-period ask."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [
+     "Says the commit message matches Zulip style and counts the final period as correct."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 3,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off, but the key says to give more feedback.",
+    "accuracy_why": "Its hand-off rests on wrongly treating the trailing period as correct style, and it never says the code is unchanged.",
+    "reply_why": "It pings a reviewer and asks only for the Fixes link, so it misses the trailing-period ask."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "missing",
+     "f4": "hedged",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Says the reworded commit title follows the commit style, but it still ends with a period.",
+     "Says nothing is blocking."
+    ],
+    "rule_failures": [],
+    "decision_score": 3,
+    "accuracy_score": 2,
+    "reply_score": 2,
+    "brevity_score": 8,
+    "decision_why": "It recommends handing off, but the key says to give more feedback.",
+    "accuracy_why": "It calls the PR unblocked, downplays the broken issue link as a style nit, and leaves out both the unchanged code and the overlapping PR.",
+    "reply_why": "It only pings a reviewer and asserts the commit message is fixed, so it asks the author for nothing that is still missing."
+   }
+  },
+  "ranking": [
+   "W",
+   "M",
+   "V",
+   "G",
+   "S",
+   "R"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commit subject now follows Zulip style, and counts its trailing period as correct; Zulip style forbids that period.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 4, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" in a NOTE, which matches the key's kind and more_feedback action.\",\n \"accuracy_why\": \"It gets the unchanged code, the broken Fixes link and the overlapping PR right, but it praises the trailing period, which is the decisive remaining problem.\",\n \"reply_why\": \"It asks for the Fixes link fix but thanks the author for the commit message instead of asking them to remove the trailing period.\"},\n\"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the commit subject follows the style guide because it ends with a period; Zulip style forbids that period.\"],\n \"rule_failures\": [],\n \"decision_score\": 9, \"accuracy_score\": 3, \"reply_score\": 4, \"brevity_score\": 7,\n \"decision_why\": \"It keeps \\\"not ready\\\" in a NOTE, which matches the key.\",\n \"accuracy_why\": \"It counts the trailing period as correct, which is the decisive miss, and it leaves out the overlapping PR #39959.\",\n \"reply_why\": \"It asks for the Fixes link, including in the commit message, but misses the trailing-period ask and praises the subject line.\"},\n\"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commit subject now looks fine, but it still ends with a forbidden period.\"],\n \"rule_failures\": [\"asks_for_done_work\"],\n \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It keeps \\\"not ready\\\" in a NOTE, which matches the key.\",\n \"accuracy_why\": \"It covers the unchanged code, the Fixes link and PR #39959, but it calls the subject fine and doubts a screencast laurynmm had already moved past.\",\n \"reply_why\": \"It misses the trailing-period ask and asks again for the screencast keys, which the author already addressed.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commit message matches Zulip style, but the subject still ends with a period.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 6,\n \"decision_why\": \"It recommends handing off to a reviewer, but the key says to give more feedback.\",\n \"accuracy_why\": \"The hand-off rests on a false claim that the commit style is fixed, though it does flag the Fixes link and the overlapping PR.\",\n \"reply_why\": \"It pings a reviewer and asks only for the Fixes link, missing the trailing-period ask.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [\"Says the commit message matches Zulip style and counts the final period as correct.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 3, \"brevity_score\": 7,\n \"decision_why\": \"It recommends handing off, but the key says to give more feedback.\",\n \"accuracy_why\": \"Its hand-off rests on wrongly treating the trailing period as correct style, and it never says the code is unchanged.\",\n \"reply_why\": \"It pings a reviewer and asks only for the Fixes link, so it misses the trailing-period ask.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"missing\", \"f4\": \"hedged\", \"f5\": \"missing\"},\n \"wrong_facts\": [\"Says the reworded commit title follows the commit style, but it still ends with a period.\", \"Says nothing is blocking.\"],\n \"rule_failures\": [],\n \"decision_score\": 3, \"accuracy_score\": 2, \"reply_score\": 2, \"brevity_score\": 8,\n \"decision_why\": \"It recommends handing off, but the key says to give more feedback.\",\n \"accuracy_why\": \"It calls the PR unblocked, downplays the broken issue link as a style nit, and leaves out both the unchanged code and the overlapping PR.\",\n \"reply_why\": \"It only pings a reviewer and asserts the commit message is fixed, so it asks the author for nothing that is still missing.\"}\n},\n\"ranking\": [\"W\", \"M\", \"V\", \"G\", \"S\", \"R\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.155448
+}

@@ -1,0 +1,172 @@
+{
+ "case": "39822-5091673928",
+ "repeat": 2,
+ "map": {
+  "N": [
+   "v3-r1"
+  ],
+  "Q": [
+   "v2-r2"
+  ],
+  "U": [
+   "v3-r2"
+  ],
+  "O": [
+   "v1-r2"
+  ],
+  "J": [
+   "v1-r1"
+  ],
+  "S": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "N": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "mislabels_nonblocking_as_missing"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 8,
+    "brevity_score": 9,
+    "decision_why": "Its NOTE and hand-off to laurynmm match the key.",
+    "accuracy_why": "It covers both answered asks, but it lists the generator-rendered images under 'Missing' when nothing is missing, and it never says there was no new push.",
+    "reply_why": "A one-line thanks plus a reviewer ping is pasteable, though a bare ping would be tighter."
+   },
+   "Q": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "Its NOTE and hand-off match the key.",
+    "accuracy_why": "Both asks and the image caveat are right, but it doesn't mention that there was no new push.",
+    "reply_why": "A short thanks plus a ping to laurynmm is pasteable as is."
+   },
+   "U": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "Its NOTE and hand-off match the key.",
+    "accuracy_why": "It covers both answered asks, says there was no new push, and calls the generator-rendered images non-blocking, all in two lines.",
+    "reply_why": "A single reviewer ping line is ideal for a hand-off."
+   },
+   "O": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "Its NOTE and hand-off match the key.",
+    "accuracy_why": "Every must-have is present, though the ⚠️ markers overstate two non-blocking points.",
+    "reply_why": "A short thanks plus a ping is pasteable."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "hedged",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "Its NOTE and hand-off match the key.",
+    "accuracy_why": "It is complete, but it leaves the generator images as an open question for laurynmm instead of treating them as acceptable.",
+    "reply_why": "A short thanks plus a ping is pasteable."
+   },
+   "S": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point",
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 7,
+    "reply_score": 9,
+    "brevity_score": 6,
+    "decision_why": "Its NOTE and hand-off match the key.",
+    "accuracy_why": "The asks and the image caveat are right, but it doesn't say there was no new push.",
+    "reply_why": "A single reviewer ping line is ideal for a hand-off."
+   }
+  },
+  "ranking": [
+   "U",
+   "O",
+   "J",
+   "S",
+   "N",
+   "Q"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"N\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"mislabels_nonblocking_as_missing\"],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 8, \"brevity_score\": 9,\n \"decision_why\": \"Its NOTE and hand-off to laurynmm match the key.\",\n \"accuracy_why\": \"It covers both answered asks, but it lists the generator-rendered images under 'Missing' when nothing is missing, and it never says there was no new push.\",\n \"reply_why\": \"A one-line thanks plus a reviewer ping is pasteable, though a bare ping would be tighter.\"},\n\"Q\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"Its NOTE and hand-off match the key.\",\n \"accuracy_why\": \"Both asks and the image caveat are right, but it doesn't mention that there was no new push.\",\n \"reply_why\": \"A short thanks plus a ping to laurynmm is pasteable as is.\"},\n\"U\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 9,\n \"decision_why\": \"Its NOTE and hand-off match the key.\",\n \"accuracy_why\": \"It covers both answered asks, says there was no new push, and calls the generator-rendered images non-blocking, all in two lines.\",\n \"reply_why\": \"A single reviewer ping line is ideal for a hand-off.\"},\n\"O\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"Its NOTE and hand-off match the key.\",\n \"accuracy_why\": \"Every must-have is present, though the ⚠️ markers overstate two non-blocking points.\",\n \"reply_why\": \"A short thanks plus a ping is pasteable.\"},\n\"J\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"hedged\", \"f4\": \"present\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 7,\n \"decision_why\": \"Its NOTE and hand-off match the key.\",\n \"accuracy_why\": \"It is complete, but it leaves the generator images as an open question for laurynmm instead of treating them as acceptable.\",\n \"reply_why\": \"A short thanks plus a ping is pasteable.\"},\n\"S\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"present\"},\n \"wrong_facts\": [],\n \"rule_failures\": [\"filler_point\", \"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 7, \"reply_score\": 9, \"brevity_score\": 6,\n \"decision_why\": \"Its NOTE and hand-off match the key.\",\n \"accuracy_why\": \"The asks and the image caveat are right, but it doesn't say there was no new push.\",\n \"reply_why\": \"A single reviewer ping line is ideal for a hand-off.\"}\n},\n\"ranking\": [\"U\", \"O\", \"J\", \"S\", \"N\", \"Q\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.148712
+}

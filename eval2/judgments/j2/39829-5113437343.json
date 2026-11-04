@@ -1,0 +1,169 @@
+{
+ "case": "39829-5113437343",
+ "repeat": 2,
+ "map": {
+  "F": [
+   "v2-r1"
+  ],
+  "G": [
+   "v3-r1"
+  ],
+  "R": [
+   "v1-r1"
+  ],
+  "A": [
+   "v3-r2"
+  ],
+  "C": [
+   "v2-r2"
+  ],
+  "W": [
+   "v1-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 6,
+    "decision_why": "It recommends keeping \"not ready\" and asking for more changes, though the fallback of removing \"not ready\" if the images turn out to match softens the call slightly.",
+    "accuracy_why": "It covers the mismatched or reused \"Before\" image, the unchanged code and the multi-reactor case, but doesn't mention the other open PRs.",
+    "reply_why": "It asks for a matching pair and for the multi-reactor case, which fits the reply_ask well; it lacks only the example-PR pointer."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and assigns no reviewer, which matches the key.",
+    "accuracy_why": "It covers the screenshot mismatch, the absence of a code push and the multi-reactor gap, but omits the competing PRs.",
+    "reply_why": "Its ask for matching screenshots is right, but it doesn't ask about the multi-reactor case."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 8,
+    "decision_why": "It is a NOTE that keeps \"not ready\" without a reviewer, matching the key's more_feedback action.",
+    "accuracy_why": "The screenshot and no-push points are clear, but the multi-reactor case is missing and other PRs come up only as having received the same feedback.",
+    "reply_why": "It gives a clear ask for matching captures from the author's own branch, but not for the multi-reactor case or the example PRs."
+   },
+   "A": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing",
+     "f5": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 6,
+    "reply_score": 7,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and leaves follow-up to laurynmm, matching the key.",
+    "accuracy_why": "It covers the decisive screenshot problem and the unchanged code, but misses both the multi-reactor case and the competing PRs.",
+    "reply_why": "Its screenshot ask is correct and concise, but it leaves out the multi-reactor case."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point"
+    ],
+    "decision_score": 10,
+    "accuracy_score": 5,
+    "reply_score": 7,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE that keeps \"not ready\" and asks for retaken screenshots, matching the key.",
+    "accuracy_why": "It gets the decisive screenshot mismatch right but never says the code is unchanged, skips the multi-reactor case, and lists other PRs without noting the missing explanation; its ✅ point about the earlier request being done is also questionable.",
+    "reply_why": "It correctly asks to retake \"Before\" to match \"After\", but omits the multi-reactor case."
+   },
+   "C": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "wrong",
+     "f2": "wrong",
+     "f3": "hedged",
+     "f4": "missing",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Says precise before/after screenshots are now in the description, when the key says they are still missing."
+    ],
+    "rule_failures": [
+     "reply_contradicts_verdict"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 3,
+    "reply_score": 2,
+    "brevity_score": 7,
+    "decision_why": "It recommends handing off for review, while the key's action is more_feedback.",
+    "accuracy_why": "Its hand-off rests on the false claim that the screenshot request was met, even though it notices the size mismatch itself.",
+    "reply_why": "It pings a reviewer instead of asking the author for matching screenshots."
+   }
+  },
+  "ranking": [
+   "W",
+   "G",
+   "R",
+   "A",
+   "F",
+   "C"
+  ]
+ },
+ "text": "```json\n{\"outputs\": {\n\"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 6,\n \"decision_why\": \"It recommends keeping \\\"not ready\\\" and asking for more changes, though the fallback of removing \\\"not ready\\\" if the images turn out to match softens the call slightly.\",\n \"accuracy_why\": \"It covers the mismatched or reused \\\"Before\\\" image, the unchanged code and the multi-reactor case, but doesn't mention the other open PRs.\",\n \"reply_why\": \"It asks for a matching pair and for the multi-reactor case, which fits the reply_ask well; it lacks only the example-PR pointer.\"},\n\"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and assigns no reviewer, which matches the key.\",\n \"accuracy_why\": \"It covers the screenshot mismatch, the absence of a code push and the multi-reactor gap, but omits the competing PRs.\",\n \"reply_why\": \"Its ask for matching screenshots is right, but it doesn't ask about the multi-reactor case.\"},\n\"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 8,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" without a reviewer, matching the key's more_feedback action.\",\n \"accuracy_why\": \"The screenshot and no-push points are clear, but the multi-reactor case is missing and other PRs come up only as having received the same feedback.\",\n \"reply_why\": \"It gives a clear ask for matching captures from the author's own branch, but not for the multi-reactor case or the example PRs.\"},\n\"A\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\", \"f5\": \"missing\"},\n \"wrong_facts\": [], \"rule_failures\": [],\n \"decision_score\": 10, \"accuracy_score\": 6, \"reply_score\": 7, \"brevity_score\": 9,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and leaves follow-up to laurynmm, matching the key.\",\n \"accuracy_why\": \"It covers the decisive screenshot problem and the unchanged code, but misses both the multi-reactor case and the competing PRs.\",\n \"reply_why\": \"Its screenshot ask is correct and concise, but it leaves out the multi-reactor case.\"},\n\"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [], \"rule_failures\": [\"filler_point\"],\n \"decision_score\": 10, \"accuracy_score\": 5, \"reply_score\": 7, \"brevity_score\": 6,\n \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\" and asks for retaken screenshots, matching the key.\",\n \"accuracy_why\": \"It gets the decisive screenshot mismatch right but never says the code is unchanged, skips the multi-reactor case, and lists other PRs without noting the missing explanation; its ✅ point about the earlier request being done is also questionable.\",\n \"reply_why\": \"It correctly asks to retake \\\"Before\\\" to match \\\"After\\\", but omits the multi-reactor case.\"},\n\"C\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n \"facts\": {\"f1\": \"wrong\", \"f2\": \"wrong\", \"f3\": \"hedged\", \"f4\": \"missing\", \"f5\": \"hedged\"},\n \"wrong_facts\": [\"Says precise before/after screenshots are now in the description, when the key says they are still missing.\"],\n \"rule_failures\": [\"reply_contradicts_verdict\"],\n \"decision_score\": 3, \"accuracy_score\": 3, \"reply_score\": 2, \"brevity_score\": 7,\n \"decision_why\": \"It recommends handing off for review, while the key's action is more_feedback.\",\n \"accuracy_why\": \"Its hand-off rests on the false claim that the screenshot request was met, even though it notices the size mismatch itself.\",\n \"reply_why\": \"It pings a reviewer instead of asking the author for matching screenshots.\"}\n},\n\"ranking\": [\"W\", \"G\", \"R\", \"A\", \"F\", \"C\"]}\n```",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.21536
+}

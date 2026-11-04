@@ -1,0 +1,171 @@
+{
+ "case": "39522-4714378606",
+ "repeat": 2,
+ "map": {
+  "P": [
+   "v1-r1"
+  ],
+  "E": [
+   "v2-r2"
+  ],
+  "R": [
+   "v1-r2"
+  ],
+  "Y": [
+   "v3-r1"
+  ],
+  "X": [
+   "v3-r2"
+  ],
+  "W": [
+   "v2-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "P": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "hedged",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_to_author_when_hand_off"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 5,
+    "reply_score": 4,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and asks the author for more work, while the key's path is a hand-off once Yogesh confirms.",
+    "accuracy_why": "It covers the border radius and possible leftover buddy-list rules, but omits the dark-theme color and the screenshots, never names Yogesh's open asks, and has no hand-off step.",
+    "reply_why": "It asks the author for fixes, including a new commit-prefix request, instead of asking Yogesh to confirm his points as a step toward review."
+   },
+   "E": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_to_author_when_hand_off"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It keeps \"not ready\" and says not to assign a reviewer, where the key hands off after collaborator sign-off.",
+    "accuracy_why": "It lists all of Yogesh's open asks and that CI is unknown, but does not say the label came with no maintainer comment and gives no hand-off path.",
+    "reply_why": "Its asks match Yogesh's points, but it goes to the author instead of asking Yogesh to confirm, and it has no path to maintainer review."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "reply_to_author_when_hand_off"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 6,
+    "decision_why": "It keeps \"not ready\" with no reviewer, which misses the key's hand-off.",
+    "accuracy_why": "It covers the dark-theme color, border radius, screenshots and buddy-list scope well, but misses f1 and f4 and adds a commit-prefix point.",
+    "reply_why": "It is a long reply to the author with an extra prefix ask, rather than a request for Yogesh to confirm."
+   },
+   "Y": {
+    "kind": "NOTE",
+    "action": "hand_off",
+    "facts": {
+     "f1": "missing",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "wrong"
+    },
+    "wrong_facts": [
+     "Claims the PR is ready for review and the earlier questions are answered, though the dark-theme color, border radius, screenshots and buddy-list scope are unconfirmed",
+     "Says to assign laurynmm as reviewer rather than karlstolley after Yogesh signs off"
+    ],
+    "rule_failures": [],
+    "decision_score": 7,
+    "accuracy_score": 2,
+    "reply_score": 4,
+    "brevity_score": 9,
+    "decision_why": "It is a hand-off as the key says, but it skips Yogesh's sign-off and names the wrong reviewer.",
+    "accuracy_why": "It wrongly treats all open concerns as resolved and omits every missing item, which the hand-off rests on.",
+    "reply_why": "It is a single ping, but to the wrong person, and it does not ask Yogesh to confirm his points."
+   },
+   "X": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "hedged",
+     "f2": "present",
+     "f3": "present",
+     "f4": "hedged"
+    },
+    "wrong_facts": [
+     "Asserts the PR description still reads as before, which the input does not show"
+    ],
+    "rule_failures": [
+     "reply_to_author_when_hand_off"
+    ],
+    "decision_score": 4,
+    "accuracy_score": 6,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It keeps \"not ready\" but leaves Yogesh's review in the loop, the closest of the more_feedback outputs to the key's conditional hand-off.",
+    "accuracy_why": "It covers all of Yogesh's open asks concisely and points toward his feedback, but makes an unsupported claim about the description and never names the hand-off step.",
+    "reply_why": "Its asks are right but aimed at the author, not at Yogesh for confirmation."
+   },
+   "W": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "missing",
+     "f2": "present",
+     "f3": "present",
+     "f4": "missing"
+    },
+    "wrong_facts": [],
+    "rule_failures": [
+     "filler_point",
+     "reply_to_author_when_hand_off"
+    ],
+    "decision_score": 3,
+    "accuracy_score": 6,
+    "reply_score": 4,
+    "brevity_score": 5,
+    "decision_why": "It keeps \"not ready\" and asks for fixes, missing the hand-off.",
+    "accuracy_why": "The table covers the open asks well, but it misses f1 and f4.",
+    "reply_why": "The reply drops the buddy-list and dark-theme color checks and goes to the author instead of Yogesh."
+   }
+  },
+  "ranking": [
+   "X",
+   "E",
+   "R",
+   "W",
+   "P",
+   "Y"
+  ]
+ },
+ "text": "{\"outputs\": {\"P\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"hedged\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_to_author_when_hand_off\"],\n   \"decision_score\": 3, \"accuracy_score\": 5, \"reply_score\": 4, \"brevity_score\": 7,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks the author for more work, while the key's path is a hand-off once Yogesh confirms.\",\n   \"accuracy_why\": \"It covers the border radius and possible leftover buddy-list rules, but omits the dark-theme color and the screenshots, never names Yogesh's open asks, and has no hand-off step.\",\n   \"reply_why\": \"It asks the author for fixes, including a new commit-prefix request, instead of asking Yogesh to confirm his points as a step toward review.\"},\n  \"E\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_to_author_when_hand_off\"],\n   \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 7,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and says not to assign a reviewer, where the key hands off after collaborator sign-off.\",\n   \"accuracy_why\": \"It lists all of Yogesh's open asks and that CI is unknown, but does not say the label came with no maintainer comment and gives no hand-off path.\",\n   \"reply_why\": \"Its asks match Yogesh's points, but it goes to the author instead of asking Yogesh to confirm, and it has no path to maintainer review.\"},\n  \"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"reply_to_author_when_hand_off\"],\n   \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 4, \"brevity_score\": 6,\n   \"decision_why\": \"It keeps \\\"not ready\\\" with no reviewer, which misses the key's hand-off.\",\n   \"accuracy_why\": \"It covers the dark-theme color, border radius, screenshots and buddy-list scope well, but misses f1 and f4 and adds a commit-prefix point.\",\n   \"reply_why\": \"It is a long reply to the author with an extra prefix ask, rather than a request for Yogesh to confirm.\"},\n  \"Y\": {\"kind\": \"NOTE\", \"action\": \"hand_off\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"wrong\"},\n   \"wrong_facts\": [\"Claims the PR is ready for review and the earlier questions are answered, though the dark-theme color, border radius, screenshots and buddy-list scope are unconfirmed\", \"Says to assign laurynmm as reviewer rather than karlstolley after Yogesh signs off\"],\n   \"rule_failures\": [],\n   \"decision_score\": 7, \"accuracy_score\": 2, \"reply_score\": 4, \"brevity_score\": 9,\n   \"decision_why\": \"It is a hand-off as the key says, but it skips Yogesh's sign-off and names the wrong reviewer.\",\n   \"accuracy_why\": \"It wrongly treats all open concerns as resolved and omits every missing item, which the hand-off rests on.\",\n   \"reply_why\": \"It is a single ping, but to the wrong person, and it does not ask Yogesh to confirm his points.\"},\n  \"X\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"hedged\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"hedged\"},\n   \"wrong_facts\": [\"Asserts the PR description still reads as before, which the input does not show\"],\n   \"rule_failures\": [\"reply_to_author_when_hand_off\"],\n   \"decision_score\": 4, \"accuracy_score\": 6, \"reply_score\": 5, \"brevity_score\": 8,\n   \"decision_why\": \"It keeps \\\"not ready\\\" but leaves Yogesh's review in the loop, the closest of the more_feedback outputs to the key's conditional hand-off.\",\n   \"accuracy_why\": \"It covers all of Yogesh's open asks concisely and points toward his feedback, but makes an unsupported claim about the description and never names the hand-off step.\",\n   \"reply_why\": \"Its asks are right but aimed at the author, not at Yogesh for confirmation.\"},\n  \"W\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\",\n   \"facts\": {\"f1\": \"missing\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"missing\"},\n   \"wrong_facts\": [], \"rule_failures\": [\"filler_point\", \"reply_to_author_when_hand_off\"],\n   \"decision_score\": 3, \"accuracy_score\": 6, \"reply_score\": 4, \"brevity_score\": 5,\n   \"decision_why\": \"It keeps \\\"not ready\\\" and asks for fixes, missing the hand-off.\",\n   \"accuracy_why\": \"The table covers the open asks well, but it misses f1 and f4.\",\n   \"reply_why\": \"The reply drops the buddy-list and dark-theme color checks and goes to the author instead of Yogesh.\"}},\n \"ranking\": [\"X\", \"E\", \"R\", \"W\", \"P\", \"Y\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.291276
+}
