@@ -1,0 +1,167 @@
+{
+ "case": "39481-4711243565",
+ "repeat": 1,
+ "map": {
+  "L": [
+   "v3-r1"
+  ],
+  "R": [
+   "v1-r1"
+  ],
+  "G": [
+   "v2-r2"
+  ],
+  "K": [
+   "v1-r2"
+  ],
+  "M": [
+   "v2-r1"
+  ],
+  "V": [
+   "v3-r2"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "K": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" and asks for more information matches the key.",
+    "accuracy_why": "It covers both decisive gaps, says the size and files are unchanged, and cites the #38902 precedent; the vague-testing point is a reasonable extra.",
+    "reply_why": "It asks for the template checklist and the #38098 explanation, links both guides, and is ready to paste."
+   },
+   "M": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 9,
+    "decision_why": "It is a NOTE that keeps \"not ready\", though the aside about closing in favor of #38098 softens the next step slightly.",
+    "accuracy_why": "Both decisive gaps and the #38902 precedent are there, but it never says the author only squashed commits and left the code unchanged.",
+    "reply_why": "It hits exactly the reply_ask with both guide links and can be pasted as is."
+   },
+   "G": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "present"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "A NOTE that keeps \"not ready\" without assigning a reviewer matches the key.",
+    "accuracy_why": "All must-haves are covered, but it never says the code is unchanged, and the first table row is muddled.",
+    "reply_why": "The ask is right, but it labels the reviewable-prs link as the \"PR template\" and omits the continuing-unfinished-work guide."
+   },
+   "R": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "It lists the self-review checklist as a ✅ fix, but the checklist is still a custom one rather than the template's."
+    ],
+    "rule_failures": [],
+    "decision_score": 9,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 6,
+    "decision_why": "It is a NOTE recommending more feedback, with closing offered as a fallback.",
+    "accuracy_why": "It misses the decisive checklist problem and presents the checklist as fixed.",
+    "reply_why": "It covers #38098 but never asks for the template checklist, and it adds docs and testing asks."
+   },
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "missing",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Its headline says the description is fixed, but the checklist is still not the template's."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" matches the key.",
+    "accuracy_why": "It misses the decisive checklist gap and calls the description fixed.",
+    "reply_why": "It asks about #38098 but omits the checklist half of the reply_ask."
+   },
+   "V": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Its headline says \"template fixed\", but the self-review checklist is still not from the PR template."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 3,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "A NOTE that keeps \"not ready\" without a reviewer matches the key.",
+    "accuracy_why": "It flatly states the template was fixed, which reverses a decisive missing item, and it omits the #38902 precedent.",
+    "reply_why": "It covers #38098 and docs but never asks for the template checklist."
+   }
+  },
+  "ranking": [
+   "K",
+   "M",
+   "G",
+   "R",
+   "L",
+   "V"
+  ]
+ },
+ "text": "{\"outputs\": {\"K\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 9, \"brevity_score\": 8, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" and asks for more information matches the key.\", \"accuracy_why\": \"It covers both decisive gaps, says the size and files are unchanged, and cites the #38902 precedent; the vague-testing point is a reasonable extra.\", \"reply_why\": \"It asks for the template checklist and the #38098 explanation, links both guides, and is ready to paste.\"}, \"M\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 9, \"decision_why\": \"It is a NOTE that keeps \\\"not ready\\\", though the aside about closing in favor of #38098 softens the next step slightly.\", \"accuracy_why\": \"Both decisive gaps and the #38902 precedent are there, but it never says the author only squashed commits and left the code unchanged.\", \"reply_why\": \"It hits exactly the reply_ask with both guide links and can be pasted as is.\"}, \"G\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"present\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" without assigning a reviewer matches the key.\", \"accuracy_why\": \"All must-haves are covered, but it never says the code is unchanged, and the first table row is muddled.\", \"reply_why\": \"The ask is right, but it labels the reviewable-prs link as the \\\"PR template\\\" and omits the continuing-unfinished-work guide.\"}, \"R\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [\"It lists the self-review checklist as a ✅ fix, but the checklist is still a custom one rather than the template's.\"], \"rule_failures\": [], \"decision_score\": 9, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 6, \"decision_why\": \"It is a NOTE recommending more feedback, with closing offered as a fallback.\", \"accuracy_why\": \"It misses the decisive checklist problem and presents the checklist as fixed.\", \"reply_why\": \"It covers #38098 but never asks for the template checklist, and it adds docs and testing asks.\"}, \"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"missing\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [\"Its headline says the description is fixed, but the checklist is still not the template's.\"], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 8, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" matches the key.\", \"accuracy_why\": \"It misses the decisive checklist gap and calls the description fixed.\", \"reply_why\": \"It asks about #38098 but omits the checklist half of the reply_ask.\"}, \"V\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Its headline says \\\"template fixed\\\", but the self-review checklist is still not from the PR template.\"], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 3, \"reply_score\": 5, \"brevity_score\": 8, \"decision_why\": \"A NOTE that keeps \\\"not ready\\\" without a reviewer matches the key.\", \"accuracy_why\": \"It flatly states the template was fixed, which reverses a decisive missing item, and it omits the #38902 precedent.\", \"reply_why\": \"It covers #38098 and docs but never asks for the template checklist.\"}}, \"ranking\": [\"K\", \"M\", \"G\", \"R\", \"L\", \"V\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.378232
+}

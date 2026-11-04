@@ -44,6 +44,8 @@ NO_TOOLS = (
     "Reply with the output only."
 )
 
+TRAILER = "\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+
 lock = threading.Lock()
 done_since_commit = 0
 stop = threading.Event()
@@ -54,7 +56,7 @@ def commit(message: str) -> None:
         subprocess.run(["git", "add", "eval2"], cwd=ROOT, check=True)
         if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT).returncode == 0:
             return
-        subprocess.run(["git", "commit", "-qm", message], cwd=ROOT, check=True)
+        subprocess.run(["git", "commit", "-qm", message + TRAILER], cwd=ROOT, check=True)
         result = subprocess.run(
             ["git", "-c", "credential.helper=!gh auth git-credential", "push", "-q", "-f",
              PUSH_REMOTE, f"HEAD:{PUSH_BRANCH}"],

@@ -1,0 +1,166 @@
+{
+ "case": "39481-4711243565",
+ "repeat": 2,
+ "map": {
+  "L": [
+   "v1-r2"
+  ],
+  "F": [
+   "v2-r1"
+  ],
+  "D": [
+   "v2-r2"
+  ],
+  "H": [
+   "v3-r2"
+  ],
+  "J": [
+   "v3-r1"
+  ],
+  "T": [
+   "v1-r1"
+  ]
+ },
+ "judgment": {
+  "outputs": {
+   "L": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE that keeps \"not ready\" and asks for more information, which matches the key.",
+    "accuracy_why": "It flags both decisive gaps (the non-template checklist and the missing link to #38098) and the squash with an unchanged size, but cites #38902 only for the relationship gap.",
+    "reply_why": "The reply covers the checklist and the #38098 relationship and links the continuing-unfinished-work guide; the assignee and testing asks are slight extras."
+   },
+   "F": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "missing",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 8,
+    "reply_score": 9,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE that keeps \"not ready\" and asks for more feedback, which matches the key.",
+    "accuracy_why": "Both decisive gaps are right, but it never says the commits were squashed with the code unchanged."
+   },
+   "D": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "present",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 9,
+    "reply_score": 8,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE that keeps \"not ready\" and assigns no reviewer, which matches the key.",
+    "accuracy_why": "It covers the checklist, #38098, the squash, the docs and the python-zulip-api question, though it opens by saying the description follows the guide.",
+    "reply_why": "The reply covers both asks but does not link the continuing-unfinished-work guide and adds extra requests."
+   },
+   "T": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Marks the self-review checklist as done (✅) when it is not the template's checklist."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 7,
+    "decision_why": "It writes a NOTE that keeps \"not ready\", which matches the key.",
+    "accuracy_why": "It treats the custom checklist as fixed, which gets one of the two decisive gaps wrong.",
+    "reply_why": "The reply asks about #38098 but drops the checklist ask from reply_ask."
+   },
+   "J": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "hedged"
+    },
+    "wrong_facts": [
+     "Says the description is fixed with the checklist, when the checklist is still not the template's."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE that keeps \"not ready\", which matches the key.",
+    "accuracy_why": "It calls the description fixed and so misses the non-template checklist, a decisive gap.",
+    "reply_why": "The reply asks about #38098 and the docs but omits the checklist ask."
+   },
+   "H": {
+    "kind": "NOTE",
+    "action": "more_feedback",
+    "facts": {
+     "f1": "present",
+     "f2": "wrong",
+     "f3": "present",
+     "f4": "present",
+     "f5": "missing"
+    },
+    "wrong_facts": [
+     "Headline says the template is fixed, when the checklist is still a custom one."
+    ],
+    "rule_failures": [],
+    "decision_score": 10,
+    "accuracy_score": 4,
+    "reply_score": 5,
+    "brevity_score": 8,
+    "decision_why": "It writes a NOTE that keeps \"not ready\" and assigns no reviewer, which matches the key.",
+    "accuracy_why": "Its headline states the template was fixed, which is wrong on a decisive point, and it leaves out #38902.",
+    "reply_why": "The reply asks about #38098 and the docs but leaves out the checklist ask."
+   }
+  },
+  "ranking": [
+   "L",
+   "F",
+   "D",
+   "T",
+   "J",
+   "H"
+  ]
+ },
+ "text": "{\"outputs\": {\"L\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 8, \"decision_why\": \"It writes a NOTE that keeps \\\"not ready\\\" and asks for more information, which matches the key.\", \"accuracy_why\": \"It flags both decisive gaps (the non-template checklist and the missing link to #38098) and the squash with an unchanged size, but cites #38902 only for the relationship gap.\", \"reply_why\": \"The reply covers the checklist and the #38098 relationship and links the continuing-unfinished-work guide; the assignee and testing asks are slight extras.\"}, \"F\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"missing\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 8, \"reply_score\": 9, \"brevity_score\": 8, \"decision_why\": \"It writes a NOTE that keeps \\\"not ready\\\" and asks for more feedback, which matches the key.\", \"accuracy_why\": \"Both decisive gaps are right, but it never says the commits were squashed with the code unchanged.\"}, \"D\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"present\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 9, \"reply_score\": 8, \"brevity_score\": 7, \"decision_why\": \"It writes a NOTE that keeps \\\"not ready\\\" and assigns no reviewer, which matches the key.\", \"accuracy_why\": \"It covers the checklist, #38098, the squash, the docs and the python-zulip-api question, though it opens by saying the description follows the guide.\", \"reply_why\": \"The reply covers both asks but does not link the continuing-unfinished-work guide and adds extra requests.\"}, \"T\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [\"Marks the self-review checklist as done (✅) when it is not the template's checklist.\"], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 7, \"decision_why\": \"It writes a NOTE that keeps \\\"not ready\\\", which matches the key.\", \"accuracy_why\": \"It treats the custom checklist as fixed, which gets one of the two decisive gaps wrong.\", \"reply_why\": \"The reply asks about #38098 but drops the checklist ask from reply_ask.\"}, \"J\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"hedged\"}, \"wrong_facts\": [\"Says the description is fixed with the checklist, when the checklist is still not the template's.\"], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 8, \"decision_why\": \"It writes a NOTE that keeps \\\"not ready\\\", which matches the key.\", \"accuracy_why\": \"It calls the description fixed and so misses the non-template checklist, a decisive gap.\", \"reply_why\": \"The reply asks about #38098 and the docs but omits the checklist ask.\"}, \"H\": {\"kind\": \"NOTE\", \"action\": \"more_feedback\", \"facts\": {\"f1\": \"present\", \"f2\": \"wrong\", \"f3\": \"present\", \"f4\": \"present\", \"f5\": \"missing\"}, \"wrong_facts\": [\"Headline says the template is fixed, when the checklist is still a custom one.\"], \"rule_failures\": [], \"decision_score\": 10, \"accuracy_score\": 4, \"reply_score\": 5, \"brevity_score\": 8, \"decision_why\": \"It writes a NOTE that keeps \\\"not ready\\\" and assigns no reviewer, which matches the key.\", \"accuracy_why\": \"Its headline states the template was fixed, which is wrong on a decisive point, and it leaves out #38902.\", \"reply_why\": \"The reply asks about #38098 and the docs but leaves out the checklist ask.\"}}, \"ranking\": [\"L\", \"F\", \"D\", \"T\", \"J\", \"H\"]}",
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "cost_usd": 0.379372
+}
