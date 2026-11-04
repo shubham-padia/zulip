@@ -1,0 +1,6 @@
+{
+ "case": "39935-5329745940",
+ "answer": "no",
+ "text": "no\n\nThe author says they fixed the PR description but explicitly says they are leaving the PR paused until the core team decides on the design, so they are not handing it back for review.",
+ "cost_usd": 0.004784
+}

@@ -1,0 +1,6 @@
+{
+ "case": "39935-5355372259",
+ "answer": "yes",
+ "text": "yes\nThe author asks to add the \"maintainer review\" label, which signals they consider the PR ready for another look, though they never address the maintainer's request to reorganize the PR description per the guide.",
+ "cost_usd": 0.004766
+}
