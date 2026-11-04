@@ -1,0 +1,11 @@
+{
+ "case": "39784-5042031450",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready: the PR description still doesn't explain how it relates to #33086**\n\nNew: The author says the description now explains how this PR relates to the other open PRs and has precise before/after screenshots. Missing: the description only says \"Related issue: #31985\" and never mentions the earlier open PR #33086, which touches the same two files. The AI-use-policy and most other self-review checklist boxes are still unchecked.\n\n###### Next step\n\nKeep \"not ready\" and wait for the author to update the description.\n\n###### Reply\n\n```quote\nThanks for updating the screenshots! I don't see #33086 mentioned anywhere in the description yet, so could you explain how this PR relates to it, following the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html)? Please also complete the self-review checklist, including the AI use policy item.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0478917
+}

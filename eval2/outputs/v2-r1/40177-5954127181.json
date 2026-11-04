@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Description now has a \"Prior work\" section, and #37289 has a cross-reference comment |\n| ❌  | Coordinate with the original work: #37289 is still open and assigned to prakhar1144, who said on 2026-09-04 he plans to finish it, and there is no sign CerealNotFound agreed to a takeover |\n| ⚠️  | Credit for the original author: the description says `Co-authored-by` is in the commit, but the commit message isn't shown here to confirm |\n| ℹ️  | No new push since the feedback, and CI passes |\n| ℹ️  | The only screenshot is light mode. The plan promised light and dark, and the review on #37289 asked for dark mode |\n\n###### Next step\n\nKeep \"not ready\" and don't assign a reviewer yet. First check with prakhar1144 whether this PR should replace #37289.\n\n###### Reply\n\n```quote\nThanks for the update, @Soul-Ninja! Before this can move to review, please coordinate in #37289 with @CerealNotFound and @prakhar1144, who is assigned there, and get their agreement that this PR should replace it, as described in the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please also add a dark-mode screenshot, since that was asked for on the original PR.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.06285270000000001
+}

@@ -1,0 +1,11 @@
+{
+ "case": "40191-5798802930",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Update commit messages to the commit style guidelines (new push, both commits reworded per the author) |\n| ✅  | Move the Home Assistant docs change to a separate PR (commit and file are gone from this PR, now #40197) |\n| ✅  | Screenshot of the fixed docs (provided on #40197, so not needed here) |\n| ℹ️  | CI status isn't available; the author says all checks passed earlier, and the code is unchanged since |\n\n**Reviewer:** @laurynmm — gave the feedback on this PR and knows the history of the #23380 work.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign @laurynmm.\n\n###### Reply\n\n```quote\nThanks for the updates, @Aditya-XR! @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0571747
+}

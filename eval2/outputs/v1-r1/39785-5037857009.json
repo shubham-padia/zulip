@@ -1,0 +1,11 @@
+{
+ "case": "39785-5037857009",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author posted a before/after dark-mode screenshot in a comment, which answers the screenshot ask. There was no new push, and the description still has no issue link.\n\n|     |         |\n| --- | ------- |\n| ✅  | Before/after dark-mode screenshot provided (in a comment, not in the description) |\n| ❌  | No \"Fixes: #N\" and no linked issue, so \"help wanted\" can't be checked; open issue #38931 looks like the match |\n| ⚠️  | The Testing section only explains the change and doesn't say what was checked manually |\n| ⚠️  | The added `right` placement rule is not shown in the screenshot |\n\n###### Next step\n\nKeep \"not ready\" until the PR links the issue it fixes and that issue is confirmed \"help wanted\"; then hand it off for maintainer review.\n\n###### Reply\n\n```quote\nThanks for the screenshot! Could you add \"Fixes: #N\" to the description for the issue this addresses (maybe #38931?), and update the Testing section with what you checked manually, including the right-side arrow placement? See the [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0216583
+}

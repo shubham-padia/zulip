@@ -1,0 +1,11 @@
+{
+ "case": "39820-5103626520",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — checklist item still unchecked, and no comparison to the other open PRs for this issue**\n\nNew: The author squashed to one commit on current `main`, fixed multi-line text handling, and CI is passing. Missing: the \"Automated tests verify logic\" checklist box is still unchecked, and the description doesn't say how this PR relates to the open PRs for #19589 (#38098, #39481, #39606).\n\n###### Next step\n\n\"not ready\" stays; laurynmm, who gave the earlier feedback, can post the reply below.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commit! Two things are still missing: the \"Automated tests verify logic\" checkbox in the self-review checklist is unchecked, and the description should explain how this PR compares to the other open PRs for #19589 (#38098, #39481, #39606); see [continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please update the description and post again.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.06860369999999999
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39784-5042031450",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ❌  | Explain how this PR relates to the other open PR for the issue (#33086). The description only says \"Related issue: #31985\", and the new comment doesn't explain it either. |\n| ❌  | Work through the \"continuing unfinished work\" guidelines. Nothing shows this was done, and the PR still has one commit touching the same two files as #33086. |\n| ⚠️  | Precise before/after screenshots: the description now has before/after images and videos, but there are 4 \"before\" images and only 2 \"after\" images, so they don't pair up clearly. |\n| ℹ️  | The author says the PR was updated, but I couldn't compare the code before and after the feedback. The self-review checklist also still has unchecked items (AI use policy, commit discipline, visual appearance). CI status is unknown. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to add the relationship to #33086 to the description.\n\n###### Reply\n\n```quote\nThanks for the update, @PrinceXDev! I don't see the explanation of how this relates to #33086 in the PR description yet. Could you add it, following the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html)? Please also make the before/after screenshots match one-to-one, as described in the [guide on presenting visual changes](https://zulip.readthedocs.io/en/latest/contributing/presenting-visual-changes.html#what-are-precise-before-after-screenshots).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0530567
+}

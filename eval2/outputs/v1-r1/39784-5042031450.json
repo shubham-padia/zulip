@@ -1,0 +1,11 @@
+{
+ "case": "39784-5042031450",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author says they added an explanation of how this relates to the other PRs and updated the screenshots. The description now has before/after screenshots and a video, but I can't tell whether the code changed, and it still says nothing about #33086.\n\n|     |         |\n| --- | ------- |\n| ❌  | No explanation of how this relates to #33086, an open PR that touches the same two files. The description only says \"Related issue: #31985\". |\n| ⚠️  | Before/after screenshots and a video were added. There are 4 \"before\" images but only 2 \"after\", so they may not match up precisely. |\n| ❌  | The description has no \"Fixes: #31985\" line, and the self-review checklist items for the AI policy and commit messages are unchecked. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to put the missing explanation in the PR description.\n\n###### Reply\n\n```quote\nThanks for updating! I don't see anything in the PR description yet about how this relates to #33086 (which changes the same files). Could you add that, following the [continuing unfinished work guide](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html), and also add \"Fixes: #31985\" and complete the self-review checklist?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.049744300000000005
+}

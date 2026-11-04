@@ -1,0 +1,11 @@
+{
+ "case": "39820-5103626520",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\n|     |         |\n| --- | ------- |\n| ✅  | Clean up commit history: now one commit on current `main` (new push) |\n| ⚠️  | Complete the self-review checklist: \"Automated tests verify logic where appropriate\" is still unchecked in the description, though the author says it is complete |\n| ℹ️  | Three other open PRs (#38098, #39481, #39606) fix the same issue, and the description doesn't say how this PR relates to them. #38902 was closed for this reason. |\n| ℹ️  | The author could not run the new test locally. CI shows as passed. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to finish the checklist and explain how this PR relates to the other open PRs for #19589.\n\n###### Reply\n\n```quote\nThanks for cleaning up the commits! The \"Automated tests verify logic where appropriate\" box in your self-review checklist is still unchecked, so please complete it. Please also add a note on how this PR compares to the other open PRs for #19589 (#38098, #39481, #39606), following our [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.06818869999999999
+}

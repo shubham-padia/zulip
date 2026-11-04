@@ -1,0 +1,11 @@
+{
+ "case": "39785-5037857009",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready — screenshot added, but no linked issue**\n\nNew: The author posted a before/after dark mode screenshot, which answers the screenshot feedback, but there was no new push. Missing: a \"Fixes: #N\" line (open issue #38931 looks like the match, but the PR doesn't link it, so its \"help wanted\" status can't be checked), and a description of how it was manually tested, including the new right-side arrow rule, which the screenshot doesn't show.\n\n###### Next step\n\n\"not ready\" stays, and laurynmm can give this feedback, or the triager can check whether #38931 is labeled \"help wanted\" before deciding.\n\n###### Reply\n\n```quote\nThanks for the screenshots! Could you link the issue this fixes (e.g. \"Fixes: #38931\", if that's the one) and say how you tested it manually, including the new right-placement arrow case? The [guide on submitting a pull request](https://zulip.readthedocs.io/en/latest/contributing/reviewable-prs.html) covers both.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0191657
+}

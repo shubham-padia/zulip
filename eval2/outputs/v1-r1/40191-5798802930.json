@@ -1,0 +1,11 @@
+{
+ "case": "40191-5798802930",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed once. They reworded both commit messages and removed the Home Assistant doc change, which they opened separately as #40197. The code is unchanged.\n\n|     |         |\n| --- | ------- |\n| ✅  | The Home Assistant doc change is out of this PR (8 files now, 2 commits), and #40197 has the screenshots. |\n| ⚠️  | The commit message bodies aren't in the input, only the subject lines. The author says they were rewritten, so check them when you assign. |\n| ✅  | The linked issue #23380 has \"help wanted\". |\n\n**Reviewer:** laurynmm — gave the original feedback and is already following this PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0574623
+}

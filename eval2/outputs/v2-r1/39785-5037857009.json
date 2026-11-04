@@ -1,0 +1,11 @@
+{
+ "case": "39785-5037857009",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\n|     |         |\n| --- | ------- |\n| ✅  | Go through the PR guide and fill in the description and self-review checklist |\n| ✅  | Add screenshots for the visual change (before/after dark mode comparison posted in a comment) |\n| ℹ️  | No new push since the feedback, but both requests were about the description and comments, not code |\n| ℹ️  | The description has no \"Fixes: #N\" and no linked issue. Open issue #38931 (\"Emoji and global time popover arrows should match background\") looks related |\n| ℹ️  | CI passed and there are no merge conflicts |\n\n**Reviewer:** laurynmm — gave the feedback and has followed the PR from the start. No one is assigned yet.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? @cms19859230182-lang, if this fixes #38931, please add \"Fixes: #38931\" to the PR description.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.022470700000000003
+}

@@ -1,0 +1,11 @@
+{
+ "case": "39731-5006493904",
+ "variant": "v2",
+ "repeat": 1,
+ "kind": "CARD",
+ "text": "CARD\n**Ready for review**\n\nThis cleans up the dark theme stylesheet for alert banners. It removes two selectors that cannot match anything in the web app and merges the two remaining duplicate rules into one. Users should see no change: the author measured the same colors before and after in light and dark themes.\n\n|     |         |\n| --- | ------- |\n| ℹ️  | Since the feedback, the single \"consolidate all four\" commit was replaced by two commits: one removes the dead selectors `.alert-box .stacktrace` and `.alert.alert-danger`, the other merges the remaining rules. |\n| ✅  | The author answered where each selector is used. Two are reachable (`#home-error`, and the `generic_embed_error` banner via `.alert-box .alert`) and two are not, with reasons given in the description. |\n| ✅  | Computed styles of the real elements are identical on `main` and on this branch, in both themes. The description also includes a check that `.alert-box .blueslip-error-container` is `null` in the app. |\n| ℹ️  | The description uses computed-style measurements instead of before/after screenshots, and the issue asks for screenshots in both themes. The author offered to add them if wanted. |\n| ✅  | CI passed, the PR is +0/-8 in one file, and the issue has \"help wanted\". |\n\n**Reviewer:** laurynmm — gave the feedback and has been following this PR.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The dead selectors are removed and the remaining rules merged, with the computed-style check redone on the real elements.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.057342699999999996
+}

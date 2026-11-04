@@ -1,0 +1,11 @@
+{
+ "case": "40177-5954127181",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author updated the description with prior-work details and credits, then asked for the label to be removed. There has been no new push since the feedback.\n\n|     |         |\n| --- | ------- |\n| ✅  | Description now explains the relationship to #37289 and credits its author with `Co-authored-by`. |\n| ❌  | The guide's main ask isn't met. #37289 is still open with \"maintainer review\", is assigned to @prakhar1144, and was said on 2026-09-04 to be on his list to complete this cycle. There's no sign the original author was asked about it or agreed to hand it off. |\n| ❌  | The only screenshot is light mode, but the issue asks for light and dark email clients, and the author's own plan promised both. |\n| ℹ️  | Title has an `[ai]` prefix. The author should be able to explain and defend all of the code, including the new color-blending logic. |\n\n###### Next step\n\nKeep \"not ready\", and ask the author to settle with @prakhar1144 and the author of #37289 whether this PR or the original should go forward. If @prakhar1144 wants to finish #37289 himself, close this one.\n\n###### Reply\n\n```quote\nThanks for the update! #37289 is still open and assigned to @prakhar1144, who plans to finish it this cycle, so we can't tell yet that this PR should replace it. Please ask @CerealNotFound and @prakhar1144 on #37289 whether they're happy for you to take it over, following the [guidelines on continuing unfinished work](https://zulip.readthedocs.io/en/latest/contributing/continuing-unfinished-work.html). Please also add dark-mode screenshots.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.059290300000000004
+}

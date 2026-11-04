@@ -1,0 +1,11 @@
+{
+ "case": "40201-6155498168",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Still not ready**\n\nThe author pushed 3 more times, and CI now passes, which was the only thing the feedback asked for. The PR still links no issue.\n\n|     |         |\n| --- | ------- |\n| ✅  | CI is passing now, which addresses the feedback. |\n| ❌  | No \"Fixes: #N\" and no linked issue, so we can't confirm the work is on a \"help wanted\" issue. |\n| ℹ️  | The author has no merged PRs, and their PR #40356 was closed on 2026-10-10 under the AI policy. |\n\n###### Next step\n\nKeep \"not ready\" and ask the author to link the issue this fixes, or open one and wait for \"help wanted\", before any handoff.\n\n###### Reply\n\n```quote\nThanks for getting CI passing! Before we can review this, please add a \"Fixes: #N\" line to the description that links an issue labeled \"help wanted\"; if there isn't one yet, please open one first and wait for it to be labeled. Please also confirm that you've tested the change yourself, per our [AI use policy](https://zulip.readthedocs.io/en/latest/contributing/contributing.html#ai-use-policy-and-guidelines).\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0231163
+}

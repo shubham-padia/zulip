@@ -1,0 +1,11 @@
+{
+ "case": "39731-5006493904",
+ "variant": "v3",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review — the dead selectors are removed and checked on the real elements**\n\nNew: The author pushed on 13 July, after the feedback. They dropped the two unreachable selectors (`.alert-box .stacktrace` and `.alert.alert-danger`) and merged the remaining rules, which leaves the diff at +0/-8. They also measured the real `#home-error` and `generic_embed_error` elements on `main` and on the branch in both themes, and the values match. Nothing is missing, and CI passed.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm, who gave the feedback.\n\n###### Reply\n\n```quote\nThanks for the update, the reachability check and the before/after measurements answer the earlier question. @laurynmm, could you review this?\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.0502277
+}

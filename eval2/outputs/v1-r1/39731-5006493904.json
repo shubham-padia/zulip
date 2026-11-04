@@ -1,0 +1,11 @@
+{
+ "case": "39731-5006493904",
+ "variant": "v1",
+ "repeat": 1,
+ "kind": "NOTE",
+ "text": "NOTE\n**Ready for review**\n\nThe author pushed a new two-commit version on the 13th. It removes the two selectors that can't be reached in the web app and merges the two rules that remain. The author also re-checked the real elements in the running app.\n\n|     |         |\n| --- | ------- |\n| ✅  | The question \"where can these selectors exist in the web app?\" is answered selector by selector. The two unreachable ones (`.alert-box .stacktrace`, `.alert.alert-danger`) are removed. |\n| ✅  | The code now matches the description: +0/-8 in one file, split into two coherent commits. |\n| ✅  | Computed styles on the real `#home-error` and `generic_embed_error` elements are identical on `main` and on the branch, in both themes. CI passed. |\n| ℹ️  | There are no before/after screenshots. The issue asks for them, but the removed selectors have no rendering surface, and the author offered to add some. |\n\n**Reviewer:** @laurynmm — gave the feedback and is the maintainer already following this cleanup issue.\n\n###### Next step\n\nRemove \"not ready\", add \"maintainer review\", and assign laurynmm.\n\n###### Reply\n\n```quote\n@laurynmm, could you review this? The unreachable selectors are removed and the remaining rules are merged.\n```",
+ "models": [
+  "claude-sonnet-5-5"
+ ],
+ "cost_usd": 0.052330299999999996
+}
